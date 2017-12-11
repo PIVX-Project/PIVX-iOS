@@ -185,21 +185,30 @@ totalTransactions:(uint32_t)totalTransactions hashes:(NSData *)hashes flags:(NSD
     
     // check if timestamp is too far in future
     //TODO: use estimated network time instead of system time (avoids timejacking attacks and misconfigured time)
-    if (_timestamp > [NSDate timeIntervalSinceReferenceDate] + NSTimeIntervalSince1970 + MAX_TIME_DRIFT) return NO;
+    if (_timestamp > [NSDate timeIntervalSinceReferenceDate] + NSTimeIntervalSince1970 + MAX_TIME_DRIFT){
+        NSLog(@"Error on Check if timestamp is too far in future, on block: %@",[NSData dataWithUInt256:_blockHash].hexString);
+        return NO;
+    }
     
     // check if proof-of-work target is out of range
-    if (target == 0 || target & 0x00800000u || size > maxsize || (size == maxsize && target > maxtarget)) return NO;
+    if (target == 0 || target & 0x00800000u || size > maxsize || (size == maxsize && target > maxtarget)){
+        NSLog(@"Error on Check if proof-of-work target is out of range on block: %@",[NSData dataWithUInt256:_blockHash].hexString);
+        return NO;
+    }
 
     if (size > 3) *(uint32_t *)&t.u8[size - 3] = CFSwapInt32HostToLittle(target);
     else t.u32[0] = CFSwapInt32HostToLittle(target >> (3 - size)*8);
     
     // TODO Furszy check this..
     // print block hash to check if it's good.
-    NSLog(@"Received block hash %@",[NSData dataWithUInt256:_blockHash].hexString);
-    for (int i = sizeof(t)/sizeof(uint32_t) - 1; i >= 0; i--) { // check proof-of-work
-        if (CFSwapInt32LittleToHost(_blockHash.u32[i]) < CFSwapInt32LittleToHost(t.u32[i])) break;
-        if (CFSwapInt32LittleToHost(_blockHash.u32[i]) > CFSwapInt32LittleToHost(t.u32[i])) return NO;
-    }
+    //NSLog(@"Received block hash %@",[NSData dataWithUInt256:_blockHash].hexString);
+    //for (int i = sizeof(t)/sizeof(uint32_t) - 1; i >= 0; i--) { // check proof-of-work
+    //    if (CFSwapInt32LittleToHost(_blockHash.u32[i]) < CFSwapInt32LittleToHost(t.u32[i])) break;
+    //    if (CFSwapInt32LittleToHost(_blockHash.u32[i]) > CFSwapInt32LittleToHost(t.u32[i])){
+    //        NSLog(@"Error on check proof of work: %@",[NSData dataWithUInt256:_blockHash].hexString);
+    //        return NO;
+    //    }
+    //}
     
     return YES;
 }

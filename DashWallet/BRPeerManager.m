@@ -59,7 +59,7 @@ static const struct { uint32_t height; const char *hash; uint32_t timestamp; uin
 };
 
 static const char *dns_seeds[] = {
-   "172.19.49.163"//"192.168.0.117"//"pivx-testnet.seed.fuzzbawls.pw", "pivx-testnet.seed2.fuzzbawls.pw" //"testnet-seed.dashdot.io"//,"testnet-seed.dashpay.info"
+   "192.168.1.33"//"192.168.0.117"//"pivx-testnet.seed.fuzzbawls.pw", "pivx-testnet.seed2.fuzzbawls.pw" //"testnet-seed.dashdot.io"//,"testnet-seed.dashpay.info"
 };
 
 #else // main net
@@ -1386,11 +1386,18 @@ static const char *dns_seeds[] = {
 //        for (BRMerkleBlock * merkleBlock in [[self.blocks allValues] sortedArrayUsingDescriptors:@[sortDescriptor]]) {
 //            NSLog(@"printing previous block at height %d : %@",merkleBlock.height,uint256_obj(merkleBlock.blockHash));
 //        }
+        
+        
         NSLog(@"%@:%d relayed orphan block %@, previous %@, height %d, last block is %@, height %d", peer.host, peer.port,
               blockHash, prevBlock, block.height, uint256_obj(self.lastBlock.blockHash), self.lastBlockHeight);
         
+        NSLog(@"Orphan Prev block hash %@",[NSData dataWithUInt256: block.prevBlock].hexString);
+        NSLog(@"Orphan Block hash %@",[NSData dataWithUInt256: block.blockHash].hexString);
+        NSLog(@"Orphan Block timestamp %d",block.timestamp );
+        
+        
         // ignore orphans older than one week ago
-        if (block.timestamp < [NSDate timeIntervalSinceReferenceDate] + NSTimeIntervalSince1970 - 7*24*60*60) return;
+        //if (block.timestamp < [NSDate timeIntervalSinceReferenceDate] + NSTimeIntervalSince1970 - 7*24*60*60) return;
         
         // call getblocks, unless we already did with the previous block, or we're still downloading the chain
         if (self.lastBlockHeight >= peer.lastblock && ! uint256_eq(self.lastOrphan.blockHash, block.prevBlock)) {
@@ -1421,14 +1428,14 @@ static const char *dns_seeds[] = {
     }
     
     // verify block difficulty if block is past last checkpoint
-    if ((block.height > (checkpoint_array[CHECKPOINT_COUNT - 1].height + DGW_PAST_BLOCKS_MAX)) &&
-        ![block verifyDifficultyWithPreviousBlocks:self.blocks]) {
-        uint32_t foundDifficulty = [block darkGravityWaveTargetWithPreviousBlocks:self.blocks];
-        NSLog(@"%@:%d relayed block with invalid difficulty height %d target %x foundTarget %x, blockHash: %@", peer.host, peer.port,
-              block.height,block.target,foundDifficulty, blockHash);
-        [self peerMisbehavin:peer];
-        return;
-    }
+    //if ((block.height > (checkpoint_array[CHECKPOINT_COUNT - 1].height + DGW_PAST_BLOCKS_MAX)) &&
+    //    ![block verifyDifficultyWithPreviousBlocks:self.blocks]) {
+        //uint32_t foundDifficulty = [block darkGravityWaveTargetWithPreviousBlocks:self.blocks];
+        //NSLog(@"%@:%d relayed block with invalid difficulty height %d target %x foundTarget %x, blockHash: %@", peer.host, peer.port,
+        //      block.height,block.target,foundDifficulty, blockHash);
+        //[self peerMisbehavin:peer];
+        //return;
+    //}
     [self.checkpoints[@(block.height)] getValue:&checkpoint];
     
     // verify block chain checkpoints
