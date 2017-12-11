@@ -42,11 +42,11 @@
 
 #define BIP32_SEED_KEY "Bitcoin seed"
 #if DASH_TESTNET
-#define BIP32_XPRV     "\x04\x35\x83\x94"
-#define BIP32_XPUB     "\x04\x35\x87\xCF"
+#define BIP32_XPRV     "\x3a\x80\x58\x37"
+#define BIP32_XPUB     "\x3a\x80\x61\xa0"
 #else
-#define BIP32_XPRV     "\x04\x88\xAD\xE4"
-#define BIP32_XPUB     "\x04\x88\xB2\x1E"
+#define BIP32_XPRV     "\x02\x21\x31\x2B"
+#define BIP32_XPUB     "\x02\x2D\x25\x33"
 #endif
 
 #endif

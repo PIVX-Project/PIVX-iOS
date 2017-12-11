@@ -86,7 +86,7 @@ inline static int ceil_log2(int x)
     if (message.length < 80) return nil;
     NSNumber * l = nil;
     NSUInteger off = 0, len = 0;
-    NSMutableData *d = [NSMutableData data];
+    NSMutableData *d = [NSMutableData data]; // NSMutableData
 
     _version = [message UInt32AtOffset:off];
     off += sizeof(uint32_t);

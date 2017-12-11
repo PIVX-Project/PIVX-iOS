@@ -26,11 +26,11 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
-#define DASH_PUBKEY_ADDRESS      76
-#define DASH_SCRIPT_ADDRESS      16
-#define DASH_PUBKEY_ADDRESS_TEST 140
+#define DASH_PUBKEY_ADDRESS      30
+#define DASH_SCRIPT_ADDRESS      13
+#define DASH_PUBKEY_ADDRESS_TEST 139
 #define DASH_SCRIPT_ADDRESS_TEST 19
-#define DASH_PRIVKEY             204
+#define DASH_PRIVKEY             212
 #define DASH_PRIVKEY_TEST        239
 
 #define BIP38_NOEC_PREFIX      0x0142
