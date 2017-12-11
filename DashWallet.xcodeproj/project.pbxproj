@@ -25,7 +25,7 @@
 		22F04A001C9714EF00F137D8 /* BRUserDefaultsSwitchCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 22F45A0D1C3326CC00B07A15 /* BRUserDefaultsSwitchCell.m */; };
 		31D68B531C23B6C10030FAAA /* DashWalletUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31D68B521C23B6C10030FAAA /* DashWalletUITests.swift */; };
 		31D68B5B1C23B6FD0030FAAA /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31D68B5A1C23B6FD0030FAAA /* SnapshotHelper.swift */; };
-		6BA7F28B1FDE4A0100C1027B /* NSData+PIVX.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BA7F28A1FDE4A0100C1027B /* NSData+PIVX.m */; };
+		6BA7F2911FDF048100C1027B /* quark.c in Sources */ = {isa = PBXBuildFile; fileRef = 6BA7F2901FDF048100C1027B /* quark.c */; };
 		751B2B5C1B68911700EA87FB /* BRTxHistoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 751B2B5B1B68911700EA87FB /* BRTxHistoryViewController.m */; };
 		7525B619192453840041C0F2 /* BRNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 7525B618192453840041C0F2 /* BRNavigationBar.m */; };
 		752E289A192349CE00DB5A3C /* DashWallet.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 752E2898192349CE00DB5A3C /* DashWallet.xcdatamodeld */; };
@@ -230,8 +230,8 @@
 		31D68B521C23B6C10030FAAA /* DashWalletUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashWalletUITests.swift; sourceTree = "<group>"; };
 		31D68B541C23B6C10030FAAA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		31D68B5A1C23B6FD0030FAAA /* SnapshotHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SnapshotHelper.swift; path = fastlane/SnapshotHelper.swift; sourceTree = SOURCE_ROOT; };
-		6BA7F2891FDE4A0100C1027B /* NSData+PIVX.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSData+PIVX.h"; sourceTree = "<group>"; };
-		6BA7F28A1FDE4A0100C1027B /* NSData+PIVX.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSData+PIVX.m"; sourceTree = "<group>"; };
+		6BA7F28F1FDF048100C1027B /* quark.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = quark.h; sourceTree = "<group>"; };
+		6BA7F2901FDF048100C1027B /* quark.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = quark.c; sourceTree = "<group>"; };
 		7509C10C1AF3076000D03FD5 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
 		7509C10E1AF3076100D03FD5 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		7509C1101AF3720100D03FD5 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Main.strings; sourceTree = "<group>"; };
@@ -715,8 +715,6 @@
 				BA7B535B1BDBC36700355E8D /* BRTransaction+Utils.m */,
 				FB021E4D1E42EB5F00D17638 /* NSAttributedString+Attachments.h */,
 				FB021E4E1E42EB5F00D17638 /* NSAttributedString+Attachments.m */,
-				6BA7F2891FDE4A0100C1027B /* NSData+PIVX.h */,
-				6BA7F28A1FDE4A0100C1027B /* NSData+PIVX.m */,
 			);
 			name = Categories;
 			sourceTree = "<group>";
@@ -1032,6 +1030,8 @@
 				FBF267BC1E414A68001A1C8B /* Skein.c */,
 				FBF267BD1E414A68001A1C8B /* sph_types.h */,
 				FBF267BE1E414A68001A1C8B /* aes_helper.c */,
+				6BA7F28F1FDF048100C1027B /* quark.h */,
+				6BA7F2901FDF048100C1027B /* quark.c */,
 			);
 			name = x11;
 			sourceTree = "<group>";
@@ -1441,7 +1441,6 @@
 				FB021E571E47E17200D17638 /* FBShimmeringView.m in Sources */,
 				FBF267A11E414877001A1C8B /* NSString+Dash.m in Sources */,
 				FB021E5B1E4DEFE800D17638 /* MBProgressHUD.m in Sources */,
-				6BA7F28B1FDE4A0100C1027B /* NSData+PIVX.m in Sources */,
 				751B2B5C1B68911700EA87FB /* BRTxHistoryViewController.m in Sources */,
 				752E28EA19234DA200DB5A3C /* NSMutableData+Bitcoin.m in Sources */,
 				752E28EB19234DA200DB5A3C /* NSString+Bitcoin.m in Sources */,
@@ -1449,6 +1448,7 @@
 				75D5F3D2191EC270004AB296 /* BRAppDelegate.m in Sources */,
 				759FBB36193290F600AB4465 /* BRRootViewController.m in Sources */,
 				752E289A192349CE00DB5A3C /* DashWallet.xcdatamodeld in Sources */,
+				6BA7F2911FDF048100C1027B /* quark.c in Sources */,
 				759FBB37193290F600AB4465 /* BRSendViewController.m in Sources */,
 				752E28F119234E8100DB5A3C /* Reachability.m in Sources */,
 				75D5F3CE191EC270004AB296 /* main.m in Sources */,

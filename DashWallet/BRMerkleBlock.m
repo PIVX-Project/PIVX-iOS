@@ -91,16 +91,26 @@ inline static int ceil_log2(int x)
     _version = [message UInt32AtOffset:off];
     off += sizeof(uint32_t);
     _prevBlock = [message hashAtOffset:off];
+    //_prevBlock = *(const UInt256 *)((const char *)[NSData dataWithUInt256:_prevBlock].reverse.bytes);
+    //NSLog(@"Prev block hash %@",[NSData dataWithUInt256:_prevBlock].hexString);
+    NSLog(@"Prev block hash %@",[NSData dataWithUInt256: *(const UInt256 *)((const char *)[NSData dataWithUInt256:_prevBlock].reverse.bytes)].hexString);
     off += sizeof(UInt256);
     _merkleRoot = [message hashAtOffset:off];
+    //_merkleRoot = *(const UInt256 *)((const char *)[NSData dataWithUInt256:_merkleRoot].reverse.bytes);
+    //NSLog(@"Merkle root hash %@",[NSData dataWithUInt256:_merkleRoot].hexString);
+    NSLog(@"Prev merkle root %@",[NSData dataWithUInt256: *(const UInt256 *)((const char *)[NSData dataWithUInt256:_merkleRoot].reverse.bytes)].hexString);
     off += sizeof(UInt256);
     _timestamp = [message UInt32AtOffset:off];
+    NSLog(@"Timestamp %d",_timestamp);
     off += sizeof(uint32_t);
     _target = [message UInt32AtOffset:off];
+    NSLog(@"Bits %d",_target);
     off += sizeof(uint32_t);
     _nonce = [message UInt32AtOffset:off];
+    NSLog(@"Nonce %d",_nonce);
     off += sizeof(uint32_t);
     _totalTransactions = [message UInt32AtOffset:off];
+    NSLog(@"Total txs %d",_totalTransactions);
     off += sizeof(uint32_t);
     len = (NSUInteger)[message varIntAtOffset:off length:&l]*sizeof(UInt256);
     off += l.unsignedIntegerValue;
@@ -117,6 +127,8 @@ inline static int ceil_log2(int x)
     [d appendUInt32:_nonce];
     _blockHash = d.x11;
 
+    //NSLog(@"Received block hash %@",[NSData dataWithUInt256:_blockHash].hexString);
+    NSLog(@"Received block hash %@",[NSData dataWithUInt256: *(const UInt256 *)((const char *)[NSData dataWithUInt256:_blockHash].reverse.bytes)].hexString);
     return self;
 }
 
@@ -181,6 +193,9 @@ totalTransactions:(uint32_t)totalTransactions hashes:(NSData *)hashes flags:(NSD
     if (size > 3) *(uint32_t *)&t.u8[size - 3] = CFSwapInt32HostToLittle(target);
     else t.u32[0] = CFSwapInt32HostToLittle(target >> (3 - size)*8);
     
+    // TODO Furszy check this..
+    // print block hash to check if it's good.
+    NSLog(@"Received block hash %@",[NSData dataWithUInt256:_blockHash].hexString);
     for (int i = sizeof(t)/sizeof(uint32_t) - 1; i >= 0; i--) { // check proof-of-work
         if (CFSwapInt32LittleToHost(_blockHash.u32[i]) < CFSwapInt32LittleToHost(t.u32[i])) break;
         if (CFSwapInt32LittleToHost(_blockHash.u32[i]) > CFSwapInt32LittleToHost(t.u32[i])) return NO;

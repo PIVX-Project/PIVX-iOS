@@ -59,7 +59,7 @@ static const struct { uint32_t height; const char *hash; uint32_t timestamp; uin
 };
 
 static const char *dns_seeds[] = {
-   "192.168.1.34"//"pivx-testnet.seed.fuzzbawls.pw", "pivx-testnet.seed2.fuzzbawls.pw" //"testnet-seed.dashdot.io"//,"testnet-seed.dashpay.info"
+   "172.19.49.163"//"192.168.0.117"//"pivx-testnet.seed.fuzzbawls.pw", "pivx-testnet.seed2.fuzzbawls.pw" //"testnet-seed.dashdot.io"//,"testnet-seed.dashpay.info"
 };
 
 #else // main net

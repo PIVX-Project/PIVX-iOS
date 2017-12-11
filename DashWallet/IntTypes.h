@@ -80,6 +80,8 @@ typedef union _UInt128 {
 #define uint128_obj(u) ([NSValue value:(u).u8 withObjCType:@encode(UInt128)])
 
 #define UINT512_ZERO ((UInt512) { .u64 = { 0, 0, 0, 0, 0, 0, 0, 0 } })
+#define UINT512_MASK ((UInt512) { .u64 = {  0, 0, 0, 0, 0, 0, 0, 8  } })
+#define UINT512_MAX ((UInt512) { .u64 = { 0xFFFFFFFFFFFFFFFF, 0xFFFFFFFFFFFFFFFF, 0xFFFFFFFFFFFFFFFF, 0xFFFFFFFFFFFFFFFF, 0xFFFFFFFFFFFFFFFF, 0xFFFFFFFFFFFFFFFF, 0xFFFFFFFFFFFFFFFF, 0xFFFFFFFFFFFFFFFF } })
 #define UINT256_ZERO ((UInt256) { .u64 = { 0, 0, 0, 0 } })
 #define UINT256_MAX ((UInt256) { .u64 = { 0xFFFFFFFFFFFFFFFF, 0xFFFFFFFFFFFFFFFF, 0xFFFFFFFFFFFFFFFF, 0xFFFFFFFFFFFFFFFF } })
 #define UINT160_ZERO ((UInt160) { .u32 = { 0, 0, 0, 0, 0 } })

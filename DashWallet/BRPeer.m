@@ -1028,6 +1028,7 @@ services:(uint64_t)services
     BRMerkleBlock *block = [BRMerkleBlock blockWithMessage:message];
     
     if (! block.valid) {
+        //NSLog(@"%@:%u got merkleblock %@", self.host, self.port, block.blockHash);
         [self error:@"invalid merkleblock: %@", uint256_obj(block.blockHash)];
         return;
     }
