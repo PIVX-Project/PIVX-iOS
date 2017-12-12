@@ -5,21 +5,22 @@
 //  Created by German Mendoza on 9/22/17.
 //  Copyright © 2017 Aaron Voisine. All rights reserved.
 //
-
-import UIKit
 //import SlideMenuControllerSwift
 //import IQKeyboardManagerSwift
+
+import Foundation
+import UIKit
 
 class Utils: NSObject {
 
     static func configureNavigationBar(){
-        UINavigationBar.appearance().setBackgroundImage(UIImage(), for:.default)
-        UINavigationBar.appearance().shadowImage = UIImage()
+        //UINavigationBar.appearance().setBackgroundImage(UIImage(), for:.default)
+        //UINavigationBar.appearance().shadowImage = UIImage()
         UINavigationBar.appearance().barTintColor = K.color.purple_r85g71b108
         UINavigationBar.appearance().tintColor = .white
-        UINavigationBar.appearance().isTranslucent = false
-        UINavigationBar.appearance().titleTextAttributes = [NSAttributedStringKey.foregroundColor:UIColor.white,
-                                                            NSAttributedStringKey.font: K.font.GillSansRegular()]
+        //UINavigationBar.appearance().isTranslucent = false
+        //UINavigationBar.appearance().backgroundColor = K.color.purple_r85g71b108
+        UINavigationBar.appearance().titleTextAttributes = [NSAttributedStringKey.foregroundColor:UIColor.white]
     }
     
 //    static func configureIQKeyboard() {

@@ -2101,7 +2101,7 @@ Other devices may be infected.
                                 <inset key="contentEdgeInsets" minX="60" minY="20" maxX="20" maxY="20"/>
                                 <size key="titleShadowOffset" width="0.0" height="1"/>
                                 <state key="normal" title="show">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleColor" red="0.33333333329999998" green="0.2784313725" blue="0.42352941179999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="show:" destination="gE8-de-XET" eventType="touchUpInside" id="Yig-X3-mcO"/>
@@ -2195,7 +2195,7 @@ Other devices may be infected.
             </objects>
             <point key="canvasLocation" x="2721" y="2158"/>
         </scene>
-        <!--Seed View Controller-->
+        <!--phrase-->
         <scene sceneID="qOk-ov-eSt">
             <objects>
                 <viewController storyboardIdentifier="SeedViewController" modalTransitionStyle="crossDissolve" id="IA2-75-hxO" customClass="BRSeedViewController" sceneMemberID="viewController">
@@ -2203,19 +2203,18 @@ Other devices may be infected.
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" image="wallpaper-default" translatesAutoresizingMaskIntoConstraints="NO" id="dqh-Fj-S7p">
-                                <rect key="frame" x="-94" y="0.0" width="758" height="736"/>
-                            </imageView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="if you ever lose your phone, you will need this phrase to recover your wallet" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="300" translatesAutoresizingMaskIntoConstraints="NO" id="EQG-Km-ZKY">
-                                <rect key="frame" x="57.666666666666657" y="270" width="300" height="39"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <rect key="frame" x="60.333333333333343" y="268.33333333333331" width="294.66666666666663" height="40.666666666666686"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                                 <color key="shadowColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <size key="shadowOffset" width="0.0" height="1"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="please write it down" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="300" translatesAutoresizingMaskIntoConstraints="NO" id="Td7-xP-kmB">
-                                <rect key="frame" x="135.66666666666669" y="321" width="142.66666666666669" height="19"/>
-                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="16"/>
+                                <rect key="frame" x="131" y="321" width="152.33333333333337" height="20"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                                 <size key="shadowOffset" width="0.0" height="1"/>
                             </label>
@@ -2266,14 +2265,15 @@ Other devices may be infected.
                                 </variation>
                             </view>
                             <label hidden="YES" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I wrote it down:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cyp-mV-Bhd">
-                                <rect key="frame" x="135" y="459" width="114.33333333333331" height="20.666666666666686"/>
-                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
-                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                                <nil key="highlightedColor"/>
-                                <size key="shadowOffset" width="0.0" height="1"/>
+                                <rect key="frame" x="133.66666666666666" y="459" width="117.33333333333334" height="20"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="highlightedColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="shadowColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <size key="shadowOffset" width="0.0" height="0.0"/>
                             </label>
                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PJj-7p-7Bt">
-                                <rect key="frame" x="234.33333333333337" y="439.66666666666669" width="62" height="62"/>
+                                <rect key="frame" x="236" y="439.66666666666669" width="62" height="62"/>
                                 <inset key="contentEdgeInsets" minX="20" minY="20" maxX="20" maxY="20"/>
                                 <state key="normal" image="checkbox-empty"/>
                                 <connections>
@@ -2289,6 +2289,7 @@ Other devices may be infected.
                                 <items>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="S2f-nr-mrg"/>
                                     <barButtonItem title="remind me later" id="QQS-Me-RNh">
+                                        <color key="tintColor" red="0.33333333329999998" green="0.2784313725" blue="0.42352941179999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <connections>
                                             <action selector="done:" destination="IA2-75-hxO" id="gSn-Kd-vS7"/>
                                         </connections>
@@ -2296,7 +2297,7 @@ Other devices may be infected.
                                 </items>
                             </toolbar>
                         </subviews>
-                        <color key="backgroundColor" red="0.93725490196078431" green="0.93725490196078431" blue="0.95686274509803915" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.33333333329999998" green="0.2784313725" blue="0.42352941179999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="Td7-xP-kmB" firstAttribute="top" secondItem="EQG-Km-ZKY" secondAttribute="bottom" constant="12" id="1no-Pe-bnJ"/>
                             <constraint firstItem="PJj-7p-7Bt" firstAttribute="leading" secondItem="cyp-mV-Bhd" secondAttribute="trailing" constant="-15" id="Be0-6P-U91"/>
@@ -2307,10 +2308,7 @@ Other devices may be infected.
                             <constraint firstItem="X6R-Za-v9X" firstAttribute="bottom" secondItem="8KJ-Le-F0y" secondAttribute="bottom" id="Jkm-eH-Kvj"/>
                             <constraint firstItem="X6R-Za-v9X" firstAttribute="centerX" secondItem="cyp-mV-Bhd" secondAttribute="centerX" constant="15" id="MPp-p2-sIb"/>
                             <constraint firstItem="cyp-mV-Bhd" firstAttribute="top" secondItem="ZPH-1d-tW9" secondAttribute="bottom" constant="44" id="OfR-ik-g8N"/>
-                            <constraint firstItem="dqh-Fj-S7p" firstAttribute="leading" secondItem="X6R-Za-v9X" secondAttribute="leading" constant="-94" id="RmH-Ha-LXT"/>
                             <constraint firstItem="EQG-Km-ZKY" firstAttribute="centerX" secondItem="ZPH-1d-tW9" secondAttribute="centerX" id="iYR-xb-lmt"/>
-                            <constraint firstAttribute="bottom" secondItem="dqh-Fj-S7p" secondAttribute="bottom" id="kbM-f4-8YY"/>
-                            <constraint firstItem="dqh-Fj-S7p" firstAttribute="top" secondItem="X6R-Za-v9X" secondAttribute="top" constant="-64" id="lE6-70-mVc"/>
                             <constraint firstItem="X6R-Za-v9X" firstAttribute="trailing" secondItem="ZPH-1d-tW9" secondAttribute="trailing" id="mck-cz-C1z"/>
                             <constraint firstItem="ZPH-1d-tW9" firstAttribute="top" secondItem="EQG-Km-ZKY" secondAttribute="bottom" constant="76" id="uLa-WH-pVa"/>
                             <constraint firstItem="ZPH-1d-tW9" firstAttribute="leading" secondItem="X6R-Za-v9X" secondAttribute="leading" id="urF-Kc-dFa"/>
@@ -2318,25 +2316,11 @@ Other devices may be infected.
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="X6R-Za-v9X"/>
                     </view>
-                    <navigationItem key="navigationItem" id="pSA-60-Zeg">
-                        <nil key="title"/>
-                        <view key="titleView" contentMode="scaleToFill" id="9QQ-Dq-BDV">
-                            <rect key="frame" x="160" y="14.666666666666664" width="94" height="15"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <subviews>
-                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" image="dashwallet" translatesAutoresizingMaskIntoConstraints="NO" id="liH-WQ-uDo">
-                                    <rect key="frame" x="0.0" y="0.0" width="94" height="15"/>
-                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                </imageView>
-                            </subviews>
-                            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
-                        </view>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" title="phrase" id="pSA-60-Zeg"/>
                     <connections>
                         <outlet property="remindButton" destination="QQS-Me-RNh" id="Jkq-bu-28n"/>
                         <outlet property="seedLabel" destination="dz8-9E-hrc" id="EuI-Ib-8iZ"/>
                         <outlet property="toolbar" destination="8KJ-Le-F0y" id="nRb-6n-qUI"/>
-                        <outlet property="wallpaper" destination="dqh-Fj-S7p" id="9zN-jz-mcU"/>
                         <outlet property="writeButton" destination="PJj-7p-7Bt" id="IMB-qQ-bdm"/>
                         <outlet property="writeLabel" destination="cyp-mV-Bhd" id="n4P-Pf-Hxe"/>
                     </connections>
