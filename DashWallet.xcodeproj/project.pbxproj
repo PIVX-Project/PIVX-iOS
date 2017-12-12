@@ -23,6 +23,11 @@
 		22DE8CF31D02407F007F07F3 /* BRWalletConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 22DE8CF01D02407F007F07F3 /* BRWalletConstants.m */; };
 		22DE8CF41D02407F007F07F3 /* BRWalletConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 22DE8CF01D02407F007F07F3 /* BRWalletConstants.m */; };
 		22F04A001C9714EF00F137D8 /* BRUserDefaultsSwitchCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 22F45A0D1C3326CC00B07A15 /* BRUserDefaultsSwitchCell.m */; };
+		2B5735671FE04BC400110745 /* PivxAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B5735661FE04BC400110745 /* PivxAssets.xcassets */; };
+		2B57356E1FE04C4200110745 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B57356A1FE04C4200110745 /* Utils.swift */; };
+		2B57356F1FE04C4200110745 /* PivxExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B57356B1FE04C4200110745 /* PivxExtensions.swift */; };
+		2B5735701FE04C4200110745 /* UIView+Anchors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B57356C1FE04C4200110745 /* UIView+Anchors.swift */; };
+		2B5735711FE04C4200110745 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B57356D1FE04C4200110745 /* Constants.swift */; };
 		31D68B531C23B6C10030FAAA /* DashWalletUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31D68B521C23B6C10030FAAA /* DashWalletUITests.swift */; };
 		31D68B5B1C23B6FD0030FAAA /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31D68B5A1C23B6FD0030FAAA /* SnapshotHelper.swift */; };
 		6BA7F2911FDF048100C1027B /* quark.c in Sources */ = {isa = PBXBuildFile; fileRef = 6BA7F2901FDF048100C1027B /* quark.c */; };
@@ -226,6 +231,12 @@
 		22F45A0C1C3326CC00B07A15 /* BRUserDefaultsSwitchCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRUserDefaultsSwitchCell.h; sourceTree = "<group>"; };
 		22F45A0D1C3326CC00B07A15 /* BRUserDefaultsSwitchCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRUserDefaultsSwitchCell.m; sourceTree = "<group>"; };
 		22F45A0F1C3329EB00B07A15 /* BRUserDefaultsConstants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BRUserDefaultsConstants.h; sourceTree = "<group>"; };
+		2B5735661FE04BC400110745 /* PivxAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = PivxAssets.xcassets; sourceTree = "<group>"; };
+		2B5735691FE04C4100110745 /* dashwallet-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "dashwallet-Bridging-Header.h"; sourceTree = "<group>"; };
+		2B57356A1FE04C4200110745 /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Utils.swift; path = PivxUtils/Utils.swift; sourceTree = "<group>"; };
+		2B57356B1FE04C4200110745 /* PivxExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PivxExtensions.swift; path = PivxUtils/PivxExtensions.swift; sourceTree = "<group>"; };
+		2B57356C1FE04C4200110745 /* UIView+Anchors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIView+Anchors.swift"; path = "PivxUtils/UIView+Anchors.swift"; sourceTree = "<group>"; };
+		2B57356D1FE04C4200110745 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Constants.swift; path = PivxUtils/Constants.swift; sourceTree = "<group>"; };
 		31D68B501C23B6C10030FAAA /* DashWalletUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DashWalletUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		31D68B521C23B6C10030FAAA /* DashWalletUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashWalletUITests.swift; sourceTree = "<group>"; };
 		31D68B541C23B6C10030FAAA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -597,6 +608,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2B5735681FE04BEB00110745 /* PivxUtils */ = {
+			isa = PBXGroup;
+			children = (
+				2B57356D1FE04C4200110745 /* Constants.swift */,
+				2B57356B1FE04C4200110745 /* PivxExtensions.swift */,
+				2B57356C1FE04C4200110745 /* UIView+Anchors.swift */,
+				2B57356A1FE04C4200110745 /* Utils.swift */,
+			);
+			name = PivxUtils;
+			sourceTree = "<group>";
+		};
 		31D68B511C23B6C10030FAAA /* DashWalletUITests */ = {
 			isa = PBXGroup;
 			children = (
@@ -869,17 +891,20 @@
 		75D5F3C7191EC270004AB296 /* DashWallet */ = {
 			isa = PBXGroup;
 			children = (
+				2B5735661FE04BC400110745 /* PivxAssets.xcassets */,
+				75D5F3DF191EC270004AB296 /* Images.xcassets */,
+				75D5F3D0191EC270004AB296 /* BRAppDelegate.h */,
+				75D5F3D1191EC270004AB296 /* BRAppDelegate.m */,
+				2B5735681FE04BEB00110745 /* PivxUtils */,
 				FBF267A61E414A58001A1C8B /* x11 */,
 				BAC7B6BF1BD9C2B500165B84 /* AppleWatch */,
 				752E289C19234A4700DB5A3C /* Models */,
 				752E289B19234A3F00DB5A3C /* Views */,
 				75BA5D02192296010040304C /* Controllers */,
 				752E28B019234B0500DB5A3C /* Categories */,
-				75D5F3D0191EC270004AB296 /* BRAppDelegate.h */,
-				75D5F3D1191EC270004AB296 /* BRAppDelegate.m */,
+				2B5735691FE04C4100110745 /* dashwallet-Bridging-Header.h */,
 				BA4EECDF1B351AE200D443A3 /* BRAppGroupConstants.h */,
 				22F45A0F1C3329EB00B07A15 /* BRUserDefaultsConstants.h */,
-				75D5F3DF191EC270004AB296 /* Images.xcassets */,
 				75D5F3DC191EC270004AB296 /* Main.storyboard */,
 				75F2E0D21BE9803900EAE861 /* Launch Screen.storyboard */,
 				752E2898192349CE00DB5A3C /* DashWallet.xcdatamodeld */,
@@ -1198,7 +1223,7 @@
 						CreatedOnToolsVersion = 6.1;
 					};
 					75D5F3BD191EC270004AB296 = {
-						LastSwiftMigration = 0900;
+						LastSwiftMigration = 0910;
 						SystemCapabilities = {
 							com.apple.ApplicationGroups.iOS = {
 								enabled = 1;
@@ -1298,6 +1323,7 @@
 				75D5F3E0191EC270004AB296 /* Images.xcassets in Resources */,
 				757E09991ADB8EEB006FD352 /* Localizable.strings in Resources */,
 				75F2E0D31BE9803900EAE861 /* Launch Screen.storyboard in Resources */,
+				2B5735671FE04BC400110745 /* PivxAssets.xcassets in Resources */,
 				75C0E3BF1B1BA294007BC531 /* BIP39Words.plist in Resources */,
 				75E83CF61B5F997A0038FB70 /* coinflip.aiff in Resources */,
 				755FC9ED1BF1DF1B00164ABB /* BREventConfirmView.xib in Resources */,
@@ -1393,12 +1419,14 @@
 				75AA5F55194143D5003F23BD /* BRBouncyBurgerButton.m in Sources */,
 				752E28AB19234AE300DB5A3C /* BRMerkleBlockEntity.m in Sources */,
 				BA7B53501BDA9A2800355E8D /* BRAppleWatchData.m in Sources */,
+				2B57356E1FE04C4200110745 /* Utils.swift in Sources */,
 				752E28AC19234AE300DB5A3C /* BRPeerEntity.m in Sources */,
 				FBF2680E1E419318001A1C8B /* DSShapeshiftEntity+CoreDataClass.m in Sources */,
 				FBF268041E414B93001A1C8B /* NSData+Dash.m in Sources */,
 				752E28AD19234AE300DB5A3C /* BRTransactionEntity.m in Sources */,
 				752E28AE19234AE300DB5A3C /* BRTxInputEntity.m in Sources */,
 				752E28AF19234AE300DB5A3C /* BRTxOutputEntity.m in Sources */,
+				2B5735701FE04C4200110745 /* UIView+Anchors.swift in Sources */,
 				22DE8CF11D02407F007F07F3 /* BRWalletConstants.m in Sources */,
 				FBF2680F1E419318001A1C8B /* DSShapeshiftEntity+CoreDataProperties.m in Sources */,
 				BAA4843C1B3EFFAF0075C749 /* UIImage+Utils.m in Sources */,
@@ -1415,11 +1443,13 @@
 				752E28D919234C3600DB5A3C /* BRTransaction.m in Sources */,
 				752E28CE19234C3600DB5A3C /* BRBIP32Sequence.m in Sources */,
 				BAC7B6BE1BD9C29900165B84 /* BRPhoneWCSessionManager.m in Sources */,
+				2B57356F1FE04C4200110745 /* PivxExtensions.swift in Sources */,
 				752E28CF19234C3600DB5A3C /* BRBIP39Mnemonic.m in Sources */,
 				752E28DA19234C3600DB5A3C /* BRWallet.m in Sources */,
 				FB021E561E47E17200D17638 /* FBShimmeringLayer.m in Sources */,
 				752E28DB19234C3600DB5A3C /* BRWalletManager.m in Sources */,
 				752E28D319234C3600DB5A3C /* BRMerkleBlock.m in Sources */,
+				2B5735711FE04C4200110745 /* Constants.swift in Sources */,
 				752E28D019234C3600DB5A3C /* BRBloomFilter.m in Sources */,
 				752E28D619234C3600DB5A3C /* BRPeer.m in Sources */,
 				752E28D819234C3600DB5A3C /* BRPeerManager.m in Sources */,
@@ -1683,6 +1713,7 @@
 		31D68B571C23B6C10030FAAA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CLANG_WARN_COMMA = NO;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CODE_SIGN_ENTITLEMENTS = dashwallet/dashwallet.entitlements;
@@ -1704,6 +1735,7 @@
 		31D68B581C23B6C10030FAAA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CLANG_WARN_COMMA = NO;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CODE_SIGN_ENTITLEMENTS = dashwallet/dashwallet.entitlements;
@@ -1868,7 +1900,7 @@
 				"OTHER_SWIFT_FLAGS[arch=*]" = "-DDebug";
 				PRODUCT_BUNDLE_IDENTIFIER = org.dashfoundation.dash;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "DashWallet/dashwallet-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_SWIFT3_OBJC_INFERENCE = On;
 				SWIFT_VERSION = 4.0;
@@ -1901,7 +1933,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = org.dashfoundation.dash;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "DashWallet/dashwallet-Bridging-Header.h";
 				SWIFT_SWIFT3_OBJC_INFERENCE = On;
 				SWIFT_VERSION = 4.0;
 				USER_HEADER_SEARCH_PATHS = "";
@@ -1911,6 +1943,7 @@
 		75D5F3FA191EC270004AB296 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/dashwallet.app/dashwallet";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_WARN_COMMA = NO;
@@ -1934,6 +1967,7 @@
 		75D5F3FB191EC270004AB296 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/dashwallet.app/dashwallet";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_WARN_COMMA = NO;
@@ -2178,7 +2212,7 @@
 				OTHER_SWIFT_FLAGS = "-DTestflight";
 				PRODUCT_BUNDLE_IDENTIFIER = org.dashfoundation.dash;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "DashWallet/dashwallet-Bridging-Header.h";
 				SWIFT_SWIFT3_OBJC_INFERENCE = On;
 				SWIFT_VERSION = 4.0;
 				USER_HEADER_SEARCH_PATHS = "";
@@ -2215,6 +2249,7 @@
 		CEE253D51E26A9BC00A25B15 /* Testflight */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/dashwallet.app/dashwallet";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_WARN_COMMA = NO;
@@ -2237,6 +2272,7 @@
 		CEE253D61E26A9BC00A25B15 /* Testflight */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CLANG_WARN_COMMA = NO;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CODE_SIGN_ENTITLEMENTS = dashwallet/dashwallet.entitlements;
@@ -2392,7 +2428,7 @@
 				"OTHER_SWIFT_FLAGS[arch=*]" = "-DDebug -DDASH_TESTNET";
 				PRODUCT_BUNDLE_IDENTIFIER = org.dashfoundation.dash;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "DashWallet/dashwallet-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_SWIFT3_OBJC_INFERENCE = On;
 				SWIFT_VERSION = 4.0;
@@ -2434,6 +2470,7 @@
 		FB9CC19D1F8511620079309F /* Testnet */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/dashwallet.app/dashwallet";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_WARN_COMMA = NO;
@@ -2457,6 +2494,7 @@
 		FB9CC19E1F8511620079309F /* Testnet */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CLANG_WARN_COMMA = NO;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CODE_SIGN_ENTITLEMENTS = dashwallet/dashwallet.entitlements;
