@@ -108,6 +108,15 @@ inline static int ceil_log2(int x)
     off += sizeof(uint32_t);
     _nonce = [message UInt32AtOffset:off];
     NSLog(@"Nonce %d",_nonce);
+    
+    if([ self isZerocoin ]){
+        _zerocoinAccumulator = [message hashAtOffset:off];
+        NSLog(@"Zerocoin accumulator %@",[NSData dataWithUInt256: *(const UInt256 *)((const char *)[NSData dataWithUInt256:_zerocoinAccumulator].reverse.bytes)].hexString);
+        off += sizeof(UInt256);
+    }else{
+        _zerocoinAccumulator = UINT256_ZERO;
+    }
+    
     off += sizeof(uint32_t);
     _totalTransactions = [message UInt32AtOffset:off];
     NSLog(@"Total txs %d",_totalTransactions);
@@ -125,7 +134,14 @@ inline static int ceil_log2(int x)
     [d appendUInt32:_timestamp];
     [d appendUInt32:_target];
     [d appendUInt32:_nonce];
-    _blockHash = d.x11;
+    
+    if(![ self isZerocoin ]){
+        _blockHash = d.x11;
+    }else{
+        [d appendBytes:&_zerocoinAccumulator length:sizeof(_zerocoinAccumulator)];
+        _blockHash = d.SHA256_2;
+    }
+    
 
     //NSLog(@"Received block hash %@",[NSData dataWithUInt256:_blockHash].hexString);
     NSLog(@"Received block hash %@",[NSData dataWithUInt256: *(const UInt256 *)((const char *)[NSData dataWithUInt256:_blockHash].reverse.bytes)].hexString);
@@ -133,7 +149,7 @@ inline static int ceil_log2(int x)
 }
 
 - (instancetype)initWithBlockHash:(UInt256)blockHash version:(uint32_t)version prevBlock:(UInt256)prevBlock
-merkleRoot:(UInt256)merkleRoot timestamp:(uint32_t)timestamp target:(uint32_t)target nonce:(uint32_t)nonce
+merkleRoot:(UInt256)merkleRoot timestamp:(uint32_t)timestamp target:(uint32_t)target nonce:(uint32_t)nonce zerocoinAccumulator:(UInt256)zerocoinAccumulator
 totalTransactions:(uint32_t)totalTransactions hashes:(NSData *)hashes flags:(NSData *)flags height:(uint32_t)height
 {
     if (! (self = [self init])) return nil;
@@ -149,6 +165,7 @@ totalTransactions:(uint32_t)totalTransactions hashes:(NSData *)hashes flags:(NSD
     _hashes = hashes;
     _flags = flags;
     _height = height;
+    _zerocoinAccumulator = zerocoinAccumulator;
     
     return self;
 }
@@ -244,6 +261,14 @@ totalTransactions:(uint32_t)totalTransactions hashes:(NSData *)hashes flags:(NSD
         if (uint256_eq(txHash, [_hashes hashAtOffset:i])) return YES;
     }
     
+    return NO;
+}
+
+// true if the block is a zerocoin block
+- (BOOL)isZerocoin{
+    if (_version > 3) {
+        return YES;
+    }
     return NO;
 }
 

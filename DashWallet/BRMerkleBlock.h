@@ -29,6 +29,10 @@
 #define DGW_PAST_BLOCKS_MIN 24
 #define DGW_PAST_BLOCKS_MAX 24
 
+/** Zerocoin starting block height */
+#define TESTNET_ZEROCOIN_STARTING_BLOCK_HEIGHT = 201564;
+#define MAINNET_ZEROCOIN_STARTING_BLOCK_HEIGHT = 863787;
+
 typedef union _UInt256 UInt256;
 
 @interface BRMerkleBlock : NSObject
@@ -44,6 +48,7 @@ typedef union _UInt256 UInt256;
 @property (nonatomic, readonly) NSData *hashes;
 @property (nonatomic, readonly) NSData *flags;
 @property (nonatomic, assign) uint32_t height;
+@property (nonatomic, readonly) UInt256 zerocoinAccumulator;
 
 @property (nonatomic, readonly) NSArray *txHashes; // the matched tx hashes in the block
 
@@ -59,11 +64,12 @@ typedef union _UInt256 UInt256;
 
 - (instancetype)initWithMessage:(NSData *)message;
 - (instancetype)initWithBlockHash:(UInt256)blockHash version:(uint32_t)version prevBlock:(UInt256)prevBlock
-merkleRoot:(UInt256)merkleRoot timestamp:(uint32_t)timestamp target:(uint32_t)target nonce:(uint32_t)nonce
+merkleRoot:(UInt256)merkleRoot timestamp:(uint32_t)timestamp target:(uint32_t)target nonce:(uint32_t)nonce zerocoinAccumulator:(UInt256)zerocoinAccumulator
 totalTransactions:(uint32_t)totalTransactions hashes:(NSData *)hashes flags:(NSData *)flags height:(uint32_t)height;
 
 // true if the given tx hash is known to be included in the block
 - (BOOL)containsTxHash:(UInt256)txHash;
+- (BOOL)isZerocoin;
 
 // Verifies the block difficulty target is correct for the block's position in the chain.
 - (BOOL)verifyDifficultyWithPreviousBlocks:(NSMutableDictionary *)previousBlocks;

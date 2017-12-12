@@ -1029,6 +1029,7 @@ services:(uint64_t)services
     
     if (! block.valid) {
         //NSLog(@"%@:%u got merkleblock %@", self.host, self.port, block.blockHash);
+        NSLog(@"invalid merkleblock: %@",[NSData dataWithUInt256:block.blockHash].hexString);
         [self error:@"invalid merkleblock: %@", uint256_obj(block.blockHash)];
         return;
     }

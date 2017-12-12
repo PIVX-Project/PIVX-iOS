@@ -41,6 +41,7 @@
 @property (nonatomic) int32_t totalTransactions;
 @property (nonatomic, retain) NSData *hashes;
 @property (nonatomic, retain) NSData *flags;
+@property (nonatomic, retain) NSData *zerocoinAccumulator;
 
 - (instancetype)setAttributesFromBlock:(BRMerkleBlock *)block;
 - (BRMerkleBlock *)merkleBlock;

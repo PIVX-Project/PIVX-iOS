@@ -38,6 +38,7 @@
 @dynamic timestamp;
 @dynamic target;
 @dynamic nonce;
+@dynamic zerocoinAccumulator;
 @dynamic totalTransactions;
 @dynamic hashes;
 @dynamic flags;
@@ -56,6 +57,9 @@
         self.hashes = [NSData dataWithData:block.hashes];
         self.flags = [NSData dataWithData:block.flags];
         self.height = block.height;
+        if (self.version >3) {
+            self.zerocoinAccumulator = [NSData dataWithBytes:block.zerocoinAccumulator.u8 length:sizeof(UInt256)];
+        }
     }];
 
     return self;
@@ -67,13 +71,16 @@
     
     [self.managedObjectContext performBlockAndWait:^{
         NSData *blockHash = self.blockHash, *prevBlock = self.prevBlock, *merkleRoot = self.merkleRoot;
+        NSLog(@"%@",self.zerocoinAccumulator.hexString);
+        NSData *zerocoinAccumulator = self.zerocoinAccumulator;
         UInt256 hash = (blockHash.length == sizeof(UInt256)) ? *(const UInt256 *)blockHash.bytes : UINT256_ZERO,
                 prev = (prevBlock.length == sizeof(UInt256)) ? *(const UInt256 *)prevBlock.bytes : UINT256_ZERO,
-                root = (merkleRoot.length == sizeof(UInt256)) ? *(const UInt256 *)merkleRoot.bytes : UINT256_ZERO;
+        root = (merkleRoot.length == sizeof(UInt256)) ? *(const UInt256 *)merkleRoot.bytes : UINT256_ZERO;
+        
+        UInt256 zerocoinAcc = (zerocoinAccumulator!=nil && zerocoinAccumulator.length == sizeof(UInt256)) ? *(const UInt256 *)zerocoinAccumulator.bytes : UINT256_ZERO;
         
         block = [[BRMerkleBlock alloc] initWithBlockHash:hash version:self.version prevBlock:prev merkleRoot:root
-                 timestamp:self.timestamp + NSTimeIntervalSince1970 target:self.target nonce:self.nonce
-                 totalTransactions:self.totalTransactions hashes:self.hashes flags:self.flags height:self.height];
+                                               timestamp:self.timestamp + NSTimeIntervalSince1970 target:self.target nonce:self.nonce zerocoinAccumulator:zerocoinAcc totalTransactions:self.totalTransactions hashes:self.hashes flags:self.flags height:self.height];
     }];
     
     return block;
