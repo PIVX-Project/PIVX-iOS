@@ -45,13 +45,14 @@
 #define CIRCLE  @"\xE2\x97\x8C" // dotted circle (utf-8)
 #define DOT     @"\xE2\x97\x8F" // black circle (utf-8)
 
-#define UNSPENT_URL          @"http://insight.dash.org/insight-api-dash/addrs/utxo"
-#define UNSPENT_FAILOVER_URL @"https://insight.dash.siampm.com/api/addrs/utxo"
+// No Unspent servers yet.
+//#define UNSPENT_URL          @"http://insight.pivx.org/insight-api-pivx/addrs/utxo"
+//#define UNSPENT_FAILOVER_URL @"https://insight.pivx.furszy.com/api/addrs/utxo"
 #define FEE_PER_KB_URL       0 //not supported @"https://api.breadwallet.com/fee-per-kb"
 #define BITCOIN_TICKER_URL  @"https://bitpay.com/rates"
-#define POLONIEX_TICKER_URL  @"https://poloniex.com/public?command=returnOrderBook&currencyPair=BTC_DASH&depth=1"
+// PIVX is not in Poloniex yet ;P
+//#define POLONIEX_TICKER_URL  @"https://poloniex.com/public?command=returnOrderBook&currencyPair=BTC_PIVX&depth=1"
 #define COINMARKETCAP_TICKER_URL @"https://api.coinmarketcap.com/v1/ticker/pivx/"
-#define DASHCENTRAL_TICKER_URL  @"https://www.dashcentral.org/api/v1/public"
 #define TICKER_REFRESH_TIME 60.0
 
 #define SEED_ENTROPY_LENGTH   (128/8)
@@ -1357,7 +1358,7 @@ typedef BOOL (^PinVerificationBlock)(NSString * _Nonnull currentPin,BRWalletMana
     if (self.reachability.currentReachabilityStatus == NotReachable) return;
     
     
-    NSURLRequest *req = [NSURLRequest requestWithURL:[NSURL URLWithString:DASHCENTRAL_TICKER_URL]
+    NSURLRequest *req = [NSURLRequest requestWithURL:[NSURL URLWithString:COINMARKETCAP_TICKER_URL]
                                          cachePolicy:NSURLRequestReloadIgnoringCacheData timeoutInterval:30.0];
     
     [[[NSURLSession sharedSession] dataTaskWithRequest:req
@@ -1378,9 +1379,11 @@ typedef BOOL (^PinVerificationBlock)(NSString * _Nonnull currentPin,BRWalletMana
                                          }
                                          
                                          NSError *error = nil;
-                                         NSDictionary *json = [NSJSONSerialization JSONObjectWithData:data options:0 error:&error];
+                                         NSArray *json = [NSJSONSerialization JSONObjectWithData:data options:0 error:&error];
                                          if (!error) {
-                                             NSNumber * dash_usd = @([[[json objectForKey:@"exchange_rates"] objectForKey:@"btc_dash"] doubleValue]);
+                                             NSDictionary* jsonData = json.firstObject;
+                                             NSString * lastPrice = [jsonData objectForKey:@"price_btc"];
+                                             NSNumber * dash_usd = @([lastPrice doubleValue]);
                                              if (dash_usd && [dash_usd doubleValue] > 0) {
                                                  NSUserDefaults *defs = [NSUserDefaults standardUserDefaults];
                                                  
@@ -1474,17 +1477,19 @@ typedef BOOL (^PinVerificationBlock)(NSString * _Nonnull currentPin,BRWalletMana
 - (void)utxosForAddresses:(NSArray *)addresses
                completion:(void (^)(NSArray *utxos, NSArray *amounts, NSArray *scripts, NSError *error))completion
 {
-    [self utxos:UNSPENT_URL forAddresses:addresses
-     completion:^(NSArray *utxos, NSArray *amounts, NSArray *scripts, NSError *error) {
-         if (error) {
-             [self utxos:UNSPENT_FAILOVER_URL forAddresses:addresses
-              completion:^(NSArray *utxos, NSArray *amounts, NSArray *scripts, NSError *err) {
-                  if (err) err = error;
-                  completion(utxos, amounts, scripts, err);
-              }];
-         }
-         else completion(utxos, amounts, scripts, error);
-     }];
+    // TODO: This is commented because there is no insight server on PIVX yet.
+    
+//    [self utxos:UNSPENT_URL forAddresses:addresses
+//     completion:^(NSArray *utxos, NSArray *amounts, NSArray *scripts, NSError *error) {
+//         if (error) {
+//             [self utxos:UNSPENT_FAILOVER_URL forAddresses:addresses
+//              completion:^(NSArray *utxos, NSArray *amounts, NSArray *scripts, NSError *err) {
+//                  if (err) err = error;
+//                  completion(utxos, amounts, scripts, err);
+//              }];
+//         }
+//         else completion(utxos, amounts, scripts, error);
+//     }];
 }
 
 - (void)utxos:(NSString *)unspentURL forAddresses:(NSArray *)addresses
