@@ -50,6 +50,7 @@
 #define FEE_PER_KB_URL       0 //not supported @"https://api.breadwallet.com/fee-per-kb"
 #define BITCOIN_TICKER_URL  @"https://bitpay.com/rates"
 #define POLONIEX_TICKER_URL  @"https://poloniex.com/public?command=returnOrderBook&currencyPair=BTC_DASH&depth=1"
+#define COINMARKETCAP_TICKER_URL @"https://api.coinmarketcap.com/v1/ticker/pivx/"
 #define DASHCENTRAL_TICKER_URL  @"https://www.dashcentral.org/api/v1/public"
 #define TICKER_REFRESH_TIME 60.0
 
@@ -1286,7 +1287,7 @@ typedef BOOL (^PinVerificationBlock)(NSString * _Nonnull currentPin,BRWalletMana
     if (self.reachability.currentReachabilityStatus == NotReachable) return;
     
     
-    NSURLRequest *req = [NSURLRequest requestWithURL:[NSURL URLWithString:POLONIEX_TICKER_URL]
+    NSURLRequest *req = [NSURLRequest requestWithURL:[NSURL URLWithString:COINMARKETCAP_TICKER_URL]
                                          cachePolicy:NSURLRequestReloadIgnoringCacheData timeoutInterval:30.0];
     
     [[[NSURLSession sharedSession] dataTaskWithRequest:req
@@ -1305,27 +1306,40 @@ typedef BOOL (^PinVerificationBlock)(NSString * _Nonnull currentPin,BRWalletMana
                                              if (now > self.secureTime) [defs setDouble:now forKey:SECURE_TIME_KEY];
                                          }
                                          NSError *error = nil;
-                                         NSDictionary *json = [NSJSONSerialization JSONObjectWithData:data options:0 error:&error];
-                                         NSArray * asks = [json objectForKey:@"asks"];
-                                         NSArray * bids = [json objectForKey:@"bids"];
-                                         if ([asks count] && [bids count] && [[asks objectAtIndex:0] count] && [[bids objectAtIndex:0] count]) {
-                                             NSString * lastTradePriceStringAsks = [[asks objectAtIndex:0] objectAtIndex:0];
-                                             NSString * lastTradePriceStringBids = [[bids objectAtIndex:0] objectAtIndex:0];
-                                             if (lastTradePriceStringAsks && lastTradePriceStringBids) {
-                                                 NSNumberFormatter *numberFormatter = [[NSNumberFormatter alloc] init];
-                                                 NSLocale *usa = [[NSLocale alloc] initWithLocaleIdentifier:@"en_US"];
-                                                 numberFormatter.locale = usa;
-                                                 numberFormatter.numberStyle = NSNumberFormatterDecimalStyle;
-                                                 NSNumber *lastTradePriceNumberAsks = [numberFormatter numberFromString:lastTradePriceStringAsks];
-                                                 NSNumber *lastTradePriceNumberBids = [numberFormatter numberFromString:lastTradePriceStringBids];
-                                                 NSNumber * lastTradePriceNumber = @((lastTradePriceNumberAsks.floatValue + lastTradePriceNumberBids.floatValue) / 2);
-                                                 NSUserDefaults *defs = [NSUserDefaults standardUserDefaults];
-                                                 [defs setObject:lastTradePriceNumber forKey:POLONIEX_DASH_BTC_PRICE_KEY];
-                                                 [defs setObject:[NSDate date] forKey:POLONIEX_DASH_BTC_UPDATE_TIME_KEY];
-                                                 [defs synchronize];
-                                                 [self refreshBitcoinDashPrice];
-                                             }
-                                         }
+                                         NSArray *json = [NSJSONSerialization JSONObjectWithData:data options:0 error:&error];
+                                         NSDictionary* jsonData = json.firstObject;
+                                         NSString * lastPrice = [jsonData objectForKey:@"price_usd"];
+                                         NSNumberFormatter *numberFormatter = [[NSNumberFormatter alloc] init];
+                                         NSLocale *usa = [[NSLocale alloc] initWithLocaleIdentifier:@"en_US"];
+                                         numberFormatter.locale = usa;
+                                         numberFormatter.numberStyle = NSNumberFormatterDecimalStyle;
+                                         NSUserDefaults *defs = [NSUserDefaults standardUserDefaults];
+                                         NSNumber *lastTradePriceNumber = [numberFormatter numberFromString:lastPrice];
+                                         [defs setObject:lastTradePriceNumber forKey:POLONIEX_DASH_BTC_PRICE_KEY];
+                                         [defs setObject:[NSDate date] forKey:POLONIEX_DASH_BTC_UPDATE_TIME_KEY];
+                                         [defs synchronize];
+                                         [self refreshBitcoinDashPrice];
+                                         
+//                                         NSArray * asks = [json objectForKey:@"asks"];
+//                                         NSArray * bids = [json objectForKey:@"bids"];
+//                                         if ([asks count] && [bids count] && [[asks objectAtIndex:0] count] && [[bids objectAtIndex:0] count]) {
+//                                             NSString * lastTradePriceStringAsks = [[asks objectAtIndex:0] objectAtIndex:0];
+//                                             NSString * lastTradePriceStringBids = [[bids objectAtIndex:0] objectAtIndex:0];
+//                                             if (lastTradePriceStringAsks && lastTradePriceStringBids) {
+//                                                 NSNumberFormatter *numberFormatter = [[NSNumberFormatter alloc] init];
+//                                                 NSLocale *usa = [[NSLocale alloc] initWithLocaleIdentifier:@"en_US"];
+//                                                 numberFormatter.locale = usa;
+//                                                 numberFormatter.numberStyle = NSNumberFormatterDecimalStyle;
+//                                                 NSNumber *lastTradePriceNumberAsks = [numberFormatter numberFromString:lastTradePriceStringAsks];
+//                                                 NSNumber *lastTradePriceNumberBids = [numberFormatter numberFromString:lastTradePriceStringBids];
+//                                                 NSNumber * lastTradePriceNumber = @((lastTradePriceNumberAsks.floatValue + lastTradePriceNumberBids.floatValue) / 2);
+//                                                 NSUserDefaults *defs = [NSUserDefaults standardUserDefaults];
+//                                                 [defs setObject:lastTradePriceNumber forKey:POLONIEX_DASH_BTC_PRICE_KEY];
+//                                                 [defs setObject:[NSDate date] forKey:POLONIEX_DASH_BTC_UPDATE_TIME_KEY];
+//                                                 [defs synchronize];
+//                                                 [self refreshBitcoinDashPrice];
+//                                             }
+//                                         }
 #if EXCHANGE_RATES_LOGGING
                                          NSLog(@"poloniex exchange rate updated to %@/%@", [self localCurrencyStringForDashAmount:DUFFS],
                                                [self stringForDashAmount:DUFFS]);
