@@ -20,6 +20,9 @@ import UIKit
         scrollView.delegate = self
         scrollView.isPagingEnabled = true
         scrollView.showsHorizontalScrollIndicator = false
+        scrollView.alwaysBounceVertical = false
+        pageControl.pageIndicatorTintColor = UIColor.lightGray
+        pageControl.currentPageIndicatorTintColor = .white
         scrollViewHeightConstraint.constant = K.main.width * 4
         guard let step1 = Bundle.main.loadNibNamed("Step1View", owner: self, options: nil)?.first as? UIView,
         let step2 = Bundle.main.loadNibNamed("Step2View", owner: self, options: nil)?.first as? UIView,
@@ -41,13 +44,9 @@ import UIKit
     }
     
     func toGenerate(){
-//        if let count = navigationController?.viewControllers.count {
-//            if count > 1 {
-//                if let controller = navigationController?.viewControllers[count - 2] as? BRWelcomeViewController {
-//                    controller.toGenerate()
-//                }
-//            }
-//        }
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let controller = storyboard.instantiateViewController(withIdentifier: "BRWelcomeController")
+        navigationController?.show(controller, sender: nil)
     }
 
     @IBAction func tappedSkipButton(_ sender: Any) {

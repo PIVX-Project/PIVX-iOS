@@ -89,7 +89,8 @@
 {
     [super viewWillAppear:animated];
     [self.navigationController setNavigationBarHidden:FALSE animated:FALSE];
-    
+    [[self.navigationController navigationBar] setBarTintColor: UIColor.whiteColor];
+    [[self.navigationController navigationBar] setBackgroundImage:[UIImage imageNamed:@""] forBarMetrics: UIBarMetricsDefault];
     UIImage *image = [UIImage imageNamed:@"icBack"];
     self.navigationItem.hidesBackButton = TRUE;
     UIBarButtonItem *backButton = [[UIBarButtonItem alloc] initWithImage:image
