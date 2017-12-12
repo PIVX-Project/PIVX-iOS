@@ -33,6 +33,7 @@
 #import "BREventManager.h"
 #import "BRPeerManager.h"
 
+
 #define PHRASE_LENGTH 12
 
 
@@ -87,7 +88,17 @@
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
-
+    [self.navigationController setNavigationBarHidden:FALSE animated:FALSE];
+    
+    UIImage *image = [UIImage imageNamed:@"icBack"];
+    self.navigationItem.hidesBackButton = TRUE;
+    UIBarButtonItem *backButton = [[UIBarButtonItem alloc] initWithImage:image
+                                                                   style:UIBarButtonItemStylePlain target:self action:@selector(tappedBackButton)];
+    [backButton setTintColor: UIColor.blackColor];
+    
+    self.navigationItem.title = @"Recovery phrase";
+    self.navigationItem.leftBarButtonItem = backButton;
+    
     [self.textView becomeFirstResponder];
 }
 
@@ -96,6 +107,10 @@
     self.textView.text = nil;
     
     [super viewWillDisappear:animated];
+}
+
+-(void)tappedBackButton{
+    [self.navigationController popViewControllerAnimated:YES];
 }
 
 - (void)dealloc

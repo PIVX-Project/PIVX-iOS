@@ -59,6 +59,22 @@
     self.warningLabel.attributedText = s;
     //self.generateButton.superview.backgroundColor = [UIColor clearColor];
 }
+-(void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    [self.navigationController setNavigationBarHidden:FALSE animated:FALSE];
+    self.navigationItem.title = @"Create recovery phrase";
+    self.navigationItem.hidesBackButton = TRUE;
+    UIImage *image = [UIImage imageNamed:@"icBack"];
+    self.navigationItem.hidesBackButton = TRUE;
+    UIBarButtonItem *backButton = [[UIBarButtonItem alloc] initWithImage:image
+                                                                   style:UIBarButtonItemStylePlain target:self action:@selector(tappedBackButton)];
+    [backButton setTintColor: UIColor.whiteColor];
+    self.navigationItem.leftBarButtonItem = backButton;
+}
+
+-(void)tappedBackButton{
+    [self.navigationController popViewControllerAnimated:YES];
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
