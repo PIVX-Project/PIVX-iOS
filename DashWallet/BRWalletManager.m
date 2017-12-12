@@ -257,7 +257,7 @@ typedef BOOL (^PinVerificationBlock)(NSString * _Nonnull currentPin,BRWalletMana
     self.dashFormat.negativeFormat = [self.dashFormat.positiveFormat
                                       stringByReplacingCharactersInRange:[self.dashFormat.positiveFormat rangeOfString:@"#"]
                                       withString:@"-#"];
-    self.dashFormat.currencyCode = @"DASH";
+    self.dashFormat.currencyCode = @"PIVX";
     self.dashFormat.currencySymbol = DASH NARROW_NBSP;
     self.dashFormat.maximumFractionDigits = 8;
     self.dashFormat.minimumFractionDigits = 0; // iOS 8 bug, minimumFractionDigits now has to be set after currencySymbol
@@ -270,7 +270,7 @@ typedef BOOL (^PinVerificationBlock)(NSString * _Nonnull currentPin,BRWalletMana
     self.dashSignificantFormat.negativeFormat = [self.dashFormat.positiveFormat
                                                  stringByReplacingCharactersInRange:[self.dashFormat.positiveFormat rangeOfString:@"#"]
                                                  withString:@"-#"];
-    self.dashSignificantFormat.currencyCode = @"DASH";
+    self.dashSignificantFormat.currencyCode = @"PIVX";
     self.dashSignificantFormat.currencySymbol = DASH NARROW_NBSP;
     self.dashSignificantFormat.usesSignificantDigits = TRUE;
     self.dashSignificantFormat.minimumSignificantDigits = 1;
@@ -1320,27 +1320,6 @@ typedef BOOL (^PinVerificationBlock)(NSString * _Nonnull currentPin,BRWalletMana
                                          [defs setObject:[NSDate date] forKey:POLONIEX_DASH_BTC_UPDATE_TIME_KEY];
                                          [defs synchronize];
                                          [self refreshBitcoinDashPrice];
-                                         
-//                                         NSArray * asks = [json objectForKey:@"asks"];
-//                                         NSArray * bids = [json objectForKey:@"bids"];
-//                                         if ([asks count] && [bids count] && [[asks objectAtIndex:0] count] && [[bids objectAtIndex:0] count]) {
-//                                             NSString * lastTradePriceStringAsks = [[asks objectAtIndex:0] objectAtIndex:0];
-//                                             NSString * lastTradePriceStringBids = [[bids objectAtIndex:0] objectAtIndex:0];
-//                                             if (lastTradePriceStringAsks && lastTradePriceStringBids) {
-//                                                 NSNumberFormatter *numberFormatter = [[NSNumberFormatter alloc] init];
-//                                                 NSLocale *usa = [[NSLocale alloc] initWithLocaleIdentifier:@"en_US"];
-//                                                 numberFormatter.locale = usa;
-//                                                 numberFormatter.numberStyle = NSNumberFormatterDecimalStyle;
-//                                                 NSNumber *lastTradePriceNumberAsks = [numberFormatter numberFromString:lastTradePriceStringAsks];
-//                                                 NSNumber *lastTradePriceNumberBids = [numberFormatter numberFromString:lastTradePriceStringBids];
-//                                                 NSNumber * lastTradePriceNumber = @((lastTradePriceNumberAsks.floatValue + lastTradePriceNumberBids.floatValue) / 2);
-//                                                 NSUserDefaults *defs = [NSUserDefaults standardUserDefaults];
-//                                                 [defs setObject:lastTradePriceNumber forKey:POLONIEX_DASH_BTC_PRICE_KEY];
-//                                                 [defs setObject:[NSDate date] forKey:POLONIEX_DASH_BTC_UPDATE_TIME_KEY];
-//                                                 [defs synchronize];
-//                                                 [self refreshBitcoinDashPrice];
-//                                             }
-//                                         }
 #if EXCHANGE_RATES_LOGGING
                                          NSLog(@"poloniex exchange rate updated to %@/%@", [self localCurrencyStringForDashAmount:DUFFS],
                                                [self stringForDashAmount:DUFFS]);

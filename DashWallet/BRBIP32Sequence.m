@@ -189,7 +189,7 @@ static BOOL deserialize(NSString * string, uint8_t * depth, uint32_t * fingerpri
     
     if (purpose == 44) {
         CKDpriv(&secret, &chain, 44 | BIP32_HARD); // purpose 44H
-        CKDpriv(&secret, &chain, 5 | BIP32_HARD); // dash 5H
+        CKDpriv(&secret, &chain, 119 | BIP32_HARD); // dash 119H
     }
     CKDpriv(&secret, &chain, 0 | BIP32_HARD); // account 0H
     
@@ -214,7 +214,7 @@ static BOOL deserialize(NSString * string, uint8_t * depth, uint32_t * fingerpri
     
     if (purpose == 44) {
         CKDpriv(&secret, &chain, 44 | BIP32_HARD); // purpose 44H
-        CKDpriv(&secret, &chain, 5 | BIP32_HARD); // dash 5H
+        CKDpriv(&secret, &chain, 119 | BIP32_HARD); // pivx 119H
     }
     [mpk appendBytes:[BRKey keyWithSecret:secret compressed:YES].hash160.u32 length:4];
     CKDpriv(&secret, &chain, account | BIP32_HARD); // account 0H
@@ -263,7 +263,7 @@ static BOOL deserialize(NSString * string, uint8_t * depth, uint32_t * fingerpri
 
     if (purpose == 44) {
         CKDpriv(&secret, &chain, 44 | BIP32_HARD); // purpose 44H
-        CKDpriv(&secret, &chain, 5 | BIP32_HARD); // dash 5H
+        CKDpriv(&secret, &chain, 119 | BIP32_HARD); // pivx 119H
     }
     CKDpriv(&secret, &chain, 0 | BIP32_HARD); // account 0H
     CKDpriv(&secret, &chain, internal ? 1 : 0); // internal or external chain
