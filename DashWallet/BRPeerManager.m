@@ -53,13 +53,14 @@
 #if DASH_TESTNET
 
 static const struct { uint32_t height; const char *hash; uint32_t timestamp; uint32_t target; } checkpoint_array[] = {
-    {           0, "0000041e482b9b9691d98eefb48473405c0b8ec31b76df3797c74a78680ef818", 1454124731, 0x1e0ffff0u }
+    {           0, "0000041e482b9b9691d98eefb48473405c0b8ec31b76df3797c74a78680ef818", 1454124731, 0x1e0ffff0u },
+     {   201561, "5d320895adf1c5da8b76d73b2d9af71903e0e894bf1438817fe674cf116bb64c", 1501775867, 0x1b00c86du }
 //    {        2999, "0000024bc3f4f4cb30d29827c13d921ad77d2c6072e586c7f60d83c2722cdcc5", 1462856598, 0x1e03ffffu },
 //    {        5000, "0000000097e4be8abd515e45947b165b367955457ef7b7efedf9e7e30fc059d0", 1507271366, 0x1d014188u }
 };
 
 static const char *dns_seeds[] = {
-   "192.168.1.33", "pivx-testnet.seed.fuzzbawls.pw","pivx-testnet.seed2.fuzzbawls.pw"//"192.168.0.117","pivx-testnet.seed.fuzzbawls.pw",  //"testnet-seed.dashdot.io"//,"testnet-seed.dashpay.info"
+   "192.168.1.131", "pivx-testnet.seed.fuzzbawls.pw","pivx-testnet.seed2.fuzzbawls.pw"//"192.168.0.117","pivx-testnet.seed.fuzzbawls.pw",  //"testnet-seed.dashdot.io"//,"testnet-seed.dashpay.info"
 };
 
 #else // main net
