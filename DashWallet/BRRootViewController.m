@@ -112,6 +112,7 @@
     self.sendViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"SendViewController"];
     self.pageViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"PageViewController"];
     
+    
     self.pageViewController.dataSource = self;
     [self.pageViewController setViewControllers:@[self.sendViewController]
                                       direction:UIPageViewControllerNavigationDirectionForward animated:NO completion:nil];
