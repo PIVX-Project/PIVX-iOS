@@ -62,7 +62,7 @@
     [[UIApplication sharedApplication] setMinimumBackgroundFetchInterval:UIApplicationBackgroundFetchIntervalMinimum];
 
     UIPageControl.appearance.pageIndicatorTintColor = [UIColor lightGrayColor];
-    UIPageControl.appearance.currentPageIndicatorTintColor = [UIColor blueColor];
+    UIPageControl.appearance.currentPageIndicatorTintColor = [UIColor whiteColor];
     
     UIImage * tabBarImage = [[UIImage imageNamed:@"tab-bar-dash"]
      resizableImageWithCapInsets:UIEdgeInsetsMake(0, 0, 0, 0) resizingMode:UIImageResizingModeStretch];

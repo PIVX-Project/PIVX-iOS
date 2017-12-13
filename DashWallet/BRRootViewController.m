@@ -112,6 +112,7 @@
     self.sendViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"SendViewController"];
     self.pageViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"PageViewController"];
     
+    
     self.pageViewController.dataSource = self;
     [self.pageViewController setViewControllers:@[self.sendViewController]
                                       direction:UIPageViewControllerNavigationDirectionForward animated:NO completion:nil];
@@ -480,6 +481,12 @@
 {
     [super viewWillAppear:animated];
     [self addMenuButton];
+    UIColor *color = [UIColor rgb:85 green:71 blue:108 alpha:1];
+    //UIColor *color = [UIColor colorWithRed:85.0f/255.0f green:71.0f/255.0f blue:188/255.0f alpha:1.0f];
+    [[self.navigationController navigationBar] setTranslucent:FALSE];
+    [[self.navigationController navigationBar] setShadowImage:[UIImage imageNamed:@""]];
+    [[self.navigationController navigationBar] setBarTintColor: color];
+    [[self.navigationController navigationBar] setBackgroundImage:[UIImage imageNamed:@""] forBarMetrics: UIBarMetricsDefault];
     //self.navigationItem.leftBarButtonItem.image = [UIImage imageNamed:@"burger"];
     self.pageViewController.view.alpha = 1.0;
     if ([BRWalletManager sharedInstance].didAuthenticate) [self unlock:nil];
