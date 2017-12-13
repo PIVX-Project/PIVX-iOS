@@ -32,7 +32,7 @@
         <!--ƀ 0.00 ($0.00)-->
         <scene sceneID="mZ6-bm-XCg">
             <objects>
-                <tableViewController id="6Bl-Zl-U7O" userLabel="ƀ 0.00 ($0.00)" customClass="BRTxHistoryViewController" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="BRTxHistory" id="6Bl-Zl-U7O" userLabel="ƀ 0.00 ($0.00)" customClass="BRTxHistoryViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" directionalLockEnabled="YES" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="yY7-Yi-IXT">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -297,9 +297,9 @@
                     <navigationItem key="navigationItem" id="h6T-AD-8zb">
                         <nil key="title"/>
                         <barButtonItem key="backBarButtonItem" title=" " id="hWS-2G-hHE"/>
-                        <barButtonItem key="leftBarButtonItem" image="x" id="nxH-ZN-jve">
+                        <barButtonItem key="leftBarButtonItem" image="burger" id="nxH-ZN-jve">
                             <connections>
-                                <action selector="done:" destination="6Bl-Zl-U7O" id="qIl-sF-2Yi"/>
+                                <action selector="tappedMenuButton:" destination="6Bl-Zl-U7O" id="C2V-Qw-T5S"/>
                             </connections>
                         </barButtonItem>
                         <view key="titleView" contentMode="scaleToFill" id="zEA-kZ-fl3">
@@ -447,11 +447,6 @@
                     <navigationItem key="navigationItem" id="3hG-i3-g4Y">
                         <nil key="title"/>
                         <barButtonItem key="backBarButtonItem" title=" " id="Huq-Vk-LaF"/>
-                        <barButtonItem key="leftBarButtonItem" image="burger" id="lsn-hc-KRM">
-                            <connections>
-                                <segue destination="zyy-VL-f65" kind="presentation" identifier="SettingsSegue" id="Eks-ag-H7f"/>
-                            </connections>
-                        </barButtonItem>
                         <view key="titleView" contentMode="scaleToFill" id="Rxa-kr-LOc">
                             <rect key="frame" x="160" y="14.666666666666664" width="94" height="15"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -2766,6 +2761,5 @@ Other devices may be infected.
         <image name="refresh" width="9" height="11"/>
         <image name="shapeshift" width="64" height="64"/>
         <image name="wallpaper-default" width="758" height="568"/>
-        <image name="x" width="20" height="16"/>
     </resources>
 </document>
