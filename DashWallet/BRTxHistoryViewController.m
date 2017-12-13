@@ -38,6 +38,7 @@
 #import "BREventManager.h"
 #import "NSString+Dash.h"
 #import <WebKit/WebKit.h>
+#import "dashwallet-Swift.h"
 
 #define TRANSACTION_CELL_HEIGHT 75
 
@@ -343,6 +344,9 @@ static NSString *dateFormat(NSString *template)
 }
 
 // MARK: - IBAction
+- (IBAction)tappedMenuButton:(id)sender {
+    [Utils openLeftMenu];
+}
 
 - (IBAction)done:(id)sender
 {

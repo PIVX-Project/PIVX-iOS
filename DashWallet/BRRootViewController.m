@@ -479,10 +479,23 @@
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
-    
-    self.navigationItem.leftBarButtonItem.image = [UIImage imageNamed:@"burger"];
+    [self addMenuButton];
+    //self.navigationItem.leftBarButtonItem.image = [UIImage imageNamed:@"burger"];
     self.pageViewController.view.alpha = 1.0;
     if ([BRWalletManager sharedInstance].didAuthenticate) [self unlock:nil];
+}
+
+-(void)addMenuButton {
+    UIImage *image = [UIImage imageNamed:@"burger"];
+    self.navigationItem.hidesBackButton = TRUE;
+    UIBarButtonItem *menuButton = [[UIBarButtonItem alloc] initWithImage:image
+                                                                   style:UIBarButtonItemStylePlain target:self action:@selector(tappedMenuButton)];
+    [menuButton setTintColor: UIColor.whiteColor];
+    self.navigationItem.leftBarButtonItem = menuButton;
+}
+
+-(void)tappedMenuButton{
+    [Utils openLeftMenu];
 }
 
 - (void)viewDidAppear:(BOOL)animated
@@ -1239,6 +1252,7 @@
         [self.pulse removeFromSuperview];
     }
 }
+
 #endif
 
 // MARK: - UIPageViewControllerDataSource

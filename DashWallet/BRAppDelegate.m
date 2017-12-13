@@ -111,6 +111,11 @@
     // observe balance and create notifications
     [self setupBalanceNotification:application];
     [self setupPreferenceDefaults];
+    
+
+    SlideMenuController *controller = [Utils toHome];
+    _window.rootViewController = controller;
+    [_window makeKeyAndVisible];    
     return YES;
 }
 
