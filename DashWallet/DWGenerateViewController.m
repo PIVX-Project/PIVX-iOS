@@ -29,10 +29,6 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    dispatch_async(dispatch_get_main_queue(), ^{ // animation sometimes doesn't work if run directly in viewDidAppear
-        [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
-    });
-    
     self.generateButton.titleLabel.adjustsFontSizeToFitWidth = YES;
     
 #pragma clang diagnostic push

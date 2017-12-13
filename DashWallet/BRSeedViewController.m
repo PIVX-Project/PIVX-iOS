@@ -28,6 +28,7 @@
 #import "BRPeerManager.h"
 #import "NSMutableData+Bitcoin.h"
 #import "BREventManager.h"
+#import "dashwallet-Swift.h"
 
 
 #define LABEL_MARGIN       20.0
@@ -43,7 +44,6 @@
 @property (nonatomic, strong) IBOutlet UIButton *writeButton;
 @property (nonatomic, strong) IBOutlet UIToolbar *toolbar;
 @property (nonatomic, strong) IBOutlet UIBarButtonItem *remindButton, *doneButton;
-@property (nonatomic, strong) IBOutlet UIImageView *wallpaper;
 
 @property (nonatomic, strong) id resignActiveObserver, screenshotObserver;
 
@@ -89,13 +89,9 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    if (self.navigationController.viewControllers.firstObject != self) {
-        self.wallpaper.hidden = YES;
-        self.view.backgroundColor = [UIColor clearColor];
-    }
-    
     self.doneButton = [[UIBarButtonItem alloc] initWithTitle:NSLocalizedString(@"done", nil)
                        style:UIBarButtonItemStylePlain target:self action:@selector(done:)];
+    self.doneButton.tintColor = [UIColor rgb:85 green:71 blue:108 alpha:1];
     
     
 #if DEBUG
@@ -105,6 +101,10 @@
 
 -(UIStatusBarStyle)preferredStatusBarStyle {
     return UIStatusBarStyleLightContent;
+}
+
+-(BOOL)prefersStatusBarHidden {
+    return FALSE;
 }
 
 - (void)viewWillAppear:(BOOL)animated
@@ -250,7 +250,7 @@
 {
     [BREventManager saveEvent:@"seed:dismiss"];
     if (self.navigationController.viewControllers.firstObject != self) return;
-    
+
     self.navigationController.presentingViewController.modalTransitionStyle = UIModalTransitionStyleCoverVertical;
     [self.navigationController.presentingViewController.presentingViewController dismissViewControllerAnimated:YES
      completion:nil];
