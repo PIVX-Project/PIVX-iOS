@@ -9,6 +9,7 @@
 #import "DWGenerateViewController.h"
 #import "BREventManager.h"
 #import "BRWalletManager.h"
+#import "dashwallet-Swift.h"
 
 @interface DWGenerateViewController ()
 
@@ -27,6 +28,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    dispatch_async(dispatch_get_main_queue(), ^{ // animation sometimes doesn't work if run directly in viewDidAppear
+        [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
+    });
     
     self.generateButton.titleLabel.adjustsFontSizeToFitWidth = YES;
     
@@ -61,7 +66,14 @@
 }
 -(void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
+    
     [self.navigationController setNavigationBarHidden:FALSE animated:FALSE];
+    UIColor *color = [UIColor rgb:85 green:71 blue:108 alpha:1];
+    //UIColor *color = [UIColor colorWithRed:85.0f/255.0f green:71.0f/255.0f blue:188/255.0f alpha:1.0f];
+    [[self.navigationController navigationBar] setTranslucent:FALSE];
+    [[self.navigationController navigationBar] setShadowImage:[UIImage imageNamed:@""]];
+    [[self.navigationController navigationBar] setBarTintColor: color];
+    [[self.navigationController navigationBar] setBackgroundImage:[UIImage imageNamed:@""] forBarMetrics: UIBarMetricsDefault];
     self.navigationItem.title = @"Create recovery phrase";
     self.navigationItem.hidesBackButton = TRUE;
     UIImage *image = [UIImage imageNamed:@"icBack"];
@@ -70,6 +82,14 @@
                                                                    style:UIBarButtonItemStylePlain target:self action:@selector(tappedBackButton)];
     [backButton setTintColor: UIColor.whiteColor];
     self.navigationItem.leftBarButtonItem = backButton;
+}
+
+-(UIStatusBarStyle)preferredStatusBarStyle {
+    return UIStatusBarStyleLightContent;
+}
+
+-(BOOL)prefersStatusBarHidden {
+    return FALSE;
 }
 
 -(void)tappedBackButton{

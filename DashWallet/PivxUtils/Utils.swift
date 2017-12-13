@@ -14,12 +14,12 @@ import UIKit
 class Utils: NSObject {
 
     static func configureNavigationBar(){
-        //UINavigationBar.appearance().setBackgroundImage(UIImage(), for:.default)
-        //UINavigationBar.appearance().shadowImage = UIImage()
+        UINavigationBar.appearance().setBackgroundImage(UIImage(), for:.default)
+        UINavigationBar.appearance().shadowImage = UIImage()
         UINavigationBar.appearance().barTintColor = K.color.purple_r85g71b108
         UINavigationBar.appearance().tintColor = .white
-        //UINavigationBar.appearance().isTranslucent = false
-        //UINavigationBar.appearance().backgroundColor = K.color.purple_r85g71b108
+        UINavigationBar.appearance().isTranslucent = false
+        UINavigationBar.appearance().backgroundColor = K.color.purple_r85g71b108
         UINavigationBar.appearance().titleTextAttributes = [NSAttributedStringKey.foregroundColor:UIColor.white]
     }
     

@@ -31,10 +31,7 @@
 
 @interface BRWelcomeViewController ()
 
-@property (nonatomic, assign) BOOL hasAppeared, animating;
-
 @property (nonatomic, strong) IBOutlet UIButton *newwalletButton, *recoverButton;
-
 
 @end
 
@@ -77,18 +74,13 @@
         [[UIApplication sharedApplication] setStatusBarHidden:NO];
         self.navigationItem.titleView.hidden = NO;
         self.navigationItem.titleView.alpha = 1.0;
-        self.logoXCenter.constant = self.view.frame.size.width;
-        self.walletXCenter.constant = self.restoreXCenter.constant = 0.0;
         return;
 #endif
 
         if (! [BRWalletManager sharedInstance].noWallet) { // sanity check
             [self.navigationController.presentingViewController dismissViewControllerAnimated:NO completion:nil];
         }
-
-        if (! self.hasAppeared) {
-            self.hasAppeared = YES;
-        }
+        
     });
 }
 

@@ -45,6 +45,7 @@
 #import <LocalAuthentication/LocalAuthentication.h>
 #import <sys/stat.h>
 #import <mach-o/dyld.h>
+#import "dashwallet-Swift.h"
 
 #define BALANCE_TIP_START NSLocalizedString(@"This is your dash balance.", nil)
 
@@ -544,14 +545,19 @@
             [self presentViewController:alert animated:YES completion:nil];
         }
         else {
-            [self.navigationController
-             presentViewController:[self.storyboard instantiateViewControllerWithIdentifier:@"NewWalletNav"] animated:NO
-             completion:^{
-                 self.splash.hidden = YES;
-                 self.navigationController.navigationBar.hidden = NO;
-                 [self.pageViewController setViewControllers:@[self.receiveViewController]
-                                                   direction:UIPageViewControllerNavigationDirectionForward animated:NO completion:nil];
-             }];
+            SetupController *controller = [[SetupController alloc] initWithNibName:@"Setup" bundle:nil];
+            UINavigationController *navigation = [[UINavigationController alloc] initWithRootViewController:controller];
+            [self.navigationController presentViewController:navigation animated:TRUE completion:nil];
+            
+//            [self.navigationController
+//             presentViewController:[self.storyboard instantiateViewControllerWithIdentifier:@"NewWalletNav"] animated:NO
+//             completion:^{
+//
+//                 self.splash.hidden = YES;
+//                 self.navigationController.navigationBar.hidden = NO;
+//                 [self.pageViewController setViewControllers:@[self.receiveViewController]
+//                                                   direction:UIPageViewControllerNavigationDirectionForward animated:NO completion:nil];
+//             }];
             
             manager.didAuthenticate = YES;
             self.showTips = YES;

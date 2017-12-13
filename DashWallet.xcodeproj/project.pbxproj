@@ -28,6 +28,13 @@
 		2B57356F1FE04C4200110745 /* PivxExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B57356B1FE04C4200110745 /* PivxExtensions.swift */; };
 		2B5735701FE04C4200110745 /* UIView+Anchors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B57356C1FE04C4200110745 /* UIView+Anchors.swift */; };
 		2B5735711FE04C4200110745 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B57356D1FE04C4200110745 /* Constants.swift */; };
+		2B5735761FE086F500110745 /* SetupController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B5735751FE086F500110745 /* SetupController.swift */; };
+		2B57357A1FE087D800110745 /* Setup.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2B5735791FE087D800110745 /* Setup.xib */; };
+		2B5735801FE0882B00110745 /* Step2View.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2B57357C1FE0882B00110745 /* Step2View.xib */; };
+		2B5735811FE0882B00110745 /* Step1View.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2B57357D1FE0882B00110745 /* Step1View.xib */; };
+		2B5735821FE0882B00110745 /* Step3View.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2B57357E1FE0882B00110745 /* Step3View.xib */; };
+		2B5735831FE0882B00110745 /* Step4View.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2B57357F1FE0882B00110745 /* Step4View.xib */; };
+		2BFA52371FE08A8300A3C808 /* BaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BFA52361FE08A8300A3C808 /* BaseController.swift */; };
 		31D68B531C23B6C10030FAAA /* DashWalletUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31D68B521C23B6C10030FAAA /* DashWalletUITests.swift */; };
 		31D68B5B1C23B6FD0030FAAA /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31D68B5A1C23B6FD0030FAAA /* SnapshotHelper.swift */; };
 		6BA7F2911FDF048100C1027B /* quark.c in Sources */ = {isa = PBXBuildFile; fileRef = 6BA7F2901FDF048100C1027B /* quark.c */; };
@@ -237,6 +244,13 @@
 		2B57356B1FE04C4200110745 /* PivxExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PivxExtensions.swift; path = PivxUtils/PivxExtensions.swift; sourceTree = "<group>"; };
 		2B57356C1FE04C4200110745 /* UIView+Anchors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIView+Anchors.swift"; path = "PivxUtils/UIView+Anchors.swift"; sourceTree = "<group>"; };
 		2B57356D1FE04C4200110745 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Constants.swift; path = PivxUtils/Constants.swift; sourceTree = "<group>"; };
+		2B5735751FE086F500110745 /* SetupController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SetupController.swift; path = PivxControllers/SetupController.swift; sourceTree = "<group>"; };
+		2B5735791FE087D800110745 /* Setup.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = Setup.xib; path = PivxNibs/Controllers/Setup.xib; sourceTree = "<group>"; };
+		2B57357C1FE0882B00110745 /* Step2View.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = Step2View.xib; path = PivxNibs/Views/Step2View.xib; sourceTree = "<group>"; };
+		2B57357D1FE0882B00110745 /* Step1View.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = Step1View.xib; path = PivxNibs/Views/Step1View.xib; sourceTree = "<group>"; };
+		2B57357E1FE0882B00110745 /* Step3View.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = Step3View.xib; path = PivxNibs/Views/Step3View.xib; sourceTree = "<group>"; };
+		2B57357F1FE0882B00110745 /* Step4View.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = Step4View.xib; path = PivxNibs/Views/Step4View.xib; sourceTree = "<group>"; };
+		2BFA52361FE08A8300A3C808 /* BaseController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BaseController.swift; path = PivxControllers/BaseController.swift; sourceTree = "<group>"; };
 		31D68B501C23B6C10030FAAA /* DashWalletUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DashWalletUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		31D68B521C23B6C10030FAAA /* DashWalletUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashWalletUITests.swift; sourceTree = "<group>"; };
 		31D68B541C23B6C10030FAAA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -619,6 +633,43 @@
 			name = PivxUtils;
 			sourceTree = "<group>";
 		};
+		2B5735741FE0858A00110745 /* PivxControllers */ = {
+			isa = PBXGroup;
+			children = (
+				2BFA52361FE08A8300A3C808 /* BaseController.swift */,
+				2B5735751FE086F500110745 /* SetupController.swift */,
+			);
+			name = PivxControllers;
+			sourceTree = "<group>";
+		};
+		2B5735771FE0874000110745 /* PivxNibs */ = {
+			isa = PBXGroup;
+			children = (
+				2B57357B1FE0881100110745 /* Views */,
+				2B5735781FE087B500110745 /* Controllers */,
+			);
+			name = PivxNibs;
+			sourceTree = "<group>";
+		};
+		2B5735781FE087B500110745 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				2B5735791FE087D800110745 /* Setup.xib */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		2B57357B1FE0881100110745 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2B57357D1FE0882B00110745 /* Step1View.xib */,
+				2B57357C1FE0882B00110745 /* Step2View.xib */,
+				2B57357E1FE0882B00110745 /* Step3View.xib */,
+				2B57357F1FE0882B00110745 /* Step4View.xib */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
 		31D68B511C23B6C10030FAAA /* DashWalletUITests */ = {
 			isa = PBXGroup;
 			children = (
@@ -891,6 +942,8 @@
 		75D5F3C7191EC270004AB296 /* DashWallet */ = {
 			isa = PBXGroup;
 			children = (
+				2B5735771FE0874000110745 /* PivxNibs */,
+				2B5735741FE0858A00110745 /* PivxControllers */,
 				2B5735661FE04BC400110745 /* PivxAssets.xcassets */,
 				75D5F3DF191EC270004AB296 /* Images.xcassets */,
 				75D5F3D0191EC270004AB296 /* BRAppDelegate.h */,
@@ -1322,8 +1375,13 @@
 			files = (
 				75D5F3E0191EC270004AB296 /* Images.xcassets in Resources */,
 				757E09991ADB8EEB006FD352 /* Localizable.strings in Resources */,
+				2B5735811FE0882B00110745 /* Step1View.xib in Resources */,
 				75F2E0D31BE9803900EAE861 /* Launch Screen.storyboard in Resources */,
+				2B57357A1FE087D800110745 /* Setup.xib in Resources */,
+				2B5735831FE0882B00110745 /* Step4View.xib in Resources */,
 				2B5735671FE04BC400110745 /* PivxAssets.xcassets in Resources */,
+				2B5735821FE0882B00110745 /* Step3View.xib in Resources */,
+				2B5735801FE0882B00110745 /* Step2View.xib in Resources */,
 				75C0E3BF1B1BA294007BC531 /* BIP39Words.plist in Resources */,
 				75E83CF61B5F997A0038FB70 /* coinflip.aiff in Resources */,
 				755FC9ED1BF1DF1B00164ABB /* BREventConfirmView.xib in Resources */,
@@ -1416,6 +1474,7 @@
 			files = (
 				22F04A001C9714EF00F137D8 /* BRUserDefaultsSwitchCell.m in Sources */,
 				752E28AA19234AE300DB5A3C /* BRAddressEntity.m in Sources */,
+				2BFA52371FE08A8300A3C808 /* BaseController.swift in Sources */,
 				75AA5F55194143D5003F23BD /* BRBouncyBurgerButton.m in Sources */,
 				752E28AB19234AE300DB5A3C /* BRMerkleBlockEntity.m in Sources */,
 				BA7B53501BDA9A2800355E8D /* BRAppleWatchData.m in Sources */,
@@ -1429,6 +1488,7 @@
 				2B5735701FE04C4200110745 /* UIView+Anchors.swift in Sources */,
 				22DE8CF11D02407F007F07F3 /* BRWalletConstants.m in Sources */,
 				FBF2680F1E419318001A1C8B /* DSShapeshiftEntity+CoreDataProperties.m in Sources */,
+				2B5735761FE086F500110745 /* SetupController.swift in Sources */,
 				BAA4843C1B3EFFAF0075C749 /* UIImage+Utils.m in Sources */,
 				BA7B535C1BDBC36700355E8D /* BRTransaction+Utils.m in Sources */,
 				758DBD0E1980634900389E2A /* BRTxDetailViewController.m in Sources */,
