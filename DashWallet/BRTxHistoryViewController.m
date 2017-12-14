@@ -36,6 +36,7 @@
 #import "UIImage+Utils.h"
 #import "BREventConfirmView.h"
 #import "BREventManager.h"
+#import "BRSendViewController.h"
 #import "NSString+Dash.h"
 #import <WebKit/WebKit.h>
 #import "dashwallet-Swift.h"
@@ -399,10 +400,15 @@ static NSString *dateFormat(NSString *template)
 
     nav.view.alpha = 0.0;
 
-    [nav dismissViewControllerAnimated:NO completion:^{
-        [(id)((BRRootViewController *)nav.viewControllers.firstObject).sendViewController scanQR:nil];
-        [UIView animateWithDuration:0.1 delay:1.5 options:0 animations:^{ nav.view.alpha = 1.0; } completion:nil];
-    }];
+    BRRootViewController *controller = (BRRootViewController *)[[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"RootViewController"];
+    
+    [Utils showScanController];
+    
+    
+    //[nav dismissViewControllerAnimated:NO completion:^{
+        //[(id)((BRRootViewController *)nav.viewControllers.firstObject).sendViewController scanQR:nil];
+        //[UIView animateWithDuration:0.1 delay:1.5 options:0 animations:^{ nav.view.alpha = 1.0; } completion:nil];
+    //}];
 }
 
 - (IBAction)showTx:(id)sender

@@ -1606,6 +1606,10 @@ static NSString *sanitizeString(NSString *s)
     [[NSUserDefaults standardUserDefaults] setBool:self.sendInstantly forKey:SEND_INSTANTLY_KEY];
 }
 
+-(void)actionQrScan{
+    [self scanQR:nil];
+}
+
 - (IBAction)scanQR:(id)sender
 {
     if ([self nextTip]) return;
