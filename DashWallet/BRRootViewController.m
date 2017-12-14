@@ -790,7 +790,7 @@
                                      alertControllerWithTitle:NSLocalizedString(@"WARNING", nil)
                                      message:[NSString stringWithFormat:@"\n%@\n\n%@\n\n%@\n",
                                               [NSLocalizedString(@"\nDO NOT let anyone see your recovery\n"
-                                                                 "phrase or they can spend your dash.\n", nil)
+                                                                 "phrase or they can spend your PIVX.\n", nil)
                                                stringByTrimmingCharactersInSet:[NSCharacterSet newlineCharacterSet]],
                                               [NSLocalizedString(@"\nNEVER type your recovery phrase into\n"
                                                                  "password managers or elsewhere.\n"
@@ -1086,7 +1086,7 @@
     
     [defs setDouble:now forKey:BACKUP_DIALOG_TIME_KEY];
     UIAlertController * alert = [UIAlertController
-                                 alertControllerWithTitle:(first) ? NSLocalizedString(@"you received dash!", nil) : NSLocalizedString(@"IMPORTANT", nil)
+                                 alertControllerWithTitle:(first) ? NSLocalizedString(@"you received PIVX!", nil) : NSLocalizedString(@"IMPORTANT", nil)
                                  message:[NSString stringWithFormat:NSLocalizedString(@"\n%@\n\nif you ever lose your phone, you will need it to "
                                                                                       "recover your wallet", nil),
                                           (first) ? NSLocalizedString(@"next, write down your recovery phrase", nil) :
