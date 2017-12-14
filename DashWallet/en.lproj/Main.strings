@@ -72,7 +72,7 @@
 "ooJ-EA-DFl.title" = "recovery phrase:";
 
 /* Class = "UILabel"; text = "Receive DASH"; ObjectID = "qel-3J-2VC"; */
-"qel-3J-2VC.text" = "Receive DASH";
+"qel-3J-2VC.text" = "Receive PIVX";
 
 /* Class = "UITableViewController"; title = "transaction details"; ObjectID = "s4T-yd-VfX"; */
 "s4T-yd-VfX.title" = "transaction details";
