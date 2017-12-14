@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DonationController" customModule="breadwallet" customModuleProvider="target">
+            <connections>
+                <outlet property="amountTextField" destination="EqV-DH-5M4" id="6gK-GI-xSO"/>
+                <outlet property="donateButton" destination="Bp6-Yn-3zz" id="x3i-VF-CMW"/>
+                <outlet property="view" destination="iN0-l3-epB" id="SRv-qn-9wK"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Donations help with the maintenance and development of the app. Thanks in advance." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I1y-tx-c7T">
+                    <rect key="frame" x="40" y="60" width="295" height="64.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <color key="textColor" red="0.30980392156862746" green="0.30980392156862746" blue="0.30980392156862746" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imgLove" translatesAutoresizingMaskIntoConstraints="NO" id="raO-pn-Ta4">
+                    <rect key="frame" x="117" y="174.5" width="141" height="86"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="86" id="omV-hd-Bp3"/>
+                        <constraint firstAttribute="width" constant="141" id="vjA-IL-rvq"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I’m going to donate" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XRa-LY-TPA">
+                    <rect key="frame" x="16" y="290.5" width="343" height="21"/>
+                    <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="18"/>
+                    <color key="textColor" red="0.45882352941176469" green="0.45882352941176469" blue="0.45882352941176469" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Amount" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EqV-DH-5M4">
+                    <rect key="frame" x="57.5" y="321.5" width="260" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="2TP-sj-WsF"/>
+                        <constraint firstAttribute="width" constant="260" id="dLK-T5-150"/>
+                    </constraints>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="17"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <view alpha="0.080000000000000002" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0Yg-sa-emy">
+                    <rect key="frame" x="16" y="361.5" width="343" height="2"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="2" id="yYd-Hc-zAc"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bp6-Yn-3zz">
+                    <rect key="frame" x="57.5" y="593" width="260" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="5fR-UQ-N5k"/>
+                        <constraint firstAttribute="width" constant="260" id="6GW-I4-yg6"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="15"/>
+                    <state key="normal" title="Donate">
+                        <color key="titleColor" red="0.33333333329999998" green="0.2784313725" blue="0.42352941179999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="tappedDonateButton:" destination="-1" eventType="touchUpInside" id="Zl5-xt-GVB"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Bp6-Yn-3zz" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="94S-M5-fZd"/>
+                <constraint firstItem="raO-pn-Ta4" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="CNY-SN-7F8"/>
+                <constraint firstItem="EqV-DH-5M4" firstAttribute="top" secondItem="XRa-LY-TPA" secondAttribute="bottom" constant="10" id="HNQ-i3-QAG"/>
+                <constraint firstItem="raO-pn-Ta4" firstAttribute="top" secondItem="I1y-tx-c7T" secondAttribute="bottom" constant="50" id="IyO-dQ-sml"/>
+                <constraint firstAttribute="bottom" secondItem="Bp6-Yn-3zz" secondAttribute="bottom" constant="30" id="Jxr-4Q-rFf"/>
+                <constraint firstItem="XRa-LY-TPA" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="U2W-fS-2QR"/>
+                <constraint firstItem="0Yg-sa-emy" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="Y8k-SK-v9S"/>
+                <constraint firstItem="I1y-tx-c7T" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="60" id="YXr-f0-nym"/>
+                <constraint firstItem="XRa-LY-TPA" firstAttribute="top" secondItem="raO-pn-Ta4" secondAttribute="bottom" constant="30" id="cbf-MI-Yxt"/>
+                <constraint firstAttribute="trailing" secondItem="I1y-tx-c7T" secondAttribute="trailing" constant="40" id="fUZ-Nh-xit"/>
+                <constraint firstAttribute="trailing" secondItem="XRa-LY-TPA" secondAttribute="trailing" constant="16" id="hVJ-Ns-eYT"/>
+                <constraint firstItem="0Yg-sa-emy" firstAttribute="top" secondItem="EqV-DH-5M4" secondAttribute="bottom" id="kpk-vl-caj"/>
+                <constraint firstAttribute="trailing" secondItem="0Yg-sa-emy" secondAttribute="trailing" constant="16" id="sg5-9h-GW7"/>
+                <constraint firstItem="I1y-tx-c7T" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="40" id="tO4-lt-CBX"/>
+                <constraint firstItem="EqV-DH-5M4" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="vUb-GD-8i4"/>
+            </constraints>
+        </view>
+    </objects>
+    <resources>
+        <image name="imgLove" width="128" height="74"/>
+    </resources>
+</document>

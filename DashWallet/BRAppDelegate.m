@@ -64,18 +64,18 @@
     UIPageControl.appearance.pageIndicatorTintColor = [UIColor lightGrayColor];
     UIPageControl.appearance.currentPageIndicatorTintColor = [UIColor whiteColor];
     
-    UIImage * tabBarImage = [[UIImage imageNamed:@"tab-bar-dash"]
-     resizableImageWithCapInsets:UIEdgeInsetsMake(0, 0, 0, 0) resizingMode:UIImageResizingModeStretch];
-    [[UINavigationBar appearance] setBackgroundImage:tabBarImage forBarMetrics:UIBarMetricsDefault];
+//    UIImage * tabBarImage = [[UIImage imageNamed:@"tab-bar-dash"]
+//     resizableImageWithCapInsets:UIEdgeInsetsMake(0, 0, 0, 0) resizingMode:UIImageResizingModeStretch];
+//    [[UINavigationBar appearance] setBackgroundImage:tabBarImage forBarMetrics:UIBarMetricsDefault];
 
-    [[UIBarButtonItem appearanceWhenContainedInInstancesOfClasses:@[[UINavigationBar class]]]
-     setTitleTextAttributes:@{NSFontAttributeName:[UIFont systemFontOfSize:18]}
-     forState:UIControlStateNormal];
-    UIFont * titleBarFont = [UIFont systemFontOfSize:19 weight:UIFontWeightSemibold];
-    [[UINavigationBar appearance] setTitleTextAttributes:@{
-                                                           NSFontAttributeName:titleBarFont,
-                                                           NSForegroundColorAttributeName: [UIColor whiteColor],
-                                                           }];
+//    [[UIBarButtonItem appearanceWhenContainedInInstancesOfClasses:@[[UINavigationBar class]]]
+//     setTitleTextAttributes:@{NSFontAttributeName:[UIFont systemFontOfSize:18]}
+//     forState:UIControlStateNormal];
+//    UIFont * titleBarFont = [UIFont systemFontOfSize:19 weight:UIFontWeightSemibold];
+//    [[UINavigationBar appearance] setTitleTextAttributes:@{
+//                                                           NSFontAttributeName:titleBarFont,
+//                                                           NSForegroundColorAttributeName: [UIColor whiteColor],
+//                                                           }];
 
     if (launchOptions[UIApplicationLaunchOptionsURLKey]) {
         NSData *file = [NSData dataWithContentsOfURL:launchOptions[UIApplicationLaunchOptionsURLKey]];

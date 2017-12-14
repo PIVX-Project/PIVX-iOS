@@ -284,7 +284,7 @@
 
     BOOL req = (_paymentRequest) ? YES : NO;
 
-    UIAlertController *actionSheet = [UIAlertController alertControllerWithTitle:[NSString stringWithFormat:NSLocalizedString(@"Receive dash at this address: %@", nil),
+    UIAlertController *actionSheet = [UIAlertController alertControllerWithTitle:[NSString stringWithFormat:NSLocalizedString(@"Receive PIVX at this address: %@", nil),
                                                                                   self.paymentAddress] message:@"" preferredStyle:UIAlertControllerStyleActionSheet];
     [actionSheet addAction:[UIAlertAction actionWithTitle:(req) ? NSLocalizedString(@"copy request to clipboard", nil) :
                             NSLocalizedString(@"copy address to clipboard", nil) style:UIAlertActionStyleDefault handler:^(UIAlertAction *action) {

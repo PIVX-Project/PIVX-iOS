@@ -1,19 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="GillSans.ttc">
+            <string>GillSans</string>
+        </array>
+    </customFonts>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MenuController" customModule="breadwallet" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MenuController" customModule="dashwallet" customModuleProvider="target">
             <connections>
                 <outlet property="cotainerViewHeightConstraint" destination="kv0-yS-8ZO" id="T4T-HX-3Uh"/>
-                <outlet property="syncImageView" destination="f2Z-3T-vCf" id="gTs-zV-DK2"/>
-                <outlet property="syncLabel" destination="Z1V-Hm-E7Q" id="gTy-Zb-wba"/>
                 <outlet property="view" destination="iN0-l3-epB" id="Mv6-lJ-zfw"/>
             </connections>
         </placeholder>
@@ -38,30 +41,13 @@
                             <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Synced" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z1V-Hm-E7Q">
-                            <rect key="frame" x="16" y="105.5" width="45.5" height="18.5"/>
-                            <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="16"/>
-                            <color key="textColor" red="0.31372549019607843" green="0.8901960784313725" blue="0.76078431372549016" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            <nil key="highlightedColor"/>
-                        </label>
-                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icHeaderSynced" translatesAutoresizingMaskIntoConstraints="NO" id="f2Z-3T-vCf">
-                            <rect key="frame" x="69" y="108" width="14" height="14"/>
-                            <constraints>
-                                <constraint firstAttribute="height" constant="14" id="Wxd-Nv-BaX"/>
-                                <constraint firstAttribute="width" constant="14" id="kMh-T2-yMP"/>
-                            </constraints>
-                        </imageView>
                     </subviews>
                     <color key="backgroundColor" red="0.33333333329999998" green="0.2784313725" blue="0.42352941179999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
                         <constraint firstItem="aYD-BY-uRC" firstAttribute="top" secondItem="2d2-8G-1qi" secondAttribute="top" constant="45" id="6Ls-uu-9C9"/>
-                        <constraint firstItem="Z1V-Hm-E7Q" firstAttribute="leading" secondItem="2d2-8G-1qi" secondAttribute="leading" constant="16" id="EgW-dq-JdD"/>
-                        <constraint firstItem="Z1V-Hm-E7Q" firstAttribute="top" secondItem="fYa-70-QEr" secondAttribute="bottom" constant="4" id="KvH-Fa-BaB"/>
                         <constraint firstAttribute="height" constant="130" id="LKa-Iq-shb"/>
-                        <constraint firstItem="f2Z-3T-vCf" firstAttribute="centerY" secondItem="Z1V-Hm-E7Q" secondAttribute="centerY" id="aVo-Wm-CaW"/>
                         <constraint firstItem="fYa-70-QEr" firstAttribute="top" secondItem="aYD-BY-uRC" secondAttribute="bottom" constant="8" id="bDS-gN-FKp"/>
                         <constraint firstItem="fYa-70-QEr" firstAttribute="leading" secondItem="2d2-8G-1qi" secondAttribute="leading" constant="16" id="dQb-yB-ct3"/>
-                        <constraint firstItem="f2Z-3T-vCf" firstAttribute="leading" secondItem="Z1V-Hm-E7Q" secondAttribute="trailing" constant="7.5" id="hPl-rr-u4b"/>
                         <constraint firstItem="aYD-BY-uRC" firstAttribute="leading" secondItem="2d2-8G-1qi" secondAttribute="leading" constant="16" id="rUJ-hV-4db"/>
                     </constraints>
                 </view>
@@ -275,7 +261,6 @@
     <resources>
         <image name="icAddress" width="22" height="28"/>
         <image name="icDonations" width="28" height="23"/>
-        <image name="icHeaderSynced" width="18" height="15"/>
         <image name="icSettings" width="26" height="26"/>
         <image name="icWallet" width="26" height="26"/>
         <image name="imgHeaderLogo" width="102" height="29"/>

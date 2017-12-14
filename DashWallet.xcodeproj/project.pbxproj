@@ -23,6 +23,8 @@
 		22DE8CF31D02407F007F07F3 /* BRWalletConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 22DE8CF01D02407F007F07F3 /* BRWalletConstants.m */; };
 		22DE8CF41D02407F007F07F3 /* BRWalletConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 22DE8CF01D02407F007F07F3 /* BRWalletConstants.m */; };
 		22F04A001C9714EF00F137D8 /* BRUserDefaultsSwitchCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 22F45A0D1C3326CC00B07A15 /* BRUserDefaultsSwitchCell.m */; };
+		2B4838CB1FE21655001C8D09 /* Donation.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2B4838CA1FE21655001C8D09 /* Donation.xib */; };
+		2B4838CD1FE21666001C8D09 /* DonationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B4838CC1FE21666001C8D09 /* DonationController.swift */; };
 		2B5735671FE04BC400110745 /* PivxAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B5735661FE04BC400110745 /* PivxAssets.xcassets */; };
 		2B57356E1FE04C4200110745 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B57356A1FE04C4200110745 /* Utils.swift */; };
 		2B57356F1FE04C4200110745 /* PivxExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B57356B1FE04C4200110745 /* PivxExtensions.swift */; };
@@ -241,6 +243,8 @@
 		22F45A0C1C3326CC00B07A15 /* BRUserDefaultsSwitchCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRUserDefaultsSwitchCell.h; sourceTree = "<group>"; };
 		22F45A0D1C3326CC00B07A15 /* BRUserDefaultsSwitchCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRUserDefaultsSwitchCell.m; sourceTree = "<group>"; };
 		22F45A0F1C3329EB00B07A15 /* BRUserDefaultsConstants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BRUserDefaultsConstants.h; sourceTree = "<group>"; };
+		2B4838CA1FE21655001C8D09 /* Donation.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = Donation.xib; path = PivxNibs/Controllers/Donation.xib; sourceTree = "<group>"; };
+		2B4838CC1FE21666001C8D09 /* DonationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DonationController.swift; path = PivxControllers/DonationController.swift; sourceTree = "<group>"; };
 		2B5735661FE04BC400110745 /* PivxAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = PivxAssets.xcassets; sourceTree = "<group>"; };
 		2B5735691FE04C4100110745 /* dashwallet-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "dashwallet-Bridging-Header.h"; sourceTree = "<group>"; };
 		2B57356A1FE04C4200110745 /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Utils.swift; path = PivxUtils/Utils.swift; sourceTree = "<group>"; };
@@ -654,6 +658,7 @@
 		2B5735741FE0858A00110745 /* PivxControllers */ = {
 			isa = PBXGroup;
 			children = (
+				2B4838CC1FE21666001C8D09 /* DonationController.swift */,
 				2BFA523B1FE0AC5C00A3C808 /* MenuController.swift */,
 				2BFA52361FE08A8300A3C808 /* BaseController.swift */,
 				2B5735751FE086F500110745 /* SetupController.swift */,
@@ -673,6 +678,7 @@
 		2B5735781FE087B500110745 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				2B4838CA1FE21655001C8D09 /* Donation.xib */,
 				2BFA52391FE0AC4C00A3C808 /* Menu.xib */,
 				2B5735791FE087D800110745 /* Setup.xib */,
 			);
@@ -1419,6 +1425,7 @@
 				2B5735831FE0882B00110745 /* Step4View.xib in Resources */,
 				2B5735671FE04BC400110745 /* PivxAssets.xcassets in Resources */,
 				2B5735821FE0882B00110745 /* Step3View.xib in Resources */,
+				2B4838CB1FE21655001C8D09 /* Donation.xib in Resources */,
 				2B5735801FE0882B00110745 /* Step2View.xib in Resources */,
 				75C0E3BF1B1BA294007BC531 /* BIP39Words.plist in Resources */,
 				75E83CF61B5F997A0038FB70 /* coinflip.aiff in Resources */,
@@ -1612,6 +1619,7 @@
 				757BE7E3192C0E9D0061CB20 /* BRRestoreViewController.m in Sources */,
 				757BE7E6192C1FF70061CB20 /* BRWelcomeViewController.m in Sources */,
 				757BE7E9192D4E880061CB20 /* BRSeedViewController.m in Sources */,
+				2B4838CD1FE21666001C8D09 /* DonationController.swift in Sources */,
 				752E28E719234DA200DB5A3C /* NSData+Bitcoin.m in Sources */,
 				FB9CC2711F8E27B80079309F /* DWGenerateViewController.m in Sources */,
 				220128D31C753C670001CAC1 /* BRSocketHelpers.c in Sources */,
