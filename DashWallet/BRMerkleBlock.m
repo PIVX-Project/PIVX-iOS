@@ -88,39 +88,39 @@ inline static int ceil_log2(int x)
     NSUInteger off = 0, len = 0;
     NSMutableData *d = [NSMutableData data]; // NSMutableData
 
-    NSLog(@"############################");
+    //NSLog(@"############################");
     
     _version = [message UInt32AtOffset:off];
     off += sizeof(uint32_t);
     _prevBlock = [message hashAtOffset:off];
     //_prevBlock = *(const UInt256 *)((const char *)[NSData dataWithUInt256:_prevBlock].reverse.bytes);
     //NSLog(@"Prev block hash %@",[NSData dataWithUInt256:_prevBlock].hexString);
-    NSLog(@"Prev block hash %@",[NSData dataWithUInt256: *(const UInt256 *)((const char *)[NSData dataWithUInt256:_prevBlock].reverse.bytes)].hexString);
+    //NSLog(@"Prev block hash %@",[NSData dataWithUInt256: *(const UInt256 *)((const char *)[NSData dataWithUInt256:_prevBlock].reverse.bytes)].hexString);
     off += sizeof(UInt256);
     _merkleRoot = [message hashAtOffset:off];
     //_merkleRoot = *(const UInt256 *)((const char *)[NSData dataWithUInt256:_merkleRoot].reverse.bytes);
     //NSLog(@"Merkle root hash %@",[NSData dataWithUInt256:_merkleRoot].hexString);
-    NSLog(@"Merkle root %@",[NSData dataWithUInt256: *(const UInt256 *)((const char *)[NSData dataWithUInt256:_merkleRoot].reverse.bytes)].hexString);
+    //NSLog(@"Merkle root %@",[NSData dataWithUInt256: *(const UInt256 *)((const char *)[NSData dataWithUInt256:_merkleRoot].reverse.bytes)].hexString);
     off += sizeof(UInt256);
     _timestamp = [message UInt32AtOffset:off];
-    NSLog(@"Timestamp %d",_timestamp);
+    //NSLog(@"Timestamp %d",_timestamp);
     off += sizeof(uint32_t);
     _target = [message UInt32AtOffset:off];
-    NSLog(@"Bits %d",_target);
+    //NSLog(@"Bits %d",_target);
     off += sizeof(uint32_t);
     _nonce = [message UInt32AtOffset:off];
-    NSLog(@"Nonce %d",_nonce);
+    //NSLog(@"Nonce %d",_nonce);
     off += sizeof(uint32_t);
     if([ self isZerocoin ]){
         _zerocoinAccumulator = [message hashAtOffset:off];
-        NSLog(@"Zerocoin accumulator %@",[NSData dataWithUInt256: *(const UInt256 *)((const char *)[NSData dataWithUInt256:_zerocoinAccumulator].reverse.bytes)].hexString);
+        //NSLog(@"Zerocoin accumulator %@",[NSData dataWithUInt256: *(const UInt256 *)((const char *)[NSData dataWithUInt256:_zerocoinAccumulator].reverse.bytes)].hexString);
         off += sizeof(UInt256);
     }else{
         _zerocoinAccumulator = UINT256_ZERO;
     }
     
     _totalTransactions = [message UInt32AtOffset:off];
-    NSLog(@"Total txs %d",_totalTransactions);
+    //NSLog(@"Total txs %d",_totalTransactions);
     off += sizeof(uint32_t);
     len = (NSUInteger)[message varIntAtOffset:off length:&l]*sizeof(UInt256);
     off += l.unsignedIntegerValue;
@@ -145,11 +145,8 @@ inline static int ceil_log2(int x)
     
 
     //NSLog(@"Received block hash %@",[NSData dataWithUInt256:_blockHash].hexString);
-    NSString* s = [NSData dataWithUInt256: *(const UInt256 *)((const char *)[NSData dataWithUInt256:_blockHash].reverse.bytes)].hexString;
-    if ([s isEqualToString:@"4eff672fb5274c5141460ac0a281c75e038331d4fc0321aa35dbaca1c09f7689"]) {
-        NSLog(@"Block");
-    }
-    NSLog(@"Received block hash %@",s);
+    //NSString* s = [NSData dataWithUInt256: *(const UInt256 *)((const char *)[NSData dataWithUInt256:_blockHash].reverse.bytes)].hexString;
+    //NSLog(@"Received block hash %@",s);
     
     
     return self;
