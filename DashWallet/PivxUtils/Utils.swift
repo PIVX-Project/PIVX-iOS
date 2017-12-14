@@ -10,6 +10,14 @@ import SlideMenuControllerSwift
 import Foundation
 import UIKit
 
+class RootController: UIViewController {
+    static let shared = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "RootViewController")
+}
+
+class TxHistoryController: UIViewController {
+    static let shared = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "BRTxHistory")
+}
+
 class Utils: NSObject {
 
     @objc static func configureNavigationBar(){
@@ -28,20 +36,12 @@ class Utils: NSObject {
 //
     @objc static func toHome()->SlideMenuController{
         let menuController = MenuController(nibName: "Menu", bundle: nil)
-        //let myWalletController = MyWalletController(nibName: "MyWallet", bundle: nil)
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let homeController = storyboard.instantiateViewController(withIdentifier: "RootViewController")
+        let homeController = RootController.shared
         let nav = UINavigationController(rootViewController: homeController)
         let navigationController = SlideMenuController(mainViewController: nav, leftMenuViewController:menuController, rightMenuViewController: UIViewController())
         navigationController.removeRightGestures()
         return navigationController
     }
-    
-//    static func toLogin()->UIViewController {
-//        let controller = LoginController(nibName:"Login",bundle:nil)
-//        let navigation = UINavigationController(rootViewController: controller)
-//        return navigation
-//    }
     
     @objc static func changeStatusBackgroundColor(color:UIColor = K.color.purple_r85g71b108){
         UIApplication.shared.statusBarView?.backgroundColor = color

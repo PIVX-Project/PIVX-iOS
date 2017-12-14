@@ -80,14 +80,14 @@ static NSString *dateFormat(NSString *template)
     [super viewDidLoad];
 
     self.txDates = [NSMutableDictionary dictionary];
-    self.wallpaper = [[UIImageView alloc] initWithFrame:self.navigationController.view.bounds];
-    self.wallpaper.image = [UIImage imageNamed:@"wallpaper-default"];
-    self.wallpaper.contentMode = UIViewContentModeScaleAspectFill;
-    self.wallpaper.clipsToBounds = YES;
-    self.wallpaper.center = CGPointMake(self.wallpaper.frame.size.width/2,
-                                        self.navigationController.view.frame.size.height -
-                                        self.wallpaper.frame.size.height/2);
-    [self.navigationController.view insertSubview:self.wallpaper atIndex:0];
+//    self.wallpaper = [[UIImageView alloc] initWithFrame:self.navigationController.view.bounds];
+//    self.wallpaper.image = [UIImage imageNamed:@"wallpaper-default"];
+//    self.wallpaper.contentMode = UIViewContentModeScaleAspectFill;
+//    self.wallpaper.clipsToBounds = YES;
+//    self.wallpaper.center = CGPointMake(self.wallpaper.frame.size.width/2,
+//                                        self.navigationController.view.frame.size.height -
+//                                        self.wallpaper.frame.size.height/2);
+//    [self.navigationController.view insertSubview:self.wallpaper atIndex:0];
     self.navigationController.delegate = self;
     self.moreTx = YES;
 }
@@ -99,7 +99,10 @@ static NSString *dateFormat(NSString *template)
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
-
+    
+    //UIColor *color = [UIColor rgb:85 green:71 blue:108 alpha:1];
+    self.view.backgroundColor = UIColor.whiteColor;
+    self.tableView.backgroundColor = UIColor.whiteColor;
     BRWalletManager *manager = [BRWalletManager sharedInstance];
     
 #if SNAPSHOT
