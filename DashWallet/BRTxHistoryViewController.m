@@ -134,7 +134,6 @@ static NSString *dateFormat(NSString *template)
     }
     else {
         [self unlock:nil];
-        //[self.navigationItem setRightBarButtonItem:nil animated:(nil) ? YES : NO];
     }
 
     if (! self.backgroundObserver) {
