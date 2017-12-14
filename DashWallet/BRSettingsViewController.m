@@ -55,6 +55,8 @@
 {
     [super viewDidLoad];
     self.touchId = [BRWalletManager sharedInstance].touchIdEnabled;
+    self.view.backgroundColor = UIColor.whiteColor;
+    self.tableView.backgroundColor = UIColor.whiteColor;
 }
 
 

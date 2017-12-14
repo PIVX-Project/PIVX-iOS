@@ -19,8 +19,9 @@ class MenuController: BaseController {
     }
 
     @IBAction func tappedMyWalletButton(_ sender: Any) {
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let homeController = storyboard.instantiateViewController(withIdentifier: "RootViewController")
+//        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+//        let homeController = storyboard.instantiateViewController(withIdentifier: "RootViewController")
+        let homeController = RootController.shared
         let nav = UINavigationController(rootViewController: homeController)
         slideMenuController()?.changeMainViewController(nav, close: true)
     }
@@ -30,9 +31,10 @@ class MenuController: BaseController {
 //        slideMenuController()?.changeMainViewController(navigation, close: true)
     }
     @IBAction func tappedSettingButton(_ sender: Any) {
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let homeController = storyboard.instantiateViewController(withIdentifier: "BRTxHistory")
-        let nav = UINavigationController(rootViewController: homeController)
+        //let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        //let homeController = storyboard.instantiateViewController(withIdentifier: "BRTxHistory")
+        let controller = TxHistoryController.shared
+        let nav = UINavigationController(rootViewController: controller)
         slideMenuController()?.changeMainViewController(nav, close: true)
     }
     @IBAction func tappedDonationButton(_ sender: Any) {
