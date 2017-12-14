@@ -162,7 +162,7 @@
 "clipboard doesn't contain a valid dash address" = "clipboard doesn't contain a valid dash address";
 
 /* No comment provided by engineer. */
-"clipboard doesn't contain a valid dash or bitcoin address" = "clipboard doesn't contain a valid dash or bitcoin address";
+"clipboard doesn't contain a valid pivx address" = "clipboard doesn't contain a pivx address";
 
 /* No comment provided by engineer. */
 "close app" = "luk app";
@@ -339,7 +339,7 @@
 "no peers found" = "ingen peers fundet";
 
 /* No comment provided by engineer. */
-"not a dash or bitcoin QR code" = "ikke en dash eller bitcoin QR-kode";
+"not a pivx QR code" = "ikke en pivx QR-kode";
 
 /* No comment provided by engineer. */
 "not a valid bitcoin address" = "ikke en gyldig bitcoin-adresse";
@@ -348,7 +348,7 @@
 "not a valid dash address" = "ikke en gyldig dash-adresse";
 
 /* No comment provided by engineer. */
-"not a valid dash or bitcoin address" = "not a valid dash or bitcoin address";
+"not a valid pivx address" = "not a valid pivx address";
 
 /* No comment provided by engineer. */
 "not a valid private key" = "ikke en gyldig privat nøgle";

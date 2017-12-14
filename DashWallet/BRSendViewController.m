@@ -461,7 +461,7 @@ static NSString *sanitizeString(NSString *s)
         }
         else {
             UIAlertController * alert = [UIAlertController
-                                         alertControllerWithTitle:NSLocalizedString(@"not a valid dash or bitcoin address", nil)
+                                         alertControllerWithTitle:NSLocalizedString(@"not a valid pivx address", nil)
                                          message:request.paymentAddress
                                          preferredStyle:UIAlertControllerStyleAlert];
             UIAlertAction* okButton = [UIAlertAction
@@ -1488,8 +1488,8 @@ static NSString *sanitizeString(NSString *s)
         // if the clipboard contains a known txHash, we know it's not a hex encoded private key
         if (data.length == sizeof(UInt256) && [manager.wallet transactionForHash:*(UInt256 *)data.bytes]) continue;
         
-        if ([req.paymentAddress isValidBitcoinAddress] || [req.paymentAddress isValidDashAddress] || [str isValidBitcoinPrivateKey] || [str isValidDashPrivateKey] || [str isValidBitcoinBIP38Key] || [str isValidDashBIP38Key] ||
-            (req.r.length > 0 && ([req.scheme isEqual:@"bitcoin:"] || [req.scheme isEqual:@"dash:"]))) {
+        if ([req.paymentAddress isValidDashAddress] || [str isValidDashPrivateKey] || [str isValidDashBIP38Key] ||
+            (req.r.length > 0 && [req.scheme isEqual:@"pivx:"])) {
             [self performSelector:@selector(confirmRequest:) withObject:req afterDelay:0.1];// delayed to show highlight
             return;
         }
@@ -1499,7 +1499,7 @@ static NSString *sanitizeString(NSString *s)
                     if (error) { // don't try any more BIP73 urls
                         [self payFirstFromArray:[array objectsAtIndexes:[array
                                                                          indexesOfObjectsPassingTest:^BOOL(id obj, NSUInteger idx, BOOL *stop) {
-                                                                             return (idx >= i && ([obj hasPrefix:@"dash:"] || ! [NSURL URLWithString:obj]));
+                                                                             return (idx >= i && ([obj hasPrefix:@"pivx:"] || ! [NSURL URLWithString:obj]));
                                                                          }]]];
                     }
                     else [self confirmProtocolRequest:req];
@@ -1511,7 +1511,7 @@ static NSString *sanitizeString(NSString *s)
     }
     UIAlertController * alert = [UIAlertController
                                  alertControllerWithTitle:@""
-                                 message:NSLocalizedString(@"clipboard doesn't contain a valid dash or bitcoin address", nil)
+                                 message:NSLocalizedString(@"clipboard doesn't contain a valid pivx address", nil)
                                  preferredStyle:UIAlertControllerStyleAlert];
     UIAlertAction* okButton = [UIAlertAction
                                actionWithTitle:NSLocalizedString(@"ok", nil)
@@ -1940,7 +1940,7 @@ static NSString *sanitizeString(NSString *s)
                                                                              NSLocalizedString(@"not a valid bitcoin address", nil),
                                                                              request.paymentAddress];
                                      }
-                                     else self.scanController.message.text = NSLocalizedString(@"not a dash or bitcoin QR code", nil);
+                                     else self.scanController.message.text = NSLocalizedString(@"not a pivx QR code", nil);
                                      
                                      [self performSelector:@selector(resetQRGuide) withObject:nil afterDelay:0.35];
                                      [BREventManager saveEvent:@"send:unsuccessful_bip73"];
