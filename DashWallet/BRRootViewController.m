@@ -47,9 +47,9 @@
 #import <mach-o/dyld.h>
 #import "dashwallet-Swift.h"
 
-#define BALANCE_TIP_START NSLocalizedString(@"This is your dash balance.", nil)
+#define BALANCE_TIP_START NSLocalizedString(@"This is your PIVX balance.", nil)
 
-#define BALANCE_TIP NSLocalizedString(@"This is your dash balance. Dash is a currency. "\
+#define BALANCE_TIP NSLocalizedString(@"This is your PIVX balance. PIVX is a currency. "\
 "The exchange rate changes with the market.", nil)
 #define MDASH_TIP    NSLocalizedString(@"%@ is for 'mDASH'. %@ = 1 DASH.", nil)
 
@@ -502,11 +502,18 @@
     UIImage *image = [UIImage imageNamed:@"icQrCode"];
     UIBarButtonItem *qrCodeButton = [[UIBarButtonItem alloc] initWithImage:image
                                                                    style:UIBarButtonItemStylePlain target:self action:@selector(tappedQrButton)];
+    qrCodeButton.tag = 1;
     
     
     if ([arrayItem count] > 0) {
-        NSArray<UIBarButtonItem *> *items = [[NSArray alloc] initWithObjects:arrayItem[0], qrCodeButton, nil];
-        self.navigationItem.rightBarButtonItems = items;
+        UIBarButtonItem *item = arrayItem[0];
+        if (item.tag != 1) {
+            NSArray<UIBarButtonItem *> *items = [[NSArray alloc] initWithObjects:arrayItem[0], qrCodeButton, nil];
+            self.navigationItem.rightBarButtonItems = items;
+        } else {
+            NSArray<UIBarButtonItem *> *items = [[NSArray alloc] initWithObjects: qrCodeButton, nil];
+            self.navigationItem.rightBarButtonItems = items;
+        }
     } else {
         self.navigationItem.rightBarButtonItem = qrCodeButton;
     }
@@ -519,10 +526,16 @@
     UIBarButtonItem *qrCodeButton = [[UIBarButtonItem alloc] initWithImage:image
                                                                      style:UIBarButtonItemStylePlain target:self action:@selector(tappedQrButton)];
     
-    
+    qrCodeButton.tag = 1;
     if ([arrayItem count] > 0) {
-        NSArray<UIBarButtonItem *> *items = [[NSArray alloc] initWithObjects:arrayItem[0], qrCodeButton, nil];
-        self.navigationItem.rightBarButtonItems = items;
+        UIBarButtonItem *item = arrayItem[0];
+        if (item.tag != 1) {
+            NSArray<UIBarButtonItem *> *items = [[NSArray alloc] initWithObjects:arrayItem[0], qrCodeButton, nil];
+            self.navigationItem.rightBarButtonItems = items;
+        } else {
+            NSArray<UIBarButtonItem *> *items = [[NSArray alloc] initWithObjects: qrCodeButton, nil];
+            self.navigationItem.rightBarButtonItems = items;
+        }
     } else {
         self.navigationItem.rightBarButtonItem = qrCodeButton;
     }

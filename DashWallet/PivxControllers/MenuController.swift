@@ -36,8 +36,8 @@ class MenuController: BaseController {
         slideMenuController()?.changeMainViewController(nav, close: true)
     }
     @IBAction func tappedDonationButton(_ sender: Any) {
-//        let controller = DonationController(nibName:"Donation", bundle:nil)
-//        let navigation = UINavigationController(rootViewController: controller)
-//        slideMenuController()?.changeMainViewController(navigation, close: true)
+        let controller = DonationController(nibName:"Donation", bundle:nil)
+        let navigation = UINavigationController(rootViewController: controller)
+        slideMenuController()?.changeMainViewController(navigation, close: true)
     }
 }
