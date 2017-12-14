@@ -165,19 +165,19 @@
 {
     BRWalletManager *manager = [BRWalletManager sharedInstance];
     uint64_t amount;
-    if (self.usingShapeshift) {
-        amount = (self.swapped) ? [manager amountForBitcoinCurrencyString:self.amountLabel.text] * 1.02:
-        [manager amountForDashString:self.amountLabel.text] * .98;
-        if (amount) amount += (self.swapped) ?1.0/[[manager localCurrencyDashPrice] floatValue] * pow(10.0, manager.dashFormat.maximumFractionDigits):1.0/[[manager localCurrencyBitcoinPrice] floatValue] * pow(10.0, manager.bitcoinFormat.maximumFractionDigits);
-    } else {
-        amount = (self.swapped) ? [manager amountForLocalCurrencyString:self.amountLabel.text] :
-        [manager amountForDashString:self.amountLabel.text];
-    }
+    // No shapeshift enabled.
+    //if (self.usingShapeshift) {
+    //    amount = (self.swapped) ? [manager amountForBitcoinCurrencyString:self.amountLabel.text] * 1.02:
+    //    [manager amountForDashString:self.amountLabel.text] * .98;
+    //    if (amount) amount += (self.swapped) ?1.0/[[manager localCurrencyDashPrice] floatValue] * pow(10.0, manager.dashFormat.maximumFractionDigits):1.0/[[manager localCurrencyBitcoinPrice] floatValue] * pow(10.0, manager.bitcoinFormat.maximumFractionDigits);
+    //} else {
+    amount = (self.swapped) ? [manager amountForLocalCurrencyString:self.amountLabel.text] :
+    [manager amountForDashString:self.amountLabel.text];
+    //}
     
     self.swapLeftLabel.hidden = YES;
     self.localCurrencyLabel.hidden = NO;
     if (self.usingShapeshift) {
-        
         NSMutableAttributedString * attributedString = [[NSMutableAttributedString alloc] initWithString:@"(~"];
         if (self.swapped) {
             [attributedString appendAttributedString:[manager attributedStringForDashAmount:amount withTintColor:(amount > 0) ? [UIColor grayColor] : [UIColor colorWithWhite:0.75 alpha:1.0] dashSymbolSize:CGSizeMake(11, 12)]];

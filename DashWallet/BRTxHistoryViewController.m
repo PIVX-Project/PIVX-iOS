@@ -131,7 +131,10 @@ static NSString *dateFormat(NSString *template)
             });
         });
     }
-    else [self unlock:nil];
+    else {
+        [self unlock:nil];
+        //[self.navigationItem setRightBarButtonItem:nil animated:(nil) ? YES : NO];
+    }
 
     if (! self.backgroundObserver) {
         self.backgroundObserver =
@@ -356,8 +359,9 @@ static NSString *dateFormat(NSString *template)
 
 - (IBAction)unlock:(id)sender
 {
-    BRWalletManager *manager = [BRWalletManager sharedInstance];
 
+    BRWalletManager *manager = [BRWalletManager sharedInstance];
+    
     if (sender) [BREventManager saveEvent:@"tx_history:unlock"];
     if (! manager.didAuthenticate) {
         [manager authenticateWithPrompt:nil andTouchId:YES alertIfLockout:YES completion:^(BOOL authenticated, BOOL cancelled) {
@@ -380,6 +384,10 @@ static NSString *dateFormat(NSString *template)
                 });
             }
         }];
+    }else{
+        // TODO Check why this happen.
+        [self updateTitleView];
+        [self.navigationItem setRightBarButtonItem:nil animated:(sender) ? YES : NO];
     }
 }
 
