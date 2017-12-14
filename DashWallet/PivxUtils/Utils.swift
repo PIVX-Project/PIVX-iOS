@@ -59,7 +59,7 @@ class Utils: NSObject {
         }
     }
     
-    static func openLeftMenu(){
+   @objc static func openLeftMenu(){
         if let root = UIApplication.shared.keyWindow?.rootViewController as? SlideMenuController {
             root.openLeft()
         }

@@ -77,6 +77,7 @@
 @property (nonatomic, strong) id activeObserver, resignActiveObserver, foregroundObserver, backgroundObserver;
 @property (nonatomic, assign) NSTimeInterval timeout, start;
 @property (nonatomic, assign) SystemSoundID pingsound;
+@property (nonatomic, assign) int navigationTypeButton;
 
 @end
 
@@ -89,7 +90,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
+    _navigationTypeButton = 0;
     self.navigationController.navigationBar.barStyle = UIBarStyleBlack;
     // Do any additional setup after loading the view.
     
@@ -113,7 +114,7 @@
     self.pageViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"PageViewController"];
     
     
-    self.pageViewController.dataSource = self;
+    //self.pageViewController.dataSource = self;
     [self.pageViewController setViewControllers:@[self.sendViewController]
                                       direction:UIPageViewControllerNavigationDirectionForward animated:NO completion:nil];
     self.pageViewController.view.frame = self.view.bounds;
@@ -490,6 +491,59 @@
     //self.navigationItem.leftBarButtonItem.image = [UIImage imageNamed:@"burger"];
     self.pageViewController.view.alpha = 1.0;
     if ([BRWalletManager sharedInstance].didAuthenticate) [self unlock:nil];
+    
+    [self addAddressButton];
+}
+
+-(void)addAddressButton {
+    
+    NSArray<UIBarButtonItem *> *arrayItem = self.navigationItem.rightBarButtonItems;
+
+    UIImage *image = [UIImage imageNamed:@"icQrCode"];
+    UIBarButtonItem *qrCodeButton = [[UIBarButtonItem alloc] initWithImage:image
+                                                                   style:UIBarButtonItemStylePlain target:self action:@selector(tappedQrButton)];
+    
+    
+    if ([arrayItem count] > 0) {
+        NSArray<UIBarButtonItem *> *items = [[NSArray alloc] initWithObjects:arrayItem[0], qrCodeButton, nil];
+        self.navigationItem.rightBarButtonItems = items;
+    } else {
+        self.navigationItem.rightBarButtonItem = qrCodeButton;
+    }
+}
+
+-(void)addSendButton {
+    NSArray<UIBarButtonItem *> *arrayItem = self.navigationItem.rightBarButtonItems;
+    
+    UIImage *image = [UIImage imageNamed:@"icTransactionSend"];
+    UIBarButtonItem *qrCodeButton = [[UIBarButtonItem alloc] initWithImage:image
+                                                                     style:UIBarButtonItemStylePlain target:self action:@selector(tappedQrButton)];
+    
+    
+    if ([arrayItem count] > 0) {
+        NSArray<UIBarButtonItem *> *items = [[NSArray alloc] initWithObjects:arrayItem[0], qrCodeButton, nil];
+        self.navigationItem.rightBarButtonItems = items;
+    } else {
+        self.navigationItem.rightBarButtonItem = qrCodeButton;
+    }
+    
+}
+
+-(void)tappedQrButton {
+    
+    if (_navigationTypeButton == 0){
+        [self addSendButton];
+        _navigationTypeButton = 1;
+        [self.pageViewController setViewControllers:@[self.receiveViewController]
+                                          direction:UIPageViewControllerNavigationDirectionForward animated:NO completion:nil];
+    } else {
+        [self addAddressButton];
+        _navigationTypeButton = 0;
+        [self.pageViewController setViewControllers:@[self.sendViewController]
+                                          direction:UIPageViewControllerNavigationDirectionForward animated:NO completion:nil];
+    }
+    
+    
 }
 
 -(void)addMenuButton {
@@ -1278,12 +1332,13 @@
 
 - (NSInteger)presentationCountForPageViewController:(UIPageViewController *)pageViewController
 {
-    return 2;
+    return 0;
 }
 
 - (NSInteger)presentationIndexForPageViewController:(UIPageViewController *)pageViewController
 {
-    return (pageViewController.viewControllers.lastObject == self.receiveViewController) ? 1 : 0;
+    int index = (pageViewController.viewControllers.lastObject == self.receiveViewController) ? 1 : 0;
+    return index;
 }
 
 // MARK: - UIScrollViewDelegate
