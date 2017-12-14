@@ -140,8 +140,9 @@
     
     BRWalletManager *manager = [BRWalletManager sharedInstance];
     
-    self.urlObserver =
-    [[NSNotificationCenter defaultCenter] addObserverForName:BRURLNotification object:nil queue:nil
+    if (self.urlObserver == nil ) {
+        self.urlObserver =
+        [[NSNotificationCenter defaultCenter] addObserverForName:BRURLNotification object:nil queue:nil
                                                   usingBlock:^(NSNotification *note) {
                                                       if (! manager.noWallet) {
                                                           if (self.navigationController.topViewController != self) {
@@ -171,7 +172,8 @@
                                                           
                                                       }
                                                   }];
-    
+    }
+    if (self.fileObserver == nil) {
     self.fileObserver =
     [[NSNotificationCenter defaultCenter] addObserverForName:BRFileNotification object:nil queue:nil
                                                   usingBlock:^(NSNotification *note) {
@@ -197,7 +199,8 @@
                                                                                             }];
                                                       }
                                                   }];
-    
+    }
+    if (self.foregroundObserver == nil) {
     self.foregroundObserver =
     [[NSNotificationCenter defaultCenter] addObserverForName:UIApplicationWillEnterForegroundNotification object:nil
                                                        queue:nil usingBlock:^(NSNotification *note) {
@@ -270,7 +273,8 @@
                                                                [self presentViewController:alert animated:YES completion:nil];
                                                            }
                                                        }];
-    
+    }
+    if (self.backgroundObserver == nil){
     self.backgroundObserver =
     [[NSNotificationCenter defaultCenter] addObserverForName:UIApplicationDidEnterBackgroundNotification object:nil
                                                        queue:nil usingBlock:^(NSNotification *note) {
@@ -283,14 +287,17 @@
                                                                [UIApplication sharedApplication].applicationIconBadgeNumber = 0; // reset app badge number
                                                            }
                                                        }];
-    
+    }
+    if (self.activeObserver == nil){
     self.activeObserver =
     [[NSNotificationCenter defaultCenter] addObserverForName:UIApplicationDidBecomeActiveNotification object:nil
                                                        queue:nil usingBlock:^(NSNotification *note) {
                                                            [self.blur removeFromSuperview];
                                                            self.blur = nil;
                                                        }];
-    
+        
+    }
+    if (self.resignActiveObserver == nil){
     self.resignActiveObserver =
     [[NSNotificationCenter defaultCenter] addObserverForName:UIApplicationWillResignActiveNotification object:nil
                                                        queue:nil usingBlock:^(NSNotification *note) {
@@ -309,7 +316,8 @@
                                                            self.blur = [[UIImageView alloc] initWithImage:[img blurWithRadius:3]];
                                                            [keyWindow.subviews.lastObject addSubview:self.blur];
                                                        }];
-    
+    }
+    if (self.reachabilityObserver == nil){
     self.reachabilityObserver =
     [[NSNotificationCenter defaultCenter] addObserverForName:kReachabilityChangedNotification object:nil queue:nil
                                                   usingBlock:^(NSNotification *note) {
@@ -321,7 +329,9 @@
                                                           [self showErrorBar];
                                                       }
                                                   }];
-    
+        
+    }
+    if (self.balanceObserver == nil){
     self.balanceObserver =
     [[NSNotificationCenter defaultCenter] addObserverForName:BRWalletBalanceChangedNotification object:nil queue:nil
                                                   usingBlock:^(NSNotification *note) {
@@ -336,14 +346,16 @@
                                                       [self.receiveViewController updateAddress];
                                                       self.balance = manager.wallet.balance;
                                                   }];
-    
+    }
+    if (self.seedObserver == nil){
     self.seedObserver =
     [[NSNotificationCenter defaultCenter] addObserverForName:BRWalletManagerSeedChangedNotification object:nil
                                                        queue:nil usingBlock:^(NSNotification *note) {
                                                            [self.receiveViewController updateAddress];
                                                            self.balance = manager.wallet.balance;
                                                        }];
-    
+    }
+    if (self.syncStartedObserver == nil){
     self.syncStartedObserver =
     [[NSNotificationCenter defaultCenter] addObserverForName:BRPeerManagerSyncStartedNotification object:nil
                                                        queue:nil usingBlock:^(NSNotification *note) {
@@ -351,7 +363,8 @@
                                                            [self hideErrorBarWithCompletion:nil];
                                                            [self startActivityWithTimeout:0];
                                                        }];
-    
+    }
+    if (self.syncFinishedObserver == nil){
     self.syncFinishedObserver =
     [[NSNotificationCenter defaultCenter] addObserverForName:BRPeerManagerSyncFinishedNotification object:nil
                                                        queue:nil usingBlock:^(NSNotification *note) {
@@ -363,7 +376,8 @@
                                                            [self.receiveViewController updateAddress];
                                                            self.balance = manager.wallet.balance;
                                                        }];
-    
+    }
+    if (self.syncFailedObserver == nil){
     self.syncFailedObserver =
     [[NSNotificationCenter defaultCenter] addObserverForName:BRPeerManagerSyncFailedNotification object:nil
                                                        queue:nil usingBlock:^(NSNotification *note) {
@@ -372,6 +386,7 @@
                                                            [self.receiveViewController updateAddress];
                                                            [self showErrorBar];
                                                        }];
+    }
     
     self.reachability = [Reachability reachabilityForInternetConnection];
     [self.reachability startNotifier];
