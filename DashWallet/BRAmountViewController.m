@@ -31,6 +31,7 @@
 #import "BREventManager.h"
 #import "NSString+Dash.h"
 #import "BRBubbleView.h"
+#import "dashwallet-Swift.h"
 
 @interface BRAmountViewController ()
 
@@ -58,7 +59,8 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    
+    UIColor *color = [UIColor rgb:85 green:71 blue:108 alpha:1];
+    [Utils changeStatusBackgroundColorWithColor:color];
     BRWalletManager *manager = [BRWalletManager sharedInstance];
     NSMutableCharacterSet *charset = [NSMutableCharacterSet decimalDigitCharacterSet];
     
@@ -67,9 +69,9 @@
     
     self.payButton = [[UIBarButtonItem alloc] initWithTitle:self.usingShapeshift?@"Shapeshift!":NSLocalizedString(@"pay", nil)
                                                       style:UIBarButtonItemStylePlain target:self action:@selector(pay:)];
-    self.payButton.tintColor = [UIColor colorWithRed:168.0/255.0 green:230.0/255.0 blue:1.0 alpha:1.0];
-    self.amountLabel.attributedText = [manager attributedStringForDashAmount:0 withTintColor:[UIColor colorWithRed:25.0f/255.0f green:96.0f/255.0f blue:165.0f/255.0f alpha:1.0f] dashSymbolSize:CGSizeMake(15, 16)];
-    self.amountLabel.textColor = [UIColor colorWithRed:25.0f/255.0f green:96.0f/255.0f blue:165.0f/255.0f alpha:1.0f];
+    self.payButton.tintColor = UIColor.whiteColor;
+    self.amountLabel.attributedText = [manager attributedStringForDashAmount:0 withTintColor:UIColor.whiteColor dashSymbolSize:CGSizeMake(15, 16)];
+    self.amountLabel.textColor = UIColor.whiteColor;
     [self.decimalButton setTitle:manager.dashFormat.currencyDecimalSeparator forState:UIControlStateNormal];
     
     self.swapLeftLabel = [UILabel new];
@@ -128,7 +130,7 @@
     }
     else {
         self.payButton.title = NSLocalizedString(@"request", nil);
-        self.payButton.tintColor = [UIColor colorWithRed:0.0 green:96.0/255.0 blue:1.0 alpha:1.0];
+        self.payButton.tintColor = UIColor.whiteColor;
         self.navigationItem.rightBarButtonItem = self.payButton;
         self.navigationController.navigationBar.barStyle = UIStatusBarStyleDefault;
     }
@@ -563,17 +565,17 @@
     
     if (formattedAmount.length == 0 || self.amountLabelIsEmpty) { // ""
         if (self.usingShapeshift) {
-            amountLabel.attributedText = (self.swapped) ? [[NSAttributedString alloc] initWithString:[m bitcoinCurrencyStringForAmount:0]]:[m attributedStringForDashAmount:0 withTintColor:[UIColor colorWithRed:25.0f/255.0f green:96.0f/255.0f blue:165.0f/255.0f alpha:1.0f] dashSymbolSize:CGSizeMake(15, 16)];
+            amountLabel.attributedText = (self.swapped) ? [[NSAttributedString alloc] initWithString:[m bitcoinCurrencyStringForAmount:0]]:[m attributedStringForDashAmount:0 withTintColor:UIColor.whiteColor dashSymbolSize:CGSizeMake(15, 16)];
         } else {
-            amountLabel.attributedText = (self.swapped) ? [[NSAttributedString alloc] initWithString:[m localCurrencyStringForDashAmount:0]]:[m attributedStringForDashAmount:0 withTintColor:[UIColor colorWithRed:25.0f/255.0f green:96.0f/255.0f blue:165.0f/255.0f alpha:1.0f] dashSymbolSize:CGSizeMake(15, 16)];
+            amountLabel.attributedText = (self.swapped) ? [[NSAttributedString alloc] initWithString:[m localCurrencyStringForDashAmount:0]]:[m attributedStringForDashAmount:0 withTintColor:UIColor.whiteColor dashSymbolSize:CGSizeMake(15, 16)];
         }
-        amountLabel.textColor = [UIColor colorWithRed:25.0f/255.0f green:96.0f/255.0f blue:165.0f/255.0f alpha:1.0f];
+        amountLabel.textColor = UIColor.whiteColor;
     } else {
         if (!self.swapped) {
-            amountLabel.textColor = [UIColor blackColor];
+            amountLabel.textColor = UIColor.whiteColor;
             amountLabel.attributedText = [formattedAmount attributedStringForDashSymbolWithTintColor:self.amountLabel.textColor dashSymbolSize:CGSizeMake(15, 16)];
         } else {
-            amountLabel.textColor = [UIColor blackColor];
+            amountLabel.textColor = UIColor.whiteColor;
             amountLabel.text = formattedAmount;
         }
     }

@@ -84,10 +84,10 @@
     
     if (req.amount > 0) {
         BRWalletManager *manager = [BRWalletManager sharedInstance];
-        NSMutableAttributedString * attributedDashString = [[manager attributedStringForDashAmount:req.amount withTintColor:[UIColor darkTextColor] useSignificantDigits:FALSE] mutableCopy];
+        NSMutableAttributedString * attributedDashString = [[manager attributedStringForDashAmount:req.amount withTintColor:[UIColor whiteColor] useSignificantDigits:FALSE] mutableCopy];
         NSString * titleString = [NSString stringWithFormat:@" (%@)",
                                   [manager localCurrencyStringForDashAmount:req.amount]];
-        [attributedDashString appendAttributedString:[[NSAttributedString alloc] initWithString:titleString attributes:@{NSForegroundColorAttributeName:[UIColor darkTextColor]}]];
+        [attributedDashString appendAttributedString:[[NSAttributedString alloc] initWithString:titleString attributes:@{NSForegroundColorAttributeName:[UIColor whiteColor]}]];
         self.label.attributedText = attributedDashString;
     }
 
@@ -157,10 +157,10 @@
             
             if (req.amount > 0) {
                 BRWalletManager *manager = [BRWalletManager sharedInstance];
-                NSMutableAttributedString * attributedDashString = [[manager attributedStringForDashAmount:req.amount withTintColor:[UIColor darkTextColor] useSignificantDigits:FALSE] mutableCopy];
+                NSMutableAttributedString * attributedDashString = [[manager attributedStringForDashAmount:req.amount withTintColor:[UIColor whiteColor] useSignificantDigits:FALSE] mutableCopy];
                 NSString * titleString = [NSString stringWithFormat:@" (%@)",
                                           [manager localCurrencyStringForDashAmount:req.amount]];
-                [attributedDashString appendAttributedString:[[NSAttributedString alloc] initWithString:titleString attributes:@{NSForegroundColorAttributeName:[UIColor darkTextColor]}]];
+                [attributedDashString appendAttributedString:[[NSAttributedString alloc] initWithString:titleString attributes:@{NSForegroundColorAttributeName:[UIColor whiteColor]}]];
                 self.label.attributedText = attributedDashString;
                 
                 if (! self.balanceObserver) {

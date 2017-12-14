@@ -12,7 +12,7 @@ import UIKit
 
 class Utils: NSObject {
 
-    static func configureNavigationBar(){
+    @objc static func configureNavigationBar(){
         UINavigationBar.appearance().setBackgroundImage(UIImage(), for:.default)
         UINavigationBar.appearance().shadowImage = UIImage()
         UINavigationBar.appearance().barTintColor = K.color.purple_r85g71b108
@@ -35,11 +35,6 @@ class Utils: NSObject {
         let navigationController = SlideMenuController(mainViewController: nav, leftMenuViewController:menuController, rightMenuViewController: UIViewController())
         navigationController.removeRightGestures()
         return navigationController
-//        if let keyWindow = UIApplication.shared.keyWindow {
-//            keyWindow.rootViewController?.removeFromParentViewController()
-//            keyWindow.rootViewController = navigationController
-//            keyWindow.makeKeyAndVisible()
-//        }
     }
     
 //    static func toLogin()->UIViewController {
@@ -47,6 +42,10 @@ class Utils: NSObject {
 //        let navigation = UINavigationController(rootViewController: controller)
 //        return navigation
 //    }
+    
+    @objc static func changeStatusBackgroundColor(color:UIColor = K.color.purple_r85g71b108){
+        UIApplication.shared.statusBarView?.backgroundColor = color
+    }
     
     static func showAlertController(title:String?, message:String?){
         if var topController = UIApplication.shared.keyWindow?.rootViewController {

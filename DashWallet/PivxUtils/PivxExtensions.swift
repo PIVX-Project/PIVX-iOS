@@ -34,6 +34,12 @@ extension UIColor {
     
 }
 
+extension UIApplication {
+    var statusBarView: UIView? {
+        return value(forKey: "statusBar") as? UIView
+    }
+}
+
 extension UIView {
 
     func border(cornerRadius:CGFloat, color:UIColor? = nil){
