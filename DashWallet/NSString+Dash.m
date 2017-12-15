@@ -185,7 +185,7 @@
     NSMutableAttributedString *attributedString = [[NSMutableAttributedString alloc]
                                                    initWithString:[self stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]]];
     
-    NSRange range = [attributedString.string rangeOfString:DASH];
+    NSRange range = [attributedString.string rangeOfString:PIVX];
     if (range.location == NSNotFound) {
         [attributedString insertAttributedString:[[NSAttributedString alloc] initWithString:@" "] atIndex:0];
         [attributedString insertAttributedString:[NSString dashSymbolAttributedStringWithTintColor:color forDashSymbolSize:dashSymbolSize] atIndex:0];

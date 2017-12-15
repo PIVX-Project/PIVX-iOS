@@ -471,7 +471,7 @@
     if (!self.swapped) {
         NSInteger dashCharPos = [previousString indexOfCharacter:NSAttachmentCharacter];
         if (dashCharPos != NSNotFound) {
-            previousString = [previousString stringByReplacingCharactersInRange:NSMakeRange(dashCharPos, 1) withString:DASH];
+            previousString = [previousString stringByReplacingCharactersInRange:NSMakeRange(dashCharPos, 1) withString:PIVX];
         }
         
     }
@@ -510,12 +510,12 @@
     if (!self.swapped) {
         NSInteger dashCharPos = [formattedAmount indexOfCharacter:NSAttachmentCharacter];
         if (dashCharPos != NSNotFound) {
-            formattedAmount = [formattedAmount stringByReplacingCharactersInRange:NSMakeRange(dashCharPos, 1) withString:DASH];
+            formattedAmount = [formattedAmount stringByReplacingCharactersInRange:NSMakeRange(dashCharPos, 1) withString:PIVX];
         }
         if (formattedAmountForDigit) {
             NSInteger dashCharPosForDigit = [formattedAmountForDigit indexOfCharacter:NSAttachmentCharacter];
             if (dashCharPosForDigit != NSNotFound) {
-                formattedAmountForDigit = [formattedAmountForDigit stringByReplacingCharactersInRange:NSMakeRange(dashCharPosForDigit, 1) withString:DASH];
+                formattedAmountForDigit = [formattedAmountForDigit stringByReplacingCharactersInRange:NSMakeRange(dashCharPosForDigit, 1) withString:PIVX];
             }
         }
     }
