@@ -398,11 +398,10 @@ static NSString *dateFormat(NSString *template)
 {
     //TODO: show scanner in settings rather than dismissing
     [BREventManager saveEvent:@"tx_history:scan_qr"];
-    UINavigationController *nav = (id)self.navigationController.presentingViewController;
+    //UINavigationController *nav = (id)self.navigationController.presentingViewController;
+    //nav.view.alpha = 0.0;
 
-    nav.view.alpha = 0.0;
 
-    BRRootViewController *controller = (BRRootViewController *)[[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"RootViewController"];
     
     [Utils showScanController];
     
