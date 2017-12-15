@@ -1200,7 +1200,7 @@
         UINavigationBar *b = self.navigationController.navigationBar;
         NSString *tip;
         if (manager.bitcoinDashPrice) {
-            tip = (self.shouldShowTips) ? [NSString stringWithFormat:@"%@ \n 1%@ = %.4f%@ (%@)",BALANCE_TIP_START,DASH,manager.bitcoinDashPrice.doubleValue,BTC,[manager localCurrencyStringForDashAmount:DUFFS]] :
+            tip = (self.shouldShowTips) ? [NSString stringWithFormat:@"%@ \n 1%@ = %.4f%@ (%@)",BALANCE_TIP_START,PIVX,manager.bitcoinDashPrice.doubleValue,BTC,[manager localCurrencyStringForDashAmount:DUFFS]] :
             [NSString stringWithFormat:NSLocalizedString(@"block #%d of %d", nil),
              [[BRPeerManager sharedInstance] lastBlockHeight],
              [[BRPeerManager sharedInstance] estimatedBlockHeight]];
@@ -1213,7 +1213,7 @@
         NSMutableAttributedString *attributedTip = [[NSMutableAttributedString alloc]
                                                     initWithString:[tip stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]]];
         
-        NSRange range = [attributedTip.string rangeOfString:DASH options:NSBackwardsSearch];
+        NSRange range = [attributedTip.string rangeOfString:PIVX options:NSBackwardsSearch];
         if (range.length != 0)
             [attributedTip replaceCharactersInRange:range
                                withAttributedString:[NSString dashSymbolAttributedStringWithTintColor:[UIColor whiteColor] forDashSymbolSize:CGSizeMake(13, 11)]];

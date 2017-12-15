@@ -332,7 +332,7 @@
     NSUInteger digits = (((manager.dashFormat.maximumFractionDigits - 2)/3 + 1) % 3)*3 + 2;
     
     manager.dashFormat.currencySymbol = [NSString stringWithFormat:@"%@%@" NARROW_NBSP, (digits == 5) ? @"m" : @"",
-                                     (digits == 2) ? DITS : DASH];
+                                     (digits == 2) ? DITS : PIVX];
     manager.dashFormat.maximumFractionDigits = digits;
     manager.dashFormat.maximum = @(MAX_MONEY/(int64_t)pow(10.0, manager.dashFormat.maximumFractionDigits));
     [[NSUserDefaults standardUserDefaults] setInteger:digits forKey:SETTINGS_MAX_DIGITS_KEY];

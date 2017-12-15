@@ -258,7 +258,7 @@ typedef BOOL (^PinVerificationBlock)(NSString * _Nonnull currentPin,BRWalletMana
                                       stringByReplacingCharactersInRange:[self.dashFormat.positiveFormat rangeOfString:@"#"]
                                       withString:@"-#"];
     self.dashFormat.currencyCode = @"PIVX";
-    self.dashFormat.currencySymbol = DASH NARROW_NBSP;
+    self.dashFormat.currencySymbol = PIVX NARROW_NBSP;
     self.dashFormat.maximumFractionDigits = 8;
     self.dashFormat.minimumFractionDigits = 0; // iOS 8 bug, minimumFractionDigits now has to be set after currencySymbol
     self.dashFormat.maximum = @(MAX_MONEY/(int64_t)pow(10.0, self.dashFormat.maximumFractionDigits));
@@ -271,7 +271,7 @@ typedef BOOL (^PinVerificationBlock)(NSString * _Nonnull currentPin,BRWalletMana
                                                  stringByReplacingCharactersInRange:[self.dashFormat.positiveFormat rangeOfString:@"#"]
                                                  withString:@"-#"];
     self.dashSignificantFormat.currencyCode = @"PIVX";
-    self.dashSignificantFormat.currencySymbol = DASH NARROW_NBSP;
+    self.dashSignificantFormat.currencySymbol = PIVX NARROW_NBSP;
     self.dashSignificantFormat.usesSignificantDigits = TRUE;
     self.dashSignificantFormat.minimumSignificantDigits = 1;
     self.dashSignificantFormat.maximumSignificantDigits = 6;
@@ -1638,7 +1638,7 @@ typedef BOOL (^PinVerificationBlock)(NSString * _Nonnull currentPin,BRWalletMana
     if (! string.length) return 0;
     NSInteger dashCharPos = [string indexOfCharacter:NSAttachmentCharacter];
     if (dashCharPos != NSNotFound) {
-        string = [string stringByReplacingCharactersInRange:NSMakeRange(dashCharPos, 1) withString:DASH];
+        string = [string stringByReplacingCharactersInRange:NSMakeRange(dashCharPos, 1) withString:PIVX];
     }
     return [[[NSDecimalNumber decimalNumberWithDecimal:[[self.dashFormat numberFromString:string] decimalValue]]
              decimalNumberByMultiplyingByPowerOf10:self.dashFormat.maximumFractionDigits] longLongValue];
