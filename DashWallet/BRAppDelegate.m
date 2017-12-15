@@ -154,9 +154,9 @@ shouldAllowExtensionPointIdentifier:(NSString *)extensionPointIdentifier
 - (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication
 annotation:(id)annotation
 {
-    if (! [url.scheme isEqual:@"dash"] && ! [url.scheme isEqual:@"dashwallet"]) {
+    if (! [url.scheme isEqual:@"pivx"] && ! [url.scheme isEqual:@"pivxwallet"]) {
         UIAlertController * alert = [UIAlertController
-                                     alertControllerWithTitle:@"Not a dash URL"
+                                     alertControllerWithTitle:@"Not a pivx URL"
                                      message:url.absoluteString
                                      preferredStyle:UIAlertControllerStyleAlert];
         UIAlertAction* okButton = [UIAlertAction

@@ -5,3 +5,4 @@
 #import "BRWelcomeViewController.h"
 #import "BRRootViewController.h"
 #import "BRSendViewController.h"
+#import "BRWalletManager.h"

@@ -8,10 +8,15 @@
 
 import UIKit
 
-class DonationController: BaseController {
+class DonationController: BaseController,BRAmountViewControllerDelegate {
 
     @IBOutlet weak var donateButton: UIButton!
     @IBOutlet weak var amountTextField: UITextField!
+    
+    let DONATE_ADDRESS:String = "DLwFC1qQbUzFZJg1vnvdAXBunRPh6anceK";
+    
+    var amount: String?;
+    
     
     override func setup(){
         donateButton.border(cornerRadius: 5, color: K.color.purple_r85g71b108)
@@ -24,8 +29,29 @@ class DonationController: BaseController {
     }
 
     @IBAction func tappedDonateButton(_ sender: Any) {
-//        if let donationModel = UINib(nibName: "DonationModalView", bundle: nil).instantiate(withOwner: nil, options: nil)[0] as? DonationModalView {
-//            donationModel.show()
-//        }
+        
+        let controller:BRAmountViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "AmountViewController") as! BRAmountViewController;
+        controller.usingShapeshift = false;
+        controller.delegate = self;
+        controller.to = DONATE_ADDRESS;
+        
+        // title view
+        BRWalletManager.sharedInstance();
+        let label = UILabel(frame: CGRect(x: 0, y: 0, width: 1, height: 100));
+        label.autoresizingMask = [.flexibleHeight,.flexibleWidth, .flexibleLeftMargin, .flexibleRightMargin, .flexibleTopMargin, .flexibleBottomMargin];
+        label.backgroundColor = UIColor.clear;
+        label.textAlignment = .center
+        label.text = "Donate"
+        
+        controller.navigationItem.titleView = label;
+        present(controller, animated: true) {
+            // here is if i want to receive the callback once the view is loaded.
+        };
     }
+    
+    func amountViewController(_ amountViewController: BRAmountViewController!, selectedAmount amount: UInt64) {
+        // callback from the BRAmountViewController.
+    }
+
+
 }

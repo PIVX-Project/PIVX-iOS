@@ -523,7 +523,7 @@
     if (!formattedAmountForDigit) formattedAmountForDigit = formattedAmount;
     NSNumber * epsilonNumber = [formatter numberFromString:formattedAmountForDigit];
     basicFormatter.maximumFractionDigits++;
-    NSString * basicFormattedAmount = [basicFormatter stringFromNumber:epsilonNumber]; //without the DASH symbol
+    NSString * basicFormattedAmount = [basicFormatter stringFromNumber:epsilonNumber]; //without the PIVX symbol
     NSUInteger digitLocationNewBasicFormatted = [basicFormattedAmount rangeOfString:basicFormatter.currencyDecimalSeparator].location;
     basicFormatter.maximumFractionDigits--;
     NSUInteger digits = 0;
