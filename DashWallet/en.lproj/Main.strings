@@ -66,13 +66,13 @@
 "fQN-xb-SYb.title" = "confirm:";
 
 /* Class = "UILabel"; text = "Send DASH"; ObjectID = "l5l-JR-LKA"; */
-"l5l-JR-LKA.text" = "Send PIVX";
+"l5l-JR-LKA.text" = "SEND PIVX";
 
 /* Class = "UINavigationItem"; title = "recovery phrase:"; ObjectID = "ooJ-EA-DFl"; */
 "ooJ-EA-DFl.title" = "recovery phrase:";
 
 /* Class = "UILabel"; text = "Receive DASH"; ObjectID = "qel-3J-2VC"; */
-"qel-3J-2VC.text" = "Receive PIVX";
+"qel-3J-2VC.text" = "RECEIVE PIVX";
 
 /* Class = "UITableViewController"; title = "transaction details"; ObjectID = "s4T-yd-VfX"; */
 "s4T-yd-VfX.title" = "transaction details";

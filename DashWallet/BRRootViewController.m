@@ -515,7 +515,13 @@
     [self.view bringSubviewToFront:self.progress];
     [self.view bringSubviewToFront:self.pulse];
     
-    [self addAddressButton];
+    if (self.navigationTypeButton == 0){
+        [self addAddressButton];
+    } else {
+        [self addSendButton];
+    }
+    
+    
 }
 
 -(void)addAddressButton {
