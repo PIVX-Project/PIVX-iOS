@@ -1864,8 +1864,8 @@ This app is open source:</string>
                                         <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="https://github.com/QuantumExplorer/dashwallet" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="300" translatesAutoresizingMaskIntoConstraints="NO" id="5OA-tB-Exg">
-                                        <rect key="frame" x="98.666666666666686" y="107.66666666666663" width="217" height="41"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="https://github.com/furszy/PIVX-ios-wallet" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="300" translatesAutoresizingMaskIntoConstraints="NO" id="5OA-tB-Exg">
+                                        <rect key="frame" x="88.000000000000014" y="107.66666666666663" width="238.33333333333337" height="41"/>
                                         <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
                                         <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
@@ -1873,7 +1873,7 @@ This app is open source:</string>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="300" translatesAutoresizingMaskIntoConstraints="NO" id="D4H-hd-LsX">
                                         <rect key="frame" x="100.99999999999999" y="166.66666666666663" width="213.66666666666663" height="36"/>
                                         <string key="text">exchange rate data provided by
-bitpay.com/rates and poloniex</string>
+coinmarketcap.com</string>
                                         <fontDescription key="fontDescription" type="system" weight="light" pointSize="15"/>
                                         <nil key="highlightedColor"/>
                                     </label>
