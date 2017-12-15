@@ -341,7 +341,7 @@ typedef BOOL (^PinVerificationBlock)(NSString * _Nonnull currentPin,BRWalletMana
     self.localCurrencyCode = ([defs stringForKey:LOCAL_CURRENCY_CODE_KEY]) ?
     [defs stringForKey:LOCAL_CURRENCY_CODE_KEY] : [[NSLocale currentLocale] objectForKey:NSLocaleCurrencyCode];
     dispatch_async(dispatch_get_main_queue(), ^{
-        //[self updateBitcoinExchangeRate];
+        [self updateBitcoinExchangeRate];
         [self updateDashExchangeRate];
     });
 }
