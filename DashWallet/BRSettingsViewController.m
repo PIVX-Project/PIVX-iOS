@@ -37,6 +37,7 @@
 #import <arpa/inet.h>
 #import "dashwallet-Swift.h"
 
+
 @interface BRSettingsViewController ()
 
 @property (nonatomic, assign) BOOL touchId;
@@ -723,14 +724,32 @@ _deselect_switch:
                     break;
                     
                 case 2: // rescan blockchain
-                    [[BRPeerManager sharedInstance] rescan];
-                    [BREventManager saveEvent:@"settings:rescan"];
-                    [self done:nil];
+                    [self showAlertOption];
                     break;
             }
             
             break;
     }
+}
+-(void)showAlertOption {
+    UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"Reset blockchain"
+                                                                   message:@"The blockchain is going to be reseted.\nThe synchronization could take a while.\nAre you sure?"
+                                                            preferredStyle:UIAlertControllerStyleActionSheet];
+    UIAlertAction *firstAction = [UIAlertAction actionWithTitle:@"cancel"
+                                                          style:UIAlertActionStyleCancel handler:^(UIAlertAction * action) {
+                                                              
+                                                          }]; // 2
+    UIAlertAction *secondAction = [UIAlertAction actionWithTitle:@"ok"
+                                                           style:UIAlertActionStyleDefault handler:^(UIAlertAction * action) {
+                                                               [[BRPeerManager sharedInstance] rescan];
+                                                               [BREventManager saveEvent:@"settings:rescan"];
+                                                               [self done:nil];
+                                                           }]; // 3
+    
+    [alert addAction:firstAction]; // 4
+    [alert addAction:secondAction]; // 5
+    
+    [self presentViewController:alert animated:YES completion:nil]; // 6
 }
 
 // MARK: - MFMailComposeViewControllerDelegate
