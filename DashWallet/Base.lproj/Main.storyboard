@@ -883,45 +883,54 @@
                                 </connections>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ce6-Wi-wk4">
-                                <rect key="frame" x="77.333333333333314" y="344" width="260" height="48"/>
+                                <rect key="frame" x="77.333333333333314" y="348" width="260" height="40"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <gestureRecognizers/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="260" id="KnJ-HV-aoB"/>
-                                    <constraint firstAttribute="height" constant="48" id="WmA-Sw-dye"/>
+                                    <constraint firstAttribute="height" constant="40" id="WmA-Sw-dye"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
-                                <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="tintColor" red="0.33333333329999998" green="0.2784313725" blue="0.42352941179999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <inset key="contentEdgeInsets" minX="10" minY="0.0" maxX="10" maxY="0.0"/>
                                 <inset key="imageEdgeInsets" minX="-10" minY="0.0" maxX="10" maxY="0.0"/>
                                 <size key="titleShadowOffset" width="0.0" height="1"/>
-                                <state key="normal" title="Scan QR Code" image="cameraguide-blue-small">
+                                <state key="normal" title="Scan QR Code" image="icQrCode">
                                     <color key="titleColor" red="0.33333333329999998" green="0.2784313725" blue="0.42352941179999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="scanQR:" destination="RsQ-W7-grB" eventType="touchUpInside" id="wbh-n6-WR8"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bfj-xS-5rN">
-                                <rect key="frame" x="77.333333333333314" y="427" width="260" height="48"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bfj-xS-5rN">
+                                <rect key="frame" x="77.333333333333314" y="423" width="260" height="40"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <gestureRecognizers/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="48" id="nsj-xF-Ebz"/>
+                                    <constraint firstAttribute="height" constant="40" id="nsj-xF-Ebz"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
-                                <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <inset key="contentEdgeInsets" minX="10" minY="0.0" maxX="10" maxY="0.0"/>
                                 <size key="titleShadowOffset" width="0.0" height="1"/>
                                 <state key="normal" title="Pay Address From Clipboard">
                                     <color key="titleColor" red="0.33333333329999998" green="0.2784313725" blue="0.42352941179999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <state key="disabled" backgroundImage="imgButtonHover">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <state key="selected" backgroundImage="imgButtonHover">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <state key="highlighted" backgroundImage="imgButtonHover">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
                                     <action selector="payToClipboard:" destination="RsQ-W7-grB" eventType="touchUpInside" id="qNZ-Ff-JNL"/>
                                 </connections>
                             </button>
                             <textView hidden="YES" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" directionalLockEnabled="YES" showsHorizontalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SgP-DR-cyl">
-                                <rect key="frame" x="12" y="485" width="389.66666666666669" height="50"/>
+                                <rect key="frame" x="12" y="473" width="389.66666666666669" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="aei-Xc-iH8"/>
                                     <constraint firstAttribute="height" relation="lessThanOrEqual" constant="100" id="gST-pi-TjH"/>
@@ -935,13 +944,13 @@
                                 </connections>
                             </textView>
                             <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Instant Send" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lbm-03-nu4">
-                                <rect key="frame" x="85.333333333333314" y="548" width="95" height="21"/>
+                                <rect key="frame" x="85.333333333333314" y="536" width="95" height="21"/>
                                 <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <switch hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aeV-sO-1m0">
-                                <rect key="frame" x="288.33333333333331" y="545" width="51" height="30"/>
+                                <rect key="frame" x="288.33333333333331" y="533" width="51" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="6Qz-aJ-WXY"/>
                                 </constraints>
@@ -951,14 +960,14 @@
                                 </connections>
                             </switch>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imgSend" translatesAutoresizingMaskIntoConstraints="NO" id="4Ur-j7-v3L">
-                                <rect key="frame" x="167.33333333333334" y="181" width="80" height="80"/>
+                                <rect key="frame" x="157.33333333333334" y="181" width="100.00000000000003" height="100"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="80" id="CFi-QK-5cn"/>
-                                    <constraint firstAttribute="height" constant="80" id="fFu-JF-zpE"/>
+                                    <constraint firstAttribute="width" constant="100" id="CFi-QK-5cn"/>
+                                    <constraint firstAttribute="height" constant="100" id="fFu-JF-zpE"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="or" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ecs-es-ao8">
-                                <rect key="frame" x="199" y="396" width="16" height="27"/>
+                                <rect key="frame" x="199" y="392" width="16" height="27"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -2154,11 +2163,10 @@ Other devices may be infected.
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="if you ever lose your phone, you will need this phrase to recover your wallet" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="300" translatesAutoresizingMaskIntoConstraints="NO" id="EQG-Km-ZKY">
-                                <rect key="frame" x="60.333333333333343" y="268.33333333333331" width="294.66666666666663" height="40.666666666666686"/>
+                                <rect key="frame" x="60.333333333333343" y="269.33333333333331" width="294.66666666666663" height="39.666666666666686"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
-                                <color key="shadowColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <size key="shadowOffset" width="0.0" height="1"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="please write it down" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="300" translatesAutoresizingMaskIntoConstraints="NO" id="Td7-xP-kmB">
@@ -2639,12 +2647,13 @@ Other devices may be infected.
         <image name="button-bg-blue-pressed" width="10" height="44"/>
         <image name="button-bg-disabled" width="10" height="11"/>
         <image name="cameraguide" width="234" height="234"/>
-        <image name="cameraguide-blue-small" width="20" height="20"/>
         <image name="checkbox-empty" width="22" height="22"/>
         <image name="flash" width="33" height="33"/>
         <image name="icKeyBack" width="28" height="20"/>
+        <image name="icQrCode" width="25" height="25"/>
+        <image name="imgButtonHover" width="282" height="38"/>
         <image name="imgHeaderLogo" width="102" height="29"/>
-        <image name="imgSend" width="111" height="111"/>
+        <image name="imgSend" width="111" height="115"/>
         <image name="lock" width="12" height="16"/>
         <image name="logo" width="140" height="171"/>
         <image name="refresh" width="9" height="11"/>

@@ -45,6 +45,7 @@
 #import "MBProgressHUD.h"
 #import "DSShapeshiftManager.h"
 #import "BRBIP32Sequence.h"
+#import "dashwallet-Swift.h"
 
 #define SCAN_TIP      NSLocalizedString(@"Scan someone else's QR code to get their PIVX address. "\
 "You can send a payment to anyone with an address.", nil)
@@ -96,7 +97,6 @@ static NSString *sanitizeString(NSString *s)
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    
     // TODO: XXX redesign page with round buttons like the iOS power down screen... apple watch also has round buttons
     self.scanButton.titleLabel.adjustsFontSizeToFitWidth = YES;
     self.clipboardButton.titleLabel.adjustsFontSizeToFitWidth = YES;
