@@ -317,6 +317,7 @@
             self.selectedOption = self.selectorOptions[(log10(manager.spendingLimit) < 6) ? 0 :
                                                        (NSUInteger)log10(manager.spendingLimit) - 6];
             self.noOptionsText = nil;
+            self.selectorController.view.backgroundColor = UIColor.whiteColor;
             self.selectorController.title = NSLocalizedString(@"touch id spending limit", nil);
             [self.navigationController pushViewController:self.selectorController animated:YES];
             [self.selectorController.tableView reloadData];
@@ -621,6 +622,7 @@ _switch_cell:
     currencyCodeIndex = [manager.currencyCodes indexOfObject:manager.localCurrencyCode];
     if (currencyCodeIndex < options.count) self.selectedOption = options[currencyCodeIndex];
     self.noOptionsText = NSLocalizedString(@"no exchange rate data", nil);
+    self.selectorController.view.backgroundColor = UIColor.whiteColor;
     self.selectorController.title =
         [NSString stringWithFormat:@"%@ = %@",
          [manager localCurrencyStringForDashAmount:(localPrice > DBL_EPSILON) ? DUFFS/localPrice : 0],
