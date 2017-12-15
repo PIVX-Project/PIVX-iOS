@@ -88,8 +88,8 @@
             url = [NSURL URLWithString:[NSString stringWithFormat:@"bitcoin://%@", s]];
             self.scheme = @"bitcoin";
         } else if ([s isValidDashAddress] || [s isValidDashPrivateKey] || [s isValidDashBIP38Key]) {
-            url = [NSURL URLWithString:[NSString stringWithFormat:@"dash://%@", s]];
-            self.scheme = @"dash";
+            url = [NSURL URLWithString:[NSString stringWithFormat:@"pivx://%@", s]];
+            self.scheme = @"pivx";
         }
     }
     else if (! url.host && url.resourceSpecifier) {
@@ -98,10 +98,10 @@
     } else if (url.scheme) {
         self.scheme = url.scheme;
     } else {
-        self.scheme = @"dash";
+        self.scheme = @"pivx";
     }
     
-    if ([url.scheme isEqualToString:@"dash"] || [url.scheme isEqualToString:@"bitcoin"]) {
+    if ([url.scheme isEqualToString:@"pivx"] || [url.scheme isEqualToString:@"bitcoin"]) {
         self.paymentAddress = url.host;
     
         //TODO: correctly handle unknown but required url arguments (by reporting the request invalid)
@@ -154,7 +154,7 @@
 
 - (NSString *)string
 {
-    if (! ([self.scheme isEqual:@"bitcoin"] || [self.scheme isEqual:@"dash"])) return self.r;
+    if (! ([self.scheme isEqual:@"bitcoin"] || [self.scheme isEqual:@"pivx"])) return self.r;
 
     NSMutableString *s = [NSMutableString stringWithFormat:@"%@:",self.scheme];
     NSMutableArray *q = [NSMutableArray array];
@@ -217,10 +217,10 @@
 
 - (BOOL)isValid
 {
-    if ([self.scheme isEqualToString:@"dash"]) {
+    if ([self.scheme isEqualToString:@"pivx"]) {
         BOOL valid = ([self.paymentAddress isValidDashAddress] || (self.r && [NSURL URLWithString:self.r])) ? YES : NO;
         if (!valid) {
-            NSLog(@"Not a valid dash request");
+            NSLog(@"Not a valid pivx request");
         }
         return valid;
     } else if ([self.scheme isEqualToString:@"bitcoin"]) {

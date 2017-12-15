@@ -43,7 +43,8 @@ class DonationController: BaseController,BRAmountViewControllerDelegate {
         label.textAlignment = .center
         label.text = "Donate"
         
-        controller.navigationItem.titleView = label;
+        controller.navigationItem.titleView = navigationItem.titleView;
+        controller.title = "Donate";
         present(controller, animated: true) {
             // here is if i want to receive the callback once the view is loaded.
         };
