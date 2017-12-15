@@ -23,6 +23,7 @@ class MenuController: BaseController {
     
     override func setup(){
         cotainerViewHeightConstraint.constant = K.main.height - 130
+        selectTitle()
     }
 
     @IBAction func tappedMyWalletButton(_ sender: Any) {
