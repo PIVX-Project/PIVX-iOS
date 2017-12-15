@@ -33,13 +33,9 @@
 - (UInt256)x11
 {
     NSData * copy = [self copy];
-    //NSData *dataData;
-    //char* fileBytes = (char*)[256 bytes];
     char *output = (char *)calloc(256, sizeof(char));
-    //char* output = [char* alloc];
-    //const char* input = (const char*)[copy.bytes bytes];
     quark_hash(copy.bytes, output);
-    
+    // Check if i have to dealloc something here.
     return *(const UInt256 *)output;
 }
 
