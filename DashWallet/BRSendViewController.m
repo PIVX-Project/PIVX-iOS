@@ -571,7 +571,7 @@ static NSString *sanitizeString(NSString *s)
             self.associatedShapeshift = shapeshift;
             UIAlertController * alert = [UIAlertController
                                          alertControllerWithTitle:NSLocalizedString(@"WARNING", nil)
-                                         message:NSLocalizedString(@"\nADDRESS ALREADY USED\ndash addresses are intended for single use only\n\n"
+                                         message:NSLocalizedString(@"\nADDRESS ALREADY USED\nPIVX addresses are intended for single use only\n\n"
                                                                    "re-use reduces privacy for both you and the recipient and can result in loss if "
                                                                    "the recipient doesn't directly control the address", nil)
                                          preferredStyle:UIAlertControllerStyleAlert];
