@@ -32,6 +32,7 @@
 #import "NSManagedObject+Sugar.h"
 #import "BREventManager.h"
 #import "BRPeerManager.h"
+#import "dashwallet-Swift.h"
 
 
 #define PHRASE_LENGTH 12
@@ -56,6 +57,8 @@
     // TODO: create secure versions of keyboard and UILabel and use in place of UITextView
     // TODO: autocomplete based on 4 letter prefixes of mnemonic words
     
+    [Utils changeStatusBackgroundColorWithColor:UIColor.whiteColor];
+    [[self.navigationController navigationBar] setBackgroundColor:UIColor.whiteColor];
     self.textView.layer.cornerRadius = 5.0;
     
     self.keyboardObserver =
@@ -111,7 +114,10 @@
 }
 
 -(void)tappedBackButton{
-    [self.navigationController popViewControllerAnimated:YES];
+    UIViewController *controller = [self.navigationController popViewControllerAnimated:YES];
+    if (controller == nil) {
+        [self.navigationController dismissViewControllerAnimated:YES completion:nil];
+    }
 }
 
 - (void)dealloc

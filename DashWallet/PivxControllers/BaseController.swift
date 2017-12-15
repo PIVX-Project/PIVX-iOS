@@ -59,6 +59,9 @@ class BaseController: UIViewController {
     }
     
     func tappedBackButton(){
-        let _ = navigationController?.popViewController(animated: true)
+        let result = navigationController?.popViewController(animated: true)
+        if result == nil {
+            navigationController?.dismiss(animated: true, completion: nil)
+        }
     }
 }

@@ -64,7 +64,8 @@
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
- 
+    UIColor *color = [UIColor rgb:85 green:71 blue:108 alpha:1];
+    [Utils changeStatusBackgroundColorWithColor:color];
     BRWalletManager *manager = [BRWalletManager sharedInstance];
 
     if (self.navBarSwipe) [self.navigationController.navigationBar removeGestureRecognizer:self.navBarSwipe];
