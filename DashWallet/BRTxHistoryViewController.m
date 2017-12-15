@@ -641,13 +641,13 @@ static NSString *dateFormat(NSString *template)
                     
                 case 1:
                     cell.textLabel.text = NSLocalizedString(@"import private key", nil);
-                    cell.imageView.image = [UIImage imageNamed:@"cameraguide-blue-small"];
+                    cell.imageView.image = [UIImage imageNamed:@"icScan"];
                     break;
 
                 case 2:
                     cell = [tableView dequeueReusableCellWithIdentifier:disclosureIdent];
                     cell.textLabel.text = NSLocalizedString(@"settings", nil);
-                    cell.imageView.image = [UIImage imageNamed:@"settings"];
+                    cell.imageView.image = [UIImage imageNamed:@"icSettings"];
                     break;
             }
             

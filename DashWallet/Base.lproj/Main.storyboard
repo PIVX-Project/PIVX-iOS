@@ -111,8 +111,8 @@
                                             <fontDescription key="fontDescription" type="system" weight="light" pointSize="15"/>
                                             <size key="shadowOffset" width="0.0" height="0.0"/>
                                         </label>
-                                        <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" tag="1" contentMode="left" text="ƀ 1,000,000" lineBreakMode="clip" baselineAdjustment="alignBaselines" minimumFontSize="13" adjustsLetterSpacingToFitWidth="YES" preferredMaxLayoutWidth="87.5" translatesAutoresizingMaskIntoConstraints="NO" id="PSx-oa-hSL">
-                                            <rect key="frame" x="284" y="20.666666666666668" width="89" height="20.000000000000004"/>
+                                        <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" tag="1" contentMode="left" text="ƀ 1,000,000" textAlignment="right" lineBreakMode="clip" baselineAdjustment="alignBaselines" minimumFontSize="13" adjustsLetterSpacingToFitWidth="YES" preferredMaxLayoutWidth="87.5" translatesAutoresizingMaskIntoConstraints="NO" id="PSx-oa-hSL">
+                                            <rect key="frame" x="284" y="20.666666666666668" width="122" height="20.000000000000004"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="20" id="Cxs-gZ-gbu"/>
                                             </constraints>
@@ -136,8 +136,8 @@
                                             <color key="highlightedColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <size key="shadowOffset" width="0.0" height="0.0"/>
                                         </label>
-                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="7" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ƀ 1,000,000" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="67" translatesAutoresizingMaskIntoConstraints="NO" id="ue1-2S-fEr">
-                                            <rect key="frame" x="284" y="45.666666666666664" width="69.666666666666686" height="16"/>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="7" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ƀ 1,000,000" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="67" translatesAutoresizingMaskIntoConstraints="NO" id="ue1-2S-fEr">
+                                            <rect key="frame" x="284" y="45.666666666666664" width="122" height="16"/>
                                             <fontDescription key="fontDescription" type="system" weight="light" pointSize="13"/>
                                             <color key="textColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <nil key="highlightedColor"/>
@@ -182,7 +182,7 @@
                                         <constraint firstItem="ue1-2S-fEr" firstAttribute="leading" secondItem="O7K-cF-GAA" secondAttribute="trailing" constant="5" id="DPX-pq-2EA"/>
                                         <constraint firstItem="pXc-8D-8Gh" firstAttribute="leading" secondItem="6S0-4K-BGB" secondAttribute="leading" constant="15" id="LFK-gt-ZnC"/>
                                         <constraint firstItem="ue1-2S-fEr" firstAttribute="leading" secondItem="PSx-oa-hSL" secondAttribute="leading" id="OAu-vu-oGD"/>
-                                        <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="ue1-2S-fEr" secondAttribute="trailing" constant="5" id="ObC-En-RtO"/>
+                                        <constraint firstAttribute="trailing" secondItem="ue1-2S-fEr" secondAttribute="trailing" constant="8" id="ObC-En-RtO"/>
                                         <constraint firstItem="Pw4-pn-Yqv" firstAttribute="leading" secondItem="6S0-4K-BGB" secondAttribute="leading" id="Qb7-4I-4W0"/>
                                         <constraint firstItem="PSx-oa-hSL" firstAttribute="top" secondItem="qNV-Ka-14n" secondAttribute="top" id="QxI-FL-mbY"/>
                                         <constraint firstItem="ue1-2S-fEr" firstAttribute="baseline" secondItem="pXc-8D-8Gh" secondAttribute="baseline" id="SIF-vQ-nAr"/>
@@ -193,7 +193,7 @@
                                         <constraint firstItem="Pw4-pn-Yqv" firstAttribute="top" secondItem="6S0-4K-BGB" secondAttribute="top" id="gUa-YN-YgI"/>
                                         <constraint firstItem="zUE-VM-MXo" firstAttribute="top" secondItem="6S0-4K-BGB" secondAttribute="topMargin" constant="34" id="o5N-UA-VQq"/>
                                         <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="pXc-8D-8Gh" secondAttribute="trailing" constant="10" id="pFm-ZB-Wet"/>
-                                        <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="PSx-oa-hSL" secondAttribute="trailing" constant="5" id="r72-2D-c4L"/>
+                                        <constraint firstAttribute="trailing" secondItem="PSx-oa-hSL" secondAttribute="trailing" constant="8" id="r72-2D-c4L"/>
                                         <constraint firstItem="eJ2-5h-DO2" firstAttribute="leading" secondItem="6S0-4K-BGB" secondAttribute="leading" constant="15" id="uZo-6y-ygR"/>
                                         <constraint firstItem="qNV-Ka-14n" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="eJ2-5h-DO2" secondAttribute="trailing" id="vjs-0v-tPc"/>
                                         <constraint firstItem="FjB-H2-BnK" firstAttribute="leading" secondItem="6S0-4K-BGB" secondAttribute="leading" constant="15" id="wSt-ji-yrE"/>
@@ -898,8 +898,6 @@
                                 <state key="normal" title="Scan QR Code" image="cameraguide-blue-small">
                                     <color key="titleColor" red="0.33333333329999998" green="0.2784313725" blue="0.42352941179999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
-                                <state key="disabled" image="cameraguide-small" backgroundImage="button-bg-blue-pressed"/>
-                                <state key="highlighted" image="cameraguide-small" backgroundImage="button-bg-blue-pressed"/>
                                 <connections>
                                     <action selector="scanQR:" destination="RsQ-W7-grB" eventType="touchUpInside" id="wbh-n6-WR8"/>
                                 </connections>
@@ -918,8 +916,6 @@
                                 <state key="normal" title="Pay Address From Clipboard">
                                     <color key="titleColor" red="0.33333333329999998" green="0.2784313725" blue="0.42352941179999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
-                                <state key="disabled" backgroundImage="button-bg-blue-pressed"/>
-                                <state key="highlighted" backgroundImage="button-bg-blue-pressed"/>
                                 <connections>
                                     <action selector="payToClipboard:" destination="RsQ-W7-grB" eventType="touchUpInside" id="qNZ-Ff-JNL"/>
                                 </connections>
@@ -954,7 +950,7 @@
                                     <action selector="enableInstantX:" destination="RsQ-W7-grB" eventType="valueChanged" id="k8Q-dV-O71"/>
                                 </connections>
                             </switch>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icSend" translatesAutoresizingMaskIntoConstraints="NO" id="4Ur-j7-v3L">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imgSend" translatesAutoresizingMaskIntoConstraints="NO" id="4Ur-j7-v3L">
                                 <rect key="frame" x="167.33333333333334" y="181" width="80" height="80"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="80" id="CFi-QK-5cn"/>
@@ -1103,7 +1099,6 @@ a global community comprised of creators, innovators, and technology enthusiasts
                                     <color key="titleColor" red="0.33333333329999998" green="0.2784313725" blue="0.42352941179999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <state key="disabled" backgroundImage="button-bg-disabled"/>
-                                <state key="highlighted" backgroundImage="button-bg-white-pressed"/>
                                 <connections>
                                     <action selector="start:" destination="jSI-EH-TU3" eventType="touchUpInside" id="NCk-RG-cGT"/>
                                 </connections>
@@ -1120,7 +1115,6 @@ a global community comprised of creators, innovators, and technology enthusiasts
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <state key="disabled" backgroundImage="button-bg-disabled"/>
-                                <state key="highlighted" backgroundImage="button-bg-white-pressed"/>
                                 <connections>
                                     <action selector="recover:" destination="jSI-EH-TU3" eventType="touchUpInside" id="3LA-Wu-m6t"/>
                                 </connections>
@@ -2012,7 +2006,6 @@ coinmarketcap.com</string>
                                 <state key="normal" title="generate recovery phrase">
                                     <color key="titleColor" red="0.33333333329999998" green="0.2784313725" blue="0.42352941179999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
-                                <state key="highlighted" backgroundImage="button-bg-blue-pressed"/>
                                 <connections>
                                     <action selector="generateRecoveryPhrase:" destination="gE8-de-XET" eventType="touchUpInside" id="1sj-GU-TQS"/>
                                 </connections>
@@ -2326,6 +2319,7 @@ Other devices may be infected.
                                 <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="22"/>
                                 <inset key="contentEdgeInsets" minX="81" minY="-7" maxX="-81" maxY="7"/>
                                 <state key="normal" title="↔︎">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
@@ -2356,7 +2350,7 @@ Other devices may be infected.
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xaD-eI-0iC">
                                 <rect key="frame" x="147.66666666666666" y="138" width="118.99999999999997" height="129.33333333333337"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="55"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="55"/>
                                 <size key="titleShadowOffset" width="0.0" height="1"/>
                                 <state key="normal" title="2">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -2421,7 +2415,7 @@ Other devices may be infected.
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jcY-uc-kOc">
-                                <rect key="frame" x="20.000000000000007" y="412.33333333333331" width="119.66666666666669" height="128.99999999999994"/>
+                                <rect key="frame" x="20.000000000000007" y="412.33333333333331" width="119.66666666666669" height="128.66666666666669"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="55"/>
                                 <size key="titleShadowOffset" width="0.0" height="1"/>
                                 <state key="normal" title="7">
@@ -2460,18 +2454,19 @@ Other devices may be infected.
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cz1-M6-v6N">
-                                <rect key="frame" x="19.999999999999993" y="549.33333333333337" width="119.33333333333331" height="128.66666666666663"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="55"/>
+                                <rect key="frame" x="20" y="549" width="119" height="129"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="55"/>
                                 <size key="titleShadowOffset" width="0.0" height="1"/>
                                 <state key="normal" title=".">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <state key="highlighted" backgroundImage="button-bg-blue-pressed"/>
                                 <connections>
                                     <action selector="number:" destination="La8-tY-sM4" eventType="touchUpInside" id="okD-6F-HjW"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OKR-t9-9Lk">
-                                <rect key="frame" x="147.33333333333334" y="549.33333333333337" width="119.00000000000003" height="128.66666666666663"/>
+                                <rect key="frame" x="147" y="549.33333333333337" width="119.33333333333331" height="128.66666666666663"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="55"/>
                                 <size key="titleShadowOffset" width="0.0" height="1"/>
                                 <state key="normal" title="0">
@@ -2483,20 +2478,14 @@ Other devices may be infected.
                                     <action selector="number:" destination="La8-tY-sM4" eventType="touchUpInside" id="cdg-bi-4Ez"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X53-jN-wEO">
+                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X53-jN-wEO">
                                 <rect key="frame" x="274.33333333333331" y="549.33333333333337" width="119.66666666666669" height="128.66666666666663"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="50"/>
+                                <color key="tintColor" red="0.94117647059999998" green="0.94117647059999998" blue="0.94117647059999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <size key="titleShadowOffset" width="0.0" height="1"/>
-                                <state key="normal" image="deletetoleft">
-                                    <color key="titleShadowColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <state key="disabled" backgroundImage="button-bg-disabled">
-                                    <color key="titleColor" red="0.66666666669999997" green="0.66666666669999997" blue="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <state key="highlighted" image="deletetoleft-pressed" backgroundImage="button-bg-blue-pressed">
+                                <state key="normal" image="icKeyBack">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    <color key="titleShadowColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <state key="disabled" backgroundImage="button-bg-disabled"/>
                                 <connections>
                                     <action selector="del:" destination="La8-tY-sM4" eventType="touchUpInside" id="hF2-HA-h8M"/>
                                 </connections>
@@ -2649,16 +2638,13 @@ Other devices may be infected.
         <image name="burger" width="20" height="16"/>
         <image name="button-bg-blue-pressed" width="10" height="44"/>
         <image name="button-bg-disabled" width="10" height="11"/>
-        <image name="button-bg-white-pressed" width="11" height="10"/>
         <image name="cameraguide" width="234" height="234"/>
         <image name="cameraguide-blue-small" width="20" height="20"/>
-        <image name="cameraguide-small" width="20" height="20"/>
         <image name="checkbox-empty" width="22" height="22"/>
-        <image name="deletetoleft" width="29" height="23"/>
-        <image name="deletetoleft-pressed" width="29" height="23"/>
         <image name="flash" width="33" height="33"/>
-        <image name="icSend" width="79" height="79"/>
+        <image name="icKeyBack" width="28" height="20"/>
         <image name="imgHeaderLogo" width="102" height="29"/>
+        <image name="imgSend" width="111" height="111"/>
         <image name="lock" width="12" height="16"/>
         <image name="logo" width="140" height="171"/>
         <image name="refresh" width="9" height="11"/>
