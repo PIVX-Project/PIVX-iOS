@@ -272,6 +272,11 @@
                                                                [alert addAction:closeButton];
                                                                [self presentViewController:alert animated:YES completion:nil];
                                                            }
+                                                           if (self.navigationTypeButton == 0){
+                                                               [self addAddressButton];
+                                                           } else {
+                                                               [self addSendButton];
+                                                           }
                                                        }];
     }
     if (self.backgroundObserver == nil){
