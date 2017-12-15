@@ -35,6 +35,7 @@
 #import <sys/socket.h>
 #import <netdb.h>
 #import <arpa/inet.h>
+#import "dashwallet-Swift.h"
 
 @interface BRSettingsViewController ()
 
@@ -160,7 +161,9 @@
 - (IBAction)done:(id)sender
 {
     [BREventManager saveEvent:@"settings:dismiss"];
-    [self.navigationController.presentingViewController dismissViewControllerAnimated:YES completion:nil];
+    [self.navigationController popToRootViewControllerAnimated:FALSE];
+    [Utils toRootController];
+    //[self.navigationController.presentingViewController dismissViewControllerAnimated:YES completion:nil];
 }
 
 - (IBAction)about:(id)sender

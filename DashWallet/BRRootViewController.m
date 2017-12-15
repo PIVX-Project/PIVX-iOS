@@ -507,6 +507,9 @@
     self.pageViewController.view.alpha = 1.0;
     if ([BRWalletManager sharedInstance].didAuthenticate) [self unlock:nil];
     
+    [self.view bringSubviewToFront:self.progress];
+    [self.view bringSubviewToFront:self.pulse];
+    
     [self addAddressButton];
 }
 

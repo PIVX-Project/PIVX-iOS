@@ -76,5 +76,12 @@ class Utils: NSObject {
         }
     }
     
+    @objc static func toRootController(){
+        if let root = UIApplication.shared.keyWindow?.rootViewController as? SlideMenuController {
+            guard let menu = root.leftViewController as? MenuController else { return }
+            menu.tappedMyWalletButton(UIButton())
+        }
+    }
+    
     
 }
