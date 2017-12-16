@@ -256,7 +256,7 @@
 		2B4838CA1FE21655001C8D09 /* Donation.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = Donation.xib; path = PivxNibs/Controllers/Donation.xib; sourceTree = "<group>"; };
 		2B4838CC1FE21666001C8D09 /* DonationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DonationController.swift; path = PivxControllers/DonationController.swift; sourceTree = "<group>"; };
 		2B5735661FE04BC400110745 /* PivxAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = PivxAssets.xcassets; sourceTree = "<group>"; };
-		2B5735691FE04C4100110745 /* dashwallet-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "dashwallet-Bridging-Header.h"; sourceTree = "<group>"; };
+		2B5735691FE04C4100110745 /* pivxwallet-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "pivxwallet-Bridging-Header.h"; sourceTree = "<group>"; };
 		2B57356A1FE04C4200110745 /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Utils.swift; path = PivxUtils/Utils.swift; sourceTree = "<group>"; };
 		2B57356B1FE04C4200110745 /* PivxExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PivxExtensions.swift; path = PivxUtils/PivxExtensions.swift; sourceTree = "<group>"; };
 		2B57356C1FE04C4200110745 /* UIView+Anchors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIView+Anchors.swift"; path = "PivxUtils/UIView+Anchors.swift"; sourceTree = "<group>"; };
@@ -572,7 +572,7 @@
 		FB43112A1FA2D45800784EBC /* sq */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = sq; path = sq.lproj/BREventConfirmView.strings; sourceTree = "<group>"; };
 		FB43112C1FA2D45900784EBC /* nb */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nb; path = nb.lproj/BREventConfirmView.strings; sourceTree = "<group>"; };
 		FB43112E1FA2D45900784EBC /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/BREventConfirmView.strings; sourceTree = "<group>"; };
-		FB6DD3811F7FA48500BC1E4D /* dashwallet.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = dashwallet.entitlements; sourceTree = "<group>"; };
+		FB6DD3811F7FA48500BC1E4D /* pivxwallet.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = pivxwallet.entitlements; sourceTree = "<group>"; };
 		FB9CC26F1F8E27B80079309F /* DWGenerateViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DWGenerateViewController.h; sourceTree = "<group>"; };
 		FB9CC2701F8E27B80079309F /* DWGenerateViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DWGenerateViewController.m; sourceTree = "<group>"; };
 		FBF2679F1E414877001A1C8B /* NSString+Dash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Dash.h"; sourceTree = "<group>"; };
@@ -990,7 +990,7 @@
 		75D5F3B5191EC270004AB296 = {
 			isa = PBXGroup;
 			children = (
-				75D5F3C7191EC270004AB296 /* DashWallet */,
+				75D5F3C7191EC270004AB296 /* PivxWallet */,
 				BAE12BE81B2DEE7F00895CC5 /* TodayExtension */,
 				75D5F3EC191EC270004AB296 /* DashWalletTests */,
 				31D68B511C23B6C10030FAAA /* DashWalletUITests */,
@@ -1037,7 +1037,7 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		75D5F3C7191EC270004AB296 /* DashWallet */ = {
+		75D5F3C7191EC270004AB296 /* PivxWallet */ = {
 			isa = PBXGroup;
 			children = (
 				2BBE61B31FE48E3B00D06CD7 /* PivxModels */,
@@ -1055,7 +1055,7 @@
 				752E289B19234A3F00DB5A3C /* Views */,
 				75BA5D02192296010040304C /* Controllers */,
 				752E28B019234B0500DB5A3C /* Categories */,
-				2B5735691FE04C4100110745 /* dashwallet-Bridging-Header.h */,
+				2B5735691FE04C4100110745 /* pivxwallet-Bridging-Header.h */,
 				BA4EECDF1B351AE200D443A3 /* BRAppGroupConstants.h */,
 				22F45A0F1C3329EB00B07A15 /* BRUserDefaultsConstants.h */,
 				75D5F3DC191EC270004AB296 /* Main.storyboard */,
@@ -1064,11 +1064,11 @@
 				75C0E3C11B1BA294007BC531 /* BIP39Words.plist */,
 				752E28F519235B3000DB5A3C /* FixedPeers.plist */,
 				75E83CF51B5F997A0038FB70 /* coinflip.aiff */,
-				FB6DD3811F7FA48500BC1E4D /* dashwallet.entitlements */,
+				FB6DD3811F7FA48500BC1E4D /* pivxwallet.entitlements */,
 				7579F7FE19231D4600CA56F4 /* ThirdParty */,
 				75D5F3C8191EC270004AB296 /* Supporting Files */,
 			);
-			path = DashWallet;
+			path = PivxWallet;
 			sourceTree = "<group>";
 		};
 		75D5F3C8191EC270004AB296 /* Supporting Files */ = {
@@ -2124,24 +2124,24 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_WARN_COMMA = NO;
-				CODE_SIGN_ENTITLEMENTS = dashwallet/dashwallet.entitlements;
+				CODE_SIGN_ENTITLEMENTS = pivxwallet/pivxwallet.entitlements;
 				DEVELOPMENT_TEAM = 6VMW8GXF6W;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "DashWallet/DashWallet-Prefix.pch";
+				GCC_PREFIX_HEADER = "PivxWallet/DashWallet-Prefix.pch";
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/secp256k1",
 					"$(SRCROOT)",
 				);
-				INFOPLIST_FILE = "$(SRCROOT)/DashWallet/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/PivxWallet/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				"OTHER_SWIFT_FLAGS[arch=*]" = "-DDebug";
 				PRODUCT_BUNDLE_IDENTIFIER = tech.furszy.pivxwallet;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "DashWallet/dashwallet-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "PivxWallet/pivxwallet-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_SWIFT3_OBJC_INFERENCE = On;
 				SWIFT_VERSION = 4.0;
@@ -2158,24 +2158,24 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_WARN_COMMA = NO;
-				CODE_SIGN_ENTITLEMENTS = dashwallet/dashwallet.entitlements;
+				CODE_SIGN_ENTITLEMENTS = pivxwallet/pivxwallet.entitlements;
 				DEVELOPMENT_TEAM = 6VMW8GXF6W;
 				ENABLE_TESTABILITY = NO;
 				GCC_OPTIMIZATION_LEVEL = s;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "DashWallet/DashWallet-Prefix.pch";
+				GCC_PREFIX_HEADER = "PivxWallet/DashWallet-Prefix.pch";
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/secp256k1",
 					"$(SRCROOT)",
 				);
-				INFOPLIST_FILE = "$(SRCROOT)/DashWallet/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/PivxWallet/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = tech.furszy.pivxwallet;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "DashWallet/dashwallet-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "PivxWallet/pivxwallet-Bridging-Header.h";
 				SWIFT_SWIFT3_OBJC_INFERENCE = On;
 				SWIFT_VERSION = 4.0;
 				USER_HEADER_SEARCH_PATHS = "";
@@ -2326,7 +2326,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_WARN_COMMA = NO;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CODE_SIGN_ENTITLEMENTS = dashwallet/dashwallet.entitlements;
+				CODE_SIGN_ENTITLEMENTS = pivxwallet/pivxwallet.entitlements;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = 6VMW8GXF6W;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -2357,7 +2357,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_WARN_COMMA = NO;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CODE_SIGN_ENTITLEMENTS = dashwallet/dashwallet.entitlements;
+				CODE_SIGN_ENTITLEMENTS = pivxwallet/pivxwallet.entitlements;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = 6VMW8GXF6W;
@@ -2438,10 +2438,10 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_WARN_COMMA = NO;
-				CODE_SIGN_ENTITLEMENTS = dashwallet/dashwallet.entitlements;
+				CODE_SIGN_ENTITLEMENTS = pivxwallet/pivxwallet.entitlements;
 				DEVELOPMENT_TEAM = 6VMW8GXF6W;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "DashWallet/DashWallet-Prefix.pch";
+				GCC_PREFIX_HEADER = "PivxWallet/DashWallet-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = "TESTFLIGHT=1";
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				HEADER_SEARCH_PATHS = (
@@ -2449,13 +2449,13 @@
 					"$(SRCROOT)/secp256k1",
 					"$(SRCROOT)",
 				);
-				INFOPLIST_FILE = "$(SRCROOT)/DashWallet/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/PivxWallet/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_SWIFT_FLAGS = "-DTestflight";
 				PRODUCT_BUNDLE_IDENTIFIER = tech.furszy.pivxwallet;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "DashWallet/dashwallet-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "PivxWallet/pivxwallet-Bridging-Header.h";
 				SWIFT_SWIFT3_OBJC_INFERENCE = On;
 				SWIFT_VERSION = 4.0;
 				USER_HEADER_SEARCH_PATHS = "";
@@ -2468,7 +2468,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_WARN_COMMA = NO;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CODE_SIGN_ENTITLEMENTS = dashwallet/dashwallet.entitlements;
+				CODE_SIGN_ENTITLEMENTS = pivxwallet/pivxwallet.entitlements;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = 6VMW8GXF6W;
@@ -2650,11 +2650,11 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_WARN_COMMA = NO;
-				CODE_SIGN_ENTITLEMENTS = dashwallet/dashwallet.entitlements;
+				CODE_SIGN_ENTITLEMENTS = pivxwallet/pivxwallet.entitlements;
 				DEVELOPMENT_TEAM = 6VMW8GXF6W;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "DashWallet/DashWallet-Prefix.pch";
+				GCC_PREFIX_HEADER = "PivxWallet/DashWallet-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -2666,13 +2666,13 @@
 					"$(SRCROOT)/secp256k1",
 					"$(SRCROOT)",
 				);
-				INFOPLIST_FILE = "$(SRCROOT)/DashWallet/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/PivxWallet/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				"OTHER_SWIFT_FLAGS[arch=*]" = "-DDebug -DDASH_TESTNET";
 				PRODUCT_BUNDLE_IDENTIFIER = tech.furszy.pivxwallet;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "DashWallet/dashwallet-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "PivxWallet/pivxwallet-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_SWIFT3_OBJC_INFERENCE = On;
 				SWIFT_VERSION = 4.0;
@@ -2686,7 +2686,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_WARN_COMMA = NO;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CODE_SIGN_ENTITLEMENTS = dashwallet/dashwallet.entitlements;
+				CODE_SIGN_ENTITLEMENTS = pivxwallet/pivxwallet.entitlements;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = 6VMW8GXF6W;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
