@@ -28,7 +28,7 @@
 #import "BRPeerManager.h"
 #import "NSMutableData+Bitcoin.h"
 #import "BREventManager.h"
-#import "dashwallet-Swift.h"
+#import "pivxwallet-Swift.h"
 
 
 #define LABEL_MARGIN       20.0

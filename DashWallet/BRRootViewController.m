@@ -45,7 +45,7 @@
 #import <LocalAuthentication/LocalAuthentication.h>
 #import <sys/stat.h>
 #import <mach-o/dyld.h>
-#import "dashwallet-Swift.h"
+#import "pivxwallet-Swift.h"
 
 #define BALANCE_TIP_START NSLocalizedString(@"This is your PIVX balance.", nil)
 

@@ -19,6 +19,8 @@ class TxHistoryController: UIViewController {
 }
 
 class Utils: NSObject {
+    
+    static var isTestnet:Bool = false;
 
     @objc static func configureNavigationBar(){
         UINavigationBar.appearance().setBackgroundImage(UIImage(), for:.default)
@@ -34,6 +36,10 @@ class Utils: NSObject {
 //        IQKeyboardManager.sharedManager().enable = true
 //    }
 //
+    @objc static func setIsTestnet()->Void{
+        isTestnet = true;
+     }
+    
     @objc static func toHome()->SlideMenuController{
         let menuController = MenuController(nibName: "Menu", bundle: nil)
         let homeController = RootController.shared

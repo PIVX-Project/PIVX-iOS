@@ -35,7 +35,7 @@
 #import <sys/socket.h>
 #import <netdb.h>
 #import <arpa/inet.h>
-#import "dashwallet-Swift.h"
+#import "pivxwallet-Swift.h"
 
 
 @interface BRSettingsViewController ()

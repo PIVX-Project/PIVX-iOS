@@ -9,7 +9,7 @@
 #import "DWGenerateViewController.h"
 #import "BREventManager.h"
 #import "BRWalletManager.h"
-#import "dashwallet-Swift.h"
+#import "pivxwallet-Swift.h"
 
 @interface DWGenerateViewController ()
 

@@ -39,7 +39,7 @@
 #import "BRSendViewController.h"
 #import "NSString+Dash.h"
 #import <WebKit/WebKit.h>
-#import "dashwallet-Swift.h"
+#import "pivxwallet-Swift.h"
 
 #define TRANSACTION_CELL_HEIGHT 75
 

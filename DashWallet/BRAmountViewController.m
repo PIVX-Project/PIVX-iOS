@@ -31,7 +31,7 @@
 #import "BREventManager.h"
 #import "NSString+Dash.h"
 #import "BRBubbleView.h"
-#import "dashwallet-Swift.h"
+#import "pivxwallet-Swift.h"
 
 @interface BRAmountViewController ()
 

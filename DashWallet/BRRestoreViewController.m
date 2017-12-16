@@ -32,7 +32,7 @@
 #import "NSManagedObject+Sugar.h"
 #import "BREventManager.h"
 #import "BRPeerManager.h"
-#import "dashwallet-Swift.h"
+#import "pivxwallet-Swift.h"
 
 
 #define PHRASE_LENGTH 12

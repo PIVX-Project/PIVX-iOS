@@ -30,7 +30,7 @@
 #import "BRPhoneWCSessionManager.h"
 #import "DSShapeshiftManager.h"
 #import <UserNotifications/UserNotifications.h>
-#import "dashwallet-Swift.h"
+#import "pivxwallet-Swift.h"
 
 #if DASH_TESTNET
 #pragma message "testnet build"
@@ -114,6 +114,11 @@
     
 
     SlideMenuController *controller = [Utils toHome];
+    
+    #if DASH_TESTNET
+        [Utils setIsTestnet];
+    #endif
+    
     _window.rootViewController = controller;
     [_window makeKeyAndVisible];    
     return YES;

@@ -45,7 +45,7 @@
 #import "MBProgressHUD.h"
 #import "DSShapeshiftManager.h"
 #import "BRBIP32Sequence.h"
-#import "dashwallet-Swift.h"
+#import "pivxwallet-Swift.h"
 
 #define SCAN_TIP      NSLocalizedString(@"Scan someone else's QR code to get their PIVX address. "\
 "You can send a payment to anyone with an address.", nil)
