@@ -279,7 +279,7 @@
 		2BFA52361FE08A8300A3C808 /* BaseController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BaseController.swift; path = PivxControllers/BaseController.swift; sourceTree = "<group>"; };
 		2BFA52391FE0AC4C00A3C808 /* Menu.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = Menu.xib; path = PivxNibs/Controllers/Menu.xib; sourceTree = "<group>"; };
 		2BFA523B1FE0AC5C00A3C808 /* MenuController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MenuController.swift; path = PivxControllers/MenuController.swift; sourceTree = "<group>"; };
-		31D68B501C23B6C10030FAAA /* DashWalletUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DashWalletUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		31D68B501C23B6C10030FAAA /* PivxWalletUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PivxWalletUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		31D68B521C23B6C10030FAAA /* DashWalletUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashWalletUITests.swift; sourceTree = "<group>"; };
 		31D68B541C23B6C10030FAAA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		31D68B5A1C23B6FD0030FAAA /* SnapshotHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SnapshotHelper.swift; path = fastlane/SnapshotHelper.swift; sourceTree = SOURCE_ROOT; };
@@ -456,12 +456,12 @@
 		75D5F3BE191EC270004AB296 /* pivxwallet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pivxwallet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		75D5F3C9191EC270004AB296 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		75D5F3CD191EC270004AB296 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		75D5F3CF191EC270004AB296 /* DashWallet-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DashWallet-Prefix.pch"; sourceTree = "<group>"; };
+		75D5F3CF191EC270004AB296 /* PivxWallet-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PivxWallet-Prefix.pch"; sourceTree = "<group>"; };
 		75D5F3D0191EC270004AB296 /* BRAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BRAppDelegate.h; sourceTree = "<group>"; };
 		75D5F3D1191EC270004AB296 /* BRAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BRAppDelegate.m; sourceTree = "<group>"; };
 		75D5F3DD191EC270004AB296 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		75D5F3DF191EC270004AB296 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		75D5F3E5191EC270004AB296 /* DashWalletTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DashWalletTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		75D5F3E5191EC270004AB296 /* PivxWalletTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PivxWalletTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		75D5F3F2191EC270004AB296 /* DashWalletTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DashWalletTests.m; sourceTree = "<group>"; };
 		75DE023F1B0EB7990027FF08 /* it */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = it; path = it.lproj/Main.strings; sourceTree = "<group>"; };
 		75DE02411B0EB79A0027FF08 /* it */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = it; path = it.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -1006,9 +1006,9 @@
 			isa = PBXGroup;
 			children = (
 				75D5F3BE191EC270004AB296 /* pivxwallet.app */,
-				75D5F3E5191EC270004AB296 /* DashWalletTests.xctest */,
+				75D5F3E5191EC270004AB296 /* PivxWalletTests.xctest */,
 				BAE12BE51B2DEE7F00895CC5 /* TodayExtension.appex */,
-				31D68B501C23B6C10030FAAA /* DashWalletUITests.xctest */,
+				31D68B501C23B6C10030FAAA /* PivxWalletUITests.xctest */,
 				BA913BDE1BD57E4D005A7C0E /* WatchApp.app */,
 				BA913BEA1BD57E4D005A7C0E /* WatchApp Extension.appex */,
 			);
@@ -1077,7 +1077,7 @@
 				75D5F3C9191EC270004AB296 /* Info.plist */,
 				757E09971ADB8EEB006FD352 /* Localizable.strings */,
 				75D5F3CD191EC270004AB296 /* main.m */,
-				75D5F3CF191EC270004AB296 /* DashWallet-Prefix.pch */,
+				75D5F3CF191EC270004AB296 /* PivxWallet-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -1256,9 +1256,9 @@
 /* End PBXLegacyTarget section */
 
 /* Begin PBXNativeTarget section */
-		31D68B4F1C23B6C10030FAAA /* DashWalletUITests */ = {
+		31D68B4F1C23B6C10030FAAA /* PivxWalletUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 31D68B591C23B6C10030FAAA /* Build configuration list for PBXNativeTarget "DashWalletUITests" */;
+			buildConfigurationList = 31D68B591C23B6C10030FAAA /* Build configuration list for PBXNativeTarget "PivxWalletUITests" */;
 			buildPhases = (
 				31D68B4C1C23B6C10030FAAA /* Sources */,
 				31D68B4D1C23B6C10030FAAA /* Frameworks */,
@@ -1269,9 +1269,9 @@
 			dependencies = (
 				31D68B561C23B6C10030FAAA /* PBXTargetDependency */,
 			);
-			name = DashWalletUITests;
+			name = PivxWalletUITests;
 			productName = DashWalletUITests;
-			productReference = 31D68B501C23B6C10030FAAA /* DashWalletUITests.xctest */;
+			productReference = 31D68B501C23B6C10030FAAA /* PivxWalletUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 		75D5F3BD191EC270004AB296 /* pivxwallet */ = {
@@ -1301,9 +1301,9 @@
 			productReference = 75D5F3BE191EC270004AB296 /* pivxwallet.app */;
 			productType = "com.apple.product-type.application";
 		};
-		75D5F3E4191EC270004AB296 /* DashWalletTests */ = {
+		75D5F3E4191EC270004AB296 /* PivxWalletTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 75D5F3F9191EC270004AB296 /* Build configuration list for PBXNativeTarget "DashWalletTests" */;
+			buildConfigurationList = 75D5F3F9191EC270004AB296 /* Build configuration list for PBXNativeTarget "PivxWalletTests" */;
 			buildPhases = (
 				75D5F3E1191EC270004AB296 /* Sources */,
 				75D5F3E2191EC270004AB296 /* Frameworks */,
@@ -1314,9 +1314,9 @@
 			dependencies = (
 				75D5F3EB191EC270004AB296 /* PBXTargetDependency */,
 			);
-			name = DashWalletTests;
+			name = PivxWalletTests;
 			productName = DashWalletTests;
-			productReference = 75D5F3E5191EC270004AB296 /* DashWalletTests.xctest */;
+			productReference = 75D5F3E5191EC270004AB296 /* PivxWalletTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		BA913BDD1BD57E4D005A7C0E /* WatchApp */ = {
@@ -1430,7 +1430,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 75D5F3B9191EC270004AB296 /* Build configuration list for PBXProject "DashWallet" */;
+			buildConfigurationList = 75D5F3B9191EC270004AB296 /* Build configuration list for PBXProject "PivxWallet" */;
 			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -1467,8 +1467,8 @@
 			targets = (
 				75D5F3BD191EC270004AB296 /* pivxwallet */,
 				BAE12BE41B2DEE7F00895CC5 /* TodayExtension */,
-				75D5F3E4191EC270004AB296 /* DashWalletTests */,
-				31D68B4F1C23B6C10030FAAA /* DashWalletUITests */,
+				75D5F3E4191EC270004AB296 /* PivxWalletTests */,
+				31D68B4F1C23B6C10030FAAA /* PivxWalletUITests */,
 				75001D3D1A1EE89500585F55 /* submodules */,
 				BA913BDD1BD57E4D005A7C0E /* WatchApp */,
 				BA913BE91BD57E4D005A7C0E /* WatchApp Extension */,
@@ -2128,7 +2128,7 @@
 				DEVELOPMENT_TEAM = 6VMW8GXF6W;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "PivxWallet/DashWallet-Prefix.pch";
+				GCC_PREFIX_HEADER = "PivxWallet/PivxWallet-Prefix.pch";
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
@@ -2163,7 +2163,7 @@
 				ENABLE_TESTABILITY = NO;
 				GCC_OPTIMIZATION_LEVEL = s;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "PivxWallet/DashWallet-Prefix.pch";
+				GCC_PREFIX_HEADER = "PivxWallet/PivxWallet-Prefix.pch";
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
@@ -2441,7 +2441,7 @@
 				CODE_SIGN_ENTITLEMENTS = pivxwallet/pivxwallet.entitlements;
 				DEVELOPMENT_TEAM = 6VMW8GXF6W;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "PivxWallet/DashWallet-Prefix.pch";
+				GCC_PREFIX_HEADER = "PivxWallet/PivxWallet-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = "TESTFLIGHT=1";
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				HEADER_SEARCH_PATHS = (
@@ -2654,7 +2654,7 @@
 				DEVELOPMENT_TEAM = 6VMW8GXF6W;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "PivxWallet/DashWallet-Prefix.pch";
+				GCC_PREFIX_HEADER = "PivxWallet/PivxWallet-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -2814,7 +2814,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		31D68B591C23B6C10030FAAA /* Build configuration list for PBXNativeTarget "DashWalletUITests" */ = {
+		31D68B591C23B6C10030FAAA /* Build configuration list for PBXNativeTarget "PivxWalletUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				31D68B571C23B6C10030FAAA /* Debug */,
@@ -2836,7 +2836,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		75D5F3B9191EC270004AB296 /* Build configuration list for PBXProject "DashWallet" */ = {
+		75D5F3B9191EC270004AB296 /* Build configuration list for PBXProject "PivxWallet" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				75D5F3F4191EC270004AB296 /* Debug */,
@@ -2858,7 +2858,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		75D5F3F9191EC270004AB296 /* Build configuration list for PBXNativeTarget "DashWalletTests" */ = {
+		75D5F3F9191EC270004AB296 /* Build configuration list for PBXNativeTarget "PivxWalletTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				75D5F3FA191EC270004AB296 /* Debug */,
