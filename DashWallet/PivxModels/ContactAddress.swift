@@ -1,6 +1,6 @@
 //
 //  ContactAddress.swift
-//  dashwallet
+//  pivxwallet
 //
 //  Created by German Mendoza on 12/15/17.
 //  Copyright © 2017 Aaron Voisine. All rights reserved.
