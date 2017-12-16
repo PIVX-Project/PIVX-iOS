@@ -76,6 +76,18 @@ class Utils: NSObject {
         }
     }
     
+    @objc static func showAmountController(){
+        if let root = UIApplication.shared.keyWindow?.rootViewController as? SlideMenuController {
+            guard let menu = root.leftViewController as? MenuController else { return }
+            guard let controller = RootController.shared as? BRRootViewController else { return }
+            menu.tappedMyWalletButton(UIButton())
+            let when = DispatchTime.now() + 0.2 // change 2 to desired number of seconds
+            DispatchQueue.main.asyncAfter(deadline: when, qos: .background) {
+                controller.sendViewController.actionPayToClipboard()
+            }
+        }
+    }
+    
     @objc static func toRootController(){
         if let root = UIApplication.shared.keyWindow?.rootViewController as? SlideMenuController {
             guard let menu = root.leftViewController as? MenuController else { return }

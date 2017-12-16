@@ -39,9 +39,13 @@ class MenuController: BaseController {
         selectTitle()
     }
     @IBAction func tappedAddressBookButton(_ sender: Any) {
-//        let controller = AddressContactController()
-//        let navigation = UINavigationController(rootViewController: controller)
-//        slideMenuController()?.changeMainViewController(navigation, close: true)
+        if optionSelected == 2 {
+            slideMenuController()?.closeLeft()
+            return
+        }
+        let controller = AddressContactController()
+        let navigation = UINavigationController(rootViewController: controller)
+        slideMenuController()?.changeMainViewController(navigation, close: true)
         optionSelected = 2
         selectTitle()
     }

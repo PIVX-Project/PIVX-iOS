@@ -36,6 +36,15 @@
 		2B5735811FE0882B00110745 /* Step1View.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2B57357D1FE0882B00110745 /* Step1View.xib */; };
 		2B5735821FE0882B00110745 /* Step3View.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2B57357E1FE0882B00110745 /* Step3View.xib */; };
 		2B5735831FE0882B00110745 /* Step4View.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2B57357F1FE0882B00110745 /* Step4View.xib */; };
+		2BBE61991FE482AB00D06CD7 /* NewAddress.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2BBE61981FE482AB00D06CD7 /* NewAddress.xib */; };
+		2BBE619E1FE4833500D06CD7 /* NewAddressController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BBE619C1FE4833400D06CD7 /* NewAddressController.swift */; };
+		2BBE61A31FE4853B00D06CD7 /* AddressContactController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BBE61A21FE4853B00D06CD7 /* AddressContactController.swift */; };
+		2BBE61A91FE48AEC00D06CD7 /* AddressContactCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BBE61A81FE48AEC00D06CD7 /* AddressContactCell.swift */; };
+		2BBE61AB1FE48AF900D06CD7 /* EmptyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BBE61AA1FE48AF800D06CD7 /* EmptyCell.swift */; };
+		2BBE61AE1FE48BC000D06CD7 /* EmptyCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2BBE61AC1FE48BC000D06CD7 /* EmptyCell.xib */; };
+		2BBE61AF1FE48BC000D06CD7 /* AddressContactCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2BBE61AD1FE48BC000D06CD7 /* AddressContactCell.xib */; };
+		2BBE61B11FE48DA100D06CD7 /* LocalStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BBE61B01FE48DA100D06CD7 /* LocalStore.swift */; };
+		2BBE61B51FE48E6500D06CD7 /* ContactAddress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BBE61B41FE48E6500D06CD7 /* ContactAddress.swift */; };
 		2BFA52371FE08A8300A3C808 /* BaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BFA52361FE08A8300A3C808 /* BaseController.swift */; };
 		2BFA523A1FE0AC4D00A3C808 /* Menu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2BFA52391FE0AC4C00A3C808 /* Menu.xib */; };
 		2BFA523C1FE0AC5C00A3C808 /* MenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BFA523B1FE0AC5C00A3C808 /* MenuController.swift */; };
@@ -257,6 +266,15 @@
 		2B57357D1FE0882B00110745 /* Step1View.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = Step1View.xib; path = PivxNibs/Views/Step1View.xib; sourceTree = "<group>"; };
 		2B57357E1FE0882B00110745 /* Step3View.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = Step3View.xib; path = PivxNibs/Views/Step3View.xib; sourceTree = "<group>"; };
 		2B57357F1FE0882B00110745 /* Step4View.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = Step4View.xib; path = PivxNibs/Views/Step4View.xib; sourceTree = "<group>"; };
+		2BBE61981FE482AB00D06CD7 /* NewAddress.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = NewAddress.xib; path = PivxNibs/Controllers/NewAddress.xib; sourceTree = "<group>"; };
+		2BBE619C1FE4833400D06CD7 /* NewAddressController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NewAddressController.swift; path = PivxControllers/NewAddressController.swift; sourceTree = "<group>"; };
+		2BBE61A21FE4853B00D06CD7 /* AddressContactController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AddressContactController.swift; path = PivxControllers/AddressContactController.swift; sourceTree = "<group>"; };
+		2BBE61A81FE48AEC00D06CD7 /* AddressContactCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AddressContactCell.swift; path = PivxViews/TableCells/AddressContactCell.swift; sourceTree = "<group>"; };
+		2BBE61AA1FE48AF800D06CD7 /* EmptyCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EmptyCell.swift; path = PivxViews/Views/EmptyCell.swift; sourceTree = "<group>"; };
+		2BBE61AC1FE48BC000D06CD7 /* EmptyCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = EmptyCell.xib; path = PivxNibs/TableCell/EmptyCell.xib; sourceTree = "<group>"; };
+		2BBE61AD1FE48BC000D06CD7 /* AddressContactCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = AddressContactCell.xib; path = PivxNibs/TableCell/AddressContactCell.xib; sourceTree = "<group>"; };
+		2BBE61B01FE48DA100D06CD7 /* LocalStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LocalStore.swift; path = PivxUtils/LocalStore.swift; sourceTree = "<group>"; };
+		2BBE61B41FE48E6500D06CD7 /* ContactAddress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ContactAddress.swift; path = PivxModels/ContactAddress.swift; sourceTree = "<group>"; };
 		2BFA52361FE08A8300A3C808 /* BaseController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BaseController.swift; path = PivxControllers/BaseController.swift; sourceTree = "<group>"; };
 		2BFA52391FE0AC4C00A3C808 /* Menu.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = Menu.xib; path = PivxNibs/Controllers/Menu.xib; sourceTree = "<group>"; };
 		2BFA523B1FE0AC5C00A3C808 /* MenuController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MenuController.swift; path = PivxControllers/MenuController.swift; sourceTree = "<group>"; };
@@ -651,6 +669,7 @@
 				2B57356B1FE04C4200110745 /* PivxExtensions.swift */,
 				2B57356C1FE04C4200110745 /* UIView+Anchors.swift */,
 				2B57356A1FE04C4200110745 /* Utils.swift */,
+				2BBE61B01FE48DA100D06CD7 /* LocalStore.swift */,
 			);
 			name = PivxUtils;
 			sourceTree = "<group>";
@@ -658,6 +677,8 @@
 		2B5735741FE0858A00110745 /* PivxControllers */ = {
 			isa = PBXGroup;
 			children = (
+				2BBE61A21FE4853B00D06CD7 /* AddressContactController.swift */,
+				2BBE619C1FE4833400D06CD7 /* NewAddressController.swift */,
 				2B4838CC1FE21666001C8D09 /* DonationController.swift */,
 				2BFA523B1FE0AC5C00A3C808 /* MenuController.swift */,
 				2BFA52361FE08A8300A3C808 /* BaseController.swift */,
@@ -669,6 +690,7 @@
 		2B5735771FE0874000110745 /* PivxNibs */ = {
 			isa = PBXGroup;
 			children = (
+				2BBE61A41FE4854B00D06CD7 /* TableCell */,
 				2B57357B1FE0881100110745 /* Views */,
 				2B5735781FE087B500110745 /* Controllers */,
 			);
@@ -678,6 +700,7 @@
 		2B5735781FE087B500110745 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				2BBE61981FE482AB00D06CD7 /* NewAddress.xib */,
 				2B4838CA1FE21655001C8D09 /* Donation.xib */,
 				2BFA52391FE0AC4C00A3C808 /* Menu.xib */,
 				2B5735791FE087D800110745 /* Setup.xib */,
@@ -694,6 +717,48 @@
 				2B57357F1FE0882B00110745 /* Step4View.xib */,
 			);
 			name = Views;
+			sourceTree = "<group>";
+		};
+		2BBE61A41FE4854B00D06CD7 /* TableCell */ = {
+			isa = PBXGroup;
+			children = (
+				2BBE61AD1FE48BC000D06CD7 /* AddressContactCell.xib */,
+				2BBE61AC1FE48BC000D06CD7 /* EmptyCell.xib */,
+			);
+			name = TableCell;
+			sourceTree = "<group>";
+		};
+		2BBE61A51FE48A6200D06CD7 /* PivxViews */ = {
+			isa = PBXGroup;
+			children = (
+				2BBE61A71FE48AAE00D06CD7 /* TableCells */,
+				2BBE61A61FE48A6800D06CD7 /* Views */,
+			);
+			name = PivxViews;
+			sourceTree = "<group>";
+		};
+		2BBE61A61FE48A6800D06CD7 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2BBE61AA1FE48AF800D06CD7 /* EmptyCell.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		2BBE61A71FE48AAE00D06CD7 /* TableCells */ = {
+			isa = PBXGroup;
+			children = (
+				2BBE61A81FE48AEC00D06CD7 /* AddressContactCell.swift */,
+			);
+			name = TableCells;
+			sourceTree = "<group>";
+		};
+		2BBE61B31FE48E3B00D06CD7 /* PivxModels */ = {
+			isa = PBXGroup;
+			children = (
+				2BBE61B41FE48E6500D06CD7 /* ContactAddress.swift */,
+			);
+			name = PivxModels;
 			sourceTree = "<group>";
 		};
 		31D68B511C23B6C10030FAAA /* DashWalletUITests */ = {
@@ -970,6 +1035,8 @@
 		75D5F3C7191EC270004AB296 /* DashWallet */ = {
 			isa = PBXGroup;
 			children = (
+				2BBE61B31FE48E3B00D06CD7 /* PivxModels */,
+				2BBE61A51FE48A6200D06CD7 /* PivxViews */,
 				2B5735771FE0874000110745 /* PivxNibs */,
 				2B5735741FE0858A00110745 /* PivxControllers */,
 				2B5735661FE04BC400110745 /* PivxAssets.xcassets */,
@@ -1424,10 +1491,13 @@
 				2B57357A1FE087D800110745 /* Setup.xib in Resources */,
 				2B5735831FE0882B00110745 /* Step4View.xib in Resources */,
 				2B5735671FE04BC400110745 /* PivxAssets.xcassets in Resources */,
+				2BBE61991FE482AB00D06CD7 /* NewAddress.xib in Resources */,
 				2B5735821FE0882B00110745 /* Step3View.xib in Resources */,
 				2B4838CB1FE21655001C8D09 /* Donation.xib in Resources */,
+				2BBE61AE1FE48BC000D06CD7 /* EmptyCell.xib in Resources */,
 				2B5735801FE0882B00110745 /* Step2View.xib in Resources */,
 				75C0E3BF1B1BA294007BC531 /* BIP39Words.plist in Resources */,
+				2BBE61AF1FE48BC000D06CD7 /* AddressContactCell.xib in Resources */,
 				75E83CF61B5F997A0038FB70 /* coinflip.aiff in Resources */,
 				755FC9ED1BF1DF1B00164ABB /* BREventConfirmView.xib in Resources */,
 				752E28F719235B3000DB5A3C /* FixedPeers.plist in Resources */,
@@ -1577,6 +1647,8 @@
 				2B57356E1FE04C4200110745 /* Utils.swift in Sources */,
 				752E28AC19234AE300DB5A3C /* BRPeerEntity.m in Sources */,
 				FBF2680E1E419318001A1C8B /* DSShapeshiftEntity+CoreDataClass.m in Sources */,
+				2BBE61AB1FE48AF900D06CD7 /* EmptyCell.swift in Sources */,
+				2BBE61A31FE4853B00D06CD7 /* AddressContactController.swift in Sources */,
 				FBF268041E414B93001A1C8B /* NSData+Dash.m in Sources */,
 				752E28AD19234AE300DB5A3C /* BRTransactionEntity.m in Sources */,
 				752E28AE19234AE300DB5A3C /* BRTxInputEntity.m in Sources */,
@@ -1607,14 +1679,17 @@
 				752E28D319234C3600DB5A3C /* BRMerkleBlock.m in Sources */,
 				2B5735711FE04C4200110745 /* Constants.swift in Sources */,
 				752E28D019234C3600DB5A3C /* BRBloomFilter.m in Sources */,
+				2BBE61B51FE48E6500D06CD7 /* ContactAddress.swift in Sources */,
 				752E28D619234C3600DB5A3C /* BRPeer.m in Sources */,
 				752E28D819234C3600DB5A3C /* BRPeerManager.m in Sources */,
 				752E28D419234C3600DB5A3C /* BRPaymentProtocol.m in Sources */,
 				752E28D519234C3600DB5A3C /* BRPaymentRequest.m in Sources */,
 				7525B619192453840041C0F2 /* BRNavigationBar.m in Sources */,
 				75F2E0D61BEAA6A400EAE861 /* BRTxMetadataEntity.m in Sources */,
+				2BBE619E1FE4833500D06CD7 /* NewAddressController.swift in Sources */,
 				75878BC1192AEC3F002505AB /* BRReceiveViewController.m in Sources */,
 				75878BBF192ACD46002505AB /* BRAmountViewController.m in Sources */,
+				2BBE61B11FE48DA100D06CD7 /* LocalStore.swift in Sources */,
 				759816E719357D6F005060EA /* BRBubbleView.m in Sources */,
 				757BE7E3192C0E9D0061CB20 /* BRRestoreViewController.m in Sources */,
 				757BE7E6192C1FF70061CB20 /* BRWelcomeViewController.m in Sources */,
@@ -1639,6 +1714,7 @@
 				6BA7F2911FDF048100C1027B /* quark.c in Sources */,
 				759FBB37193290F600AB4465 /* BRSendViewController.m in Sources */,
 				752E28F119234E8100DB5A3C /* Reachability.m in Sources */,
+				2BBE61A91FE48AEC00D06CD7 /* AddressContactCell.swift in Sources */,
 				75D5F3CE191EC270004AB296 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

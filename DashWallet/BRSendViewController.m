@@ -1621,6 +1621,10 @@ static NSString *sanitizeString(NSString *s)
     [self.navigationController presentViewController:self.scanController animated:YES completion:nil];
 }
 
+-(void)actionPayToClipboard{
+    [self payToClipboard:nil];
+}
+
 - (IBAction)payToClipboard:(id)sender
 {
     if ([self nextTip]) return;

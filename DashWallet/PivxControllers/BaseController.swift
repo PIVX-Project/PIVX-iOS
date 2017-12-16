@@ -12,7 +12,7 @@ class BaseController: UIViewController {
     
     let cellIdentifier = "cellIdentifier"
     let emptyIdentifier = "emptyIdentifier"
-    //var state:TableState = .success
+    var state:TableState = .success
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -50,15 +50,15 @@ class BaseController: UIViewController {
         navigationItem.rightBarButtonItem = optionButton
     }
     
-    func tappedOptionButton(){
+    @objc func tappedOptionButton(){
     
     }
     
-    func tappedMenuButton(){
+    @objc func tappedMenuButton(){
         self.slideMenuController()?.openLeft()
     }
     
-    func tappedBackButton(){
+    @objc func tappedBackButton(){
         let result = navigationController?.popViewController(animated: true)
         if result == nil {
             navigationController?.dismiss(animated: true, completion: nil)
