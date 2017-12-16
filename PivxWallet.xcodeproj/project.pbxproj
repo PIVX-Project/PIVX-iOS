@@ -132,7 +132,7 @@
 		BAE12BF21B2DEE7F00895CC5 /* TodayExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = BAE12BE51B2DEE7F00895CC5 /* TodayExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		BAE12C061B2DEEF700895CC5 /* BRTodayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BAE12C051B2DEEF700895CC5 /* BRTodayViewController.m */; };
 		E893E93EC6CB2E63C28D68E6 /* Pods_pivxwallet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52C978F753836B477A7FE473 /* Pods_pivxwallet.framework */; };
-		F3C1E5F2065BE81CE87C70EB /* Pods_dashwallet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 738E43B4B5613FDC48BBDAE6 /* Pods_dashwallet.framework */; };
+		F3C1E5F2065BE81CE87C70EB /* Pods_pivxwallet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 738E43B4B5613FDC48BBDAE6 /* Pods_pivxwallet.framework */; };
 		FB021E4F1E42EB5F00D17638 /* NSAttributedString+Attachments.m in Sources */ = {isa = PBXBuildFile; fileRef = FB021E4E1E42EB5F00D17638 /* NSAttributedString+Attachments.m */; };
 		FB021E561E47E17200D17638 /* FBShimmeringLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = FB021E531E47E17200D17638 /* FBShimmeringLayer.m */; };
 		FB021E571E47E17200D17638 /* FBShimmeringView.m in Sources */ = {isa = PBXBuildFile; fileRef = FB021E551E47E17200D17638 /* FBShimmeringView.m */; };
@@ -291,7 +291,7 @@
 		6BA7F2901FDF048100C1027B /* quark.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = quark.c; sourceTree = "<group>"; };
 		6BD745B21FE56EE500B94848 /* BRPivxUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BRPivxUtils.h; sourceTree = "<group>"; };
 		6BD745B31FE56EE500B94848 /* BRPivxUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BRPivxUtils.m; sourceTree = "<group>"; };
-		738E43B4B5613FDC48BBDAE6 /* Pods_dashwallet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_dashwallet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		738E43B4B5613FDC48BBDAE6 /* Pods_pivxwallet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_pivxwallet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7509C10C1AF3076000D03FD5 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
 		7509C10E1AF3076100D03FD5 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		7509C1101AF3720100D03FD5 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Main.strings; sourceTree = "<group>"; };
@@ -631,7 +631,7 @@
 				222E7F561C46E9B8009AB45D /* Security.framework in Frameworks */,
 				222040C61C1A1940005CE1C3 /* WebKit.framework in Frameworks */,
 				22B6A4481C0E963900673913 /* libbz2.tbd in Frameworks */,
-				F3C1E5F2065BE81CE87C70EB /* Pods_dashwallet.framework in Frameworks */,
+				F3C1E5F2065BE81CE87C70EB /* Pods_pivxwallet.framework in Frameworks */,
 				E893E93EC6CB2E63C28D68E6 /* Pods_pivxwallet.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1035,7 +1035,7 @@
 				22B6A4471C0E963900673913 /* libbz2.tbd */,
 				75F2E0B61BE2D5F000EAE861 /* Accelerate.framework */,
 				BAE12BE61B2DEE7F00895CC5 /* NotificationCenter.framework */,
-				738E43B4B5613FDC48BBDAE6 /* Pods_dashwallet.framework */,
+				738E43B4B5613FDC48BBDAE6 /* Pods_pivxwallet.framework */,
 				52C978F753836B477A7FE473 /* Pods_pivxwallet.framework */,
 			);
 			name = Frameworks;

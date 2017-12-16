@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 48;
+	objectVersion = 46;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -36,18 +36,18 @@
 		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		74C0C3F7C61A29A3FB06AD4A9319F2EE /* Pods-pivxwallet-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-pivxwallet-dummy.m"; sourceTree = "<group>"; };
 		8110A20D864C22E8570DA40FEABB3839 /* SlideMenuController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SlideMenuController.swift; path = Source/SlideMenuController.swift; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		995037C76B2C2E6E2C7B80F0662C465A /* Pods-pivxwallet-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-pivxwallet-umbrella.h"; sourceTree = "<group>"; };
 		99DC04E71C3F50070455073536A753A8 /* Pods-pivxwallet.testflight.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-pivxwallet.testflight.xcconfig"; sourceTree = "<group>"; };
 		BE2E479D1C35C275A2F803A0FE06B17D /* SlideMenuControllerSwift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SlideMenuControllerSwift-dummy.m"; sourceTree = "<group>"; };
-		C0CAC6D9787CAE9A9874AD7FF24E7B81 /* Pods-pivxwallet.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-pivxwallet.modulemap"; sourceTree = "<group>"; };
+		C0CAC6D9787CAE9A9874AD7FF24E7B81 /* Pods-pivxwallet.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-pivxwallet.modulemap"; sourceTree = "<group>"; };
 		C4085ED947500155B3C5003AF48D2B1E /* Pods-pivxwallet-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-pivxwallet-acknowledgements.markdown"; sourceTree = "<group>"; };
-		C4FECC4A2C8EE2FFFD233E57558ED5A7 /* SlideMenuControllerSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SlideMenuControllerSwift.framework; path = SlideMenuControllerSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C4FECC4A2C8EE2FFFD233E57558ED5A7 /* SlideMenuControllerSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SlideMenuControllerSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6F41D040BCBBAD91963CFC5D5517C36 /* Pods-pivxwallet-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-pivxwallet-frameworks.sh"; sourceTree = "<group>"; };
 		CD3AF8BA35416CF998BFF758D78D75F1 /* Pods-pivxwallet.testnet.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-pivxwallet.testnet.xcconfig"; sourceTree = "<group>"; };
 		D26334D8CD6631080990206F7F1B5DB8 /* SlideMenuControllerSwift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SlideMenuControllerSwift-umbrella.h"; sourceTree = "<group>"; };
-		DB3DC21A6851AD777BAA8683B3BE27B3 /* SlideMenuControllerSwift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = SlideMenuControllerSwift.modulemap; sourceTree = "<group>"; };
-		E432A899738D305F496689378A31D043 /* Pods_pivxwallet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_pivxwallet.framework; path = "Pods-pivxwallet.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB3DC21A6851AD777BAA8683B3BE27B3 /* SlideMenuControllerSwift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = SlideMenuControllerSwift.modulemap; sourceTree = "<group>"; };
+		E432A899738D305F496689378A31D043 /* Pods_pivxwallet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_pivxwallet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED091129234F9EDE4B46DD10AA96FC3B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F3F1EC9EEEBEE6420E2392C12416E18B /* Pods-pivxwallet.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-pivxwallet.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -109,7 +109,6 @@
 				8110A20D864C22E8570DA40FEABB3839 /* SlideMenuController.swift */,
 				3C5B9E4D131BE6BB64CE542A0B1B157F /* Support Files */,
 			);
-			name = SlideMenuControllerSwift;
 			path = SlideMenuControllerSwift;
 			sourceTree = "<group>";
 		};
