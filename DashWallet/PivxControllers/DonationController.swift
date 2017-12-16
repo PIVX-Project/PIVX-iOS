@@ -8,7 +8,7 @@
 
 import UIKit
 
-class DonationController: BaseController,BRAmountViewControllerDelegate {
+class DonationController: BaseController {
 
     @IBOutlet weak var donateButton: UIButton!
     @IBOutlet weak var amountTextField: UITextField!
@@ -29,30 +29,26 @@ class DonationController: BaseController,BRAmountViewControllerDelegate {
     }
 
     @IBAction func tappedDonateButton(_ sender: Any) {
-        
-        let controller:BRAmountViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "AmountViewController") as! BRAmountViewController;
-        controller.usingShapeshift = false;
-        controller.delegate = self;
-        controller.to = DONATE_ADDRESS;
-        
-        // title view
-        BRWalletManager.sharedInstance();
-        let label = UILabel(frame: CGRect(x: 0, y: 0, width: 1, height: 100));
-        label.autoresizingMask = [.flexibleHeight,.flexibleWidth, .flexibleLeftMargin, .flexibleRightMargin, .flexibleTopMargin, .flexibleBottomMargin];
-        label.backgroundColor = UIColor.clear;
-        label.textAlignment = .center
-        label.text = "Donate"
-        
-        controller.navigationItem.titleView = navigationItem.titleView;
-        controller.title = "Donate";
-        present(controller, animated: true) {
-            // here is if i want to receive the callback once the view is loaded.
-        };
+        UIPasteboard.general.string = DONATE_ADDRESS
+//        let controller:BRAmountViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "AmountViewController") as! BRAmountViewController;
+//        controller.usingShapeshift = false;
+//        controller.delegate = self;
+//        controller.to = DONATE_ADDRESS;
+//
+//        // title view
+//        BRWalletManager.sharedInstance();
+//        let label = UILabel(frame: CGRect(x: 0, y: 0, width: 1, height: 100));
+//        label.autoresizingMask = [.flexibleHeight,.flexibleWidth, .flexibleLeftMargin, .flexibleRightMargin, .flexibleTopMargin, .flexibleBottomMargin];
+//        label.backgroundColor = UIColor.clear;
+//        label.textAlignment = .center
+//        label.text = "Donate"
+//
+//        controller.navigationItem.titleView = navigationItem.titleView;
+//        controller.title = "Donate";
+//        present(controller, animated: true) {
+//            // here is if i want to receive the callback once the view is loaded.
+//        };
+        Utils.showAmountController()
     }
-    
-    func amountViewController(_ amountViewController: BRAmountViewController!, selectedAmount amount: UInt64) {
-        // callback from the BRAmountViewController.
-    }
-
 
 }

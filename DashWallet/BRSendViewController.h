@@ -35,6 +35,7 @@ UIViewControllerAnimatedTransitioning>
 
 - (IBAction)enableInstantX:(id)sender;
 - (void)actionQrScan;
+- (void)actionPayToClipboard;
 
 - (void)handleURL:(NSURL *)url;
 - (void)handleFile:(NSData *)file;
