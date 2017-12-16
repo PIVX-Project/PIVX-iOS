@@ -11,6 +11,6 @@
 #endif
 
 
-FOUNDATION_EXPORT double Pods_dashwalletVersionNumber;
-FOUNDATION_EXPORT const unsigned char Pods_dashwalletVersionString[];
+FOUNDATION_EXPORT double Pods_pivxwalletVersionNumber;
+FOUNDATION_EXPORT const unsigned char Pods_pivxwalletVersionString[];
 
