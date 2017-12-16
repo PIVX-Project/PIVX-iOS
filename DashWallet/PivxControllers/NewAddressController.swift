@@ -43,7 +43,7 @@ class NewAddressController: BaseController {
             return
         }
         
-        if unwrappedAddress == "" {
+        if unwrappedAddress == "" || !BRPivxUtils.isValidAdress(unwrappedAddress){
             Utils.showAlertController(title: "", message: "Invalid Address")
             return
         }

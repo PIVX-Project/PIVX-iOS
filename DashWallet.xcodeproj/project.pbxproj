@@ -51,6 +51,7 @@
 		31D68B531C23B6C10030FAAA /* DashWalletUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31D68B521C23B6C10030FAAA /* DashWalletUITests.swift */; };
 		31D68B5B1C23B6FD0030FAAA /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31D68B5A1C23B6FD0030FAAA /* SnapshotHelper.swift */; };
 		6BA7F2911FDF048100C1027B /* quark.c in Sources */ = {isa = PBXBuildFile; fileRef = 6BA7F2901FDF048100C1027B /* quark.c */; };
+		6BD745B41FE56EE500B94848 /* BRPivxUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BD745B31FE56EE500B94848 /* BRPivxUtils.m */; };
 		751B2B5C1B68911700EA87FB /* BRTxHistoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 751B2B5B1B68911700EA87FB /* BRTxHistoryViewController.m */; };
 		7525B619192453840041C0F2 /* BRNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 7525B618192453840041C0F2 /* BRNavigationBar.m */; };
 		752E289A192349CE00DB5A3C /* DashWallet.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 752E2898192349CE00DB5A3C /* DashWallet.xcdatamodeld */; };
@@ -286,6 +287,8 @@
 		6262F1241F0FE159BAFC7F60 /* Pods-dashwallet.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-dashwallet.release.xcconfig"; path = "Pods/Target Support Files/Pods-dashwallet/Pods-dashwallet.release.xcconfig"; sourceTree = "<group>"; };
 		6BA7F28F1FDF048100C1027B /* quark.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = quark.h; sourceTree = "<group>"; };
 		6BA7F2901FDF048100C1027B /* quark.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = quark.c; sourceTree = "<group>"; };
+		6BD745B21FE56EE500B94848 /* BRPivxUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BRPivxUtils.h; sourceTree = "<group>"; };
+		6BD745B31FE56EE500B94848 /* BRPivxUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BRPivxUtils.m; sourceTree = "<group>"; };
 		738E43B4B5613FDC48BBDAE6 /* Pods_dashwallet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_dashwallet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7509C10C1AF3076000D03FD5 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
 		7509C10E1AF3076100D03FD5 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
@@ -670,6 +673,8 @@
 				2B57356C1FE04C4200110745 /* UIView+Anchors.swift */,
 				2B57356A1FE04C4200110745 /* Utils.swift */,
 				2BBE61B01FE48DA100D06CD7 /* LocalStore.swift */,
+				6BD745B21FE56EE500B94848 /* BRPivxUtils.h */,
+				6BD745B31FE56EE500B94848 /* BRPivxUtils.m */,
 			);
 			name = PivxUtils;
 			sourceTree = "<group>";
@@ -1639,6 +1644,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				22F04A001C9714EF00F137D8 /* BRUserDefaultsSwitchCell.m in Sources */,
+				6BD745B41FE56EE500B94848 /* BRPivxUtils.m in Sources */,
 				752E28AA19234AE300DB5A3C /* BRAddressEntity.m in Sources */,
 				2BFA52371FE08A8300A3C808 /* BaseController.swift in Sources */,
 				75AA5F55194143D5003F23BD /* BRBouncyBurgerButton.m in Sources */,

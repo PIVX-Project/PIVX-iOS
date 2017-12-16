@@ -6,3 +6,4 @@
 #import "BRRootViewController.h"
 #import "BRSendViewController.h"
 #import "BRWalletManager.h"
+#import "BRPivxUtils.h"
