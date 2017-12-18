@@ -597,6 +597,15 @@
     self.navigationItem.leftBarButtonItem = menuButton;
 }
 
+- (void)toSendViewController {
+    __weak typeof(self) weakSelf = self;
+    _navigationTypeButton = 0;
+    [self addAddressButton];
+    [self.pageViewController setViewControllers:@[self.sendViewController] direction:UIPageViewControllerNavigationDirectionForward animated:NO completion:^(BOOL finished){
+        [weakSelf.sendViewController actionPayToClipboard];
+    }];
+}
+
 -(void)tappedMenuButton{
     [Utils openLeftMenu];
 }
@@ -789,6 +798,7 @@
         }];
     }
 }
+
 
 - (void)viewWillDisappear:(BOOL)animated
 {
@@ -1387,9 +1397,9 @@
 
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView
 {
-    CGFloat off = scrollView.contentOffset.x + (scrollView.contentInset.left < 0 ? scrollView.contentInset.left : 0);
-    
-    self.wallpaperXLeft.constant = -PARALAX_RATIO*off;
+//    CGFloat off = scrollView.contentOffset.x + (scrollView.contentInset.left < 0 ? scrollView.contentInset.left : 0);
+//    
+//    self.wallpaperXLeft.constant = -PARALAX_RATIO*off;
 }
 
 // MARK: - UIViewControllerAnimatedTransitioning
