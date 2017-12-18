@@ -1203,16 +1203,16 @@
     BRWalletManager *manager = [BRWalletManager sharedInstance];
     
     if (sender == self.receiveViewController) {
-        BRSendViewController *sendController = self.sendViewController;
-        
-        [(id)self.pageViewController setViewControllers:@[sendController]
-                                              direction:UIPageViewControllerNavigationDirectionReverse animated:YES
-                                             completion:^(BOOL finished) { [sendController tip:sender]; }];
+//        BRSendViewController *sendController = self.sendViewController;
+//
+//        [(id)self.pageViewController setViewControllers:@[sendController]
+//                                              direction:UIPageViewControllerNavigationDirectionReverse animated:YES
+//                                             completion:^(BOOL finished) { [sendController tip:sender]; }];
     }
     else if (sender == self.sendViewController) {
-        self.scrollView.scrollEnabled = YES;
-        [(id)self.pageViewController setViewControllers:@[self.receiveViewController]
-                                              direction:UIPageViewControllerNavigationDirectionForward animated:YES completion:nil];
+//        self.scrollView.scrollEnabled = YES;
+//        [(id)self.pageViewController setViewControllers:@[self.receiveViewController]
+//                                              direction:UIPageViewControllerNavigationDirectionForward animated:YES completion:nil];
     }
     else if (self.showTips && manager.seedCreationTime + DAY_TIME_INTERVAL < [NSDate timeIntervalSinceReferenceDate]) {
         self.showTips = NO;
@@ -1392,22 +1392,6 @@
     int index = (pageViewController.viewControllers.lastObject == self.receiveViewController) ? 1 : 0;
     return index;
 }
-
-- (void)pageViewController:(UIPageViewController *)pageViewController didFinishAnimating:(BOOL)finished previousViewControllers:(NSArray<UIViewController *> *)previousViewControllers transitionCompleted:(BOOL)completed {
-    
-    if (completed) {
-        UIViewController *aux = previousViewControllers[0];
-        
-        if (aux == _sendViewController) {
-            [self addSendButton];
-        } else {
-            [self addAddressButton];
-        }
-    }
-}
-
-
-
 
 // MARK: - UIScrollViewDelegate
 
