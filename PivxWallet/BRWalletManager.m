@@ -55,7 +55,7 @@
 #define COINMARKETCAP_TICKER_URL @"https://api.coinmarketcap.com/v1/ticker/pivx/"
 #define TICKER_REFRESH_TIME 60.0
 
-#define SEED_ENTROPY_LENGTH   (128/8)
+#define SEED_ENTROPY_LENGTH   (256/8)
 #define SEC_ATTR_SERVICE      @"org.dashfoundation.dash"
 #define DEFAULT_CURRENCY_CODE @"USD"
 #define DEFAULT_SPENT_LIMIT   DUFFS
@@ -1563,13 +1563,13 @@ typedef BOOL (^PinVerificationBlock)(NSString * _Nonnull currentPin,BRWalletMana
     BRKey *key = [BRKey keyWithPrivateKey:privKey];
     
     if (! key.address) {
-        completion(nil, 0, [NSError errorWithDomain:@"DashWallet" code:187 userInfo:@{NSLocalizedDescriptionKey:
+        completion(nil, 0, [NSError errorWithDomain:@"PivxWallet" code:187 userInfo:@{NSLocalizedDescriptionKey:
                                                                                           NSLocalizedString(@"not a valid private key", nil)}]);
         return;
     }
     
     if ([self.wallet containsAddress:key.address]) {
-        completion(nil, 0, [NSError errorWithDomain:@"DashWallet" code:187 userInfo:@{NSLocalizedDescriptionKey:
+        completion(nil, 0, [NSError errorWithDomain:@"PivxWallet" code:187 userInfo:@{NSLocalizedDescriptionKey:
                                                                                           NSLocalizedString(@"this private key is already in your wallet", nil)}]);
         return;
     }
@@ -1595,7 +1595,7 @@ typedef BOOL (^PinVerificationBlock)(NSString * _Nonnull currentPin,BRWalletMana
                      }
                      
                      if (balance == 0) {
-                         completion(nil, 0, [NSError errorWithDomain:@"DashWallet" code:417 userInfo:@{NSLocalizedDescriptionKey:
+                         completion(nil, 0, [NSError errorWithDomain:@"PivxWallet" code:417 userInfo:@{NSLocalizedDescriptionKey:
                                                                                                            NSLocalizedString(@"this private key is empty", nil)}]);
                          return;
                      }
@@ -1604,7 +1604,7 @@ typedef BOOL (^PinVerificationBlock)(NSString * _Nonnull currentPin,BRWalletMana
                      if (fee) feeAmount = [self.wallet feeForTxSize:tx.size + 34 + (key.publicKey.length - 33)*tx.inputHashes.count isInstant:false inputCount:0]; //input count doesn't matter for non instant transactions
                      
                      if (feeAmount + self.wallet.minOutputAmount > balance) {
-                         completion(nil, 0, [NSError errorWithDomain:@"DashWallet" code:417 userInfo:@{NSLocalizedDescriptionKey:
+                         completion(nil, 0, [NSError errorWithDomain:@"PivxWallet" code:417 userInfo:@{NSLocalizedDescriptionKey:
                                                                                                            NSLocalizedString(@"transaction fees would cost more than the funds available on this "
                                                                                                                              "private key (due to tiny \"dust\" deposits)",nil)}]);
                          return;
@@ -1613,7 +1613,7 @@ typedef BOOL (^PinVerificationBlock)(NSString * _Nonnull currentPin,BRWalletMana
                      [tx addOutputAddress:self.wallet.receiveAddress amount:balance - feeAmount];
                      
                      if (! [tx signWithPrivateKeys:@[privKey]]) {
-                         completion(nil, 0, [NSError errorWithDomain:@"DashWallet" code:401 userInfo:@{NSLocalizedDescriptionKey:
+                         completion(nil, 0, [NSError errorWithDomain:@"PivxWallet" code:401 userInfo:@{NSLocalizedDescriptionKey:
                                                                                                            NSLocalizedString(@"error signing transaction", nil)}]);
                          return;
                      }
