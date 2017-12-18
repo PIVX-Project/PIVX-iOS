@@ -479,7 +479,7 @@ typedef BOOL (^PinVerificationBlock)(NSString * _Nonnull currentPin,BRWalletMana
     return (self.extendedBIP44PublicKey && self.extendedBIP44PublicKey.length == 0) ? YES : NO;
 }
 
-// master public key used to generate wallet addresses m/44'/5'/0'
+// master public key used to generate wallet addresses m/44'/119'/0'
 - (NSData *)extendedBIP44PublicKey
 {
     return getKeychainData(EXTENDED_0_PUBKEY_KEY_BIP44, nil);

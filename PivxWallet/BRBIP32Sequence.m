@@ -200,7 +200,7 @@ static BOOL deserialize(NSString * string, uint8_t * depth, uint32_t * fingerpri
 }
 
 // master public key format is: 4 byte parent fingerprint || 32 byte chain code || 33 byte compressed public key
-// the values are taken from BIP32 account m/44H/5H/0H
+// the values are taken from BIP32 account m/44H/119H/0H
 - (NSData *)extendedPublicKeyForAccount:(uint32_t)account fromSeed:(NSData *)seed purpose:(uint32_t)purpose
 {
     if (! seed) return nil;

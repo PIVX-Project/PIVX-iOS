@@ -35,7 +35,7 @@
 #import "pivxwallet-Swift.h"
 
 
-#define PHRASE_LENGTH 12
+#define PHRASE_LENGTH 24
 
 
 @interface BRRestoreViewController ()
