@@ -51,7 +51,7 @@
 "\nallow camera access in\nSettings->Privacy->Camera->%@" = "\nlejo çasjen e kamerës në\nSettings->Privacy->Camera->%@";
 
 /* No comment provided by engineer. */
-"\nDO NOT let anyone see your recovery\nphrase or they can spend your dash.\n" = "\nMOS lejoni që askush të shoh frazën\nrikthyese ose ata mund të shpenzojnë\ndash-at e juaj.";
+"\nDO NOT let anyone see your recovery\nphrase or they can spend your PIVX.\n" = "\nMOS lejoni që askush të shoh frazën\nrikthyese ose ata mund të shpenzojnë\ndash-at e juaj.";
 
 /* No comment provided by engineer. */
 "\nDO NOT take a screenshot.\nScreenshots are visible to other apps\nand devices.\n" = "\nDO NOT take a screenshot.\nScreenshots are visible to other apps\nand devices.\n";
