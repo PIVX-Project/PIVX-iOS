@@ -577,12 +577,12 @@
         [self addSendButton];
         _navigationTypeButton = 1;
         [self.pageViewController setViewControllers:@[self.receiveViewController]
-                                          direction:UIPageViewControllerNavigationDirectionForward animated:NO completion:nil];
+                                          direction:UIPageViewControllerNavigationDirectionForward animated:YES completion:nil];
     } else {
         [self addAddressButton];
         _navigationTypeButton = 0;
         [self.pageViewController setViewControllers:@[self.sendViewController]
-                                          direction:UIPageViewControllerNavigationDirectionForward animated:NO completion:nil];
+                                          direction:UIPageViewControllerNavigationDirectionReverse animated:YES completion:nil];
     }
     
     
