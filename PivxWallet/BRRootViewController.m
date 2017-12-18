@@ -1393,12 +1393,28 @@
     return index;
 }
 
+- (void)pageViewController:(UIPageViewController *)pageViewController didFinishAnimating:(BOOL)finished previousViewControllers:(NSArray<UIViewController *> *)previousViewControllers transitionCompleted:(BOOL)completed {
+    
+    if (completed) {
+        UIViewController *aux = previousViewControllers[0];
+        
+        if (aux == _sendViewController) {
+            [self addSendButton];
+        } else {
+            [self addAddressButton];
+        }
+    }
+}
+
+
+
+
 // MARK: - UIScrollViewDelegate
 
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView
 {
 //    CGFloat off = scrollView.contentOffset.x + (scrollView.contentInset.left < 0 ? scrollView.contentInset.left : 0);
-//    
+//
 //    self.wallpaperXLeft.constant = -PARALAX_RATIO*off;
 }
 
