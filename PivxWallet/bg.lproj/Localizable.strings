@@ -3,7 +3,7 @@
 " and " = " и ";
 
 /* No comment provided by engineer. */
-"%@ is for 'mDASH'. %@ = 1 DASH." = "%@ е за 'mDASH'. %@ = 1 DASH.";
+"%@ is for 'mPIVX'. %@ = 1 PIVX." = "%@ е за 'mPIVX'. %@ = 1 PIVX.";
 
 /* No comment provided by engineer. */
 "%@ is not allowed to access the camera" = "%@ не е позволен достъп до камерата";
@@ -111,10 +111,10 @@
 "block #%d of %d" = "блок #%1$d от %2$d";
 
 /* No comment provided by engineer. */
-"Buy Dash" = "Купи Dash";
+"Buy PIVX" = "Купи PIVX";
 
 /* No comment provided by engineer. */
-"Buy dash in dashwallet!" = "Купи dash в dashwallet!";
+"Buy PIVX in dashwallet!" = "Купи dash в dashwallet!";
 
 /* No comment provided by engineer. */
 "cancel" = "отказ";

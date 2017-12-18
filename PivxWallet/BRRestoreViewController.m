@@ -134,7 +134,7 @@
         BRWalletManager *manager = [BRWalletManager sharedInstance];
         BRPeerManager *peerManager = [BRPeerManager sharedInstance];
         if ([phrase isEqual:@"wipe"]) {
-            if ((manager.wallet.balance == 0) && ([peerManager timestampForBlockHeight:peerManager.lastBlockHeight] + 60 * 2.5 * 5 > [NSDate timeIntervalSinceReferenceDate])) {
+            if ((manager.wallet.balance == 0) && ([peerManager timestampForBlockHeight:peerManager.lastBlockHeight] + 60 * 1 * 5 > [NSDate timeIntervalSinceReferenceDate])) {
                 [BREventManager saveEvent:@"restore:wipe_empty_wallet"];
                 UIAlertController * actionSheet = [UIAlertController
                                              alertControllerWithTitle:nil
@@ -213,8 +213,15 @@
                                                  handler:^(UIAlertAction * action) {
                                                      [self wipeWallet];
                                                  }];
+                    UIAlertAction* restoreButton = [UIAlertAction
+                                                 actionWithTitle:NSLocalizedString(@"restore", nil)
+                                                 style:UIAlertActionStyleDestructive
+                                                 handler:^(UIAlertAction * action) {
+                                                     [self restoreWallet:phrase];
+                                                 }];
                     [actionSheet addAction:cancelButton];
                     [actionSheet addAction:wipeButton];
+                    [actionSheet addAction:restoreButton];
                     [self presentViewController:actionSheet animated:YES completion:nil];
                 }
                 else if (seedPhrase) {
@@ -242,6 +249,36 @@
 {
     
     [[BRWalletManager sharedInstance] setSeedPhrase:nil];
+    self.textView.text = nil;
+    [[NSUserDefaults standardUserDefaults] removeObjectForKey:WALLET_NEEDS_BACKUP_KEY];
+    [[NSUserDefaults standardUserDefaults] synchronize];
+    
+    UIViewController *p = self.navigationController.presentingViewController.presentingViewController;
+    
+    if (! p) {
+        UIAlertController * alert = [UIAlertController
+                                     alertControllerWithTitle:@""
+                                     message:NSLocalizedString(@"the app will now close", nil)
+                                     preferredStyle:UIAlertControllerStyleAlert];
+        UIAlertAction* closeButton = [UIAlertAction
+                                      actionWithTitle:NSLocalizedString(@"close app", nil)
+                                      style:UIAlertActionStyleDefault
+                                      handler:^(UIAlertAction * action) {
+                                          exit(0);
+                                      }];
+        [alert addAction:closeButton];
+        [self presentViewController:alert animated:YES completion:nil];
+        return;
+    }
+    
+    [p dismissViewControllerAnimated:NO completion:^{
+        [p presentViewController:[self.storyboard instantiateViewControllerWithIdentifier:@"NewWalletNav"] animated:NO
+                      completion:nil];
+    }];
+}
+
+- (void)restoreWallet:(NSString *)phrase{
+    [[BRWalletManager sharedInstance] setSeedPhrase:phrase];
     self.textView.text = nil;
     [[NSUserDefaults standardUserDefaults] removeObjectForKey:WALLET_NEEDS_BACKUP_KEY];
     [[NSUserDefaults standardUserDefaults] synchronize];

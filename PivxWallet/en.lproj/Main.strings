@@ -65,13 +65,13 @@
 /* Class = "UINavigationItem"; title = "confirm:"; ObjectID = "fQN-xb-SYb"; */
 "fQN-xb-SYb.title" = "confirm:";
 
-/* Class = "UILabel"; text = "Send DASH"; ObjectID = "l5l-JR-LKA"; */
+/* Class = "UILabel"; text = "Send PIVX"; ObjectID = "l5l-JR-LKA"; */
 "l5l-JR-LKA.text" = "SEND PIVX";
 
 /* Class = "UINavigationItem"; title = "recovery phrase:"; ObjectID = "ooJ-EA-DFl"; */
 "ooJ-EA-DFl.title" = "recovery phrase:";
 
-/* Class = "UILabel"; text = "Receive DASH"; ObjectID = "qel-3J-2VC"; */
+/* Class = "UILabel"; text = "Receive PIVX"; ObjectID = "qel-3J-2VC"; */
 "qel-3J-2VC.text" = "RECEIVE PIVX";
 
 /* Class = "UITableViewController"; title = "transaction details"; ObjectID = "s4T-yd-VfX"; */
@@ -80,7 +80,7 @@
 /* Class = "UILabel"; text = "no transactions"; ObjectID = "t1j-JZ-FW0"; */
 "t1j-JZ-FW0.text" = "no transactions";
 
-/* Class = "UILabel"; text = "dashwallet v%ver%%net%\ncopyright © 2017 Dash Foundation\nForked from breadwallet.\nThis app is open source:"; ObjectID = "uvz-hk-Nr4"; */
+/* Class = "UILabel"; text = "pivxwallet v%ver%%net%\ncopyright © 2017 PIVX\nForked from breadwallet.\nThis app is open source:"; ObjectID = "uvz-hk-Nr4"; */
 "uvz-hk-Nr4.text" = "Pivxwallet v%ver%%net%\ncopyright © 2017 PIVX\n\nBased on breadwallet\n\nthis app is open source";
 
 /* Class = "UILabel"; text = "start a new wallet by generating a wallet recovery phrase"; ObjectID = "wDZ-DN-szv"; */

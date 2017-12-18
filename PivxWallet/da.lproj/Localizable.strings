@@ -57,7 +57,7 @@
 "\nallow camera access in\nSettings->Privacy->Camera->%@" = "\ngiv adgang for kamera i\nIndstillinger->Anonymitet->Kamera->%@";
 
 /* No comment provided by engineer. */
-"\nDO NOT let anyone see your recovery\nphrase or they can spend your dash.\n" = "\nLAD IKKE nogen se din\ngendannelsessætning, eller\nde kan bruge dine dash.";
+"\nDO NOT let anyone see your recovery\nphrase or they can spend your PIVX.\n" = "\nLAD IKKE nogen se din\ngendannelsessætning, eller\nde kan bruge dine PIVX.";
 
 /* No comment provided by engineer. */
 "\nDO NOT take a screenshot.\nScreenshots are visible to other apps\nand devices.\n" = "\nTAG IKKE et screenshot.\nScreenshots er synlige for andre apps\nog enheder.\n";
