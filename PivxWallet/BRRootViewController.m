@@ -597,6 +597,15 @@
     self.navigationItem.leftBarButtonItem = menuButton;
 }
 
+- (void)toSendViewController {
+    __weak typeof(self) weakSelf = self;
+    _navigationTypeButton = 0;
+    [self addAddressButton];
+    [self.pageViewController setViewControllers:@[self.sendViewController] direction:UIPageViewControllerNavigationDirectionForward animated:NO completion:^(BOOL finished){
+        [weakSelf.sendViewController actionPayToClipboard];
+    }];
+}
+
 -(void)tappedMenuButton{
     [Utils openLeftMenu];
 }
@@ -789,6 +798,7 @@
         }];
     }
 }
+
 
 - (void)viewWillDisappear:(BOOL)animated
 {
@@ -1193,16 +1203,16 @@
     BRWalletManager *manager = [BRWalletManager sharedInstance];
     
     if (sender == self.receiveViewController) {
-        BRSendViewController *sendController = self.sendViewController;
-        
-        [(id)self.pageViewController setViewControllers:@[sendController]
-                                              direction:UIPageViewControllerNavigationDirectionReverse animated:YES
-                                             completion:^(BOOL finished) { [sendController tip:sender]; }];
+//        BRSendViewController *sendController = self.sendViewController;
+//
+//        [(id)self.pageViewController setViewControllers:@[sendController]
+//                                              direction:UIPageViewControllerNavigationDirectionReverse animated:YES
+//                                             completion:^(BOOL finished) { [sendController tip:sender]; }];
     }
     else if (sender == self.sendViewController) {
-        self.scrollView.scrollEnabled = YES;
-        [(id)self.pageViewController setViewControllers:@[self.receiveViewController]
-                                              direction:UIPageViewControllerNavigationDirectionForward animated:YES completion:nil];
+//        self.scrollView.scrollEnabled = YES;
+//        [(id)self.pageViewController setViewControllers:@[self.receiveViewController]
+//                                              direction:UIPageViewControllerNavigationDirectionForward animated:YES completion:nil];
     }
     else if (self.showTips && manager.seedCreationTime + DAY_TIME_INTERVAL < [NSDate timeIntervalSinceReferenceDate]) {
         self.showTips = NO;
@@ -1387,9 +1397,9 @@
 
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView
 {
-    CGFloat off = scrollView.contentOffset.x + (scrollView.contentInset.left < 0 ? scrollView.contentInset.left : 0);
-    
-    self.wallpaperXLeft.constant = -PARALAX_RATIO*off;
+//    CGFloat off = scrollView.contentOffset.x + (scrollView.contentInset.left < 0 ? scrollView.contentInset.left : 0);
+//
+//    self.wallpaperXLeft.constant = -PARALAX_RATIO*off;
 }
 
 // MARK: - UIViewControllerAnimatedTransitioning

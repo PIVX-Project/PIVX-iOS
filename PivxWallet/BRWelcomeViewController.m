@@ -27,6 +27,7 @@
 #import "BRRootViewController.h"
 #import "BRWalletManager.h"
 #import "BREventManager.h"
+#import "pivxwallet-Swift.h"
 
 
 @interface BRWelcomeViewController ()
@@ -61,6 +62,8 @@
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
+    UIColor *color = [UIColor rgb:85 green:71 blue:108 alpha:1];
+    [Utils changeStatusBackgroundColorWithColor:color];
     [self.navigationController setNavigationBarHidden:TRUE animated:true];
 }
 

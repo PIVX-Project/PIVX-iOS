@@ -83,7 +83,7 @@
     UILabel * titleLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 1, 100)];
     titleLabel.autoresizingMask = UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleRightMargin | UIViewAutoresizingFlexibleTopMargin | UIViewAutoresizingFlexibleBottomMargin;
     [titleLabel setBackgroundColor:[UIColor clearColor]];
-    [titleLabel setText:(self.navigationController.viewControllers.firstObject != self)?NSLocalizedString(@"recovery phrase",@"recovery phrase"):NSLocalizedString(@"confirm",@"confirm")];
+    [titleLabel setText:(self.navigationController.viewControllers.firstObject != self)?NSLocalizedString(@"Recovery phrase",@"Recovery phrase"):NSLocalizedString(@"confirm",@"confirm")];
     [titleLabel setTextColor:[UIColor blackColor]];
     self.navigationItem.titleView = titleLabel;
 }
@@ -99,8 +99,7 @@
     UIBarButtonItem *backButton = [[UIBarButtonItem alloc] initWithImage:image
                                                                    style:UIBarButtonItemStylePlain target:self action:@selector(tappedBackButton)];
     [backButton setTintColor: UIColor.blackColor];
-    
-    self.navigationItem.title = @"Recovery phrase";
+
     self.navigationItem.leftBarButtonItem = backButton;
     
     [self.textView becomeFirstResponder];

@@ -89,7 +89,8 @@ class Utils: NSObject {
             menu.tappedMyWalletButton(UIButton())
             let when = DispatchTime.now() + 0.2 // change 2 to desired number of seconds
             DispatchQueue.main.asyncAfter(deadline: when, qos: .background) {
-                controller.sendViewController.actionPayToClipboard()
+                controller.toSend()
+                
             }
         }
     }

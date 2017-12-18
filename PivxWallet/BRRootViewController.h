@@ -38,7 +38,7 @@ UIViewControllerAnimatedTransitioning,UIGestureRecognizerDelegate>
 @property (nonatomic, strong) IBOutlet UIPageViewController *pageViewController;
 
 - (IBAction)tip:(id)sender;
-
+- (void)toSendViewController;
 - (void)startActivityWithTimeout:(NSTimeInterval)timeout;
 - (void)stopActivityWithSuccess:(BOOL)success;
 - (void)ping;
