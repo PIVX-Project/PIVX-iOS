@@ -504,7 +504,6 @@
     UIColor *color = [UIColor rgb:85 green:71 blue:108 alpha:1];
     [Utils changeStatusBackgroundColorWithColor:color];
     [self addMenuButton];
-    UIColor *color = [UIColor rgb:85 green:71 blue:108 alpha:1];
     //UIColor *color = [UIColor colorWithRed:85.0f/255.0f green:71.0f/255.0f blue:188/255.0f alpha:1.0f];
     [[self.navigationController navigationBar] setTranslucent:FALSE];
     [[self.navigationController navigationBar] setShadowImage:[UIImage imageNamed:@""]];

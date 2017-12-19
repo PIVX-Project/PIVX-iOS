@@ -69,7 +69,7 @@
 			<key>CFBundleTypeRole</key>
 			<string>Editor</string>
 			<key>CFBundleURLName</key>
-			<string>org.dashfoundation.dash</string>
+			<string>org.pivx</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
 				<string>dashwallet</string>
