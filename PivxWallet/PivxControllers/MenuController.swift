@@ -24,7 +24,33 @@ class MenuController: BaseController {
     override func setup(){
         cotainerViewHeightConstraint.constant = K.main.height - 130
         selectTitle()
+        
+        NotificationCenter.default.addObserver(
+            self,
+            selector: #selector(self.syncStarted),
+            name: Notification.Name.BRPeerManagerSyncStartedNotification,
+            object: nil)
+        
+        NotificationCenter.default.addObserver(
+            self,
+            selector: #selector(self.syncFinished),
+            name: Notification.Name.BRPeerManagerSyncFinishedNotification,
+            object: nil)
+        
+        NotificationCenter.default.addObserver(
+            self,
+            selector: #selector(self.syncFailed),
+            name: Notification.Name.BRPeerManagerSyncFailedNotification,
+            object: nil)
     }
+    
+    /**
+    * This method is called when the instance is dealocated in swift.s
+    */
+    deinit {
+        NotificationCenter.default.removeObserver(self);
+    }
+
 
     @IBAction func tappedMyWalletButton(_ sender: Any) {
         if optionSelected == 1 {
@@ -97,4 +123,23 @@ class MenuController: BaseController {
             break
         }
     }
+    
+    @objc func syncStarted(){
+        print("Sync started!");
+        syncLabel.text = "Syncing..";
+        //print("%ld",self.reachability.currentReachabilityStatus);
+        //if (self.reachability.currentReachabilityStatus == NotReachable) return;
+    }
+    
+    @objc func syncFinished(){
+        print("Sync finished!");
+        syncLabel.text = "Synced";
+    }
+    
+    @objc func syncFailed(){
+        print("Sync failed!");
+        syncLabel.text = "Not connection";
+    }
+    
+    
 }

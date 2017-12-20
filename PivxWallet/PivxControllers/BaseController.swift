@@ -24,6 +24,12 @@ class BaseController: UIViewController {
         setupNavigationBar()
     }
     
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(true)
+        
+    }
+    
+    
     func setup(){}
 
     func setupNavigationBar(){
