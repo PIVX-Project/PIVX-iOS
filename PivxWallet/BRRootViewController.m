@@ -78,6 +78,7 @@
 @property (nonatomic, assign) NSTimeInterval timeout, start;
 @property (nonatomic, assign) SystemSoundID pingsound;
 @property (nonatomic, assign) int navigationTypeButton;
+@property (nonatomic, strong) UIView *buttonContainer;
 
 @end
 
@@ -85,6 +86,15 @@
 
 -(BOOL)prefersStatusBarHidden {
     return NO;
+}
+
+- (void)addErrorView{
+    if (!self.errorBar.superview) {
+        [self.navigationController.navigationBar addSubview:self.errorBar];
+        [self.navigationController.navigationBar addConstraint:[NSLayoutConstraint constraintWithItem:self.errorBar attribute:NSLayoutAttributeLeft relatedBy:NSLayoutRelationEqual toItem:self.navigationController.navigationBar attribute:NSLayoutAttributeLeft multiplier:1.0 constant:0.0]];
+        [self.navigationController.navigationBar addConstraint:[NSLayoutConstraint constraintWithItem:self.errorBar attribute:NSLayoutAttributeRight relatedBy:NSLayoutRelationEqual toItem:self.navigationController.navigationBar attribute:NSLayoutAttributeRight multiplier:1.0 constant:0.0]];
+        [self.navigationController.navigationBar addConstraint:[NSLayoutConstraint constraintWithItem:self.errorBar attribute:NSLayoutAttributeBottom relatedBy:NSLayoutRelationEqual toItem:self.navigationController.navigationBar attribute:NSLayoutAttributeBottom multiplier:1.0 constant:-48.0]];
+    }
 }
 
 - (void)viewDidLoad
@@ -120,8 +130,8 @@
     
     CGFloat y = self.view.frame.size.height - 114;
     CGFloat width = self.view.frame.size.width;
-    UIView *footer = [[UIView alloc] initWithFrame:CGRectMake(0, y, width, 50)];
-    footer.backgroundColor = UIColor.whiteColor;
+    self.buttonContainer = [[UIView alloc] initWithFrame:CGRectMake(0, y, width, 50)];
+    self.buttonContainer.backgroundColor = UIColor.whiteColor;
     
     UIButton *receive = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, width/2, 50)];
     [receive setTitle:@"RECEIVE" forState:UIControlStateNormal];
@@ -135,10 +145,10 @@
     [send setBackgroundColor:purple];
     [send addTarget:self action:@selector(tappedSendButton) forControlEvents:UIControlEventTouchUpInside];
     
-    [footer addSubview:send];
-    [footer addSubview:receive];
+    [self.buttonContainer addSubview:send];
+    [self.buttonContainer addSubview:receive];
     
-    [self.view addSubview:footer];
+    [self.view addSubview:self.buttonContainer];
     
     y = self.view.frame.size.height - 50;
     [self.pageViewController setViewControllers:@[TxHistoryController.shared]
@@ -157,12 +167,7 @@
         break;
     }
     
-    if (!self.errorBar.superview) {
-        [self.navigationController.navigationBar addSubview:self.errorBar];
-        [self.navigationController.navigationBar addConstraint:[NSLayoutConstraint constraintWithItem:self.errorBar attribute:NSLayoutAttributeLeft relatedBy:NSLayoutRelationEqual toItem:self.navigationController.navigationBar attribute:NSLayoutAttributeLeft multiplier:1.0 constant:0.0]];
-        [self.navigationController.navigationBar addConstraint:[NSLayoutConstraint constraintWithItem:self.errorBar attribute:NSLayoutAttributeRight relatedBy:NSLayoutRelationEqual toItem:self.navigationController.navigationBar attribute:NSLayoutAttributeRight multiplier:1.0 constant:0.0]];
-        [self.navigationController.navigationBar addConstraint:[NSLayoutConstraint constraintWithItem:self.errorBar attribute:NSLayoutAttributeBottom relatedBy:NSLayoutRelationEqual toItem:self.navigationController.navigationBar attribute:NSLayoutAttributeBottom multiplier:1.0 constant:-48.0]];
-    }
+    [self addErrorView];
     
     BRWalletManager *manager = [BRWalletManager sharedInstance];
     
@@ -390,6 +395,7 @@
     self.syncStartedObserver =
     [[NSNotificationCenter defaultCenter] addObserverForName:BRPeerManagerSyncStartedNotification object:nil
                                                        queue:nil usingBlock:^(NSNotification *note) {
+                                                           NSLog(@"%ld",self.reachability.currentReachabilityStatus);
                                                            if (self.reachability.currentReachabilityStatus == NotReachable) return;
                                                            [self hideErrorBarWithCompletion:nil];
                                                            [self startActivityWithTimeout:0];
@@ -552,13 +558,6 @@
     [self.view bringSubviewToFront:self.progress];
     [self.view bringSubviewToFront:self.pulse];
     
-    if (self.navigationTypeButton == 0){
-        [self addAddressButton];
-    } else {
-        [self addSendButton];
-    }
-    
-    
 }
 
 -(void)addAddressButton {
@@ -635,12 +634,6 @@
 }
 
 - (void)toSendViewController {
-//    __weak typeof(self) weakSelf = self;
-//    _navigationTypeButton = 0;
-//    [self addAddressButton];
-//    [self.pageViewController setViewControllers:@[self.sendViewController] direction:UIPageViewControllerNavigationDirectionForward animated:NO completion:^(BOOL finished){
-//        [weakSelf.sendViewController actionPayToClipboard];
-//    }];
     
     BRSendViewController *controller = (BRSendViewController *)SendController.shared;
     UINavigationController *navigation = [[UINavigationController alloc] initWithRootViewController:controller];
@@ -1081,7 +1074,6 @@
     }
     
     if (self.timeout > 1.0 && 0.1 + 0.9*elapsed/self.timeout < progress) progress = 0.1 + 0.9*elapsed/self.timeout;
-    
     if ((counter % 13) == 0) {
         self.pulse.alpha = 1.0;
         [self.pulse setProgress:progress animated:progress > self.pulse.progress];
@@ -1121,8 +1113,9 @@
 
 - (void)showErrorBar
 {
-    if (self.navigationItem.prompt != nil || self.navigationController.presentedViewController != nil) return;
+    if (/*self.navigationItem.prompt != nil ||*/ self.navigationController.presentedViewController != nil) return;
     self.navigationItem.prompt = @"";
+    [self addErrorView];
     self.errorBar.hidden = NO;
     self.errorBar.alpha = 0.0;
     
@@ -1131,6 +1124,12 @@
                             self.burger.center = CGPointMake(self.burger.center.x, 70.0);
                             self.errorBar.alpha = 1.0;
                         } completion:nil];
+    
+    CGFloat h = [[UIScreen mainScreen] bounds].size.height - 98;
+    CGRect containerFrame = CGRectMake(0, 98, self.view.frame.size.width, h);
+    self.view.frame = containerFrame;
+    
+    self.buttonContainer.frame = CGRectMake(0, h - 50, self.view.frame.size.width, 50);
     
     BRWalletManager *manager = [BRWalletManager sharedInstance];
     
@@ -1144,6 +1143,8 @@
 - (void)hideErrorBarWithCompletion:(void (^ _Nullable)(BOOL finished))completion
 {
     if (self.navigationItem.prompt == nil) return;
+    CGFloat y = [[UIScreen mainScreen] bounds].size.height - 114;
+    self.buttonContainer.frame = CGRectMake(0, y, self.view.frame.size.width, 50);
     [UIView animateWithDuration:UINavigationControllerHideShowBarDuration delay:0.0
                         options:UIViewAnimationOptionCurveEaseOut animations:^{
                             self.burger.center = CGPointMake(self.burger.center.x, 40.0);
