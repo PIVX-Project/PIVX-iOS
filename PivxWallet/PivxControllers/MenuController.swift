@@ -127,8 +127,8 @@ class MenuController: BaseController {
     @objc func syncStarted(){
         print("Sync started!");
         syncLabel.text = "Syncing..";
-        //print("%ld",self.reachability.currentReachabilityStatus);
-        //if (self.reachability.currentReachabilityStatus == NotReachable) return;
+        let progress:Double = (BRPeerManager.sharedInstance()?.syncProgress)!;
+        syncLabel.text = String.init(format: "Syncing %0.1f%%", (progress > 0.1 ? progress - 0.1 : 0.0)*111.0);
     }
     
     @objc func syncFinished(){
