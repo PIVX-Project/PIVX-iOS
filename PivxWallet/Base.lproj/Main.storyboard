@@ -2664,7 +2664,7 @@ Other devices may be infected.
         <image name="imgButtonHover" width="282" height="38"/>
         <image name="imgHeaderLogo" width="102" height="29"/>
         <image name="imgSend" width="111" height="115"/>
-        <image name="lock" width="12" height="16"/>
+        <image name="lock" width="18" height="23"/>
         <image name="logo" width="140" height="171"/>
         <image name="refresh" width="9" height="11"/>
         <image name="shapeshift" width="64" height="64"/>

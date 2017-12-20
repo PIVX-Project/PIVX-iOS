@@ -96,6 +96,7 @@ static NSString *sanitizeString(NSString *s)
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    [self addCloseButton];
     // Do any additional setup after loading the view, typically from a nib.
     // TODO: XXX redesign page with round buttons like the iOS power down screen... apple watch also has round buttons
     self.scanButton.titleLabel.adjustsFontSizeToFitWidth = YES;
@@ -165,6 +166,19 @@ static NSString *sanitizeString(NSString *s)
                                              selector:@selector(keyboardWillHide:)
                                                  name:UIKeyboardWillHideNotification
                                                object:nil];
+}
+
+-(void)addCloseButton {
+    UIImage *image = [UIImage imageNamed:@"closeIcon"];
+    self.navigationItem.hidesBackButton = TRUE;
+    UIBarButtonItem *menuButton = [[UIBarButtonItem alloc] initWithImage:image
+                                                                   style:UIBarButtonItemStylePlain target:self action:@selector(tappedCloseButton)];
+    [menuButton setTintColor: UIColor.whiteColor];
+    self.navigationItem.leftBarButtonItem = menuButton;
+}
+
+-(void)tappedCloseButton{
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 -(void)keyboardWillShow:(NSNotification *)notification

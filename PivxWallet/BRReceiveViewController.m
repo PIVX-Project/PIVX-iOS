@@ -64,6 +64,8 @@
 {
     [super viewDidLoad];
 
+    [self addCloseButton];
+    
     BRWalletManager *manager = [BRWalletManager sharedInstance];
     BRPaymentRequest *req;
 
@@ -93,6 +95,19 @@
 
     self.addressButton.titleLabel.adjustsFontSizeToFitWidth = YES;
     [self updateAddress];
+}
+
+-(void)addCloseButton {
+    UIImage *image = [UIImage imageNamed:@"closeIcon"];
+    self.navigationItem.hidesBackButton = TRUE;
+    UIBarButtonItem *menuButton = [[UIBarButtonItem alloc] initWithImage:image
+                                                                   style:UIBarButtonItemStylePlain target:self action:@selector(tappedCloseButton)];
+    [menuButton setTintColor: UIColor.whiteColor];
+    self.navigationItem.leftBarButtonItem = menuButton;
+}
+
+-(void)tappedCloseButton{
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 - (void)viewWillDisappear:(BOOL)animated

@@ -54,7 +54,8 @@ class MenuController: BaseController {
             slideMenuController()?.closeLeft()
             return
         }
-        let controller = TxHistoryController.shared
+        let controller =  SettingsController.shared
+        //let controller = TxHistoryController.shared
         let nav = UINavigationController(rootViewController: controller)
         slideMenuController()?.changeMainViewController(nav, close: true)
         optionSelected = 3

@@ -109,15 +109,41 @@
     
     _balance = UINT64_MAX;
     
-    self.receiveViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"ReceiveViewController"];
-    self.sendViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"SendViewController"];
+    //self.receiveViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"ReceiveViewController"];
+    //self.sendViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"SendViewController"];
     self.pageViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"PageViewController"];
     
     
     //self.pageViewController.dataSource = self;
-    [self.pageViewController setViewControllers:@[self.sendViewController]
+    
+    UIColor *purple = [UIColor rgb:85 green:71 blue:108 alpha:1];
+    
+    CGFloat y = self.view.frame.size.height - 114;
+    CGFloat width = self.view.frame.size.width;
+    UIView *footer = [[UIView alloc] initWithFrame:CGRectMake(0, y, width, 50)];
+    footer.backgroundColor = UIColor.whiteColor;
+    
+    UIButton *receive = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, width/2, 50)];
+    [receive setTitle:@"RECEIVE" forState:UIControlStateNormal];
+    [receive setTintColor:UIColor.whiteColor];
+    [receive setBackgroundColor:purple];
+    [receive addTarget:self action:@selector(tappedReceiveButton) forControlEvents:UIControlEventTouchUpInside];
+    
+    UIButton *send = [[UIButton alloc] initWithFrame:CGRectMake((width/2) + 1 , 0, (width/2) - 1, 50)];
+    [send setTitle:@"SEND" forState:UIControlStateNormal];
+    [send setTintColor:UIColor.whiteColor];
+    [send setBackgroundColor:purple];
+    [send addTarget:self action:@selector(tappedSendButton) forControlEvents:UIControlEventTouchUpInside];
+    
+    [footer addSubview:send];
+    [footer addSubview:receive];
+    
+    [self.view addSubview:footer];
+    
+    y = self.view.frame.size.height - 50;
+    [self.pageViewController setViewControllers:@[TxHistoryController.shared]
                                       direction:UIPageViewControllerNavigationDirectionForward animated:NO completion:nil];
-    self.pageViewController.view.frame = self.view.bounds;
+    self.pageViewController.view.frame = CGRectMake(0, 0, self.view.frame.size.width, y);
     [self addChildViewController:self.pageViewController];
     [self.view insertSubview:self.pageViewController.view belowSubview:self.splash];
     [self.pageViewController didMoveToParentViewController:self];
@@ -498,6 +524,16 @@
     }
 }
 
+- (void)tappedReceiveButton{
+    UINavigationController *navigation = [[UINavigationController alloc] initWithRootViewController:ReceiveController.shared];
+    [self presentViewController:navigation animated:YES completion:nil];
+}
+
+- (void)tappedSendButton{
+    UINavigationController *navigation = [[UINavigationController alloc] initWithRootViewController:SendController.shared];
+    [self presentViewController:navigation animated:YES completion:nil];
+}
+
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
@@ -527,48 +563,48 @@
 
 -(void)addAddressButton {
     
-    NSArray<UIBarButtonItem *> *arrayItem = self.navigationItem.rightBarButtonItems;
-
-    UIImage *image = [UIImage imageNamed:@"icQrCode"];
-    UIBarButtonItem *qrCodeButton = [[UIBarButtonItem alloc] initWithImage:image
-                                                                   style:UIBarButtonItemStylePlain target:self action:@selector(tappedQrButton)];
-    qrCodeButton.tag = 1;
-    
-    
-    if ([arrayItem count] > 0) {
-        UIBarButtonItem *item = arrayItem[0];
-        if (item.tag != 1) {
-            NSArray<UIBarButtonItem *> *items = [[NSArray alloc] initWithObjects:arrayItem[0], qrCodeButton, nil];
-            self.navigationItem.rightBarButtonItems = items;
-        } else {
-            NSArray<UIBarButtonItem *> *items = [[NSArray alloc] initWithObjects: qrCodeButton, nil];
-            self.navigationItem.rightBarButtonItems = items;
-        }
-    } else {
-        self.navigationItem.rightBarButtonItem = qrCodeButton;
-    }
+//    NSArray<UIBarButtonItem *> *arrayItem = self.navigationItem.rightBarButtonItems;
+//
+//    UIImage *image = [UIImage imageNamed:@"icQrCode"];
+//    UIBarButtonItem *qrCodeButton = [[UIBarButtonItem alloc] initWithImage:image
+//                                                                   style:UIBarButtonItemStylePlain target:self action:@selector(tappedQrButton)];
+//    qrCodeButton.tag = 1;
+//
+//
+//    if ([arrayItem count] > 0) {
+//        UIBarButtonItem *item = arrayItem[0];
+//        if (item.tag != 1) {
+//            NSArray<UIBarButtonItem *> *items = [[NSArray alloc] initWithObjects:arrayItem[0], qrCodeButton, nil];
+//            self.navigationItem.rightBarButtonItems = items;
+//        } else {
+//            NSArray<UIBarButtonItem *> *items = [[NSArray alloc] initWithObjects: qrCodeButton, nil];
+//            self.navigationItem.rightBarButtonItems = items;
+//        }
+//    } else {
+//        self.navigationItem.rightBarButtonItem = qrCodeButton;
+//    }
 }
 
 -(void)addSendButton {
-    NSArray<UIBarButtonItem *> *arrayItem = self.navigationItem.rightBarButtonItems;
-    
-    UIImage *image = [UIImage imageNamed:@"icTransactionSend"];
-    UIBarButtonItem *qrCodeButton = [[UIBarButtonItem alloc] initWithImage:image
-                                                                     style:UIBarButtonItemStylePlain target:self action:@selector(tappedQrButton)];
-    
-    qrCodeButton.tag = 1;
-    if ([arrayItem count] > 0) {
-        UIBarButtonItem *item = arrayItem[0];
-        if (item.tag != 1) {
-            NSArray<UIBarButtonItem *> *items = [[NSArray alloc] initWithObjects:arrayItem[0], qrCodeButton, nil];
-            self.navigationItem.rightBarButtonItems = items;
-        } else {
-            NSArray<UIBarButtonItem *> *items = [[NSArray alloc] initWithObjects: qrCodeButton, nil];
-            self.navigationItem.rightBarButtonItems = items;
-        }
-    } else {
-        self.navigationItem.rightBarButtonItem = qrCodeButton;
-    }
+//    NSArray<UIBarButtonItem *> *arrayItem = self.navigationItem.rightBarButtonItems;
+//
+//    UIImage *image = [UIImage imageNamed:@"icTransactionSend"];
+//    UIBarButtonItem *qrCodeButton = [[UIBarButtonItem alloc] initWithImage:image
+//                                                                     style:UIBarButtonItemStylePlain target:self action:@selector(tappedQrButton)];
+//
+//    qrCodeButton.tag = 1;
+//    if ([arrayItem count] > 0) {
+//        UIBarButtonItem *item = arrayItem[0];
+//        if (item.tag != 1) {
+//            NSArray<UIBarButtonItem *> *items = [[NSArray alloc] initWithObjects:arrayItem[0], qrCodeButton, nil];
+//            self.navigationItem.rightBarButtonItems = items;
+//        } else {
+//            NSArray<UIBarButtonItem *> *items = [[NSArray alloc] initWithObjects: qrCodeButton, nil];
+//            self.navigationItem.rightBarButtonItems = items;
+//        }
+//    } else {
+//        self.navigationItem.rightBarButtonItem = qrCodeButton;
+//    }
     
 }
 
@@ -599,11 +635,17 @@
 }
 
 - (void)toSendViewController {
-    __weak typeof(self) weakSelf = self;
-    _navigationTypeButton = 0;
-    [self addAddressButton];
-    [self.pageViewController setViewControllers:@[self.sendViewController] direction:UIPageViewControllerNavigationDirectionForward animated:NO completion:^(BOOL finished){
-        [weakSelf.sendViewController actionPayToClipboard];
+//    __weak typeof(self) weakSelf = self;
+//    _navigationTypeButton = 0;
+//    [self addAddressButton];
+//    [self.pageViewController setViewControllers:@[self.sendViewController] direction:UIPageViewControllerNavigationDirectionForward animated:NO completion:^(BOOL finished){
+//        [weakSelf.sendViewController actionPayToClipboard];
+//    }];
+    
+    BRSendViewController *controller = (BRSendViewController *)SendController.shared;
+    UINavigationController *navigation = [[UINavigationController alloc] initWithRootViewController:controller];
+    [self presentViewController:navigation animated:YES completion:^(void){
+        [controller actionPayToClipboard];
     }];
 }
 
@@ -1158,49 +1200,54 @@
 
 - (BOOL)nextTip
 {
-    if (self.tipView.alpha < 0.5) { // if the tip view is dismissed, cycle through child view controller tips
-        BOOL ret;
-        
-        if (self.inNextTip) return NO; // break out of recursive loop
-        self.inNextTip = YES;
-        ret = [self.pageViewController.viewControllers.lastObject nextTip];
-        self.inNextTip = NO;
-        return ret;
-    }
+//    if (self.tipView.alpha < 0.5) { // if the tip view is dismissed, cycle through child view controller tips
+//        BOOL ret;
+//
+//        if (self.inNextTip) return NO; // break out of recursive loop
+//        self.inNextTip = YES;
+//        ret = [self.pageViewController.viewControllers.lastObject nextTip];
+//        self.inNextTip = NO;
+//        return ret;
+//    }
+//
+//    BRBubbleView *tipView = self.tipView;
+//
+//    self.tipView = nil;
+//    [tipView popOut];
+//
+//    if ([tipView.text hasPrefix:BALANCE_TIP]) {
+//        BRWalletManager *m = [BRWalletManager sharedInstance];
+//        UINavigationBar *b = self.navigationController.navigationBar;
+//        NSString *text = [NSString stringWithFormat:MDASH_TIP, m.dashFormat.currencySymbol, [m stringForDashAmount:DUFFS]];
+//        CGRect r = [self.navigationItem.title boundingRectWithSize:b.bounds.size options:0
+//                                                        attributes:b.titleTextAttributes context:nil];
+//
+//        self.tipView = [BRBubbleView viewWithAttributedText:[text attributedStringForDashSymbolWithTintColor:[UIColor whiteColor] dashSymbolSize:CGSizeMake(13, 11)]
+//                                                   tipPoint:CGPointMake(b.center.x + 5.0 - r.size.width/2.0,
+//                                                                        b.frame.origin.y + b.frame.size.height - 10)
+//                                               tipDirection:BRBubbleTipDirectionUp];
+//        self.tipView.backgroundColor = tipView.backgroundColor;
+//        self.tipView.font = tipView.font;
+//        self.tipView.userInteractionEnabled = NO;
+//        [self.view addSubview:[self.tipView popIn]];
+//    }
+//    else if (self.showTips) {
+//        self.showTips = NO;
+//        [self.pageViewController.viewControllers.lastObject tip:self];
+//    }
     
-    BRBubbleView *tipView = self.tipView;
-    
-    self.tipView = nil;
-    [tipView popOut];
-    
-    if ([tipView.text hasPrefix:BALANCE_TIP]) {
-        BRWalletManager *m = [BRWalletManager sharedInstance];
-        UINavigationBar *b = self.navigationController.navigationBar;
-        NSString *text = [NSString stringWithFormat:MDASH_TIP, m.dashFormat.currencySymbol, [m stringForDashAmount:DUFFS]];
-        CGRect r = [self.navigationItem.title boundingRectWithSize:b.bounds.size options:0
-                                                        attributes:b.titleTextAttributes context:nil];
-        
-        self.tipView = [BRBubbleView viewWithAttributedText:[text attributedStringForDashSymbolWithTintColor:[UIColor whiteColor] dashSymbolSize:CGSizeMake(13, 11)]
-                                                   tipPoint:CGPointMake(b.center.x + 5.0 - r.size.width/2.0,
-                                                                        b.frame.origin.y + b.frame.size.height - 10)
-                                               tipDirection:BRBubbleTipDirectionUp];
-        self.tipView.backgroundColor = tipView.backgroundColor;
-        self.tipView.font = tipView.font;
-        self.tipView.userInteractionEnabled = NO;
-        [self.view addSubview:[self.tipView popIn]];
-    }
-    else if (self.showTips) {
-        self.showTips = NO;
-        [self.pageViewController.viewControllers.lastObject tip:self];
-    }
-    
-    return YES;
+    return FALSE;
 }
 
 // MARK: - IBAction
 
 - (IBAction)tip:(id)sender
 {
+    if (self.tipView.alpha > 0.5 ){
+        [self hideTips];
+        return;
+    }
+    
     BRWalletManager *manager = [BRWalletManager sharedInstance];
     
     if (sender == self.receiveViewController) {

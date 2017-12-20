@@ -88,6 +88,8 @@ static NSString *dateFormat(NSString *template)
 //                                        self.navigationController.view.frame.size.height -
 //                                        self.wallpaper.frame.size.height/2);
 //    [self.navigationController.view insertSubview:self.wallpaper atIndex:0];
+    
+    
     self.navigationController.delegate = self;
     self.moreTx = YES;
 }
@@ -492,7 +494,7 @@ static NSString *dateFormat(NSString *template)
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-    return 2;
+    return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section

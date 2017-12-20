@@ -59,6 +59,8 @@
     self.touchId = [BRWalletManager sharedInstance].touchIdEnabled;
     self.view.backgroundColor = UIColor.whiteColor;
     self.tableView.backgroundColor = UIColor.whiteColor;
+    
+    [self addMenuButton];
 }
 
 
@@ -95,6 +97,19 @@
                  forState:UIControlStateNormal];
             }];
     }
+}
+
+-(void)addMenuButton {
+    UIImage *image = [UIImage imageNamed:@"burger"];
+    self.navigationItem.hidesBackButton = TRUE;
+    UIBarButtonItem *menuButton = [[UIBarButtonItem alloc] initWithImage:image
+                                                                   style:UIBarButtonItemStylePlain target:self action:@selector(tappedMenuButton)];
+    [menuButton setTintColor: UIColor.whiteColor];
+    self.navigationItem.leftBarButtonItem = menuButton;
+}
+
+-(void)tappedMenuButton{
+    [Utils openLeftMenu];
 }
 
 - (void)viewDidAppear:(BOOL)animated {
