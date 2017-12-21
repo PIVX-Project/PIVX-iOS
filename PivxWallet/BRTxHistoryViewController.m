@@ -70,6 +70,7 @@ static NSString *dateFormat(NSString *template)
 @property (nonatomic, strong) id backgroundObserver, balanceObserver, txStatusObserver;
 @property (nonatomic, strong) id syncStartedObserver, syncFinishedObserver, syncFailedObserver;
 @property (nonatomic, strong) UIImageView *wallpaper;
+@property (nonatomic, strong) NSString *emptyIdentifier;
 
 @end
 
@@ -78,7 +79,8 @@ static NSString *dateFormat(NSString *template)
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-
+    self.emptyIdentifier = @"emptyIdentifier";
+    [self.tableView registerNib:[UINib nibWithNibName:@"EmptyTableCell" bundle:nil] forCellReuseIdentifier:self.emptyIdentifier];
     self.txDates = [NSMutableDictionary dictionary];
 //    self.wallpaper = [[UIImageView alloc] initWithFrame:self.navigationController.view.bounds];
 //    self.wallpaper.image = [UIImage imageNamed:@"wallpaper-default"];
@@ -529,6 +531,12 @@ static NSString *dateFormat(NSString *template)
                 cell.textLabel.text = (indexPath.row > 0) ? NSLocalizedString(@"more...", nil) :
                                       NSLocalizedString(@"transaction history", nil);
                 cell.imageView.image = nil;
+                
+                if (indexPath.row == 0) {
+                    EmptyTableCell *tran = [tableView dequeueReusableCellWithIdentifier:self.emptyIdentifier forIndexPath:indexPath];
+                    [tran configureWithTitle:@"YOUR WALLET IS LOCKED" image:@"imgWalletLocked"];
+                    return tran;
+                }
             }
             else if (self.transactions.count > 0) {
                 cell = [tableView dequeueReusableCellWithIdentifier:transactionIdent];
@@ -627,7 +635,12 @@ static NSString *dateFormat(NSString *template)
                     sentLabel.highlightedTextColor = sentLabel.textColor;
                 }
             }
-            else cell = [tableView dequeueReusableCellWithIdentifier:noTxIdent];
+            else {
+                EmptyTableCell *tran = [tableView dequeueReusableCellWithIdentifier:self.emptyIdentifier forIndexPath:indexPath];
+                [tran configureWithTitle:@"NO TRANSACTIONS" image:@"imgTransactionEmpty"];
+                return tran;
+                //cell = [tableView dequeueReusableCellWithIdentifier:noTxIdent];
+            }
             
             break;
 
@@ -664,6 +677,10 @@ static NSString *dateFormat(NSString *template)
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    if (self.transactions.count == 0) {
+        return [[UIScreen mainScreen] bounds].size.height - 154;
+    }
+    
     switch (indexPath.section) {
         case 0: return (self.moreTx && indexPath.row >= self.transactions.count) ? 44.0 : TRANSACTION_CELL_HEIGHT;
         case 1: return 44.0;
