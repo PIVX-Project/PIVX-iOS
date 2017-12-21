@@ -641,6 +641,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qzq-Rh-MU4">
+                                <rect key="frame" x="0.0" y="64" width="414" height="672"/>
+                                <color key="backgroundColor" red="0.33333333329999998" green="0.2784313725" blue="0.42352941179999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
                             <label opaque="NO" clipsSubviews="YES" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ƀ 0.00 ($0.00)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cRT-Sr-x6R">
                                 <rect key="frame" x="156.66666666666666" y="207" width="100.99999999999997" height="45"/>
                                 <gestureRecognizers/>
@@ -689,11 +693,15 @@
                         <constraints>
                             <constraint firstItem="WSe-0v-Fha" firstAttribute="top" secondItem="9d1-ib-nZH" secondAttribute="bottom" constant="8" id="1Du-RO-hbs"/>
                             <constraint firstItem="dHW-TV-HTh" firstAttribute="centerX" secondItem="cRT-Sr-x6R" secondAttribute="centerX" id="1of-mv-fGR"/>
+                            <constraint firstItem="qzq-Rh-MU4" firstAttribute="top" secondItem="dHW-TV-HTh" secondAttribute="top" id="9HL-8P-pkM"/>
+                            <constraint firstItem="qzq-Rh-MU4" firstAttribute="leading" secondItem="dHW-TV-HTh" secondAttribute="leading" id="ILE-HD-ixi"/>
+                            <constraint firstItem="dHW-TV-HTh" firstAttribute="trailing" secondItem="qzq-Rh-MU4" secondAttribute="trailing" id="M0o-rR-wIy"/>
                             <constraint firstItem="dHW-TV-HTh" firstAttribute="trailing" secondItem="WSe-0v-Fha" secondAttribute="trailing" constant="8" id="SWR-Kt-uQo"/>
                             <constraint firstItem="dHW-TV-HTh" firstAttribute="centerX" secondItem="9d1-ib-nZH" secondAttribute="centerX" id="U1P-J2-Llv"/>
                             <constraint firstItem="9d1-ib-nZH" firstAttribute="top" secondItem="cRT-Sr-x6R" secondAttribute="bottom" id="b1i-h0-XG0"/>
                             <constraint firstItem="WSe-0v-Fha" firstAttribute="leading" secondItem="dHW-TV-HTh" secondAttribute="leading" constant="8" id="bx8-Kg-cIc"/>
                             <constraint firstItem="9d1-ib-nZH" firstAttribute="centerY" secondItem="eNl-J2-B2Z" secondAttribute="centerY" constant="10" id="njC-cK-RyW"/>
+                            <constraint firstItem="dHW-TV-HTh" firstAttribute="bottom" secondItem="qzq-Rh-MU4" secondAttribute="bottom" id="uBB-dm-tbE"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="dHW-TV-HTh"/>
                     </view>
