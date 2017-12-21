@@ -9,6 +9,7 @@
 import SlideMenuControllerSwift
 import Foundation
 import UIKit
+import MessageUI
 
 class RootController: UIViewController {
     @objc static let shared = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "RootViewController")
@@ -44,10 +45,31 @@ class Utils: NSObject {
         UINavigationBar.appearance().titleTextAttributes = [NSAttributedStringKey.foregroundColor:UIColor.white]
     }
     
-//    static func configureIQKeyboard() {
-//        IQKeyboardManager.sharedManager().enable = true
-//    }
-//
+    static func getTopController()->UIViewController?{
+        if var topController = UIApplication.shared.keyWindow?.rootViewController {
+            while let presentedViewController = topController.presentedViewController {
+                topController = presentedViewController
+            }
+            return topController
+        }
+        return nil
+    }
+    
+    @objc static func showMailController(messageBody:String, delegate:MFMailComposeViewControllerDelegate) {
+        if MFMailComposeViewController.canSendMail() {
+            let mail = MFMailComposeViewController()
+            mail.mailComposeDelegate = delegate
+            mail.setToRecipients(["matiasfurszyfer@gmail.com"])
+            mail.setSubject("Logs IOS PIVX")
+            mail.setMessageBody(messageBody, isHTML: false)
+            let top = Utils.getTopController()
+            top?.present(mail, animated: true, completion: nil)
+            
+        } else {
+            Utils.showAlertController(title: nil, message: "Sorry, you don't have any configured email account. Please add it and try again.")
+        }
+    }
+    
     @objc static func setIsTestnet()->Void{
         isTestnet = true;
      }

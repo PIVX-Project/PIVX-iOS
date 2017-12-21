@@ -153,7 +153,7 @@
 "Huq-Vk-LaF.title" = "";
 
 /* Class = "UIButton"; normalTitle = "copy logs"; ObjectID = "Irz-6P-zvD"; */
-"Irz-6P-zvD.normalTitle" = "copy logs";
+"Irz-6P-zvD.normalTitle" = "Send logs";
 
 /* Class = "UILabel"; text = "($1,000.00)"; ObjectID = "JNR-nK-iyP"; */
 "JNR-nK-iyP.text" = "";

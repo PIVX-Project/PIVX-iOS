@@ -59,7 +59,6 @@
     self.touchId = [BRWalletManager sharedInstance].touchIdEnabled;
     self.view.backgroundColor = UIColor.whiteColor;
     self.tableView.backgroundColor = UIColor.whiteColor;
-    
     [self addMenuButton];
 }
 
@@ -209,12 +208,14 @@
     }
 
     asl_free(r);
-    [UIPasteboard generalPasteboard].string = (s.length < 8000000) ? s : [s substringFromIndex:s.length - 8000000];
+    NSString *log = (s.length < 8000000) ? s : [s substringFromIndex:s.length - 8000000];
+    NSLog(@"%@",log);
+    [Utils showMailControllerWithMessageBody:log delegate:self];
     
-    [self.navigationController.topViewController.view
-     addSubview:[[[BRBubbleView viewWithText:NSLocalizedString(@"copied", nil)
-     center:CGPointMake(self.view.bounds.size.width/2.0, self.view.bounds.size.height/2.0)] popIn]
-     popOutAfterDelay:2.0]];
+//    [self.navigationController.topViewController.view
+//     addSubview:[[[BRBubbleView viewWithText:NSLocalizedString(@"copied", nil)
+//     center:CGPointMake(self.view.bounds.size.width/2.0, self.view.bounds.size.height/2.0)] popIn]
+//     popOutAfterDelay:2.0]];
 }
 #pragma GCC diagnostic pop
 #endif
