@@ -21,6 +21,8 @@ class MenuController: BaseController {
     @IBOutlet weak var cotainerViewHeightConstraint: NSLayoutConstraint!
     var optionSelected:Int = 1
     
+    var syncTimer:Timer? = nil;
+    
     override func setup(){
         cotainerViewHeightConstraint.constant = K.main.height - 130
         selectTitle()
@@ -49,6 +51,7 @@ class MenuController: BaseController {
     */
     deinit {
         NotificationCenter.default.removeObserver(self);
+        stopTimer();
     }
 
 
@@ -124,16 +127,30 @@ class MenuController: BaseController {
         }
     }
     
-    @objc func syncStarted(){
-        print("Sync started!");
-        syncLabel.text = "Syncing..";
+    func updateSync(){
         let progress:Double = (BRPeerManager.sharedInstance()?.syncProgress)!;
         syncLabel.text = String.init(format: "Syncing %0.1f%%", (progress > 0.1 ? progress - 0.1 : 0.0)*111.0);
     }
     
+    @objc func syncStarted(){
+        print("Sync started!");
+        
+        updateSync();
+        if (syncTimer == nil) {
+            syncTimer = Timer.scheduledTimer(timeInterval: 7.0, target: self, selector: #selector(updateSync), userInfo: nil, repeats: true);
+        }else{
+            syncTimer?.fire();
+        }
+    }
+    
     @objc func syncFinished(){
         print("Sync finished!");
+        stopTimer();
         syncLabel.text = "Synced";
+    }
+    
+    func stopTimer() {
+        syncTimer?.invalidate();
     }
     
     @objc func syncFailed(){
