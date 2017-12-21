@@ -63,7 +63,7 @@
 "efL-Cj-Aho.normalTitle" = "Show";
 
 /* Class = "UINavigationItem"; title = "confirm:"; ObjectID = "fQN-xb-SYb"; */
-"fQN-xb-SYb.title" = "confirm:";
+"fQN-xb-SYb.title" = "Confirm:";
 
 /* Class = "UILabel"; text = "Send PIVX"; ObjectID = "l5l-JR-LKA"; */
 "l5l-JR-LKA.text" = "SEND PIVX";
@@ -75,7 +75,7 @@
 "qel-3J-2VC.text" = "RECEIVE PIVX";
 
 /* Class = "UITableViewController"; title = "transaction details"; ObjectID = "s4T-yd-VfX"; */
-"s4T-yd-VfX.title" = "transaction details";
+"s4T-yd-VfX.title" = "Transaction Details";
 
 /* Class = "UILabel"; text = "no transactions"; ObjectID = "t1j-JZ-FW0"; */
 "t1j-JZ-FW0.text" = "NO TRANSACTIONS";

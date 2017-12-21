@@ -749,7 +749,7 @@ _deselect_switch:
     }
 }
 -(void)showAlertOption {
-    UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"Reset blockchain"
+    UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"Rescan blockchain"
                                                                    message:@"The blockchain is going to be reseted.\nThe synchronization could take a while.\nAre you sure?"
                                                             preferredStyle:UIAlertControllerStyleActionSheet];
     UIAlertAction *firstAction = [UIAlertAction actionWithTitle:@"cancel"
