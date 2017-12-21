@@ -1184,7 +1184,7 @@ a global community comprised of creators, innovators, and technology enthusiasts
             </objects>
             <point key="canvasLocation" x="1276" y="2158"/>
         </scene>
-        <!--confirm:-->
+        <!--Confirm:-->
         <scene sceneID="2Hc-ez-bvO">
             <objects>
                 <viewController storyboardIdentifier="WipeViewController" modalTransitionStyle="crossDissolve" id="5j4-Re-grj" customClass="BRRestoreViewController" sceneMemberID="viewController">
@@ -1220,7 +1220,7 @@ a global community comprised of creators, innovators, and technology enthusiasts
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Q4J-7m-uCP"/>
                     </view>
-                    <navigationItem key="navigationItem" title="confirm:" id="fQN-xb-SYb">
+                    <navigationItem key="navigationItem" title="Confirm:" id="fQN-xb-SYb">
                         <barButtonItem key="leftBarButtonItem" systemItem="stop" id="2vu-AA-9sh">
                             <connections>
                                 <action selector="cancel:" destination="5j4-Re-grj" id="3jF-fF-7CC"/>
@@ -2187,7 +2187,7 @@ Other devices may be infected.
             </objects>
             <point key="canvasLocation" x="2721" y="2158"/>
         </scene>
-        <!--phrase-->
+        <!--Phrase-->
         <scene sceneID="qOk-ov-eSt">
             <objects>
                 <viewController storyboardIdentifier="SeedViewController" modalTransitionStyle="crossDissolve" id="IA2-75-hxO" customClass="BRSeedViewController" sceneMemberID="viewController">
@@ -2310,7 +2310,7 @@ Other devices may be infected.
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="X6R-Za-v9X"/>
                     </view>
-                    <navigationItem key="navigationItem" title="phrase" id="pSA-60-Zeg"/>
+                    <navigationItem key="navigationItem" title="Phrase" id="pSA-60-Zeg"/>
                     <connections>
                         <outlet property="remindButton" destination="QQS-Me-RNh" id="Jkq-bu-28n"/>
                         <outlet property="seedLabel" destination="dz8-9E-hrc" id="EuI-Ib-8iZ"/>

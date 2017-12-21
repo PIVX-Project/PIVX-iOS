@@ -98,7 +98,7 @@ extension AddressContactController:UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
         if state == .empty {
-            return K.main.height - 64
+            return K.main.height - 164
         }
         return 0
     }
