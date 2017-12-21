@@ -374,7 +374,7 @@
     
     switch (section) {
         case 0: return 2;
-        case 1: return (self.touchId) ? 3 : 2;
+        case 1: return (self.touchId) ? 2 : 1;
         case 2: return 3;
     }
     
@@ -421,6 +421,7 @@
             switch (indexPath.row) {
                 case 0:
                     cell = [tableView dequeueReusableCellWithIdentifier:selectorIdent];
+                    cell.textLabel.text = @"Local Currency";
                     cell.detailTextLabel.text = manager.localCurrencyCode;
                     break;
             
@@ -456,6 +457,7 @@ _switch_cell:
                     
                 case 1:
                     cell = [tableView dequeueReusableCellWithIdentifier:restoreIdent];
+                    
                     break;
                     
                 case 2:
