@@ -43,6 +43,10 @@
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="74.666666666666671"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JnM-Ub-bVe">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="74.666666666666671"/>
+                                            <color key="backgroundColor" red="0.94901960784313721" green="0.94901960784313721" blue="0.94901960784313721" alpha="1" colorSpace="calibratedRGB"/>
+                                        </view>
                                         <view tag="100" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3Gd-YF-s51">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="0.66666666666666663"/>
                                             <color key="backgroundColor" red="0.80000001192092896" green="0.80000001192092896" blue="0.80000001192092896" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -51,9 +55,9 @@
                                             </constraints>
                                         </view>
                                         <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="4" contentMode="left" text="no transactions" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="117.5" translatesAutoresizingMaskIntoConstraints="NO" id="t1j-JZ-FW0">
-                                            <rect key="frame" x="148" y="28" width="117" height="20"/>
-                                            <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
-                                            <color key="textColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <rect key="frame" x="154.66666666666666" y="29.333333333333329" width="103.66666666666666" height="17.666666666666671"/>
+                                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                            <color key="textColor" red="0.26666666666666666" green="0.26666666666666666" blue="0.26666666666666666" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <size key="shadowOffset" width="0.0" height="0.0"/>
                                         </label>
@@ -64,16 +68,29 @@
                                                 <constraint firstAttribute="height" constant="0.5" id="sHb-Zz-ad5"/>
                                             </constraints>
                                         </view>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imgTransactionEmpty" translatesAutoresizingMaskIntoConstraints="NO" id="m49-r9-vBl">
+                                            <rect key="frame" x="108.66666666666667" y="23" width="30.000000000000014" height="30"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="30" id="m4r-5h-hzh"/>
+                                                <constraint firstAttribute="height" constant="30" id="qto-2G-Ncv"/>
+                                            </constraints>
+                                        </imageView>
                                     </subviews>
                                     <constraints>
                                         <constraint firstAttribute="trailing" secondItem="3Gd-YF-s51" secondAttribute="trailing" id="4jW-aV-933"/>
                                         <constraint firstItem="3Gd-YF-s51" firstAttribute="leading" secondItem="8ae-W8-F1U" secondAttribute="leading" id="A6g-5K-J2y"/>
+                                        <constraint firstAttribute="trailing" secondItem="JnM-Ub-bVe" secondAttribute="trailing" id="Acr-d9-BJo"/>
+                                        <constraint firstItem="JnM-Ub-bVe" firstAttribute="leading" secondItem="8ae-W8-F1U" secondAttribute="leading" id="Bvn-VP-zh9"/>
                                         <constraint firstItem="3Gd-YF-s51" firstAttribute="top" secondItem="8ae-W8-F1U" secondAttribute="top" id="CV3-x1-Ye1"/>
                                         <constraint firstItem="xdM-DY-ev0" firstAttribute="leading" secondItem="8ae-W8-F1U" secondAttribute="leading" id="JZS-UH-eqg"/>
                                         <constraint firstAttribute="bottom" secondItem="xdM-DY-ev0" secondAttribute="bottom" constant="-1" id="SIQ-DV-7wt"/>
+                                        <constraint firstAttribute="bottom" secondItem="JnM-Ub-bVe" secondAttribute="bottom" id="cZe-vf-SuD"/>
+                                        <constraint firstItem="m49-r9-vBl" firstAttribute="centerY" secondItem="8ae-W8-F1U" secondAttribute="centerY" id="fPG-QW-RSO"/>
                                         <constraint firstAttribute="trailing" secondItem="xdM-DY-ev0" secondAttribute="trailing" id="iSG-JT-jdB"/>
                                         <constraint firstAttribute="centerX" secondItem="t1j-JZ-FW0" secondAttribute="centerX" constant="0.5" id="jAg-Ks-Piw"/>
                                         <constraint firstAttribute="centerY" secondItem="t1j-JZ-FW0" secondAttribute="centerY" constant="-0.5" id="q6c-1b-7I1"/>
+                                        <constraint firstItem="t1j-JZ-FW0" firstAttribute="leading" secondItem="m49-r9-vBl" secondAttribute="trailing" constant="16" id="uMc-hB-Zbv"/>
+                                        <constraint firstItem="JnM-Ub-bVe" firstAttribute="top" secondItem="8ae-W8-F1U" secondAttribute="top" id="wA8-8y-55C"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.67000000000000004" colorSpace="custom" customColorSpace="sRGB"/>
@@ -882,7 +899,7 @@
                                     <outletCollection property="gestureRecognizers" destination="EKr-Gi-AHW" appends="YES" id="nUb-Yv-XS0"/>
                                 </connections>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ce6-Wi-wk4">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ce6-Wi-wk4">
                                 <rect key="frame" x="77" y="348" width="260" height="40"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <gestureRecognizers/>
@@ -897,6 +914,15 @@
                                 <size key="titleShadowOffset" width="0.0" height="1"/>
                                 <state key="normal" title="Scan QR Code" image="icQrCode">
                                     <color key="titleColor" red="0.33333333329999998" green="0.2784313725" blue="0.42352941179999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <state key="disabled" backgroundImage="imgButtonHover">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <state key="selected" backgroundImage="imgButtonHover">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <state key="highlighted" backgroundImage="imgButtonHover">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
                                     <action selector="scanQR:" destination="RsQ-W7-grB" eventType="touchUpInside" id="wbh-n6-WR8"/>
@@ -2664,6 +2690,7 @@ Other devices may be infected.
         <image name="imgButtonHover" width="282" height="38"/>
         <image name="imgHeaderLogo" width="102" height="29"/>
         <image name="imgSend" width="111" height="115"/>
+        <image name="imgTransactionEmpty" width="105" height="105"/>
         <image name="lock" width="18" height="23"/>
         <image name="logo" width="140" height="171"/>
         <image name="refresh" width="9" height="11"/>
