@@ -25,21 +25,21 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="nYb-pY-TE0">
-                        <rect key="frame" x="137" y="79" width="100" height="100"/>
+                        <rect key="frame" x="137" y="49" width="100" height="100"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="100" id="Jch-em-JJk"/>
                             <constraint firstAttribute="height" constant="100" id="TB8-w9-u9C"/>
                         </constraints>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4WN-8y-xmy">
-                        <rect key="frame" x="32" y="195" width="311" height="20"/>
+                        <rect key="frame" x="32" y="165" width="311" height="20"/>
                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                         <color key="textColor" red="0.1960784314" green="0.2156862745" blue="0.23137254900000001" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="nYb-pY-TE0" firstAttribute="centerY" secondItem="yrQ-1s-IPw" secondAttribute="centerY" constant="-20" id="1sR-6P-7EA"/>
+                    <constraint firstItem="nYb-pY-TE0" firstAttribute="centerY" secondItem="yrQ-1s-IPw" secondAttribute="centerY" constant="-50" id="1sR-6P-7EA"/>
                     <constraint firstItem="4WN-8y-xmy" firstAttribute="top" secondItem="nYb-pY-TE0" secondAttribute="bottom" constant="16" id="6kH-2a-Vc3"/>
                     <constraint firstItem="nYb-pY-TE0" firstAttribute="centerX" secondItem="yrQ-1s-IPw" secondAttribute="centerX" id="GxO-t6-9PC"/>
                     <constraint firstItem="4WN-8y-xmy" firstAttribute="leading" secondItem="yrQ-1s-IPw" secondAttribute="leadingMargin" constant="16" id="U5D-Bo-u7p"/>
