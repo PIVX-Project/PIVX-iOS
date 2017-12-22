@@ -127,7 +127,7 @@ class MenuController: BaseController {
         }
     }
     
-    func updateSync(){
+    @objc func updateSync(){
         let progress:Double = (BRPeerManager.sharedInstance()?.syncProgress)!;
         syncLabel.text = String.init(format: "Syncing %0.1f%%", (progress > 0.1 ? progress - 0.1 : 0.0)*111.0);
     }

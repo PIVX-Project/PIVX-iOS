@@ -1,273 +1,255 @@
 
 /* No comment provided by engineer. */
-" and " = " and ";
+" and " = " ve ";
 
 /* No comment provided by engineer. */
-"%@ is for 'mDASH'. %@ = 1 DASH." = "%1$@ 'mDASH' yerine geçer. %2$@ = 1 DASH.";
+"%@ is for 'mPIVX'. %@ = 1 PIVX." = "%@  'mPIVX' icin. %@ = 1 PIVX.";
 
 /* No comment provided by engineer. */
-"%@ is not allowed to access the camera" = "%@ kameraya erişmesi için izin verilmedi";
+"%@ is not allowed to access the camera" = "%@ kamera erisimine izin verilmiyor";
 
 /* No comment provided by engineer. */
 "%@\n\nbalance: %@ (%@)" = "%1$@\n\nbakiye: %2$@ (%3$@)";
 
 /* No comment provided by engineer. */
-"%d confirmations" = "%d onaylama";
+"%d confirmations" = "%d onaylanma";
 
 /* No comment provided by engineer. */
 ", " = ", ";
 
 /* No comment provided by engineer. */
-"0 confirmations" = "0 onaylama";
+"0 confirmations" = "0 onaylanma";
 
 /* No comment provided by engineer. */
-"1 confirmation" = "1 onaylama";
+"1 confirmation" = "1 onaylanma";
 
 /* No comment provided by engineer. */
-"\"%@\" is not a recovery phrase word" = "\"%@\" kurtarma cümlesi kelimesi değil";
+"\"%@\" is not a recovery phrase word" = "\"%@\" kurtarma sözcügü degildir";
 
 /* No comment provided by engineer. */
-"\n         total %@ (%@)" = "\n         toplam %1$@ (%2$@)";
+"\n         total %@ (%@)" = "\n         toplam %1$@ (%2$@)";
 
 /* No comment provided by engineer. */
-"\n%@\n\nif you ever lose your phone, you will need it to recover your wallet" = "\n%@\n\neğer telefonunuzu kaybederseniz cüzdanınızı kurtarmak için buna ihtiyacınız olacaktır";
+"\n%@\n\nif you ever lose your phone, you will need it to recover your wallet" = "\n%@\n\ntelefonunuzu kaybetseniz bile, cüzdanýnýzý kurtarmak için ona ihtiyacýnýz olacaktýr";
 
 /* No comment provided by engineer. */
-"\n%d attempts remaining\n" = "\n%d deneme hakkı kaldı\n";
+"\n%d attempts remaining\n" = "\n%d kalan denemeler\n";
 
 /* No comment provided by engineer. */
-"\n1 attempt remaining\n" = "\n1 deneme hakkı kaldı\n";
+"\n1 attempt remaining\n" = "\n1 kalan deneme\n";
 
 /* No comment provided by engineer. */
-"\n\n     amount %@ (%@)" = "\n\n     miktar %1$@ (%2$@)";
+"\n\n     amount %@ (%@)" = "\n\n     miktar %1$@ (%2$@)";
 
 /* No comment provided by engineer. */
-"\nA device passcode is needed to safeguard your wallet. Go to settings and turn passcode on to continue." = "\nCüzdanınızın korunması için bir cihaz şifresi gerekmektedir. Devam etmek için Ayarlar'dan şifreyi etkinleştirin.";
+"\nA device passcode is needed to safeguard your wallet. Go to settings and turn passcode on to continue." = "\nCüzdaninizi korumak için bir cihaz sifresi gerekiyor. Ayarlara gidin ve sifrelemeyi gecerli hale getirin.";
 
 /* No comment provided by engineer. */
-"\nADDRESS ALREADY USED\n\ndash addresses are intended for single use only\n\nre-use reduces privacy for both you and the recipient and can result in loss if the recipient doesn't directly control the address" = "\nADRES ZATEN KULLANILMIŞ\n\ndash adresleri sadece tek kullanıma yöneliktir\n\ntekrar kullanmak alıcı ve sizin için gizliliği düşürebilir ve alıcı direk olarak adresi kontrol edemezse kaybolabilir";
+"\nADDRESS ALREADY USED\nPIVX addresses are intended for single use only\n\nre-use reduces privacy for both you and the recipient and can result in loss if the recipient doesn't directly control the address" = "\nKULLANILMIS ADRES\nPIVX adresleri yalnýzca tek sefer kullanilabilir \n\ntekrar kullanim hem sizin hem de alicinin gizliliginizi azaltir ayrica alici hesabini dogrudan kontrol etmezse kayipla sonuclanabilir.";
 
 /* No comment provided by engineer. */
-"\nADDRESS ALREADY USED\ndash addresses are intended for single use only\n\nre-use reduces privacy for both you and the recipient and can result in loss if the recipient doesn't directly control the address" = "\nADDRESS ALREADY USED\ndash addresses are intended for single use only\n\nre-use reduces privacy for both you and the recipient and can result in loss if the recipient doesn't directly control the address";
+"\nallow camera access in\nSettings->Privacy->Camera->%@" = "\nkamera eriþimine izin ver\nAyarlar->Gizlilik->Kamera->%@";
 
 /* No comment provided by engineer. */
-"\nallow camera access in\nSettings->Privacy->Camera->%@" = "\nAyarlar->Gizlilik->Kamera->%@ \nkısmından kamera erişimine izin verin";
+"\nDO NOT let anyone see your recovery\nphrase or they can spend your PIVX.\n" = "\nKimsenin kurtarma sözcüklerinizi görmesine izin vermeyin\nyoksa PIVX'lerinizi ele geçirebilirler.\n";
 
 /* No comment provided by engineer. */
-"\nDO NOT let anyone see your recovery\nphrase or they can spend your dash.\n" = "\nkimsenin kurtarma cümlenizi görmesine İZİN VERMEYİN\n      çünkü dashlerinizi harcayabilirler.\n";
+"\nDO NOT take a screenshot.\nScreenshots are visible to other apps\nand devices.\n" = "\nEkran goruntusu ALMA.\nEkran goruntuleri diger uygulamalarýn erisimine aciktir\nerisimine aciktir.\n";
 
 /* No comment provided by engineer. */
-"\nDO NOT take a screenshot.\nScreenshots are visible to other apps\nand devices.\n" = "\nEkran görüntüsü ALMAYIN.\nEkran görüntüleri diğer uygulamalar ve \ncihazlar tarafından görülebilir.\n";
+"\nnetwork fee +%@ (%@)" = "\nað ücreti +%1$@ (%2$@)";
 
 /* No comment provided by engineer. */
-"\nnetwork fee +%@ (%@)" = "\nağ ücreti +%1$@ (%2$@)";
+"\nNEVER type your recovery phrase into\npassword managers or elsewhere.\nOther devices may be infected.\n" = "\nKurtarma sözcüklerinizi ASLA\nsifre yöneticisine ya da baska bir yere yazmayýn.\nDiðer cihazlar viruslu olabilir.\n";
 
 /* No comment provided by engineer. */
-"\nNEVER type your recovery phrase into\npassword managers or elsewhere.\nOther devices may be infected.\n" = "\nASLA kurtarma metninizi herhangi bir şifre yöneticisine veya başka bir yere yazmayın.\nDiğer cihazlarda güvenlik sorunu olabilir.\n";
+"\ntry again in %@" = "\nicinde tekrar deneyin %@";
 
 /* No comment provided by engineer. */
-"\ntry again in %@" = "\ntry again in %@";
+"\ntry again in %d %@" = "\n %1$d %2$@ icinde tekrar deneyin ";
 
 /* No comment provided by engineer. */
-"\ntry again in %d %@" = "\n%1$d %2$@ içinde tekrar deneyin";
+"about" = "hakkinda";
 
 /* No comment provided by engineer. */
-"about" = "hakkında";
+"always require passcode" = "her zaman sifre girilmelidir";
 
 /* No comment provided by engineer. */
-"always require passcode" = "her zaman parola gerektir";
+"amount too small" = "tutar cok az";
 
 /* No comment provided by engineer. */
-"amount too small" = "miktarı çok küçük";
+"Application %@ is requesting a payment to" = "Uygulama %@ icin ödeme talep ediyor";
 
 /* No comment provided by engineer. */
-"Application %@ is requesting a payment to" = "Application %@ is requesting a payment to";
+"Application %@ is requesting an address so it can pay you.  Would you like to authorize this?" = "Uygulama %@ size ödeme yapabilmek icin adres talep ediyor.  Onaylamak ister misiniz";
 
 /* No comment provided by engineer. */
-"Application %@ is requesting an address so it can pay you.  Would you like to authorize this?" = "Application %@ is requesting an address so it can pay you.  Would you like to authorize this?";
+"Application %@ would like to receive your Master Public Key.  This can be used to keep track of your wallet, this can not be used to move your PIVX." = "Uygulama, %@  Ana Ortak Anahtarinizi  almak istiyor. Bu, cüzdaninizi takip etmek icin kullanilabilir PIVX'inizi tasimak icin kullanilamaz..";
 
 /* No comment provided by engineer. */
-"Application %@ would like to receive your Master Public Key.  This can be used to keep track of your wallet, this can not be used to move your Dash." = "Application %@ would like to receive your Master Public Key.  This can be used to keep track of your wallet, this can not be used to move your Dash.";
+"bad password, try again" = "hatali parola, tekrar deneyin";
 
 /* No comment provided by engineer. */
-"bad password, try again" = "hatalı şifre, yeniden deneyin";
+"bad payment request" = "hatali ödeme girisi";
 
 /* No comment provided by engineer. */
-"bad payment request" = "hatalı ödeme talebi";
+"bad payment request URL" = "hatali ödeme girisi URL'si(baglantisi)";
 
 /* No comment provided by engineer. */
-"bad payment request URL" = "hatalı ödeme talep linki";
+"bad payment URL" = "hatali ödeme URL'si(baglantisi)";
 
 /* No comment provided by engineer. */
-"bad payment URL" = "hatalı ödeme linki";
+"bad recovery phrase" = "hatali kurtarma sözcükleri";
 
 /* No comment provided by engineer. */
-"bad recovery phrase" = "hatalı kurtarma cümlesi";
+"Bitcoin address (shapeshift)" = "Bitcoin adresi (shapeshift)";
 
 /* No comment provided by engineer. */
-"bad signature" = "hatalı imza";
+"bitcoin payments can't be less than %@" = "bitcoin adresleri %@ tutarýndan düsük olamaz";
 
 /* No comment provided by engineer. */
-"Bitcoin address (shapeshift)" = "Bitcoin address (shapeshift)";
+"block #%d of %d" = "blok %2$d üzerinden #%1$d ";
 
 /* No comment provided by engineer. */
-"bitcoin payments can't be less than %@" = "bitcoin payments can't be less than %@";
+"Buy PIVX" = "PIVX satin al";
 
 /* No comment provided by engineer. */
-"block #%d of %d" = "%2$d'in %1$d'ini engelle";
-
-/* No comment provided by engineer. */
-"Buy Dash" = "Buy Dash";
-
-/* No comment provided by engineer. */
-"Buy dash in dashwallet!" = "Buy dash in dashwallet!";
+"Buy PIVX in PIVXwallet!" = "PIVX'i, PIVXcuzdanda satin al!";
 
 /* No comment provided by engineer. */
 "cancel" = "iptal";
 
 /* No comment provided by engineer. */
-"change" = "değiştir";
+"change" = "degistir";
 
 /* No comment provided by engineer. */
-"change passcode" = "şifreyi değiştir";
+"change passcode" = "sifre degistir";
 
 /* No comment provided by engineer. */
-"change payment amount?" = "ödeme tutarı değişsin mi?";
+"change payment amount?" = "ödeme miktarý degistirilsin mi?";
 
 /* No comment provided by engineer. */
-"change wallet passcode" = "change wallet passcode";
+"checking address balance..." = "adres bakiyesi kontrol ediliyor...";
 
 /* No comment provided by engineer. */
-"checking address balance..." = "adres bakiyesi denetleniyor...";
+"checking private key balance..." = "özel anahtar bakiyesi kontrol ediliyor ...";
 
 /* No comment provided by engineer. */
-"checking private key balance..." = "özel anahtar bakiyesi kontrol ediliyor...";
+"choose passcode for %@" = " %@ icin sifre sec";
 
 /* No comment provided by engineer. */
-"choose passcode for %@" = "%@ için şifre seçin";
+"clear" = "temizle";
 
 /* No comment provided by engineer. */
-"choose wallet passcode" = "choose wallet passcode";
+"clear trusted node?" = "güvenilir node'lar silinsin mi??";
 
 /* No comment provided by engineer. */
-"clear" = "clear";
+"clipboard doesn't contain a valid pivx address" = "panodaki PIVX adresi gecerli degildir";
 
 /* No comment provided by engineer. */
-"clear trusted node?" = "clear trusted node?";
+"close app" = "uygulamayi kapat";
 
-/* No comment provided by engineer. */
-"clipboard doesn't contain a valid dash address" = "clipboard doesn't contain a valid dash address";
-
-/* No comment provided by engineer. */
-"clipboard doesn't contain a valid dash or bitcoin address" = "clipboard doesn't contain a valid dash or bitcoin address";
-
-/* No comment provided by engineer. */
-"close app" = "uygulamayı kapat";
+/* Confirm */
+"Confirm" = "Onay";
 
 /* confirm */
-"confirm" = "confirm";
+"confirm" = "onay";
 
 /* No comment provided by engineer. */
-"CONFIRM WIPE" = "TEMİZLEME İŞLEMİNİ ONAYLA";
+"confirmed in block #%d" = "#%d blok onaylandý";
 
 /* No comment provided by engineer. */
-"confirmed in block #%d" = "#%d bloğunda onaylandı";
+"connect timeout" = "baglanti zamanasimi";
 
 /* No comment provided by engineer. */
-"connect timeout" = "bağlantı zaman aşımı";
+"copied" = "kopyalandi";
 
 /* No comment provided by engineer. */
-"copied" = "kopyalandı";
-
-/* No comment provided by engineer. */
-"copy" = "kopyala";
+"copy" = "kopya";
 
 /* No comment provided by engineer. */
 "copy address to clipboard" = "adresi panoya kopyala";
 
 /* No comment provided by engineer. */
-"copy request to clipboard" = "isteği panoya kopyala";
+"copy request to clipboard" = "talebi panoya kopyala";
 
 /* No comment provided by engineer. */
-"copy wallet addresses to clipboard?" = "cüzdan adresleri panoya kopyalansın mı?";
+"copy wallet addresses to clipboard?" = "cüzdan adresi panoya kopyalansin mi?";
 
 /* No comment provided by engineer. */
-"couldn't check address balance" = "adres bakiyesi denetlenemedi";
+"couldn't check address balance" = "adres bakiyesi kontrol edilemedi";
 
 /* No comment provided by engineer. */
-"couldn't make payment" = "ödeme yapılamadı";
+"couldn't make payment" = "ödeme yapilamadi";
 
 /* No comment provided by engineer. */
-"couldn't sweep balance" = "bakiye silinemedi";
+"couldn't sweep balance" = "bakiye alinamadi";
 
 /* No comment provided by engineer. */
-"couldn't transmit payment to dash network" = "ödeme dash ağına iletilemedi";
+"couldn't transmit payment to PIVX network" = "odeme PIVX agina gonderilemedi";
 
 /* No comment provided by engineer. */
-"current wallet passcode" = "current wallet passcode";
+"PIVX address" = "PIVX adresi";
 
 /* No comment provided by engineer. */
-"Dash address" = "dash adresi";
+"PIVX addresses can also be copied to the clipboard. A PIVX address always starts with 'X' or '7'." = "PIVX adresi panoya da kopyalanabilir. Bir PIVX adresi her zaman 'X' veya '7' ile baslar.";
 
 /* No comment provided by engineer. */
-"Dash addresses can also be copied to the clipboard. A dash address always starts with 'X' or '7'." = "Dash adresleri ayrıca panoya kopyalanabilir. Bitcoin adresi her zaman 'X' veya '7' ile başlar.";
+"PIVX network fee" = "PIVX ag ücreti";
 
 /* No comment provided by engineer. */
-"dash network fee" = "dash ağ ücreti";
+"PIVX payments can't be less than %@" = "PIVX ödemeleri %@ tutarindan düsük olamaz";
 
 /* No comment provided by engineer. */
-"dash payments can't be less than %@" = "dash ödemesi %@'den az olamaz";
+"PIVX transaction not signed" = "PIVX islemi kaydedilmedi";
 
 /* No comment provided by engineer. */
-"dash transaction not signed" = "dash işlemi imzalanmamış";
+"PIVX transaction outputs can't be less than %@" = "PIVX islem ciktisi %@ tutarýndan düsük olmaz";
 
 /* No comment provided by engineer. */
-"dash transaction outputs can't be less than %@" = "dash işlemi çıkışı %@'den küçük olamaz";
+"DEVICE SECURITY COMPROMISED\nAny 'jailbreak' app can access any other app's keychain data (and steal your PIVX)." = "CIHAZ GUVENLIK TEHLIKESI\nHerhangi bir 'jailbreak' uygulamasi diger herhangi bir uygulamanizin keychain verilerine erisebilir (ve PIVX'inizi calabilir).";
 
 /* No comment provided by engineer. */
-"DEVICE SECURITY COMPROMISED\nAny 'jailbreak' app can access any other app's keychain data (and steal your dash)." = "CİHAZ GÜVENLİĞİ ZAYIFLADI\nHerhangi bir 'jailbreak' uygulaması diğer uygulamaların verilerine erişebilir (ve dashlerinizi çalabilir).";
-
-/* No comment provided by engineer. */
-"DEVICE SECURITY COMPROMISED\nAny 'jailbreak' app can access any other app's keychain data (and steal your dash). Wipe this wallet immediately and restore on a secure device." = "CİHAZ GÜVENLİĞİ ZAYIFLADI\nHerhangi bir 'jailbreak' uygulaması diğer uygulamaların verilerine erişebilir (ve dashlerinizi çalabilir). Bu cüzdanı hemen silin ve güvenli bir cihaza yükleyin.";
+"DEVICE SECURITY COMPROMISED\nAny 'jailbreak' app can access any other app's keychain data (and steal your PIVX). Wipe this wallet immediately and restore on a secure device." = "CIHAZ GUVENLIK TEHLIKESI\nHerhangi bir 'jailbreak' uygulamasi diger herhangi bir uygulamanizin keychain verilerine erisebilir (ve PIVX'inizi calabilir). Hemen bu cuzdani sifirlayýn ve guvenli bir cihazda tekrar kurun.";
 
 /* No comment provided by engineer. */
 "do it later" = "daha sonra yap";
 
 /* No comment provided by engineer. */
-"done" = "bitti";
+"done" = "tamamlandi";
 
 /* No comment provided by engineer. */
-"double spend" = "çift ödeme";
+"double spend" = "cift harcama";
 
 /* No comment provided by engineer. */
-"email not configured" = "e-posta yapılandırılmadı";
+"email not configured" = "e-posta yapilandirilmadi";
 
 /* No comment provided by engineer. */
-"enable" = "enable";
+"enable" = "etkin";
 
 /* No comment provided by engineer. */
-"enable receive notifications" = "enable receive notifications";
+"enable receive notifications" = "bildirimleri etkinlestir";
 
 /* No comment provided by engineer. */
-"enter" = "enter";
+"enter" = "gir";
 
 /* No comment provided by engineer. */
-"enter old passcode" = "eski şifreyi giriniz";
+"enter old passcode" = "eski sifreyi gir";
 
 /* No comment provided by engineer. */
-"error signing dash transaction" = "dash işlem kaydı hatası";
+"error signing PIVX transaction" = "PIVX islem kayit hatasi";
 
 /* No comment provided by engineer. */
-"error signing transaction" = "işlem kaydı hatası";
+"error signing transaction" = "islem kayit hatasi";
 
 /* No comment provided by engineer. */
-"exit" = "exit";
+"exit" = "cikis";
 
 /* No comment provided by engineer. */
-"failed wallet update" = "failed wallet update";
+"failed wallet update" = "cüzdan güncellemesi basarisiz";
 
 /* No comment provided by engineer. */
-"from:" = "kaynak:";
+"from:" = "bundan:";
 
 /* No comment provided by engineer. */
 "hour" = "saat";
@@ -276,37 +258,37 @@
 "hours" = "saat";
 
 /* No comment provided by engineer. */
-"id:" = "kimlik:";
+"id:" = "id:";
 
 /* No comment provided by engineer. */
-"If you still would like to wipe it please input : \"I accept that I will lose my coins if I no longer possess the recovery phrase\"" = "If you still would like to wipe it please input : \"I accept that I will lose my coins if I no longer possess the recovery phrase\"";
+"If you still would like to wipe it please input : \"I accept that I will lose my coins if I no longer possess the recovery phrase\"" = "Hala sifirlamak istiyorsaniz lutfen sunlari yazin : \"Kurtarma kelime gruplarýný kaybedersem koinlerimi kaybedecegimi onayliyorum\"";
 
 /* No comment provided by engineer. */
-"ignore" = "yoksay";
+"ignore" = "bosver";
 
 /* No comment provided by engineer. */
-"import private key" = "özel anahtarı içe aktar";
+"import private key" = "ozel anahtari yerlestir";
 
 /* No comment provided by engineer. */
-"IMPORTANT" = "ÖNEMLİ";
+"IMPORTANT" = "ONEMLI";
 
 /* No comment provided by engineer. */
-"instant payment" = "instant payment";
+"instant payment" = "aninda odeme";
 
 /* No comment provided by engineer. */
-"Instant Send requires enough inputs with 6 confirmations, send anyways as regular transaction?" = "Instant Send requires enough inputs with 6 confirmations, send anyways as regular transaction?";
+"Instant Send requires enough inputs with 6 confirmations, send anyways as regular transaction?" = "Aninda Islem, yeterli veri girisini 6 onayla gerceklestirir, her kosulda normal islemi gerceklestirsin mi?";
 
 /* No comment provided by engineer. */
 "insufficient funds" = "yetersiz bakiye";
 
 /* No comment provided by engineer. */
-"insufficient funds for dash network fee" = "dash ağ ücreti için yetersiz bakiye";
+"insufficient funds for PIVX network fee" = "PIVX ag ucreti icin yetersiz bakiye";
 
 /* No comment provided by engineer. */
-"INVALID" = "GEÇERSİZ";
+"INVALID" = "GECERSIZ";
 
 /* No comment provided by engineer. */
-"Let others scan this QR code to get your dash address. Anyone can send dash to your wallet by transferring them to your address." = "Bitcoin adresinizi edinmek için diğer QR kodlarını tarayın. İsteyen herkes, dashleri cüzdanınıza adresinize transfer yoluyla gönderebilir.";
+"Let others scan this QR code to get your PIVX address. Anyone can send PIVX to your wallet by transferring them to your address." = "Digerlerinin cüzdan adresinize ulasmasi icin bu QR kodunu taratin. Adresinizi gonderdiginiz herkes cuzdaniniza PIVX gonderebilir.";
 
 /* No comment provided by engineer. */
 "minute" = "dakika";
@@ -321,175 +303,169 @@
 "more..." = "daha fazla...";
 
 /* No comment provided by engineer. */
-"moved" = "taşınmış";
+"moved" = "tasi";
 
 /* No comment provided by engineer. */
-"new wallet passcode" = "new wallet passcode";
+"next, write down your recovery phrase" = "sonra, asagiya kurtarma sözcüklerini yaziniz";
 
 /* No comment provided by engineer. */
-"next, write down your recovery phrase" = "sonra, kurtarma cümlenizi yazın";
+"no exchange rate data" = "borsa degeri bilgisi yok";
 
 /* No comment provided by engineer. */
-"no exchange rate data" = "döviz kuru verisi yok";
+"no peers found" = "eslesme bulunamadi";
 
 /* No comment provided by engineer. */
-"no peers found" = "eşler bulunamadı";
+"not a pivx QR code" = "pivx QR kodu degil";
 
 /* No comment provided by engineer. */
-"not a dash or bitcoin QR code" = "bir dash veya bitcoin QR kodu değildir";
+"not a valid bitcoin address" = "gecerli bir bitcoin adresi degil";
 
 /* No comment provided by engineer. */
-"not a valid bitcoin address" = "geçerli bir bitcoin adresi değil";
+"not a valid PIVX address" = "gecerli bir PIVX adresi degil";
 
 /* No comment provided by engineer. */
-"not a valid dash address" = "geçerli bir dash adresi değil";
+"not a valid pivx address" = "gecerli bir pivx adresi degil";
 
 /* No comment provided by engineer. */
-"not a valid dash or bitcoin address" = "geçerli bir dash veya bitcoin adresi değil";
+"not a valid private key" = "gecersiz ozel anahtar";
 
 /* No comment provided by engineer. */
-"not a valid private key" = "geçerli bir özel anahtar değil";
-
-/* No comment provided by engineer. */
-"not connected to the dash network" = "dash ağına bağlı değil";
-
-/* No comment provided by engineer. */
-"OK" = "OK";
+"not connected to the PIVX network" = "PIVX agina bagli degil";
 
 /* No comment provided by engineer. */
 "ok" = "tamam";
 
 /* No comment provided by engineer. */
-"passcode" = "şifre";
+"OK" = "Tamam";
 
 /* No comment provided by engineer. */
-"passcode for %@" = "%@ için şifre";
+"passcode" = "sifre";
 
 /* No comment provided by engineer. */
-"password" = "şifre";
+"passcode for %@" = " %@ icin sifre";
 
 /* No comment provided by engineer. */
-"password protected key" = "şifre korumalı anahtar";
+"password" = "sifre";
 
 /* No comment provided by engineer. */
-"pay" = "Ödeme";
+"password protected key" = "sifre korumali anahtar";
 
 /* No comment provided by engineer. */
-"payee identity isn't certified" = "alacaklı kimliği onaylı değil";
+"pay" = "Ode";
 
 /* No comment provided by engineer. */
-"payment address" = "ödeme adresi";
+"payee identity isn't certified" = "alici kimligi sertifikalandirilmamis";
 
 /* No comment provided by engineer. */
-"payment output" = "ödeme çıktısı";
+"payment address" = "odeme adresi";
 
 /* No comment provided by engineer. */
-"pending" = "pending";
+"payment output" = "odeme ciktisi";
 
 /* No comment provided by engineer. */
-"please enter pin to upgrade wallet" = "please enter pin to upgrade wallet";
+"pending" = "beklemede";
 
 /* No comment provided by engineer. */
-"post-dated" = "ileri tarihli";
+"please enter pin to upgrade wallet" = "cuzdan yukseltmesi icin lütfen pin girin";
 
 /* No comment provided by engineer. */
-"rate: %@ = %@\nupdated: %@\nblock #%d of %d\nconnected peers: %d\ndl peer: %@" = "rate: %1$@ = %2$@\nupdated: %3$@\nblock #%4$d of %5$d\nconnected peers: %6$d\ndl peer: %7$@";
+"rate: %@ = %@\nupdated: %@\nblock #%d of %d\nconnected peers: %d\ndl peer: %@" = "deger: %@ = %@\n güncellenmis: %@\nblok #%d parca %d\n uzerinden eslere baglaniyor: %d\ndl es: %@";
 
 /* No comment provided by engineer. */
-"Receive dash at this address: %@" = "Bitcoinleri şu adresten al: %@";
+"Receive PIVX at this address: %@" = "Bu adresten PIVX'i al: %@";
 
 /* No comment provided by engineer. */
-"received" = "alındı";
+"received" = "alindi";
 
 /* No comment provided by engineer. */
-"received %@ (%@)" = "%1$@ alındı (%2$@)";
+"received %@ (%@)" = " %1$@ (%2$@) alindi";
 
 /* No comment provided by engineer. */
-"recovery phrase" = "kurtarma cümlesi";
+"recovery phrase" = "kurtarma sozcukleri";
 
 /* No comment provided by engineer. */
-"recovery phrase doesn't match" = "kurtarma cümlesi eşleşmiyor";
+"recovery phrase doesn't match" = "kurtarma sozcukleri eslesmedi";
 
 /* No comment provided by engineer. */
-"recovery phrase must have %d words" = "kurtarma cümlesi %d kelime olmalı";
+"recovery phrase must have %d words" = "kurtarma sözcükleri %d kelime olmak zorunda";
 
 /* No comment provided by engineer. */
-"reduce payment amount by\n%@ (%@)?" = "%1$@ (%2$@) ile ödeme miktarı düşürülsün mü?";
+"reduce payment amount by\n%@ (%@)?" = "odenecek tutar \n%1$@ (%2$@) azaltilsin mi?";
 
 /* No comment provided by engineer. */
-"request" = "istek";
+"request" = "talep et";
 
 /* No comment provided by engineer. */
-"request an amount" = "bir miktar isteyin";
+"request an amount" = "miktar talep et";
 
 /* No comment provided by engineer. */
-"request expired" = "istek süresi bitti";
+"request expired" = "istek sona erdi";
 
 /* No comment provided by engineer. */
-"request is for an instant payment but you have disabled instant payments" = "request is for an instant payment but you have disabled instant payments";
+"request is for an instant payment but you have disabled instant payments" = "istek anlik odemeler icindir fakat siz anlik odemeleri devre disi birakmissiniz";
 
 /* No comment provided by engineer. */
-"requested network \"%@\" instead of \"%@\"" = "\"%2$@\" yerine \"%1$@\" ağı istendi";
+"requested network \"%@\" instead of \"%@\"" = "istenen að \"%@\" yerine \"%@\"";
 
 /* No comment provided by engineer. */
 "rescan" = "yeniden tara";
 
 /* No comment provided by engineer. */
-"rescan blockchain" = "blok zincirini yeniden tara";
+"rescan blockchain" = "blokchain(blok zicirini) tekrar tara";
 
 /* No comment provided by engineer. */
-"rescan blockchain if you think you may have missing transactions, or are having trouble sending (rescanning can take several minutes)" = "kaçırdığınız bazı işlemlerin olduğunu düşünüyorsanız veya göndermede sorun yaşıyorsanız blok zincirini tekrar taratın (yeniden tarama bir kaç dakika sürebilir)";
+"rescan blockchain if you think you may have missing transactions, or are having trouble sending (rescanning can take several minutes)" = "kayýp islemler oldugunu ya da hatalý gonderim oldugunu dusunuyorsaniz blockchain(blok zincirini) tekrar taratin.(yeniden tarama islemi birkac dakika sürebilir)";
 
 /* No comment provided by engineer. */
-"reset" = "sıfırla";
+"reset" = "sifirla";
 
 /* No comment provided by engineer. */
-"retry" = "retry";
+"retry" = "tekrardan";
 
 /* No comment provided by engineer. */
-"Scan someone else's QR code to get their dash or bitcoin address. You can send a payment to anyone with an address." = "Başkalarının dash veya bitcoin adreslerini öğrenmek için QR kodlarını taratın. Adresi olan herkese ödeme gönderebilirsiniz.";
+"Scan someone else's QR code to get their pivx address. You can send a payment to anyone with an address." = "PIVX adresini ogrenmek istediginiz kisinin QR kodunu tarayin. Herhangi birisinin adresiyle, ona odeme gonderebilirsiniz.";
 
 /* No comment provided by engineer. */
-"Screenshots are visible to other apps and devices. Generate a new recovery phrase and keep it secret." = "Ekran görüntüleri diğer uygulamalar ve cihazlar tarafından görülebilir. Yeni bir kurtarma metni oluşturun ve gizli tutun.";
+"Screenshots are visible to other apps and devices. Generate a new recovery phrase and keep it secret." = "Diðer uygulamalar ve cihazlar ekran görüntülerine erisebilir. Yeni kurtarma sözcük grubu olusturun ve gizli tutun.";
 
 /* No comment provided by engineer. */
-"Screenshots are visible to other apps and devices. Your funds are at risk. Transfer your balance to another wallet." = "Ekran görüntüleri diğer uygulamalar ve cihazlar tarafından görülebilir. Paralarınız risk altında. Bakiyenizi başka bir cüzdana aktarın.";
+"Screenshots are visible to other apps and devices. Your funds are at risk. Transfer your balance to another wallet." = "Diðer uygulamalar ve cihazlar ekran görüntülerine erisebilir.Paraniz tehlike altinda. Bakiyenizi baska bir cüzdana transfer edin.";
 
 /* No comment provided by engineer. */
-"second" = "second";
+"second" = "saniye";
 
 /* No comment provided by engineer. */
-"seconds" = "seconds";
+"seconds" = "saniye";
 
 /* No comment provided by engineer. */
-"seen by %d of %d peers" = "%2$d eşleşmenin %1$d'i tarafından görüldü";
+"seen by %d of %d peers" = "%2$d üzerinden %1$d eslesme goruluyor";
 
 /* No comment provided by engineer. */
-"send" = "send";
+"send" = "gonder";
 
 /* No comment provided by engineer. */
-"Send %@ (%@) from this private key into your wallet? The dash network will receive a fee of %@ (%@)." = "Özel anahtardan cüzdanınıza %1$@ (%2$@) gönderilsin mi? Bitcoin ağı %3$@ (%4$@) ücreti alacaktır.";
+"Send %@ (%@) from this private key into your wallet? The PIVX network will receive a fee of %@ (%@)." = "Bu ozel anahtardan cuzdaniniza %1$@ (%2$@) gonderilsin mi?PIVX agi %3$@ (%4$@)kadar ucret alacak..";
 
 /* No comment provided by engineer. */
-"send address as email" = "adresi e-posta olarak gönder";
+"send address as email" = "adresi mail olarak gonder";
 
 /* No comment provided by engineer. */
-"send address as message" = "adresi mesaj olarak gönder";
+"send address as message" = "adresi mesaj olarak gonder";
 
 /* No comment provided by engineer. */
-"send request as email" = "isteği e-posta olarak gönder";
+"send request as email" = "istegi e-posta olarak gonder";
 
 /* No comment provided by engineer. */
-"send request as message" = "isteği mesaj olarak gönder";
+"send request as message" = "istegi mesaj olarak gonder";
 
 /* No comment provided by engineer. */
-"sent" = "gönderildi";
+"sent" = "gonderildi";
 
 /* No comment provided by engineer. */
-"sent!" = "gönderildi!";
+"sent!" = "gonderildi!";
 
 /* No comment provided by engineer. */
-"set a trusted node" = "set a trusted node";
+"set a trusted node" = "guvenli node olustur";
 
 /* No comment provided by engineer. */
 "settings" = "ayarlar";
@@ -498,184 +474,173 @@
 "shapeshift bitcoin id:" = "shapeshift bitcoin id:";
 
 /* No comment provided by engineer. */
-"shapeshift failed" = "shapeshift failed";
+"shapeshift failed" = "shapeshift basarisiz oldu";
 
 /* No comment provided by engineer. */
-"shapeshift status:" = "shapeshift status:";
+"shapeshift status:" = "shapeshift durumu:";
 
 /* No comment provided by engineer. */
-"shapeshift succeeded" = "shapeshift succeeded";
+"shapeshift succeeded" = "shapeshift basarili";
 
 /* No comment provided by engineer. */
-"show" = "göster";
+"show" = "goster";
 
 /* No comment provided by engineer. */
-"show phrase" = "metni göster";
+"show phrase" = "sozcuk grubunu goster";
 
 /* No comment provided by engineer. */
-"sms not currently available" = "kısa mesaj şu anda kullanılabilir değil";
+"sms not currently available" = "sms su anda mevcut degil";
 
 /* No comment provided by engineer. */
-"spent address" = "harcama adresi";
+"spent address" = "harcama yapilmis adres";
 
 /* No comment provided by engineer. */
-"spent input" = "harcama girişi";
+"spent input" = "harcama yapimis girdi";
 
 /* No comment provided by engineer. */
-"Starting Shapeshift!" = "Starting Shapeshift!";
+"Starting Shapeshift!" = "Shapeshift'i Baslat!";
 
 /* No comment provided by engineer. */
 "status:" = "durum:";
 
 /* No comment provided by engineer. */
-"swept!" = "silindi!";
+"swept!" = "sifirlandi!";
 
 /* No comment provided by engineer. */
-"syncing..." = "eşitleniyor...";
+"Syncing:" = "Senkronizasyon:";
 
 /* No comment provided by engineer. */
-"Syncing:" = "Syncing:";
+"The amount you wanted to shapeshift is too high, please input a value under %@" = "Istedigin shapeshift miktarý cok yüksek, lütfen %@ altinda bir deger girin.";
 
 /* No comment provided by engineer. */
-"The amount you wanted to shapeshift is too high, please input a value under %@" = "The amount you wanted to shapeshift is too high, please input a value under %@";
+"The amount you wanted to shapeshift is too low, please input a value over %@" = "Istedigin shapeshift miktarý cok düsük, lütfen %@ ustunde bir deger girin.";
 
 /* No comment provided by engineer. */
-"The amount you wanted to shapeshift is too low, please input a value over %@" = "The amount you wanted to shapeshift is too low, please input a value over %@";
+"the app will now close" = "uygulama þimdi kapanacak";
 
 /* No comment provided by engineer. */
-"the app will now close" = "uygulama şimdi kapatılacak";
+"This is your PIVX address. Tap to copy it or send it by email or sms. The address will change each time you receive funds, but old addresses always work." = "Bu sizin PIVX adresiniz. Kopyalamak için dokunun ya da sms veya eposta ile gönderin. Her ödeme aldýðýnýzda adres deðiþecektir, ama eski adresler her zaman çalýþýr.";
 
 /* No comment provided by engineer. */
-"This is your dash address. Tap to copy it or send it by email or sms. The address will change each time you receive funds, but old addresses always work." = "Bu sizin dash adresiniz. Kopyalamak veya ister kısa mesaj ister e-posta yoluyla göndermek için dokunun. Her para alışınızda adres değişecek fakat eski adresler her zaman çalışacaktır.";
+"This is your PIVX balance." = "Bu sizin PIVX bakiyeniz.";
 
 /* No comment provided by engineer. */
-"This is your dash balance." = "This is your dash balance.";
+"This is your PIVX balance. PIVX is a currency. The exchange rate changes with the market." = "Bu sizin PIVX bakiyeniz. PIVX bir para birimidir. Borsa deðeri piyasayla birlikte degisir.";
 
 /* No comment provided by engineer. */
-"This is your dash balance. Dash is a currency. The exchange rate changes with the market." = "Bu sizin dash bakiyeniz. Dash bir para birimidir. Döviz kurları piyasa ile değişir.";
+"this payment address is already in your wallet" = "bu ödeme adresi zaten cüzdanýnýzda";
 
 /* No comment provided by engineer. */
-"this payment address is already in your wallet" = "ödeme adresi zaten cüzdanınızda var";
+"this private key is already in your wallet" = "bu ozel anahtar zaten cuzdanýnýzda";
 
 /* No comment provided by engineer. */
-"this private key is already in your wallet" = "bu özel anahtar zaten cüzdanınızda var";
+"this private key is empty" = "bu ozel anahtar bos";
 
 /* No comment provided by engineer. */
-"this private key is empty" = "bu özel anahtar boş";
+"This request requires an instant payment but you do not have enough inputs with 6 confirmations required by Instant Send, you may ask the merchant to accept a normal transaction or wait a few minutes." = "Bu istek anýnda ödeme gerektiriyor ancak anýnda ödeme için gereken 6 onay icin yeterli islem gerceklesmemis, alicidan normal bir islem kabul etmesini ya da birkac dakika beklemesini isteyebilirsiniz.";
 
 /* No comment provided by engineer. */
-"This request requires an instant payment but you do not have enough inputs with 6 confirmations required by Instant Send, you may ask the merchant to accept a normal transaction or wait a few minutes." = "This request requires an instant payment but you do not have enough inputs with 6 confirmations required by Instant Send, you may ask the merchant to accept a normal transaction or wait a few minutes.";
+"this request requires an instant payment but you have disabled instant payments" = "bu istek anýnda ödemeyi gerektirir ancak aninda ödemeleri devre dýþý birakmissiniz.";
 
 /* No comment provided by engineer. */
-"this request requires an instant payment but you have disabled instant payments" = "this request requires an instant payment but you have disabled instant payments";
+"This wallet is not empty or sync has not finished, you may not wipe it without the recovery phrase" = "Bu cüzdan bos deðil veya senkronizasyon bitmedi, kurtarma sozcukleri olmadan silemezsiniz.";
 
 /* No comment provided by engineer. */
-"This wallet is not empty or sync has not finished, you may not wipe it without the recovery phrase" = "This wallet is not empty or sync has not finished, you may not wipe it without the recovery phrase";
+"to:" = "buna:";
 
 /* No comment provided by engineer. */
-"to:" = "hedef:";
+"to: %@" = "buna: %@";
 
 /* No comment provided by engineer. */
-"to: %@" = "hedef: %@";
+"to: %@ (via Shapeshift)" = "buna: %@ (Shapeshift araciligiyla)";
 
 /* No comment provided by engineer. */
-"to: %@ (via Shapeshift)" = "to: %@ (via Shapeshift)";
+"touch id limit" = "id sinirina dokunun";
 
 /* No comment provided by engineer. */
-"touch id limit" = "kimlik sınırına dokunun";
+"touch id spending limit" = "id harcama limitine dokunun";
 
 /* No comment provided by engineer. */
-"touch id spending limit" = "kimlik gönderme sınırına dokunun";
+"transaction canceled, network timeout" = "islem reddedildi, ag zamanasimi";
 
 /* No comment provided by engineer. */
-"transaction canceled, network timeout" = "işlem iptal edildi, ağ zaman aşımına uğradı";
+"transaction fees would cost more than the funds available on this private key (due to tiny\"dust\" deposits)" = "islem ücretleri, bu özel anahtar üzerinde mevcut olan sermayeden daha pahalýya mal olur (cok düsük miktar yatirildigindan dolayi)";
 
 /* No comment provided by engineer. */
-"transaction fees would cost more than the funds available on this private key (due to tiny \"dust\" deposits)" = "işlem ücretleri bu anahtarda kullanılabilir olan paradan daha pahalıya mal olabilir(küçük \"para\" deposu nedeniyle)";
+"transaction history" = "islem gecmisi";
 
 /* No comment provided by engineer. */
-"transaction history" = "işlem geçmişi";
+"transaction rejected" = "reddedilmis islemler";
 
 /* No comment provided by engineer. */
-"transaction is post-dated" = "işlem kontrol edildi";
+"trust" = "guven";
 
 /* No comment provided by engineer. */
-"transaction rejected" = "işlem reddedildi";
+"Try It!" = "Dene!";
 
 /* No comment provided by engineer. */
-"trust" = "trust";
+"turn device passcode on" = "cihaz sifresini ac";
 
 /* No comment provided by engineer. */
-"Try It!" = "Try It!";
+"Unable to get new qr code" = "Yeni QR kodu alinamadi";
 
 /* No comment provided by engineer. */
-"turn device passcode on" = "cihaz parolasını aç";
-
-/* No comment provided by engineer. */
-"Unable to get new qr code" = "Unable to get new qr code";
-
-/* No comment provided by engineer. */
-"unexpected response from %@" = "%@'den beklenmeyen yanıt";
+"unexpected response from %@" = "%@ tarafindan beklenmeyen tepki";
 
 /* No comment provided by engineer. */
 "unknown address" = "bilinmeyen adres";
 
 /* No comment provided by engineer. */
-"unrecognized address" = "onaylanmamış adres";
+"unrecognized address" = "tanýnmayan adres";
 
 /* No comment provided by engineer. */
 "unsupported or corrupted document" = "desteklenmeyen veya bozuk belge";
 
 /* No comment provided by engineer. */
-"unsupported signature type" = "desteklenmeyen imza türü";
+"unsupported signature type" = "desteklenmeyen imza turu";
 
 /* No comment provided by engineer. */
-"unsupported url" = "desteklenmeyen bağlantı";
+"unsupported url" = "desteklenmeyen url(baglanti)";
 
 /* No comment provided by engineer. */
-"untrusted certificate" = "güvenilir olmayan sertifika";
+"untrusted certificate" = "güvenilmez sertifika";
 
 /* No comment provided by engineer. */
-"unverified" = "doğrulanmadı";
+"unverified" = "dogrulanmamis";
 
 /* Updating Price */
-"Updating Price" = "Updating Price";
+"Updating Price" = "Fiyat Guncelleme";
 
 /* No comment provided by engineer. */
-"verified, waiting for confirmation" = "doğrulandı, onaylanma için bekleniyor";
+"verified, waiting for confirmation" = "dogrulaniyor, onay bekleniyor";
 
 /* No comment provided by engineer. */
-"verify passcode" = "şifreyi doğrulayın";
-
-/* No comment provided by engineer. */
-"verify wallet passcode" = "verify wallet passcode";
+"verify passcode" = "sifreyi dogrula";
 
 /* No comment provided by engineer. */
 "wallet address" = "cüzdan adresi";
 
 /* No comment provided by engineer. */
-"wallet disabled" = "cüzdan devre dışı";
-
-/* No comment provided by engineer. */
-"wallet passcode" = "wallet passcode";
+"wallet disabled" = "cüzdan devredisi";
 
 /* No comment provided by engineer. */
 "WARNING" = "UYARI";
 
 /* No comment provided by engineer. */
-"wipe" = "sil";
+"wipe" = "sifirla";
 
 /* No comment provided by engineer. */
-"WRITE DOWN YOUR RECOVERY PHRASE" = "KURTARMA METNİNİZİ NOT EDİNİZ";
+"WRITE DOWN YOUR RECOVERY PHRASE" = "ALT TARAFA KURTARMA SOZCUKLERINI YAZINIZ";
 
 /* No comment provided by engineer. */
-"You can now buy dash in\ndashwallet with cash or\nbank transfer." = "You can now buy dash in\ndashwallet with cash or\nbank transfer.";
+"You can now buy PIVX in\nPIVXwallet with cash or\nbank transfer." = "PIVX'i peþin ya da\nbanka havalesi yaparak \nPIVXcüzdan'dan satýn alabilirsin artik.";
 
 /* No comment provided by engineer. */
-"you must enter your pin in order to enter dashwallet" = "you must enter your pin in order to enter dashwallet";
+"you must enter your pin in order to enter PIVXwallet" = "PIVXcüzdan'a girebilmek için pinini girmelisin";
 
 /* No comment provided by engineer. */
-"you received dash!" = "dash aldınız!";
+"you received PIVX!" = "PIVX aldiniz!";
 
 /* No comment provided by engineer. */
-"Your wallet may be out of sync.\nThis can often be fixed by rescanning the blockchain." = "Cüzdanınız eşitlenmemiş olabilir.\nBlok zincirini yeniden taratmak bunu sık sık düzeltebilir.";
+"Your wallet may be out of sync.\nThis can often be fixed by rescanning the blockchain." = "Cüzdaniniz guncel tarihte olmayabilir.\nGenelde tekrar blok zinciri taramasý yapýlarak düzeltilebilir";
+

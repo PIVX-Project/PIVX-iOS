@@ -1,12 +1,12 @@
 
 /* No comment provided by engineer. */
-" and " = " and ";
+" and " = " och ";
 
 /* No comment provided by engineer. */
-"%@ is for 'mDASH'. %@ = 1 DASH." = "%1$@ står för 'mDASH'. %2$@ = 1 DASH.";
+"%@ is for 'mPIVX'. %@ = 1 PIVX." = "%@ är för 'mPIVX'. %@ = 1 PIVX.";
 
 /* No comment provided by engineer. */
-"%@ is not allowed to access the camera" = "%@ har ej tillåtelse att använda kameran";
+"%@ is not allowed to access the camera" = "%@ får inte komma åt kameran";
 
 /* No comment provided by engineer. */
 "%@\n\nbalance: %@ (%@)" = "%1$@\n\nbalance: %2$@ (%3$@)";
@@ -18,253 +18,235 @@
 ", " = ", ";
 
 /* No comment provided by engineer. */
-"0 confirmations" = "0 confirmations";
+"0 confirmations" = "0 bekräftelser";
 
 /* No comment provided by engineer. */
 "1 confirmation" = "1 bekräftelse";
 
 /* No comment provided by engineer. */
-"\"%@\" is not a recovery phrase word" = "\"%@\" ingår inte i återställningsfrasen";
+"\"%@\" is not a recovery phrase word" = "\"%@\" är inte ett återställningsfrasord";
 
 /* No comment provided by engineer. */
-"\n         total %@ (%@)" = "\n         totalt %1$@ (%2$@)";
+"\n         total %@ (%@)" = "\n         total %1$@ (%2$@)";
 
 /* No comment provided by engineer. */
-"\n%@\n\nif you ever lose your phone, you will need it to recover your wallet" = "\n%@\n\nifall du förlorar din mobil behöver du frasen för att återställa plånboken";
+"\n%@\n\nif you ever lose your phone, you will need it to recover your wallet" = "\n%@\n\nOm du någonsin förlorar telefonen behöver du det för att återställa din plånbok";
 
 /* No comment provided by engineer. */
-"\n%d attempts remaining\n" = "\n%d försök återstår\n";
+"\n%d attempts remaining\n" = "\n%d återstående försök\n";
 
 /* No comment provided by engineer. */
-"\n1 attempt remaining\n" = "\n1 försök återstår\n";
+"\n1 attempt remaining\n" = "\n1 återstående försök\n";
 
 /* No comment provided by engineer. */
-"\n\n     amount %@ (%@)" = "\n\n     belopp %1$@(%2$@)";
+"\n\n     amount %@ (%@)" = "\n\n     belopp %1$@ (%2$@)";
 
 /* No comment provided by engineer. */
-"\nA device passcode is needed to safeguard your wallet. Go to settings and turn passcode on to continue." = "\nEtt lösenord krävs för att skydda din plånbok. Gå till Inställningar och aktivera lösenord för att fortsätta.";
+"\nA device passcode is needed to safeguard your wallet. Go to settings and turn passcode on to continue." = "\nEn enhetskod krävs för att skydda din plånbok. Gå till inställningar och slå på lösenkoden för att fortsätta.";
 
 /* No comment provided by engineer. */
-"\nADDRESS ALREADY USED\n\ndash addresses are intended for single use only\n\nre-use reduces privacy for both you and the recipient and can result in loss if the recipient doesn't directly control the address" = "\nADRESSEN ANVÄNDS REDAN\n\ndashadresser bör endast användas en gång\n\nåteranvändning minskar transparensen för såväl dig som mottagaren";
+"\nADDRESS ALREADY USED\nPIVX addresses are intended for single use only\n\nre-use reduces privacy for both you and the recipient and can result in loss if the recipient doesn't directly control the address" = "\nADRESS REDAN ANVÄND\nPIVX-adresser är endast avsedda för en användning \n\ nAnvändning minskar integriteten för både dig och mottagaren och kan leda till förlust om mottagaren inte direkt kontrollerar adressen";
 
 /* No comment provided by engineer. */
-"\nADDRESS ALREADY USED\ndash addresses are intended for single use only\n\nre-use reduces privacy for both you and the recipient and can result in loss if the recipient doesn't directly control the address" = "\nADDRESS ALREADY USED\ndash addresses are intended for single use only\n\nre-use reduces privacy for both you and the recipient and can result in loss if the recipient doesn't directly control the address";
+"\nallow camera access in\nSettings->Privacy->Camera->%@" = "\ntillåter kameraåtkomst in\nInställningar->Privat inställning->Kamera->%@";
 
 /* No comment provided by engineer. */
-"\nallow camera access in\nSettings->Privacy->Camera->%@" = "\nbevilja kameraåtkomst i Inställningar->Personligt->Kamera->%@";
+"\nDO NOT let anyone see your recovery\nphrase or they can spend your PIVX.\n" = "\nLåt INTE någon se din återställning\nphrase annars kan andra spendera dina PIVX.\n";
 
 /* No comment provided by engineer. */
-"\nDO NOT let anyone see your recovery\nphrase or they can spend your dash.\n" = "\nLÅT INTE NÅGON se din återställningsfras – annars kan hen spendera dina dash.\n";
-
-/* No comment provided by engineer. */
-"\nDO NOT take a screenshot.\nScreenshots are visible to other apps\nand devices.\n" = "\nDO NOT take a screenshot.\nScreenshots are visible to other apps\nand devices.\n";
+"\nDO NOT take a screenshot.\nScreenshots are visible to other apps\nand devices.\n" = "\nTa INTE en skärmdump.\nSkärmbilder är synliga för andra appar\noch enheter.\n";
 
 /* No comment provided by engineer. */
 "\nnetwork fee +%@ (%@)" = "\nnätverksavgift +%1$@ (%2$@)";
 
 /* No comment provided by engineer. */
-"\nNEVER type your recovery phrase into\npassword managers or elsewhere.\nOther devices may be infected.\n" = "\nSKRIV ALDRIG in din återställningsfras i lösenordshanterare eller någon annanstans. \nAndra enheter kan vara infekterade.\n";
+"\nNEVER type your recovery phrase into\npassword managers or elsewhere.\nOther devices may be infected.\n" = "\nSkriv ALDRIG din återställningsfras i\nlösenordshanterare eller någon annanstans.\nAndra enheter kan vara smittade.\n";
 
 /* No comment provided by engineer. */
-"\ntry again in %@" = "\ntry again in %@";
+"\ntry again in %@" = "\nförsök igen i %@";
 
 /* No comment provided by engineer. */
-"\ntry again in %d %@" = "\nförsök igen om %1$d %2$@";
+"\ntry again in %d %@" = "\nförsök igen i %1$d %2$@";
 
 /* No comment provided by engineer. */
 "about" = "om";
 
 /* No comment provided by engineer. */
-"always require passcode" = "kräv alltid lösenord";
+"always require passcode" = "kräv alltid lösenkod";
 
 /* No comment provided by engineer. */
-"amount too small" = "beloppet är för litet";
+"amount too small" = "Mängden är för liten";
 
 /* No comment provided by engineer. */
-"Application %@ is requesting a payment to" = "Application %@ is requesting a payment to";
+"Application %@ is requesting a payment to" = "Programmet %@ begär betalning till";
 
 /* No comment provided by engineer. */
-"Application %@ is requesting an address so it can pay you.  Would you like to authorize this?" = "Application %@ is requesting an address so it can pay you.  Would you like to authorize this?";
+"Application %@ is requesting an address so it can pay you.  Would you like to authorize this?" = "Programmet %@ begär en adress så att den kan betala dig.  Vill du godkänna detta?";
 
 /* No comment provided by engineer. */
-"Application %@ would like to receive your Master Public Key.  This can be used to keep track of your wallet, this can not be used to move your Dash." = "Application %@ would like to receive your Master Public Key.  This can be used to keep track of your wallet, this can not be used to move your Dash.";
+"Application %@ would like to receive your Master Public Key.  This can be used to keep track of your wallet, this can not be used to move your PIVX." = "Programmet %@ skulle vilja ta emot din offentliga huvudnyckel.  Detta kan användas för att hålla reda på din plånbok, den kan inte användas för att flytta dina PIVX.";
 
 /* No comment provided by engineer. */
 "bad password, try again" = "fel lösenord, försök igen";
 
 /* No comment provided by engineer. */
-"bad payment request" = "felaktig betalningsanmodan";
+"bad payment request" = "fel betalningsförfrågan";
 
 /* No comment provided by engineer. */
-"bad payment request URL" = "felaktig URL i betalningsanmodan";
+"bad payment request URL" = "fel betalningsförfrågan URL";
 
 /* No comment provided by engineer. */
-"bad payment URL" = "felaktig betalnings-URL";
+"bad payment URL" = "fel betalnings URL";
 
 /* No comment provided by engineer. */
-"bad recovery phrase" = "fel återställningsfras";
+"bad recovery phrase" = "fel återhämtningsfras";
 
 /* No comment provided by engineer. */
-"bad signature" = "fel signatur";
+"Bitcoin address (shapeshift)" = "Bitcoin adress (shapeshift)";
 
 /* No comment provided by engineer. */
-"Bitcoin address (shapeshift)" = "Bitcoin address (shapeshift)";
+"bitcoin payments can't be less than %@" = "bitcoin betalningar kan inte vara mindre än %@";
 
 /* No comment provided by engineer. */
-"bitcoin payments can't be less than %@" = "bitcoin payments can't be less than %@";
+"block #%d of %d" = "block #%1$d of %2$d";
 
 /* No comment provided by engineer. */
-"block #%d of %d" = "block #%1$d av %2$d";
+"Buy PIVX" = "Köp PIVX";
 
 /* No comment provided by engineer. */
-"Buy Dash" = "Buy Dash";
+"Buy PIVX in PIVXwallet!" = "Köp PIVX till PIVXplånboken!";
 
 /* No comment provided by engineer. */
-"Buy dash in dashwallet!" = "Buy dash in dashwallet!";
-
-/* No comment provided by engineer. */
-"cancel" = "avbryt";
+"cancel" = "annullera";
 
 /* No comment provided by engineer. */
 "change" = "ändra";
 
 /* No comment provided by engineer. */
-"change passcode" = "ändra lösenord";
+"change passcode" = "ändra lösenkod";
 
 /* No comment provided by engineer. */
-"change payment amount?" = "ändra belopp?";
+"change payment amount?" = "ändra betalningsbeloppet?";
 
 /* No comment provided by engineer. */
-"change wallet passcode" = "change wallet passcode";
+"checking address balance..." = "kontrollera adress beloppet...";
 
 /* No comment provided by engineer. */
-"checking address balance..." = "checking address balance...";
+"checking private key balance..." = "kontrollerar den privata nyckelns belopp...";
 
 /* No comment provided by engineer. */
-"checking private key balance..." = "uppdaterar saldo för den privata nyckeln...";
+"choose passcode for %@" = "välj lösenord för %@";
 
 /* No comment provided by engineer. */
-"choose passcode for %@" = "välj pinkod for %@";
+"clear" = "ta bort";
 
 /* No comment provided by engineer. */
-"choose wallet passcode" = "choose wallet passcode";
+"clear trusted node?" = "ta bort pålitlig nod?";
 
 /* No comment provided by engineer. */
-"clear" = "clear";
-
-/* No comment provided by engineer. */
-"clear trusted node?" = "clear trusted node?";
-
-/* No comment provided by engineer. */
-"clipboard doesn't contain a valid dash address" = "urklippet innehåller inte en giltig dashadress";
-
-/* No comment provided by engineer. */
-"clipboard doesn't contain a valid dash or bitcoin address" = "urklippet innehåller inte en giltig dashadress eller bitcoinadress";
+"clipboard doesn't contain a valid pivx address" = "urklipp innehåller inte en giltig pivx adress";
 
 /* No comment provided by engineer. */
 "close app" = "stäng app";
 
-/* confirm */
-"confirm" = "confirm";
+/* Confirm */
+"Confirm" = "Bekräfta";
 
-/* No comment provided by engineer. */
-"CONFIRM WIPE" = "BEKRÄFTA RADERING";
+/* confirm */
+"confirm" = "bekräfta";
 
 /* No comment provided by engineer. */
 "confirmed in block #%d" = "bekräftad i block #%d";
 
 /* No comment provided by engineer. */
-"connect timeout" = "anslutningen överskred tidsgränsen";
+"connect timeout" = "anslutnings timeout";
 
 /* No comment provided by engineer. */
-"copied" = "kopierade";
+"copied" = "kopierad";
 
 /* No comment provided by engineer. */
-"copy" = "copy";
+"copy" = "kopiera";
 
 /* No comment provided by engineer. */
 "copy address to clipboard" = "kopiera adress till urklipp";
 
 /* No comment provided by engineer. */
-"copy request to clipboard" = "kopiera anmodan till klippboken";
+"copy request to clipboard" = "kopiera förfrågan till urklipp";
 
 /* No comment provided by engineer. */
-"copy wallet addresses to clipboard?" = "copy wallet addresses to clipboard?";
+"copy wallet addresses to clipboard?" = "kopiera plånboks adresser till urklipp?";
 
 /* No comment provided by engineer. */
-"couldn't check address balance" = "couldn't check address balance";
+"couldn't check address balance" = "kunde inte kontrollera adress beloppet";
 
 /* No comment provided by engineer. */
-"couldn't make payment" = "kunde inte genomföra betalning";
+"couldn't make payment" = "kunde inte göra betalning";
 
 /* No comment provided by engineer. */
-"couldn't sweep balance" = "kunde inte importera saldo";
+"couldn't sweep balance" = "kunde inte ta bort beloppet";
 
 /* No comment provided by engineer. */
-"couldn't transmit payment to dash network" = "kunde inte skicka betalningen till dash-nätverket";
+"couldn't transmit payment to PIVX network" = "kunde inte överföra betalning till PIVX-nätverket";
 
 /* No comment provided by engineer. */
-"current wallet passcode" = "current wallet passcode";
+"PIVX address" = "PIVX adress";
 
 /* No comment provided by engineer. */
-"Dash address" = "Dash-adress";
+"PIVX addresses can also be copied to the clipboard. A PIVX address always starts with 'X' or '7'." = "PIVX-adresser kan också kopieras till urklippet. En PIVX-adress börjar alltid med \"X\" eller \"7\".";
 
 /* No comment provided by engineer. */
-"Dash addresses can also be copied to the clipboard. A dash address always starts with 'X' or '7'." = "Dash-adresser kan också kopieras till klippboken. En Dash-adress startar alltid med 'X' eller '7'.";
+"PIVX network fee" = "PIVX nätverksavgift";
 
 /* No comment provided by engineer. */
-"dash network fee" = "transaktions kostnad";
+"PIVX payments can't be less than %@" = "PIVX-betalningar kan inte vara mindre än %@";
 
 /* No comment provided by engineer. */
-"dash payments can't be less than %@" = "betalningar kan inte vara mindre än %@";
+"PIVX transaction not signed" = "PIVX-transaktionen är inte signerad";
 
 /* No comment provided by engineer. */
-"dash transaction not signed" = "transaktionen ej undertecknad";
+"PIVX transaction outputs can't be less than %@" = "PIVX-transaktioner får inte vara mindre än %@";
 
 /* No comment provided by engineer. */
-"dash transaction outputs can't be less than %@" = "transaktionens utflöden får ej understiga %@";
+"DEVICE SECURITY COMPROMISED\nAny 'jailbreak' app can access any other app's keychain data (and steal your PIVX)." = "ENHETSSÄKERHET KOMPROMERAD\nAlla \"jailbreak\" appar kan få åtkomst till en annan apps nyckeldata (och stjäla dina PIVX).";
 
 /* No comment provided by engineer. */
-"DEVICE SECURITY COMPROMISED\nAny 'jailbreak' app can access any other app's keychain data (and steal your dash)." = "ENHETENS SÄKERHET ÄR KOMPRIMISSAD\n\"Jailbreakade\" appar kan läsa inuti andra appar (och stjäla dina dash).";
-
-/* No comment provided by engineer. */
-"DEVICE SECURITY COMPROMISED\nAny 'jailbreak' app can access any other app's keychain data (and steal your dash). Wipe this wallet immediately and restore on a secure device." = "ENHETENS SÄKERHET ÄR KOMPRIMISSAD\n\"Jailbreakade\" appar kan läsa inuti andra appar (och stjäla dina dash). Radera omedelbart denna plånbok och återskapa den på en annan (säker) enhet.";
+"DEVICE SECURITY COMPROMISED\nAny 'jailbreak' app can access any other app's keychain data (and steal your PIVX). Wipe this wallet immediately and restore on a secure device." = "ENHETSSÄKERHET KOMPROMERAD\nAlla \"jailbreak\" appar kan få åtkomst till en annan apps nyckeldata (och stjäla dina PIVX). Rensa denna plånbok omedelbart och återställ på en säker enhet.";
 
 /* No comment provided by engineer. */
 "do it later" = "gör det senare";
 
 /* No comment provided by engineer. */
-"done" = "klar";
+"done" = "färdig";
 
 /* No comment provided by engineer. */
-"double spend" = "dubbelbetalning";
+"double spend" = "dubbel spendering";
 
 /* No comment provided by engineer. */
-"email not configured" = "e-post inte konfigurerad";
+"email not configured" = "email inte konfigurerat";
 
 /* No comment provided by engineer. */
-"enable" = "enable";
+"enable" = "aktivera";
 
 /* No comment provided by engineer. */
-"enable receive notifications" = "enable receive notifications";
+"enable receive notifications" = "aktivera mottagnings aviseringar";
 
 /* No comment provided by engineer. */
-"enter" = "enter";
+"enter" = "verkställ/enter";
 
 /* No comment provided by engineer. */
-"enter old passcode" = "ange den gamla pinkoden";
+"enter old passcode" = "skriv in den gamla lösenkoden";
 
 /* No comment provided by engineer. */
-"error signing dash transaction" = "fel vid signering av dashtransaktionen";
+"error signing PIVX transaction" = "fel signering av PIVX-transaktionen";
 
 /* No comment provided by engineer. */
-"error signing transaction" = "fel vid signering av transaktionen";
+"error signing transaction" = "fel signering av transaktionen";
 
 /* No comment provided by engineer. */
-"exit" = "exit";
+"exit" = "avsluta";
 
 /* No comment provided by engineer. */
-"failed wallet update" = "failed wallet update";
+"failed wallet update" = "misslyckad plånboksuppdatering";
 
 /* No comment provided by engineer. */
 "from:" = "från:";
@@ -279,34 +261,34 @@
 "id:" = "id:";
 
 /* No comment provided by engineer. */
-"If you still would like to wipe it please input : \"I accept that I will lose my coins if I no longer possess the recovery phrase\"" = "If you still would like to wipe it please input : \"I accept that I will lose my coins if I no longer possess the recovery phrase\"";
+"If you still would like to wipe it please input : \"I accept that I will lose my coins if I no longer possess the recovery phrase\"" = "Om du fortfarande vill rensa den, vänligen skriv in : \"Jag accepterar att jag kommer att förlora mina mynt om jag inte längre har återställnings frasen\"";
 
 /* No comment provided by engineer. */
 "ignore" = "ignorera";
 
 /* No comment provided by engineer. */
-"import private key" = "importera privat nyckel";
+"import private key" = "importera privata nyckeln";
 
 /* No comment provided by engineer. */
 "IMPORTANT" = "VIKTIGT";
 
 /* No comment provided by engineer. */
-"instant payment" = "instant payment";
+"instant payment" = "omedelbar betalning";
 
 /* No comment provided by engineer. */
-"Instant Send requires enough inputs with 6 confirmations, send anyways as regular transaction?" = "Instant Send requires enough inputs with 6 confirmations, send anyways as regular transaction?";
+"Instant Send requires enough inputs with 6 confirmations, send anyways as regular transaction?" = "Direktsändning kräver tillräckligt med ingångar och 6 bekräftelser, skicka ändå som vanlig transaktion?";
 
 /* No comment provided by engineer. */
-"insufficient funds" = "täckning saknas";
+"insufficient funds" = "otillräckliga medel";
 
 /* No comment provided by engineer. */
-"insufficient funds for dash network fee" = "täckning saknas för transaktionsavgiften";
+"insufficient funds for PIVX network fee" = "otillräckliga medel för PIVX nätverksavgift";
 
 /* No comment provided by engineer. */
 "INVALID" = "OGILTIG";
 
 /* No comment provided by engineer. */
-"Let others scan this QR code to get your dash address. Anyone can send dash to your wallet by transferring them to your address." = "Via denna QR-kod kan andra läsa av din dashadress. Vem som helst kan skicka dash till din plånbok genom att överföra dem till din adress.";
+"Let others scan this QR code to get your PIVX address. Anyone can send PIVX to your wallet by transferring them to your address." = "Låt andra skanna den här QR-koden för att få din PIVX-adress. Vem som helst kan skicka PIVX till din plånbok genom att överföra dem till din adress.";
 
 /* No comment provided by engineer. */
 "minute" = "minut";
@@ -315,181 +297,175 @@
 "minutes" = "minuter";
 
 /* No comment provided by engineer. */
-"missing certificate" = "saknar certifikat";
+"missing certificate" = "certifikat saknas";
 
 /* No comment provided by engineer. */
-"more..." = "mer...";
+"more..." = "mera...";
 
 /* No comment provided by engineer. */
-"moved" = "överförd";
+"moved" = "flyttad";
 
 /* No comment provided by engineer. */
-"new wallet passcode" = "new wallet passcode";
+"next, write down your recovery phrase" = "Härnäst, skriv ner din återställnings fras";
 
 /* No comment provided by engineer. */
-"next, write down your recovery phrase" = "nästa, skriv ner din återhämtning fras";
+"no exchange rate data" = "ingen växelkursdata";
 
 /* No comment provided by engineer. */
-"no exchange rate data" = "no exchange rate data";
+"no peers found" = "inga kamrater hittades";
 
 /* No comment provided by engineer. */
-"no peers found" = "hittade inga likar (peer)";
-
-/* No comment provided by engineer. */
-"not a dash or bitcoin QR code" = "inte en dash eller bitcoin QR-kod";
+"not a pivx QR code" = "inte en pivx QR-kod";
 
 /* No comment provided by engineer. */
 "not a valid bitcoin address" = "inte en giltig bitcoin adress";
 
 /* No comment provided by engineer. */
-"not a valid dash address" = "inte en giltig dash adress";
+"not a valid PIVX address" = "inte en giltig PIVX-adress";
 
 /* No comment provided by engineer. */
-"not a valid dash or bitcoin address" = "inte en giltig dash eller bitcoin adress";
+"not a valid pivx address" = "inte en giltig pivx adress";
 
 /* No comment provided by engineer. */
-"not a valid private key" = "ogiltig privat nyckel";
+"not a valid private key" = "inte en giltig privat nyckel";
 
 /* No comment provided by engineer. */
-"not connected to the dash network" = "ingen anslutning till dashnätverket";
+"not connected to the PIVX network" = "inte ansluten till PIVX-nätverket";
+
+/* No comment provided by engineer. */
+"ok" = "ok";
 
 /* No comment provided by engineer. */
 "OK" = "OK";
 
 /* No comment provided by engineer. */
-"ok" = "OK";
+"passcode" = "lösenkod";
 
 /* No comment provided by engineer. */
-"passcode" = "pinkod";
+"passcode for %@" = "lösenkod för %@";
 
 /* No comment provided by engineer. */
-"passcode for %@" = "pinkod for %@";
+"password" = "Lösenord";
 
 /* No comment provided by engineer. */
-"password" = "lösenord";
-
-/* No comment provided by engineer. */
-"password protected key" = "lösenordskyddad nyckel";
+"password protected key" = "lösenordsskyddad nyckel";
 
 /* No comment provided by engineer. */
 "pay" = "Betala";
 
 /* No comment provided by engineer. */
-"payee identity isn't certified" = "payee identity isn't certified";
+"payee identity isn't certified" = "betalningsmottagarens identitet är inte certifierad";
 
 /* No comment provided by engineer. */
-"payment address" = "betaladress";
+"payment address" = "betalningsadress";
 
 /* No comment provided by engineer. */
-"payment output" = "betalutgång";
+"payment output" = "betalnings output";
 
 /* No comment provided by engineer. */
-"pending" = "pending";
+"pending" =  "i avvaktan på";
 
 /* No comment provided by engineer. */
-"please enter pin to upgrade wallet" = "please enter pin to upgrade wallet";
+"please enter pin to upgrade wallet" = "vänligen ange pin för att uppgradera plånboken";
 
 /* No comment provided by engineer. */
-"post-dated" = "framdaterad";
+"rate: %@ = %@\nupdated: %@\nblock #%d of %d\nconnected peers: %d\ndl peer: %@" = "rate: %@ = %@\nuppdaterad: %@\nblock #%d of %d\nanslutna kamrater: %d\ndl kamrat: %@";
 
 /* No comment provided by engineer. */
-"rate: %@ = %@\nupdated: %@\nblock #%d of %d\nconnected peers: %d\ndl peer: %@" = "rate: %1$@ = %2$@\nupdated: %3$@\nblock #%4$d of %5$d\nconnected peers: %6$d\ndl peer: %7$@";
+"Receive PIVX at this address: %@" = "Ta emot PIVX på denna adress: %@";
 
 /* No comment provided by engineer. */
-"Receive dash at this address: %@" = "Ta emot dash på denna adress: %@";
+"received" = "mottagen";
 
 /* No comment provided by engineer. */
-"received" = "mottagna";
+"received %@ (%@)" = "mottagen %1$@ (%2$@)";
 
 /* No comment provided by engineer. */
-"received %@ (%@)" = "tog emot %1$@ (%2$@)";
+"recovery phrase" = "återställnings fras";
 
 /* No comment provided by engineer. */
-"recovery phrase" = "återställningsfras";
+"recovery phrase doesn't match" = "återställnings frasen matchar inte";
 
 /* No comment provided by engineer. */
-"recovery phrase doesn't match" = "återställningsfrasen stämmer inte";
+"recovery phrase must have %d words" = "återställnings frasen måste ha %d ord";
 
 /* No comment provided by engineer. */
-"recovery phrase must have %d words" = "återställningsfrasen måste ha %d ord";
+"reduce payment amount by\n%@ (%@)?" = "minska betalningsbeloppet med\n%1$@ (%2$@)?";
 
 /* No comment provided by engineer. */
-"reduce payment amount by\n%@ (%@)?" = "minska beloppet med\n%1$@ (%2$@)?";
+"request" = "förfrågan";
 
 /* No comment provided by engineer. */
-"request" = "begäran";
+"request an amount" = "begära ett belopp";
 
 /* No comment provided by engineer. */
-"request an amount" = "begär ett belopp";
+"request expired" = "förfrågan upphörde";
 
 /* No comment provided by engineer. */
-"request expired" = "begäran har gått ut";
+"request is for an instant payment but you have disabled instant payments" = "förfrågan är för en omedelbar betalning men du har inaktiverat direktbetalningar";
 
 /* No comment provided by engineer. */
-"request is for an instant payment but you have disabled instant payments" = "request is for an instant payment but you have disabled instant payments";
+"requested network \"%@\" instead of \"%@\"" = "begärda nätverket \"%1$@\" istället för \"%2$@\"";
 
 /* No comment provided by engineer. */
-"requested network \"%@\" instead of \"%@\"" = "begärde nätverk \"%1$@\" istället för \"%2$@\"";
+"rescan" = "skanna igen";
 
 /* No comment provided by engineer. */
-"rescan" = "återläs";
+"rescan blockchain" = "skanna blockchain igen";
 
 /* No comment provided by engineer. */
-"rescan blockchain" = "återläs blockkedjan";
-
-/* No comment provided by engineer. */
-"rescan blockchain if you think you may have missing transactions, or are having trouble sending (rescanning can take several minutes)" = "återläs blockkedjan om du misstänker att det saknas transaktioner, eller om du har problem att skicka dash (återläsning kan ta flera minuter)";
+"rescan blockchain if you think you may have missing transactions, or are having trouble sending (rescanning can take several minutes)" = "skanna blockchain igen om du tror dig ha missade transaktioner eller har problem med att skicka (omskanning kan ta flera minuter)";
 
 /* No comment provided by engineer. */
 "reset" = "återställ";
 
 /* No comment provided by engineer. */
-"retry" = "retry";
+"retry" = "försök igen";
 
 /* No comment provided by engineer. */
-"Scan someone else's QR code to get their dash or bitcoin address. You can send a payment to anyone with an address." = "Läs in någon annans dashadress eller bitcoinadress via QR-kod. Du kan göra överföringar till alla som har en adress.";
+"Scan someone else's QR code to get their pivx address. You can send a payment to anyone with an address." = "Skanna någon annans QR-kod för att få deras pivx adress. Du kan skicka en betalning till någon med en adress.";
 
 /* No comment provided by engineer. */
-"Screenshots are visible to other apps and devices. Generate a new recovery phrase and keep it secret." = "Skärmbilder är synliga för andra appar och enheter. Skapa en ny återställningsfras och håll den hemlig.";
+"Screenshots are visible to other apps and devices. Generate a new recovery phrase and keep it secret." = "Skärmdumpningar är synliga för andra appar och enheter. Skapa en ny återställnings fras och håll den hemlig.";
 
 /* No comment provided by engineer. */
-"Screenshots are visible to other apps and devices. Your funds are at risk. Transfer your balance to another wallet." = "Skärmbilder är synliga för andra appar och enheter. Dina tillgångar är riskerade. Flytta dem till en annan plånbok.";
+"Screenshots are visible to other apps and devices. Your funds are at risk. Transfer your balance to another wallet." = "Skärmdumpningar är synliga för andra appar och enheter. Dina tillgångar är i fara. Överför ditt saldo till en annan plånbok.";
 
 /* No comment provided by engineer. */
-"second" = "second";
+"second" = "sekund";
 
 /* No comment provided by engineer. */
-"seconds" = "seconds";
+"seconds" = "sekunder";
 
 /* No comment provided by engineer. */
-"seen by %d of %d peers" = "sett av %1$d av %2$d likar";
+"seen by %d of %d peers" = "ses av %1$d of %2$d kamrater";
 
 /* No comment provided by engineer. */
-"send" = "send";
+"send" = "skicka";
 
 /* No comment provided by engineer. */
-"Send %@ (%@) from this private key into your wallet? The dash network will receive a fee of %@ (%@)." = "Skicka %1$@ (%2$@) från denna privata nyckel till din plånbok? Bitcoin-nätverket erhåller en avgift på %3$@ (%4$@).";
+"Send %@ (%@) from this private key into your wallet? The PIVX network will receive a fee of %@ (%@)." = "skicka %1$@ (%2$@)från den här privata nyckeln till din plånbok? PIVX-nätverket kommer att få en avgift på %3$@ (%4$@).";
 
 /* No comment provided by engineer. */
-"send address as email" = "skicka adressen som e-post";
+"send address as email" = "skicka adress som e-post";
 
 /* No comment provided by engineer. */
 "send address as message" = "skicka adress som meddelande";
 
 /* No comment provided by engineer. */
-"send request as email" = "skicka begäran som e-post";
+"send request as email" = "skicka förfrågan som e-post";
 
 /* No comment provided by engineer. */
-"send request as message" = "skicka begäran som meddelande";
+"send request as message" = "skicka förfrågan som meddelande";
 
 /* No comment provided by engineer. */
 "sent" = "skickat";
 
 /* No comment provided by engineer. */
-"sent!" = "skickat!";
+"sent!" = "skickat !";
 
 /* No comment provided by engineer. */
-"set a trusted node" = "set a trusted node";
+"set a trusted node" = "ange en pålitlig nod";
 
 /* No comment provided by engineer. */
 "settings" = "inställningar";
@@ -498,13 +474,13 @@
 "shapeshift bitcoin id:" = "shapeshift bitcoin id:";
 
 /* No comment provided by engineer. */
-"shapeshift failed" = "shapeshift failed";
+"shapeshift failed" = "shapeshift misslyckades";
 
 /* No comment provided by engineer. */
 "shapeshift status:" = "shapeshift status:";
 
 /* No comment provided by engineer. */
-"shapeshift succeeded" = "shapeshift succeeded";
+"shapeshift succeeded" = "shapeshift lyckades";
 
 /* No comment provided by engineer. */
 "show" = "visa";
@@ -516,61 +492,57 @@
 "sms not currently available" = "sms är inte tillgängligt för tillfället";
 
 /* No comment provided by engineer. */
-"spent address" = "förbrukad adress";
+"spent address" = "använd adress";
+/* No comment provided by engineer. */
+"spent input" = "använd insats";
 
 /* No comment provided by engineer. */
-"spent input" = "förbrukat inflöde";
-
-/* No comment provided by engineer. */
-"Starting Shapeshift!" = "Starting Shapeshift!";
+"Starting Shapeshift!" = "Startar Shapeshift!";
 
 /* No comment provided by engineer. */
 "status:" = "status:";
 
 /* No comment provided by engineer. */
-"swept!" = "inläst!";
+"swept!" = "renad!";
 
 /* No comment provided by engineer. */
-"syncing..." = "synkroniserar...";
+"Syncing:" = "synkroniserar:";
 
 /* No comment provided by engineer. */
-"Syncing:" = "Syncing:";
+"The amount you wanted to shapeshift is too high, please input a value under %@" = "Mängden du ville shapeshifta är för hög, var god ange ett värde under %@";
 
 /* No comment provided by engineer. */
-"The amount you wanted to shapeshift is too high, please input a value under %@" = "The amount you wanted to shapeshift is too high, please input a value under %@";
+"The amount you wanted to shapeshift is too low, please input a value over %@" = "Mängden du ville shapeshifta är för låg, var god ange ett värde över %@";
 
 /* No comment provided by engineer. */
-"The amount you wanted to shapeshift is too low, please input a value over %@" = "The amount you wanted to shapeshift is too low, please input a value over %@";
+"the app will now close" = "appen stängs nu";
 
 /* No comment provided by engineer. */
-"the app will now close" = "appen kommer nu avslutas";
+"This is your PIVX address. Tap to copy it or send it by email or sms. The address will change each time you receive funds, but old addresses always work." = "Detta är din PIVX-adress. Tryck för att kopiera den eller skicka den via e-post eller sms. Adressen ändras varje gång du får pengar, men gamla adresser fungerar alltid.";
 
 /* No comment provided by engineer. */
-"This is your dash address. Tap to copy it or send it by email or sms. The address will change each time you receive funds, but old addresses always work." = "Detta är din dashadress. Nudda för att kopiera eller skicka till andra via e-post eller sms. Adressen ändras varje gång du tar emot en betalning, men gamla adresser fungerar även i framtiden.";
+"This is your PIVX balance." = "Detta är din PIVX-tillgång.";
 
 /* No comment provided by engineer. */
-"This is your dash balance." = "This is your dash balance.";
+"This is your PIVX balance. PIVX is a currency. The exchange rate changes with the market." = "Detta är din PIVX-tillgång. PIVX är en valuta. Växelkursen förändras med marknaden.";
 
 /* No comment provided by engineer. */
-"This is your dash balance. Dash is a currency. The exchange rate changes with the market." = "Detta är ditt dashaldo. Dash är en valuta. Växelkursen ändras av marknaden.";
+"this payment address is already in your wallet" = "denna betalningsadress finns redan i din plånbok";
 
 /* No comment provided by engineer. */
-"this payment address is already in your wallet" = "denna betaladress är redan i plånboken";
+"this private key is already in your wallet" = "den här privata nyckeln finns redan i din plånbok";
 
 /* No comment provided by engineer. */
-"this private key is already in your wallet" = "denna privata nyckel är redan i plånboken";
+"this private key is empty" = "den här privata nyckeln är tom";
 
 /* No comment provided by engineer. */
-"this private key is empty" = "denna privata nyckel är tom";
+"This request requires an instant payment but you do not have enough inputs with 6 confirmations required by Instant Send, you may ask the merchant to accept a normal transaction or wait a few minutes." = "Denna begäran kräver en omedelbar betalning, men du har inte tillräcklig “input” med 6 bekräftelser som krävs av Instant Send, du kan begära att säljaren accepterar en vanlig transaktion eller väntar några minuter.";
 
 /* No comment provided by engineer. */
-"This request requires an instant payment but you do not have enough inputs with 6 confirmations required by Instant Send, you may ask the merchant to accept a normal transaction or wait a few minutes." = "This request requires an instant payment but you do not have enough inputs with 6 confirmations required by Instant Send, you may ask the merchant to accept a normal transaction or wait a few minutes.";
+"this request requires an instant payment but you have disabled instant payments" = "denna begäran kräver en omedelbar betalning men du har inaktiverat direktbetalningar";
 
 /* No comment provided by engineer. */
-"this request requires an instant payment but you have disabled instant payments" = "this request requires an instant payment but you have disabled instant payments";
-
-/* No comment provided by engineer. */
-"This wallet is not empty or sync has not finished, you may not wipe it without the recovery phrase" = "This wallet is not empty or sync has not finished, you may not wipe it without the recovery phrase";
+"This wallet is not empty or sync has not finished, you may not wipe it without the recovery phrase" = "Denna plånbok är inte tom eller så har synkroniseringen inte slutförts, du får inte rensa den utan återställnings frasen";
 
 /* No comment provided by engineer. */
 "to:" = "till:";
@@ -579,40 +551,37 @@
 "to: %@" = "till: %@";
 
 /* No comment provided by engineer. */
-"to: %@ (via Shapeshift)" = "to: %@ (via Shapeshift)";
+"to: %@ (via Shapeshift)" = "till: %@ (via Shapeshift)";
 
 /* No comment provided by engineer. */
-"touch id limit" = "gräns för touch id";
+"touch id limit" = "tryck id limit";
 
 /* No comment provided by engineer. */
-"touch id spending limit" = "touch id beloppsgräns";
+"touch id spending limit" = "tryck på ID-utgiftsgränsen";
 
 /* No comment provided by engineer. */
-"transaction canceled, network timeout" = "transaktionen avbruten – nätverksavbrott";
+"transaction canceled, network timeout" = "transaktionen avbruten, nätverksavbrott";
 
 /* No comment provided by engineer. */
-"transaction fees would cost more than the funds available on this private key (due to tiny \"dust\" deposits)" = "transaktionsavgiften skulle överstiga de medel som nyckeln har tillgängligt (på grund av \"damminsättningar\")";
+"transaction fees would cost more than the funds available on this private key (due to tiny \"dust\" deposits)" = "transaktionsavgifter skulle kosta mer än tillgängliga medel på den privata nyckeln (på grund av små \"damm\" insättningar)";
 
 /* No comment provided by engineer. */
 "transaction history" = "transaktionshistorik";
 
 /* No comment provided by engineer. */
-"transaction is post-dated" = "transaktionen är framåtdaterad";
+"transaction rejected" = "transaktionen avvisad";
 
 /* No comment provided by engineer. */
-"transaction rejected" = "transaktion avvisad";
+"trust" = "förtroende";
 
 /* No comment provided by engineer. */
-"trust" = "trust";
+"Try It!" = "Försök!";
 
 /* No comment provided by engineer. */
-"Try It!" = "Try It!";
+"turn device passcode on" = "slå på enhetslösenkoden";
 
 /* No comment provided by engineer. */
-"turn device passcode on" = "aktivera pinkod för enheten";
-
-/* No comment provided by engineer. */
-"Unable to get new qr code" = "Unable to get new qr code";
+"Unable to get new qr code" = "Det gick inte att få ny qr-kod";
 
 /* No comment provided by engineer. */
 "unexpected response from %@" = "oväntat svar från %@";
@@ -621,43 +590,37 @@
 "unknown address" = "okänd adress";
 
 /* No comment provided by engineer. */
-"unrecognized address" = "oigenkännbar adress";
+"unrecognized address" = "okänd adress";
 
 /* No comment provided by engineer. */
-"unsupported or corrupted document" = "okänd dokumenttyp eller skadat dokument";
+"unsupported or corrupted document" = "otillräckligt eller skadat dokument";
 
 /* No comment provided by engineer. */
-"unsupported signature type" = "stöd saknas för signaturtypen";
+"unsupported signature type" = "okänd signaturtyp";
 
 /* No comment provided by engineer. */
-"unsupported url" = "stöd saknas för URL:en";
+"unsupported url" = "ej understödd webbadress";
 
 /* No comment provided by engineer. */
-"untrusted certificate" = "opålitligt certifikat";
+"untrusted certificate" = "otillförlitligt certifikat";
 
 /* No comment provided by engineer. */
-"unverified" = "overifierad";
+"unverified" = "obekräftad";
 
 /* Updating Price */
-"Updating Price" = "Updating Price";
+"Updating Price" = "Uppdaterar pris";
 
 /* No comment provided by engineer. */
-"verified, waiting for confirmation" = "verifierad, inväntar bekräftelse";
+"verified, waiting for confirmation" = "verifierad och väntar på bekräftelse";
 
 /* No comment provided by engineer. */
-"verify passcode" = "upprepa pinkoden";
+"verify passcode" = "verifiera lösenkoden";
 
 /* No comment provided by engineer. */
-"verify wallet passcode" = "verify wallet passcode";
+"wallet address" = "plånboksadress";
 
 /* No comment provided by engineer. */
-"wallet address" = "plånbok adress";
-
-/* No comment provided by engineer. */
-"wallet disabled" = "plånbok inaktiverad";
-
-/* No comment provided by engineer. */
-"wallet passcode" = "wallet passcode";
+"wallet disabled" = "plånboken inaktiverad";
 
 /* No comment provided by engineer. */
 "WARNING" = "VARNING";
@@ -666,16 +629,18 @@
 "wipe" = "rensa";
 
 /* No comment provided by engineer. */
-"WRITE DOWN YOUR RECOVERY PHRASE" = "skriv ner din återställnings fras";
+"WRITE DOWN YOUR RECOVERY PHRASE" = "SKRIV NED DIN ÅTERSTÄLLNINGS FRAS";
 
 /* No comment provided by engineer. */
-"You can now buy dash in\ndashwallet with cash or\nbank transfer." = "You can now buy dash in\ndashwallet with cash or\nbank transfer.";
+"You can now buy PIVX in\nPIVXwallet with cash or\nbank transfer." = "Du kan nu köpa PIVX i\nPIVXplånbok med kontanter eller\nbanköverföring.";
 
 /* No comment provided by engineer. */
-"you must enter your pin in order to enter dashwallet" = "you must enter your pin in order to enter dashwallet";
+"you must enter your pin in order to enter PIVXwallet" = "du måste ange din PIN-kod för att kunna komma in i PIVXplånboken";
 
 /* No comment provided by engineer. */
-"you received dash!" = "du har fått dash!";
+"you received PIVX!" = "du har mottagit PIVX!";
 
 /* No comment provided by engineer. */
-"Your wallet may be out of sync.\nThis can often be fixed by rescanning the blockchain." = "Din plånbok kan vara osynkroniserad.\nDetta åtgärdas oftast genom en omläsning av blockkedjan.";
+"Your wallet may be out of sync.\nThis can often be fixed by rescanning the blockchain." = "Din plånbok kan vara osynkroniserad.\nDetta kan ofta åtgärdas genom att skanna blockchain igen.";
+
+

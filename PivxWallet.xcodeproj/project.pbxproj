@@ -257,6 +257,10 @@
 		22F45A0C1C3326CC00B07A15 /* BRUserDefaultsSwitchCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRUserDefaultsSwitchCell.h; sourceTree = "<group>"; };
 		22F45A0D1C3326CC00B07A15 /* BRUserDefaultsSwitchCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRUserDefaultsSwitchCell.m; sourceTree = "<group>"; };
 		22F45A0F1C3329EB00B07A15 /* BRUserDefaultsConstants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BRUserDefaultsConstants.h; sourceTree = "<group>"; };
+		2B0138621FED6E8A00D4A8A6 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Localizable.strings; sourceTree = "<group>"; };
+		2B0138631FED6EE500D4A8A6 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		2B0138641FED6F8500D4A8A6 /* cs */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = cs; path = cs.lproj/Localizable.strings; sourceTree = "<group>"; };
+		2B0138651FED6FED00D4A8A6 /* fi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fi; path = fi.lproj/Localizable.strings; sourceTree = "<group>"; };
 		2B4838CA1FE21655001C8D09 /* Donation.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = Donation.xib; path = PivxNibs/Controllers/Donation.xib; sourceTree = "<group>"; };
 		2B4838CC1FE21666001C8D09 /* DonationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DonationController.swift; path = PivxControllers/DonationController.swift; sourceTree = "<group>"; };
 		2B5735661FE04BC400110745 /* PivxAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = PivxAssets.xcassets; sourceTree = "<group>"; };
@@ -1469,6 +1473,10 @@
 				bg,
 				vi,
 				th,
+				ar,
+				"pt-BR",
+				cs,
+				fi,
 			);
 			mainGroup = 75D5F3B5191EC270004AB296;
 			productRefGroup = 75D5F3BF191EC270004AB296 /* Products */;
@@ -1871,6 +1879,10 @@
 				FB0ACB9E1F9AB76800F4AB52 /* bg */,
 				FB0ACBA01F9ABB6200F4AB52 /* vi */,
 				FB4310F11FA027DB00784EBC /* th */,
+				2B0138621FED6E8A00D4A8A6 /* ar */,
+				2B0138631FED6EE500D4A8A6 /* pt-BR */,
+				2B0138641FED6F8500D4A8A6 /* cs */,
+				2B0138651FED6FED00D4A8A6 /* fi */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";
