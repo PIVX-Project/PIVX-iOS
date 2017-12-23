@@ -207,34 +207,34 @@
     UIImage *blurredBgImg = [bgImg blurWithRadius:3];
     
     // display the popup
-    __weak BREventConfirmView *eventConfirmView =
-        [[NSBundle mainBundle] loadNibNamed:@"BREventConfirmView" owner:nil options:nil][0];
-    eventConfirmView.image = blurredBgImg;
-    eventConfirmView.autoresizingMask = UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth;
-    eventConfirmView.frame = viewController.view.bounds;
-    eventConfirmView.alpha = 0;
-    [viewController.view addSubview:eventConfirmView];
-    
-    [UIView animateWithDuration:.5 animations:^{
-        eventConfirmView.alpha = 1;
-    }];
-    [self saveEvent:@"ask_for_data_collection"];
-    
-    eventConfirmView.completionHandler = ^(BOOL didApprove) {
-        [[NSUserDefaults standardUserDefaults] setBool:YES forKey:HAS_PROMPTED_FOR_PERMISSION];
-        [[NSUserDefaults standardUserDefaults] setBool:didApprove forKey:HAS_ACQUIRED_PERMISSION];
-        
-        if (didApprove) {
-            [self saveEvent:@"approve_data_collection"];
-        }
-        
-        [UIView animateWithDuration:.5 animations:^{
-            eventConfirmView.alpha = 0;
-        } completion:^(BOOL finished) {
-            if (completionCallback) completionCallback(didApprove);
-            [eventConfirmView removeFromSuperview];
-        }];
-    };
+//    __weak BREventConfirmView *eventConfirmView =
+//        [[NSBundle mainBundle] loadNibNamed:@"BREventConfirmView" owner:nil options:nil][0];
+//    eventConfirmView.image = blurredBgImg;
+//    eventConfirmView.autoresizingMask = UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth;
+//    eventConfirmView.frame = viewController.view.bounds;
+//    eventConfirmView.alpha = 0;
+//    [viewController.view addSubview:eventConfirmView];
+//
+//    [UIView animateWithDuration:.5 animations:^{
+//        eventConfirmView.alpha = 1;
+//    }];
+//    [self saveEvent:@"ask_for_data_collection"];
+//
+//    eventConfirmView.completionHandler = ^(BOOL didApprove) {
+//        [[NSUserDefaults standardUserDefaults] setBool:YES forKey:HAS_PROMPTED_FOR_PERMISSION];
+//        [[NSUserDefaults standardUserDefaults] setBool:didApprove forKey:HAS_ACQUIRED_PERMISSION];
+//
+//        if (didApprove) {
+//            [self saveEvent:@"approve_data_collection"];
+//        }
+//
+//        [UIView animateWithDuration:.5 animations:^{
+//            eventConfirmView.alpha = 0;
+//        } completion:^(BOOL finished) {
+//            if (completionCallback) completionCallback(didApprove);
+//            [eventConfirmView removeFromSuperview];
+//        }];
+//    };
 }
 
 - (void)sync

@@ -81,7 +81,7 @@
 "t1j-JZ-FW0.text" = "NO TRANSACTIONS";
 
 /* Class = "UILabel"; text = "pivxwallet v%ver%%net%\ncopyright © 2017 PIVX\nForked from breadwallet.\nThis app is open source:"; ObjectID = "uvz-hk-Nr4"; */
-"uvz-hk-Nr4.text" = "Pivxwallet v%ver%%net%\ncopyright © 2017 PIVX\n\nBased on breadwallet\n\nthis app is open source";
+"uvz-hk-Nr4.text" = "Pivxwallet v%ver%%net%\nCopyright © 2017 PIVX\n\nBased on breadwallet\n\nThis app is open source";
 
 /* Class = "UILabel"; text = "start a new wallet by generating a wallet recovery phrase"; ObjectID = "wDZ-DN-szv"; */
 "wDZ-DN-szv.text" = "Start a new wallet by generating a wallet recovery phrase";

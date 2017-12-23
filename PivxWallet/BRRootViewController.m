@@ -129,6 +129,9 @@
     UIColor *purple = [UIColor rgb:85 green:71 blue:108 alpha:1];
     
     CGFloat y = self.view.frame.size.height - 114;
+    if ([[Utils deviceType] isEqualToString:@"iphoneX"]) {
+        y = y - 22;
+    }
     CGFloat width = self.view.frame.size.width;
     self.buttonContainer = [[UIView alloc] initWithFrame:CGRectMake(0, y, width, 50)];
     self.buttonContainer.backgroundColor = UIColor.whiteColor;
@@ -1113,6 +1116,7 @@
 
 - (void)showErrorBar
 {
+    if (self.reachability.currentReachabilityStatus != NotReachable) return;
     if (/*self.navigationItem.prompt != nil ||*/ self.navigationController.presentedViewController != nil) return;
     self.navigationItem.prompt = @"";
     [self addErrorView];
@@ -1126,10 +1130,18 @@
                         } completion:nil];
     
     CGFloat h = [[UIScreen mainScreen] bounds].size.height - 98;
+    CGFloat y = h - 50;
+    if ([[Utils deviceType] isEqualToString:@"iphoneX"]) {
+        h = [[UIScreen mainScreen] bounds].size.height - 108;
+        y = h - 50;
+        //y = h - 72;
+    }
+    
     CGRect containerFrame = CGRectMake(0, 98, self.view.frame.size.width, h);
     self.view.frame = containerFrame;
+    self.buttonContainer.frame = CGRectMake(0, y, self.view.frame.size.width, 50);
     
-    self.buttonContainer.frame = CGRectMake(0, h - 50, self.view.frame.size.width, 50);
+    
     
     BRWalletManager *manager = [BRWalletManager sharedInstance];
     
@@ -1144,6 +1156,9 @@
 {
     if (self.navigationItem.prompt == nil) return;
     CGFloat y = [[UIScreen mainScreen] bounds].size.height - 114;
+    if ([[Utils deviceType] isEqualToString:@"iphoneX"]) {
+        y = y - 22;
+    }
     self.buttonContainer.frame = CGRectMake(0, y, self.view.frame.size.width, 50);
     [UIView animateWithDuration:UINavigationControllerHideShowBarDuration delay:0.0
                         options:UIViewAnimationOptionCurveEaseOut animations:^{
