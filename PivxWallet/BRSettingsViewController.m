@@ -585,7 +585,7 @@ _switch_cell:
                                  alertControllerWithTitle:NSLocalizedString(@"WARNING", nil)
                                  message:[NSString stringWithFormat:@"\n%@\n\n%@\n\n%@\n",
                                           [NSLocalizedString(@"\nDO NOT let anyone see your recovery\n"
-                                                             "phrase or they can spend your dash.\n", nil)
+                                                             "phrase or they can spend your PIV.\n", nil)
                                            stringByTrimmingCharactersInSet:[NSCharacterSet newlineCharacterSet]],
                                           [NSLocalizedString(@"\nNEVER type your recovery phrase into\n"
                                                              "password managers or elsewhere.\n"

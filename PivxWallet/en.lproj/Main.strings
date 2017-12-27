@@ -3,7 +3,7 @@
 "4w7-k8-9wY.normalTitle" = "Recover wallet";
 
 /* Class = "UILabel"; text = "https://github.com/QuantumExplorer/dashwallet"; ObjectID = "5OA-tB-Exg"; */
-"5OA-tB-Exg.text" = "https://github.com/furszy/PIVX-ios-wallet";
+"5OA-tB-Exg.text" = "https://github.com/PIVX-Project/PIVX-iOS";
 
 /* Class = "UILabel"; text = "local currency"; ObjectID = "8e2-ar-Ehc"; */
 "8e2-ar-Ehc.text" = "local currency";
@@ -66,13 +66,13 @@
 "fQN-xb-SYb.title" = "Confirm:";
 
 /* Class = "UILabel"; text = "Send PIVX"; ObjectID = "l5l-JR-LKA"; */
-"l5l-JR-LKA.text" = "SEND PIVX";
+"l5l-JR-LKA.text" = "SEND PIV";
 
 /* Class = "UINavigationItem"; title = "recovery phrase:"; ObjectID = "ooJ-EA-DFl"; */
 "ooJ-EA-DFl.title" = "Recovery phrase:";
 
 /* Class = "UILabel"; text = "Receive PIVX"; ObjectID = "qel-3J-2VC"; */
-"qel-3J-2VC.text" = "RECEIVE PIVX";
+"qel-3J-2VC.text" = "RECEIVE PIV";
 
 /* Class = "UITableViewController"; title = "transaction details"; ObjectID = "s4T-yd-VfX"; */
 "s4T-yd-VfX.title" = "Transaction Details";
@@ -81,7 +81,7 @@
 "t1j-JZ-FW0.text" = "NO TRANSACTIONS";
 
 /* Class = "UILabel"; text = "pivxwallet v%ver%%net%\ncopyright © 2017 PIVX\nForked from breadwallet.\nThis app is open source:"; ObjectID = "uvz-hk-Nr4"; */
-"uvz-hk-Nr4.text" = "Pivxwallet v%ver%%net%\nCopyright © 2017 PIVX\n\nBased on breadwallet\n\nThis app is open source";
+"uvz-hk-Nr4.text" = "PIVXwallet v%ver%%net%\nCopyright © 2017 The PIVX Developers\n\nBased on breadwallet\n\nThis app is open source";
 
 /* Class = "UILabel"; text = "start a new wallet by generating a wallet recovery phrase"; ObjectID = "wDZ-DN-szv"; */
 "wDZ-DN-szv.text" = "Start a new wallet by generating a wallet recovery phrase";
@@ -195,7 +195,7 @@
 "hWS-2G-hHE.title" = " ";
 
 /* Class = "UILabel"; text = "Instant Send"; ObjectID = "lbm-03-nu4"; */
-"lbm-03-nu4.text" = "Instant Send";
+"lbm-03-nu4.text" = "SwiftX";
 
 /* Class = "UILabel"; text = "Title"; ObjectID = "mpz-vn-jZ1"; */
 "mpz-vn-jZ1.text" = "";

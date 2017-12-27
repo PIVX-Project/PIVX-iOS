@@ -158,7 +158,7 @@
 
     if (self.sent > 0 && fee > 0 && fee != UINT64_MAX) {
         [text addObject:@""];
-        [detail addObject:NSLocalizedString(@"dash network fee", nil)];
+        [detail addObject:NSLocalizedString(@"PIVX network fee", nil)];
         [amount addObject:@(-fee)];
         [currencyIsBitcoinInstead addObject:@FALSE];
     }

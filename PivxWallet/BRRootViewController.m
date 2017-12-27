@@ -51,7 +51,7 @@
 
 #define BALANCE_TIP NSLocalizedString(@"This is your PIVX balance. PIVX is a currency. "\
 "The exchange rate changes with the market.", nil)
-#define MDASH_TIP    NSLocalizedString(@"%@ is for 'mDASH'. %@ = 1 DASH.", nil)
+#define MDASH_TIP    NSLocalizedString(@"%@ is for 'mPIV'. %@ = 1 PIV.", nil)
 
 #define BACKUP_DIALOG_TIME_KEY @"BACKUP_DIALOG_TIME"
 #define BALANCE_KEY            @"BALANCE"
@@ -259,7 +259,7 @@
                                                                                             alertControllerWithTitle:NSLocalizedString(@"WARNING", nil)
                                                                                             message:NSLocalizedString(@"DEVICE SECURITY COMPROMISED\n"
                                                                                                                       "Any 'jailbreak' app can access any other app's keychain data "
-                                                                                                                      "(and steal your dash). "
+                                                                                                                      "(and steal your PIV). "
                                                                                                                       "Wipe this wallet immediately and restore on a secure device.", nil)
                                                                                             preferredStyle:UIAlertControllerStyleAlert];
                                                                UIAlertAction* ignoreButton = [UIAlertAction
@@ -484,7 +484,7 @@
                                      alertControllerWithTitle:NSLocalizedString(@"WARNING", nil)
                                      message:NSLocalizedString(@"DEVICE SECURITY COMPROMISED\n"
                                                                "Any 'jailbreak' app can access any other app's keychain data "
-                                                               "(and steal your dash). "
+                                                               "(and steal your PIV). "
                                                                "Wipe this wallet immediately and restore on a secure device.", nil)
                                      preferredStyle:UIAlertControllerStyleAlert];
         UIAlertAction* ignoreButton = [UIAlertAction
@@ -512,7 +512,7 @@
                                      alertControllerWithTitle:NSLocalizedString(@"WARNING", nil)
                                      message:NSLocalizedString(@"DEVICE SECURITY COMPROMISED\n"
                                                                "Any 'jailbreak' app can access any other app's keychain data "
-                                                               "(and steal your dash).", nil)
+                                                               "(and steal your PIV).", nil)
                                      preferredStyle:UIAlertControllerStyleAlert];
         UIAlertAction* ignoreButton = [UIAlertAction
                                        actionWithTitle:NSLocalizedString(@"ignore", nil)
@@ -735,7 +735,7 @@
                 if (cancelled) {
                     alert = [UIAlertController
                              alertControllerWithTitle:NSLocalizedString(@"failed wallet update", nil)
-                             message:NSLocalizedString(@"you must enter your pin in order to enter dashwallet", nil)
+                             message:NSLocalizedString(@"you must enter your pin in order to enter PIVXwallet", nil)
                              preferredStyle:UIAlertControllerStyleAlert];
                     UIAlertAction* exitButton = [UIAlertAction
                                                  actionWithTitle:NSLocalizedString(@"exit", nil)
@@ -1369,9 +1369,9 @@
     // display the popup
     __weak BREventConfirmView *view =
     [[NSBundle mainBundle] loadNibNamed:@"BREventConfirmView" owner:nil options:nil][0];
-    view.titleLabel.text = NSLocalizedString(@"Buy dash in dashwallet!", nil);
+    view.titleLabel.text = NSLocalizedString(@"Buy PIV in PIVXwallet!", nil);
     view.descriptionLabel.text =
-    NSLocalizedString(@"You can now buy dash in\ndashwallet with cash or\nbank transfer.", nil);
+    NSLocalizedString(@"You can now buy PIV in\nPIVXwallet with cash or\nbank transfer.", nil);
     [view.okBtn setTitle:NSLocalizedString(@"Try It!", nil) forState:UIControlStateNormal];
     
     view.image = blurredBgImg;
