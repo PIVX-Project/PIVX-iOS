@@ -3,7 +3,7 @@
 "4w7-k8-9wY.normalTitle" = "recuperar cartera";
 
 /* Class = "UILabel"; text = "https://github.com/QuantumExplorer/dashwallet"; ObjectID = "5OA-tB-Exg"; */
-"5OA-tB-Exg.text" = "https://github.com/QuantumExplorer/dashwallet";
+"5OA-tB-Exg.text" = "https://github.com/PIVX-Project/PIVX-iOS";
 
 /* Class = "UILabel"; text = "local currency"; ObjectID = "8e2-ar-Ehc"; */
 "8e2-ar-Ehc.text" = "moneda local";
@@ -162,7 +162,7 @@
 "Huq-Vk-LaF.title" = "";
 
 /* Class = "UIButton"; normalTitle = "copy logs"; ObjectID = "Irz-6P-zvD"; */
-"Irz-6P-zvD.normalTitle" = "";
+"Irz-6P-zvD.normalTitle" = "Enviar logs";
 
 /* Class = "UILabel"; text = "($1,000.00)"; ObjectID = "JNR-nK-iyP"; */
 "JNR-nK-iyP.text" = "";

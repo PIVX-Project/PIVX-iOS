@@ -3,7 +3,7 @@
 " and " = " and ";
 
 /* No comment provided by engineer. */
-"%@ is for 'mDASH'. %@ = 1 DASH." = "%@ is for 'mDASH'. %@ = 1 PIVX.";
+"%@ is for 'mDASH'. %@ = 1 DASH." = "%@ is for 'mDASH'. %@ = 1 PIV.";
 
 /* No comment provided by engineer. */
 "%@ is not allowed to access the camera" = "%@ is not allowed to access the camera";
@@ -51,7 +51,7 @@
 "\nallow camera access in\nSettings->Privacy->Camera->%@" = "\nallow camera access in\nSettings->Privacy->Camera->%@";
 
 /* No comment provided by engineer. */
-"\nDO NOT let anyone see your recovery\nphrase or they can spend your dash.\n" = "\nDO NOT let anyone see your recovery\nphrase or they can spend your PIVX.\n";
+"\nDO NOT let anyone see your recovery\nphrase or they can spend your dash.\n" = "\nDO NOT let anyone see your recovery\nphrase or they can spend your PIV.\n";
 
 /* No comment provided by engineer. */
 "\nDO NOT take a screenshot.\nScreenshots are visible to other apps\nand devices.\n" = "\nDO NOT take a screenshot.\nScreenshots are visible to other apps\nand devices.\n";
@@ -84,7 +84,7 @@
 "Application %@ is requesting an address so it can pay you.  Would you like to authorize this?" = "Application %@ is requesting an address so it can pay you.  Would you like to authorize this?";
 
 /* No comment provided by engineer. */
-"Application %@ would like to receive your Master Public Key.  This can be used to keep track of your wallet, this can not be used to move your Dash." = "Application %@ would like to receive your Master Public Key.  This can be used to keep track of your wallet, this can not be used to move your PIVX.";
+"Application %@ would like to receive your Master Public Key.  This can be used to keep track of your wallet, this can not be used to move your Dash." = "Application %@ would like to receive your Master Public Key.  This can be used to keep track of your wallet, this can not be used to move your PIV.";
 
 /* No comment provided by engineer. */
 "bad password, try again" = "bad password, try again";
@@ -111,10 +111,10 @@
 "block #%d of %d" = "block #%1$d of %2$d";
 
 /* No comment provided by engineer. */
-"Buy Dash" = "Buy Dash";
+"Buy Dash" = "Buy PIV";
 
 /* No comment provided by engineer. */
-"Buy dash in dashwallet!" = "Buy dash in dashwallet!";
+"Buy dash in dashwallet!" = "Buy PIV in Pivxwallet!";
 
 /* No comment provided by engineer. */
 "cancel" = "cancel";
@@ -207,10 +207,10 @@
 "dash transaction outputs can't be less than %@" = "PIVX transaction outputs can't be less than %@";
 
 /* No comment provided by engineer. */
-"DEVICE SECURITY COMPROMISED\nAny 'jailbreak' app can access any other app's keychain data (and steal your dash)." = "DEVICE SECURITY COMPROMISED\nAny 'jailbreak' app can access any other app's keychain data (and steal your PIVX).";
+"DEVICE SECURITY COMPROMISED\nAny 'jailbreak' app can access any other app's keychain data (and steal your dash)." = "DEVICE SECURITY COMPROMISED\nAny 'jailbreak' app can access any other app's keychain data (and steal your PIV).";
 
 /* No comment provided by engineer. */
-"DEVICE SECURITY COMPROMISED\nAny 'jailbreak' app can access any other app's keychain data (and steal your dash). Wipe this wallet immediately and restore on a secure device." = "DEVICE SECURITY COMPROMISED\nAny 'jailbreak' app can access any other app's keychain data (and steal your PIVX). Wipe this wallet immediately and restore on a secure device.";
+"DEVICE SECURITY COMPROMISED\nAny 'jailbreak' app can access any other app's keychain data (and steal your dash). Wipe this wallet immediately and restore on a secure device." = "DEVICE SECURITY COMPROMISED\nAny 'jailbreak' app can access any other app's keychain data (and steal your PIV). Wipe this wallet immediately and restore on a secure device.";
 
 /* No comment provided by engineer. */
 "do it later" = "do it later";
@@ -633,10 +633,10 @@
 "WRITE DOWN YOUR RECOVERY PHRASE" = "WRITE DOWN YOUR RECOVERY PHRASE";
 
 /* No comment provided by engineer. */
-"You can now buy dash in\ndashwallet with cash or\nbank transfer." = "You can now buy dash in\ndashwallet with cash or\nbank transfer.";
+"You can now buy dash in\ndashwallet with cash or\nbank transfer." = "You can now buy PIV in\nPIVXwallet with cash or\nbank transfer.";
 
 /* No comment provided by engineer. */
-"you must enter your pin in order to enter dashwallet" = "you must enter your pin in order to enter dashwallet";
+"you must enter your pin in order to enter dashwallet" = "you must enter your pin in order to enter PIVXwallet";
 
 /* No comment provided by engineer. */
 "you received dash!" = "you received PIVX!";

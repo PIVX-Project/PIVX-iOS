@@ -3,7 +3,7 @@
 "4w7-k8-9wY.normalTitle" = "Recover wallet";
 
 /* Class = "UILabel"; text = "https://github.com/QuantumExplorer/dashwallet"; ObjectID = "5OA-tB-Exg"; */
-"5OA-tB-Exg.text" = "https://github.com/furszy/PIVX-ios-wallet";
+"5OA-tB-Exg.text" = "https://github.com/PIVX-Project/PIVX-iOS";
 
 /* Class = "UILabel"; text = "local currency"; ObjectID = "8e2-ar-Ehc"; */
 "8e2-ar-Ehc.text" = "local currency";
@@ -66,13 +66,13 @@
 "fQN-xb-SYb.title" = "Confirm:";
 
 /* Class = "UILabel"; text = "Send PIVX"; ObjectID = "l5l-JR-LKA"; */
-"l5l-JR-LKA.text" = "SEND PIVX";
+"l5l-JR-LKA.text" = "SEND PIV";
 
 /* Class = "UINavigationItem"; title = "recovery phrase:"; ObjectID = "ooJ-EA-DFl"; */
 "ooJ-EA-DFl.title" = "Recovery phrase:";
 
 /* Class = "UILabel"; text = "Receive PIVX"; ObjectID = "qel-3J-2VC"; */
-"qel-3J-2VC.text" = "RECEIVE PIVX";
+"qel-3J-2VC.text" = "RECEIVE PIV";
 
 /* Class = "UITableViewController"; title = "transaction details"; ObjectID = "s4T-yd-VfX"; */
 "s4T-yd-VfX.title" = "Transaction Details";

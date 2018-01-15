@@ -4,7 +4,7 @@
 " and " = " y ";
 
 /* No comment provided by engineer. */
-"%@ is for 'mPIVX'. %@ = 1 PIVX." = "%@ es por 'mPIVX'. %@ = 1 PIVX.";
+"%@ is for 'mPIVX'. %@ = 1 PIVX." = "%@ es por 'mPIVX'. %@ = 1 PIV.";
 
 /* No comment provided by engineer. */
 "%@ is not allowed to access the camera" = "%@ no tiene permitido el acceso a la cámara";
