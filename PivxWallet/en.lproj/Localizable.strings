@@ -3,7 +3,8 @@
 " and " = " and ";
 
 /* No comment provided by engineer. */
-"%@ is for 'mDASH'. %@ = 1 DASH." = "%@ is for 'mDASH'. %@ = 1 PIV.";
+
+"%@ is for 'mPIV'. %@ = 1 PIV." = "%@ is for 'mPIV'. %@ = 1 PIV.";
 
 /* No comment provided by engineer. */
 "%@ is not allowed to access the camera" = "%@ is not allowed to access the camera";
@@ -45,13 +46,15 @@
 "\nA device passcode is needed to safeguard your wallet. Go to settings and turn passcode on to continue." = "\nA device passcode is needed to safeguard your wallet. Go to settings and turn passcode on to continue.";
 
 /* No comment provided by engineer. */
-"\nADDRESS ALREADY USED\ndash addresses are intended for single use only\n\nre-use reduces privacy for both you and the recipient and can result in loss if the recipient doesn't directly control the address" = "\nADDRESS ALREADY USED\ndash addresses are intended for single use only\n\nre-use reduces privacy for both you and the recipient and can result in loss if the recipient doesn't directly control the address";
+"\nADDRESS ALREADY USED\nPIVX addresses are intended for single use only\n\nre-use reduces privacy for both you and the recipient and can result in loss if the recipient doesn't directly control the address" = "\nADDRESS ALREADY USED\nPIVX addresses are intended for single use only\n\nre-use reduces privacy for both you and the recipient and can result in loss if the recipient doesn't directly control the address";
 
 /* No comment provided by engineer. */
 "\nallow camera access in\nSettings->Privacy->Camera->%@" = "\nallow camera access in\nSettings->Privacy->Camera->%@";
 
 /* No comment provided by engineer. */
-"\nDO NOT let anyone see your recovery\nphrase or they can spend your dash.\n" = "\nDO NOT let anyone see your recovery\nphrase or they can spend your PIV.\n";
+
+"\nDO NOT let anyone see your recovery\nphrase or they can spend your PIV.\n" = "\nDO NOT let anyone see your recovery\nphrase or they can spend your PIVX.\n";
+
 
 /* No comment provided by engineer. */
 "\nDO NOT take a screenshot.\nScreenshots are visible to other apps\nand devices.\n" = "\nDO NOT take a screenshot.\nScreenshots are visible to other apps\nand devices.\n";
@@ -84,7 +87,8 @@
 "Application %@ is requesting an address so it can pay you.  Would you like to authorize this?" = "Application %@ is requesting an address so it can pay you.  Would you like to authorize this?";
 
 /* No comment provided by engineer. */
-"Application %@ would like to receive your Master Public Key.  This can be used to keep track of your wallet, this can not be used to move your Dash." = "Application %@ would like to receive your Master Public Key.  This can be used to keep track of your wallet, this can not be used to move your PIV.";
+
+"Application %@ would like to receive your Master Public Key.  This can be used to keep track of your wallet, this can not be used to move your PIV." = "Application %@ would like to receive your Master Public Key.  This can be used to keep track of your wallet, this can not be used to move your PIVX.";
 
 /* No comment provided by engineer. */
 "bad password, try again" = "bad password, try again";
@@ -111,10 +115,11 @@
 "block #%d of %d" = "block #%1$d of %2$d";
 
 /* No comment provided by engineer. */
-"Buy Dash" = "Buy PIV";
+
+"Buy PIV" = "Buy PIV";
 
 /* No comment provided by engineer. */
-"Buy dash in dashwallet!" = "Buy PIV in Pivxwallet!";
+"Buy PIV in PIVXwallet!" = "Buy PIV in PIVXwallet!";
 
 /* No comment provided by engineer. */
 "cancel" = "cancel";
@@ -186,31 +191,31 @@
 "couldn't sweep balance" = "couldn't sweep balance";
 
 /* No comment provided by engineer. */
-"couldn't transmit payment to dash network" = "couldn't transmit payment to PIVX network";
+"couldn't transmit payment to PIVX network" = "couldn't transmit payment to PIVX network";
 
 /* No comment provided by engineer. */
-"Dash address" = "PIVX address";
+"PIVX address" = "PIVX address";
 
 /* No comment provided by engineer. */
-"Dash addresses can also be copied to the clipboard. A dash address always starts with 'X' or '7'." = "PIVX addresses can also be copied to the clipboard. A PIVX address always starts with 'X' or '7'.";
+"PIVX addresses can also be copied to the clipboard. A PIVX address always starts with 'X' or '7'." = "PIVX addresses can also be copied to the clipboard. A PIVX address always starts with 'X' or '7'.";
 
 /* No comment provided by engineer. */
-"dash network fee" = "PIVX network fee";
+"PIVX network fee" = "PIVX network fee";
 
 /* No comment provided by engineer. */
-"dash payments can't be less than %@" = "PIVX payments can't be less than %@";
+"PIVX payments can't be less than %@" = "PIVX payments can't be less than %@";
 
 /* No comment provided by engineer. */
-"dash transaction not signed" = "PIVX transaction not signed";
+"PIVX transaction not signed" = "PIVX transaction not signed";
 
 /* No comment provided by engineer. */
-"dash transaction outputs can't be less than %@" = "PIVX transaction outputs can't be less than %@";
+"PIVX transaction outputs can't be less than %@" = "PIVX transaction outputs can't be less than %@";
 
 /* No comment provided by engineer. */
-"DEVICE SECURITY COMPROMISED\nAny 'jailbreak' app can access any other app's keychain data (and steal your dash)." = "DEVICE SECURITY COMPROMISED\nAny 'jailbreak' app can access any other app's keychain data (and steal your PIV).";
+"DEVICE SECURITY COMPROMISED\nAny 'jailbreak' app can access any other app's keychain data (and steal your PIV)." = "DEVICE SECURITY COMPROMISED\nAny 'jailbreak' app can access any other app's keychain data (and steal your PIVX).";
 
 /* No comment provided by engineer. */
-"DEVICE SECURITY COMPROMISED\nAny 'jailbreak' app can access any other app's keychain data (and steal your dash). Wipe this wallet immediately and restore on a secure device." = "DEVICE SECURITY COMPROMISED\nAny 'jailbreak' app can access any other app's keychain data (and steal your PIV). Wipe this wallet immediately and restore on a secure device.";
+"DEVICE SECURITY COMPROMISED\nAny 'jailbreak' app can access any other app's keychain data (and steal your PIV). Wipe this wallet immediately and restore on a secure device." = "DEVICE SECURITY COMPROMISED\nAny 'jailbreak' app can access any other app's keychain data (and steal your PIVX). Wipe this wallet immediately and restore on a secure device.";
 
 /* No comment provided by engineer. */
 "do it later" = "do it later";
@@ -237,7 +242,7 @@
 "enter old passcode" = "enter old passcode";
 
 /* No comment provided by engineer. */
-"error signing dash transaction" = "error signing PIVX transaction";
+"error signing PIVX transaction" = "error signing PIVX transaction";
 
 /* No comment provided by engineer. */
 "error signing transaction" = "error signing transaction";
@@ -282,13 +287,13 @@
 "insufficient funds" = "insufficient funds";
 
 /* No comment provided by engineer. */
-"insufficient funds for dash network fee" = "insufficient funds for PIVX network fee";
+"insufficient funds for PIVX network fee" = "insufficient funds for PIVX network fee";
 
 /* No comment provided by engineer. */
 "INVALID" = "INVALID";
 
 /* No comment provided by engineer. */
-"Let others scan this QR code to get your dash address. Anyone can send dash to your wallet by transferring them to your address." = "Let others scan this QR code to get your PIVX address. Anyone can send PIVX to your wallet by transferring them to your address.";
+"Let others scan this QR code to get your PIVX address. Anyone can send PIV to your wallet by transferring them to your address." = "Let others scan this QR code to get your PIVX address. Anyone can send PIV to your wallet by transferring them to your address.";
 
 /* No comment provided by engineer. */
 "minute" = "minute";
@@ -321,7 +326,7 @@
 "not a valid bitcoin address" = "not a valid bitcoin address";
 
 /* No comment provided by engineer. */
-"not a valid dash address" = "not a valid PIVX address";
+"not a valid PIVX address" = "not a valid PIVX address";
 
 /* No comment provided by engineer. */
 "not a valid pivx address" = "not a valid pivx address";
@@ -330,7 +335,7 @@
 "not a valid private key" = "not a valid private key";
 
 /* No comment provided by engineer. */
-"not connected to the dash network" = "not connected to the PIVX network";
+"not connected to the PIVX network" = "not connected to the PIVX network";
 
 /* No comment provided by engineer. */
 "ok" = "ok";
@@ -372,7 +377,7 @@
 "rate: %@ = %@\nupdated: %@\nblock #%d of %d\nconnected peers: %d\ndl peer: %@" = "rate: %@ = %@\nupdated: %@\nblock #%d of %d\nconnected peers: %d\ndl peer: %@";
 
 /* No comment provided by engineer. */
-"Receive dash at this address: %@" = "Receive PIVX at this address: %@";
+"Receive PIV at this address: %@" = "Receive PIV at this address: %@";
 
 /* No comment provided by engineer. */
 "received" = "received";
@@ -444,7 +449,7 @@
 "send" = "send";
 
 /* No comment provided by engineer. */
-"Send %@ (%@) from this private key into your wallet? The dash network will receive a fee of %@ (%@)." = "Send %1$@ (%2$@) from this private key into your wallet? The PIVX network will receive a fee of %3$@ (%4$@).";
+"Send %@ (%@) from this private key into your wallet? The PIVX network will receive a fee of %@ (%@)." = "Send %1$@ (%2$@) from this private key into your wallet? The PIVX network will receive a fee of %3$@ (%4$@).";
 
 /* No comment provided by engineer. */
 "send address as email" = "send address as email";
@@ -519,13 +524,13 @@
 "the app will now close" = "the app will now close";
 
 /* No comment provided by engineer. */
-"This is your dash address. Tap to copy it or send it by email or sms. The address will change each time you receive funds, but old addresses always work." = "This is your PIVX address. Tap to copy it or send it by email or sms. The address will change each time you receive funds, but old addresses always work.";
+"This is your PIVX address. Tap to copy it or send it by email or sms. The address will change each time you receive funds, but old addresses always work." = "This is your PIVX address. Tap to copy it or send it by email or sms. The address will change each time you receive funds, but old addresses always work.";
 
 /* No comment provided by engineer. */
-"This is your dash balance." = "This is your PIVX balance.";
+"This is your PIVX balance." = "This is your PIVX balance.";
 
 /* No comment provided by engineer. */
-"This is your dash balance. Dash is a currency. The exchange rate changes with the market." = "This is your PIVX balance. PIVX is a currency. The exchange rate changes with the market.";
+"This is your PIVX balance. PIVX is a currency. The exchange rate changes with the market." = "This is your PIVX balance. PIVX is a currency. The exchange rate changes with the market.";
 
 /* No comment provided by engineer. */
 "this payment address is already in your wallet" = "this payment address is already in your wallet";
@@ -633,13 +638,13 @@
 "WRITE DOWN YOUR RECOVERY PHRASE" = "WRITE DOWN YOUR RECOVERY PHRASE";
 
 /* No comment provided by engineer. */
-"You can now buy dash in\ndashwallet with cash or\nbank transfer." = "You can now buy PIV in\nPIVXwallet with cash or\nbank transfer.";
+"You can now buy PIV in\nPIVXwallet with cash or\nbank transfer." = "You can now buy PIV in\nPIVXwallet with cash or\nbank transfer.";
 
 /* No comment provided by engineer. */
-"you must enter your pin in order to enter dashwallet" = "you must enter your pin in order to enter PIVXwallet";
+"you must enter your pin in order to enter PIVXwallet" = "you must enter your pin in order to enter PIVXwallet";
 
 /* No comment provided by engineer. */
-"you received dash!" = "you received PIVX!";
+"you received PIV!" = "you received PIV!";
 
 /* No comment provided by engineer. */
 "Your wallet may be out of sync.\nThis can often be fixed by rescanning the blockchain." = "Your wallet may be out of sync.\nThis can often be fixed by rescanning the blockchain.";

@@ -318,8 +318,8 @@
                                 NSLocalizedString(@"send address as email", nil) style:UIAlertActionStyleDefault handler:^(UIAlertAction *action) {
                                     if ([MFMailComposeViewController canSendMail]) {
                                         MFMailComposeViewController *composeController = [MFMailComposeViewController new];
-                                        
-                                        composeController.subject = NSLocalizedString(@"Dash address", nil);
+
+                                        composeController.subject = NSLocalizedString(@"PIVX address", nil);
                                         [composeController setMessageBody:self.paymentRequest.string isHTML:NO];
                                         [composeController addAttachmentData:UIImagePNGRepresentation(self.qrView.image) mimeType:@"image/png"
                                                                     fileName:@"qr.png"];
@@ -355,7 +355,7 @@
                                         MFMessageComposeViewController *composeController = [MFMessageComposeViewController new];
                                         
                                         if ([MFMessageComposeViewController canSendSubject]) {
-                                            composeController.subject = NSLocalizedString(@"Dash address", nil);
+                                            composeController.subject = NSLocalizedString(@"PIVX address", nil);
                                         }
                                         
                                         composeController.body = self.paymentRequest.string;
@@ -432,7 +432,7 @@ error:(NSError *)error
     if (amount < manager.wallet.minOutputAmount) {
         UIAlertController * alert = [UIAlertController
                                      alertControllerWithTitle:NSLocalizedString(@"amount too small", nil)
-                                     message:[NSString stringWithFormat:NSLocalizedString(@"dash payments can't be less than %@", nil),
+                                     message:[NSString stringWithFormat:NSLocalizedString(@"PIVX payments can't be less than %@", nil),
                                               [manager stringForDashAmount:manager.wallet.minOutputAmount]]
                                      preferredStyle:UIAlertControllerStyleAlert];
         UIAlertAction* okButton = [UIAlertAction
