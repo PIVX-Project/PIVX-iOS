@@ -1,0 +1,22 @@
+//
+//  WOCSellingWizardPaymentCenterViewController.h
+//  Wallofcoins
+//
+//  Created by Genitrust on 23/01/18.
+//  Copyright (c) 2018 Wallofcoins. All rights reserved.
+//
+
+#import <UIKit/UIKit.h>
+#import "WOCBaseViewController.h"
+
+//WOCSellingWizardPaymentCenterViewController
+
+@interface WOCSellingWizardPaymentCenterViewController : WOCBaseViewController
+
+@property (weak, nonatomic) IBOutlet UITextField *paymentCenterTextfield;
+@property (weak, nonatomic) IBOutlet UIButton *nextButton;
+
+- (IBAction)onNextButtonClick:(id)sender;
+- (IBAction)onUseNewAccountButtonClick:(id)sender;
+
+@end

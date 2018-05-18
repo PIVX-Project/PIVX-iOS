@@ -62,7 +62,9 @@ static const CGFloat MBDefaultDetailsLabelFontSize = 12.f;
     MBProgressHUD *hud = [[self alloc] initWithView:view];
     hud.removeFromSuperViewOnHide = YES;
     [view addSubview:hud];
-    [hud showAnimated:animated];
+    dispatch_async(dispatch_get_main_queue(), ^(void) {
+         [hud showAnimated:animated];
+    });
     return hud;
 }
 

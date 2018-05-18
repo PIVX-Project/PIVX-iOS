@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BeO-Yt-c4D">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BeO-Yt-c4D">
     <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -744,17 +746,18 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="N4m-rf-eq3" userLabel="Layout View">
-                                <rect key="frame" x="4" y="0.0" width="414" height="164.33333333333334"/>
+                                <rect key="frame" x="4" y="0.0" width="414" height="164"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LDt-79-hdf" userLabel="Layout View">
-                                <rect key="frame" x="4" y="125.99999999999999" width="414" height="163.66666666666663"/>
+                                <rect key="frame" x="4" y="138.33333333333337" width="414" height="163.66666666666663"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             </view>
                             <label opaque="NO" clipsSubviews="YES" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Receive PIV" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qel-3J-2VC">
-                                <rect key="frame" x="148.66666666666666" y="81" width="116.99999999999997" height="45"/>
+                                <rect key="frame" x="132.33333333333334" y="93.333333333333343" width="150.00000000000003" height="45"/>
                                 <gestureRecognizers/>
                                 <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="SCn-dg-rVc"/>
                                     <constraint firstAttribute="height" constant="45" id="wJO-7N-OV1"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
@@ -765,10 +768,10 @@
                                 </connections>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NFx-Li-ByS" userLabel="border">
-                                <rect key="frame" x="81" y="290" width="252" height="252"/>
+                                <rect key="frame" x="93.333333333333329" y="302.33333333333331" width="227.66666666666669" height="227.66666666666669"/>
                                 <subviews>
                                     <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="PTm-4L-adQ" userLabel="qr">
-                                        <rect key="frame" x="1" y="1" width="250" height="250"/>
+                                        <rect key="frame" x="1" y="1" width="225.66666666666666" height="225.66666666666666"/>
                                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <gestureRecognizers/>
                                         <connections>
@@ -778,16 +781,15 @@
                                 </subviews>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.14999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="252" id="Luu-1p-LQL"/>
                                     <constraint firstItem="PTm-4L-adQ" firstAttribute="top" secondItem="NFx-Li-ByS" secondAttribute="top" constant="1" id="MJj-Ym-6Ng"/>
+                                    <constraint firstAttribute="width" secondItem="NFx-Li-ByS" secondAttribute="height" multiplier="1:1" id="RZf-oO-oi4"/>
                                     <constraint firstAttribute="bottom" secondItem="PTm-4L-adQ" secondAttribute="bottom" constant="1" id="WQ8-iO-eVO"/>
                                     <constraint firstItem="PTm-4L-adQ" firstAttribute="leading" secondItem="NFx-Li-ByS" secondAttribute="leading" constant="1" id="WYp-rv-Vqy"/>
-                                    <constraint firstAttribute="height" constant="252" id="m2h-h2-lNQ"/>
                                     <constraint firstAttribute="trailing" secondItem="PTm-4L-adQ" secondAttribute="trailing" constant="1" id="zrf-WI-jvL"/>
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XV7-2s-hZs">
-                                <rect key="frame" x="8" y="550" width="398" height="40"/>
+                                <rect key="frame" x="8" y="538" width="398" height="40"/>
                                 <gestureRecognizers/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="IAL-YH-UYR"/>
@@ -802,12 +804,39 @@
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imgRecieve" translatesAutoresizingMaskIntoConstraints="NO" id="hIf-VN-Is4">
-                                <rect key="frame" x="157" y="150" width="100" height="100"/>
+                                <rect key="frame" x="157" y="162.33333333333334" width="100" height="100.00000000000003"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="03n-l8-EU8"/>
                                     <constraint firstAttribute="width" constant="100" id="0nf-K1-zBT"/>
                                 </constraints>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Mv-Ux-m7Z">
+                                <rect key="frame" x="94.333333333333329" y="583" width="225.66666666666669" height="36"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="0Mv-Ux-m7Z" secondAttribute="height" multiplier="25:4" id="kb4-0u-gQV"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <inset key="contentEdgeInsets" minX="10" minY="0.0" maxX="10" maxY="0.0"/>
+                                <size key="titleShadowOffset" width="0.0" height="1"/>
+                                <state key="normal" title="Buy PIV with cash">
+                                    <color key="titleColor" red="0.33333333329999998" green="0.2784313725" blue="0.42352941179999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <state key="disabled" backgroundImage="imgButtonHover">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <state key="selected" backgroundImage="imgButtonHover">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <state key="highlighted" backgroundImage="imgButtonHover">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="buyPIVXWithCashAction:" destination="XLw-gP-lYw" eventType="touchUpInside" id="xFc-sb-1c4"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.33333333329999998" green="0.2784313725" blue="0.42352941179999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <gestureRecognizers/>
@@ -819,14 +848,19 @@
                             <constraint firstItem="NFx-Li-ByS" firstAttribute="top" secondItem="hIf-VN-Is4" secondAttribute="bottom" constant="40" id="9gW-eo-eh4"/>
                             <constraint firstItem="NFx-Li-ByS" firstAttribute="centerX" secondItem="Tcv-OZ-Abu" secondAttribute="centerX" id="CBr-ND-UkV"/>
                             <constraint firstItem="Tcv-OZ-Abu" firstAttribute="centerX" secondItem="qel-3J-2VC" secondAttribute="centerX" id="Cbc-27-Go0"/>
+                            <constraint firstItem="0Mv-Ux-m7Z" firstAttribute="width" secondItem="PTm-4L-adQ" secondAttribute="width" id="FO7-kt-Bhl"/>
                             <constraint firstItem="N4m-rf-eq3" firstAttribute="leading" secondItem="bFo-w9-Ygt" secondAttribute="leadingMargin" constant="-16" id="GgH-CD-ytC"/>
                             <constraint firstItem="hIf-VN-Is4" firstAttribute="top" secondItem="qel-3J-2VC" secondAttribute="bottom" constant="24" id="IYr-AY-2aV"/>
                             <constraint firstItem="XV7-2s-hZs" firstAttribute="leading" secondItem="Tcv-OZ-Abu" secondAttribute="leading" constant="8" id="LqU-Rt-BVF"/>
                             <constraint firstItem="Tcv-OZ-Abu" firstAttribute="trailing" secondItem="XV7-2s-hZs" secondAttribute="trailing" constant="8" id="MGc-L3-fmW"/>
+                            <constraint firstItem="NFx-Li-ByS" firstAttribute="width" secondItem="bFo-w9-Ygt" secondAttribute="width" multiplier="0.55" id="Nqm-BK-13l"/>
+                            <constraint firstItem="0Mv-Ux-m7Z" firstAttribute="top" secondItem="XV7-2s-hZs" secondAttribute="bottom" constant="5" id="Uc6-be-mVJ"/>
+                            <constraint firstItem="0Mv-Ux-m7Z" firstAttribute="centerX" secondItem="bFo-w9-Ygt" secondAttribute="centerX" id="ahx-15-3Sx"/>
                             <constraint firstItem="PTm-4L-adQ" firstAttribute="top" secondItem="LDt-79-hdf" secondAttribute="bottom" constant="1.5" id="cCU-b2-B23"/>
                             <constraint firstItem="hIf-VN-Is4" firstAttribute="centerX" secondItem="bFo-w9-Ygt" secondAttribute="centerX" id="djc-WQ-NJA"/>
                             <constraint firstItem="N4m-rf-eq3" firstAttribute="top" secondItem="Tcv-OZ-Abu" secondAttribute="top" id="dnB-NB-OMz"/>
                             <constraint firstItem="N4m-rf-eq3" firstAttribute="width" secondItem="bFo-w9-Ygt" secondAttribute="width" id="jn3-ui-GdX"/>
+                            <constraint firstItem="qel-3J-2VC" firstAttribute="top" secondItem="N4m-rf-eq3" secondAttribute="bottom" constant="-70.666666666666657" id="jnU-pe-Lhs"/>
                             <constraint firstItem="NFx-Li-ByS" firstAttribute="centerY" secondItem="bFo-w9-Ygt" secondAttribute="centerY" constant="80" id="kgo-Dt-qiL"/>
                             <constraint firstItem="LDt-79-hdf" firstAttribute="width" secondItem="bFo-w9-Ygt" secondAttribute="width" id="xLW-Of-ERh"/>
                         </constraints>
@@ -864,6 +898,31 @@
                         <action selector="tip:" destination="XLw-gP-lYw" id="2Hw-ST-BSW"/>
                     </connections>
                 </swipeGestureRecognizer>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s11-Mp-YF5">
+                    <rect key="frame" x="0.0" y="0.0" width="252" height="40"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <gestureRecognizers/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="neT-Ih-iZ3"/>
+                        <constraint firstAttribute="width" secondItem="s11-Mp-YF5" secondAttribute="height" multiplier="63:10" id="pgz-Ry-GfX"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <inset key="contentEdgeInsets" minX="10" minY="0.0" maxX="10" maxY="0.0"/>
+                    <size key="titleShadowOffset" width="0.0" height="1"/>
+                    <state key="normal" title="Buy PIVX with Cash">
+                        <color key="titleColor" red="0.33333333329999998" green="0.2784313725" blue="0.42352941179999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <state key="disabled" backgroundImage="imgButtonHover">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <state key="selected" backgroundImage="imgButtonHover">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <state key="highlighted" backgroundImage="imgButtonHover">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                </button>
             </objects>
             <point key="canvasLocation" x="1988" y="1429.8350824587708"/>
         </scene>
@@ -904,7 +963,7 @@
                                 </constraints>
                             </view>
                             <label opaque="NO" clipsSubviews="YES" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SEND PIV" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l5l-JR-LKA">
-                                <rect key="frame" x="161.66666666666666" y="154" width="91" height="45"/>
+                                <rect key="frame" x="167.66666666666666" y="154" width="79.333333333333343" height="45"/>
                                 <gestureRecognizers/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="45" id="TC5-Ce-4Ic"/>
@@ -987,7 +1046,7 @@
                                 </connections>
                             </textView>
                             <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SwiftX" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lbm-03-nu4">
-                                <rect key="frame" x="85" y="551" width="95" height="21"/>
+                                <rect key="frame" x="85" y="551" width="48.666666666666657" height="21"/>
                                 <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -1904,7 +1963,7 @@ a global community comprised of creators, innovators, and technology enthusiasts
                                         </constraints>
                                     </view>
                                     <label opaque="NO" clipsSubviews="YES" tag="411" contentMode="left" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="300" translatesAutoresizingMaskIntoConstraints="NO" id="uvz-hk-Nr4">
-                                        <rect key="frame" x="76" y="20" width="263" height="82"/>
+                                        <rect key="frame" x="60.666666666666657" y="20" width="294" height="82"/>
                                         <gestureRecognizers/>
                                         <string key="text">Pivx wallet v%ver%%net%
 copyright © 2017 The PIVX Developers
@@ -1914,7 +1973,7 @@ This app is open source:</string>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="https://github.com/PIVX-Project/PIVX-iOS" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="300" translatesAutoresizingMaskIntoConstraints="NO" id="5OA-tB-Exg">
-                                        <rect key="frame" x="87.999999999999986" y="108" width="238.66666666666663" height="41"/>
+                                        <rect key="frame" x="84.333333333333314" y="108" width="246" height="41"/>
                                         <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
                                         <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>

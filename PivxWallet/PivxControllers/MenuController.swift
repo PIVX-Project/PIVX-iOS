@@ -14,7 +14,7 @@ class MenuController: BaseController {
     @IBOutlet weak var titleLabel2: UILabel!
     @IBOutlet weak var titleLabel3: UILabel!
     @IBOutlet weak var titleLabel4: UILabel!
-    
+    @IBOutlet weak var titleLabel5: UILabel!
     
     @IBOutlet weak var syncImageView: UIImageView!
     @IBOutlet weak var syncLabel: UILabel!
@@ -95,6 +95,7 @@ class MenuController: BaseController {
             slideMenuController()?.closeLeft()
             return
         }
+        
         let controller = DonationController(nibName:"Donation", bundle:nil)
         let navigation = UINavigationController(rootViewController: controller)
         slideMenuController()?.changeMainViewController(navigation, close: true)
@@ -102,11 +103,31 @@ class MenuController: BaseController {
         selectTitle()
     }
     
+    @IBAction func tappedWOCButton(_ sender: Any) {
+        if optionSelected == 5 {
+            slideMenuController()?.closeLeft()
+            return
+        }
+        
+        DispatchQueue.main.async(execute: {() -> Void in
+            let storyboard = UIStoryboard(name: "buyDash", bundle: nil)
+            let navController = storyboard.instantiateViewController(withIdentifier: "wocNavigationController") as? UINavigationController
+            navController?.navigationBar.tintColor = UIColor.white
+            self.slideMenuController()?.changeMainViewController(navController!, close: true)
+        })
+        
+//        let controller = DonationController(nibName:"Donation", bundle:nil)
+//        let navigation = UINavigationController(rootViewController: controller)
+//        slideMenuController()?.changeMainViewController(navigation, close: true)
+        optionSelected = 5
+        selectTitle()
+    }
     func selectTitle(){
         titleLabel1.textColor = K.color.gray_r155g155b155
         titleLabel2.textColor = K.color.gray_r155g155b155
         titleLabel3.textColor = K.color.gray_r155g155b155
         titleLabel4.textColor = K.color.gray_r155g155b155
+        titleLabel5.textColor = K.color.gray_r155g155b155
         
         switch optionSelected {
         case 1:
@@ -120,6 +141,9 @@ class MenuController: BaseController {
             break
         case 4:
             titleLabel4.textColor = K.color.purple_r85g71b108
+            break
+        case 5:
+            titleLabel5.textColor = K.color.purple_r85g71b108
             break
         default:
             print("default")
@@ -157,6 +181,5 @@ class MenuController: BaseController {
         print("Sync failed!");
         syncLabel.text = "Not connection";
     }
-    
     
 }
