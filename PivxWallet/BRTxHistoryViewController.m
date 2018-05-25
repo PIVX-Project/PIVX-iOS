@@ -754,6 +754,7 @@ static NSString *dateFormat(NSString *template)
                 [self performSelector:@selector(more:) withObject:tableView afterDelay:0.0];
             }
             else if (self.transactions.count > 0) [self showTx:self.transactions[indexPath.row]]; // transaction details
+
             NSLog(@"Open WOC module Here");
             [self loadWOCModule];
             

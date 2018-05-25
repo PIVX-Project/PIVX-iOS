@@ -95,7 +95,6 @@ class MenuController: BaseController {
             slideMenuController()?.closeLeft()
             return
         }
-        
         let controller = DonationController(nibName:"Donation", bundle:nil)
         let navigation = UINavigationController(rootViewController: controller)
         slideMenuController()?.changeMainViewController(navigation, close: true)
@@ -116,12 +115,10 @@ class MenuController: BaseController {
             self.slideMenuController()?.changeMainViewController(navController!, close: true)
         })
         
-//        let controller = DonationController(nibName:"Donation", bundle:nil)
-//        let navigation = UINavigationController(rootViewController: controller)
-//        slideMenuController()?.changeMainViewController(navigation, close: true)
         optionSelected = 5
         selectTitle()
     }
+    
     func selectTitle(){
         titleLabel1.textColor = K.color.gray_r155g155b155
         titleLabel2.textColor = K.color.gray_r155g155b155
@@ -181,5 +178,6 @@ class MenuController: BaseController {
         print("Sync failed!");
         syncLabel.text = "Not connection";
     }
+    
     
 }
