@@ -205,6 +205,7 @@
     [self refereshToken];
     [self.defaults removeObjectForKey:WOCApiBodyCountryCode];
     [self.defaults synchronize];
+    
     if ([[WOCLocationManager sharedInstance] locationServiceEnabled]) {
         [self findZipCode];
         [self.locationButton setUserInteractionEnabled:NO];

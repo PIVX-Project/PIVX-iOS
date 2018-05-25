@@ -11,10 +11,6 @@
 #import "WOCBuyingSummaryViewController.h"
 #import "WOCBuyingWizardHomeViewController.h"
 
-#import "WOCSellingWizardHomeViewController.h"
-#import "WOCSellingInstructionsViewController.h"
-#import "WOCSellingSummaryViewController.h"
-
 @interface WOCBaseViewController ()
 
 @end
@@ -278,13 +274,6 @@
             BRAppDelegate *appDelegate = (BRAppDelegate*)[[UIApplication sharedApplication] delegate];
             appDelegate.window.rootViewController = navController;
         }
-        else {
-            WOCSellingWizardHomeViewController *vc = [storyboard instantiateViewControllerWithIdentifier:@"WOCSellingWizardHomeViewController"];// Or any VC with Id
-            vc.isFromSend = YES;
-            [navController.navigationBar setTintColor:[UIColor whiteColor]];
-            BRAppDelegate *appDelegate = (BRAppDelegate*)[[UIApplication sharedApplication] delegate];
-            appDelegate.window.rootViewController = navController;
-        }
     });
 }
 
@@ -337,14 +326,6 @@
                                 buyingInstructionsViewController.orderDict = orderDict;
                                 [self pushViewController:buyingInstructionsViewController animated:YES];
                             }
-                            else {
-                                WOCSellingInstructionsViewController *sellingInstructionsViewController = [self getViewController:@"WOCSellingInstructionsViewController"];
-                                sellingInstructionsViewController.phoneNo = phoneNo;
-                                sellingInstructionsViewController.isFromSend = YES;
-                                sellingInstructionsViewController.isFromOffer = NO;
-                                sellingInstructionsViewController.orderDict = orderDict;
-                                [self pushViewController:sellingInstructionsViewController animated:YES];
-                            }
                         }
                     }
                     else {
@@ -356,13 +337,6 @@
                             buyingInstructionsViewController.isFromSend = YES;
                             [self pushViewController:buyingInstructionsViewController animated:YES];
                         }
-                        else {
-                            WOCSellingSummaryViewController *sellingSummaryViewController = [self getViewController:@"WOCSellingSummaryViewController"];
-                            sellingSummaryViewController.phoneNo = phoneNo;
-                            sellingSummaryViewController.orders = orders;
-                            sellingSummaryViewController.isFromSend = YES;
-                            [self pushViewController:sellingSummaryViewController animated:YES];
-                        }
                     }
                 }
                 else {
@@ -373,14 +347,6 @@
                         buyingSummaryViewController.isFromSend = YES;
                         buyingSummaryViewController.isHideSuccessAlert = YES;
                         [self pushViewController:buyingSummaryViewController animated:YES];
-                    }
-                    else {
-                        WOCSellingSummaryViewController *sellingSummaryViewController = [self getViewController:@"WOCSellingSummaryViewController"];
-                        sellingSummaryViewController.phoneNo = phoneNo;
-                        sellingSummaryViewController.orders = orders;
-                        sellingSummaryViewController.isFromSend = YES;
-                        sellingSummaryViewController.isHideSuccessAlert = YES;
-                        [self pushViewController:sellingSummaryViewController animated:YES];
                     }
                 }
             }

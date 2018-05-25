@@ -33,24 +33,6 @@
 		04533BDE20998E4E00022EE3 /* WOCHoldIssueViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04533B9C20998E4E00022EE3 /* WOCHoldIssueViewController.m */; };
 		04533BDF20998E4E00022EE3 /* WOCMedia.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04533B9D20998E4E00022EE3 /* WOCMedia.xcassets */; };
 		04533BE020998E4E00022EE3 /* WOCPasswordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04533B9F20998E4E00022EE3 /* WOCPasswordViewController.m */; };
-		04533BE120998E4E00022EE3 /* WOCSellingAddNewBankViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04533BA220998E4E00022EE3 /* WOCSellingAddNewBankViewController.m */; };
-		04533BE220998E4E00022EE3 /* WOCSellingAdsInstructionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04533BA420998E4E00022EE3 /* WOCSellingAdsInstructionsViewController.m */; };
-		04533BE320998E4E00022EE3 /* WOCSellingAdvancedOptionsInstructionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04533BA620998E4E00022EE3 /* WOCSellingAdvancedOptionsInstructionsViewController.m */; };
-		04533BE420998E4E00022EE3 /* WOCSellingCreatePasswordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04533BA820998E4E00022EE3 /* WOCSellingCreatePasswordViewController.m */; };
-		04533BE520998E4E00022EE3 /* WOCSellingInstructionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04533BAA20998E4E00022EE3 /* WOCSellingInstructionsViewController.m */; };
-		04533BE620998E4E00022EE3 /* WOCSellingPasswordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04533BAC20998E4E00022EE3 /* WOCSellingPasswordViewController.m */; };
-		04533BE720998E4E00022EE3 /* WOCSellingSignInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04533BAE20998E4E00022EE3 /* WOCSellingSignInViewController.m */; };
-		04533BE820998E4E00022EE3 /* WOCSellingSingUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04533BB020998E4E00022EE3 /* WOCSellingSingUpViewController.m */; };
-		04533BE920998E4E00022EE3 /* WOCSellingSummaryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04533BB220998E4E00022EE3 /* WOCSellingSummaryViewController.m */; };
-		04533BEA20998E4E00022EE3 /* WOCSellingVerifyDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04533BB420998E4E00022EE3 /* WOCSellingVerifyDetailViewController.m */; };
-		04533BEB20998E4E00022EE3 /* WOCSellingWizardConfirmCodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04533BB620998E4E00022EE3 /* WOCSellingWizardConfirmCodeViewController.m */; };
-		04533BEC20998E4E00022EE3 /* WOCSellingWizardHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04533BB820998E4E00022EE3 /* WOCSellingWizardHomeViewController.m */; };
-		04533BED20998E4F00022EE3 /* WOCSellingWizardInputAmountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04533BBA20998E4E00022EE3 /* WOCSellingWizardInputAmountViewController.m */; };
-		04533BEE20998E4F00022EE3 /* WOCSellingWizardInputEmailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04533BBC20998E4E00022EE3 /* WOCSellingWizardInputEmailViewController.m */; };
-		04533BEF20998E4F00022EE3 /* WOCSellingWizardInputPhoineNumberViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04533BBE20998E4E00022EE3 /* WOCSellingWizardInputPhoineNumberViewController.m */; };
-		04533BF020998E4F00022EE3 /* WOCSellingWizardOfferListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04533BC020998E4E00022EE3 /* WOCSellingWizardOfferListViewController.m */; };
-		04533BF120998E4F00022EE3 /* WOCSellingWizardPaymentCenterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04533BC220998E4E00022EE3 /* WOCSellingWizardPaymentCenterViewController.m */; };
-		04533BF220998E4F00022EE3 /* WOCSellingWizardZipCodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04533BC420998E4E00022EE3 /* WOCSellingWizardZipCodeViewController.m */; };
 		04533BF320998E4F00022EE3 /* WOCSignInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04533BC620998E4E00022EE3 /* WOCSignInViewController.m */; };
 		220128D31C753C670001CAC1 /* BRSocketHelpers.c in Sources */ = {isa = PBXBuildFile; fileRef = 220128D11C753C670001CAC1 /* BRSocketHelpers.c */; };
 		2204604E1B9F61E600D07B61 /* BREventManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2204604D1B9F61E600D07B61 /* BREventManager.m */; };
@@ -315,42 +297,6 @@
 		04533B9D20998E4E00022EE3 /* WOCMedia.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = WOCMedia.xcassets; sourceTree = "<group>"; };
 		04533B9E20998E4E00022EE3 /* WOCPasswordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WOCPasswordViewController.h; sourceTree = "<group>"; };
 		04533B9F20998E4E00022EE3 /* WOCPasswordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WOCPasswordViewController.m; sourceTree = "<group>"; };
-		04533BA120998E4E00022EE3 /* WOCSellingAddNewBankViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WOCSellingAddNewBankViewController.h; sourceTree = "<group>"; };
-		04533BA220998E4E00022EE3 /* WOCSellingAddNewBankViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WOCSellingAddNewBankViewController.m; sourceTree = "<group>"; };
-		04533BA320998E4E00022EE3 /* WOCSellingAdsInstructionsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WOCSellingAdsInstructionsViewController.h; sourceTree = "<group>"; };
-		04533BA420998E4E00022EE3 /* WOCSellingAdsInstructionsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WOCSellingAdsInstructionsViewController.m; sourceTree = "<group>"; };
-		04533BA520998E4E00022EE3 /* WOCSellingAdvancedOptionsInstructionsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WOCSellingAdvancedOptionsInstructionsViewController.h; sourceTree = "<group>"; };
-		04533BA620998E4E00022EE3 /* WOCSellingAdvancedOptionsInstructionsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WOCSellingAdvancedOptionsInstructionsViewController.m; sourceTree = "<group>"; };
-		04533BA720998E4E00022EE3 /* WOCSellingCreatePasswordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WOCSellingCreatePasswordViewController.h; sourceTree = "<group>"; };
-		04533BA820998E4E00022EE3 /* WOCSellingCreatePasswordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WOCSellingCreatePasswordViewController.m; sourceTree = "<group>"; };
-		04533BA920998E4E00022EE3 /* WOCSellingInstructionsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WOCSellingInstructionsViewController.h; sourceTree = "<group>"; };
-		04533BAA20998E4E00022EE3 /* WOCSellingInstructionsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WOCSellingInstructionsViewController.m; sourceTree = "<group>"; };
-		04533BAB20998E4E00022EE3 /* WOCSellingPasswordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WOCSellingPasswordViewController.h; sourceTree = "<group>"; };
-		04533BAC20998E4E00022EE3 /* WOCSellingPasswordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WOCSellingPasswordViewController.m; sourceTree = "<group>"; };
-		04533BAD20998E4E00022EE3 /* WOCSellingSignInViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WOCSellingSignInViewController.h; sourceTree = "<group>"; };
-		04533BAE20998E4E00022EE3 /* WOCSellingSignInViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WOCSellingSignInViewController.m; sourceTree = "<group>"; };
-		04533BAF20998E4E00022EE3 /* WOCSellingSingUpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WOCSellingSingUpViewController.h; sourceTree = "<group>"; };
-		04533BB020998E4E00022EE3 /* WOCSellingSingUpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WOCSellingSingUpViewController.m; sourceTree = "<group>"; };
-		04533BB120998E4E00022EE3 /* WOCSellingSummaryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WOCSellingSummaryViewController.h; sourceTree = "<group>"; };
-		04533BB220998E4E00022EE3 /* WOCSellingSummaryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WOCSellingSummaryViewController.m; sourceTree = "<group>"; };
-		04533BB320998E4E00022EE3 /* WOCSellingVerifyDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WOCSellingVerifyDetailViewController.h; sourceTree = "<group>"; };
-		04533BB420998E4E00022EE3 /* WOCSellingVerifyDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WOCSellingVerifyDetailViewController.m; sourceTree = "<group>"; };
-		04533BB520998E4E00022EE3 /* WOCSellingWizardConfirmCodeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WOCSellingWizardConfirmCodeViewController.h; sourceTree = "<group>"; };
-		04533BB620998E4E00022EE3 /* WOCSellingWizardConfirmCodeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WOCSellingWizardConfirmCodeViewController.m; sourceTree = "<group>"; };
-		04533BB720998E4E00022EE3 /* WOCSellingWizardHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WOCSellingWizardHomeViewController.h; sourceTree = "<group>"; };
-		04533BB820998E4E00022EE3 /* WOCSellingWizardHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WOCSellingWizardHomeViewController.m; sourceTree = "<group>"; };
-		04533BB920998E4E00022EE3 /* WOCSellingWizardInputAmountViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WOCSellingWizardInputAmountViewController.h; sourceTree = "<group>"; };
-		04533BBA20998E4E00022EE3 /* WOCSellingWizardInputAmountViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WOCSellingWizardInputAmountViewController.m; sourceTree = "<group>"; };
-		04533BBB20998E4E00022EE3 /* WOCSellingWizardInputEmailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WOCSellingWizardInputEmailViewController.h; sourceTree = "<group>"; };
-		04533BBC20998E4E00022EE3 /* WOCSellingWizardInputEmailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WOCSellingWizardInputEmailViewController.m; sourceTree = "<group>"; };
-		04533BBD20998E4E00022EE3 /* WOCSellingWizardInputPhoineNumberViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WOCSellingWizardInputPhoineNumberViewController.h; sourceTree = "<group>"; };
-		04533BBE20998E4E00022EE3 /* WOCSellingWizardInputPhoineNumberViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WOCSellingWizardInputPhoineNumberViewController.m; sourceTree = "<group>"; };
-		04533BBF20998E4E00022EE3 /* WOCSellingWizardOfferListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WOCSellingWizardOfferListViewController.h; sourceTree = "<group>"; };
-		04533BC020998E4E00022EE3 /* WOCSellingWizardOfferListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WOCSellingWizardOfferListViewController.m; sourceTree = "<group>"; };
-		04533BC120998E4E00022EE3 /* WOCSellingWizardPaymentCenterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WOCSellingWizardPaymentCenterViewController.h; sourceTree = "<group>"; };
-		04533BC220998E4E00022EE3 /* WOCSellingWizardPaymentCenterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WOCSellingWizardPaymentCenterViewController.m; sourceTree = "<group>"; };
-		04533BC320998E4E00022EE3 /* WOCSellingWizardZipCodeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WOCSellingWizardZipCodeViewController.h; sourceTree = "<group>"; };
-		04533BC420998E4E00022EE3 /* WOCSellingWizardZipCodeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WOCSellingWizardZipCodeViewController.m; sourceTree = "<group>"; };
 		04533BC520998E4E00022EE3 /* WOCSignInViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WOCSignInViewController.h; sourceTree = "<group>"; };
 		04533BC620998E4E00022EE3 /* WOCSignInViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WOCSignInViewController.m; sourceTree = "<group>"; };
 		220128D11C753C670001CAC1 /* BRSocketHelpers.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = BRSocketHelpers.c; sourceTree = "<group>"; };
@@ -736,7 +682,6 @@
 				04533B9D20998E4E00022EE3 /* WOCMedia.xcassets */,
 				04533B9E20998E4E00022EE3 /* WOCPasswordViewController.h */,
 				04533B9F20998E4E00022EE3 /* WOCPasswordViewController.m */,
-				04533BA020998E4E00022EE3 /* WOCSellng */,
 				04533BC520998E4E00022EE3 /* WOCSignInViewController.h */,
 				04533BC620998E4E00022EE3 /* WOCSignInViewController.m */,
 			);
@@ -801,49 +746,6 @@
 				04533B9620998E4E00022EE3 /* WOCAsyncImageView.m */,
 			);
 			path = AsyncImageView;
-			sourceTree = "<group>";
-		};
-		04533BA020998E4E00022EE3 /* WOCSellng */ = {
-			isa = PBXGroup;
-			children = (
-				04533BA120998E4E00022EE3 /* WOCSellingAddNewBankViewController.h */,
-				04533BA220998E4E00022EE3 /* WOCSellingAddNewBankViewController.m */,
-				04533BA320998E4E00022EE3 /* WOCSellingAdsInstructionsViewController.h */,
-				04533BA420998E4E00022EE3 /* WOCSellingAdsInstructionsViewController.m */,
-				04533BA520998E4E00022EE3 /* WOCSellingAdvancedOptionsInstructionsViewController.h */,
-				04533BA620998E4E00022EE3 /* WOCSellingAdvancedOptionsInstructionsViewController.m */,
-				04533BA720998E4E00022EE3 /* WOCSellingCreatePasswordViewController.h */,
-				04533BA820998E4E00022EE3 /* WOCSellingCreatePasswordViewController.m */,
-				04533BA920998E4E00022EE3 /* WOCSellingInstructionsViewController.h */,
-				04533BAA20998E4E00022EE3 /* WOCSellingInstructionsViewController.m */,
-				04533BAB20998E4E00022EE3 /* WOCSellingPasswordViewController.h */,
-				04533BAC20998E4E00022EE3 /* WOCSellingPasswordViewController.m */,
-				04533BAD20998E4E00022EE3 /* WOCSellingSignInViewController.h */,
-				04533BAE20998E4E00022EE3 /* WOCSellingSignInViewController.m */,
-				04533BAF20998E4E00022EE3 /* WOCSellingSingUpViewController.h */,
-				04533BB020998E4E00022EE3 /* WOCSellingSingUpViewController.m */,
-				04533BB120998E4E00022EE3 /* WOCSellingSummaryViewController.h */,
-				04533BB220998E4E00022EE3 /* WOCSellingSummaryViewController.m */,
-				04533BB320998E4E00022EE3 /* WOCSellingVerifyDetailViewController.h */,
-				04533BB420998E4E00022EE3 /* WOCSellingVerifyDetailViewController.m */,
-				04533BB520998E4E00022EE3 /* WOCSellingWizardConfirmCodeViewController.h */,
-				04533BB620998E4E00022EE3 /* WOCSellingWizardConfirmCodeViewController.m */,
-				04533BB720998E4E00022EE3 /* WOCSellingWizardHomeViewController.h */,
-				04533BB820998E4E00022EE3 /* WOCSellingWizardHomeViewController.m */,
-				04533BB920998E4E00022EE3 /* WOCSellingWizardInputAmountViewController.h */,
-				04533BBA20998E4E00022EE3 /* WOCSellingWizardInputAmountViewController.m */,
-				04533BBB20998E4E00022EE3 /* WOCSellingWizardInputEmailViewController.h */,
-				04533BBC20998E4E00022EE3 /* WOCSellingWizardInputEmailViewController.m */,
-				04533BBD20998E4E00022EE3 /* WOCSellingWizardInputPhoineNumberViewController.h */,
-				04533BBE20998E4E00022EE3 /* WOCSellingWizardInputPhoineNumberViewController.m */,
-				04533BBF20998E4E00022EE3 /* WOCSellingWizardOfferListViewController.h */,
-				04533BC020998E4E00022EE3 /* WOCSellingWizardOfferListViewController.m */,
-				04533BC120998E4E00022EE3 /* WOCSellingWizardPaymentCenterViewController.h */,
-				04533BC220998E4E00022EE3 /* WOCSellingWizardPaymentCenterViewController.m */,
-				04533BC320998E4E00022EE3 /* WOCSellingWizardZipCodeViewController.h */,
-				04533BC420998E4E00022EE3 /* WOCSellingWizardZipCodeViewController.m */,
-			);
-			path = WOCSellng;
 			sourceTree = "<group>";
 		};
 		2B5735681FE04BEB00110745 /* PivxUtils */ = {
@@ -1820,20 +1722,15 @@
 				752E28AB19234AE300DB5A3C /* BRMerkleBlockEntity.m in Sources */,
 				04533BC920998E4E00022EE3 /* WOCOfferCell.m in Sources */,
 				04533BDE20998E4E00022EE3 /* WOCHoldIssueViewController.m in Sources */,
-				04533BF120998E4F00022EE3 /* WOCSellingWizardPaymentCenterViewController.m in Sources */,
 				04533BD820998E4E00022EE3 /* WOCBuyingWizardPaymentCenterViewController.m in Sources */,
-				04533BEE20998E4F00022EE3 /* WOCSellingWizardInputEmailViewController.m in Sources */,
 				2B8A1C9D1FEB594800C7427C /* EmptyTableCell.swift in Sources */,
 				BA7B53501BDA9A2800355E8D /* BRAppleWatchData.m in Sources */,
 				04533BDC20998E4E00022EE3 /* WOCAlertController.m in Sources */,
 				2B57356E1FE04C4200110745 /* Utils.swift in Sources */,
-				04533BEA20998E4E00022EE3 /* WOCSellingVerifyDetailViewController.m in Sources */,
 				04533BCB20998E4E00022EE3 /* WOCSummaryCell.m in Sources */,
-				04533BE920998E4E00022EE3 /* WOCSellingSummaryViewController.m in Sources */,
 				752E28AC19234AE300DB5A3C /* BRPeerEntity.m in Sources */,
 				FBF2680E1E419318001A1C8B /* DSShapeshiftEntity+CoreDataClass.m in Sources */,
 				2BBE61AB1FE48AF900D06CD7 /* EmptyCell.swift in Sources */,
-				04533BE420998E4E00022EE3 /* WOCSellingCreatePasswordViewController.m in Sources */,
 				2BBE61A31FE4853B00D06CD7 /* AddressContactController.swift in Sources */,
 				FBF268041E414B93001A1C8B /* NSData+Dash.m in Sources */,
 				04533BD620998E4E00022EE3 /* WOCBuyingWizardInputVarificationCodeViewController.m in Sources */,
@@ -1853,11 +1750,8 @@
 				04533BD020998E4E00022EE3 /* WOCBuyingInstructionsViewController.m in Sources */,
 				7548CF3719556FD700EF827F /* BRCopyLabel.m in Sources */,
 				752E28D119234C3600DB5A3C /* BRKey.m in Sources */,
-				04533BE220998E4E00022EE3 /* WOCSellingAdsInstructionsViewController.m in Sources */,
 				04533BDA20998E4E00022EE3 /* WOCDefaultBaseViewController.m in Sources */,
-				04533BED20998E4F00022EE3 /* WOCSellingWizardInputAmountViewController.m in Sources */,
 				84F68C8A1975E9E2002FC300 /* BRScanViewController.m in Sources */,
-				04533BEC20998E4E00022EE3 /* WOCSellingWizardHomeViewController.m in Sources */,
 				2204604E1B9F61E600D07B61 /* BREventManager.m in Sources */,
 				FBF267FD1E414AA2001A1C8B /* DSShapeshiftManager.m in Sources */,
 				752E28D219234C3600DB5A3C /* BRKey+BIP38.m in Sources */,
@@ -1872,7 +1766,6 @@
 				04533BD120998E4E00022EE3 /* WOCBuyingSummaryViewController.m in Sources */,
 				752E28DA19234C3600DB5A3C /* BRWallet.m in Sources */,
 				FB021E561E47E17200D17638 /* FBShimmeringLayer.m in Sources */,
-				04533BE320998E4E00022EE3 /* WOCSellingAdvancedOptionsInstructionsViewController.m in Sources */,
 				752E28DB19234C3600DB5A3C /* BRWalletManager.m in Sources */,
 				752E28D319234C3600DB5A3C /* BRMerkleBlock.m in Sources */,
 				04533BD220998E4E00022EE3 /* WOCBuyingWizardHomeViewController.m in Sources */,
@@ -1884,8 +1777,6 @@
 				752E28D819234C3600DB5A3C /* BRPeerManager.m in Sources */,
 				752E28D419234C3600DB5A3C /* BRPaymentProtocol.m in Sources */,
 				04533BD920998E4E00022EE3 /* WOCBuyingWizardZipCodeViewController.m in Sources */,
-				04533BEF20998E4F00022EE3 /* WOCSellingWizardInputPhoineNumberViewController.m in Sources */,
-				04533BE620998E4E00022EE3 /* WOCSellingPasswordViewController.m in Sources */,
 				752E28D519234C3600DB5A3C /* BRPaymentRequest.m in Sources */,
 				04533BD720998E4E00022EE3 /* WOCBuyingWizardOfferListViewController.m in Sources */,
 				7525B619192453840041C0F2 /* BRNavigationBar.m in Sources */,
@@ -1904,32 +1795,25 @@
 				220128D31C753C670001CAC1 /* BRSocketHelpers.c in Sources */,
 				752E28E919234DA200DB5A3C /* NSManagedObject+Sugar.m in Sources */,
 				04533BD520998E4E00022EE3 /* WOCBuyingWizardInputPhoneNumberViewController.m in Sources */,
-				04533BE520998E4E00022EE3 /* WOCSellingInstructionsViewController.m in Sources */,
 				BA7B53541BDAA0A800355E8D /* BRAppleWatchTransactionData.m in Sources */,
 				FB021E571E47E17200D17638 /* FBShimmeringView.m in Sources */,
 				04533BDD20998E4E00022EE3 /* WOCLocationManager.m in Sources */,
 				04533BC820998E4E00022EE3 /* APIManager.m in Sources */,
 				FBF267A11E414877001A1C8B /* NSString+Dash.m in Sources */,
 				FB021E5B1E4DEFE800D17638 /* MBProgressHUD.m in Sources */,
-				04533BF220998E4F00022EE3 /* WOCSellingWizardZipCodeViewController.m in Sources */,
 				751B2B5C1B68911700EA87FB /* BRTxHistoryViewController.m in Sources */,
 				752E28EA19234DA200DB5A3C /* NSMutableData+Bitcoin.m in Sources */,
 				752E28EB19234DA200DB5A3C /* NSString+Bitcoin.m in Sources */,
 				757C89521A2FCE420076B373 /* BRSettingsViewController.m in Sources */,
 				75D5F3D2191EC270004AB296 /* BRAppDelegate.m in Sources */,
-				04533BE120998E4E00022EE3 /* WOCSellingAddNewBankViewController.m in Sources */,
 				759FBB36193290F600AB4465 /* BRRootViewController.m in Sources */,
 				752E289A192349CE00DB5A3C /* DashWallet.xcdatamodeld in Sources */,
-				04533BEB20998E4E00022EE3 /* WOCSellingWizardConfirmCodeViewController.m in Sources */,
-				04533BE820998E4E00022EE3 /* WOCSellingSingUpViewController.m in Sources */,
 				2BFA523C1FE0AC5C00A3C808 /* MenuController.swift in Sources */,
-				04533BF020998E4F00022EE3 /* WOCSellingWizardOfferListViewController.m in Sources */,
 				04533BE020998E4E00022EE3 /* WOCPasswordViewController.m in Sources */,
 				6BA7F2911FDF048100C1027B /* quark.c in Sources */,
 				759FBB37193290F600AB4465 /* BRSendViewController.m in Sources */,
 				752E28F119234E8100DB5A3C /* Reachability.m in Sources */,
 				2BBE61A91FE48AEC00D06CD7 /* AddressContactCell.swift in Sources */,
-				04533BE720998E4E00022EE3 /* WOCSellingSignInViewController.m in Sources */,
 				75D5F3CE191EC270004AB296 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
