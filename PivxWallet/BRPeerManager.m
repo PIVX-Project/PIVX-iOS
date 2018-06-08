@@ -60,7 +60,7 @@ static const struct { uint32_t height; const char *hash; uint32_t timestamp; uin
 };
 
 static const char *dns_seeds[] = {
-   "192.168.1.131", "pivx-testnet.seed.fuzzbawls.pw","pivx-testnet.seed2.fuzzbawls.pw"//"192.168.0.117","pivx-testnet.seed.fuzzbawls.pw",  //"testnet-seed.dashdot.io"//,"testnet-seed.dashpay.info"
+   "x5.pivx-testnet.seed.fuzzbawls.pw","x5.pivx-testnet.seed2.fuzzbawls.pw"//"192.168.0.117","pivx-testnet.seed.fuzzbawls.pw",  //"testnet-seed.dashdot.io"//,"testnet-seed.dashpay.info"
 };
 
 #else // main net
@@ -115,7 +115,7 @@ static const struct { uint32_t height; const char *hash; uint32_t timestamp; uin
 };
 
 static const char *dns_seeds[] = {
-    "pivx.seed.fuzzbawls.pw", "pivx.seed2.fuzzbawls.pw" // dnsseed.dashpay.io","dnsseed.masternode.io","dnsseed.dashdot.io"
+    "x5.pivx.seed.fuzzbawls.pw", "x5.pivx.seed2.fuzzbawls.pw" // dnsseed.dashpay.io","dnsseed.masternode.io","dnsseed.dashdot.io"
 };
 
 #endif
