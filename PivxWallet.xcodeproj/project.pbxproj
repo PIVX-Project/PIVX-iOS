@@ -397,7 +397,7 @@
 		75C0E3C41B1BA2A5007BC531 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = es; path = es.lproj/BIP39Words.plist; sourceTree = "<group>"; };
 		75C0E3C71B1D333F007BC531 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = en; path = en.lproj/BIP39Words.plist; sourceTree = "<group>"; };
 		75CE50B51B5216F100DBC18C /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = DashWalletTests/Info.plist; sourceTree = SOURCE_ROOT; };
-		75D5F3BE191EC270004AB296 /* pivxwallet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pivxwallet.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		75D5F3BE191EC270004AB296 /* PIVX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PIVX.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		75D5F3C9191EC270004AB296 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		75D5F3CD191EC270004AB296 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		75D5F3CF191EC270004AB296 /* PivxWallet-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PivxWallet-Prefix.pch"; sourceTree = "<group>"; };
@@ -908,7 +908,7 @@
 		75D5F3BF191EC270004AB296 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				75D5F3BE191EC270004AB296 /* pivxwallet.app */,
+				75D5F3BE191EC270004AB296 /* PIVX.app */,
 				75D5F3E5191EC270004AB296 /* PivxWalletTests.xctest */,
 				BAE12BE51B2DEE7F00895CC5 /* TodayExtension.appex */,
 				31D68B501C23B6C10030FAAA /* PivxWalletUITests.xctest */,
@@ -1200,7 +1200,7 @@
 			);
 			name = pivxwallet;
 			productName = DashWallet;
-			productReference = 75D5F3BE191EC270004AB296 /* pivxwallet.app */;
+			productReference = 75D5F3BE191EC270004AB296 /* PIVX.app */;
 			productType = "com.apple.product-type.application";
 		};
 		75D5F3E4191EC270004AB296 /* PivxWalletTests */ = {
@@ -1905,8 +1905,9 @@
 			baseConfigurationReference = 017F1FD33D08A0ADF224456B /* Pods-pivxwallet.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon${BUNDLE_ID_SUFFIX}";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				BUNDLE_ID_SUFFIX = "";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_WARN_COMMA = NO;
 				CODE_SIGN_ENTITLEMENTS = pivxwallet/pivxwallet.entitlements;
@@ -1925,7 +1926,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				"OTHER_SWIFT_FLAGS[arch=*]" = "-DDebug";
 				PRODUCT_BUNDLE_IDENTIFIER = tech.furszy.pivxwallet;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_MODULE_NAME = pivxwallet;
+				PRODUCT_NAME = PIVX;
 				SWIFT_OBJC_BRIDGING_HEADER = "PivxWallet/pivxwallet-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_SWIFT3_OBJC_INFERENCE = On;
@@ -1939,8 +1941,9 @@
 			baseConfigurationReference = 3E3EBD821008041F3B3911D7 /* Pods-pivxwallet.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon${BUNDLE_ID_SUFFIX}";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				BUNDLE_ID_SUFFIX = "";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_WARN_COMMA = NO;
 				CODE_SIGN_ENTITLEMENTS = pivxwallet/pivxwallet.entitlements;
@@ -1959,7 +1962,8 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = tech.furszy.pivxwallet;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_MODULE_NAME = pivxwallet;
+				PRODUCT_NAME = PIVX;
 				SWIFT_OBJC_BRIDGING_HEADER = "PivxWallet/pivxwallet-Bridging-Header.h";
 				SWIFT_SWIFT3_OBJC_INFERENCE = On;
 				SWIFT_VERSION = 4.0;
@@ -2219,8 +2223,9 @@
 			baseConfigurationReference = AA1BBFB053AE437B7EE96F8D /* Pods-pivxwallet.testflight.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon${BUNDLE_ID_SUFFIX}";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				BUNDLE_ID_SUFFIX = "";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_WARN_COMMA = NO;
 				CODE_SIGN_ENTITLEMENTS = pivxwallet/pivxwallet.entitlements;
@@ -2239,7 +2244,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_SWIFT_FLAGS = "-DTestflight";
 				PRODUCT_BUNDLE_IDENTIFIER = tech.furszy.pivxwallet;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_MODULE_NAME = pivxwallet;
+				PRODUCT_NAME = PIVX;
 				SWIFT_OBJC_BRIDGING_HEADER = "PivxWallet/pivxwallet-Bridging-Header.h";
 				SWIFT_SWIFT3_OBJC_INFERENCE = On;
 				SWIFT_VERSION = 4.0;
@@ -2431,8 +2437,9 @@
 			baseConfigurationReference = F3767C71363A17C2937E2034 /* Pods-pivxwallet.testnet.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon${BUNDLE_ID_SUFFIX}";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				BUNDLE_ID_SUFFIX = .testnet;
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_WARN_COMMA = NO;
 				CODE_SIGN_ENTITLEMENTS = pivxwallet/pivxwallet.entitlements;
@@ -2456,7 +2463,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				"OTHER_SWIFT_FLAGS[arch=*]" = "-DDebug -DDASH_TESTNET";
 				PRODUCT_BUNDLE_IDENTIFIER = tech.furszy.pivxwallet;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_MODULE_NAME = pivxwallet;
+				PRODUCT_NAME = "PIVX-Testnet";
 				SWIFT_OBJC_BRIDGING_HEADER = "PivxWallet/pivxwallet-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_SWIFT3_OBJC_INFERENCE = On;
