@@ -44,6 +44,11 @@
 //#define QR_IMAGE_FILE [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES).lastObject\
 //                       stringByAppendingPathComponent:@"qr.png"]
 
+
+//WallOfCoins
+#import "WOCConstants.h"
+#import "BRAppDelegate.h"
+
 @interface BRReceiveViewController ()
 
 @property (nonatomic, strong) UIImage *qrImage;
@@ -504,5 +509,28 @@ presentingController:(UIViewController *)presenting sourceController:(UIViewCont
 {
     return self;
 }
+
+// MARK: - Wall of Coin Module
+// Added New Button to Buy Dash with cash
+- (IBAction)buyPIVXWithCashAction:(id)sender {
+    [sender setEnabled:NO];
+    
+    [self dismissViewControllerAnimated:NO completion:^{
+        [self loadWOCModule];
+        [sender setEnabled:YES];
+    }];
+}
+
+-(void)loadWOCModule
+{
+    dispatch_async(dispatch_get_main_queue(), ^{
+        UIStoryboard *storyboard = [UIStoryboard storyboardWithName:WOCBuyingStoryboard bundle:nil];
+        UINavigationController *navController = (UINavigationController*) [storyboard instantiateViewControllerWithIdentifier:@"wocNavigationController"];
+        [navController.navigationBar setTintColor:[UIColor whiteColor]];
+        BRAppDelegate *appDelegate = (BRAppDelegate*)[[UIApplication sharedApplication] delegate];
+        appDelegate.window.rootViewController = navController;
+    });
+}
+
 
 @end

@@ -22,6 +22,7 @@
                 <outlet property="titleLabel2" destination="YdU-m1-Uls" id="28Z-2d-1ee"/>
                 <outlet property="titleLabel3" destination="e1l-rE-EGa" id="Ax3-NN-NDW"/>
                 <outlet property="titleLabel4" destination="kjj-IR-Hfc" id="SMg-is-hEZ"/>
+                <outlet property="titleLabel5" destination="rjt-cy-CIN" id="JgW-mb-0Zw"/>
                 <outlet property="view" destination="iN0-l3-epB" id="Mv6-lJ-zfw"/>
             </connections>
         </placeholder>
@@ -73,23 +74,23 @@
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="200"/>
                                     <subviews>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cPx-6O-yJC">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="40"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icWallet" translatesAutoresizingMaskIntoConstraints="NO" id="Brt-MQ-hK7">
-                                                    <rect key="frame" x="16" y="13" width="25" height="25"/>
+                                                    <rect key="frame" x="16" y="8" width="25" height="25"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="25" id="7MW-E3-y7E"/>
                                                         <constraint firstAttribute="height" constant="25" id="hTs-2w-9zb"/>
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My Wallet" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qpC-Wx-P09">
-                                                    <rect key="frame" x="57" y="15" width="310" height="20"/>
+                                                    <rect key="frame" x="57" y="10" width="310" height="20"/>
                                                     <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="17"/>
                                                     <color key="textColor" red="0.42352941176470588" green="0.42352941176470588" blue="0.42352941176470588" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RHk-Im-1CE">
-                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="40"/>
                                                     <connections>
                                                         <action selector="tappedMyWalletButton:" destination="-1" eventType="touchUpInside" id="Aam-HI-2ws"/>
                                                     </connections>
@@ -109,23 +110,23 @@
                                             </constraints>
                                         </view>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hmc-av-bTB">
-                                            <rect key="frame" x="0.0" y="50" width="375" height="50"/>
+                                            <rect key="frame" x="0.0" y="40" width="375" height="40"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icAddress" translatesAutoresizingMaskIntoConstraints="NO" id="etm-sp-UDP">
-                                                    <rect key="frame" x="16" y="12.5" width="25" height="25"/>
+                                                    <rect key="frame" x="16" y="7.5" width="25" height="25"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="25" id="NHL-g1-mIO"/>
                                                         <constraint firstAttribute="height" constant="25" id="gGb-aJ-zzH"/>
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Address book" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YdU-m1-Uls">
-                                                    <rect key="frame" x="57" y="15.5" width="310" height="20"/>
+                                                    <rect key="frame" x="57" y="10.5" width="310" height="20"/>
                                                     <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="17"/>
                                                     <color key="textColor" red="0.42352941179999998" green="0.42352941179999998" blue="0.42352941179999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1GU-8f-85z">
-                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="40"/>
                                                     <connections>
                                                         <action selector="tappedAddressBookButton:" destination="-1" eventType="touchUpInside" id="bD3-Lc-3Zk"/>
                                                     </connections>
@@ -145,23 +146,23 @@
                                             </constraints>
                                         </view>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="T7m-aF-RmY">
-                                            <rect key="frame" x="0.0" y="100" width="375" height="50"/>
+                                            <rect key="frame" x="0.0" y="80" width="375" height="40"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icSettings" translatesAutoresizingMaskIntoConstraints="NO" id="apg-LC-uNK">
-                                                    <rect key="frame" x="16" y="12.5" width="25" height="25"/>
+                                                    <rect key="frame" x="16" y="7.5" width="25" height="25"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="25" id="AmD-XE-iOJ"/>
                                                         <constraint firstAttribute="width" constant="25" id="Zou-CO-bbb"/>
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Settings" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e1l-rE-EGa">
-                                                    <rect key="frame" x="57" y="15.5" width="310" height="20"/>
+                                                    <rect key="frame" x="57" y="10.5" width="310" height="20"/>
                                                     <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="17"/>
                                                     <color key="textColor" red="0.42352941179999998" green="0.42352941179999998" blue="0.42352941179999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9MJ-hY-ZBY">
-                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="40"/>
                                                     <connections>
                                                         <action selector="tappedSettingButton:" destination="-1" eventType="touchUpInside" id="sDC-6g-wcr"/>
                                                     </connections>
@@ -181,23 +182,23 @@
                                             </constraints>
                                         </view>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YaY-6o-F8R">
-                                            <rect key="frame" x="0.0" y="150" width="375" height="50"/>
+                                            <rect key="frame" x="0.0" y="120" width="375" height="40"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icDonations" translatesAutoresizingMaskIntoConstraints="NO" id="lQ1-DM-EU3">
-                                                    <rect key="frame" x="16" y="12.5" width="25" height="25"/>
+                                                    <rect key="frame" x="16" y="7.5" width="25" height="25"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="25" id="akI-QC-Qjl"/>
                                                         <constraint firstAttribute="height" constant="25" id="pWY-fT-oqF"/>
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Donations" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kjj-IR-Hfc">
-                                                    <rect key="frame" x="57" y="15.5" width="310" height="20"/>
+                                                    <rect key="frame" x="57" y="10.5" width="310" height="20"/>
                                                     <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="17"/>
                                                     <color key="textColor" red="0.42352941179999998" green="0.42352941179999998" blue="0.42352941179999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aTH-oo-ifK">
-                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="40"/>
                                                     <connections>
                                                         <action selector="tappedDonationButton:" destination="-1" eventType="touchUpInside" id="IXo-a6-kfM"/>
                                                     </connections>
@@ -214,6 +215,43 @@
                                                 <constraint firstItem="lQ1-DM-EU3" firstAttribute="centerY" secondItem="YaY-6o-F8R" secondAttribute="centerY" id="gnL-FF-FXD"/>
                                                 <constraint firstItem="kjj-IR-Hfc" firstAttribute="centerY" secondItem="YaY-6o-F8R" secondAttribute="centerY" id="hom-Vu-8dQ"/>
                                                 <constraint firstItem="kjj-IR-Hfc" firstAttribute="leading" secondItem="lQ1-DM-EU3" secondAttribute="trailing" constant="16" id="jln-GP-KeP"/>
+                                            </constraints>
+                                        </view>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5LU-u0-7Oq">
+                                            <rect key="frame" x="0.0" y="160" width="375" height="40"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="woc-icon" translatesAutoresizingMaskIntoConstraints="NO" id="1Tk-gJ-bDx">
+                                                    <rect key="frame" x="16" y="7.5" width="25" height="25"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="25" id="FTK-hi-cRj"/>
+                                                        <constraint firstAttribute="height" constant="25" id="RRD-Xl-sJP"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="buy PIV with cash" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rjt-cy-CIN">
+                                                    <rect key="frame" x="57" y="10.5" width="310" height="20"/>
+                                                    <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="17"/>
+                                                    <color key="textColor" red="0.42352941179999998" green="0.42352941179999998" blue="0.42352941179999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rnu-NI-Vz7">
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="40"/>
+                                                    <connections>
+                                                        <action selector="tappedDonationButton:" destination="-1" eventType="touchUpInside" id="jLB-OS-0Go"/>
+                                                        <action selector="tappedWOCButton:" destination="-1" eventType="touchUpInside" id="4Bu-ZA-gRV"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <constraints>
+                                                <constraint firstItem="rnu-NI-Vz7" firstAttribute="top" secondItem="5LU-u0-7Oq" secondAttribute="top" id="3Ym-Pr-gcn"/>
+                                                <constraint firstItem="rnu-NI-Vz7" firstAttribute="leading" secondItem="5LU-u0-7Oq" secondAttribute="leading" id="7pg-We-2V6"/>
+                                                <constraint firstAttribute="bottom" secondItem="rnu-NI-Vz7" secondAttribute="bottom" id="BgA-c9-lRt"/>
+                                                <constraint firstItem="1Tk-gJ-bDx" firstAttribute="leading" secondItem="5LU-u0-7Oq" secondAttribute="leading" constant="16" id="J8g-PP-LUz"/>
+                                                <constraint firstAttribute="trailing" secondItem="rnu-NI-Vz7" secondAttribute="trailing" id="UJe-57-M0a"/>
+                                                <constraint firstItem="rjt-cy-CIN" firstAttribute="leading" secondItem="1Tk-gJ-bDx" secondAttribute="trailing" constant="16" id="UtH-eS-Gqp"/>
+                                                <constraint firstAttribute="trailing" secondItem="rjt-cy-CIN" secondAttribute="trailing" constant="8" id="c8D-T2-YWe"/>
+                                                <constraint firstItem="rjt-cy-CIN" firstAttribute="centerY" secondItem="5LU-u0-7Oq" secondAttribute="centerY" id="dXu-3b-2Zz"/>
+                                                <constraint firstItem="1Tk-gJ-bDx" firstAttribute="centerY" secondItem="5LU-u0-7Oq" secondAttribute="centerY" id="foE-xV-big"/>
                                             </constraints>
                                         </view>
                                     </subviews>
@@ -277,5 +315,6 @@
         <image name="icWallet" width="26" height="26"/>
         <image name="imgHeaderLogo" width="102" height="29"/>
         <image name="imgNavLogo" width="73" height="90"/>
+        <image name="woc-icon" width="147" height="147"/>
     </resources>
 </document>

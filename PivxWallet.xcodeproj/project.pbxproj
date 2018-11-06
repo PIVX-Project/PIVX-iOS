@@ -7,6 +7,33 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		04533BC720998E4E00022EE3 /* ActivityLogs.md in Resources */ = {isa = PBXBuildFile; fileRef = 04533B6A20998E4D00022EE3 /* ActivityLogs.md */; };
+		04533BC820998E4E00022EE3 /* APIManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 04533B6D20998E4D00022EE3 /* APIManager.m */; };
+		04533BC920998E4E00022EE3 /* WOCOfferCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04533B7020998E4D00022EE3 /* WOCOfferCell.m */; };
+		04533BCA20998E4E00022EE3 /* WOCSignOutCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04533B7220998E4D00022EE3 /* WOCSignOutCell.m */; };
+		04533BCB20998E4E00022EE3 /* WOCSummaryCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04533B7420998E4D00022EE3 /* WOCSummaryCell.m */; };
+		04533BCC20998E4E00022EE3 /* countries.json in Resources */ = {isa = PBXBuildFile; fileRef = 04533B7620998E4D00022EE3 /* countries.json */; };
+		04533BCD20998E4E00022EE3 /* buyDash.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04533B7820998E4D00022EE3 /* buyDash.storyboard */; };
+		04533BCE20998E4E00022EE3 /* wocSell.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04533B7920998E4D00022EE3 /* wocSell.storyboard */; };
+		04533BCF20998E4E00022EE3 /* WOCBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04533B7B20998E4D00022EE3 /* WOCBaseViewController.m */; };
+		04533BD020998E4E00022EE3 /* WOCBuyingInstructionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04533B7D20998E4D00022EE3 /* WOCBuyingInstructionsViewController.m */; };
+		04533BD120998E4E00022EE3 /* WOCBuyingSummaryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04533B7F20998E4D00022EE3 /* WOCBuyingSummaryViewController.m */; };
+		04533BD220998E4E00022EE3 /* WOCBuyingWizardHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04533B8120998E4D00022EE3 /* WOCBuyingWizardHomeViewController.m */; };
+		04533BD320998E4E00022EE3 /* WOCBuyingWizardInputAmountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04533B8320998E4D00022EE3 /* WOCBuyingWizardInputAmountViewController.m */; };
+		04533BD420998E4E00022EE3 /* WOCBuyingWizardInputEmailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04533B8520998E4D00022EE3 /* WOCBuyingWizardInputEmailViewController.m */; };
+		04533BD520998E4E00022EE3 /* WOCBuyingWizardInputPhoneNumberViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04533B8720998E4D00022EE3 /* WOCBuyingWizardInputPhoneNumberViewController.m */; };
+		04533BD620998E4E00022EE3 /* WOCBuyingWizardInputVarificationCodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04533B8920998E4E00022EE3 /* WOCBuyingWizardInputVarificationCodeViewController.m */; };
+		04533BD720998E4E00022EE3 /* WOCBuyingWizardOfferListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04533B8B20998E4E00022EE3 /* WOCBuyingWizardOfferListViewController.m */; };
+		04533BD820998E4E00022EE3 /* WOCBuyingWizardPaymentCenterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04533B8D20998E4E00022EE3 /* WOCBuyingWizardPaymentCenterViewController.m */; };
+		04533BD920998E4E00022EE3 /* WOCBuyingWizardZipCodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04533B8F20998E4E00022EE3 /* WOCBuyingWizardZipCodeViewController.m */; };
+		04533BDA20998E4E00022EE3 /* WOCDefaultBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04533B9220998E4E00022EE3 /* WOCDefaultBaseViewController.m */; };
+		04533BDB20998E4E00022EE3 /* WOCAsyncImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04533B9620998E4E00022EE3 /* WOCAsyncImageView.m */; };
+		04533BDC20998E4E00022EE3 /* WOCAlertController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04533B9820998E4E00022EE3 /* WOCAlertController.m */; };
+		04533BDD20998E4E00022EE3 /* WOCLocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 04533B9A20998E4E00022EE3 /* WOCLocationManager.m */; };
+		04533BDE20998E4E00022EE3 /* WOCHoldIssueViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04533B9C20998E4E00022EE3 /* WOCHoldIssueViewController.m */; };
+		04533BDF20998E4E00022EE3 /* WOCMedia.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04533B9D20998E4E00022EE3 /* WOCMedia.xcassets */; };
+		04533BE020998E4E00022EE3 /* WOCPasswordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04533B9F20998E4E00022EE3 /* WOCPasswordViewController.m */; };
+		04533BF320998E4F00022EE3 /* WOCSignInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04533BC620998E4E00022EE3 /* WOCSignInViewController.m */; };
 		220128D31C753C670001CAC1 /* BRSocketHelpers.c in Sources */ = {isa = PBXBuildFile; fileRef = 220128D11C753C670001CAC1 /* BRSocketHelpers.c */; };
 		2204604E1B9F61E600D07B61 /* BREventManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2204604D1B9F61E600D07B61 /* BREventManager.m */; };
 		2204604F1B9F61E600D07B61 /* BREventManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2204604D1B9F61E600D07B61 /* BREventManager.m */; };
@@ -222,6 +249,56 @@
 
 /* Begin PBXFileReference section */
 		017F1FD33D08A0ADF224456B /* Pods-pivxwallet.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pivxwallet.debug.xcconfig"; path = "Pods/Target Support Files/Pods-pivxwallet/Pods-pivxwallet.debug.xcconfig"; sourceTree = "<group>"; };
+		04533B6A20998E4D00022EE3 /* ActivityLogs.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = ActivityLogs.md; sourceTree = "<group>"; };
+		04533B6C20998E4D00022EE3 /* APIManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APIManager.h; sourceTree = "<group>"; };
+		04533B6D20998E4D00022EE3 /* APIManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APIManager.m; sourceTree = "<group>"; };
+		04533B6F20998E4D00022EE3 /* WOCOfferCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WOCOfferCell.h; sourceTree = "<group>"; };
+		04533B7020998E4D00022EE3 /* WOCOfferCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WOCOfferCell.m; sourceTree = "<group>"; };
+		04533B7120998E4D00022EE3 /* WOCSignOutCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WOCSignOutCell.h; sourceTree = "<group>"; };
+		04533B7220998E4D00022EE3 /* WOCSignOutCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WOCSignOutCell.m; sourceTree = "<group>"; };
+		04533B7320998E4D00022EE3 /* WOCSummaryCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WOCSummaryCell.h; sourceTree = "<group>"; };
+		04533B7420998E4D00022EE3 /* WOCSummaryCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WOCSummaryCell.m; sourceTree = "<group>"; };
+		04533B7620998E4D00022EE3 /* countries.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = countries.json; sourceTree = "<group>"; };
+		04533B7820998E4D00022EE3 /* buyDash.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = buyDash.storyboard; sourceTree = "<group>"; };
+		04533B7920998E4D00022EE3 /* wocSell.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = wocSell.storyboard; sourceTree = "<group>"; };
+		04533B7A20998E4D00022EE3 /* WOCBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WOCBaseViewController.h; sourceTree = "<group>"; };
+		04533B7B20998E4D00022EE3 /* WOCBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WOCBaseViewController.m; sourceTree = "<group>"; };
+		04533B7C20998E4D00022EE3 /* WOCBuyingInstructionsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WOCBuyingInstructionsViewController.h; sourceTree = "<group>"; };
+		04533B7D20998E4D00022EE3 /* WOCBuyingInstructionsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WOCBuyingInstructionsViewController.m; sourceTree = "<group>"; };
+		04533B7E20998E4D00022EE3 /* WOCBuyingSummaryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WOCBuyingSummaryViewController.h; sourceTree = "<group>"; };
+		04533B7F20998E4D00022EE3 /* WOCBuyingSummaryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WOCBuyingSummaryViewController.m; sourceTree = "<group>"; };
+		04533B8020998E4D00022EE3 /* WOCBuyingWizardHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WOCBuyingWizardHomeViewController.h; sourceTree = "<group>"; };
+		04533B8120998E4D00022EE3 /* WOCBuyingWizardHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WOCBuyingWizardHomeViewController.m; sourceTree = "<group>"; };
+		04533B8220998E4D00022EE3 /* WOCBuyingWizardInputAmountViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WOCBuyingWizardInputAmountViewController.h; sourceTree = "<group>"; };
+		04533B8320998E4D00022EE3 /* WOCBuyingWizardInputAmountViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WOCBuyingWizardInputAmountViewController.m; sourceTree = "<group>"; };
+		04533B8420998E4D00022EE3 /* WOCBuyingWizardInputEmailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WOCBuyingWizardInputEmailViewController.h; sourceTree = "<group>"; };
+		04533B8520998E4D00022EE3 /* WOCBuyingWizardInputEmailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WOCBuyingWizardInputEmailViewController.m; sourceTree = "<group>"; };
+		04533B8620998E4D00022EE3 /* WOCBuyingWizardInputPhoneNumberViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WOCBuyingWizardInputPhoneNumberViewController.h; sourceTree = "<group>"; };
+		04533B8720998E4D00022EE3 /* WOCBuyingWizardInputPhoneNumberViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WOCBuyingWizardInputPhoneNumberViewController.m; sourceTree = "<group>"; };
+		04533B8820998E4D00022EE3 /* WOCBuyingWizardInputVarificationCodeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WOCBuyingWizardInputVarificationCodeViewController.h; sourceTree = "<group>"; };
+		04533B8920998E4E00022EE3 /* WOCBuyingWizardInputVarificationCodeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WOCBuyingWizardInputVarificationCodeViewController.m; sourceTree = "<group>"; };
+		04533B8A20998E4E00022EE3 /* WOCBuyingWizardOfferListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WOCBuyingWizardOfferListViewController.h; sourceTree = "<group>"; };
+		04533B8B20998E4E00022EE3 /* WOCBuyingWizardOfferListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WOCBuyingWizardOfferListViewController.m; sourceTree = "<group>"; };
+		04533B8C20998E4E00022EE3 /* WOCBuyingWizardPaymentCenterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WOCBuyingWizardPaymentCenterViewController.h; sourceTree = "<group>"; };
+		04533B8D20998E4E00022EE3 /* WOCBuyingWizardPaymentCenterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WOCBuyingWizardPaymentCenterViewController.m; sourceTree = "<group>"; };
+		04533B8E20998E4E00022EE3 /* WOCBuyingWizardZipCodeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WOCBuyingWizardZipCodeViewController.h; sourceTree = "<group>"; };
+		04533B8F20998E4E00022EE3 /* WOCBuyingWizardZipCodeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WOCBuyingWizardZipCodeViewController.m; sourceTree = "<group>"; };
+		04533B9020998E4E00022EE3 /* WOCConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WOCConstants.h; sourceTree = "<group>"; };
+		04533B9120998E4E00022EE3 /* WOCDefaultBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WOCDefaultBaseViewController.h; sourceTree = "<group>"; };
+		04533B9220998E4E00022EE3 /* WOCDefaultBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WOCDefaultBaseViewController.m; sourceTree = "<group>"; };
+		04533B9520998E4E00022EE3 /* WOCAsyncImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WOCAsyncImageView.h; sourceTree = "<group>"; };
+		04533B9620998E4E00022EE3 /* WOCAsyncImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WOCAsyncImageView.m; sourceTree = "<group>"; };
+		04533B9720998E4E00022EE3 /* WOCAlertController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WOCAlertController.h; sourceTree = "<group>"; };
+		04533B9820998E4E00022EE3 /* WOCAlertController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WOCAlertController.m; sourceTree = "<group>"; };
+		04533B9920998E4E00022EE3 /* WOCLocationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WOCLocationManager.h; sourceTree = "<group>"; };
+		04533B9A20998E4E00022EE3 /* WOCLocationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WOCLocationManager.m; sourceTree = "<group>"; };
+		04533B9B20998E4E00022EE3 /* WOCHoldIssueViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WOCHoldIssueViewController.h; sourceTree = "<group>"; };
+		04533B9C20998E4E00022EE3 /* WOCHoldIssueViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WOCHoldIssueViewController.m; sourceTree = "<group>"; };
+		04533B9D20998E4E00022EE3 /* WOCMedia.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = WOCMedia.xcassets; sourceTree = "<group>"; };
+		04533B9E20998E4E00022EE3 /* WOCPasswordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WOCPasswordViewController.h; sourceTree = "<group>"; };
+		04533B9F20998E4E00022EE3 /* WOCPasswordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WOCPasswordViewController.m; sourceTree = "<group>"; };
+		04533BC520998E4E00022EE3 /* WOCSignInViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WOCSignInViewController.h; sourceTree = "<group>"; };
+		04533BC620998E4E00022EE3 /* WOCSignInViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WOCSignInViewController.m; sourceTree = "<group>"; };
 		220128D11C753C670001CAC1 /* BRSocketHelpers.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = BRSocketHelpers.c; sourceTree = "<group>"; };
 		220128D21C753C670001CAC1 /* BRSocketHelpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRSocketHelpers.h; sourceTree = "<group>"; };
 		2204604C1B9F61E600D07B61 /* BREventManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BREventManager.h; sourceTree = "<group>"; };
@@ -566,6 +643,111 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		04533B6920998E4D00022EE3 /* Wallofcoins */ = {
+			isa = PBXGroup;
+			children = (
+				04533B6A20998E4D00022EE3 /* ActivityLogs.md */,
+				04533B6B20998E4D00022EE3 /* APIManager */,
+				04533B6E20998E4D00022EE3 /* CustomCell */,
+				04533B7520998E4D00022EE3 /* Resources */,
+				04533B7720998E4D00022EE3 /* StoryBoard */,
+				04533B7A20998E4D00022EE3 /* WOCBaseViewController.h */,
+				04533B7B20998E4D00022EE3 /* WOCBaseViewController.m */,
+				04533B7C20998E4D00022EE3 /* WOCBuyingInstructionsViewController.h */,
+				04533B7D20998E4D00022EE3 /* WOCBuyingInstructionsViewController.m */,
+				04533B7E20998E4D00022EE3 /* WOCBuyingSummaryViewController.h */,
+				04533B7F20998E4D00022EE3 /* WOCBuyingSummaryViewController.m */,
+				04533B8020998E4D00022EE3 /* WOCBuyingWizardHomeViewController.h */,
+				04533B8120998E4D00022EE3 /* WOCBuyingWizardHomeViewController.m */,
+				04533B8220998E4D00022EE3 /* WOCBuyingWizardInputAmountViewController.h */,
+				04533B8320998E4D00022EE3 /* WOCBuyingWizardInputAmountViewController.m */,
+				04533B8420998E4D00022EE3 /* WOCBuyingWizardInputEmailViewController.h */,
+				04533B8520998E4D00022EE3 /* WOCBuyingWizardInputEmailViewController.m */,
+				04533B8620998E4D00022EE3 /* WOCBuyingWizardInputPhoneNumberViewController.h */,
+				04533B8720998E4D00022EE3 /* WOCBuyingWizardInputPhoneNumberViewController.m */,
+				04533B8820998E4D00022EE3 /* WOCBuyingWizardInputVarificationCodeViewController.h */,
+				04533B8920998E4E00022EE3 /* WOCBuyingWizardInputVarificationCodeViewController.m */,
+				04533B8A20998E4E00022EE3 /* WOCBuyingWizardOfferListViewController.h */,
+				04533B8B20998E4E00022EE3 /* WOCBuyingWizardOfferListViewController.m */,
+				04533B8C20998E4E00022EE3 /* WOCBuyingWizardPaymentCenterViewController.h */,
+				04533B8D20998E4E00022EE3 /* WOCBuyingWizardPaymentCenterViewController.m */,
+				04533B8E20998E4E00022EE3 /* WOCBuyingWizardZipCodeViewController.h */,
+				04533B8F20998E4E00022EE3 /* WOCBuyingWizardZipCodeViewController.m */,
+				04533B9020998E4E00022EE3 /* WOCConstants.h */,
+				04533B9120998E4E00022EE3 /* WOCDefaultBaseViewController.h */,
+				04533B9220998E4E00022EE3 /* WOCDefaultBaseViewController.m */,
+				04533B9320998E4E00022EE3 /* WOCHelpers */,
+				04533B9B20998E4E00022EE3 /* WOCHoldIssueViewController.h */,
+				04533B9C20998E4E00022EE3 /* WOCHoldIssueViewController.m */,
+				04533B9D20998E4E00022EE3 /* WOCMedia.xcassets */,
+				04533B9E20998E4E00022EE3 /* WOCPasswordViewController.h */,
+				04533B9F20998E4E00022EE3 /* WOCPasswordViewController.m */,
+				04533BC520998E4E00022EE3 /* WOCSignInViewController.h */,
+				04533BC620998E4E00022EE3 /* WOCSignInViewController.m */,
+			);
+			path = Wallofcoins;
+			sourceTree = "<group>";
+		};
+		04533B6B20998E4D00022EE3 /* APIManager */ = {
+			isa = PBXGroup;
+			children = (
+				04533B6C20998E4D00022EE3 /* APIManager.h */,
+				04533B6D20998E4D00022EE3 /* APIManager.m */,
+			);
+			path = APIManager;
+			sourceTree = "<group>";
+		};
+		04533B6E20998E4D00022EE3 /* CustomCell */ = {
+			isa = PBXGroup;
+			children = (
+				04533B6F20998E4D00022EE3 /* WOCOfferCell.h */,
+				04533B7020998E4D00022EE3 /* WOCOfferCell.m */,
+				04533B7120998E4D00022EE3 /* WOCSignOutCell.h */,
+				04533B7220998E4D00022EE3 /* WOCSignOutCell.m */,
+				04533B7320998E4D00022EE3 /* WOCSummaryCell.h */,
+				04533B7420998E4D00022EE3 /* WOCSummaryCell.m */,
+			);
+			path = CustomCell;
+			sourceTree = "<group>";
+		};
+		04533B7520998E4D00022EE3 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				04533B7620998E4D00022EE3 /* countries.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		04533B7720998E4D00022EE3 /* StoryBoard */ = {
+			isa = PBXGroup;
+			children = (
+				04533B7820998E4D00022EE3 /* buyDash.storyboard */,
+				04533B7920998E4D00022EE3 /* wocSell.storyboard */,
+			);
+			path = StoryBoard;
+			sourceTree = "<group>";
+		};
+		04533B9320998E4E00022EE3 /* WOCHelpers */ = {
+			isa = PBXGroup;
+			children = (
+				04533B9420998E4E00022EE3 /* AsyncImageView */,
+				04533B9720998E4E00022EE3 /* WOCAlertController.h */,
+				04533B9820998E4E00022EE3 /* WOCAlertController.m */,
+				04533B9920998E4E00022EE3 /* WOCLocationManager.h */,
+				04533B9A20998E4E00022EE3 /* WOCLocationManager.m */,
+			);
+			path = WOCHelpers;
+			sourceTree = "<group>";
+		};
+		04533B9420998E4E00022EE3 /* AsyncImageView */ = {
+			isa = PBXGroup;
+			children = (
+				04533B9520998E4E00022EE3 /* WOCAsyncImageView.h */,
+				04533B9620998E4E00022EE3 /* WOCAsyncImageView.m */,
+			);
+			path = AsyncImageView;
+			sourceTree = "<group>";
+		};
 		2B5735681FE04BEB00110745 /* PivxUtils */ = {
 			isa = PBXGroup;
 			children = (
@@ -794,6 +976,7 @@
 		7579F7FE19231D4600CA56F4 /* ThirdParty */ = {
 			isa = PBXGroup;
 			children = (
+				04533B6920998E4D00022EE3 /* Wallofcoins */,
 				FB021E581E4DEFD300D17638 /* MBProgressHUD */,
 				FB021E501E47E17200D17638 /* FBShimmering */,
 				752E28EF19234E8100DB5A3C /* Reachability.h */,
@@ -1373,14 +1556,19 @@
 				2BFA523A1FE0AC4D00A3C808 /* Menu.xib in Resources */,
 				757E09991ADB8EEB006FD352 /* Localizable.strings in Resources */,
 				2B5735811FE0882B00110745 /* Step1View.xib in Resources */,
+				04533BDF20998E4E00022EE3 /* WOCMedia.xcassets in Resources */,
 				75F2E0D31BE9803900EAE861 /* Launch Screen.storyboard in Resources */,
 				2B57357A1FE087D800110745 /* Setup.xib in Resources */,
+				04533BCD20998E4E00022EE3 /* buyDash.storyboard in Resources */,
 				2B5735831FE0882B00110745 /* Step4View.xib in Resources */,
 				2B5735671FE04BC400110745 /* PivxAssets.xcassets in Resources */,
+				04533BCC20998E4E00022EE3 /* countries.json in Resources */,
+				04533BCE20998E4E00022EE3 /* wocSell.storyboard in Resources */,
 				2BBE61991FE482AB00D06CD7 /* NewAddress.xib in Resources */,
 				2B5735821FE0882B00110745 /* Step3View.xib in Resources */,
 				2B4838CB1FE21655001C8D09 /* Donation.xib in Resources */,
 				2BBE61AE1FE48BC000D06CD7 /* EmptyCell.xib in Resources */,
+				04533BC720998E4E00022EE3 /* ActivityLogs.md in Resources */,
 				2B5735801FE0882B00110745 /* Step2View.xib in Resources */,
 				75C0E3BF1B1BA294007BC531 /* BIP39Words.plist in Resources */,
 				2BBE61AF1FE48BC000D06CD7 /* AddressContactCell.xib in Resources */,
@@ -1529,50 +1717,68 @@
 				6BD745B41FE56EE500B94848 /* BRPivxUtils.m in Sources */,
 				752E28AA19234AE300DB5A3C /* BRAddressEntity.m in Sources */,
 				2BFA52371FE08A8300A3C808 /* BaseController.swift in Sources */,
+				04533BF320998E4F00022EE3 /* WOCSignInViewController.m in Sources */,
 				75AA5F55194143D5003F23BD /* BRBouncyBurgerButton.m in Sources */,
 				752E28AB19234AE300DB5A3C /* BRMerkleBlockEntity.m in Sources */,
+				04533BC920998E4E00022EE3 /* WOCOfferCell.m in Sources */,
+				04533BDE20998E4E00022EE3 /* WOCHoldIssueViewController.m in Sources */,
+				04533BD820998E4E00022EE3 /* WOCBuyingWizardPaymentCenterViewController.m in Sources */,
 				2B8A1C9D1FEB594800C7427C /* EmptyTableCell.swift in Sources */,
 				BA7B53501BDA9A2800355E8D /* BRAppleWatchData.m in Sources */,
+				04533BDC20998E4E00022EE3 /* WOCAlertController.m in Sources */,
 				2B57356E1FE04C4200110745 /* Utils.swift in Sources */,
+				04533BCB20998E4E00022EE3 /* WOCSummaryCell.m in Sources */,
 				752E28AC19234AE300DB5A3C /* BRPeerEntity.m in Sources */,
 				FBF2680E1E419318001A1C8B /* DSShapeshiftEntity+CoreDataClass.m in Sources */,
 				2BBE61AB1FE48AF900D06CD7 /* EmptyCell.swift in Sources */,
 				2BBE61A31FE4853B00D06CD7 /* AddressContactController.swift in Sources */,
 				FBF268041E414B93001A1C8B /* NSData+Dash.m in Sources */,
+				04533BD620998E4E00022EE3 /* WOCBuyingWizardInputVarificationCodeViewController.m in Sources */,
 				752E28AD19234AE300DB5A3C /* BRTransactionEntity.m in Sources */,
 				752E28AE19234AE300DB5A3C /* BRTxInputEntity.m in Sources */,
 				752E28AF19234AE300DB5A3C /* BRTxOutputEntity.m in Sources */,
 				2B5735701FE04C4200110745 /* UIView+Anchors.swift in Sources */,
 				22DE8CF11D02407F007F07F3 /* BRWalletConstants.m in Sources */,
+				04533BDB20998E4E00022EE3 /* WOCAsyncImageView.m in Sources */,
 				FBF2680F1E419318001A1C8B /* DSShapeshiftEntity+CoreDataProperties.m in Sources */,
 				2B5735761FE086F500110745 /* SetupController.swift in Sources */,
 				BAA4843C1B3EFFAF0075C749 /* UIImage+Utils.m in Sources */,
 				BA7B535C1BDBC36700355E8D /* BRTransaction+Utils.m in Sources */,
+				04533BD320998E4E00022EE3 /* WOCBuyingWizardInputAmountViewController.m in Sources */,
 				758DBD0E1980634900389E2A /* BRTxDetailViewController.m in Sources */,
 				FB021E4F1E42EB5F00D17638 /* NSAttributedString+Attachments.m in Sources */,
+				04533BD020998E4E00022EE3 /* WOCBuyingInstructionsViewController.m in Sources */,
 				7548CF3719556FD700EF827F /* BRCopyLabel.m in Sources */,
 				752E28D119234C3600DB5A3C /* BRKey.m in Sources */,
+				04533BDA20998E4E00022EE3 /* WOCDefaultBaseViewController.m in Sources */,
 				84F68C8A1975E9E2002FC300 /* BRScanViewController.m in Sources */,
 				2204604E1B9F61E600D07B61 /* BREventManager.m in Sources */,
 				FBF267FD1E414AA2001A1C8B /* DSShapeshiftManager.m in Sources */,
 				752E28D219234C3600DB5A3C /* BRKey+BIP38.m in Sources */,
+				04533BCF20998E4E00022EE3 /* WOCBaseViewController.m in Sources */,
 				220460551BA0BEEE00D07B61 /* BREventConfirmView.m in Sources */,
+				04533BD420998E4E00022EE3 /* WOCBuyingWizardInputEmailViewController.m in Sources */,
 				752E28D919234C3600DB5A3C /* BRTransaction.m in Sources */,
 				752E28CE19234C3600DB5A3C /* BRBIP32Sequence.m in Sources */,
 				BAC7B6BE1BD9C29900165B84 /* BRPhoneWCSessionManager.m in Sources */,
 				2B57356F1FE04C4200110745 /* PivxExtensions.swift in Sources */,
 				752E28CF19234C3600DB5A3C /* BRBIP39Mnemonic.m in Sources */,
+				04533BD120998E4E00022EE3 /* WOCBuyingSummaryViewController.m in Sources */,
 				752E28DA19234C3600DB5A3C /* BRWallet.m in Sources */,
 				FB021E561E47E17200D17638 /* FBShimmeringLayer.m in Sources */,
 				752E28DB19234C3600DB5A3C /* BRWalletManager.m in Sources */,
 				752E28D319234C3600DB5A3C /* BRMerkleBlock.m in Sources */,
+				04533BD220998E4E00022EE3 /* WOCBuyingWizardHomeViewController.m in Sources */,
 				2B5735711FE04C4200110745 /* Constants.swift in Sources */,
+				04533BCA20998E4E00022EE3 /* WOCSignOutCell.m in Sources */,
 				752E28D019234C3600DB5A3C /* BRBloomFilter.m in Sources */,
 				2BBE61B51FE48E6500D06CD7 /* ContactAddress.swift in Sources */,
 				752E28D619234C3600DB5A3C /* BRPeer.m in Sources */,
 				752E28D819234C3600DB5A3C /* BRPeerManager.m in Sources */,
 				752E28D419234C3600DB5A3C /* BRPaymentProtocol.m in Sources */,
+				04533BD920998E4E00022EE3 /* WOCBuyingWizardZipCodeViewController.m in Sources */,
 				752E28D519234C3600DB5A3C /* BRPaymentRequest.m in Sources */,
+				04533BD720998E4E00022EE3 /* WOCBuyingWizardOfferListViewController.m in Sources */,
 				7525B619192453840041C0F2 /* BRNavigationBar.m in Sources */,
 				75F2E0D61BEAA6A400EAE861 /* BRTxMetadataEntity.m in Sources */,
 				2BBE619E1FE4833500D06CD7 /* NewAddressController.swift in Sources */,
@@ -1588,8 +1794,11 @@
 				FB9CC2711F8E27B80079309F /* DWGenerateViewController.m in Sources */,
 				220128D31C753C670001CAC1 /* BRSocketHelpers.c in Sources */,
 				752E28E919234DA200DB5A3C /* NSManagedObject+Sugar.m in Sources */,
+				04533BD520998E4E00022EE3 /* WOCBuyingWizardInputPhoneNumberViewController.m in Sources */,
 				BA7B53541BDAA0A800355E8D /* BRAppleWatchTransactionData.m in Sources */,
 				FB021E571E47E17200D17638 /* FBShimmeringView.m in Sources */,
+				04533BDD20998E4E00022EE3 /* WOCLocationManager.m in Sources */,
+				04533BC820998E4E00022EE3 /* APIManager.m in Sources */,
 				FBF267A11E414877001A1C8B /* NSString+Dash.m in Sources */,
 				FB021E5B1E4DEFE800D17638 /* MBProgressHUD.m in Sources */,
 				751B2B5C1B68911700EA87FB /* BRTxHistoryViewController.m in Sources */,
@@ -1600,6 +1809,7 @@
 				759FBB36193290F600AB4465 /* BRRootViewController.m in Sources */,
 				752E289A192349CE00DB5A3C /* DashWallet.xcdatamodeld in Sources */,
 				2BFA523C1FE0AC5C00A3C808 /* MenuController.swift in Sources */,
+				04533BE020998E4E00022EE3 /* WOCPasswordViewController.m in Sources */,
 				6BA7F2911FDF048100C1027B /* quark.c in Sources */,
 				759FBB37193290F600AB4465 /* BRSendViewController.m in Sources */,
 				752E28F119234E8100DB5A3C /* Reachability.m in Sources */,

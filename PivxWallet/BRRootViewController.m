@@ -89,12 +89,16 @@
 }
 
 - (void)addErrorView{
+    
+    if (self.errorBar != nil && self.errorBar.hidden == FALSE)
+    {
     if (!self.errorBar.superview) {
         [self.navigationController.navigationBar addSubview:self.errorBar];
         [self.navigationController.navigationBar addConstraint:[NSLayoutConstraint constraintWithItem:self.errorBar attribute:NSLayoutAttributeLeft relatedBy:NSLayoutRelationEqual toItem:self.navigationController.navigationBar attribute:NSLayoutAttributeLeft multiplier:1.0 constant:0.0]];
         [self.navigationController.navigationBar addConstraint:[NSLayoutConstraint constraintWithItem:self.errorBar attribute:NSLayoutAttributeRight relatedBy:NSLayoutRelationEqual toItem:self.navigationController.navigationBar attribute:NSLayoutAttributeRight multiplier:1.0 constant:0.0]];
         [self.navigationController.navigationBar addConstraint:[NSLayoutConstraint constraintWithItem:self.errorBar attribute:NSLayoutAttributeBottom relatedBy:NSLayoutRelationEqual toItem:self.navigationController.navigationBar attribute:NSLayoutAttributeBottom multiplier:1.0 constant:-48.0]];
     }
+  }
 }
 
 - (void)viewDidLoad
