@@ -1911,7 +1911,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_WARN_COMMA = NO;
 				CODE_SIGN_ENTITLEMENTS = pivxwallet/pivxwallet.entitlements;
-				DEVELOPMENT_TEAM = 6VMW8GXF6W;
+				DEVELOPMENT_TEAM = 99K9TZS9X5;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PivxWallet/PivxWallet-Prefix.pch";
@@ -1925,7 +1925,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				"OTHER_SWIFT_FLAGS[arch=*]" = "-DDebug";
-				PRODUCT_BUNDLE_IDENTIFIER = tech.furszy.pivxwallet;
+				PRODUCT_BUNDLE_IDENTIFIER = camera.furszy.pivxwallet;
 				PRODUCT_MODULE_NAME = pivxwallet;
 				PRODUCT_NAME = PIVX;
 				SWIFT_OBJC_BRIDGING_HEADER = "PivxWallet/pivxwallet-Bridging-Header.h";
@@ -1947,7 +1947,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_WARN_COMMA = NO;
 				CODE_SIGN_ENTITLEMENTS = pivxwallet/pivxwallet.entitlements;
-				DEVELOPMENT_TEAM = 6VMW8GXF6W;
+				DEVELOPMENT_TEAM = 99K9TZS9X5;
 				ENABLE_TESTABILITY = NO;
 				GCC_OPTIMIZATION_LEVEL = s;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -1961,7 +1961,7 @@
 				INFOPLIST_FILE = "$(SRCROOT)/PivxWallet/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = tech.furszy.pivxwallet;
+				PRODUCT_BUNDLE_IDENTIFIER = camera.furszy.pivxwallet;
 				PRODUCT_MODULE_NAME = pivxwallet;
 				PRODUCT_NAME = PIVX;
 				SWIFT_OBJC_BRIDGING_HEADER = "PivxWallet/pivxwallet-Bridging-Header.h";
@@ -2229,7 +2229,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_WARN_COMMA = NO;
 				CODE_SIGN_ENTITLEMENTS = pivxwallet/pivxwallet.entitlements;
-				DEVELOPMENT_TEAM = 6VMW8GXF6W;
+				DEVELOPMENT_TEAM = 99K9TZS9X5;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PivxWallet/PivxWallet-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = "TESTFLIGHT=1";
@@ -2243,7 +2243,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_SWIFT_FLAGS = "-DTestflight";
-				PRODUCT_BUNDLE_IDENTIFIER = tech.furszy.pivxwallet;
+				PRODUCT_BUNDLE_IDENTIFIER = camera.furszy.pivxwallet;
 				PRODUCT_MODULE_NAME = pivxwallet;
 				PRODUCT_NAME = PIVX;
 				SWIFT_OBJC_BRIDGING_HEADER = "PivxWallet/pivxwallet-Bridging-Header.h";
@@ -2443,7 +2443,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_WARN_COMMA = NO;
 				CODE_SIGN_ENTITLEMENTS = pivxwallet/pivxwallet.entitlements;
-				DEVELOPMENT_TEAM = 6VMW8GXF6W;
+				DEVELOPMENT_TEAM = 99K9TZS9X5;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PivxWallet/PivxWallet-Prefix.pch";
@@ -2462,7 +2462,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				"OTHER_SWIFT_FLAGS[arch=*]" = "-DDebug -DDASH_TESTNET";
-				PRODUCT_BUNDLE_IDENTIFIER = tech.furszy.pivxwallet;
+				PRODUCT_BUNDLE_IDENTIFIER = camera.furszy.pivxwallet;
 				PRODUCT_MODULE_NAME = pivxwallet;
 				PRODUCT_NAME = "PIVX-Testnet";
 				SWIFT_OBJC_BRIDGING_HEADER = "PivxWallet/pivxwallet-Bridging-Header.h";
