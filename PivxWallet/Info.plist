@@ -12,30 +12,30 @@
 			<key>CFBundleTypeIconFiles</key>
 			<array/>
 			<key>CFBundleTypeName</key>
-			<string>Dash Payment Request</string>
+			<string>PIVX Payment Request</string>
 			<key>LSItemContentTypes</key>
 			<array>
-				<string>dash.paymentrequest</string>
+				<string>pivx.paymentrequest</string>
 			</array>
 		</dict>
 		<dict>
 			<key>CFBundleTypeIconFiles</key>
 			<array/>
 			<key>CFBundleTypeName</key>
-			<string>Dash Payment</string>
+			<string>Pivx Payment</string>
 			<key>LSItemContentTypes</key>
 			<array>
-				<string>dash.payment</string>
+				<string>pivx.payment</string>
 			</array>
 		</dict>
 		<dict>
 			<key>CFBundleTypeIconFiles</key>
 			<array/>
 			<key>CFBundleTypeName</key>
-			<string>Dash Payment ACK</string>
+			<string>PIVX Payment ACK</string>
 			<key>LSItemContentTypes</key>
 			<array>
-				<string>dash.paymentack</string>
+				<string>pivx.paymentack</string>
 			</array>
 		</dict>
 	</array>
@@ -59,7 +59,7 @@
 			<key>CFBundleTypeRole</key>
 			<string>Editor</string>
 			<key>CFBundleURLName</key>
-			<string>dash</string>
+			<string>pivx</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
 				<string>dash</string>
@@ -138,13 +138,13 @@
 				<string>public.data</string>
 			</array>
 			<key>UTTypeDescription</key>
-			<string>Dash Payment Request</string>
+			<string>Pivx Payment Request</string>
 			<key>UTTypeIdentifier</key>
-			<string>dash.paymentrequest</string>
+			<string>pivx.paymentrequest</string>
 			<key>UTTypeTagSpecification</key>
 			<dict>
 				<key>public.mime-type</key>
-				<string>application/dash-paymentrequest</string>
+				<string>application/pivx-paymentrequest</string>
 			</dict>
 		</dict>
 		<dict>
@@ -153,9 +153,9 @@
 				<string>public.data</string>
 			</array>
 			<key>UTTypeDescription</key>
-			<string>Dash Payment</string>
+			<string>PIVX Payment</string>
 			<key>UTTypeIdentifier</key>
-			<string>dash.payment</string>
+			<string>pivx.payment</string>
 			<key>UTTypeTagSpecification</key>
 			<dict>
 				<key>public.mime-type</key>
@@ -168,13 +168,13 @@
 				<string>public.data</string>
 			</array>
 			<key>UTTypeDescription</key>
-			<string>Dash Payment ACK</string>
+			<string>PIVX Payment ACK</string>
 			<key>UTTypeIdentifier</key>
-			<string>dash.paymentack</string>
+			<string>pivx.paymentack</string>
 			<key>UTTypeTagSpecification</key>
 			<dict>
 				<key>public.mime-type</key>
-				<string>application/dash-paymentack</string>
+				<string>application/pivx-paymentack</string>
 			</dict>
 		</dict>
 	</array>
