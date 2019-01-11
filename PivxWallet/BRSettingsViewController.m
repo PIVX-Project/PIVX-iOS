@@ -184,7 +184,7 @@
 
 - (IBAction)about:(id)sender
 {
-    SFSafariViewController * safariViewController = [[SFSafariViewController alloc] initWithURL:[NSURL URLWithString:@"https://www.dash.org/forum/topic/ios-dash-digital-wallet-support.112/"]];
+    SFSafariViewController * safariViewController = [[SFSafariViewController alloc] initWithURL:[NSURL URLWithString:@"https://www.github.com/PIVX-Project/PIVX-iOS/"]];
     [self presentViewController:safariViewController animated:YES completion:nil];
 }
 
