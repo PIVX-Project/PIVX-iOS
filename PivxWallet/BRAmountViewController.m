@@ -67,7 +67,7 @@
     [charset addCharactersInString:manager.dashFormat.currencyDecimalSeparator];
     self.charset = charset;
     
-    self.payButton = [[UIBarButtonItem alloc] initWithTitle:self.usingShapeshift?@"Shapeshift!":NSLocalizedString(@"pay", nil)
+    self.payButton = [[UIBarButtonItem alloc] initWithTitle:self.usingShapeshift?@"Shapeshift!":NSLocalizedString(@"Pay", nil)
                                                       style:UIBarButtonItemStylePlain target:self action:@selector(pay:)];
     self.payButton.tintColor = UIColor.whiteColor;
     self.amountLabel.attributedText = [manager attributedStringForDashAmount:0 withTintColor:UIColor.whiteColor dashSymbolSize:CGSizeMake(15, 16)];
@@ -129,7 +129,7 @@
         self.navigationController.navigationBar.barStyle = UIStatusBarStyleLightContent;
     }
     else {
-        self.payButton.title = NSLocalizedString(@"request", nil);
+        self.payButton.title = NSLocalizedString(@"Request", nil);
         self.payButton.tintColor = UIColor.whiteColor;
         self.navigationItem.rightBarButtonItem = self.payButton;
         self.navigationController.navigationBar.barStyle = UIStatusBarStyleDefault;

@@ -36,10 +36,8 @@
 #import "BRWalletManager.h"
 #import <MobileCoreServices/UTCoreTypes.h>
 
-#define QR_TIP      NSLocalizedString(@"Let others scan this QR code to get your PIVX address. Anyone can send "\
-                    "PIVX to your wallet by transferring them to your address.", nil)
-#define ADDRESS_TIP NSLocalizedString(@"This is your PIVX address. Tap to copy it or send it by email or sms. The "\
-                    "address will change each time you receive funds, but old addresses always work.", nil)
+#define QR_TIP      NSLocalizedString(@"Let others scan this QR code to get your PIVX address. Anyone can send PIV to your wallet by transferring them to your address.", nil)
+#define ADDRESS_TIP NSLocalizedString(@"This is your PIVX address. Tap to copy it or send it by email or SMS. The address will change each time you receive funds, but old addresses always work.", nil)
 
 //#define QR_IMAGE_FILE [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES).lastObject\
 //                       stringByAppendingPathComponent:@"qr.png"]
@@ -217,7 +215,7 @@
 
             [self done:nil];
             [view addSubview:[[[BRBubbleView viewWithText:[NSString
-             stringWithFormat:NSLocalizedString(@"received %@ (%@)", nil), [manager stringForDashAmount:total],
+             stringWithFormat:NSLocalizedString(@"Received %@ (%@)", nil), [manager stringForDashAmount:total],
              [manager localCurrencyStringForDashAmount:total]]
              center:CGPointMake(view.bounds.size.width/2, view.bounds.size.height/2)] popIn] popOutAfterDelay:3.0]];
             break;
@@ -299,23 +297,23 @@
 
     BOOL req = (_paymentRequest) ? YES : NO;
 
-    UIAlertController *actionSheet = [UIAlertController alertControllerWithTitle:[NSString stringWithFormat:NSLocalizedString(@"Receive PIVX at this address: %@", nil),
+    UIAlertController *actionSheet = [UIAlertController alertControllerWithTitle:[NSString stringWithFormat:NSLocalizedString(@"Receive PIV at this address: %@", nil),
                                                                                   self.paymentAddress] message:@"" preferredStyle:UIAlertControllerStyleActionSheet];
-    [actionSheet addAction:[UIAlertAction actionWithTitle:(req) ? NSLocalizedString(@"copy request to clipboard", nil) :
-                            NSLocalizedString(@"copy address to clipboard", nil) style:UIAlertActionStyleDefault handler:^(UIAlertAction *action) {
+    [actionSheet addAction:[UIAlertAction actionWithTitle:(req) ? NSLocalizedString(@"Copy request to clipboard", nil) :
+                            NSLocalizedString(@"Copy address to clipboard", nil) style:UIAlertActionStyleDefault handler:^(UIAlertAction *action) {
                                 [UIPasteboard generalPasteboard].string = (self.paymentRequest.amount > 0) ? self.paymentRequest.string :
                                 self.paymentAddress;
                                 NSLog(@"\n\nCOPIED PAYMENT REQUEST/ADDRESS:\n\n%@", [UIPasteboard generalPasteboard].string);
                                 
-                                [self.view addSubview:[[[BRBubbleView viewWithText:NSLocalizedString(@"copied", nil)
+                                [self.view addSubview:[[[BRBubbleView viewWithText:NSLocalizedString(@"Copied", nil)
                                                                             center:CGPointMake(self.view.bounds.size.width/2.0, self.view.bounds.size.height/2.0 - 130.0)] popIn]
                                                        popOutAfterDelay:2.0]];
                                 [BREventManager saveEvent:@"receive:copy_address"];
     }]];
 
     if ([MFMailComposeViewController canSendMail]) {
-        [actionSheet addAction:[UIAlertAction actionWithTitle:(req) ? NSLocalizedString(@"send request as email", nil) :
-                                NSLocalizedString(@"send address as email", nil) style:UIAlertActionStyleDefault handler:^(UIAlertAction *action) {
+        [actionSheet addAction:[UIAlertAction actionWithTitle:(req) ? NSLocalizedString(@"Send request as email", nil) :
+                                NSLocalizedString(@"Send address as email", nil) style:UIAlertActionStyleDefault handler:^(UIAlertAction *action) {
                                     if ([MFMailComposeViewController canSendMail]) {
                                         MFMailComposeViewController *composeController = [MFMailComposeViewController new];
 
@@ -333,10 +331,10 @@
                                         [BREventManager saveEvent:@"receive:email_not_configured"];
                                         UIAlertController * alert = [UIAlertController
                                                                      alertControllerWithTitle:@""
-                                                                     message:NSLocalizedString(@"email not configured", nil)
+                                                                     message:NSLocalizedString(@"Email not configured", nil)
                                                                      preferredStyle:UIAlertControllerStyleAlert];
                                         UIAlertAction* okButton = [UIAlertAction
-                                                                   actionWithTitle:NSLocalizedString(@"ok", nil)
+                                                                   actionWithTitle:NSLocalizedString(@"Ok", nil)
                                                                    style:UIAlertActionStyleCancel
                                                                    handler:^(UIAlertAction * action) {
                                                                    }];
@@ -349,8 +347,8 @@
 
 #if ! TARGET_IPHONE_SIMULATOR
     if ([MFMessageComposeViewController canSendText]) {
-        [actionSheet addAction:[UIAlertAction actionWithTitle:(req) ? NSLocalizedString(@"send request as message", nil) :
-                                NSLocalizedString(@"send address as message", nil) style:UIAlertActionStyleDefault handler:^(UIAlertAction *action) {
+        [actionSheet addAction:[UIAlertAction actionWithTitle:(req) ? NSLocalizedString(@"Send request as message", nil) :
+                                NSLocalizedString(@"Send address as message", nil) style:UIAlertActionStyleDefault handler:^(UIAlertAction *action) {
                                     if ([MFMessageComposeViewController canSendText]) {
                                         MFMessageComposeViewController *composeController = [MFMessageComposeViewController new];
                                         
@@ -375,10 +373,10 @@
                                         [BREventManager saveEvent:@"receive:message_not_configured"];
                                         UIAlertController * alert = [UIAlertController
                                                                      alertControllerWithTitle:@""
-                                                                     message:NSLocalizedString(@"sms not currently available", nil)
+                                                                     message:NSLocalizedString(@"SMS not currently available", nil)
                                                                      preferredStyle:UIAlertControllerStyleAlert];
                                         UIAlertAction* okButton = [UIAlertAction
-                                                                   actionWithTitle:NSLocalizedString(@"ok", nil)
+                                                                   actionWithTitle:NSLocalizedString(@"Ok", nil)
                                                                    style:UIAlertActionStyleCancel
                                                                    handler:^(UIAlertAction * action) {
                                                                    }];
@@ -390,7 +388,7 @@
 #endif
 
     if (! req) {
-        [actionSheet addAction:[UIAlertAction actionWithTitle:NSLocalizedString(@"request an amount", nil) style:UIAlertActionStyleDefault handler:^(UIAlertAction *action) {
+        [actionSheet addAction:[UIAlertAction actionWithTitle:NSLocalizedString(@"Request an amount", nil) style:UIAlertActionStyleDefault handler:^(UIAlertAction *action) {
             UINavigationController *amountNavController = [self.storyboard
                                                            instantiateViewControllerWithIdentifier:@"AmountNav"];
             
@@ -399,7 +397,7 @@
             [BREventManager saveEvent:@"receive:request_amount"];
                                 }]];
     }
-    [actionSheet addAction:[UIAlertAction actionWithTitle:NSLocalizedString(@"cancel", nil) style:UIAlertActionStyleCancel handler:^(UIAlertAction *action) {
+    [actionSheet addAction:[UIAlertAction actionWithTitle:NSLocalizedString(@"Cancel", nil) style:UIAlertActionStyleCancel handler:^(UIAlertAction *action) {
         
     }]];
     
@@ -431,12 +429,12 @@ error:(NSError *)error
     
     if (amount < manager.wallet.minOutputAmount) {
         UIAlertController * alert = [UIAlertController
-                                     alertControllerWithTitle:NSLocalizedString(@"amount too small", nil)
+                                     alertControllerWithTitle:NSLocalizedString(@"Amount too small", nil)
                                      message:[NSString stringWithFormat:NSLocalizedString(@"PIVX payments can't be less than %@", nil),
                                               [manager stringForDashAmount:manager.wallet.minOutputAmount]]
                                      preferredStyle:UIAlertControllerStyleAlert];
         UIAlertAction* okButton = [UIAlertAction
-                                   actionWithTitle:NSLocalizedString(@"ok", nil)
+                                   actionWithTitle:NSLocalizedString(@"Ok", nil)
                                    style:UIAlertActionStyleCancel
                                    handler:^(UIAlertAction * action) {
                                    }];

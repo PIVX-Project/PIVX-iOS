@@ -215,7 +215,7 @@ services:(uint64_t)services
         // after the reachablity check, the radios should be warmed up and we can set a short socket connect timeout
         [self performSelector:@selector(disconnectWithError:)
          withObject:[NSError errorWithDomain:@"DashWallet" code:BITCOIN_TIMEOUT_CODE
-                     userInfo:@{NSLocalizedDescriptionKey:NSLocalizedString(@"connect timeout", nil)}]
+                     userInfo:@{NSLocalizedDescriptionKey:NSLocalizedString(@"Connect timeout", nil)}]
          afterDelay:CONNECT_TIMEOUT];
         
         [self.inputStream open];
@@ -1134,7 +1134,7 @@ services:(uint64_t)services
                 [NSObject cancelPreviousPerformRequestsWithTarget:self]; // cancel pending socket connect timeout
                 [self performSelector:@selector(disconnectWithError:)
                  withObject:[NSError errorWithDomain:@"DashWallet" code:BITCOIN_TIMEOUT_CODE
-                             userInfo:@{NSLocalizedDescriptionKey:NSLocalizedString(@"connect timeout", nil)}]
+                             userInfo:@{NSLocalizedDescriptionKey:NSLocalizedString(@"Connect timeout", nil)}]
                              afterDelay:CONNECT_TIMEOUT];
             }
 

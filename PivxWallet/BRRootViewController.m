@@ -49,8 +49,7 @@
 
 #define BALANCE_TIP_START NSLocalizedString(@"This is your PIVX balance.", nil)
 
-#define BALANCE_TIP NSLocalizedString(@"This is your PIVX balance. PIVX is a currency. "\
-"The exchange rate changes with the market.", nil)
+#define BALANCE_TIP NSLocalizedString(@"This is your PIVX balance. PIVX is a currency. The exchange rate changes with the market.", nil)
 #define MDASH_TIP    NSLocalizedString(@"%@ is for 'mPIV'. %@ = 1 PIV.", nil)
 
 #define BACKUP_DIALOG_TIME_KEY @"BACKUP_DIALOG_TIME"
@@ -139,13 +138,13 @@
     self.buttonContainer.backgroundColor = UIColor.whiteColor;
     
     UIButton *receive = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, width/2, 50)];
-    [receive setTitle:@"RECEIVE" forState:UIControlStateNormal];
+    [receive setTitle:NSLocalizedString(@"RECEIVE", nil) forState:UIControlStateNormal];
     [receive setTintColor:UIColor.whiteColor];
     [receive setBackgroundColor:purple];
     [receive addTarget:self action:@selector(tappedReceiveButton) forControlEvents:UIControlEventTouchUpInside];
     
     UIButton *send = [[UIButton alloc] initWithFrame:CGRectMake((width/2) + 1 , 0, (width/2) - 1, 50)];
-    [send setTitle:@"SEND" forState:UIControlStateNormal];
+    [send setTitle:NSLocalizedString(@"SEND", nil) forState:UIControlStateNormal];
     [send setTintColor:UIColor.whiteColor];
     [send setBackgroundColor:purple];
     [send addTarget:self action:@selector(tappedSendButton) forControlEvents:UIControlEventTouchUpInside];
@@ -259,19 +258,16 @@
                                                            if (jailbroken && manager.wallet.totalReceived > 0) {
                                                                UIAlertController * alert = [UIAlertController
                                                                                             alertControllerWithTitle:NSLocalizedString(@"WARNING", nil)
-                                                                                            message:NSLocalizedString(@"DEVICE SECURITY COMPROMISED\n"
-                                                                                                                      "Any 'jailbreak' app can access any other app's keychain data "
-                                                                                                                      "(and steal your PIV). "
-                                                                                                                      "Wipe this wallet immediately and restore on a secure device.", nil)
+                                                                                            message:NSLocalizedString(@"DEVICE SECURITY COMPROMISED\nAny 'jailbreak' app can access any other app's keychain data (and steal your PIV). Wipe this wallet immediately and restore on a secure device.", nil)
                                                                                             preferredStyle:UIAlertControllerStyleAlert];
                                                                UIAlertAction* ignoreButton = [UIAlertAction
-                                                                                              actionWithTitle:NSLocalizedString(@"ignore", nil)
+                                                                                              actionWithTitle:NSLocalizedString(@"Ignore", nil)
                                                                                               style:UIAlertActionStyleCancel
                                                                                               handler:^(UIAlertAction * action) {
                                                                                                   
                                                                                               }];
                                                                UIAlertAction* wipeButton = [UIAlertAction
-                                                                                            actionWithTitle:NSLocalizedString(@"wipe", nil)
+                                                                                            actionWithTitle:NSLocalizedString(@"Wipe", nil)
                                                                                             style:UIAlertActionStyleDestructive
                                                                                             handler:^(UIAlertAction * action) {
                                                                                                 BRRestoreViewController *restoreController =
@@ -287,18 +283,16 @@
                                                            else if (jailbroken) {
                                                                UIAlertController * alert = [UIAlertController
                                                                                             alertControllerWithTitle:NSLocalizedString(@"WARNING", nil)
-                                                                                            message:NSLocalizedString(@"DEVICE SECURITY COMPROMISED\n"
-                                                                                                                      "Any 'jailbreak' app can access any other app's keychain data "
-                                                                                                                      "(and steal your dash).", nil)
+                                                                                            message:NSLocalizedString(@"DEVICE SECURITY COMPROMISED\nAny 'jailbreak' app can access any other app's keychain data (and steal your PIV).", nil)
                                                                                             preferredStyle:UIAlertControllerStyleAlert];
                                                                UIAlertAction* ignoreButton = [UIAlertAction
-                                                                                              actionWithTitle:NSLocalizedString(@"ignore", nil)
+                                                                                              actionWithTitle:NSLocalizedString(@"Ignore", nil)
                                                                                               style:UIAlertActionStyleCancel
                                                                                               handler:^(UIAlertAction * action) {
                                                                                                   
                                                                                               }];
                                                                UIAlertAction* closeButton = [UIAlertAction
-                                                                                             actionWithTitle:NSLocalizedString(@"close app", nil)
+                                                                                             actionWithTitle:NSLocalizedString(@"Close app", nil)
                                                                                              style:UIAlertActionStyleDefault
                                                                                              handler:^(UIAlertAction * action) {
                                                                                                  exit(0);
@@ -484,19 +478,16 @@
     if (jailbroken && manager.wallet.totalReceived + manager.wallet.totalSent > 0) {
         UIAlertController * alert = [UIAlertController
                                      alertControllerWithTitle:NSLocalizedString(@"WARNING", nil)
-                                     message:NSLocalizedString(@"DEVICE SECURITY COMPROMISED\n"
-                                                               "Any 'jailbreak' app can access any other app's keychain data "
-                                                               "(and steal your PIV). "
-                                                               "Wipe this wallet immediately and restore on a secure device.", nil)
+                                     message:NSLocalizedString(@"DEVICE SECURITY COMPROMISED\nAny 'jailbreak' app can access any other app's keychain data (and steal your PIV). Wipe this wallet immediately and restore on a secure device.", nil)
                                      preferredStyle:UIAlertControllerStyleAlert];
         UIAlertAction* ignoreButton = [UIAlertAction
-                                       actionWithTitle:NSLocalizedString(@"ignore", nil)
+                                       actionWithTitle:NSLocalizedString(@"Ignore", nil)
                                        style:UIAlertActionStyleCancel
                                        handler:^(UIAlertAction * action) {
                                            
                                        }];
         UIAlertAction* wipeButton = [UIAlertAction
-                                     actionWithTitle:NSLocalizedString(@"wipe", nil)
+                                     actionWithTitle:NSLocalizedString(@"Wipe", nil)
                                      style:UIAlertActionStyleDestructive
                                      handler:^(UIAlertAction * action) {
                                          BRRestoreViewController *restoreController =
@@ -512,18 +503,16 @@
     else if (jailbroken) {
         UIAlertController * alert = [UIAlertController
                                      alertControllerWithTitle:NSLocalizedString(@"WARNING", nil)
-                                     message:NSLocalizedString(@"DEVICE SECURITY COMPROMISED\n"
-                                                               "Any 'jailbreak' app can access any other app's keychain data "
-                                                               "(and steal your PIV).", nil)
+                                     message:NSLocalizedString(@"DEVICE SECURITY COMPROMISED\nAny 'jailbreak' app can access any other app's keychain data (and steal your PIV).", nil)
                                      preferredStyle:UIAlertControllerStyleAlert];
         UIAlertAction* ignoreButton = [UIAlertAction
-                                       actionWithTitle:NSLocalizedString(@"ignore", nil)
+                                       actionWithTitle:NSLocalizedString(@"Ignore", nil)
                                        style:UIAlertActionStyleCancel
                                        handler:^(UIAlertAction * action) {
                                            
                                        }];
         UIAlertAction* closeButton = [UIAlertAction
-                                      actionWithTitle:NSLocalizedString(@"close app", nil)
+                                      actionWithTitle:NSLocalizedString(@"Close app", nil)
                                       style:UIAlertActionStyleDefault
                                       handler:^(UIAlertAction * action) {
                                           exit(0);
@@ -697,12 +686,11 @@
     if (manager.noWallet && manager.noOldWallet) {
         if (! manager.passcodeEnabled) {
             UIAlertController * alert = [UIAlertController
-                                         alertControllerWithTitle:NSLocalizedString(@"turn device passcode on", nil)
-                                         message:NSLocalizedString(@"\nA device passcode is needed to safeguard your wallet. Go to settings and "
-                                                                   "turn passcode on to continue.", nil)
+                                         alertControllerWithTitle:NSLocalizedString(@"Turn device passcode on", nil)
+                                         message:NSLocalizedString(@"A device passcode is needed to safeguard your wallet. Go to settings and turn passcode on to continue.", nil)
                                          preferredStyle:UIAlertControllerStyleAlert];
             UIAlertAction* closeButton = [UIAlertAction
-                                          actionWithTitle:NSLocalizedString(@"close app", nil)
+                                          actionWithTitle:NSLocalizedString(@"Close app", nil)
                                           style:UIAlertActionStyleDefault
                                           handler:^(UIAlertAction * action) {
                                               exit(0);
@@ -736,17 +724,17 @@
                 UIAlertController * alert;
                 if (cancelled) {
                     alert = [UIAlertController
-                             alertControllerWithTitle:NSLocalizedString(@"failed wallet update", nil)
-                             message:NSLocalizedString(@"you must enter your pin in order to enter PIVXwallet", nil)
+                             alertControllerWithTitle:NSLocalizedString(@"Failed wallet update", nil)
+                             message:NSLocalizedString(@"You must enter your pin in order to enter the PIVX wallet", nil)
                              preferredStyle:UIAlertControllerStyleAlert];
                     UIAlertAction* exitButton = [UIAlertAction
-                                                 actionWithTitle:NSLocalizedString(@"exit", nil)
+                                                 actionWithTitle:NSLocalizedString(@"Exit", nil)
                                                  style:UIAlertActionStyleDefault
                                                  handler:^(UIAlertAction * action) {
                                                      exit(0);
                                                  }];
                     UIAlertAction* enterButton = [UIAlertAction
-                                                  actionWithTitle:NSLocalizedString(@"enter", nil)
+                                                  actionWithTitle:NSLocalizedString(@"Enter", nil)
                                                   style:UIAlertActionStyleDefault
                                                   handler:^(UIAlertAction * action) {
                                                       [self protectedViewDidAppear];
@@ -758,13 +746,13 @@
                     NSString * waitTime = [NSString waitTimeFromNow:wait];
                     
                     alert = [UIAlertController
-                             alertControllerWithTitle:NSLocalizedString(@"failed wallet update", nil)
-                             message:[NSString stringWithFormat:NSLocalizedString(@"\ntry again in %@", nil),
+                             alertControllerWithTitle:NSLocalizedString(@"Failed wallet update", nil)
+                             message:[NSString stringWithFormat:NSLocalizedString(@"try again in %@", nil),
                                       waitTime]
                              preferredStyle:UIAlertControllerStyleAlert];
                     NSTimer * timer = [NSTimer scheduledTimerWithTimeInterval:1 repeats:YES block:^(NSTimer * _Nonnull timer) {
                         wait--;
-                        alert.message = [NSString stringWithFormat:NSLocalizedString(@"\ntry again in %@", nil),
+                        alert.message = [NSString stringWithFormat:NSLocalizedString(@"try again in %@", nil),
                                          [NSString waitTimeFromNow:wait]];
                         if (!wait) {
                             [timer invalidate];
@@ -774,7 +762,7 @@
                         }
                     }];
                     UIAlertAction* resetButton = [UIAlertAction
-                                                  actionWithTitle:NSLocalizedString(@"reset", nil)
+                                                  actionWithTitle:NSLocalizedString(@"Reset", nil)
                                                   style:UIAlertActionStyleDefault
                                                   handler:^(UIAlertAction * action) {
                                                       [timer invalidate];
@@ -783,7 +771,7 @@
                                                       }];
                                                   }];
                     UIAlertAction* exitButton = [UIAlertAction
-                                                 actionWithTitle:NSLocalizedString(@"exit", nil)
+                                                 actionWithTitle:NSLocalizedString(@"Exit", nil)
                                                  style:UIAlertActionStyleDefault
                                                  handler:^(UIAlertAction * action) {
                                                      exit(0);
@@ -869,25 +857,20 @@
         UIAlertController * alert = [UIAlertController
                                      alertControllerWithTitle:NSLocalizedString(@"WARNING", nil)
                                      message:[NSString stringWithFormat:@"\n%@\n\n%@\n\n%@\n",
-                                              [NSLocalizedString(@"\nDO NOT let anyone see your recovery\n"
-                                                                 "phrase or they can spend your PIVX.\n", nil)
+                                              [NSLocalizedString(@"DO NOT let anyone see your recovery phrase or they can spend your PIV.", nil)
                                                stringByTrimmingCharactersInSet:[NSCharacterSet newlineCharacterSet]],
-                                              [NSLocalizedString(@"\nNEVER type your recovery phrase into\n"
-                                                                 "password managers or elsewhere.\n"
-                                                                 "Other devices may be infected.\n", nil)
+                                              [NSLocalizedString(@"NEVER type your recovery phrase into password managers or elsewhere. Other devices may be infected.", nil)
                                                stringByTrimmingCharactersInSet:[NSCharacterSet newlineCharacterSet]],
-                                              [NSLocalizedString(@"\nDO NOT take a screenshot.\n"
-                                                                 "Screenshots are visible to other apps\n"
-                                                                 "and devices.\n", nil)
+                                              [NSLocalizedString(@"DO NOT take a screenshot. Screenshots are visible to other apps and devices.", nil)
                                                stringByTrimmingCharactersInSet:[NSCharacterSet newlineCharacterSet]]]
                                      preferredStyle:UIAlertControllerStyleAlert];
         UIAlertAction* cancelButton = [UIAlertAction
-                                       actionWithTitle:NSLocalizedString(@"cancel", nil)
+                                       actionWithTitle:NSLocalizedString(@"Cancel", nil)
                                        style:UIAlertActionStyleCancel
                                        handler:^(UIAlertAction * action) {
                                        }];
         UIAlertAction* showButton = [UIAlertAction
-                                     actionWithTitle:NSLocalizedString(@"show", nil)
+                                     actionWithTitle:NSLocalizedString(@"Show", nil)
                                      style:UIAlertActionStyleDefault
                                      handler:^(UIAlertAction * action) {
                                          BRWalletManager *manager = [BRWalletManager sharedInstance];
@@ -947,7 +930,7 @@
     
     if (balance > _balance && [UIApplication sharedApplication].applicationState != UIApplicationStateBackground) {
         [self.view addSubview:[[[BRBubbleView viewWithText:[NSString
-                                                            stringWithFormat:NSLocalizedString(@"received %@ (%@)", nil), [manager stringForDashAmount:balance - _balance],
+                                                            stringWithFormat:NSLocalizedString(@"Received %@ (%@)", nil), [manager stringForDashAmount:balance - _balance],
                                                             [manager localCurrencyStringForDashAmount:balance - _balance]]
                                                     center:CGPointMake(self.view.bounds.size.width/2, self.view.bounds.size.height/2)] popIn]
                                popOutAfterDelay:3.0]];
@@ -1186,20 +1169,19 @@
     
     [defs setDouble:now forKey:BACKUP_DIALOG_TIME_KEY];
     UIAlertController * alert = [UIAlertController
-                                 alertControllerWithTitle:(first) ? NSLocalizedString(@"you received PIVX!", nil) : NSLocalizedString(@"IMPORTANT", nil)
-                                 message:[NSString stringWithFormat:NSLocalizedString(@"\n%@\n\nif you ever lose your phone, you will need it to "
-                                                                                      "recover your wallet", nil),
+                                 alertControllerWithTitle:(first) ? NSLocalizedString(@"You received PIV!", nil) : NSLocalizedString(@"IMPORTANT", nil)
+                                 message:[NSString stringWithFormat:NSLocalizedString(@"%@\n\nif you ever lose your phone, you will need it to recover your wallet", nil),
                                           (first) ? NSLocalizedString(@"next, write down your recovery phrase", nil) :
                                           NSLocalizedString(@"WRITE DOWN YOUR RECOVERY PHRASE", nil)]
                                  preferredStyle:UIAlertControllerStyleAlert];
     UIAlertAction* doItLaterButton = [UIAlertAction
-                                      actionWithTitle:NSLocalizedString(@"do it later", nil)
+                                      actionWithTitle:NSLocalizedString(@"Do it later", nil)
                                       style:UIAlertActionStyleCancel
                                       handler:^(UIAlertAction * action) {
                                           
                                       }];
     UIAlertAction* showPhraseButton = [UIAlertAction
-                                       actionWithTitle:NSLocalizedString(@"show phrase", nil)
+                                       actionWithTitle:NSLocalizedString(@"Show phrase", nil)
                                        style:UIAlertActionStyleDefault
                                        handler:^(UIAlertAction * action) {
                                            [self performSegueWithIdentifier:@"SettingsSegue" sender:self];
@@ -1373,7 +1355,7 @@
     [[NSBundle mainBundle] loadNibNamed:@"BREventConfirmView" owner:nil options:nil][0];
     view.titleLabel.text = NSLocalizedString(@"Buy PIV in PIVXwallet!", nil);
     view.descriptionLabel.text =
-    NSLocalizedString(@"You can now buy PIV in\nPIVXwallet with cash or\nbank transfer.", nil);
+    NSLocalizedString(@"You can now buy PIV in PIVXwallet with cash or bank transfer.", nil);
     [view.okBtn setTitle:NSLocalizedString(@"Try It!", nil) forState:UIControlStateNormal];
     
     view.image = blurredBgImg;

@@ -161,8 +161,7 @@
         fmt.dateFormat = [NSDateFormatter dateFormatFromTemplate:@"Mdjma" options:0 locale:[NSLocale currentLocale]];
     }
 
-   return [NSString stringWithFormat:NSLocalizedString(@"rate: %@ = %@\nupdated: %@\nblock #%d of %d\n"
-                                                       "connected peers: %d\ndl peer: %@", NULL),
+   return [NSString stringWithFormat:NSLocalizedString(@"rate: %@ = %@\nupdated: %@\nblock #%d of %d\nconnected peers: %d\ndl peer: %@", NULL),
            @"1 PIVX",
            [manager localCurrencyStringForDashAmount:DUFFS],
            [fmt stringFromDate:[NSDate dateWithTimeIntervalSinceReferenceDate:manager.secureTime]].lowercaseString,
@@ -225,22 +224,22 @@
     if (! [[NSUserDefaults standardUserDefaults] stringForKey:SETTINGS_FIXED_PEER_KEY]) {
         UIAlertController * alert = [UIAlertController
                                      alertControllerWithTitle:nil
-                                     message:NSLocalizedString(@"set a trusted node", nil)
+                                     message:NSLocalizedString(@"Set a trusted node", nil)
                                      preferredStyle:UIAlertControllerStyleAlert];
         [alert addTextFieldWithConfigurationHandler:^(UITextField *textField) {
-            textField.placeholder = @"node ip";
+            textField.placeholder = NSLocalizedString(@"node ip", nil);
             textField.textColor = [UIColor darkTextColor];
             textField.clearButtonMode = UITextFieldViewModeWhileEditing;
             textField.borderStyle = UITextBorderStyleRoundedRect;
         }];
         UIAlertAction* cancelButton = [UIAlertAction
-                                       actionWithTitle:NSLocalizedString(@"cancel", nil)
+                                       actionWithTitle:NSLocalizedString(@"Cancel", nil)
                                        style:UIAlertActionStyleCancel
                                        handler:^(UIAlertAction * action) {
                                            [self.tableView deselectRowAtIndexPath:self.tableView.indexPathForSelectedRow animated:YES];
                                        }];
         UIAlertAction* trustButton = [UIAlertAction
-                                     actionWithTitle:NSLocalizedString(@"trust", nil)
+                                     actionWithTitle:NSLocalizedString(@"Trust", nil)
                                      style:UIAlertActionStyleDefault
                                      handler:^(UIAlertAction * action) {
                                          NSArray * textfields = alert.textFields;
@@ -291,16 +290,16 @@
     else {
         UIAlertController * alert = [UIAlertController
                                      alertControllerWithTitle:nil
-                                     message:NSLocalizedString(@"clear trusted node?", nil)
+                                     message:NSLocalizedString(@"Clear trusted node?", nil)
                                      preferredStyle:UIAlertControllerStyleAlert];
         UIAlertAction* cancelButton = [UIAlertAction
-                                       actionWithTitle:NSLocalizedString(@"cancel", nil)
+                                       actionWithTitle:NSLocalizedString(@"Cancel", nil)
                                        style:UIAlertActionStyleCancel
                                        handler:^(UIAlertAction * action) {
                                            [self.tableView deselectRowAtIndexPath:self.tableView.indexPathForSelectedRow animated:YES];
                                        }];
         UIAlertAction* clearButton = [UIAlertAction
-                                      actionWithTitle:NSLocalizedString(@"clear", nil)
+                                      actionWithTitle:NSLocalizedString(@"Clear", nil)
                                       style:UIAlertActionStyleDestructive
                                       handler:^(UIAlertAction * action) {
                                           [[NSUserDefaults standardUserDefaults] removeObjectForKey:SETTINGS_FIXED_PEER_KEY];
@@ -322,7 +321,7 @@
         if (authenticated) {
             self.selectorType = 1;
             self.selectorOptions =
-            @[NSLocalizedString(@"always require passcode", nil),
+            @[NSLocalizedString(@"Always require passcode", nil),
               [NSString stringWithFormat:@"%@      (%@)", [manager stringForDashAmount:DUFFS/10],
                [manager localCurrencyStringForDashAmount:DUFFS/10]],
               [NSString stringWithFormat:@"%@   (%@)", [manager stringForDashAmount:DUFFS],
@@ -334,7 +333,7 @@
                                                        (NSUInteger)log10(manager.spendingLimit) - 6];
             self.noOptionsText = nil;
             self.selectorController.view.backgroundColor = UIColor.whiteColor;
-            self.selectorController.title = NSLocalizedString(@"touch id spending limit", nil);
+            self.selectorController.title = NSLocalizedString(@"Touch ID spending limit", nil);
             [self.navigationController pushViewController:self.selectorController animated:YES];
             [self.selectorController.tableView reloadData];
         } else {
@@ -408,11 +407,11 @@
             
             switch (indexPath.row) {
                 case 0:
-                    cell.textLabel.text = NSLocalizedString(@"about", nil);
+                    cell.textLabel.text = NSLocalizedString(@"About", nil);
                     break;
                     
                 case 1:
-                    cell.textLabel.text = NSLocalizedString(@"recovery phrase", nil);
+                    cell.textLabel.text = NSLocalizedString(@"Recovery phrase", nil);
                     break;
             }
             
@@ -422,14 +421,14 @@
             switch (indexPath.row) {
                 case 0:
                     cell = [tableView dequeueReusableCellWithIdentifier:selectorIdent];
-                    cell.textLabel.text = @"Local Currency";
+                    cell.textLabel.text = NSLocalizedString(@"Local Currency", nil);
                     cell.detailTextLabel.text = manager.localCurrencyCode;
                     break;
             
                 case 1:
                     if (self.touchId) {
                         cell = [tableView dequeueReusableCellWithIdentifier:selectorIdent];
-                        cell.textLabel.text = NSLocalizedString(@"touch id limit", nil);
+                        cell.textLabel.text = NSLocalizedString(@"Touch ID limit", nil);
                         cell.detailTextLabel.text = [manager stringForDashAmount:manager.spendingLimit];
                     } else {
                         goto _switch_cell;
@@ -440,7 +439,7 @@
 _switch_cell:
                     cell = [tableView dequeueReusableCellWithIdentifier:@"SwitchCell" forIndexPath:indexPath];
                     BRUserDefaultsSwitchCell *switchCell = (BRUserDefaultsSwitchCell *)cell;
-                    switchCell.titleLabel.text = NSLocalizedString(@"enable receive notifications", nil);
+                    switchCell.titleLabel.text = NSLocalizedString(@"Enable receive notifications", nil);
                     [switchCell setUserDefaultsKey:USER_DEFAULTS_LOCAL_NOTIFICATIONS_KEY];
                     break;
                 }
@@ -453,7 +452,7 @@ _switch_cell:
             switch (indexPath.row) {
                 case 0:
                     cell = [tableView dequeueReusableCellWithIdentifier:actionIdent];
-                    cell.textLabel.text = NSLocalizedString(@"change passcode", nil);
+                    cell.textLabel.text = NSLocalizedString(@"Change passcode", nil);
                     break;
                     
                 case 1:
@@ -463,7 +462,7 @@ _switch_cell:
                     
                 case 2:
                     cell = [tableView dequeueReusableCellWithIdentifier:actionIdent];
-                    cell.textLabel.text = NSLocalizedString(@"rescan blockchain", nil);
+                    cell.textLabel.text = NSLocalizedString(@"Rescan blockchain", nil);
                     break;
 
             }
@@ -490,8 +489,7 @@ _switch_cell:
             return nil;
             
         case 3:
-            return NSLocalizedString(@"rescan blockchain if you think you may have missing transactions, "
-                                     "or are having trouble sending (rescanning can take several minutes)", nil);
+            return NSLocalizedString(@"Rescan blockchain if you think you may have missing transactions, or are having trouble sending (rescanning can take several minutes)", nil);
     }
     
     return nil;
@@ -584,26 +582,21 @@ _switch_cell:
     UIAlertController * alert = [UIAlertController
                                  alertControllerWithTitle:NSLocalizedString(@"WARNING", nil)
                                  message:[NSString stringWithFormat:@"\n%@\n\n%@\n\n%@\n",
-                                          [NSLocalizedString(@"\nDO NOT let anyone see your recovery\n"
-                                                             "phrase or they can spend your PIV.\n", nil)
+                                          [NSLocalizedString(@"DO NOT let anyone see your recovery phrase or they can spend your PIV.", nil)
                                            stringByTrimmingCharactersInSet:[NSCharacterSet newlineCharacterSet]],
-                                          [NSLocalizedString(@"\nNEVER type your recovery phrase into\n"
-                                                             "password managers or elsewhere.\n"
-                                                             "Other devices may be infected.\n", nil)
+                                          [NSLocalizedString(@"NEVER type your recovery phrase into password managers or elsewhere. Other devices may be infected.", nil)
                                            stringByTrimmingCharactersInSet:[NSCharacterSet newlineCharacterSet]],
-                                          [NSLocalizedString(@"\nDO NOT take a screenshot.\n"
-                                                             "Screenshots are visible to other apps\n"
-                                                             "and devices.\n", nil)
+                                          [NSLocalizedString(@"DO NOT take a screenshot. Screenshots are visible to other apps and devices.", nil)
                                            stringByTrimmingCharactersInSet:[NSCharacterSet newlineCharacterSet]]]
                                  preferredStyle:UIAlertControllerStyleAlert];
     UIAlertAction* cancelButton = [UIAlertAction
-                                   actionWithTitle:NSLocalizedString(@"cancel", nil)
+                                   actionWithTitle:NSLocalizedString(@"Cancel", nil)
                                    style:UIAlertActionStyleCancel
                                    handler:^(UIAlertAction * action) {
                                        [self.tableView deselectRowAtIndexPath:self.tableView.indexPathForSelectedRow animated:YES];
                                    }];
     UIAlertAction* showButton = [UIAlertAction
-                                 actionWithTitle:NSLocalizedString(@"show", nil)
+                                 actionWithTitle:NSLocalizedString(@"Show", nil)
                                  style:UIAlertActionStyleDefault
                                  handler:^(UIAlertAction * action) {
                                      BRWalletManager *manager = [BRWalletManager sharedInstance];
@@ -639,7 +632,7 @@ _switch_cell:
     self.selectorOptions = options;
     currencyCodeIndex = [manager.currencyCodes indexOfObject:manager.localCurrencyCode];
     if (currencyCodeIndex < options.count) self.selectedOption = options[currencyCodeIndex];
-    self.noOptionsText = NSLocalizedString(@"no exchange rate data", nil);
+    self.noOptionsText = NSLocalizedString(@"No exchange rate data", nil);
     self.selectorController.view.backgroundColor = UIColor.whiteColor;
     self.selectorController.title =
         [NSString stringWithFormat:@"%@ = %@",
@@ -752,14 +745,14 @@ _deselect_switch:
     }
 }
 -(void)showAlertOption {
-    UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"Rescan blockchain"
-                                                                   message:@"The blockchain is going to be reseted.\nThe synchronization could take a while.\nAre you sure?"
+    UIAlertController *alert = [UIAlertController alertControllerWithTitle:NSLocalizedString(@"Rescan blockchain", nil)
+                                                                   message:NSLocalizedString(@"The blockchain is going to be reset. The synchronization could take a while. Are you sure?", nil)
                                                             preferredStyle:UIAlertControllerStyleActionSheet];
-    UIAlertAction *firstAction = [UIAlertAction actionWithTitle:@"cancel"
+    UIAlertAction *firstAction = [UIAlertAction actionWithTitle:@"Cancel"
                                                           style:UIAlertActionStyleCancel handler:^(UIAlertAction * action) {
                                                               
                                                           }]; // 2
-    UIAlertAction *secondAction = [UIAlertAction actionWithTitle:@"ok"
+    UIAlertAction *secondAction = [UIAlertAction actionWithTitle:@"Ok"
                                                            style:UIAlertActionStyleDefault handler:^(UIAlertAction * action) {
                                                                [[BRPeerManager sharedInstance] rescan];
                                                                [BREventManager saveEvent:@"settings:rescan"];

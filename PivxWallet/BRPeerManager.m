@@ -509,7 +509,7 @@ static const char *dns_seeds[] = {
             
             dispatch_async(dispatch_get_main_queue(), ^{
                 NSError *error = [NSError errorWithDomain:@"DashWallet" code:1
-                                                 userInfo:@{NSLocalizedDescriptionKey:NSLocalizedString(@"no peers found", nil)}];
+                                                 userInfo:@{NSLocalizedDescriptionKey:NSLocalizedString(@"No peers found", nil)}];
                 
                 [[NSNotificationCenter defaultCenter] postNotificationName:BRPeerManagerSyncFailedNotification
                                                                     object:nil userInfo:@{@"error":error}];
@@ -587,7 +587,7 @@ static const char *dns_seeds[] = {
         if (completion) {
             [[BREventManager sharedEventManager] saveEvent:@"peer_manager:not_connected"];
             completion([NSError errorWithDomain:@"DashWallet" code:-1009 userInfo:@{NSLocalizedDescriptionKey:
-                                                                                        NSLocalizedString(@"not connected to the PIVX network", nil)}]);
+                                                                                        NSLocalizedString(@"Not connected to the PIVX network", nil)}]);
         }
         
         return;
@@ -702,7 +702,7 @@ static const char *dns_seeds[] = {
     if (callback) {
         [[BREventManager sharedEventManager] saveEvent:@"peer_manager:tx_canceled_timeout"];
         callback([NSError errorWithDomain:@"DashWallet" code:BITCOIN_TIMEOUT_CODE userInfo:@{NSLocalizedDescriptionKey:
-                                                                                                 NSLocalizedString(@"transaction canceled, network timeout", nil)}]);
+                                                                                                 NSLocalizedString(@"Transaction canceled, network timeout", nil)}]);
     }
 }
 
@@ -830,17 +830,16 @@ static const char *dns_seeds[] = {
             if (rescan) {
                 [[BREventManager sharedEventManager] saveEvent:@"peer_manager:tx_rejected_rescan"];
                 UIAlertController * alert = [UIAlertController
-                                             alertControllerWithTitle:NSLocalizedString(@"transaction rejected", nil)
-                                             message:NSLocalizedString(@"Your wallet may be out of sync.\n"
-                                                                       "This can often be fixed by rescanning the blockchain.", nil)
+                                             alertControllerWithTitle:NSLocalizedString(@"Transaction Rejected", nil)
+                                             message:NSLocalizedString(@"Your wallet may be out of sync. This can often be fixed by rescanning the blockchain.", nil)
                                              preferredStyle:UIAlertControllerStyleAlert];
                 UIAlertAction* cancelButton = [UIAlertAction
-                                           actionWithTitle:NSLocalizedString(@"cancel", nil)
+                                           actionWithTitle:NSLocalizedString(@"Cancel", nil)
                                            style:UIAlertActionStyleCancel
                                            handler:^(UIAlertAction * action) {
                                            }];
                 UIAlertAction* rescanButton = [UIAlertAction
-                                               actionWithTitle:NSLocalizedString(@"rescan", nil)
+                                               actionWithTitle:NSLocalizedString(@"Rescan", nil)
                                                style:UIAlertActionStyleDefault
                                                handler:^(UIAlertAction * action) {
                                                    [self rescan];
@@ -853,11 +852,11 @@ static const char *dns_seeds[] = {
             else {
                 [[BREventManager sharedEventManager] saveEvent:@"peer_manager_tx_rejected"];
                 UIAlertController * alert = [UIAlertController
-                                             alertControllerWithTitle:NSLocalizedString(@"transaction rejected", nil)
+                                             alertControllerWithTitle:NSLocalizedString(@"Transaction Rejected", nil)
                                              message:@""
                                              preferredStyle:UIAlertControllerStyleAlert];
                 UIAlertAction* okButton = [UIAlertAction
-                                           actionWithTitle:NSLocalizedString(@"ok", nil)
+                                           actionWithTitle:NSLocalizedString(@"Ok", nil)
                                            style:UIAlertActionStyleCancel
                                            handler:^(UIAlertAction * action) {
                                            }];
@@ -1563,7 +1562,7 @@ static const char *dns_seeds[] = {
     if (callback && ! [manager.wallet transactionIsValid:tx]) {
         [self.publishedTx removeObjectForKey:hash];
         error = [NSError errorWithDomain:@"DashWallet" code:401
-                                userInfo:@{NSLocalizedDescriptionKey:NSLocalizedString(@"double spend", nil)}];
+                                userInfo:@{NSLocalizedDescriptionKey:NSLocalizedString(@"Double spend", nil)}];
     }
     else if (tx && ! [manager.wallet transactionForHash:txHash] && [manager.wallet registerTransaction:tx]) {
         [[BRTransactionEntity context] performBlock:^{

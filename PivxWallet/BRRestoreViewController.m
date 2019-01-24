@@ -140,13 +140,13 @@
                                              message:nil
                                              preferredStyle:UIAlertControllerStyleActionSheet];
                 UIAlertAction* cancelButton = [UIAlertAction
-                                             actionWithTitle:NSLocalizedString(@"cancel", nil)
+                                             actionWithTitle:NSLocalizedString(@"Cancel", nil)
                                              style:UIAlertActionStyleCancel
                                              handler:^(UIAlertAction * action) {
                                                  [self.textView becomeFirstResponder];
                                              }];
                 UIAlertAction* wipeButton = [UIAlertAction
-                                              actionWithTitle:NSLocalizedString(@"wipe", nil)
+                                              actionWithTitle:NSLocalizedString(@"Wipe", nil)
                                               style:UIAlertActionStyleDestructive
                                               handler:^(UIAlertAction * action) {
                                                   [self wipeWallet];
@@ -160,7 +160,7 @@
                                                    message:NSLocalizedString(@"If you still would like to wipe it please input : \"I accept that I will lose my coins if I no longer possess the recovery phrase\"", nil)
                                                    preferredStyle:UIAlertControllerStyleAlert];
                 UIAlertAction* okButton = [UIAlertAction
-                                             actionWithTitle:NSLocalizedString(@"ok", nil)
+                                             actionWithTitle:NSLocalizedString(@"Ok", nil)
                                              style:UIAlertActionStyleCancel
                                              handler:^(UIAlertAction * action) {
                                                  
@@ -175,13 +175,13 @@
                                                message:nil
                                                preferredStyle:UIAlertControllerStyleActionSheet];
             UIAlertAction* cancelButton = [UIAlertAction
-                                           actionWithTitle:NSLocalizedString(@"cancel", nil)
+                                           actionWithTitle:NSLocalizedString(@"Cancel", nil)
                                            style:UIAlertActionStyleCancel
                                            handler:^(UIAlertAction * action) {
                                                [self.textView becomeFirstResponder];
                                            }];
             UIAlertAction* wipeButton = [UIAlertAction
-                                         actionWithTitle:NSLocalizedString(@"wipe", nil)
+                                         actionWithTitle:NSLocalizedString(@"Wipe", nil)
                                          style:UIAlertActionStyleDestructive
                                          handler:^(UIAlertAction * action) {
                                              [self wipeWallet];
@@ -201,13 +201,13 @@
                                                        message:nil
                                                        preferredStyle:UIAlertControllerStyleActionSheet];
                     UIAlertAction* cancelButton = [UIAlertAction
-                                                   actionWithTitle:NSLocalizedString(@"cancel", nil)
+                                                   actionWithTitle:NSLocalizedString(@"Cancel", nil)
                                                    style:UIAlertActionStyleCancel
                                                    handler:^(UIAlertAction * action) {
                                                        [self.textView becomeFirstResponder];
                                                    }];
                     UIAlertAction* wipeButton = [UIAlertAction
-                                                 actionWithTitle:NSLocalizedString(@"wipe", nil)
+                                                 actionWithTitle:NSLocalizedString(@"Wipe", nil)
                                                  style:UIAlertActionStyleDestructive
                                                  handler:^(UIAlertAction * action) {
                                                      [self wipeWallet];
@@ -227,10 +227,10 @@
                     [BREventManager saveEvent:@"restore:wipe_bad_recovery_phrase"];
                     UIAlertController * alert = [UIAlertController
                                                  alertControllerWithTitle:@""
-                                                 message:NSLocalizedString(@"recovery phrase doesn't match", nil)
+                                                 message:NSLocalizedString(@"Recovery phrase doesn't match", nil)
                                                  preferredStyle:UIAlertControllerStyleAlert];
                     UIAlertAction* okButton = [UIAlertAction
-                                               actionWithTitle:NSLocalizedString(@"ok", nil)
+                                               actionWithTitle:NSLocalizedString(@"Ok", nil)
                                                style:UIAlertActionStyleCancel
                                                handler:^(UIAlertAction * action) {
                                                    [self.textView becomeFirstResponder];
@@ -257,10 +257,10 @@
     if (! p) {
         UIAlertController * alert = [UIAlertController
                                      alertControllerWithTitle:@""
-                                     message:NSLocalizedString(@"the app will now close", nil)
+                                     message:NSLocalizedString(@"The app will now close", nil)
                                      preferredStyle:UIAlertControllerStyleAlert];
         UIAlertAction* closeButton = [UIAlertAction
-                                      actionWithTitle:NSLocalizedString(@"close app", nil)
+                                      actionWithTitle:NSLocalizedString(@"Close app", nil)
                                       style:UIAlertActionStyleDefault
                                       handler:^(UIAlertAction * action) {
                                           exit(0);
@@ -287,10 +287,10 @@
     if (! p) {
         UIAlertController * alert = [UIAlertController
                                      alertControllerWithTitle:@""
-                                     message:NSLocalizedString(@"the app will now close", nil)
+                                     message:NSLocalizedString(@"The app will now close", nil)
                                      preferredStyle:UIAlertControllerStyleAlert];
         UIAlertAction* closeButton = [UIAlertAction
-                                      actionWithTitle:NSLocalizedString(@"close app", nil)
+                                      actionWithTitle:NSLocalizedString(@"Close app", nil)
                                       style:UIAlertActionStyleDefault
                                       handler:^(UIAlertAction * action) {
                                           exit(0);
@@ -387,7 +387,7 @@
                                                   incorrect]
                                          preferredStyle:UIAlertControllerStyleAlert];
             UIAlertAction* okButton = [UIAlertAction
-                                                                     actionWithTitle:NSLocalizedString(@"ok", nil)
+                                                                     actionWithTitle:NSLocalizedString(@"Ok", nil)
                                                                      style:UIAlertActionStyleCancel
                                                                      handler:^(UIAlertAction * action) {
                                                                          //Handle your yes please button action here
@@ -399,11 +399,11 @@
             [BREventManager saveEvent:@"restore:invalid_num_words"];
             UIAlertController * alert = [UIAlertController
                                          alertControllerWithTitle:@""
-                                         message:[NSString stringWithFormat:NSLocalizedString(@"recovery phrase must have %d words", nil),
+                                         message:[NSString stringWithFormat:NSLocalizedString(@"Recovery phrase must have %d words", nil),
                                                   PHRASE_LENGTH]
                                          preferredStyle:UIAlertControllerStyleAlert];
             UIAlertAction* okButton = [UIAlertAction
-                                       actionWithTitle:NSLocalizedString(@"ok", nil)
+                                       actionWithTitle:NSLocalizedString(@"Ok", nil)
                                        style:UIAlertActionStyleCancel
                                        handler:^(UIAlertAction * action) {
                                            //Handle your yes please button action here
@@ -415,10 +415,10 @@
             [BREventManager saveEvent:@"restore:bad_phrase"];
             UIAlertController * alert = [UIAlertController
                                          alertControllerWithTitle:@""
-                                         message:NSLocalizedString(@"bad recovery phrase", nil)
+                                         message:NSLocalizedString(@"Bad recovery phrase", nil)
                                          preferredStyle:UIAlertControllerStyleAlert];
             UIAlertAction* okButton = [UIAlertAction
-                                       actionWithTitle:NSLocalizedString(@"ok", nil)
+                                       actionWithTitle:NSLocalizedString(@"Ok", nil)
                                        style:UIAlertActionStyleCancel
                                        handler:^(UIAlertAction * action) {
                                            //Handle your yes please button action here

@@ -90,7 +90,7 @@
     // Do any additional setup after loading the view.
     UIColor *color = [UIColor rgb:85 green:71 blue:108 alpha:1];
     [Utils changeStatusBackgroundColorWithColor:color];
-    self.doneButton = [[UIBarButtonItem alloc] initWithTitle:NSLocalizedString(@"done", nil)
+    self.doneButton = [[UIBarButtonItem alloc] initWithTitle:NSLocalizedString(@"Done", nil)
                        style:UIBarButtonItemStylePlain target:self action:@selector(done:)];
     self.doneButton.tintColor = [UIColor rgb:85 green:71 blue:108 alpha:1];
     
@@ -182,11 +182,10 @@
                     
                     UIAlertController * alert = [UIAlertController
                                                  alertControllerWithTitle:NSLocalizedString(@"WARNING", nil)
-                                                 message:NSLocalizedString(@"Screenshots are visible to other apps and devices. "
-                                                                           "Your funds are at risk. Transfer your balance to another wallet.", nil)
+                                                 message:NSLocalizedString(@"Screenshots are visible to other apps and devices. Your funds are at risk. Transfer your balance to another wallet.", nil)
                                                  preferredStyle:UIAlertControllerStyleAlert];
                     UIAlertAction* okButton = [UIAlertAction
-                                               actionWithTitle:NSLocalizedString(@"ok", nil)
+                                               actionWithTitle:NSLocalizedString(@"Ok", nil)
                                                style:UIAlertActionStyleCancel
                                                handler:^(UIAlertAction * action) {
                                                }];
@@ -200,11 +199,10 @@
                     
                     UIAlertController * alert = [UIAlertController
                                                  alertControllerWithTitle:NSLocalizedString(@"WARNING", nil)
-                                                 message:NSLocalizedString(@"Screenshots are visible to other apps and devices. "
-                                                                           "Generate a new recovery phrase and keep it secret.", nil)
+                                                 message:NSLocalizedString(@"Screenshots are visible to other apps and devices. Generate a new recovery phrase and keep it secret.", nil)
                                                  preferredStyle:UIAlertControllerStyleAlert];
                     UIAlertAction* okButton = [UIAlertAction
-                                               actionWithTitle:NSLocalizedString(@"ok", nil)
+                                               actionWithTitle:NSLocalizedString(@"Ok", nil)
                                                style:UIAlertActionStyleCancel
                                                handler:^(UIAlertAction * action) {
                                                }];
