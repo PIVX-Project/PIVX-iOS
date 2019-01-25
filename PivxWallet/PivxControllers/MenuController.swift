@@ -154,7 +154,7 @@ class MenuController: BaseController {
     @objc func syncFinished(){
         print("Sync finished!");
         stopTimer();
-        syncLabel.text = "Synced";
+        syncLabel.text = NSLocalizedString("Synced", comment: "Synced");
     }
     
     func stopTimer() {
@@ -163,7 +163,7 @@ class MenuController: BaseController {
     
     @objc func syncFailed(){
         print("Sync failed!");
-        syncLabel.text = "Not connection";
+        syncLabel.text = NSLocalizedString("Not connected", comment: "Not connected");
     }
     
     

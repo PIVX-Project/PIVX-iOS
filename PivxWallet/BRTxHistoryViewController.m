@@ -468,7 +468,7 @@ static NSString *dateFormat(NSString *template)
 //        [[NSBundle mainBundle] loadNibNamed:@"BREventConfirmView" owner:nil options:nil][0];
 //    view.titleLabel.text = NSLocalizedString(@"Buy PIV in PIVXwallet!", nil);
 //    view.descriptionLabel.text =
-//        NSLocalizedString(@"You can now buy PIV in\nPIVXwallet with cash or\nbank transfer.", nil);
+//        NSLocalizedString(@"You can now buy PIV in PIVXwallet with cash or bank transfer.", nil);
 //    [view.okBtn setTitle:NSLocalizedString(@"Try It!", nil) forState:UIControlStateNormal];
 //
 //    view.image = blurredBgImg;

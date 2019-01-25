@@ -66,7 +66,7 @@ class Utils: NSObject {
             top?.present(mail, animated: true, completion: nil)
             
         } else {
-            Utils.showAlertController(title: nil, message: "Sorry, you don't have any configured email account. Please add it and try again.")
+            Utils.showAlertController(title: nil, message: NSLocalizedString("Sorry, you don't have any configured email account. Please add it and try again.", comment: "no mail account"))
         }
     }
     
@@ -93,7 +93,7 @@ class Utils: NSObject {
                 topController = presentedViewController
             }
             let alert = UIAlertController(title: nil, message: message, preferredStyle: .alert)
-            alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+            alert.addAction(UIAlertAction(title: NSLocalizedString("OK", comment: "OK"), style: .default, handler: nil))
             topController.present(alert, animated: true, completion: nil)
         }
     }

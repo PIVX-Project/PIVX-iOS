@@ -20,9 +20,9 @@ class AddressContactCell: UITableViewCell {
     }
 
     func configureWith(contact:ContactAddress){
-        nameLabel.text = "Name: \(contact.name)"
-        addressLabel.text = "Address: \(contact.address)"
-        descriptionLabel.text = "Description: \(contact.descriptionContact)"
+        nameLabel.text = NSLocalizedString("Name:", comment: "Name:") + " " + contact.name
+        addressLabel.text = NSLocalizedString("Address:", comment: "Address:") + " " + contact.address
+        descriptionLabel.text = NSLocalizedString("Description:", comment: "Description:") + " " + contact.descriptionContact
     }
     
 }
