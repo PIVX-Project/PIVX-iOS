@@ -1,30 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BeO-Yt-c4D">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BeO-Yt-c4D">
     <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
-    <customFonts key="customFonts">
-        <array key="GillSans.ttc">
-            <string>GillSans</string>
-        </array>
-        <array key="HelveticaNeue.ttc">
-            <string>HelveticaNeue</string>
-            <string>HelveticaNeue-Bold</string>
-        </array>
-        <array key="HelveticaNeueLights.ttc">
-            <string>HelveticaNeue-Light</string>
-        </array>
-        <array key="Menlo.ttc">
-            <string>Menlo-Regular</string>
-        </array>
-    </customFonts>
     <scenes>
         <!--ƀ 0.00 ($0.00)-->
         <scene sceneID="mZ6-bm-XCg">
@@ -54,8 +39,8 @@
                                                 <constraint firstAttribute="height" constant="0.5" id="IqZ-c1-a5d"/>
                                             </constraints>
                                         </view>
-                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="4" contentMode="left" text="no transactions" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="117.5" translatesAutoresizingMaskIntoConstraints="NO" id="t1j-JZ-FW0">
-                                            <rect key="frame" x="154.66666666666666" y="29.333333333333329" width="103.66666666666666" height="17.666666666666671"/>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="4" contentMode="left" text="No Transactions" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="117.5" translatesAutoresizingMaskIntoConstraints="NO" id="t1j-JZ-FW0">
+                                            <rect key="frame" x="152.33333333333334" y="29.333333333333329" width="108.66666666666666" height="17.666666666666671"/>
                                             <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
                                             <color key="textColor" red="0.26666666666666666" green="0.26666666666666666" blue="0.26666666666666666" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -69,7 +54,7 @@
                                             </constraints>
                                         </view>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imgTransactionEmpty" translatesAutoresizingMaskIntoConstraints="NO" id="m49-r9-vBl">
-                                            <rect key="frame" x="108.66666666666667" y="23" width="30.000000000000014" height="30"/>
+                                            <rect key="frame" x="106.33333333333333" y="23" width="29.999999999999986" height="30"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="30" id="m4r-5h-hzh"/>
                                                 <constraint firstAttribute="height" constant="30" id="qto-2G-Ncv"/>
@@ -119,6 +104,9 @@
                                             <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <color key="highlightedColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <size key="shadowOffset" width="0.0" height="0.0"/>
+                                            <attributedString key="userComments">
+                                                <fragment content="#bc-ignore!"/>
+                                            </attributedString>
                                         </label>
                                         <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="6" contentMode="left" horizontalHuggingPriority="249" text="sent" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="27.5" translatesAutoresizingMaskIntoConstraints="NO" id="FjB-H2-BnK">
                                             <rect key="frame" x="15" y="20.666666666666668" width="30" height="20.000000000000004"/>
@@ -127,6 +115,9 @@
                                             </constraints>
                                             <fontDescription key="fontDescription" type="system" weight="light" pointSize="15"/>
                                             <size key="shadowOffset" width="0.0" height="0.0"/>
+                                            <attributedString key="userComments">
+                                                <fragment content="#bc-ignore!"/>
+                                            </attributedString>
                                         </label>
                                         <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" tag="1" contentMode="left" text="ƀ 1,000,000" textAlignment="right" lineBreakMode="clip" baselineAdjustment="alignBaselines" minimumFontSize="13" adjustsLetterSpacingToFitWidth="YES" preferredMaxLayoutWidth="87.5" translatesAutoresizingMaskIntoConstraints="NO" id="PSx-oa-hSL">
                                             <rect key="frame" x="284" y="20.666666666666668" width="122" height="20.000000000000004"/>
@@ -135,6 +126,9 @@
                                             </constraints>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <size key="shadowOffset" width="0.0" height="0.0"/>
+                                            <attributedString key="userComments">
+                                                <fragment content="#bc-ignore!"/>
+                                            </attributedString>
                                         </label>
                                         <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" tag="5" contentMode="left" horizontalCompressionResistancePriority="749" text="($1,000.00)" textAlignment="right" lineBreakMode="clip" baselineAdjustment="alignBaselines" minimumFontSize="13" adjustsLetterSpacingToFitWidth="YES" preferredMaxLayoutWidth="74" translatesAutoresizingMaskIntoConstraints="NO" id="qNV-Ka-14n">
                                             <rect key="frame" x="200.66666666666666" y="20.666666666666668" width="78.333333333333343" height="20.000000000000004"/>
@@ -145,6 +139,9 @@
                                             <color key="textColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <color key="highlightedColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <size key="shadowOffset" width="0.0" height="0.0"/>
+                                            <attributedString key="userComments">
+                                                <fragment content="#bc-ignore!"/>
+                                            </attributedString>
                                         </label>
                                         <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" tag="2" contentMode="left" text="Detail" lineBreakMode="middleTruncation" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="31.5" translatesAutoresizingMaskIntoConstraints="NO" id="pXc-8D-8Gh" customClass="BRCopyLabel">
                                             <rect key="frame" x="15" y="45.666666666666664" width="35" height="16"/>
@@ -152,18 +149,27 @@
                                             <color key="textColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <color key="highlightedColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <size key="shadowOffset" width="0.0" height="0.0"/>
+                                            <attributedString key="userComments">
+                                                <fragment content="#bc-ignore!"/>
+                                            </attributedString>
                                         </label>
                                         <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="7" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ƀ 1,000,000" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="67" translatesAutoresizingMaskIntoConstraints="NO" id="ue1-2S-fEr">
                                             <rect key="frame" x="284" y="45.666666666666664" width="122" height="16"/>
                                             <fontDescription key="fontDescription" type="system" weight="light" pointSize="13"/>
                                             <color key="textColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <nil key="highlightedColor"/>
+                                            <attributedString key="userComments">
+                                                <fragment content="#bc-ignore!"/>
+                                            </attributedString>
                                         </label>
                                         <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="8" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="($1,000.00)" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="64.5" translatesAutoresizingMaskIntoConstraints="NO" id="O7K-cF-GAA">
                                             <rect key="frame" x="210" y="45.666666666666664" width="69" height="16"/>
                                             <fontDescription key="fontDescription" type="system" weight="light" pointSize="13"/>
                                             <color key="textColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <nil key="highlightedColor"/>
+                                            <attributedString key="userComments">
+                                                <fragment content="#bc-ignore!"/>
+                                            </attributedString>
                                         </label>
                                         <view tag="101" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mUj-av-ePC">
                                             <rect key="frame" x="0.0" y="75" width="414" height="0.6666666666666714"/>
@@ -240,6 +246,9 @@
                                             <color key="textColor" red="0.46274509800000002" green="0.45882352939999999" blue="0.46470588239999999" alpha="1" colorSpace="calibratedRGB"/>
                                             <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <size key="shadowOffset" width="0.0" height="0.0"/>
+                                            <attributedString key="userComments">
+                                                <fragment content="#bc-ignore!"/>
+                                            </attributedString>
                                         </label>
                                         <view tag="101" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3aV-Es-Zmi">
                                             <rect key="frame" x="0.0" y="44" width="421" height="0.6666666666666643"/>
@@ -282,6 +291,9 @@
                                             <color key="textColor" red="0.46274509800000002" green="0.45882352939999999" blue="0.46470588239999999" alpha="1" colorSpace="calibratedRGB"/>
                                             <color key="highlightedColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <size key="shadowOffset" width="0.0" height="0.0"/>
+                                            <attributedString key="userComments">
+                                                <fragment content="#bc-ignore!"/>
+                                            </attributedString>
                                         </label>
                                         <view tag="101" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sBI-PS-MHX">
                                             <rect key="frame" x="0.0" y="44.666666666666664" width="429" height="0.3333333333333357"/>
@@ -311,7 +323,7 @@
                     </tableView>
                     <navigationItem key="navigationItem" id="h6T-AD-8zb">
                         <nil key="title"/>
-                        <barButtonItem key="backBarButtonItem" title=" " id="hWS-2G-hHE"/>
+                        <barButtonItem key="backBarButtonItem" id="hWS-2G-hHE"/>
                         <barButtonItem key="leftBarButtonItem" image="burger" id="nxH-ZN-jve">
                             <connections>
                                 <action selector="tappedMenuButton:" destination="6Bl-Zl-U7O" id="C2V-Qw-T5S"/>
@@ -461,7 +473,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="3hG-i3-g4Y">
                         <nil key="title"/>
-                        <barButtonItem key="backBarButtonItem" title=" " id="Huq-Vk-LaF"/>
+                        <barButtonItem key="backBarButtonItem" id="Huq-Vk-LaF"/>
                         <view key="titleView" contentMode="scaleToFill" id="Rxa-kr-LOc">
                             <rect key="frame" x="160" y="14.666666666666664" width="94" height="15"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -507,8 +519,8 @@
                                 <constraint firstAttribute="height" constant="0.5" id="t4s-d2-Hm2"/>
                             </constraints>
                         </view>
-                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="not connected" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UyF-OV-QVY">
-                            <rect key="frame" x="145.33333333333334" y="5" width="85" height="17"/>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Not Connected" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UyF-OV-QVY">
+                            <rect key="frame" x="143.66666666666666" y="5" width="88.666666666666657" height="17"/>
                             <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="13"/>
                             <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <nil key="highlightedColor"/>
@@ -557,6 +569,9 @@
                                 <nil key="highlightedColor"/>
                                 <color key="shadowColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
                                 <size key="shadowOffset" width="0.0" height="1"/>
+                                <attributedString key="userComments">
+                                    <fragment content="#bc-ignore!"/>
+                                </attributedString>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cameraguide" translatesAutoresizingMaskIntoConstraints="NO" id="uEW-dq-bFQ">
                                 <rect key="frame" x="90" y="229" width="234" height="234"/>
@@ -654,6 +669,9 @@
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
+                                <attributedString key="userComments">
+                                    <fragment content="#bc-ignore!"/>
+                                </attributedString>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9d1-ib-nZH" userLabel="border">
                                 <rect key="frame" x="81" y="252" width="252" height="252"/>
@@ -684,6 +702,9 @@
                                 <state key="normal" title="1WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <attributedString key="userComments">
+                                    <fragment content="#bc-ignore!"/>
+                                </attributedString>
                                 <connections>
                                     <action selector="address:" destination="Zni-gW-a05" eventType="touchUpInside" id="PQb-rP-FxM"/>
                                 </connections>
@@ -752,7 +773,7 @@
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             </view>
                             <label opaque="NO" clipsSubviews="YES" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Receive PIV" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qel-3J-2VC">
-                                <rect key="frame" x="148.66666666666666" y="81" width="116.99999999999997" height="45"/>
+                                <rect key="frame" x="159" y="81" width="96.333333333333314" height="45"/>
                                 <gestureRecognizers/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="45" id="wJO-7N-OV1"/>
@@ -797,6 +818,9 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <attributedString key="userComments">
+                                    <fragment content="#bc-ignore!"/>
+                                </attributedString>
                                 <connections>
                                     <action selector="address:" destination="XLw-gP-lYw" eventType="touchUpInside" id="eU0-6G-fFI"/>
                                 </connections>
@@ -904,7 +928,7 @@
                                 </constraints>
                             </view>
                             <label opaque="NO" clipsSubviews="YES" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SEND PIV" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l5l-JR-LKA">
-                                <rect key="frame" x="161.66666666666666" y="154" width="91" height="45"/>
+                                <rect key="frame" x="167.66666666666666" y="154" width="79.333333333333343" height="45"/>
                                 <gestureRecognizers/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="45" id="TC5-Ce-4Ic"/>
@@ -987,7 +1011,7 @@
                                 </connections>
                             </textView>
                             <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SwiftX" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lbm-03-nu4">
-                                <rect key="frame" x="85" y="551" width="95" height="21"/>
+                                <rect key="frame" x="85" y="551" width="48.666666666666657" height="21"/>
                                 <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -1130,10 +1154,8 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4fT-s3-WCA">
-                                <rect key="frame" x="16" y="322.33333333333331" width="382" height="92"/>
-                                <string key="text">PIVX (Private, Instant, Verified, Transactions)
-is a privacy-focused, decentralized, open source cryptocurrency run by
-a global community comprised of creators, innovators, and technology enthusiasts.</string>
+                                <rect key="frame" x="16" y="331.66666666666669" width="382" height="73.666666666666686"/>
+                                <string key="text">PIVX (Private, Instant, Verified, Transactions) is a privacy-focused, decentralized, open source cryptocurrency run by a global community comprised of creators, innovators, and technology enthusiasts.</string>
                                 <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="16"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -1191,7 +1213,7 @@ a global community comprised of creators, innovators, and technology enthusiasts
                     </view>
                     <navigationItem key="navigationItem" id="XZh-nX-qeL">
                         <nil key="title"/>
-                        <barButtonItem key="backBarButtonItem" title=" " id="9L3-gM-TgP"/>
+                        <barButtonItem key="backBarButtonItem" id="9L3-gM-TgP"/>
                     </navigationItem>
                     <connections>
                         <outlet property="newwalletButton" destination="dOa-zm-TDG" id="kFt-K9-owu"/>
@@ -1254,10 +1276,10 @@ a global community comprised of creators, innovators, and technology enthusiasts
             </objects>
             <point key="canvasLocation" x="2720.8000000000002" y="-21.139430284857571"/>
         </scene>
-        <!--transaction details-->
+        <!--Transaction Details-->
         <scene sceneID="QQa-M8-H76">
             <objects>
-                <tableViewController storyboardIdentifier="TxDetailViewController" title="transaction details" id="s4T-yd-VfX" customClass="BRTxDetailViewController" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="TxDetailViewController" title="Transaction Details" id="s4T-yd-VfX" customClass="BRTxDetailViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" directionalLockEnabled="YES" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="9JG-Pq-5JX">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1289,11 +1311,14 @@ a global community comprised of creators, innovators, and technology enthusiasts
                                             <size key="shadowOffset" width="0.0" height="0.0"/>
                                         </label>
                                         <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="2" contentMode="left" horizontalCompressionResistancePriority="749" text="Detail" textAlignment="right" lineBreakMode="characterWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="322" translatesAutoresizingMaskIntoConstraints="NO" id="HrP-wv-Y1B" customClass="BRCopyLabel">
-                                            <rect key="frame" x="39" y="14" width="360" height="16"/>
+                                            <rect key="frame" x="39" y="14.333333333333336" width="360" height="15.666666666666664"/>
                                             <fontDescription key="fontDescription" type="system" weight="light" pointSize="13"/>
                                             <color key="textColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <color key="highlightedColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <size key="shadowOffset" width="0.0" height="0.0"/>
+                                            <attributedString key="userComments">
+                                                <fragment content="#bc-ignore!"/>
+                                            </attributedString>
                                         </label>
                                         <view tag="101" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Kqn-dp-GEC">
                                             <rect key="frame" x="0.0" y="44" width="414" height="0.6666666666666643"/>
@@ -1345,6 +1370,9 @@ a global community comprised of creators, innovators, and technology enthusiasts
                                             <color key="textColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <color key="highlightedColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <size key="shadowOffset" width="0.0" height="0.0"/>
+                                            <attributedString key="userComments">
+                                                <fragment content="#bc-ignore!"/>
+                                            </attributedString>
                                         </label>
                                         <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="3" contentMode="left" horizontalCompressionResistancePriority="749" text="subtitle" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="40" translatesAutoresizingMaskIntoConstraints="NO" id="55a-IW-IjK">
                                             <rect key="frame" x="354.66666666666669" y="23" width="44.333333333333314" height="16"/>
@@ -1352,6 +1380,9 @@ a global community comprised of creators, innovators, and technology enthusiasts
                                             <color key="textColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <color key="highlightedColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <size key="shadowOffset" width="0.0" height="0.0"/>
+                                            <attributedString key="userComments">
+                                                <fragment content="#bc-ignore!"/>
+                                            </attributedString>
                                         </label>
                                         <view tag="101" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ojx-ZS-CaC">
                                             <rect key="frame" x="0.0" y="44" width="414" height="0.6666666666666643"/>
@@ -1410,6 +1441,9 @@ a global community comprised of creators, innovators, and technology enthusiasts
                                             </constraints>
                                             <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
                                             <size key="shadowOffset" width="0.0" height="0.0"/>
+                                            <attributedString key="userComments">
+                                                <fragment content="#bc-ignore!"/>
+                                            </attributedString>
                                         </label>
                                         <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" tag="5" contentMode="left" horizontalHuggingPriority="249" text="($1,000.00)" textAlignment="right" lineBreakMode="headTruncation" baselineAdjustment="alignBaselines" minimumFontSize="13" adjustsLetterSpacingToFitWidth="YES" preferredMaxLayoutWidth="74" translatesAutoresizingMaskIntoConstraints="NO" id="JNR-nK-iyP">
                                             <rect key="frame" x="227.66666666666666" y="12" width="78.333333333333343" height="20"/>
@@ -1420,6 +1454,9 @@ a global community comprised of creators, innovators, and technology enthusiasts
                                             <color key="textColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <color key="highlightedColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <size key="shadowOffset" width="0.0" height="0.0"/>
+                                            <attributedString key="userComments">
+                                                <fragment content="#bc-ignore!"/>
+                                            </attributedString>
                                         </label>
                                         <view tag="101" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ygs-bs-Yv0">
                                             <rect key="frame" x="0.0" y="44" width="414" height="0.6666666666666643"/>
@@ -1467,6 +1504,9 @@ a global community comprised of creators, innovators, and technology enthusiasts
                                             <color key="textColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <color key="highlightedColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <size key="shadowOffset" width="0.0" height="0.0"/>
+                                            <attributedString key="userComments">
+                                                <fragment content="#bc-ignore!"/>
+                                            </attributedString>
                                         </label>
                                         <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="3" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="subtitle" lineBreakMode="clip" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="40" translatesAutoresizingMaskIntoConstraints="NO" id="WHQ-zW-IjD">
                                             <rect key="frame" x="14.999999999999996" y="34" width="44.666666666666657" height="16"/>
@@ -1474,12 +1514,18 @@ a global community comprised of creators, innovators, and technology enthusiasts
                                             <color key="textColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <color key="highlightedColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <size key="shadowOffset" width="0.0" height="0.0"/>
+                                            <attributedString key="userComments">
+                                                <fragment content="#bc-ignore!"/>
+                                            </attributedString>
                                         </label>
                                         <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="1" contentMode="left" verticalHuggingPriority="251" text="ƀ 1,000,000" textAlignment="right" lineBreakMode="middleTruncation" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="67" translatesAutoresizingMaskIntoConstraints="NO" id="N6a-t6-1jK">
                                             <rect key="frame" x="329.66666666666669" y="34" width="69.333333333333314" height="16"/>
                                             <fontDescription key="fontDescription" type="system" weight="light" pointSize="13"/>
                                             <nil key="highlightedColor"/>
                                             <size key="shadowOffset" width="0.0" height="0.0"/>
+                                            <attributedString key="userComments">
+                                                <fragment content="#bc-ignore!"/>
+                                            </attributedString>
                                         </label>
                                         <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="5" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" text="($1,000.00)" textAlignment="right" lineBreakMode="headTruncation" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="64.5" translatesAutoresizingMaskIntoConstraints="NO" id="wd8-oB-KWn">
                                             <rect key="frame" x="255.66666666666663" y="34" width="69" height="16"/>
@@ -1487,6 +1533,9 @@ a global community comprised of creators, innovators, and technology enthusiasts
                                             <color key="textColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <nil key="highlightedColor"/>
                                             <size key="shadowOffset" width="0.0" height="0.0"/>
+                                            <attributedString key="userComments">
+                                                <fragment content="#bc-ignore!"/>
+                                            </attributedString>
                                         </label>
                                         <view tag="101" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MXV-Is-AB7">
                                             <rect key="frame" x="0.0" y="59.666666666666664" width="414" height="0.3333333333333357"/>
@@ -1537,12 +1586,18 @@ a global community comprised of creators, innovators, and technology enthusiasts
                                             <color key="textColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <color key="highlightedColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <size key="shadowOffset" width="0.0" height="0.0"/>
+                                            <attributedString key="userComments">
+                                                <fragment content="#bc-ignore!"/>
+                                            </attributedString>
                                         </label>
                                         <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ƀ 1,000,000" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="67" translatesAutoresizingMaskIntoConstraints="NO" id="hJG-af-ws1">
                                             <rect key="frame" x="329.66666666666669" y="12" width="69.333333333333314" height="16"/>
                                             <fontDescription key="fontDescription" type="system" weight="light" pointSize="13"/>
                                             <nil key="highlightedColor"/>
                                             <size key="shadowOffset" width="0.0" height="0.0"/>
+                                            <attributedString key="userComments">
+                                                <fragment content="#bc-ignore!"/>
+                                            </attributedString>
                                         </label>
                                         <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="5" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" text="($1,000.00)" textAlignment="right" lineBreakMode="headTruncation" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="64.5" translatesAutoresizingMaskIntoConstraints="NO" id="Ofd-q3-a1P">
                                             <rect key="frame" x="255.66666666666663" y="12" width="69" height="16"/>
@@ -1550,6 +1605,9 @@ a global community comprised of creators, innovators, and technology enthusiasts
                                             <color key="textColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <nil key="highlightedColor"/>
                                             <size key="shadowOffset" width="0.0" height="0.0"/>
+                                            <attributedString key="userComments">
+                                                <fragment content="#bc-ignore!"/>
+                                            </attributedString>
                                         </label>
                                         <view tag="101" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Z6C-4u-olC">
                                             <rect key="frame" x="0.0" y="39.666666666666664" width="414" height="0.3333333333333357"/>
@@ -1618,6 +1676,9 @@ a global community comprised of creators, innovators, and technology enthusiasts
                                             <color key="textColor" red="0.46274509800000002" green="0.45882352939999999" blue="0.46470588239999999" alpha="1" colorSpace="calibratedRGB"/>
                                             <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <size key="shadowOffset" width="0.0" height="0.0"/>
+                                            <attributedString key="userComments">
+                                                <fragment content="#bc-ignore!"/>
+                                            </attributedString>
                                         </label>
                                         <view tag="101" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9rS-gH-CRy">
                                             <rect key="frame" x="0.0" y="44" width="421" height="0.6666666666666643"/>
@@ -1653,8 +1714,8 @@ a global community comprised of creators, innovators, and technology enthusiasts
                                                 <constraint firstAttribute="height" constant="0.5" id="466-pN-bFl"/>
                                             </constraints>
                                         </view>
-                                        <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="local currency" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="13" adjustsLetterSpacingToFitWidth="YES" preferredMaxLayoutWidth="101.5" id="8e2-ar-Ehc">
-                                            <rect key="frame" x="19.999999999999993" y="11.999999999999998" width="106.33333333333333" height="20.333333333333332"/>
+                                        <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Local Currency" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="13" adjustsLetterSpacingToFitWidth="YES" preferredMaxLayoutWidth="101.5" id="8e2-ar-Ehc">
+                                            <rect key="frame" x="20.000000000000007" y="11.999999999999998" width="113.66666666666667" height="20.333333333333332"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
                                             <color key="textColor" red="0.46274509800000002" green="0.45882352939999999" blue="0.46470588239999999" alpha="1" colorSpace="calibratedRGB"/>
@@ -1668,6 +1729,9 @@ a global community comprised of creators, innovators, and technology enthusiasts
                                             <color key="textColor" red="0.33333333329999998" green="0.2784313725" blue="0.42352941179999998" alpha="1" colorSpace="calibratedRGB"/>
                                             <color key="highlightedColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <size key="shadowOffset" width="0.0" height="0.0"/>
+                                            <attributedString key="userComments">
+                                                <fragment content="#bc-ignore!"/>
+                                            </attributedString>
                                         </label>
                                         <view tag="101" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eAz-LJ-iJD">
                                             <rect key="frame" x="0.0" y="43.666666666666664" width="421" height="0.3333333333333357"/>
@@ -1702,7 +1766,7 @@ a global community comprised of creators, innovators, and technology enthusiasts
                                                 <constraint firstAttribute="height" constant="0.5" id="mL5-oy-Mfm"/>
                                             </constraints>
                                         </view>
-                                        <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="start/recover another wallet" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="13" adjustsLetterSpacingToFitWidth="YES" preferredMaxLayoutWidth="345" id="D1b-HB-lKH">
+                                        <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Start/Recover Another Wallet" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="13" adjustsLetterSpacingToFitWidth="YES" preferredMaxLayoutWidth="345" id="D1b-HB-lKH">
                                             <rect key="frame" x="20" y="0.0" width="374" height="43.666666666666664"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
@@ -1753,6 +1817,9 @@ a global community comprised of creators, innovators, and technology enthusiasts
                                             <color key="textColor" red="0.46274509800000002" green="0.45882352939999999" blue="0.46470588239999999" alpha="1" colorSpace="calibratedRGB"/>
                                             <color key="highlightedColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <size key="shadowOffset" width="0.0" height="0.0"/>
+                                            <attributedString key="userComments">
+                                                <fragment content="#bc-ignore!"/>
+                                            </attributedString>
                                         </label>
                                         <view tag="101" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fb0-tq-ddV">
                                             <rect key="frame" x="0.0" y="44" width="412" height="0.6666666666666643"/>
@@ -1794,6 +1861,9 @@ a global community comprised of creators, innovators, and technology enthusiasts
                                             <color key="textColor" red="0.46274509800000002" green="0.45882352939999999" blue="0.46470588239999999" alpha="1" colorSpace="calibratedRGB"/>
                                             <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <size key="shadowOffset" width="0.0" height="0.0"/>
+                                            <attributedString key="userComments">
+                                                <fragment content="#bc-ignore!"/>
+                                            </attributedString>
                                         </label>
                                         <view tag="101" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NiA-Hx-XJ5">
                                             <rect key="frame" x="0.0" y="44" width="434" height="0.6666666666666643"/>
@@ -1833,6 +1903,9 @@ a global community comprised of creators, innovators, and technology enthusiasts
                                             <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
                                             <color key="textColor" red="0.46274509800000002" green="0.45882352939999999" blue="0.46470588239999999" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
+                                            <attributedString key="userComments">
+                                                <fragment content="#bc-ignore!"/>
+                                            </attributedString>
                                         </label>
                                         <switch opaque="NO" tag="1101" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4SS-5m-RoG">
                                             <rect key="frame" x="335" y="6.6666666666666679" width="51" height="31.000000000000004"/>
@@ -1877,7 +1950,7 @@ a global community comprised of creators, innovators, and technology enthusiasts
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Settings" id="W8m-Eh-Nf9">
-                        <barButtonItem key="backBarButtonItem" title=" " id="OBr-C7-abe"/>
+                        <barButtonItem key="backBarButtonItem" id="OBr-C7-abe"/>
                     </navigationItem>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                 </tableViewController>
@@ -1894,7 +1967,7 @@ a global community comprised of creators, innovators, and technology enthusiasts
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ePg-dk-slQ">
-                                <rect key="frame" x="0.0" y="256.66666666666669" width="414" height="223"/>
+                                <rect key="frame" x="0.0" y="253.33333333333337" width="414" height="231"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wyo-tk-JbR">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="1"/>
@@ -1903,31 +1976,54 @@ a global community comprised of creators, innovators, and technology enthusiasts
                                             <constraint firstAttribute="height" constant="0.5" id="yy7-el-RW3"/>
                                         </constraints>
                                     </view>
-                                    <label opaque="NO" clipsSubviews="YES" tag="411" contentMode="left" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="300" translatesAutoresizingMaskIntoConstraints="NO" id="uvz-hk-Nr4">
-                                        <rect key="frame" x="76" y="20" width="263" height="82"/>
+                                    <label opaque="NO" clipsSubviews="YES" tag="411" contentMode="left" verticalCompressionResistancePriority="749" text="PIVX Wallet v%ver%%net%" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="300" translatesAutoresizingMaskIntoConstraints="NO" id="uvz-hk-Nr4">
+                                        <rect key="frame" x="106.00000000000001" y="19.999999999999972" width="202.33333333333337" height="20.333333333333329"/>
                                         <gestureRecognizers/>
-                                        <string key="text">Pivx wallet v%ver%%net%
-copyright © 2017 The PIVX Developers
-Forked from breadwallet.
+                                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
+                                        <nil key="highlightedColor"/>
+                                        <attributedString key="userComments">
+                                            <fragment content="#bc-ignore!"/>
+                                        </attributedString>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" tag="411" contentMode="left" text="Copyright © 2017-2019 The PIVX Developers" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="300" translatesAutoresizingMaskIntoConstraints="NO" id="TDU-Wh-FUo">
+                                        <rect key="frame" x="63" y="40.333333333333343" width="288.33333333333331" height="17"/>
+                                        <gestureRecognizers/>
+                                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
+                                        <nil key="highlightedColor"/>
+                                        <attributedString key="userComments">
+                                            <fragment content="#bc-ignore!"/>
+                                        </attributedString>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" tag="411" contentMode="left" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="300" translatesAutoresizingMaskIntoConstraints="NO" id="JUG-Wq-6Lr">
+                                        <rect key="frame" x="113" y="75.333333333333343" width="189" height="41"/>
+                                        <gestureRecognizers/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="41" id="4I2-7w-Ubu"/>
+                                            <constraint firstAttribute="width" constant="189" id="YM4-aj-Ges"/>
+                                        </constraints>
+                                        <string key="text">Forked from breadwallet.
 This app is open source:</string>
                                         <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="https://github.com/PIVX-Project/PIVX-iOS" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="300" translatesAutoresizingMaskIntoConstraints="NO" id="5OA-tB-Exg">
-                                        <rect key="frame" x="87.999999999999986" y="108" width="238.66666666666663" height="41"/>
+                                        <rect key="frame" x="84" y="116.33333333333336" width="246" height="40.666666666666671"/>
                                         <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
                                         <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
+                                        <attributedString key="userComments">
+                                            <fragment content="#bc-ignore!"/>
+                                        </attributedString>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="300" translatesAutoresizingMaskIntoConstraints="NO" id="D4H-hd-LsX">
-                                        <rect key="frame" x="100.99999999999999" y="167" width="213.66666666666663" height="36"/>
-                                        <string key="text">exchange rate data provided by
+                                        <rect key="frame" x="100" y="174.99999999999997" width="214" height="36"/>
+                                        <string key="text">Exchange rate data provided by
 coinmarketcap.com</string>
                                         <fontDescription key="fontDescription" type="system" weight="light" pointSize="15"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="G4X-xw-xAl">
-                                        <rect key="frame" x="0.0" y="222" width="414" height="1"/>
+                                        <rect key="frame" x="0.0" y="229.99999999999997" width="414" height="1"/>
                                         <color key="backgroundColor" red="0.67000001668930054" green="0.67000001668930054" blue="0.67000001668930054" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="0.5" id="UhR-to-ytR"/>
@@ -1939,17 +2035,22 @@ coinmarketcap.com</string>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="G4X-xw-xAl" secondAttribute="trailing" id="4eh-tn-kSf"/>
                                     <constraint firstItem="Wyo-tk-JbR" firstAttribute="top" secondItem="ePg-dk-slQ" secondAttribute="top" id="8Rt-J8-gsZ"/>
+                                    <constraint firstAttribute="centerX" secondItem="TDU-Wh-FUo" secondAttribute="centerX" id="Cz5-bW-j0H"/>
                                     <constraint firstAttribute="centerX" secondItem="uvz-hk-Nr4" secondAttribute="centerX" id="DEL-Uu-EPu"/>
                                     <constraint firstAttribute="centerX" secondItem="D4H-hd-LsX" secondAttribute="centerX" id="DRv-HD-k7o"/>
                                     <constraint firstAttribute="bottom" secondItem="D4H-hd-LsX" secondAttribute="bottom" constant="20" id="EDS-xg-Geu"/>
+                                    <constraint firstItem="JUG-Wq-6Lr" firstAttribute="top" secondItem="TDU-Wh-FUo" secondAttribute="bottom" constant="18" id="IKQ-a2-qOG"/>
                                     <constraint firstAttribute="trailing" secondItem="Wyo-tk-JbR" secondAttribute="trailing" id="Meb-9n-MCt"/>
+                                    <constraint firstAttribute="centerX" secondItem="JUG-Wq-6Lr" secondAttribute="centerX" id="Own-Rz-W2A"/>
                                     <constraint firstAttribute="centerX" secondItem="5OA-tB-Exg" secondAttribute="centerX" id="WD5-hb-vC4"/>
                                     <constraint firstItem="Wyo-tk-JbR" firstAttribute="leading" secondItem="ePg-dk-slQ" secondAttribute="leading" id="XyP-sw-WKb"/>
+                                    <constraint firstItem="TDU-Wh-FUo" firstAttribute="top" secondItem="uvz-hk-Nr4" secondAttribute="bottom" id="dUs-Ib-mjQ"/>
                                     <constraint firstItem="uvz-hk-Nr4" firstAttribute="top" secondItem="ePg-dk-slQ" secondAttribute="top" constant="20" id="g7s-20-qcl"/>
                                     <constraint firstItem="D4H-hd-LsX" firstAttribute="top" secondItem="5OA-tB-Exg" secondAttribute="bottom" constant="18" id="h7P-NE-60e"/>
                                     <constraint firstAttribute="bottom" secondItem="G4X-xw-xAl" secondAttribute="bottom" id="jM5-Ee-UoQ"/>
                                     <constraint firstItem="G4X-xw-xAl" firstAttribute="leading" secondItem="ePg-dk-slQ" secondAttribute="leading" id="lQV-GX-C2M"/>
-                                    <constraint firstItem="5OA-tB-Exg" firstAttribute="top" secondItem="uvz-hk-Nr4" secondAttribute="bottom" constant="6" id="yq7-Yi-QbM"/>
+                                    <constraint firstAttribute="centerX" secondItem="TDU-Wh-FUo" secondAttribute="centerX" id="q0j-If-xPy"/>
+                                    <constraint firstItem="5OA-tB-Exg" firstAttribute="top" secondItem="JUG-Wq-6Lr" secondAttribute="bottom" id="yq7-Yi-QbM"/>
                                 </constraints>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="68Y-ha-WTV" appends="YES" id="G1L-Kc-zvL"/>
@@ -1963,6 +2064,9 @@ coinmarketcap.com</string>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="13"/>
                                 <color key="textColor" white="0.67000000000000004" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
+                                <attributedString key="userComments">
+                                    <fragment content="#bc-ignore!"/>
+                                </attributedString>
                             </label>
                             <button opaque="NO" tag="412" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="HHd-Rk-TfY">
                                 <rect key="frame" x="20" y="688" width="30" height="28"/>
@@ -1970,11 +2074,14 @@ coinmarketcap.com</string>
                                 <state key="normal">
                                     <color key="titleColor" white="0.67000000000000004" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <attributedString key="userComments">
+                                    <fragment content="#bc-ignore!"/>
+                                </attributedString>
                             </button>
                             <button hidden="YES" opaque="NO" tag="413" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Irz-6P-zvD">
-                                <rect key="frame" x="320" y="684" width="74" height="32"/>
+                                <rect key="frame" x="316" y="684" width="78" height="32"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
-                                <state key="normal" title="copy logs">
+                                <state key="normal" title="Copy logs">
                                     <color key="titleColor" red="0.33333333329999998" green="0.2784313725" blue="0.42352941179999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
@@ -2000,12 +2107,17 @@ coinmarketcap.com</string>
                             <rect key="frame" x="160" y="14.666666666666664" width="94" height="15"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
-                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="imgHeaderLogo" translatesAutoresizingMaskIntoConstraints="NO" id="FHq-gW-OSW">
+                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" image="imgHeaderLogo" translatesAutoresizingMaskIntoConstraints="NO" id="FHq-gW-OSW">
                                     <rect key="frame" x="0.0" y="0.0" width="94" height="15"/>
-                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 </imageView>
                             </subviews>
                             <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="FHq-gW-OSW" secondAttribute="trailing" id="Hx2-rO-Oll"/>
+                                <constraint firstAttribute="bottom" secondItem="FHq-gW-OSW" secondAttribute="bottom" id="dAF-cf-uDQ"/>
+                                <constraint firstItem="FHq-gW-OSW" firstAttribute="leading" secondItem="2U3-rA-AAe" secondAttribute="leading" id="kjP-Zs-F7e"/>
+                                <constraint firstItem="FHq-gW-OSW" firstAttribute="top" secondItem="2U3-rA-AAe" secondAttribute="top" id="ynX-FD-VEC"/>
+                            </constraints>
                         </view>
                     </navigationItem>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
@@ -2030,16 +2142,16 @@ coinmarketcap.com</string>
                                     <constraint firstAttribute="height" constant="120" id="ZxQ-En-Pha"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="start a new wallet by generating a wallet recovery phrase" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="300" translatesAutoresizingMaskIntoConstraints="NO" id="wDZ-DN-szv">
-                                <rect key="frame" x="67.666666666666686" y="258" width="279" height="42"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Start a new wallet by generating a wallet recovery phrase" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="300" translatesAutoresizingMaskIntoConstraints="NO" id="wDZ-DN-szv">
+                                <rect key="frame" x="67" y="258" width="280.33333333333331" height="41.666666666666686"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <color key="shadowColor" red="0.0" green="0.0" blue="0.0" alpha="0.14999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
                                 <size key="shadowOffset" width="0.0" height="1"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="if you ever lose your phone, you will need this phrase to recover your wallet" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="300" translatesAutoresizingMaskIntoConstraints="NO" id="dX6-jg-5IA">
-                                <rect key="frame" x="64" y="324" width="286" height="37"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="If you ever lose your phone, you will need this phrase to recover your wallet" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="300" translatesAutoresizingMaskIntoConstraints="NO" id="dX6-jg-5IA">
+                                <rect key="frame" x="64.333333333333314" y="323.66666666666669" width="286" height="37"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -2056,7 +2168,7 @@ coinmarketcap.com</string>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                 <inset key="contentEdgeInsets" minX="8" minY="0.0" maxX="8" maxY="0.0"/>
                                 <size key="titleShadowOffset" width="0.0" height="1"/>
-                                <state key="normal" title="generate recovery phrase">
+                                <state key="normal" title="Generate Recovery Phrase">
                                     <color key="titleColor" red="0.33333333329999998" green="0.2784313725" blue="0.42352941179999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
@@ -2104,13 +2216,16 @@ Other devices may be infected.
                                 <nil key="highlightedColor"/>
                                 <color key="shadowColor" red="0.0" green="0.0" blue="0.0" alpha="0.14999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
                                 <size key="shadowOffset" width="0.0" height="1"/>
+                                <attributedString key="userComments">
+                                    <fragment content="#bc-ignore!"/>
+                                </attributedString>
                             </label>
                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="efL-Cj-Aho">
-                                <rect key="frame" x="293" y="676" width="121" height="60"/>
+                                <rect key="frame" x="290" y="676" width="124" height="60"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                 <inset key="contentEdgeInsets" minX="60" minY="20" maxX="20" maxY="20"/>
                                 <size key="titleShadowOffset" width="0.0" height="1"/>
-                                <state key="normal" title="show">
+                                <state key="normal" title="Show">
                                     <color key="titleColor" red="0.33333333329999998" green="0.2784313725" blue="0.42352941179999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
@@ -2213,15 +2328,15 @@ Other devices may be infected.
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="if you ever lose your phone, you will need this phrase to recover your wallet" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="300" translatesAutoresizingMaskIntoConstraints="NO" id="EQG-Km-ZKY">
-                                <rect key="frame" x="60.666666666666657" y="269" width="294.33333333333337" height="40"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="If you ever lose your phone, you will need this phrase to recover your wallet" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="300" translatesAutoresizingMaskIntoConstraints="NO" id="EQG-Km-ZKY">
+                                <rect key="frame" x="59.666666666666657" y="269.33333333333331" width="294.66666666666674" height="39.666666666666686"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                                 <size key="shadowOffset" width="0.0" height="1"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="please write it down" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="300" translatesAutoresizingMaskIntoConstraints="NO" id="Td7-xP-kmB">
-                                <rect key="frame" x="131" y="321" width="152" height="20"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Please write it down" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="300" translatesAutoresizingMaskIntoConstraints="NO" id="Td7-xP-kmB">
+                                <rect key="frame" x="130.66666666666666" y="321" width="152.99999999999997" height="20"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -2242,6 +2357,9 @@ Other devices may be infected.
                                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="highlightedColor"/>
+                                        <attributedString key="userComments">
+                                            <fragment content="#bc-ignore!"/>
+                                        </attributedString>
                                     </label>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mcG-j3-eTm">
                                         <rect key="frame" x="0.0" y="29" width="414" height="1"/>
@@ -2300,7 +2418,7 @@ Other devices may be infected.
                                 </constraints>
                                 <items>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="S2f-nr-mrg"/>
-                                    <barButtonItem title="remind me later" id="QQS-Me-RNh">
+                                    <barButtonItem title="Remind me later" id="QQS-Me-RNh">
                                         <color key="tintColor" red="0.33333333329999998" green="0.2784313725" blue="0.42352941179999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <connections>
                                             <action selector="done:" destination="IA2-75-hxO" id="gSn-Kd-vS7"/>
@@ -2359,18 +2477,27 @@ Other devices may be infected.
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
                                 <color key="textColor" red="0.75081020590000003" green="0.75081020590000003" blue="0.75081020590000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
+                                <attributedString key="userComments">
+                                    <fragment content="#bc-ignore!"/>
+                                </attributedString>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" alpha="0.67000001668930054" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="500" verticalCompressionResistancePriority="500" text="($0.00)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.69999998807907104" translatesAutoresizingMaskIntoConstraints="NO" id="TBf-3l-ujT">
                                 <rect key="frame" x="247" y="89" width="52" height="20"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                 <color key="textColor" red="0.75" green="0.75" blue="0.75" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
+                                <attributedString key="userComments">
+                                    <fragment content="#bc-ignore!"/>
+                                </attributedString>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="D 0.00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o24-a7-ayU">
                                 <rect key="frame" x="322" y="83" width="68" height="27"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="23"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
+                                <attributedString key="userComments">
+                                    <fragment content="#bc-ignore!"/>
+                                </attributedString>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="83W-1O-V9b">
                                 <rect key="frame" x="130" y="75" width="200" height="60"/>
@@ -2384,6 +2511,9 @@ Other devices may be infected.
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <attributedString key="userComments">
+                                    <fragment content="#bc-ignore!"/>
+                                </attributedString>
                                 <connections>
                                     <action selector="releaseSwapButton:" destination="La8-tY-sM4" eventType="touchCancel" id="SEX-5F-i8u"/>
                                     <action selector="releaseSwapButton:" destination="La8-tY-sM4" eventType="touchUpOutside" id="c3M-4O-qhS"/>
@@ -2548,6 +2678,9 @@ Other devices may be infected.
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <state key="disabled" backgroundImage="button-bg-disabled"/>
+                                <attributedString key="userComments">
+                                    <fragment content="#bc-ignore!"/>
+                                </attributedString>
                                 <connections>
                                     <action selector="del:" destination="La8-tY-sM4" eventType="touchUpInside" id="hF2-HA-h8M"/>
                                 </connections>
@@ -2577,6 +2710,9 @@ Other devices may be infected.
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                                 <size key="shadowOffset" width="0.0" height="0.0"/>
+                                <attributedString key="userComments">
+                                    <fragment content="#bc-ignore!"/>
+                                </attributedString>
                             </label>
                         </subviews>
                         <color key="backgroundColor" red="0.33333333329999998" green="0.2784313725" blue="0.42352941179999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
