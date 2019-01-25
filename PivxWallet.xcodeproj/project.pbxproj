@@ -47,7 +47,6 @@
 		2BBE61B11FE48DA100D06CD7 /* LocalStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BBE61B01FE48DA100D06CD7 /* LocalStore.swift */; };
 		2BBE61B51FE48E6500D06CD7 /* ContactAddress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BBE61B41FE48E6500D06CD7 /* ContactAddress.swift */; };
 		2BFA52371FE08A8300A3C808 /* BaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BFA52361FE08A8300A3C808 /* BaseController.swift */; };
-		2BFA523A1FE0AC4D00A3C808 /* Menu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2BFA52391FE0AC4C00A3C808 /* Menu.xib */; };
 		2BFA523C1FE0AC5C00A3C808 /* MenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BFA523B1FE0AC5C00A3C808 /* MenuController.swift */; };
 		31D68B531C23B6C10030FAAA /* DashWalletUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31D68B521C23B6C10030FAAA /* DashWalletUITests.swift */; };
 		31D68B5B1C23B6FD0030FAAA /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31D68B5A1C23B6FD0030FAAA /* SnapshotHelper.swift */; };
@@ -110,6 +109,7 @@
 		75F2E0D61BEAA6A400EAE861 /* BRTxMetadataEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 75F2E0D51BEAA6A400EAE861 /* BRTxMetadataEntity.m */; };
 		84F68C8A1975E9E2002FC300 /* BRScanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F68C891975E9E2002FC300 /* BRScanViewController.m */; };
 		B01E85F521FA9BC500B6D51F /* NewAddress.xib in Resources */ = {isa = PBXBuildFile; fileRef = B01E85F721FA9BC500B6D51F /* NewAddress.xib */; };
+		B01E85FC21FA9CDC00B6D51F /* Menu.xib in Resources */ = {isa = PBXBuildFile; fileRef = B01E85FE21FA9CDC00B6D51F /* Menu.xib */; };
 		BA4A72671BE11AFA00E39C01 /* BRAWWeakTimerTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA4A72661BE11AFA00E39C01 /* BRAWWeakTimerTarget.swift */; };
 		BA54D3CE1B2EA74000C9CB28 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA54D3CD1B2EA74000C9CB28 /* Media.xcassets */; };
 		BA6645961BD924EB007A6BB1 /* BRAWTransactionRowControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA6645951BD924EB007A6BB1 /* BRAWTransactionRowControl.swift */; };
@@ -264,7 +264,6 @@
 		2BBE61B01FE48DA100D06CD7 /* LocalStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LocalStore.swift; path = PivxUtils/LocalStore.swift; sourceTree = "<group>"; };
 		2BBE61B41FE48E6500D06CD7 /* ContactAddress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ContactAddress.swift; path = PivxModels/ContactAddress.swift; sourceTree = "<group>"; };
 		2BFA52361FE08A8300A3C808 /* BaseController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BaseController.swift; path = PivxControllers/BaseController.swift; sourceTree = "<group>"; };
-		2BFA52391FE0AC4C00A3C808 /* Menu.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = Menu.xib; path = PivxNibs/Controllers/Menu.xib; sourceTree = "<group>"; };
 		2BFA523B1FE0AC5C00A3C808 /* MenuController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MenuController.swift; path = PivxControllers/MenuController.swift; sourceTree = "<group>"; };
 		31D68B501C23B6C10030FAAA /* PivxWalletUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PivxWalletUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		31D68B521C23B6C10030FAAA /* DashWalletUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashWalletUITests.swift; sourceTree = "<group>"; };
@@ -427,6 +426,9 @@
 		B01E85F621FA9BC500B6D51F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/NewAddress.xib; sourceTree = "<group>"; };
 		B01E85F921FA9BCF00B6D51F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/NewAddress.strings; sourceTree = "<group>"; };
 		B01E85FB21FA9BD300B6D51F /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/NewAddress.strings; sourceTree = "<group>"; };
+		B01E85FD21FA9CDC00B6D51F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/Menu.xib; sourceTree = "<group>"; };
+		B01E860021FA9CE400B6D51F /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Menu.strings; sourceTree = "<group>"; };
+		B01E860221FA9CE600B6D51F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Menu.strings; sourceTree = "<group>"; };
 		BA4A72661BE11AFA00E39C01 /* BRAWWeakTimerTarget.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BRAWWeakTimerTarget.swift; sourceTree = "<group>"; };
 		BA4EECDF1B351AE200D443A3 /* BRAppGroupConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRAppGroupConstants.h; sourceTree = "<group>"; };
 		BA54D3CD1B2EA74000C9CB28 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
@@ -610,7 +612,7 @@
 			children = (
 				B01E85F721FA9BC500B6D51F /* NewAddress.xib */,
 				2B4838CA1FE21655001C8D09 /* Donation.xib */,
-				2BFA52391FE0AC4C00A3C808 /* Menu.xib */,
+				B01E85FE21FA9CDC00B6D51F /* Menu.xib */,
 				2B5735791FE087D800110745 /* Setup.xib */,
 			);
 			name = Controllers;
@@ -1372,7 +1374,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				75D5F3E0191EC270004AB296 /* Images.xcassets in Resources */,
-				2BFA523A1FE0AC4D00A3C808 /* Menu.xib in Resources */,
+				B01E85FC21FA9CDC00B6D51F /* Menu.xib in Resources */,
 				757E09991ADB8EEB006FD352 /* Localizable.strings in Resources */,
 				2B5735811FE0882B00110745 /* Step1View.xib in Resources */,
 				75F2E0D31BE9803900EAE861 /* Launch Screen.storyboard in Resources */,
@@ -1733,6 +1735,17 @@
 				B01E85FB21FA9BD300B6D51F /* es */,
 			);
 			name = NewAddress.xib;
+			path = PivxNibs/Controllers;
+			sourceTree = "<group>";
+		};
+		B01E85FE21FA9CDC00B6D51F /* Menu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B01E85FD21FA9CDC00B6D51F /* Base */,
+				B01E860021FA9CE400B6D51F /* es */,
+				B01E860221FA9CE600B6D51F /* en */,
+			);
+			name = Menu.xib;
 			path = PivxNibs/Controllers;
 			sourceTree = "<group>";
 		};
