@@ -32,10 +32,6 @@
 		2B5735711FE04C4200110745 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B57356D1FE04C4200110745 /* Constants.swift */; };
 		2B5735761FE086F500110745 /* SetupController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B5735751FE086F500110745 /* SetupController.swift */; };
 		2B57357A1FE087D800110745 /* Setup.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2B5735791FE087D800110745 /* Setup.xib */; };
-		2B5735801FE0882B00110745 /* Step2View.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2B57357C1FE0882B00110745 /* Step2View.xib */; };
-		2B5735811FE0882B00110745 /* Step1View.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2B57357D1FE0882B00110745 /* Step1View.xib */; };
-		2B5735821FE0882B00110745 /* Step3View.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2B57357E1FE0882B00110745 /* Step3View.xib */; };
-		2B5735831FE0882B00110745 /* Step4View.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2B57357F1FE0882B00110745 /* Step4View.xib */; };
 		2B8A1C9B1FEB587800C7427C /* EmptyTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2B8A1C9A1FEB587800C7427C /* EmptyTableCell.xib */; };
 		2B8A1C9D1FEB594800C7427C /* EmptyTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B8A1C9C1FEB594800C7427C /* EmptyTableCell.swift */; };
 		2BBE619E1FE4833500D06CD7 /* NewAddressController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BBE619C1FE4833400D06CD7 /* NewAddressController.swift */; };
@@ -110,6 +106,10 @@
 		84F68C8A1975E9E2002FC300 /* BRScanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F68C891975E9E2002FC300 /* BRScanViewController.m */; };
 		B01E85F521FA9BC500B6D51F /* NewAddress.xib in Resources */ = {isa = PBXBuildFile; fileRef = B01E85F721FA9BC500B6D51F /* NewAddress.xib */; };
 		B01E85FC21FA9CDC00B6D51F /* Menu.xib in Resources */ = {isa = PBXBuildFile; fileRef = B01E85FE21FA9CDC00B6D51F /* Menu.xib */; };
+		B01E860321FAA23900B6D51F /* Step1View.xib in Resources */ = {isa = PBXBuildFile; fileRef = B01E860521FAA23900B6D51F /* Step1View.xib */; };
+		B01E860A21FAA3DB00B6D51F /* Step2View.xib in Resources */ = {isa = PBXBuildFile; fileRef = B01E860C21FAA3DB00B6D51F /* Step2View.xib */; };
+		B01E861121FAA5F500B6D51F /* Step3View.xib in Resources */ = {isa = PBXBuildFile; fileRef = B01E861321FAA5F500B6D51F /* Step3View.xib */; };
+		B01E861821FAA6B100B6D51F /* Step4View.xib in Resources */ = {isa = PBXBuildFile; fileRef = B01E861A21FAA6B100B6D51F /* Step4View.xib */; };
 		BA4A72671BE11AFA00E39C01 /* BRAWWeakTimerTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA4A72661BE11AFA00E39C01 /* BRAWWeakTimerTarget.swift */; };
 		BA54D3CE1B2EA74000C9CB28 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA54D3CD1B2EA74000C9CB28 /* Media.xcassets */; };
 		BA6645961BD924EB007A6BB1 /* BRAWTransactionRowControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA6645951BD924EB007A6BB1 /* BRAWTransactionRowControl.swift */; };
@@ -249,10 +249,6 @@
 		2B57356D1FE04C4200110745 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Constants.swift; path = PivxUtils/Constants.swift; sourceTree = "<group>"; };
 		2B5735751FE086F500110745 /* SetupController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SetupController.swift; path = PivxControllers/SetupController.swift; sourceTree = "<group>"; };
 		2B5735791FE087D800110745 /* Setup.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = Setup.xib; path = PivxNibs/Controllers/Setup.xib; sourceTree = "<group>"; };
-		2B57357C1FE0882B00110745 /* Step2View.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = Step2View.xib; path = PivxNibs/Views/Step2View.xib; sourceTree = "<group>"; };
-		2B57357D1FE0882B00110745 /* Step1View.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = Step1View.xib; path = PivxNibs/Views/Step1View.xib; sourceTree = "<group>"; };
-		2B57357E1FE0882B00110745 /* Step3View.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = Step3View.xib; path = PivxNibs/Views/Step3View.xib; sourceTree = "<group>"; };
-		2B57357F1FE0882B00110745 /* Step4View.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = Step4View.xib; path = PivxNibs/Views/Step4View.xib; sourceTree = "<group>"; };
 		2B8A1C9A1FEB587800C7427C /* EmptyTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = EmptyTableCell.xib; path = DashWallet/PivxNibs/EmptyTableCell.xib; sourceTree = SOURCE_ROOT; };
 		2B8A1C9C1FEB594800C7427C /* EmptyTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = EmptyTableCell.swift; path = PivxViews/TableCells/EmptyTableCell.swift; sourceTree = "<group>"; };
 		2BBE619C1FE4833400D06CD7 /* NewAddressController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NewAddressController.swift; path = PivxControllers/NewAddressController.swift; sourceTree = "<group>"; };
@@ -429,6 +425,18 @@
 		B01E85FD21FA9CDC00B6D51F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/Menu.xib; sourceTree = "<group>"; };
 		B01E860021FA9CE400B6D51F /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Menu.strings; sourceTree = "<group>"; };
 		B01E860221FA9CE600B6D51F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Menu.strings; sourceTree = "<group>"; };
+		B01E860421FAA23900B6D51F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/Step1View.xib; sourceTree = "<group>"; };
+		B01E860721FAA23F00B6D51F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Step1View.strings; sourceTree = "<group>"; };
+		B01E860921FAA24200B6D51F /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Step1View.strings; sourceTree = "<group>"; };
+		B01E860B21FAA3DB00B6D51F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/Step2View.xib; sourceTree = "<group>"; };
+		B01E860E21FAA3E400B6D51F /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Step2View.strings; sourceTree = "<group>"; };
+		B01E861021FAA3E700B6D51F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Step2View.strings; sourceTree = "<group>"; };
+		B01E861221FAA5F500B6D51F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/Step3View.xib; sourceTree = "<group>"; };
+		B01E861521FAA5FC00B6D51F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Step3View.strings; sourceTree = "<group>"; };
+		B01E861721FAA5FE00B6D51F /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Step3View.strings; sourceTree = "<group>"; };
+		B01E861921FAA6B100B6D51F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/Step4View.xib; sourceTree = "<group>"; };
+		B01E861C21FAA6B700B6D51F /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Step4View.strings; sourceTree = "<group>"; };
+		B01E861E21FAA6B900B6D51F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Step4View.strings; sourceTree = "<group>"; };
 		BA4A72661BE11AFA00E39C01 /* BRAWWeakTimerTarget.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BRAWWeakTimerTarget.swift; sourceTree = "<group>"; };
 		BA4EECDF1B351AE200D443A3 /* BRAppGroupConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRAppGroupConstants.h; sourceTree = "<group>"; };
 		BA54D3CD1B2EA74000C9CB28 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
@@ -621,10 +629,10 @@
 		2B57357B1FE0881100110745 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				2B57357D1FE0882B00110745 /* Step1View.xib */,
-				2B57357C1FE0882B00110745 /* Step2View.xib */,
-				2B57357E1FE0882B00110745 /* Step3View.xib */,
-				2B57357F1FE0882B00110745 /* Step4View.xib */,
+				B01E860521FAA23900B6D51F /* Step1View.xib */,
+				B01E860C21FAA3DB00B6D51F /* Step2View.xib */,
+				B01E861321FAA5F500B6D51F /* Step3View.xib */,
+				B01E861A21FAA6B100B6D51F /* Step4View.xib */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -1376,16 +1384,16 @@
 				75D5F3E0191EC270004AB296 /* Images.xcassets in Resources */,
 				B01E85FC21FA9CDC00B6D51F /* Menu.xib in Resources */,
 				757E09991ADB8EEB006FD352 /* Localizable.strings in Resources */,
-				2B5735811FE0882B00110745 /* Step1View.xib in Resources */,
+				B01E860321FAA23900B6D51F /* Step1View.xib in Resources */,
 				75F2E0D31BE9803900EAE861 /* Launch Screen.storyboard in Resources */,
 				2B57357A1FE087D800110745 /* Setup.xib in Resources */,
-				2B5735831FE0882B00110745 /* Step4View.xib in Resources */,
+				B01E861821FAA6B100B6D51F /* Step4View.xib in Resources */,
 				2B5735671FE04BC400110745 /* PivxAssets.xcassets in Resources */,
 				B01E85F521FA9BC500B6D51F /* NewAddress.xib in Resources */,
-				2B5735821FE0882B00110745 /* Step3View.xib in Resources */,
+				B01E861121FAA5F500B6D51F /* Step3View.xib in Resources */,
 				2B4838CB1FE21655001C8D09 /* Donation.xib in Resources */,
 				2BBE61AE1FE48BC000D06CD7 /* EmptyCell.xib in Resources */,
-				2B5735801FE0882B00110745 /* Step2View.xib in Resources */,
+				B01E860A21FAA3DB00B6D51F /* Step2View.xib in Resources */,
 				75C0E3BF1B1BA294007BC531 /* BIP39Words.plist in Resources */,
 				2BBE61AF1FE48BC000D06CD7 /* AddressContactCell.xib in Resources */,
 				75E83CF61B5F997A0038FB70 /* coinflip.aiff in Resources */,
@@ -1747,6 +1755,50 @@
 			);
 			name = Menu.xib;
 			path = PivxNibs/Controllers;
+			sourceTree = "<group>";
+		};
+		B01E860521FAA23900B6D51F /* Step1View.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B01E860421FAA23900B6D51F /* Base */,
+				B01E860721FAA23F00B6D51F /* en */,
+				B01E860921FAA24200B6D51F /* es */,
+			);
+			name = Step1View.xib;
+			path = PivxNibs/Views;
+			sourceTree = "<group>";
+		};
+		B01E860C21FAA3DB00B6D51F /* Step2View.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B01E860B21FAA3DB00B6D51F /* Base */,
+				B01E860E21FAA3E400B6D51F /* es */,
+				B01E861021FAA3E700B6D51F /* en */,
+			);
+			name = Step2View.xib;
+			path = PivxNibs/Views;
+			sourceTree = "<group>";
+		};
+		B01E861321FAA5F500B6D51F /* Step3View.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B01E861221FAA5F500B6D51F /* Base */,
+				B01E861521FAA5FC00B6D51F /* en */,
+				B01E861721FAA5FE00B6D51F /* es */,
+			);
+			name = Step3View.xib;
+			path = PivxNibs/Views;
+			sourceTree = "<group>";
+		};
+		B01E861A21FAA6B100B6D51F /* Step4View.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B01E861921FAA6B100B6D51F /* Base */,
+				B01E861C21FAA6B700B6D51F /* es */,
+				B01E861E21FAA6B900B6D51F /* en */,
+			);
+			name = Step4View.xib;
+			path = PivxNibs/Views;
 			sourceTree = "<group>";
 		};
 		BA913BE01BD57E4D005A7C0E /* Interface.storyboard */ = {
