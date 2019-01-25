@@ -38,7 +38,6 @@
 		2B5735831FE0882B00110745 /* Step4View.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2B57357F1FE0882B00110745 /* Step4View.xib */; };
 		2B8A1C9B1FEB587800C7427C /* EmptyTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2B8A1C9A1FEB587800C7427C /* EmptyTableCell.xib */; };
 		2B8A1C9D1FEB594800C7427C /* EmptyTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B8A1C9C1FEB594800C7427C /* EmptyTableCell.swift */; };
-		2BBE61991FE482AB00D06CD7 /* NewAddress.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2BBE61981FE482AB00D06CD7 /* NewAddress.xib */; };
 		2BBE619E1FE4833500D06CD7 /* NewAddressController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BBE619C1FE4833400D06CD7 /* NewAddressController.swift */; };
 		2BBE61A31FE4853B00D06CD7 /* AddressContactController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BBE61A21FE4853B00D06CD7 /* AddressContactController.swift */; };
 		2BBE61A91FE48AEC00D06CD7 /* AddressContactCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BBE61A81FE48AEC00D06CD7 /* AddressContactCell.swift */; };
@@ -110,6 +109,7 @@
 		75F2E0D31BE9803900EAE861 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75F2E0D21BE9803900EAE861 /* Launch Screen.storyboard */; };
 		75F2E0D61BEAA6A400EAE861 /* BRTxMetadataEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 75F2E0D51BEAA6A400EAE861 /* BRTxMetadataEntity.m */; };
 		84F68C8A1975E9E2002FC300 /* BRScanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F68C891975E9E2002FC300 /* BRScanViewController.m */; };
+		B01E85F521FA9BC500B6D51F /* NewAddress.xib in Resources */ = {isa = PBXBuildFile; fileRef = B01E85F721FA9BC500B6D51F /* NewAddress.xib */; };
 		BA4A72671BE11AFA00E39C01 /* BRAWWeakTimerTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA4A72661BE11AFA00E39C01 /* BRAWWeakTimerTarget.swift */; };
 		BA54D3CE1B2EA74000C9CB28 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA54D3CD1B2EA74000C9CB28 /* Media.xcassets */; };
 		BA6645961BD924EB007A6BB1 /* BRAWTransactionRowControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA6645951BD924EB007A6BB1 /* BRAWTransactionRowControl.swift */; };
@@ -255,7 +255,6 @@
 		2B57357F1FE0882B00110745 /* Step4View.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = Step4View.xib; path = PivxNibs/Views/Step4View.xib; sourceTree = "<group>"; };
 		2B8A1C9A1FEB587800C7427C /* EmptyTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = EmptyTableCell.xib; path = DashWallet/PivxNibs/EmptyTableCell.xib; sourceTree = SOURCE_ROOT; };
 		2B8A1C9C1FEB594800C7427C /* EmptyTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = EmptyTableCell.swift; path = PivxViews/TableCells/EmptyTableCell.swift; sourceTree = "<group>"; };
-		2BBE61981FE482AB00D06CD7 /* NewAddress.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = NewAddress.xib; path = PivxNibs/Controllers/NewAddress.xib; sourceTree = "<group>"; };
 		2BBE619C1FE4833400D06CD7 /* NewAddressController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NewAddressController.swift; path = PivxControllers/NewAddressController.swift; sourceTree = "<group>"; };
 		2BBE61A21FE4853B00D06CD7 /* AddressContactController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AddressContactController.swift; path = PivxControllers/AddressContactController.swift; sourceTree = "<group>"; };
 		2BBE61A81FE48AEC00D06CD7 /* AddressContactCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AddressContactCell.swift; path = PivxViews/TableCells/AddressContactCell.swift; sourceTree = "<group>"; };
@@ -425,6 +424,9 @@
 		84F68C881975E9E2002FC300 /* BRScanViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRScanViewController.h; sourceTree = "<group>"; };
 		84F68C891975E9E2002FC300 /* BRScanViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRScanViewController.m; sourceTree = "<group>"; };
 		AA1BBFB053AE437B7EE96F8D /* Pods-pivxwallet.testflight.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pivxwallet.testflight.xcconfig"; path = "Pods/Target Support Files/Pods-pivxwallet/Pods-pivxwallet.testflight.xcconfig"; sourceTree = "<group>"; };
+		B01E85F621FA9BC500B6D51F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/NewAddress.xib; sourceTree = "<group>"; };
+		B01E85F921FA9BCF00B6D51F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/NewAddress.strings; sourceTree = "<group>"; };
+		B01E85FB21FA9BD300B6D51F /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/NewAddress.strings; sourceTree = "<group>"; };
 		BA4A72661BE11AFA00E39C01 /* BRAWWeakTimerTarget.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BRAWWeakTimerTarget.swift; sourceTree = "<group>"; };
 		BA4EECDF1B351AE200D443A3 /* BRAppGroupConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRAppGroupConstants.h; sourceTree = "<group>"; };
 		BA54D3CD1B2EA74000C9CB28 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
@@ -606,7 +608,7 @@
 		2B5735781FE087B500110745 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				2BBE61981FE482AB00D06CD7 /* NewAddress.xib */,
+				B01E85F721FA9BC500B6D51F /* NewAddress.xib */,
 				2B4838CA1FE21655001C8D09 /* Donation.xib */,
 				2BFA52391FE0AC4C00A3C808 /* Menu.xib */,
 				2B5735791FE087D800110745 /* Setup.xib */,
@@ -1377,7 +1379,7 @@
 				2B57357A1FE087D800110745 /* Setup.xib in Resources */,
 				2B5735831FE0882B00110745 /* Step4View.xib in Resources */,
 				2B5735671FE04BC400110745 /* PivxAssets.xcassets in Resources */,
-				2BBE61991FE482AB00D06CD7 /* NewAddress.xib in Resources */,
+				B01E85F521FA9BC500B6D51F /* NewAddress.xib in Resources */,
 				2B5735821FE0882B00110745 /* Step3View.xib in Resources */,
 				2B4838CB1FE21655001C8D09 /* Donation.xib in Resources */,
 				2BBE61AE1FE48BC000D06CD7 /* EmptyCell.xib in Resources */,
@@ -1721,6 +1723,17 @@
 				75BDCC381CE2FC7000AAFA22 /* en */,
 			);
 			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B01E85F721FA9BC500B6D51F /* NewAddress.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B01E85F621FA9BC500B6D51F /* Base */,
+				B01E85F921FA9BCF00B6D51F /* en */,
+				B01E85FB21FA9BD300B6D51F /* es */,
+			);
+			name = NewAddress.xib;
+			path = PivxNibs/Controllers;
 			sourceTree = "<group>";
 		};
 		BA913BE01BD57E4D005A7C0E /* Interface.storyboard */ = {
