@@ -803,7 +803,7 @@
 #endif
             if (!authenticated) {
                 if ([defs doubleForKey:PIN_UNLOCK_TIME_KEY] + WEEK_TIME_INTERVAL < [NSDate timeIntervalSinceReferenceDate]) {
-                    [manager authenticateWithPrompt:nil andTouchId:NO alertIfLockout:YES completion:^(BOOL authenticated,BOOL cancelled) {
+                    [manager authenticateWithPrompt:nil andBiometricId:NO alertIfLockout:YES completion:^(BOOL authenticated,BOOL cancelled) {
                         if (authenticated) {
                             [self unlock:nil];
                         }
@@ -1309,7 +1309,7 @@
         [self.navigationItem setRightBarButtonItem:nil animated:(sender) ? YES : NO];
     } else {
         [BREventManager saveEvent:@"root:unlock"];
-        [manager authenticateWithPrompt:nil andTouchId:YES alertIfLockout:YES completion:^(BOOL authenticated,BOOL cancelled) {
+        [manager authenticateWithPrompt:nil andBiometricId:YES alertIfLockout:YES completion:^(BOOL authenticated,BOOL cancelled) {
             if (authenticated) {
                 [BREventManager saveEvent:@"root:unlock_success"];
                 [self updateTitleView];

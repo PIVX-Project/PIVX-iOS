@@ -187,5 +187,7 @@
 			</dict>
 		</dict>
 	</array>
+	<key>NSFaceIDUsageDescription</key>
+	<string> </string>
 </dict>
 </plist>
