@@ -1,0 +1,111 @@
+/* Class = "UIButton"; normalTitle = "5"; ObjectID = "2Af-Xt-dHE"; */
+"2Af-Xt-dHE.normalTitle" = "5";
+
+/* Class = "UIButton"; normalTitle = "Recover wallet"; ObjectID = "4w7-k8-9wY"; */
+"4w7-k8-9wY.normalTitle" = "지갑 복구";
+
+/* Class = "UIButton"; normalTitle = "8"; ObjectID = "24A-83-L7p"; */
+"24A-83-L7p.normalTitle" = "8";
+
+/* Class = "UIButton"; normalTitle = "6"; ObjectID = "43w-iO-MOK"; */
+"43w-iO-MOK.normalTitle" = "6";
+
+/* Class = "UILabel"; text = "Shapeshift in progress"; ObjectID = "adc-g6-wnP"; */
+"adc-g6-wnP.text" = "Shapeshift 진행중";
+
+/* Class = "UIButton"; normalTitle = "Pay Address From Clipboard"; ObjectID = "bfj-xS-5rN"; */
+"bfj-xS-5rN.normalTitle" = "클립보드에 복사된 주소로 송금";
+
+/* Class = "UIButton"; normalTitle = "1"; ObjectID = "bUC-MN-PXO"; */
+"bUC-MN-PXO.normalTitle" = "1";
+
+/* Class = "UIButton"; normalTitle = "Scan QR Code"; ObjectID = "ce6-Wi-wk4"; */
+"ce6-Wi-wk4.normalTitle" = "QR 코드 스캔";
+
+/* Class = "UILabel"; text = "I wrote it down:"; ObjectID = "cyp-mV-Bhd"; */
+"cyp-mV-Bhd.text" = "작성된 내용:";
+
+/* Class = "UIButton"; normalTitle = "."; ObjectID = "Cz1-M6-v6N"; */
+"Cz1-M6-v6N.normalTitle" = ".";
+
+/* Class = "UILabel"; text = "Start/Recover Another Wallet"; ObjectID = "D1b-HB-lKH"; */
+"D1b-HB-lKH.text" = "다른 지갑 시작/복구";
+
+/* Class = "UIButton"; normalTitle = "New wallet"; ObjectID = "dOa-zm-TDG"; */
+"dOa-zm-TDG.normalTitle" = "새 지갑";
+
+/* Class = "UILabel"; text = "If you ever lose your phone, you will need this phrase to recover your wallet"; ObjectID = "dX6-jg-5IA"; */
+"dX6-jg-5IA.text" = "혹시나 지갑이나 핸드폰을 잃어버려도, 이 복구 구절로 언제나 지갑을 복구할수 있습니다.";
+
+/* Class = "UILabel"; text = "or"; ObjectID = "Ecs-es-ao8"; */
+"Ecs-es-ao8.text" = "혹은";
+
+/* Class = "UIButton"; normalTitle = "Show"; ObjectID = "efL-Cj-Aho"; */
+"efL-Cj-Aho.normalTitle" = "보기";
+
+/* Class = "UIButton"; normalTitle = "3"; ObjectID = "EnY-9p-vg6"; */
+"EnY-9p-vg6.normalTitle" = "3";
+
+/* Class = "UILabel"; text = "If you ever lose your phone, you will need this phrase to recover your wallet"; ObjectID = "EQG-Km-ZKY"; */
+"EQG-Km-ZKY.text" = "혹시나 지갑이나 핸드폰을 잃어버려도, 이 복구 구절로 언제나 지갑을 복구할수 있습니다.";
+
+/* Class = "UINavigationItem"; title = "Confirm:"; ObjectID = "fQN-xb-SYb"; */
+"fQN-xb-SYb.title" = "확인:";
+
+/* Class = "UIButton"; normalTitle = "9"; ObjectID = "Ika-qg-5Cf"; */
+"Ika-qg-5Cf.normalTitle" = "9";
+
+/* Class = "UIButton"; normalTitle = "7"; ObjectID = "jcY-uc-kOc"; */
+"jcY-uc-kOc.normalTitle" = "7";
+
+/* Class = "UILabel"; text = "SEND PIV"; ObjectID = "l5l-JR-LKA"; */
+"l5l-JR-LKA.text" = "PIV 보내기";
+
+/* Class = "UILabel"; text = "SwiftX"; ObjectID = "lbm-03-nu4"; */
+"lbm-03-nu4.text" = "SwiftX";
+
+/* Class = "UIButton"; normalTitle = "0"; ObjectID = "OKR-t9-9Lk"; */
+"OKR-t9-9Lk.normalTitle" = "0";
+
+/* Class = "UINavigationItem"; title = "Recovery phrase:"; ObjectID = "ooJ-EA-DFl"; */
+"ooJ-EA-DFl.title" = "복구 구절:";
+
+/* Class = "UINavigationItem"; title = "Phrase"; ObjectID = "pSA-60-Zeg"; */
+"pSA-60-Zeg.title" = "구절";
+
+/* Class = "UIBarButtonItem"; title = "Remind me later"; ObjectID = "QQS-Me-RNh"; */
+"QQS-Me-RNh.title" = "나중에 알림";
+
+/* Class = "UITableViewController"; title = "Transaction Details"; ObjectID = "s4T-yd-VfX"; */
+"s4T-yd-VfX.title" = "상세 전송내역";
+
+/* Class = "UILabel"; text = "Please write it down"; ObjectID = "Td7-xP-kmB"; */
+"Td7-xP-kmB.text" = "여기에 적어주세요.";
+
+/* Class = "UIButton"; normalTitle = "4"; ObjectID = "VQH-pt-DQg"; */
+"VQH-pt-DQg.normalTitle" = "4";
+
+/* Class = "UINavigationItem"; title = "Settings"; ObjectID = "W8m-Eh-Nf9"; */
+"W8m-Eh-Nf9.title" = "설정";
+
+/* Class = "UILabel"; text = "Start a new wallet by generating a wallet recovery phrase"; ObjectID = "wDZ-DN-szv"; */
+"wDZ-DN-szv.text" = "지갑 복구구절을 생성하여 새 지갑 시작";
+
+/* Class = "UILabel"; text = "id:"; ObjectID = "WsQ-ej-Wh4"; */
+"WsQ-ej-Wh4.text" = "id:";
+
+/* Class = "UILabel"; text = "status:"; ObjectID = "x2u-C3-wz6"; */
+"x2u-C3-wz6.text" = "상태:";
+
+/* Class = "UIButton"; normalTitle = "2"; ObjectID = "xaD-eI-0iC"; */
+"xaD-eI-0iC.normalTitle" = "2";
+
+/* Class = "UINavigationItem"; title = "Create recovery phrase"; ObjectID = "xhy-mj-rkK"; */
+"xhy-mj-rkK.title" = "복구 구절 생성";
+
+/* Class = "UILabel"; text = "amount:"; ObjectID = "XJu-9x-HqQ"; */
+"XJu-9x-HqQ.text" = "금액:";
+
+/* Class = "UILabel"; text = "Enter this wallet's recovery phrase to wipe it and start/recover another. Your current balance remains on this phrase."; ObjectID = "YC6-rN-4P5"; */
+"YC6-rN-4P5.text" = "이 지갑의 복구구절을 입력후 초기화하시고 다른 지갑을 시작/복구하십시오. 여러분의 잔고는 이 복구구절에 그대로 있습니다.";
+

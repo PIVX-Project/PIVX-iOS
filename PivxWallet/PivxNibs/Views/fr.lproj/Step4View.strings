@@ -1,0 +1,6 @@
+/* Class = "UILabel"; text = "TRUSTED NODES FEDERATION"; ObjectID = "9RG-nq-fSw"; */
+"9RG-nq-fSw.text" = "FÉDÉRATION DES NŒUDS DE CONFIANCE";
+
+/* Class = "UILabel"; text = "Trusted nodes federation make light PoS wallets possible, you can relay on them or create your own trusted node."; ObjectID = "acG-Rs-tKE"; */
+"acG-Rs-tKE.text" = "Fédération de noeuds de confiance Make portefeuilles légers possibles, vous pouvez les relayer ou créez votre propre noeud de confiance.";
+

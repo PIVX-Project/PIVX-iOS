@@ -1,0 +1,288 @@
+/* No comment provided by engineer. */
+" and " = "und";
+
+/* No comment provided by engineer. */
+", " = ",";
+
+/* No comment provided by engineer. */
+"%@ is not allowed to access the camera" = "%@ darf nicht auf die Kamera zugreifen";
+
+/* No comment provided by engineer. */
+"%d attempts remaining" = "%dVersuche übrig";
+
+/* No comment provided by engineer. */
+"%d confirmations" = "%dBestätigungen";
+
+/* No comment provided by engineer. */
+"0 confirmations" = "0 Bestätigungen";
+
+/* No comment provided by engineer. */
+"1 attempt remaining" = "1 Versuch übrig";
+
+/* No comment provided by engineer. */
+"1 confirmation" = "1 Bestätigung";
+
+/* No comment provided by engineer. */
+"About" = "Über";
+
+/* Address Book */
+"Address Book" = "Adressbuch";
+
+/* Address: */
+"Address:" = "Adresse:";
+
+/* No comment provided by engineer. */
+"Always require passcode" = "Passwort immer anfordern";
+
+/* No comment provided by engineer. */
+"Amount %@ (%@)" = "Menge %1$@ (%2$@)";
+
+/* No comment provided by engineer. */
+"Amount too small" = "Menge zu gering";
+
+/* No comment provided by engineer. */
+"Application %@ is requesting a payment to" = "Anwendung %@ fordert eine Überweisung an";
+
+/* No comment provided by engineer. */
+"Bad password, try again" = "Falsches Passwort, versuche es erneut";
+
+/* No comment provided by engineer. */
+"Bad payment request" = "Zahlungsaufforderung fehlerhaft";
+
+/* No comment provided by engineer. */
+"bad payment request URL" = "URL der Zahlungsaufforderung fehlerhaft";
+
+/* No comment provided by engineer. */
+"bad payment URL" = "falsche Zahlungs-URL";
+
+/* No comment provided by engineer. */
+"Bad recovery phrase" = "Falsche Wiederherstellungsphrase";
+
+/* No comment provided by engineer. */
+"Bitcoin address (shapeshift)" = "Bitcoin Adresse (Shapeshift)";
+
+/* No comment provided by engineer. */
+"block #%d of %d" = "Block #%1$d von %2$d";
+
+/* No comment provided by engineer. */
+"Buy PIV" = "Kaufe PIV";
+
+/* No comment provided by engineer. */
+"Buy PIV in PIVXwallet!" = "Kaufe PIV im PIVX Wallet!";
+
+/* Cancel */
+"Cancel" = "Abbrechen";
+
+/* No comment provided by engineer. */
+"Change" = "Wechselgeld";
+
+/* No comment provided by engineer. */
+"Change passcode" = "Passwort ändern";
+
+/* No comment provided by engineer. */
+"Change payment amount?" = "Überweisungsbetrag ändern?";
+
+/* No comment provided by engineer. */
+"Checking address balance..." = "Prüfe Guthaben der Adresse...";
+
+/* No comment provided by engineer. */
+"Checking private key balance..." = "Prüfe Guthaben des privaten Schlüssels...";
+
+/* No comment provided by engineer. */
+"Choose passcode for %@" = "Wähle ein Passwort für %@";
+
+/* No comment provided by engineer. */
+"Clear" = "Zurücksetzten";
+
+/* No comment provided by engineer. */
+"Clear trusted node?" = "Vertrauenswürdigen Knoten zurücksetzten?";
+
+/* No comment provided by engineer. */
+"Close app" = "App schließen";
+
+/* Confirm */
+"Confirm" = "Bestätige";
+
+/* No comment provided by engineer. */
+"confirmed in block #%d" = "bestätigt im Block #%d";
+
+/* No comment provided by engineer. */
+"Connect timeout" = "Zeitüberschreitung bei der Verbindung";
+
+/* No comment provided by engineer. */
+"copied" = "kopiert";
+
+/* No comment provided by engineer. */
+"Copied" = "Kopiert";
+
+/* No comment provided by engineer. */
+"double spend" = "double spend (doppelte Ausgabe)";
+
+/* No comment provided by engineer. */
+"from:" = "von:";
+
+/* No comment provided by engineer. */
+"hour" = "Stunde";
+
+/* No comment provided by engineer. */
+"hours" = "Stunden";
+
+/* No comment provided by engineer. */
+"id:" = "ID:";
+
+/* No comment provided by engineer. */
+"IMPORTANT" = "WICHTIG";
+
+/* No comment provided by engineer. */
+"INVALID" = "UNGÜLTIG";
+
+/* No comment provided by engineer. */
+"Local Currency" = "Lokale währung";
+
+/* No comment provided by engineer. */
+"minute" = "Minute";
+
+/* No comment provided by engineer. */
+"minutes" = "Minuten";
+
+/* No comment provided by engineer. */
+"missing certificate" = "fehlendes Zertifikat";
+
+/* No comment provided by engineer. */
+"more..." = "mehr...";
+
+/* No comment provided by engineer. */
+"moved" = "verschoben";
+
+/* No comment provided by engineer. */
+"NO TRANSACTIONS" = "KEINE TRANSAKTIONEN";
+
+/* No comment provided by engineer. */
+"not a valid bitcoin address" = "keine gültige Bitcoin Adresse";
+
+/* OK */
+"OK" = "OK";
+
+/* No comment provided by engineer. */
+"password" = "Passwort";
+
+/* No comment provided by engineer. */
+"payment address" = "Zahlungsadresse";
+
+/* No comment provided by engineer. */
+"pending" = "unbestätigt";
+
+/* No comment provided by engineer. */
+"PIVX address" = "PIVX Adresse";
+
+/* No comment provided by engineer. */
+"PIVX network fee" = "PIVX Netzwerk Gebühr";
+
+/* No comment provided by engineer. */
+"PIVX payments can't be less than %@" = "Zahlungen mit PIVX können nicht weniger sein als %@";
+
+/* No comment provided by engineer. */
+"PIVX transaction not signed" = "PIVX Transaktion nicht signiert";
+
+/* No comment provided by engineer. */
+"Receive PIV at this address: %@" = "Erhalte PIV in dieser Adresse: %@";
+
+/* No comment provided by engineer. */
+"received" = "erhalten";
+
+/* No comment provided by engineer. */
+"received %@ (%@)" = "erhalten %1$@ (%2$@)";
+
+/* Recovery phrase */
+"Recovery phrase" = "Wiederherstellungsphrase";
+
+/* No comment provided by engineer. */
+"Recovery Phrase" = "Wiederherstellungsphrase";
+
+/* No comment provided by engineer. */
+"request expired" = "Anfrage abgelaufen";
+
+/* No comment provided by engineer. */
+"restore" = "wiederherstellen";
+
+/* No comment provided by engineer. */
+"second" = "Sekunde";
+
+/* No comment provided by engineer. */
+"seconds" = "Sekunden";
+
+/* No comment provided by engineer. */
+"seen by %d of %d peers" = "gesehen durch %1$dvon %2$d Gegenstellen";
+
+/* No comment provided by engineer. */
+"sent" = "Gesendet";
+
+/* No comment provided by engineer. */
+"Settings" = "Einstellungen";
+
+/* No comment provided by engineer. */
+"shapeshift bitcoin id:" = "shapeshift bitcoin id:";
+
+/* No comment provided by engineer. */
+"shapeshift status:" = "shapeshift Status:";
+
+/* No comment provided by engineer. */
+"Show" = "Zeige";
+
+/* No comment provided by engineer. */
+"Starting Shapeshift!" = "Starte Shapeshift!";
+
+/* No comment provided by engineer. */
+"status:" = "Status:";
+
+/* Synced */
+"Synced" = "Synchronisiert";
+
+/* No comment provided by engineer. */
+"Syncing:" = "Synchronisiere:";
+
+/* No comment provided by engineer. */
+"The amount you wanted to shapeshift is too low, please input a value over %@" = "Der Betrag ist zu klein! Shapeshift fordert einen Betrag von mindestens %@";
+
+/* No comment provided by engineer. */
+"This is your PIVX balance." = "Dies ist ihr PIVX Guthaben.";
+
+/* No comment provided by engineer. */
+"to:" = "an:";
+
+/* No comment provided by engineer. */
+"to: %@" = "an: %@";
+
+/* No comment provided by engineer. */
+"Try It!" = "Versuche es!";
+
+/* No comment provided by engineer. */
+"Unable to get new qr code" = "Unfähig einen neuen QR Code zu erzeugen";
+
+/* No comment provided by engineer. */
+"unexpected response from %@" = "unerwartete Antwort von %@";
+
+/* No comment provided by engineer. */
+"unknown address" = "unbekannte Adresse";
+
+/* No comment provided by engineer. */
+"unsupported signature type" = "Signaturtyp nicht unterstützt";
+
+/* No comment provided by engineer. */
+"untrusted certificate" = "Zertifikat ungültig";
+
+/* No comment provided by engineer. */
+"unverified" = "unbestätigt";
+
+/* Updating Price */
+"Updating Price" = "Preis updaten";
+
+/* No comment provided by engineer. */
+"wallet address" = "Wallet Adresse";
+
+/* No comment provided by engineer. */
+"WARNING" = "WARNUNG";
+
+/* No comment provided by engineer. */
+"WRITE DOWN YOUR RECOVERY PHRASE" = "NOTIEREN SIE IHRE WIEDERHERSTELLUNGSPHRASE";
+

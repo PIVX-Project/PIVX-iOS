@@ -1,0 +1,136 @@
+/* No comment provided by engineer. */
+" and " = "i";
+
+/* No comment provided by engineer. */
+", " = ", ";
+
+/* No comment provided by engineer. */
+"\"%@\" is not a recovery phrase word" = "\"%@\" nie jest zwrotem odzyskiwania";
+
+/* No comment provided by engineer. */
+"%@
+
+balance: %@ (%@)" = "%1$@
+
+saldo:%2$@ (%3$@)";
+
+/* No comment provided by engineer. */
+"%@ is not allowed to access the camera" = "%@ nie ma dostępu do kamery";
+
+/* No comment provided by engineer. */
+"%d attempts remaining" = "%d próba pozostania";
+
+/* No comment provided by engineer. */
+"%d confirmations" = "%dpotwierdzeń";
+
+/* No comment provided by engineer. */
+"0 confirmations" = "0 potwierdzeń";
+
+/* No comment provided by engineer. */
+"1 attempt remaining" = "1 próba pozostania";
+
+/* No comment provided by engineer. */
+"1 confirmation" = "1 potwierdzenie";
+
+/* No comment provided by engineer. */
+"Abort" = "Przerwij";
+
+/* No comment provided by engineer. */
+"About" = "O";
+
+/* No comment provided by engineer. */
+"Application %@ is requesting a payment to" = "Aplikacja %@ prosi o płatność";
+
+/* Are you sure? */
+"Are you sure?" = "Jesteś pewien?";
+
+/* No comment provided by engineer. */
+"Bitcoin address (shapeshift)" = "Bitcoin adres (shapeshift)";
+
+/* No comment provided by engineer. */
+"Buy PIV" = "Kup PIV";
+
+/* No comment provided by engineer. */
+"Buy PIV in PIVXwallet!" = "Kup PIV w PIVXwallet!";
+
+/* Confirm */
+"Confirm" = "Potwierdź";
+
+/* No comment provided by engineer. */
+"copied" = "skopiawane";
+
+/* No comment provided by engineer. */
+"Create recovery phrase" = "Utwórz zwrot odzyskiwania";
+
+/* No comment provided by engineer. */
+"id:" = "id:";
+
+/* No comment provided by engineer. */
+"IMPORTANT" = "WAŻNE";
+
+/* No comment provided by engineer. */
+"INVALID" = "NIEWAŻNE";
+
+/* No comment provided by engineer. */
+"Let others scan this QR code to get your PIVX address. Anyone can send PIV to your wallet by transferring them to your address." = "Pozwól innym skanować ten kod QR, aby uzyskać adres PIVX. Każdy może wysłać PIV do twojego portfela, przenosząc go na twój adres.";
+
+/* No comment provided by engineer. */
+"Local Currency" = "Lokalna waluta";
+
+/* No comment provided by engineer. */
+"NO TRANSACTIONS" = "BRAK TRANSAKCJI";
+
+/* OK */
+"OK" = "OK";
+
+/* No comment provided by engineer. */
+"PIVX address" = "PIVX adres";
+
+/* No comment provided by engineer. */
+"PIVX network fee" = "Opłata PIVX";
+
+/* No comment provided by engineer. */
+"PIVX payments can't be less than %@" = "Płatności PIVX nie mogą być mniejsze niż %@";
+
+/* No comment provided by engineer. */
+"PIVX transaction not signed" = "Transakcja PIVX nie została podpisana";
+
+/* No comment provided by engineer. */
+"PIVX transaction outputs can't be less than %@" = "Wyjściowe transakcje PIVX nie mogą być mniejsze niż %@";
+
+/* No comment provided by engineer. */
+"Receive PIV at this address: %@" = "Odbierz PIV pod tym adresem: %@";
+
+/* Recovery phrase */
+"Recovery phrase" = "fraza odzyskiwania";
+
+/* No comment provided by engineer. */
+"Settings" = "Ustawienia";
+
+/* No comment provided by engineer. */
+"Show" = "Pokaż";
+
+/* No comment provided by engineer. */
+"status:" = "stan:";
+
+/* Synced */
+"Synced" = "Zsynchronizowany";
+
+/* No comment provided by engineer. */
+"Syncing:" = "Synchronizowanie:";
+
+/* No comment provided by engineer. */
+"This is your PIVX balance." = "To jest twój bilans PIVX.";
+
+/* No comment provided by engineer. */
+"Try It!" = "Spróbuj!";
+
+/* No comment provided by engineer. */
+"Unable to get new qr code" = "Nie można uzyskać nowego kodu QR";
+
+/* Updating Price */
+"Updating Price" = "Aktualizacja ceny";
+
+/* No comment provided by engineer. */
+"WARNING" = "OSTRZEŻENIE";
+

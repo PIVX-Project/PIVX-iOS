@@ -1,753 +1,649 @@
-
 /* No comment provided by engineer. */
-" and " = " and ";
-
-/* No comment provided by engineer. */
-"%@ is for 'mPIV'. %@ = 1 PIV." = "%1$@ is for 'mPIV'. %2$@ = 1 PIV.";
-
-/* No comment provided by engineer. */
-"%@ is not allowed to access the camera" = "%@ is not allowed to access the camera";
-
-/* No comment provided by engineer. */
-"%@\n\nbalance: %@ (%@)" = "%1$@\n\nbalance: %2$@ (%3$@)";
-
-/* No comment provided by engineer. */
-"%@\n\nif you ever lose your phone, you will need it to recover your wallet" = "%@\n\nif you ever lose your phone, you will need it to recover your wallet";
-
-/* No comment provided by engineer. */
-"%d attempts remaining" = "%d attempts remaining";
-
-/* No comment provided by engineer. */
-"%d confirmations" = "%d confirmations";
+" and " = "y";
 
 /* No comment provided by engineer. */
 ", " = ", ";
 
 /* No comment provided by engineer. */
-"0 confirmations" = "0 confirmations";
+"\"%@\" is not a recovery phrase word" = "\"%@\" no es una palabra de frase de recuperación";
 
 /* No comment provided by engineer. */
-"1 attempt remaining" = "1 attempt remaining";
+"%@
+
+balance: %@ (%@)" = "%1$@
+
+balance: %2$@ (%3$@)";
 
 /* No comment provided by engineer. */
-"1 confirmation" = "1 confirmation";
+"%@ is for 'mPIV'. %@ = 1 PIV." = "%1$@ es para 'mPIV'. %2$@ = 1 PIV.";
 
 /* No comment provided by engineer. */
-"\"%@\" is not a recovery phrase word" = "\"%@\" is not a recovery phrase word";
+"%@ is not allowed to access the camera" = "%@ no tiene permiso para acceder a la cámara";
 
 /* No comment provided by engineer. */
-"A device passcode is needed to safeguard your wallet. Go to settings and turn passcode on to continue." = "A device passcode is needed to safeguard your wallet. Go to settings and turn passcode on to continue.";
+"%d attempts remaining" = "%d intentos restantes";
 
 /* No comment provided by engineer. */
-"Abort" = "Abort";
+"%d confirmations" = "%d confirmaciones";
 
 /* No comment provided by engineer. */
-"About" = "About";
+"0 confirmations" = "0 confirmaciones";
 
 /* No comment provided by engineer. */
-"ADDRESS ALREADY USED\nPIVX addresses are intended for single use only\n\nre-use reduces privacy for both you and the recipient and can result in loss if the recipient doesn't directly control the address" = "ADDRESS ALREADY USED\nPIVX addresses are intended for single use only\n\nre-use reduces privacy for both you and the recipient and can result in loss if the recipient doesn't directly control the address";
+"1 attempt remaining" = "1 intento restante";
+
+/* No comment provided by engineer. */
+"1 confirmation" = "1 confirmación";
+
+/* No comment provided by engineer. */
+"A device passcode is needed to safeguard your wallet. Go to settings and turn passcode on to continue." = "Un código de acceso de dispositivo es necesario para salvaguardar su billetera. Vaya a la configuración y active el código de acceso para continuar.";
+
+/* No comment provided by engineer. */
+"About" = "Acerca de";
 
 /* Address Book */
-"Address Book" = "Address Book";
+"Address Book" = "Directorio";
 
 /* Address: */
-"Address:" = "Address:";
+"Address:" = "Dirección:";
 
 /* No comment provided by engineer. */
-"allow camera access in\nSettings->Privacy->Camera->%@" = "allow camera access in\nSettings->Privacy->Camera->%@";
+"Always require passcode" = "siempre requerir código de acceso";
 
 /* No comment provided by engineer. */
-"Always require passcode" = "Always require passcode";
+"Amount %@ (%@)" = "cantidad %1$@ (%2$@)";
 
 /* No comment provided by engineer. */
-"Amount %@ (%@)" = "Amount %1$@ (%2$@)";
+"Amount too small" = "cantidad demasiado pequeña";
 
 /* No comment provided by engineer. */
-"Amount too small" = "Amount too small";
+"Application %@ is requesting a payment to" = "La aplicación %@ está solicitando un pago a";
 
 /* No comment provided by engineer. */
-"Application %@ is requesting a payment to" = "Application %@ is requesting a payment to";
+"Application %@ is requesting an address so it can pay you.  Would you like to authorize this?" = "La aplicación %@ está solicitando una dirección para que pueda pagarle. ¿Le gustaría autorizar esto?";
 
 /* No comment provided by engineer. */
-"Application %@ is requesting an address so it can pay you.  Would you like to authorize this?" = "Application %@ is requesting an address so it can pay you.  Would you like to authorize this?";
+"Application %@ would like to receive your Master Public Key.  This can be used to keep track of your wallet, this can not be used to move your PIV." = "La aplicación %@ desea recibir su clave pública maestra. Esto se puede utilizar para realizar un seguimiento de su billetera, esto no se puede utilizar para mover su PIV.";
 
 /* No comment provided by engineer. */
-"Application %@ would like to receive your Master Public Key.  This can be used to keep track of your wallet, this can not be used to move your PIV." = "Application %@ would like to receive your Master Public Key.  This can be used to keep track of your wallet, this can not be used to move your PIV.";
-
-/* Are you sure? */
-"Are you sure?" = "Are you sure?";
+"Bad password, try again" = "Contraseña incorrecta, inténtalo de nuevo";
 
 /* No comment provided by engineer. */
-"Bad password, try again" = "Bad password, try again";
+"Bad payment request" = "mala solicitud de pago";
 
 /* No comment provided by engineer. */
-"Bad payment request" = "Bad payment request";
+"bad payment request URL" = "mal URL de solicitud de pago";
 
 /* No comment provided by engineer. */
-"bad payment request URL" = "bad payment request URL";
+"bad payment URL" = "mala URL de pago";
 
 /* No comment provided by engineer. */
-"bad payment URL" = "bad payment URL";
+"Bad recovery phrase" = "frase de recuperación incorrecta";
 
 /* No comment provided by engineer. */
-"Bad recovery phrase" = "Bad recovery phrase";
+"Bitcoin address (shapeshift)" = "Dirección de Bitcoin (shapeshift)";
 
 /* No comment provided by engineer. */
-"Bitcoin address (shapeshift)" = "Bitcoin address (shapeshift)";
+"block #%d of %d" = "bloque #%1$d de %2$d";
 
 /* No comment provided by engineer. */
-"block #%d of %d" = "block #%1$d of %2$d";
+"Buy PIV" = "Comprar PIV";
 
 /* No comment provided by engineer. */
-"Buy PIV" = "Buy PIV";
-
-/* No comment provided by engineer. */
-"Buy PIV in PIVXwallet!" = "Buy PIV in PIVXwallet!";
+"Buy PIV in PIVXwallet!" = "¡Compra PIV en la PIVXwallet!";
 
 /* Cancel */
-"Cancel" = "Cancel";
+"Cancel" = "Cancelar";
 
 /* No comment provided by engineer. */
-"Change" = "Change";
+"Change" = "cadáver";
 
 /* No comment provided by engineer. */
-"Change passcode" = "Change passcode";
+"Change passcode" = "Cambiar Código de acceso";
 
 /* No comment provided by engineer. */
-"Change payment amount?" = "Change payment amount?";
+"Change payment amount?" = "¿cambiar el monto del pago?";
 
 /* No comment provided by engineer. */
-"Checking address balance..." = "Checking address balance...";
+"Checking address balance..." = "verificando saldo de la dirección...";
 
 /* No comment provided by engineer. */
-"Checking private key balance..." = "Checking private key balance...";
+"Checking private key balance..." = "verificando el balance de clave privada...";
 
 /* No comment provided by engineer. */
-"Choose passcode for %@" = "Choose passcode for %@";
+"Choose passcode for %@" = "Escoger código de acceso para %@";
 
 /* No comment provided by engineer. */
-"Clear" = "Clear";
+"Clear" = "limpiar";
 
 /* No comment provided by engineer. */
-"Clear trusted node?" = "Clear trusted node?";
+"Clear trusted node?" = "¿limpiar nodo confiable?";
 
 /* No comment provided by engineer. */
-"Clipboard doesn't contain a valid PIVX address" = "Clipboard doesn't contain a valid PIVX address";
+"Clipboard doesn't contain a valid PIVX address" = "portapapeles no contiene una dirección PIVX válida";
 
 /* No comment provided by engineer. */
-"Close app" = "Close app";
+"Close app" = "Cerrar app";
 
 /* Confirm */
-"Confirm" = "Confirm";
+"Confirm" = "Confirmar";
 
 /* No comment provided by engineer. */
-"confirmed in block #%d" = "confirmed in block #%d";
+"confirmed in block #%d" = "confirmado en el bloque #%d";
 
 /* No comment provided by engineer. */
-"Connect timeout" = "Connect timeout";
-
-/* Contact address limit */
-"Contact address limit" = "Contact address limit";
+"Connect timeout" = "Tiempo de espera de conexión agotado";
 
 /* No comment provided by engineer. */
-"copied" = "copied";
+"copied" = "copiado";
 
 /* No comment provided by engineer. */
-"Copied" = "Copied";
+"Copied" = "copiado";
 
 /* No comment provided by engineer. */
-"Copy" = "Copy";
+"Copy" = "copiar";
 
 /* No comment provided by engineer. */
-"Copy address to clipboard" = "Copy address to clipboard";
+"Copy address to clipboard" = "copiar la dirección al portapapeles";
 
 /* No comment provided by engineer. */
-"Copy request to clipboard" = "Copy request to clipboard";
+"Copy request to clipboard" = "copiar solicitud al portapapeles";
 
 /* No comment provided by engineer. */
-"Copy wallet addresses to clipboard?" = "Copy wallet addresses to clipboard?";
+"Copy wallet addresses to clipboard?" = "¿copiar las direcciones de la billetera al portapapeles?";
 
 /* No comment provided by engineer. */
-"Couldn't check address balance" = "Couldn't check address balance";
+"Couldn't check address balance" = "no se pudo verificar el saldo de la dirección";
 
 /* No comment provided by engineer. */
-"Couldn't Create Wallet" = "Couldn't Create Wallet";
+"Couldn't make payment" = "no se pudo hacer el pago";
 
 /* No comment provided by engineer. */
-"Couldn't make payment" = "Couldn't make payment";
+"Couldn't sweep balance" = "no se pudo hacer el sweep";
 
 /* No comment provided by engineer. */
-"Couldn't sweep balance" = "Couldn't sweep balance";
+"Couldn't transmit payment to the PIVX network" = "No se pudo transmitir el pago a la red PIVX";
 
 /* No comment provided by engineer. */
-"Couldn't transmit payment to the PIVX network" = "Couldn't transmit payment to the PIVX network";
-
-/* No comment provided by engineer. */
-"Create recovery phrase" = "Create recovery phrase";
-
-/* DELETE */
-"DELETE" = "DELETE";
+"Create recovery phrase" = "Crear frase de recuperación";
 
 /* Description: */
-"Description:" = "Description:";
+"Description:" = "Descripción:";
 
 /* No comment provided by engineer. */
-"DEVICE SECURITY COMPROMISED\nAny 'jailbreak' app can access any other app's keychain data (and steal your PIV)." = "DEVICE SECURITY COMPROMISED\nAny 'jailbreak' app can access any other app's keychain data (and steal your PIV).";
+"Do it later" = "hazlo después";
 
 /* No comment provided by engineer. */
-"DEVICE SECURITY COMPROMISED\nAny 'jailbreak' app can access any other app's keychain data (and steal your PIV). Wipe this wallet immediately and restore on a secure device." = "DEVICE SECURITY COMPROMISED\nAny 'jailbreak' app can access any other app's keychain data (and steal your PIV). Wipe this wallet immediately and restore on a secure device.";
+"DO NOT let anyone see your recovery phrase or they can spend your PIV." = "NO permitas que nadie vea tu frase de recuperación o podrán gastar tu PIVX.";
 
 /* No comment provided by engineer. */
-"Do it later" = "Do it later";
+"DO NOT take a screenshot. Screenshots are visible to other apps and devices." = "NO tome una captura de pantalla. Las capturas de pantalla son visibles para otras aplicaciones y dispositivos.";
 
 /* No comment provided by engineer. */
-"DO NOT let anyone see your recovery phrase or they can spend your PIV." = "DO NOT let anyone see your recovery phrase or they can spend your PIV.";
+"Done" = "hecho";
 
 /* No comment provided by engineer. */
-"DO NOT take a screenshot. Screenshots are visible to other apps and devices." = "DO NOT take a screenshot. Screenshots are visible to other apps and devices.";
-
-/* Do you want to delete your contact? */
-"Do you want delete your contact?" = "Do you want delete your contact?";
+"double spend" = "doble gasto";
 
 /* No comment provided by engineer. */
-"Done" = "Done";
+"Double spend" = "doble gasto";
 
 /* No comment provided by engineer. */
-"Double spend" = "Double spend";
+"Email not configured" = "correo electrónico no configurado";
 
 /* No comment provided by engineer. */
-"double spend" = "double spend";
+"Enable" = "edificio";
 
 /* No comment provided by engineer. */
-"Email not configured" = "Email not configured";
+"Enable receive notifications" = "Habilitar recibir notificaciones";
 
 /* No comment provided by engineer. */
-"Enable" = "Enable";
+"Enter" = "emitir";
 
 /* No comment provided by engineer. */
-"Enable receive notifications" = "Enable receive notifications";
+"Enter old passcode" = "Ingrese el código de acceso anterior";
 
 /* No comment provided by engineer. */
-"Enter" = "Enter";
+"Error signing PIVX transaction" = "error al firmar la transacción PIVX";
 
 /* No comment provided by engineer. */
-"Enter old passcode" = "Enter old passcode";
+"Error signing transaction" = "Error firmando transacción";
 
 /* No comment provided by engineer. */
-"Error adding master private key to iOS keychain, make sure app has keychain entitlements" = "Error adding master private key to iOS keychain, make sure app has keychain entitlements";
+"Exit" = "salir";
 
 /* No comment provided by engineer. */
-"Error signing PIVX transaction" = "Error signing PIVX transaction";
+"Failed wallet update" = "Actualización de la billetera fallida";
 
 /* No comment provided by engineer. */
-"Error signing transaction" = "Error signing transaction";
+"from:" = "desde:";
 
 /* No comment provided by engineer. */
-"Exit" = "Exit";
+"hour" = "hora";
 
 /* No comment provided by engineer. */
-"Failed wallet update" = "Failed wallet update";
-
-/* No comment provided by engineer. */
-"from:" = "from:";
-
-/* No comment provided by engineer. */
-"hour" = "hour";
-
-/* No comment provided by engineer. */
-"hours" = "hours";
+"hours" = "horas";
 
 /* No comment provided by engineer. */
 "id:" = "id:";
 
 /* No comment provided by engineer. */
-"If you still would like to wipe it please input : \"I accept that I will lose my coins if I no longer possess the recovery phrase\"" = "If you still would like to wipe it please input : \"I accept that I will lose my coins if I no longer possess the recovery phrase\"";
+"If you still would like to wipe it please input : \"I accept that I will lose my coins if I no longer possess the recovery phrase\"" = "Si aún desea borrarlo, por favor ingrese: \"Acepto que perderé mis monedas si no poseo la frase de recuperación\"";
 
 /* No comment provided by engineer. */
-"Ignore" = "Ignore";
+"Ignore" = "ignorar";
 
 /* No comment provided by engineer. */
-"Import private key" = "Import private key";
+"Import private key" = "importar clave privada";
 
 /* No comment provided by engineer. */
-"IMPORTANT" = "IMPORTANT";
+"IMPORTANT" = "IMPORTANTE";
 
 /* No comment provided by engineer. */
-"Insufficient funds" = "Insufficient funds";
+"Insufficient funds" = "fondos insuficientes";
 
 /* No comment provided by engineer. */
-"Insufficient funds for PIVX network fee" = "Insufficient funds for PIVX network fee";
+"Insufficient funds for PIVX network fee" = "fondos insuficientes para la comisión de red PIVX";
 
 /* No comment provided by engineer. */
-"INVALID" = "INVALID";
-
-/* Invalid Address */
-"Invalid Address" = "Invalid Address";
-
-/* Invalid Description */
-"Invalid Description" = "Invalid Description";
-
-/* Invalid Name */
-"Invalid Name" = "Invalid Name";
+"INVALID" = "INVÁLIDO";
 
 /* No comment provided by engineer. */
-"Let others scan this QR code to get your PIVX address. Anyone can send PIV to your wallet by transferring them to your address." = "Let others scan this QR code to get your PIVX address. Anyone can send PIV to your wallet by transferring them to your address.";
+"Let others scan this QR code to get your PIVX address. Anyone can send PIV to your wallet by transferring them to your address." = "Permita que otros escaneen este código QR para obtener su dirección PIVX. Cualquiera puede enviar PIV a su billetera transfiriéndolas a su dirección.";
 
 /* No comment provided by engineer. */
-"Local Currency" = "Local Currency";
+"Local Currency" = "Moneda Local";
 
 /* No comment provided by engineer. */
-"minute" = "minute";
+"minute" = "minuto";
 
 /* No comment provided by engineer. */
-"minutes" = "minutes";
+"minutes" = "minutos";
 
 /* No comment provided by engineer. */
-"missing certificate" = "missing certificate";
+"missing certificate" = "certificado faltante";
 
 /* No comment provided by engineer. */
-"more..." = "more...";
+"more..." = "más...";
 
 /* No comment provided by engineer. */
-"moved" = "moved";
+"moved" = "movido";
 
 /* Name: */
-"Name:" = "Name:";
+"Name:" = "Nombre:";
 
 /* No comment provided by engineer. */
-"Network fee +%@ (%@)" = "Network fee +%1$@ (%2$@)";
+"Network fee +%@ (%@)" = "Comisión de red +%1$@ (%2$@)";
 
 /* No comment provided by engineer. */
-"NEVER type your recovery phrase into password managers or elsewhere. Other devices may be infected." = "NEVER type your recovery phrase into password managers or elsewhere. Other devices may be infected.";
-
-/* New Address Label */
-"New Address Label" = "New Address Label";
+"NEVER type your recovery phrase into password managers or elsewhere. Other devices may be infected." = "NUNCA escriba su frase de recuperación en administradores de contraseñas o en otra parte. Otros dispositivos pueden estar infectados.";
 
 /* No comment provided by engineer. */
-"next, write down your recovery phrase" = "next, write down your recovery phrase";
+"next, write down your recovery phrase" = "Luego, escribe tu frase de recuperación";
 
 /* No comment provided by engineer. */
-"No exchange rate data" = "No exchange rate data";
+"No exchange rate data" = "Sin datos de tasa de cambio";
 
 /* No comment provided by engineer. */
-"No peers found" = "No peers found";
+"No peers found" = "No conexiones encontradas";
 
 /* No comment provided by engineer. */
-"NO TRANSACTIONS" = "NO TRANSACTIONS";
+"NO TRANSACTIONS" = "SIN TRANSACCIONES";
 
 /* No comment provided by engineer. */
-"node ip" = "node ip";
+"Not a PIVX QR code" = "No es un código QR pivx";
 
 /* No comment provided by engineer. */
-"Not a PIVX QR code" = "Not a PIVX QR code";
+"not a valid bitcoin address" = "no es una dirección de bitcoin válida";
 
 /* No comment provided by engineer. */
-"Not a PIVX URL" = "Not a PIVX URL";
+"Not a valid PIVX address" = "no es una dirección PIVX válida";
 
 /* No comment provided by engineer. */
-"not a valid bitcoin address" = "not a valid bitcoin address";
-
-/* No comment provided by engineer. */
-"Not a valid PIVX address" = "Not a valid PIVX address";
-
-/* No comment provided by engineer. */
-"Not a valid private key" = "Not a valid private key";
+"Not a valid private key" = "No es una clave privada válida";
 
 /* Not connected */
-"Not connected" = "Not connected";
+"Not connected" = "No conectado";
 
 /* No comment provided by engineer. */
-"Not connected to the PIVX network" = "Not connected to the PIVX network";
-
-/* No comment provided by engineer. */
-"Ok" = "Ok";
+"Not connected to the PIVX network" = "no conectado a la red PIVX";
 
 /* OK */
 "OK" = "OK";
 
 /* No comment provided by engineer. */
-"Passcode" = "Passcode";
+"Passcode" = "código de acceso";
 
 /* No comment provided by engineer. */
-"Passcode for %@" = "Passcode for %@";
+"Passcode for %@" = "código de acceso para %@";
 
 /* No comment provided by engineer. */
-"password" = "password";
+"password" = "contraseña";
 
 /* No comment provided by engineer. */
-"Password protected key" = "Password protected key";
+"Password protected key" = "Clave protegida por contraseña";
 
 /* No comment provided by engineer. */
-"Pay" = "Pay";
+"Pay" = "Pagar";
 
 /* No comment provided by engineer. */
-"Payee identity isn't certified" = "Payee identity isn't certified";
+"Payee identity isn't certified" = "Identidad payee no está certificada";
 
 /* No comment provided by engineer. */
-"payment address" = "payment address";
+"payment address" = "dirección de pago";
 
 /* No comment provided by engineer. */
-"payment output" = "payment output";
+"payment output" = "salida de pago";
 
 /* No comment provided by engineer. */
-"pending" = "pending";
+"pending" = "pendiente";
 
 /* No comment provided by engineer. */
-"PIVX address" = "PIVX address";
+"PIVX address" = "Dirección PIVX";
 
 /* No comment provided by engineer. */
-"PIVX addresses can also be copied to the clipboard. A PIVX address always starts with 'D' or '6'." = "PIVX addresses can also be copied to the clipboard. A PIVX address always starts with 'D' or '6'.";
+"PIVX addresses can also be copied to the clipboard. A PIVX address always starts with 'D' or '6'." = "Las direcciones PIVX también se pueden copiar en el portapapeles. Una dirección PIVX siempre comienza con 'D' o '6'.";
 
 /* No comment provided by engineer. */
-"PIVX network fee" = "PIVX network fee";
+"PIVX network fee" = "Comisión de red PIVX";
 
 /* No comment provided by engineer. */
-"PIVX payments can't be less than %@" = "PIVX payments can't be less than %@";
+"PIVX payments can't be less than %@" = "Los pagos PIVX no pueden ser inferiores a %@";
 
 /* No comment provided by engineer. */
-"PIVX transaction not signed" = "PIVX transaction not signed";
+"PIVX transaction not signed" = "Transacción PIVX no firmada";
 
 /* No comment provided by engineer. */
-"PIVX transaction outputs can't be less than %@" = "PIVX transaction outputs can't be less than %@";
+"PIVX transaction outputs can't be less than %@" = "Las salidas de las transacciones PIVX no pueden ser inferiores a %@";
 
 /* No comment provided by engineer. */
-"Please enter PIN to upgrade wallet" = "Please enter PIN to upgrade wallet";
+"Please enter PIN to upgrade wallet" = "Por favor ingrese el PIN para actualizar la billetera";
 
 /* No comment provided by engineer. */
-"rate: %@ = %@\nupdated: %@\nblock #%d of %d\nconnected peers: %d\ndl peer: %@" = "rate: %1$@ = %2$@\nupdated: %3$@\nblock #%4$d of %5$d\nconnected peers: %6$d\ndl peer: %7$@";
+"RECEIVE" = "RECIBIR";
 
 /* No comment provided by engineer. */
-"RECEIVE" = "RECEIVE";
+"Receive PIV at this address: %@" = "Recibe PIV en esta dirección: %@";
 
 /* No comment provided by engineer. */
-"Receive PIV at this address: %@" = "Receive PIV at this address: %@";
+"received" = "recibido";
 
 /* No comment provided by engineer. */
-"Received" = "Received";
+"Received" = "recibido";
 
 /* No comment provided by engineer. */
-"received" = "received";
+"received %@ (%@)" = "recibido %1$@ (%2$@)";
 
 /* No comment provided by engineer. */
-"Received %@ (%@)" = "Received %1$@ (%2$@)";
-
-/* No comment provided by engineer. */
-"received %@ (%@)" = "received %1$@ (%2$@)";
+"Received %@ (%@)" = "recibido %1$@ (%2$@)";
 
 /* Recovery phrase */
-"Recovery phrase" = "Recovery phrase";
+"Recovery phrase" = "Frase de recuperación";
 
 /* No comment provided by engineer. */
-"Recovery Phrase" = "Recovery Phrase";
+"Recovery Phrase" = "Frase de recuperación";
 
 /* No comment provided by engineer. */
-"Recovery phrase doesn't match" = "Recovery phrase doesn't match";
+"Recovery phrase doesn't match" = "frase de recuperación no coincide";
 
 /* No comment provided by engineer. */
-"Recovery phrase must have %d words" = "Recovery phrase must have %d words";
+"Recovery phrase must have %d words" = "frase de recuperación debe tener %d palabras";
 
 /* No comment provided by engineer. */
-"Reduce payment amount by\n%@ (%@)?" = "Reduce payment amount by\n%1$@ (%2$@)?";
+"Request" = "Solicitud";
 
 /* No comment provided by engineer. */
-"Request" = "Request";
+"Request an amount" = "solicitar una cantidad";
 
 /* No comment provided by engineer. */
-"Request an amount" = "Request an amount";
+"request expired" = "solicitud caducada";
 
 /* No comment provided by engineer. */
-"Request expired" = "Request expired";
+"Request expired" = "solicitud caducada";
 
 /* No comment provided by engineer. */
-"request expired" = "request expired";
+"requested network \"%@\" instead of \"%@\"" = "red solicitada \"%1$@\" en lugar de \"%2$@\"";
 
 /* No comment provided by engineer. */
-"requested network \"%@\" instead of \"%@\"" = "requested network \"%1$@\" instead of \"%2$@\"";
+"Rescan" = "volver a escanear";
 
 /* No comment provided by engineer. */
-"Rescan" = "Rescan";
+"Rescan blockchain" = "Reescanear blockchain";
 
 /* No comment provided by engineer. */
-"Rescan blockchain" = "Rescan blockchain";
+"Rescan blockchain if you think you may have missing transactions, or are having trouble sending (rescanning can take several minutes)" = "reescanea la blockchain si cree que puede haber transacciones faltantes, o tiene problemas para enviar (el escaneo puede tomar varios minutos)";
 
 /* No comment provided by engineer. */
-"Rescan blockchain if you think you may have missing transactions, or are having trouble sending (rescanning can take several minutes)" = "Rescan blockchain if you think you may have missing transactions, or are having trouble sending (rescanning can take several minutes)";
+"Reset" = "reiniciar";
 
 /* No comment provided by engineer. */
-"Reset" = "Reset";
+"restore" = "restaurar";
 
 /* No comment provided by engineer. */
-"restore" = "restore";
+"Retry" = "volver a intentar";
 
 /* No comment provided by engineer. */
-"Retry" = "Retry";
-
-/* Save */
-"Save" = "Save";
+"Scan someone else's QR code to get their PIVX address. You can send a payment to anyone with an address." = "Escanee el código QR de otra persona para obtener su dirección PIVX. Puede enviar un pago a cualquier persona con una dirección.";
 
 /* No comment provided by engineer. */
-"Scan someone else's QR code to get their PIVX address. You can send a payment to anyone with an address." = "Scan someone else's QR code to get their PIVX address. You can send a payment to anyone with an address.";
+"Screenshots are visible to other apps and devices. Generate a new recovery phrase and keep it secret." = "Las capturas de pantalla son visibles para otras aplicaciones y dispositivos. Genere una nueva frase de recuperación y manténgala en secreto.";
 
 /* No comment provided by engineer. */
-"Screenshots are visible to other apps and devices. Generate a new recovery phrase and keep it secret." = "Screenshots are visible to other apps and devices. Generate a new recovery phrase and keep it secret.";
+"Screenshots are visible to other apps and devices. Your funds are at risk. Transfer your balance to another wallet." = "Las capturas de pantalla son visibles para otras aplicaciones y dispositivos. Sus fondos están en riesgo. Transfiera su saldo a otra wallet.";
 
 /* No comment provided by engineer. */
-"Screenshots are visible to other apps and devices. Your funds are at risk. Transfer your balance to another wallet." = "Screenshots are visible to other apps and devices. Your funds are at risk. Transfer your balance to another wallet.";
-
-/* Search a contact */
-"Search a contact" = "Search a contact";
+"second" = "segundo";
 
 /* No comment provided by engineer. */
-"second" = "second";
+"seconds" = "segundos";
 
 /* No comment provided by engineer. */
-"seconds" = "seconds";
+"seen by %d of %d peers" = "visto por %1$d de %2$dfuentes";
 
 /* No comment provided by engineer. */
-"seen by %d of %d peers" = "seen by %1$d of %2$d peers";
+"Send" = "enviar";
 
 /* No comment provided by engineer. */
-"Send" = "Send";
+"SEND" = "ENVIAR";
 
 /* No comment provided by engineer. */
-"SEND" = "SEND";
+"Send %@ (%@) from this private key into your wallet? The PIVX network will receive a fee of %@ (%@)." = "¿Enviar %1$@ (%2$@) desde esta clave privada a su billetera? La red PIVX recibirá una comisión de %3$@ (%4$@).";
 
 /* No comment provided by engineer. */
-"Send %@ (%@) from this private key into your wallet? The PIVX network will receive a fee of %@ (%@)." = "Send %1$@ (%2$@) from this private key into your wallet? The PIVX network will receive a fee of %3$@ (%4$@).";
+"Send address as email" = "enviar dirección como correo electrónico";
 
 /* No comment provided by engineer. */
-"Send address as email" = "Send address as email";
+"Send address as message" = "enviar dirección como mensaje";
 
 /* No comment provided by engineer. */
-"Send address as message" = "Send address as message";
+"Send request as email" = "enviar solicitud como correo electrónico";
 
 /* No comment provided by engineer. */
-"Send request as email" = "Send request as email";
+"Send request as message" = "enviar solicitud como mensaje";
 
 /* No comment provided by engineer. */
-"Send request as message" = "Send request as message";
+"sent" = "enviado";
 
 /* No comment provided by engineer. */
-"sent" = "sent";
+"Sent!" = "¡Enviado!";
 
 /* No comment provided by engineer. */
-"Sent!" = "Sent!";
+"Set a trusted node" = "Establecer un nodo de confianza";
 
 /* No comment provided by engineer. */
-"Set a trusted node" = "Set a trusted node";
-
-/* No comment provided by engineer. */
-"Settings" = "Settings";
+"Settings" = "Configuraciones";
 
 /* No comment provided by engineer. */
 "shapeshift bitcoin id:" = "shapeshift bitcoin id:";
 
 /* No comment provided by engineer. */
-"Shapeshift failed" = "Shapeshift failed";
+"Shapeshift failed" = "Shapeshift fallido";
 
 /* No comment provided by engineer. */
-"shapeshift status:" = "shapeshift status:";
+"shapeshift status:" = "estado shapeshift:";
 
 /* No comment provided by engineer. */
-"Shapeshift succeeded" = "Shapeshift succeeded";
+"Show" = "Mostrar";
 
 /* No comment provided by engineer. */
-"Show" = "Show";
+"show phrase" = "mostrar frase";
 
 /* No comment provided by engineer. */
-"Show phrase" = "Show phrase";
+"Show phrase" = "mostrar frase";
 
 /* No comment provided by engineer. */
-"show phrase" = "show phrase";
+"SMS not currently available" = "SMS no disponible actualmente";
 
 /* No comment provided by engineer. */
-"SMS not currently available" = "SMS not currently available";
-
-/* no mail account */
-"Sorry, you don't have any configured email account. Please add it and try again." = "Sorry, you don't have any configured email account. Please add it and try again.";
+"spent address" = "dirección de gasto";
 
 /* No comment provided by engineer. */
-"spent address" = "spent address";
+"spent input" = "entrada del gasto";
 
 /* No comment provided by engineer. */
-"spent input" = "spent input";
+"Starting Shapeshift!" = "Comenzando Shapeshift!";
 
 /* No comment provided by engineer. */
-"Starting Shapeshift!" = "Starting Shapeshift!";
+"status:" = "estado:";
 
 /* No comment provided by engineer. */
-"status:" = "status:";
-
-/* No comment provided by engineer. */
-"Swept!" = "Swept!";
-
-/* No comment provided by engineer. */
-"SwiftX payment" = "SwiftX payment";
-
-/* No comment provided by engineer. */
-"SwiftX requires enough inputs with 6 confirmations, send anyways as regular transaction?" = "SwiftX requires enough inputs with 6 confirmations, send anyways as regular transaction?";
+"Swept!" = "¡Swept!";
 
 /* Synced */
-"Synced" = "Synced";
+"Synced" = "Sincronizado";
 
 /* No comment provided by engineer. */
-"Syncing:" = "Syncing:";
+"Syncing:" = "Sincronizando:";
 
 /* No comment provided by engineer. */
-"The amount you wanted to shapeshift is too high, please input a value under %@" = "The amount you wanted to shapeshift is too high, please input a value under %@";
+"The amount you wanted to shapeshift is too high, please input a value under %@" = "La cantidad que quería shapeshift es muy alta, por favor ingrese un valor inferior a %@";
 
 /* No comment provided by engineer. */
-"The amount you wanted to shapeshift is too low, please input a value over %@" = "The amount you wanted to shapeshift is too low, please input a value over %@";
+"The amount you wanted to shapeshift is too low, please input a value over %@" = "La cantidad que deseas es muy baja para shapeshift, por favor ingrese un valor arriba de %@";
 
 /* No comment provided by engineer. */
-"The app will now close" = "The app will now close";
+"The app will now close" = "la aplicación se cerrará ahora";
 
 /* No comment provided by engineer. */
-"The blockchain is going to be reset. The synchronization could take a while. Are you sure?" = "The blockchain is going to be reset. The synchronization could take a while. Are you sure?";
+"This is your PIVX balance." = "Este es tu balance en PIVX.";
 
 /* No comment provided by engineer. */
-"This is your PIVX address. Tap to copy it or send it by email or SMS. The address will change each time you receive funds, but old addresses always work." = "This is your PIVX address. Tap to copy it or send it by email or SMS. The address will change each time you receive funds, but old addresses always work.";
+"This is your PIVX balance. PIVX is a currency. The exchange rate changes with the market." = "Este es tu balance PIVX. PIVX es una moneda. La tasa de cambio cambia con el mercado.";
 
 /* No comment provided by engineer. */
-"This is your PIVX balance." = "This is your PIVX balance.";
+"This payment address is already in your wallet" = "ésta dirección de pago ya está en su billetera";
 
 /* No comment provided by engineer. */
-"This is your PIVX balance. PIVX is a currency. The exchange rate changes with the market." = "This is your PIVX balance. PIVX is a currency. The exchange rate changes with the market.";
+"This private key is already in your wallet" = "Ésta clave privada ya está en su billetera";
 
 /* No comment provided by engineer. */
-"This payment address is already in your wallet" = "This payment address is already in your wallet";
+"This private key is empty" = "Ésta clave privada está vacía";
 
 /* No comment provided by engineer. */
-"This private key is already in your wallet" = "This private key is already in your wallet";
+"This wallet is not empty or sync has not finished, you may not wipe it without the recovery phrase" = "Esta billetera no está vacía o la sincronización no ha terminado, no puede borrarla sin la frase de recuperación";
 
 /* No comment provided by engineer. */
-"This private key is empty" = "This private key is empty";
+"to:" = "a:";
 
 /* No comment provided by engineer. */
-"This request is for a SwiftX payment but you have disabled SwiftX payments" = "This request is for a SwiftX payment but you have disabled SwiftX payments";
+"to: %@" = "a: %@";
 
 /* No comment provided by engineer. */
-"This request requires a SwiftX payment but you do not have enough inputs with 6 confirmations required by SwiftX, you may ask the merchant to accept a normal transaction or wait a few minutes." = "This request requires a SwiftX payment but you do not have enough inputs with 6 confirmations required by SwiftX, you may ask the merchant to accept a normal transaction or wait a few minutes.";
-
-/* No comment provided by engineer. */
-"This request requires a SwiftX payment but you have disabled SwiftX payments" = "This request requires a SwiftX payment but you have disabled SwiftX payments";
-
-/* No comment provided by engineer. */
-"This wallet is not empty or sync has not finished, you may not wipe it without the recovery phrase" = "This wallet is not empty or sync has not finished, you may not wipe it without the recovery phrase";
-
-/* No comment provided by engineer. */
-"to:" = "to:";
-
-/* No comment provided by engineer. */
-"to: %@" = "to: %@";
-
-/* No comment provided by engineer. */
-"to: %@ (via Shapeshift)" = "to: %@ (via Shapeshift)";
+"to: %@ (via Shapeshift)" = "a: %@ (a través de Shapeshift)";
 
 /* No comment provided by engineer. */
 "Total %@ (%@)" = "Total %1$@ (%2$@)";
 
 /* No comment provided by engineer. */
-"Touch ID limit" = "Touch ID limit";
+"Touch ID limit" = "Límite de identificación táctil";
 
 /* No comment provided by engineer. */
-"Touch ID spending limit" = "Touch ID spending limit";
+"Touch ID spending limit" = "límite de gastos de identificación táctil";
 
 /* No comment provided by engineer. */
-"Transaction canceled, network timeout" = "Transaction canceled, network timeout";
+"Transaction canceled, network timeout" = "transacción cancelada, tiempo de espera de la red agotado";
 
 /* No comment provided by engineer. */
-"Transaction fees would cost more than the funds available on this private key (due to tiny \"dust\" deposits)" = "Transaction fees would cost more than the funds available on this private key (due to tiny \"dust\" deposits)";
+"Transaction history" = "Historial de transacciones";
 
 /* No comment provided by engineer. */
-"Transaction history" = "Transaction history";
+"Transaction Rejected" = "transacción rechazada";
 
 /* No comment provided by engineer. */
-"Transaction Rejected" = "Transaction Rejected";
+"Trust" = "confianza";
 
 /* No comment provided by engineer. */
-"Trust" = "Trust";
+"try again in %@" = "intenta de nuevo en %@";
 
 /* No comment provided by engineer. */
-"try again in %@" = "try again in %@";
+"try again in %d %@" = "intenta de nuevo en %1$d %2$@";
 
 /* No comment provided by engineer. */
-"try again in %d %@" = "try again in %1$d %2$@";
+"Try It!" = "¡Intentalo!";
 
 /* No comment provided by engineer. */
-"Try It!" = "Try It!";
+"Turn device passcode on" = "activar el código de acceso del dispositivo";
 
 /* No comment provided by engineer. */
-"Turn device passcode on" = "Turn device passcode on";
+"Unable to get new qr code" = "No se puede obtener el nuevo código QR";
 
 /* No comment provided by engineer. */
-"Unable to get new qr code" = "Unable to get new qr code";
+"unexpected response from %@" = "respuesta inesperada de %@";
 
 /* No comment provided by engineer. */
-"Unexpected response from %@" = "Unexpected response from %@";
+"Unexpected response from %@" = "respuesta inesperada de %@";
 
 /* No comment provided by engineer. */
-"unexpected response from %@" = "unexpected response from %@";
+"unknown address" = "dirección desconocida";
 
 /* No comment provided by engineer. */
-"unknown address" = "unknown address";
+"Unrecognized address" = "dirección no reconocida";
 
 /* No comment provided by engineer. */
-"Unrecognized address" = "Unrecognized address";
+"Unsupported or corrupted document" = "documento no compatible o dañado";
 
 /* No comment provided by engineer. */
-"Unsupported or corrupted document" = "Unsupported or corrupted document";
+"unsupported signature type" = "tipo de firma no compatible";
 
 /* No comment provided by engineer. */
-"unsupported signature type" = "unsupported signature type";
+"Unsupported URL" = "URL no soportado";
 
 /* No comment provided by engineer. */
-"Unsupported URL" = "Unsupported URL";
+"untrusted certificate" = "certificado no confiable";
 
 /* No comment provided by engineer. */
-"untrusted certificate" = "untrusted certificate";
-
-/* No comment provided by engineer. */
-"unverified" = "unverified";
+"unverified" = "no verificado";
 
 /* Updating Price */
-"Updating Price" = "Updating Price";
+"Updating Price" = "Actualizando precio";
 
 /* No comment provided by engineer. */
-"verified, waiting for confirmation" = "verified, waiting for confirmation";
+"verified, waiting for confirmation" = "verificado, esperando confirmación";
 
 /* No comment provided by engineer. */
-"Verify passcode" = "Verify passcode";
+"Verify passcode" = "Verificar el código de acceso";
 
 /* No comment provided by engineer. */
-"wallet address" = "wallet address";
+"wallet address" = "dirección de la wallet";
 
 /* No comment provided by engineer. */
-"Wallet Disabled" = "Wallet Disabled";
+"Wallet Disabled" = "billetera deshabilitada";
 
 /* No comment provided by engineer. */
-"WARNING" = "WARNING";
+"WARNING" = "ADVERTENCIA";
 
 /* No comment provided by engineer. */
-"Wipe" = "Wipe";
+"Wipe" = "limpiar";
 
 /* No comment provided by engineer. */
-"WRITE DOWN YOUR RECOVERY PHRASE" = "WRITE DOWN YOUR RECOVERY PHRASE";
+"WRITE DOWN YOUR RECOVERY PHRASE" = "ESCRIBA SU FRASE DE RECUPERACIÓN";
 
 /* No comment provided by engineer. */
-"You can now buy PIV in PIVXwallet with cash or bank transfer." = "You can now buy PIV in PIVXwallet with cash or bank transfer.";
-
-/* You don't have any saved address yet */
-"You don't have any saved address yet" = "You don't have any saved address yet";
+"You can now buy PIV in PIVXwallet with cash or bank transfer." = "Ahora puedes comprar PIV en PIVXwallet con efectivo o transferencia bancaria.";
 
 /* No comment provided by engineer. */
-"You must enter your pin in order to enter the PIVX wallet" = "You must enter your pin in order to enter the PIVX wallet";
+"You received PIV!" = "¡Has recibido PIVX!";
 
 /* No comment provided by engineer. */
-"You received PIV!" = "You received PIV!";
+"Your wallet may be out of sync. This can often be fixed by rescanning the blockchain." = "Su billetera puede estar fuera de sincronización. Esto a menudo se puede arreglar al volver a escanear la cadena de bloques.";
 
-/* No comment provided by engineer. */
-"YOUR WALLET IS LOCKED" = "YOUR WALLET IS LOCKED";
-
-/* No comment provided by engineer. */
-"Your wallet may be out of sync. This can often be fixed by rescanning the blockchain." = "Your wallet may be out of sync. This can often be fixed by rescanning the blockchain.";
