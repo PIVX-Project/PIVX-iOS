@@ -52,7 +52,7 @@
     [s replaceCharactersInRange:[s.string rangeOfString:@"\nDO NOT let anyone see your recovery\nphrase or they can spend your PIV.\n"]
                      withString:NSLocalizedString(@"DO NOT let anyone see your recovery phrase or they can spend your PIV.", nil)];
     [s replaceCharactersInRange:[s.string rangeOfString:@"\nNEVER type your recovery phrase into\npassword managers or elsewhere.\nOther devices may be infected.\n"]
-                     withString:NSLocalizedString(@"NEVER type your recovery phrase into\npassword managers or elsewhere. Other devices may be infected.", nil)];
+                     withString:NSLocalizedString(@"NEVER type your recovery phrase into password managers or elsewhere. Other devices may be infected.", nil)];
     self.warningLabel.attributedText = s;
     //self.generateButton.superview.backgroundColor = [UIColor clearColor];
 }
