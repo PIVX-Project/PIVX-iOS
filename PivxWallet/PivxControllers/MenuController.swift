@@ -18,6 +18,7 @@ class MenuController: BaseController {
     
     @IBOutlet weak var syncImageView: UIImageView!
     @IBOutlet weak var syncLabel: UILabel!
+    @IBOutlet weak var versionLabel: UILabel!
     @IBOutlet weak var cotainerViewHeightConstraint: NSLayoutConstraint!
     var optionSelected:Int = 1
     
@@ -44,6 +45,13 @@ class MenuController: BaseController {
             selector: #selector(self.syncFailed),
             name: Notification.Name.BRPeerManagerSyncFailedNotification,
             object: nil)
+    }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        let dictionary = Bundle.main.infoDictionary!
+        let version = dictionary["CFBundleShortVersionString"] as! String
+        versionLabel.text = "v" + version
     }
     
     /**
