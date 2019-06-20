@@ -17,6 +17,7 @@
                 <outlet property="titleLabel2" destination="YdU-m1-Uls" id="28Z-2d-1ee"/>
                 <outlet property="titleLabel3" destination="e1l-rE-EGa" id="Ax3-NN-NDW"/>
                 <outlet property="titleLabel4" destination="kjj-IR-Hfc" id="SMg-is-hEZ"/>
+                <outlet property="versionLabel" destination="exs-BN-k2H" id="gGI-XV-pFo"/>
                 <outlet property="view" destination="iN0-l3-epB" id="Mv6-lJ-zfw"/>
             </connections>
         </placeholder>
