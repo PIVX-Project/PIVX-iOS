@@ -130,7 +130,9 @@
     
     CGFloat y = self.view.frame.size.height - 114;
     if ([[Utils deviceType] isEqualToString:@"iphoneX"]) {
-        y = y - 22;
+        y = y - 42;
+    } else if ([[Utils deviceType] isEqualToString:@"iphoneXRSMAX"]) {
+        y = y - 42;
     }
     CGFloat width = self.view.frame.size.width;
     self.buttonContainer = [[UIView alloc] initWithFrame:CGRectMake(0, y, width, 50)];

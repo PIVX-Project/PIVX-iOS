@@ -138,18 +138,27 @@ class Utils: NSObject {
     
     @objc static func deviceType()->String{
         if UIDevice().userInterfaceIdiom == .phone {
-            switch UIScreen.main.nativeBounds.height {
-            case 1136:
+            let SCREEN_WIDTH = UIScreen.main.bounds.size.width
+            let SCREEN_HEIGHT = UIScreen.main.bounds.size.height
+            let SCREEN_MAX_LENGTH = max(SCREEN_WIDTH, SCREEN_HEIGHT)
+            switch SCREEN_MAX_LENGTH {
+            case 568.0:
                 print("iPhone 5 or 5S or 5C")
                 return "iPhone5"
-            case 1334:
+            case 667.0:
                 print("iPhone 6/6S/7/8")
                 return "iphone6"
-            case 2208:
+            case 736.0:
+                print("iPhone 6+/7+/8+")
                 return "iphone6plus"
-            case 2436:
+            case 812.0:
+                print("iPhone X")
                 return "iphoneX"
+            case 896.0:
+                print("iPhone XR/XS/Max")
+                return "iphoneXRSMAX"
             default:
+                print(UIScreen.main.nativeBounds.height)
                 return ""
             }
         }
