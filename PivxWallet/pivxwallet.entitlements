@@ -6,7 +6,7 @@
 	<string>development</string>
 	<key>com.apple.security.application-groups</key>
 	<array>
-		<string>group.tech.furszy.pivxwallet</string>
+		<string>group.camera.furszy.pivxwallet</string>
 	</array>
 </dict>
 </plist>
