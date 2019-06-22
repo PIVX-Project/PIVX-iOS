@@ -401,6 +401,12 @@
         
     }]];
     
+    if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad) {
+        actionSheet.popoverPresentationController.sourceView = self.view;
+        actionSheet.popoverPresentationController.sourceRect = CGRectMake(self.view.bounds.size.width/2, self.view.bounds.size.height/2, 200, 350);
+        actionSheet.popoverPresentationController.permittedArrowDirections = 0;
+    }
+    
     // Present action sheet.
     [self presentViewController:actionSheet animated:YES completion:nil];
 }

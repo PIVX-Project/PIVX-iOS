@@ -138,7 +138,7 @@
                 UIAlertController * actionSheet = [UIAlertController
                                              alertControllerWithTitle:nil
                                              message:nil
-                                             preferredStyle:UIAlertControllerStyleActionSheet];
+                                             preferredStyle:UIAlertControllerStyleAlert];
                 UIAlertAction* cancelButton = [UIAlertAction
                                              actionWithTitle:NSLocalizedString(@"Cancel", nil)
                                              style:UIAlertActionStyleCancel
@@ -173,7 +173,7 @@
             UIAlertController * actionSheet = [UIAlertController
                                                alertControllerWithTitle:nil
                                                message:nil
-                                               preferredStyle:UIAlertControllerStyleActionSheet];
+                                               preferredStyle:UIAlertControllerStyleAlert];
             UIAlertAction* cancelButton = [UIAlertAction
                                            actionWithTitle:NSLocalizedString(@"Cancel", nil)
                                            style:UIAlertActionStyleCancel
@@ -199,7 +199,7 @@
                     UIAlertController * actionSheet = [UIAlertController
                                                        alertControllerWithTitle:nil
                                                        message:nil
-                                                       preferredStyle:UIAlertControllerStyleActionSheet];
+                                                       preferredStyle:UIAlertControllerStyleAlert];
                     UIAlertAction* cancelButton = [UIAlertAction
                                                    actionWithTitle:NSLocalizedString(@"Cancel", nil)
                                                    style:UIAlertActionStyleCancel

@@ -745,12 +745,12 @@ _deselect_switch:
     }
 }
 -(void)showAlertOption {
+
     UIAlertController *alert = [UIAlertController alertControllerWithTitle:NSLocalizedString(@"Rescan blockchain", nil)
                                                                    message:NSLocalizedString(@"The blockchain is going to be reset. The synchronization could take a while. Are you sure?", nil)
-                                                            preferredStyle:UIAlertControllerStyleActionSheet];
+                                                                   preferredStyle:UIAlertControllerStyleAlert];
     UIAlertAction *firstAction = [UIAlertAction actionWithTitle:@"Cancel"
                                                           style:UIAlertActionStyleCancel handler:^(UIAlertAction * action) {
-                                                              
                                                           }]; // 2
     UIAlertAction *secondAction = [UIAlertAction actionWithTitle:@"Ok"
                                                            style:UIAlertActionStyleDefault handler:^(UIAlertAction * action) {
