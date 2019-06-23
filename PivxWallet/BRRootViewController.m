@@ -128,10 +128,14 @@
     UIColor *purple = [UIColor rgb:85 green:71 blue:108 alpha:1];
     
     CGFloat y = self.view.frame.size.height - 114;
-    if ([[Utils deviceType] isEqualToString:@"iphoneX"]) {
+    if ([[Utils deviceType] isEqualToString:@"iphoneX"] || [[Utils deviceType] isEqualToString:@"iphoneXRSMAX"]) {
         y = y - 42;
-    } else if ([[Utils deviceType] isEqualToString:@"iphoneXRSMAX"]) {
-        y = y - 42;
+    } else if ([[Utils deviceType] isEqualToString:@"ipad"] ||
+               [[Utils deviceType] isEqualToString:@"ipadpro10"] ||
+               [[Utils deviceType] isEqualToString:@"ipadpro12_old"]) {
+        y = y - 5;
+    } else if ([[Utils deviceType] isEqualToString:@"ipadpro11"] || [[Utils deviceType] isEqualToString:@"ipadpro12"]) {
+        y = y - 30;
     }
     CGFloat width = self.view.frame.size.width;
     self.buttonContainer = [[UIView alloc] initWithFrame:CGRectMake(0, y, width, 50)];
