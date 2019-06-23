@@ -1,12 +1,14 @@
-
-/* Class = "UILabel"; text = "Help us improve dashwallet!"; ObjectID = "Mgm-wb-UlM"; */
-"Mgm-wb-UlM.text" = "Helfen Sie uns, dashwallet zu verbessern!";
-
-/* Class = "UIButton"; normalTitle = "No Thanks"; ObjectID = "Tw0-s4-w0k"; */
-"Tw0-s4-w0k.normalTitle" = "Nein danke";
-
 /* Class = "UIButton"; normalTitle = "Ok Great!"; ObjectID = "fzO-vI-zum"; */
-"fzO-vI-zum.normalTitle" = "Ok super!";
+"fzO-vI-zum.normalTitle" = "Ok großartig!";
 
 /* Class = "UILabel"; text = "Would you like to share anonymous app usage information with us?\n\nThis information is completely anonymous and includes no financial information. We respect your financial privacy!"; ObjectID = "kqc-0F-49V"; */
-"kqc-0F-49V.text" = "Möchten Sie anonyme Nutzungsdaten mit uns teilen?\n\nDiese Informationen sind vollkommen anonym und enthalten keinerlei Informationen zu Ihren Finanzen. \nWir respektieren Ihre finanzielle Privatsphäre!";
+"kqc-0F-49V.text" = "Möchten Sie anonymisierte Nutzungsdaten mit uns teilen?
+
+Diese Informationen sind vollständig anonymisiert und enthalten keine finanziellen Informationen. Wir respektieren ihre finanzielle Privatsphäre! ";
+
+/* Class = "UILabel"; text = "Help us improve PIVXwallet!"; ObjectID = "Mgm-wb-UlM"; */
+"Mgm-wb-UlM.text" = "Helft uns das PIVX Wallet zu verbessern!";
+
+/* Class = "UIButton"; normalTitle = "No Thanks"; ObjectID = "Tw0-s4-w0k"; */
+"Tw0-s4-w0k.normalTitle" = "Nein Danke";
+

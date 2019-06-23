@@ -1,252 +1,240 @@
+/* No comment provided by engineer. */
+" and " = "en";
 
 /* No comment provided by engineer. */
-" and " = " en ";
+", " = ",";
 
 /* No comment provided by engineer. */
-"%@ is for 'mPIVX'. %@ = 1 PIVX." = "%@ is voor 'mPIVX'. %@ = 1 PIVX.";
+"\"%@\" is not a recovery phrase word" = "\"%@\" is geen woord van de herstelzin";
+
+/* No comment provided by engineer. */
+"%@
+
+balance: %@ (%@)" = "%1$@
+
+saldi: %2$@ (%3$@)";
+
+/* No comment provided by engineer. */
+"%@ is for 'mPIV'. %@ = 1 PIV." = "%1$@ is voor 'mPIV'. %2$@ = 1 PIV.";
 
 /* No comment provided by engineer. */
 "%@ is not allowed to access the camera" = "%@ heeft geen toegang tot de camera";
 
 /* No comment provided by engineer. */
-"%@\n\nbalance: %@ (%@)" = "%1$@\n\nbalans: %2$@ (%3$@)";
+"%d attempts remaining" = "%dresterende pogingen";
 
 /* No comment provided by engineer. */
 "%d confirmations" = "%d bevestigingen";
 
 /* No comment provided by engineer. */
-", " = ", ";
+"0 confirmations" = "0 bevestigingen";
 
 /* No comment provided by engineer. */
-"0 confirmations" = "0 bevestigingen";
+"1 attempt remaining" = "1 resterende poging";
 
 /* No comment provided by engineer. */
 "1 confirmation" = "1 bevestiging";
 
 /* No comment provided by engineer. */
-"\"%@\" is not a recovery phrase word" = "\"%@\" is geen woord voor de herstelzin";
+"A device passcode is needed to safeguard your wallet. Go to settings and turn passcode on to continue." = "Een toegangscode voor uw apparaat is nodig om uw portemonnee te beveiligen. Ga naar instellingen en schakel toegangscode in om door te gaan.";
 
 /* No comment provided by engineer. */
-"\n         total %@ (%@)" = "\n         totaal %1$@ (%2$@)";
+"Abort" = "Afbreken";
 
 /* No comment provided by engineer. */
-"\n%@\n\nif you ever lose your phone, you will need it to recover your wallet" = "\n%@\n\nals u ooit uw telefoon verliest, hebt u deze nodig om uw portemonnee te herstellen";
+"About" = "Over";
+
+/* Address Book */
+"Address Book" = "Adresboek";
+
+/* Address: */
+"Address:" = "Adres:";
 
 /* No comment provided by engineer. */
-"\n%d attempts remaining\n" = "\n%d resterende pogingen\n";
+"Always require passcode" = "Toegangscode altijd vereisen";
 
 /* No comment provided by engineer. */
-"\n1 attempt remaining\n" = "\n1 resterende poging\n";
+"Amount %@ (%@)" = "Hoeveelheid %1$@ (%2$@)";
 
 /* No comment provided by engineer. */
-"\n\n     amount %@ (%@)" = "\n\n     hoeveelheid %1$@ (%2$@)";
-
-/* No comment provided by engineer. */
-"\nA device passcode is needed to safeguard your wallet. Go to settings and turn passcode on to continue." = "\nEen toegangscode voor uw apparaat is nodig om uw portemonnee te beveiligen. Ga naar instellingen en schakel toegangscode in om door te gaan.";
-
-/* No comment provided by engineer. */
-"\nADDRESS ALREADY USED\nPIVX addresses are intended for single use only\n\nre-use reduces privacy for both you and the recipient and can result in loss if the recipient doesn't directly control the address" = "\nADRES ALREEDS GEBRUIKT\nPIVX adressen zijn bestemd voor eenmalig gebruik\n\nHergebruik vermindert de privacy voor zowel jou als de ontvanger en kan resulteren tot verlies als de ontvangerhet adres niet rechtstreeks beheert";
-
-/* No comment provided by engineer. */
-"\nallow camera access in\nSettings->Privacy->Camera->%@" = "\nSta cameratoegang toe in\nInstellingen->Privacy->Camera->%@";
-
-/* No comment provided by engineer. */
-"\nDO NOT let anyone see your recovery\nphrase or they can spend your PIVX.\n" = "\nLAAT niemand uw herstel\nzin zien of ze kunnen uw PIVX uitgeven.\n";
-
-/* No comment provided by engineer. */
-"\nDO NOT take a screenshot.\nScreenshots are visible to other apps\nand devices.\n" = "\nMAAK GEEN schermaafbeelding.\nSchermafbeeldingen zijn zichtbaar voor andere apps\nen apparaten.\n";
-
-/* No comment provided by engineer. */
-"\nnetwork fee +%@ (%@)" = "\nnetwerkvergoeding +%1$@ (%2$@)";
-
-/* No comment provided by engineer. */
-"\nNEVER type your recovery phrase into\npassword managers or elsewhere.\nOther devices may be infected.\n" = "\nTyp NOOIT uw herstelzin in\nwachtwoordbeheerders of elders.\nAndere apparaten zijn mogelijk geïnfecteerd.\n";
-
-/* No comment provided by engineer. */
-"\ntry again in %@" = "\nprobeer opnieuw binnen %@";
-
-/* No comment provided by engineer. */
-"\ntry again in %d %@" = "\nprobeer opnieuw binnen %1$d %2$@";
-
-/* No comment provided by engineer. */
-"about" = "over";
-
-/* No comment provided by engineer. */
-"always require passcode" = "toegangscode altijd vereist";
-
-/* No comment provided by engineer. */
-"amount too small" = "bedrag te klein";
+"Amount too small" = "Bedrag te klein";
 
 /* No comment provided by engineer. */
 "Application %@ is requesting a payment to" = "Applicatie %@ vraagt een betaling aan";
 
 /* No comment provided by engineer. */
-"Application %@ is requesting an address so it can pay you.  Would you like to authorize this?" = "Applicatie %@ vraagt een adres zodat het je kan betalen.  Wil je dit toestaan?";
+"Application %@ is requesting an address so it can pay you.  Would you like to authorize this?" = "Applicatie %@ vraagt een adres zodat het je kan betalen. Wilt u dit toestaan?";
 
 /* No comment provided by engineer. */
-"Application %@ would like to receive your Master Public Key.  This can be used to keep track of your wallet, this can not be used to move your PIVX." = "Applicatie %@ zou graag je Master Public Key ontvangen.  Dit kan gebruikt worden om uw portemonnee bij te houden, dit kan niet gebruikt worden om uw PIVX te verplaatsen.";
+"Application %@ would like to receive your Master Public Key.  This can be used to keep track of your wallet, this can not be used to move your PIV." = "Applicatie %@ zou graag je Master Public Key ontvangen. Dit kan gebruikt worden om uw portemonnee bij te houden, dit kan niet gebruikt worden om uw PIV te verplaatsen.";
+
+/* Are you sure? */
+"Are you sure?" = "Ben je zeker?";
 
 /* No comment provided by engineer. */
-"bad password, try again" = "fout wachtwoord, probeer opnieuw";
+"Bad password, try again" = "Fout wachtwoord, probeer opnieuw";
 
 /* No comment provided by engineer. */
-"bad payment request" = "verkeerd betalingsverzoek";
+"Bad payment request" = "Fout betalingsverzoek";
 
 /* No comment provided by engineer. */
-"bad payment request URL" = "verkeerde betalingsverzoek URL";
+"bad payment request URL" = "foute betalingsverzoek URL";
 
 /* No comment provided by engineer. */
-"bad payment URL" = "verkeerde betalings-URL";
+"bad payment URL" = "foute betalingsURL";
 
 /* No comment provided by engineer. */
-"bad recovery phrase" = "verkeerde herstelzin";
+"Bad recovery phrase" = "Foute herstelzin";
 
 /* No comment provided by engineer. */
 "Bitcoin address (shapeshift)" = "Bitcoin adres (shapeshift)";
 
 /* No comment provided by engineer. */
-"bitcoin payments can't be less than %@" = "bitcoin betalingen kunnen niet lager zijn dan %@";
+"block #%d of %d" = "blok #%1$d van %2$d";
 
 /* No comment provided by engineer. */
-"block #%d of %d" = "block #%1$d van %2$d";
+"Buy PIV" = "Koop PIV";
 
 /* No comment provided by engineer. */
-"Buy PIVX" = "Koop PIVX";
+"Buy PIV in PIVXwallet!" = "Koop PIV in PIVXwallet!";
+
+/* Cancel */
+"Cancel" = "Annuleren";
 
 /* No comment provided by engineer. */
-"Buy PIVX in PIVXwallet!" = "Koop PIVX in PIVXwallet!";
+"Change" = "Wijzig";
 
 /* No comment provided by engineer. */
-"cancel" = "annuleren";
+"Change passcode" = "Wijzig toegangscode";
 
 /* No comment provided by engineer. */
-"change" = "wijzig";
+"Change payment amount?" = "Wijzig betalingsbedrag?";
 
 /* No comment provided by engineer. */
-"change passcode" = "wijzig toegangscode";
+"Checking address balance..." = "Controleren van het adressaldo...";
 
 /* No comment provided by engineer. */
-"change payment amount?" = "wijzig betalingsbedrag?";
+"Checking private key balance..." = "Controleren van de privésleutelbalans...";
 
 /* No comment provided by engineer. */
-"checking address balance..." = "controleren van het adressaldo...";
+"Choose passcode for %@" = "Kies toegangscode voor %@";
 
 /* No comment provided by engineer. */
-"checking private key balance..." = "controleren van de privésleutelbalans...";
+"Clear" = "Wissen";
 
 /* No comment provided by engineer. */
-"choose passcode for %@" = "kies toegangscode voor %@";
+"Clear trusted node?" = "Vertrouwde node wissen?";
 
 /* No comment provided by engineer. */
-"clear" = "leegmaken";
+"Clipboard doesn't contain a valid PIVX address" = "Klembord bevat geen geldig PIVX adres";
 
 /* No comment provided by engineer. */
-"clear trusted node?" = "trusted node leegmaken?";
-
-/* No comment provided by engineer. */
-"clipboard doesn't contain a valid pivx address" = "klembord bevat geen geldig pivx-adres";
-
-/* No comment provided by engineer. */
-"close app" = "sluit app";
+"Close app" = "App sluiten";
 
 /* Confirm */
 "Confirm" = "Bevestig";
 
-/* confirm */
-"confirm" = "bevestig";
+/* No comment provided by engineer. */
+"confirmed in block #%d" = "bevestigd in blok #%d";
 
 /* No comment provided by engineer. */
-"confirmed in block #%d" = "bevestigd in block #%d";
+"Connect timeout" = "Verbindingstime-out";
 
-/* No comment provided by engineer. */
-"connect timeout" = "verbindingstime-out";
+/* Contact address limit */
+"Contact address limit" = "Contactadres limiet";
 
 /* No comment provided by engineer. */
 "copied" = "gekopieerd";
 
 /* No comment provided by engineer. */
-"copy" = "kopieer";
+"Copied" = "Gekopieerd";
 
 /* No comment provided by engineer. */
-"copy address to clipboard" = "kopieer adres naar klembord";
+"Copy" = "Kopiëer";
 
 /* No comment provided by engineer. */
-"copy request to clipboard" = "kopieer verzoek naar klembord";
+"Copy address to clipboard" = "Kopiëer adres naar klembord";
 
 /* No comment provided by engineer. */
-"copy wallet addresses to clipboard?" = "kopieer portemonnee adres naar klembord?";
+"Copy request to clipboard" = "Kopiëer verzoek naar klembord";
 
 /* No comment provided by engineer. */
-"couldn't check address balance" = "kon het adressaldo niet controleren";
+"Copy wallet addresses to clipboard?" = "Portemonnee adres kopiëren naar klembord?";
 
 /* No comment provided by engineer. */
-"couldn't make payment" = "kon geen betaling maken";
+"Couldn't check address balance" = "Kon de adresbalans niet controleren";
 
 /* No comment provided by engineer. */
-"couldn't sweep balance" = "kon de balans niet controleren";
+"Couldn't Create Wallet" = "Kon Portemonnee niet Aanmaken";
 
 /* No comment provided by engineer. */
-"couldn't transmit payment to PIVX network" = "kon geen betaling verzenden naar het PIVX netwerk";
+"Couldn't make payment" = "Kon geen betaling maken";
 
 /* No comment provided by engineer. */
-"PIVX address" = "PIVX adres";
+"Couldn't sweep balance" = "Kon de balans niet doorzoeken";
 
 /* No comment provided by engineer. */
-"PIVX addresses can also be copied to the clipboard. A PIVX address always starts with 'X' or '7'." = "PIVX adressen kunnen ook gekopieerd worden naar het klembord. Een PIVX adres begint altijd met 'X' of '7'.";
+"Couldn't transmit payment to the PIVX network" = "Kon geen betaling overdragen naar het PIVX netwerk";
 
 /* No comment provided by engineer. */
-"PIVX network fee" = "PIVX netwerkvergoeding";
+"Create recovery phrase" = "Maak herstelzin aan";
+
+/* DELETE */
+"DELETE" = "VERWIJDEREN";
+
+/* Description: */
+"Description:" = "Beschrijving:";
 
 /* No comment provided by engineer. */
-"PIVX payments can't be less than %@" = "PIVX betalingen mogen niet kleiner zijn dan %@";
+"Do it later" = "Doe het later";
 
 /* No comment provided by engineer. */
-"PIVX transaction not signed" = "PIVX transactie kon niet ondertekend worden";
+"DO NOT let anyone see your recovery phrase or they can spend your PIV." = "LAAT niemand uw herstel zin zien of ze kunnen uw PIVX uitgeven.";
 
 /* No comment provided by engineer. */
-"PIVX transaction outputs can't be less than %@" = "PIVX transactie outputs mogen niet kleiner zijn dan %@";
+"DO NOT take a screenshot. Screenshots are visible to other apps and devices." = "MAAK GEEN schermaafbeelding. Schermafbeeldingen zijn zichtbaar voor andere apps en apparaten.";
+
+/* Do you want to delete your contact? */
+"Do you want delete your contact?" = "Wil je je contact verwijderen?";
 
 /* No comment provided by engineer. */
-"DEVICE SECURITY COMPROMISED\nAny 'jailbreak' app can access any other app's keychain data (and steal your PIVX)." = "VEILIGHEID VAN TOESTEL IN GEVAAR\nElke 'jailbreak' app heeft toegang tot keychain gegevens van andere apps (en dus jouw PIVX stelen).";
-
-/* No comment provided by engineer. */
-"DEVICE SECURITY COMPROMISED\nAny 'jailbreak' app can access any other app's keychain data (and steal your PIVX). Wipe this wallet immediately and restore on a secure device." = "VEILIGHEID VAN TOESTEL IN GEVAAR\nElke 'jailbreak' app heeft toegang tot keychain gegevens van andere apps (en dus jouw PIVX stelen). Wis deze portemonnee onmiddelijk en herstel het op een veilig apparaat.";
-
-/* No comment provided by engineer. */
-"do it later" = "doe het later";
-
-/* No comment provided by engineer. */
-"done" = "klaar";
+"Done" = "Klaar";
 
 /* No comment provided by engineer. */
 "double spend" = "dubbele spendering";
 
 /* No comment provided by engineer. */
-"email not configured" = "email niet ingesteld";
+"Double spend" = "Dubbele spendering";
 
 /* No comment provided by engineer. */
-"enable" = "inschakelen";
+"Email not configured" = "Email niet ingesteld";
 
 /* No comment provided by engineer. */
-"enable receive notifications" = "schakel het ontvang van notificaties in";
+"Enable" = "Inschakelen";
 
 /* No comment provided by engineer. */
-"enter" = "invoeren";
+"Enable receive notifications" = "Ontvangen van notificaties inschakelen";
 
 /* No comment provided by engineer. */
-"enter old passcode" = "voer oude toegangscode in";
+"Enter" = "Invoeren";
 
 /* No comment provided by engineer. */
-"error signing PIVX transaction" = "fout bij ondertekenen van PIVX transactie";
+"Enter old passcode" = "Voer oude toegangscode in";
 
 /* No comment provided by engineer. */
-"error signing transaction" = "fout bij ondertekenen van transactie";
+"Error adding master private key to iOS keychain, make sure app has keychain entitlements" = "Error bij het toevoegen van master privesleutel tot iOS sleutelhanger, zorg ervoor dat de app sleutelhangerrechten heeft";
 
 /* No comment provided by engineer. */
-"exit" = "afsluiten";
+"Error signing PIVX transaction" = "Error tijdens het ondertekenen van PIVX transactie";
 
 /* No comment provided by engineer. */
-"failed wallet update" = "mislukte portemonnee update";
+"Error signing transaction" = "Error tijdens het ondertekenen van transactie";
+
+/* No comment provided by engineer. */
+"Exit" = "Verlaten";
+
+/* No comment provided by engineer. */
+"Failed wallet update" = "Mislukte portemonnee update";
 
 /* No comment provided by engineer. */
 "from:" = "van:";
@@ -264,34 +252,40 @@
 "If you still would like to wipe it please input : \"I accept that I will lose my coins if I no longer possess the recovery phrase\"" = "Als u het nog steeds wilt wissen, voer volgende dan in : \"Ik accepteer dat ik mijn munten zal verliezen als ik niet meer over de herstelzin beschik\"";
 
 /* No comment provided by engineer. */
-"ignore" = "negeer";
+"Ignore" = "Negeer";
 
 /* No comment provided by engineer. */
-"import private key" = "importeer privésleutel";
+"Import private key" = "Privésleutel importeren";
 
 /* No comment provided by engineer. */
 "IMPORTANT" = "BELANGRIJK";
 
 /* No comment provided by engineer. */
-"instant payment" = "directe betaling";
+"Insufficient funds" = "Onvoldoende fondsen";
 
 /* No comment provided by engineer. */
-"Instant Send requires enough inputs with 6 confirmations, send anyways as regular transaction?" = "Instant Send vereist voldoende invoer met 6 bevestigingen, verzend alsnog als gewone transactie?";
-
-/* No comment provided by engineer. */
-"insufficient funds" = "onvoldoende saldo";
-
-/* No comment provided by engineer. */
-"insufficient funds for PIVX network fee" = "onvoldoende fondsen voor PIVX netwerkvergoeding";
+"Insufficient funds for PIVX network fee" = "Onvoldoende fondsen voor PIVX netwerkvergoeding";
 
 /* No comment provided by engineer. */
 "INVALID" = "ONGELDIG";
 
-/* No comment provided by engineer. */
-"Let others scan this QR code to get your PIVX address. Anyone can send PIVX to your wallet by transferring them to your address." = "Laat anderen deze QR code scannen om uw PIVX adres te krijgen. Iedereen kan PIVX naar je portemonnee versturen door ze naar je aadres te versturen.";
+/* Invalid Address */
+"Invalid Address" = "Ongeldige Adres";
+
+/* Invalid Description */
+"Invalid Description" = "Ongeldige Beschrijving";
+
+/* Invalid Name */
+"Invalid Name" = "Ongeldige Naam";
 
 /* No comment provided by engineer. */
-"minute" = "minuut";
+"Let others scan this QR code to get your PIVX address. Anyone can send PIV to your wallet by transferring them to your address." = "Laat anderen deze QR code scannen om uw PIVX adres te krijgen. Iedereen kan PIVX naar je portemonnee versturen door ze naar je adres te versturen.";
+
+/* No comment provided by engineer. */
+"Local Currency" = "Lokale Valuta";
+
+/* No comment provided by engineer. */
+"minute" = "minute";
 
 /* No comment provided by engineer. */
 "minutes" = "minuten";
@@ -305,56 +299,77 @@
 /* No comment provided by engineer. */
 "moved" = "verplaatst";
 
-/* No comment provided by engineer. */
-"next, write down your recovery phrase" = "volgende, noteer uw herstelzin";
+/* Name: */
+"Name:" = "Naam:";
 
 /* No comment provided by engineer. */
-"no exchange rate data" = "geen wisselkoersgegevens";
+"Network fee +%@ (%@)" = "Netwerkvergoeding +%1$@ (%2$@)";
 
 /* No comment provided by engineer. */
-"no peers found" = "geen peers gevonden";
+"NEVER type your recovery phrase into password managers or elsewhere. Other devices may be infected." = "Typ NOOIT uw herstelzin in wachtwoordbeheerders of elders. Andere apparaten zijn mogelijk geïnfecteerd.";
+
+/* New Address Label */
+"New Address Label" = "Nieuw Adreslabel";
 
 /* No comment provided by engineer. */
-"not a pivx QR code" = "geen pivx QR code";
+"next, write down your recovery phrase" = "volgend, schrijf je herstelzin op";
+
+/* No comment provided by engineer. */
+"No exchange rate data" = "Geen wisselkoersgegevens";
+
+/* No comment provided by engineer. */
+"No peers found" = "Geen peers gevonden";
+
+/* No comment provided by engineer. */
+"NO TRANSACTIONS" = "GEEN TRANSACTIES";
+
+/* No comment provided by engineer. */
+"node ip" = "node ip";
+
+/* No comment provided by engineer. */
+"Not a PIVX QR code" = "Geen PIVX QR code";
+
+/* No comment provided by engineer. */
+"Not a PIVX URL" = "Geen PIVX URL";
 
 /* No comment provided by engineer. */
 "not a valid bitcoin address" = "geen geldig bitcoin adres";
 
 /* No comment provided by engineer. */
-"not a valid PIVX address" = "geen geldig PIVX adres";
+"Not a valid PIVX address" = "Geen geldig PIVX adres";
 
 /* No comment provided by engineer. */
-"not a valid pivx address" = "geen geldig pivx adres";
+"Not a valid private key" = "Geen geldige privésleutel";
+
+/* Not connected */
+"Not connected" = "Niet verbonden";
 
 /* No comment provided by engineer. */
-"not a valid private key" = "geen geldige privésleutel";
+"Not connected to the PIVX network" = "Niet verbonden met het PIVX netwerk";
 
 /* No comment provided by engineer. */
-"not connected to the PIVX network" = "niet verbonden met het PIVX netwerk";
+"Ok" = "Ok";
 
-/* No comment provided by engineer. */
-"ok" = "ok";
-
-/* No comment provided by engineer. */
+/* OK */
 "OK" = "OK";
 
 /* No comment provided by engineer. */
-"passcode" = "toegangscode";
+"Passcode" = "Toegangscode";
 
 /* No comment provided by engineer. */
-"passcode for %@" = "toegangscode voor %@";
+"Passcode for %@" = "Toegangscode voor %@";
 
 /* No comment provided by engineer. */
 "password" = "wachtwoord";
 
 /* No comment provided by engineer. */
-"password protected key" = "sleutel beveiligd met wachtwoord";
+"Password protected key" = "Wachtwoord beveiligde sleutel";
 
 /* No comment provided by engineer. */
-"pay" = "Betaal";
+"Pay" = "Betaal";
 
 /* No comment provided by engineer. */
-"payee identity isn't certified" = "identiteit van de begunstigde is niet gecertificeerd";
+"Payee identity isn't certified" = "De identiteit van de begunstigde is niet gecertificeerd";
 
 /* No comment provided by engineer. */
 "payment address" = "betalingsadres";
@@ -366,70 +381,103 @@
 "pending" = "in afwachting";
 
 /* No comment provided by engineer. */
-"please enter pin to upgrade wallet" = "voer een pincode in om de portemonnee te upgraden";
+"PIVX address" = "PIVX adres";
 
 /* No comment provided by engineer. */
-"rate: %@ = %@\nupdated: %@\nblock #%d of %d\nconnected peers: %d\ndl peer: %@" = "tarief: %@ = %@\nupdatet: %@\nblok #%d van %d\nverbonden peers: %d\ndl peer: %@";
+"PIVX addresses can also be copied to the clipboard. A PIVX address always starts with 'D' or '6'." = "PIVX adressen kunnen ook gekopieerd worden naar het klembord. Een PIVX adres begint altijd met 'D' of '6'.";
 
 /* No comment provided by engineer. */
-"Receive PIVX at this address: %@" = "Ontvang PIVX op dit adres: %@";
+"PIVX network fee" = "PIVX netwerkvergoeding";
+
+/* No comment provided by engineer. */
+"PIVX payments can't be less than %@" = "PIVX betalingen kunnen niet lager zijn dan %@";
+
+/* No comment provided by engineer. */
+"PIVX transaction not signed" = "PIVX transactie niet ondertekend";
+
+/* No comment provided by engineer. */
+"PIVX transaction outputs can't be less than %@" = "PIVX transactie outputs mogen niet kleiner zijn dan %@";
+
+/* No comment provided by engineer. */
+"Please enter PIN to upgrade wallet" = "Voer PIN in om de portemonnee te upgraden";
+
+/* No comment provided by engineer. */
+"RECEIVE" = "ONTVANG";
+
+/* No comment provided by engineer. */
+"Receive PIV at this address: %@" = "Ontvang PIV op dit adres: %@";
 
 /* No comment provided by engineer. */
 "received" = "ontvangen";
 
 /* No comment provided by engineer. */
-"received %@ (%@)" = "ontvangen %1$@ (%2$@)";
+"Received" = "Ontvangen";
 
 /* No comment provided by engineer. */
-"recovery phrase" = "herstelzin";
+"received %@ (%@)" = "%1$@ (%2$@) ontvangen";
 
 /* No comment provided by engineer. */
-"recovery phrase doesn't match" = "herstelzin komt niet overeen";
+"Received %@ (%@)" = "%1$@ (%2$@) Ontvangen";
+
+/* Recovery phrase */
+"Recovery phrase" = "Herstelzin";
 
 /* No comment provided by engineer. */
-"recovery phrase must have %d words" = "herstelzin moet %d woorden hebben";
+"Recovery Phrase" = "Herstelzin";
 
 /* No comment provided by engineer. */
-"reduce payment amount by\n%@ (%@)?" = "verlaag betalingsbedrag met\n%1$@ (%2$@)?";
+"Recovery phrase doesn't match" = "Herstelzin komt niet overeen";
 
 /* No comment provided by engineer. */
-"request" = "verzoek";
+"Recovery phrase must have %d words" = "Herstel moet %d woorden hebben";
 
 /* No comment provided by engineer. */
-"request an amount" = "bedrag verzoeken";
+"Request" = "Verzoek";
+
+/* No comment provided by engineer. */
+"Request an amount" = "Een bedrag verzoeken";
 
 /* No comment provided by engineer. */
 "request expired" = "verzoek verlopen";
 
 /* No comment provided by engineer. */
-"request is for an instant payment but you have disabled instant payments" = "verzoek is voor een directe betaling, maar je hebt directe betalingen uitgeschakeld";
+"Request expired" = "Verzoek verlopen";
 
 /* No comment provided by engineer. */
 "requested network \"%@\" instead of \"%@\"" = "verzocht netwerk \"%1$@\" in plaats van \"%2$@\"";
 
 /* No comment provided by engineer. */
-"rescan" = "opnieuw scannen";
+"Rescan" = "Opnieuw scannen";
 
 /* No comment provided by engineer. */
-"rescan blockchain" = "blockchain opnieuw scannen";
+"Rescan blockchain" = "Blockchain opnieuw scannen";
 
 /* No comment provided by engineer. */
-"rescan blockchain if you think you may have missing transactions, or are having trouble sending (rescanning can take several minutes)" = "blockchain opnieuw scannen als u denkt dat u mogelijk transacties mist of moeite heeft met verzenden (scannen kan enkele minuten duren)";
+"Rescan blockchain if you think you may have missing transactions, or are having trouble sending (rescanning can take several minutes)" = "Blockchain opnieuw scannen als u denkt dat u mogelijk transacties mist of moeite heeft met verzenden (scannen kan enkele minuten duren)";
 
 /* No comment provided by engineer. */
-"reset" = "legen";
+"Reset" = "Resetten";
 
 /* No comment provided by engineer. */
-"retry" = "opnieuw proberen";
+"restore" = "herstel";
 
 /* No comment provided by engineer. */
-"Scan someone else's QR code to get their pivx address. You can send a payment to anyone with an address." = "Scan iemand anders zijn QR code om hun PIVX adres te ontvangen. Je kan een betaling verzenden naar iedereen met een adres.";
+"Retry" = "Opnieuw proberen";
+
+/* Save */
+"Save" = "Opslaan";
+
+/* No comment provided by engineer. */
+"Scan someone else's QR code to get their PIVX address. You can send a payment to anyone with an address." = "Scan iemand anders zijn QR code om hun PIVX adres te ontvangen. Je kan een betaling verzenden naar iedereen met een adres.";
 
 /* No comment provided by engineer. */
 "Screenshots are visible to other apps and devices. Generate a new recovery phrase and keep it secret." = "Schermafbeeldingen zijn zichtbaar voor andere apps en apparaten. Genereer een nieuwe herstelzin en hou deze geheim.";
 
 /* No comment provided by engineer. */
-"Screenshots are visible to other apps and devices. Your funds are at risk. Transfer your balance to another wallet." = "Schermafbeeldingen zijn zichtbaar voor andere apps en apparaten. Uw fondsen lopen risico. Breng uw saldo over naar een andere portemonnee.";
+"Screenshots are visible to other apps and devices. Your funds are at risk. Transfer your balance to another wallet." = "Schermafbeeldingen zijn zichtbaar voor andere apps en apparaten. Uw fondsen lopen risico. Breng uw saldo over naar een andere portemonnee";
+
+/* Search a contact */
+"Search a contact" = "Zoek een contact";
 
 /* No comment provided by engineer. */
 "second" = "second";
@@ -438,64 +486,73 @@
 "seconds" = "seconden";
 
 /* No comment provided by engineer. */
-"seen by %d of %d peers" = "gezien %1$d door %2$d peers";
+"seen by %d of %d peers" = "gezien door %1$dvan %2$d peers";
 
 /* No comment provided by engineer. */
-"send" = "verzenden";
+"Send" = "Verzend";
+
+/* No comment provided by engineer. */
+"SEND" = "VERZEND";
 
 /* No comment provided by engineer. */
 "Send %@ (%@) from this private key into your wallet? The PIVX network will receive a fee of %@ (%@)." = "Verzend %1$@ (%2$@) vanuit deze privésleutel naar jouw portmonnee? Het PIVX netwerk zal een kost ontvangen van %3$@ (%4$@).";
 
 /* No comment provided by engineer. */
-"send address as email" = "verzend adres als email";
+"Send address as email" = "Verstuur adres als email";
 
 /* No comment provided by engineer. */
-"send address as message" = "verzend adres als bericht";
+"Send address as message" = "Verzend adres als bericht";
 
 /* No comment provided by engineer. */
-"send request as email" = "verzend verzoek als email";
+"Send request as email" = "Verstuur een verzoek als email";
 
 /* No comment provided by engineer. */
-"send request as message" = "verzend verzoek als bericht";
+"Send request as message" = "Verstuur een verzoek als bericht";
 
 /* No comment provided by engineer. */
 "sent" = "verzonden";
 
 /* No comment provided by engineer. */
-"sent!" = "verzonden!";
+"Sent!" = "Verzonden!";
 
 /* No comment provided by engineer. */
-"set a trusted node" = "een trusted node instellen";
+"Set a trusted node" = "Instellen als vertrouwde node";
 
 /* No comment provided by engineer. */
-"settings" = "instellingen";
+"Settings" = "Instellingen";
 
 /* No comment provided by engineer. */
 "shapeshift bitcoin id:" = "shapeshift bitcoin id:";
 
 /* No comment provided by engineer. */
-"shapeshift failed" = "shapeshift mislukt";
+"Shapeshift failed" = "Shapeshift mislukt";
 
 /* No comment provided by engineer. */
 "shapeshift status:" = "shapeshift status:";
 
 /* No comment provided by engineer. */
-"shapeshift succeeded" = "shapeshift gelukt";
+"Shapeshift succeeded" = "Shapeshift geslaagd";
 
 /* No comment provided by engineer. */
-"show" = "toon";
+"Show" = "Toon";
 
 /* No comment provided by engineer. */
 "show phrase" = "toon zin";
 
 /* No comment provided by engineer. */
-"sms not currently available" = "sms momenteel niet beschikbaar";
+"Show phrase" = "Toon zin";
 
 /* No comment provided by engineer. */
-"spent address" = "besteed address";
+"SMS not currently available" = "SMS momenteel niet beschikbaar";
+
+/* no mail account */
+"Sorry, you don't have any configured email account. Please add it and try again." = "Sorry, je hebt geen enkel mailaccount ingesteld. Voeg er een toe en probeer opnieuw.";
 
 /* No comment provided by engineer. */
-"spent input" = "besteed input";
+"spent address" = "uitgegeven adres";
+
+/* No comment provided by engineer. */
+"spent input" = "uitgegeven input";
 
 /* No comment provided by engineer. */
 "Starting Shapeshift!" = "Opstarten van Shapeshift!";
@@ -504,43 +561,58 @@
 "status:" = "status:";
 
 /* No comment provided by engineer. */
-"swept!" = "geveegd!";
+"Swept!" = "Gewist!";
+
+/* No comment provided by engineer. */
+"SwiftX payment" = "SwiftX betaling";
+
+/* No comment provided by engineer. */
+"SwiftX requires enough inputs with 6 confirmations, send anyways as regular transaction?" = "SwiftX vereist voldoende invoer met 6 bevestigingen, verzend alsnog als gewone transactie?";
+
+/* Synced */
+"Synced" = "Gesynchroniseerd";
 
 /* No comment provided by engineer. */
 "Syncing:" = "Synchroniseren:";
 
 /* No comment provided by engineer. */
-"The amount you wanted to shapeshift is too high, please input a value under %@" = "Het gewenste bedrag naar shapeshift is te hoog, voor een bedrag lager dan %@ in";
+"The amount you wanted to shapeshift is too high, please input a value under %@" = "Het gewenste bedrag dat je wou shapeshiften is te hoog, voor een bedrag lager dan %@ in";
 
 /* No comment provided by engineer. */
-"The amount you wanted to shapeshift is too low, please input a value over %@" = "Het gewenste bedrag naar shapeshift is te laag, voor een bedrag hoger dan %@ in";
+"The amount you wanted to shapeshift is too low, please input a value over %@" = "Het gewenste bedrag dat je wou shapeshiften is te laag, voor een bedrag lager dan %@ in";
 
 /* No comment provided by engineer. */
-"the app will now close" = "de app gaat nu sluiten";
+"The app will now close" = "De app gaat nu sluiten";
 
 /* No comment provided by engineer. */
-"This is your PIVX address. Tap to copy it or send it by email or sms. The address will change each time you receive funds, but old addresses always work." = "Dit is uw PIVX adres. Tik om het te kopiëren of per e-mail  of sms te verzenden. Het adres verandert telkens u geld ontvangt, maar oude adressen werken altijd.";
+"The blockchain is going to be reset. The synchronization could take a while. Are you sure?" = "De blockchain wordt opnieuw ingesteld. De synchronisatie kan even duren. Ben je zeker?";
 
 /* No comment provided by engineer. */
-"This is your PIVX balance." = "Dit is uw PIVX balans.";
+"This is your PIVX address. Tap to copy it or send it by email or SMS. The address will change each time you receive funds, but old addresses always work." = "Dit is uw PIVX adres. Tik om het te kopiëren of per e-mail of SMS te verzenden. Het adres verandert telkens u geld ontvangt, maar oude adressen werken altijd.";
 
 /* No comment provided by engineer. */
-"This is your PIVX balance. PIVX is a currency. The exchange rate changes with the market." = "Dit is uw PIVX balans. PIVX is een valuta. De wisselkeurs verandert met de markt.";
+"This is your PIVX balance." = "Dit is je PIVX balans.";
 
 /* No comment provided by engineer. */
-"this payment address is already in your wallet" = "dit betalingsadres is alreeds aanwezig in uw portemonnee";
+"This is your PIVX balance. PIVX is a currency. The exchange rate changes with the market." = "Dit is uw PIVX balans. PIVX is een valuta. De wisselkeurs verandert samen met de markt.";
 
 /* No comment provided by engineer. */
-"this private key is already in your wallet" = "deze privésleutel is alreeds aanwezig in uw portemonnee";
+"This payment address is already in your wallet" = "Dit betaaladres is alreeds aanwezig in je portemonnee";
 
 /* No comment provided by engineer. */
-"this private key is empty" = "deze privésleutel is leeg";
+"This private key is already in your wallet" = "Deze privésleutel is alreeds aanwezig in je portemonnee";
 
 /* No comment provided by engineer. */
-"This request requires an instant payment but you do not have enough inputs with 6 confirmations required by Instant Send, you may ask the merchant to accept a normal transaction or wait a few minutes." = "Dit verzoek vereist een directe betaling maar je hebt niet genoeg inputs met 6 vereiste bevestigingen door Instant Send, u kunt de handelaar vragen om een gewone transactie te accepteren of door een paar minuten te wachten.";
+"This private key is empty" = "Deze privésleutel is leeg";
 
 /* No comment provided by engineer. */
-"this request requires an instant payment but you have disabled instant payments" = "dit verzoek vereist een directe betaling maar je hebt directe betalingen uitgeschakeld";
+"This request is for a SwiftX payment but you have disabled SwiftX payments" = "Dit verzoek is voor een SwiftX betaling maar je hebt SwiftX betalingen uitgeschakelt";
+
+/* No comment provided by engineer. */
+"This request requires a SwiftX payment but you do not have enough inputs with 6 confirmations required by SwiftX, you may ask the merchant to accept a normal transaction or wait a few minutes." = "Dit verzoek vereist een SwiftX betaling maar je hebt niet genoeg inputs met 6 vereiste bevestigingen door SwiftX, u kunt de handelaar vragen om een gewone transactie te accepteren of door een paar minuten te wachten.";
+
+/* No comment provided by engineer. */
+"This request requires a SwiftX payment but you have disabled SwiftX payments" = "Dit verzoek vereist een SwiftX betaling maar je hebt SwiftX betalingen uitgeschakelt";
 
 /* No comment provided by engineer. */
 "This wallet is not empty or sync has not finished, you may not wipe it without the recovery phrase" = "Deze portemonnee is niet leeg of de synchronisatie is nog niet klaar, je mag deze niet wissen zonder de herstelzin";
@@ -555,92 +627,104 @@
 "to: %@ (via Shapeshift)" = "naar: %@ (via Shapeshift)";
 
 /* No comment provided by engineer. */
-"touch id limit" = "touch id limiet";
+"Total %@ (%@)" = "Totaal %1$@ (%2$@)";
 
 /* No comment provided by engineer. */
-"touch id spending limit" = "touch id spendeerlimiet limiet";
+"Touch ID limit" = "Touch ID limiet";
 
 /* No comment provided by engineer. */
-"transaction canceled, network timeout" = "transactie geannuleerd, netwerk timeout";
+"Touch ID spending limit" = "Touch ID spendeerlimiet";
 
 /* No comment provided by engineer. */
-"transaction fees would cost more than the funds available on this private key (due to tiny \"dust\" deposits)" = "transactiekosten zou meer kosten dan de beschikbare fondsen op deze privésleutel (vanwege \"kleine\" stortingen)";
+"Transaction canceled, network timeout" = "Transactie geannuleerd, networktime-out";
 
 /* No comment provided by engineer. */
-"transaction history" = "transactiegeschiedenis";
+"Transaction history" = "Transactiegeschiedenis";
 
 /* No comment provided by engineer. */
-"transaction rejected" = "transactie afgewezen";
+"Transaction Rejected" = "Transactie Geweigerd";
 
 /* No comment provided by engineer. */
-"trust" = "vertrouw";
+"Trust" = "Vertrouw";
 
 /* No comment provided by engineer. */
-"Try It!" = "Probeer het!";
+"try again in %@" = "probeer opnieuw in %@";
 
 /* No comment provided by engineer. */
-"turn device passcode on" = "schakel toegangscode van apparaat in";
+"try again in %d %@" = "probeer opnieuw in %1$d %2$@";
 
 /* No comment provided by engineer. */
-"Unable to get new qr code" = "Kan geen nieuwe QR code verkrijgen";
+"Try It!" = "Probeer het uit!";
 
 /* No comment provided by engineer. */
-"unexpected response from %@" = "onverwacht antwoord van %@";
+"Turn device passcode on" = "Schakel apparaat toegangscode in";
+
+/* No comment provided by engineer. */
+"Unable to get new qr code" = "Niet mogelijk om een nieuwe qr code te verkrijgen";
+
+/* No comment provided by engineer. */
+"unexpected response from %@" = "onverwachte response van %@";
+
+/* No comment provided by engineer. */
+"Unexpected response from %@" = "Onverwachte response van %@";
 
 /* No comment provided by engineer. */
 "unknown address" = "ongekend adres";
 
 /* No comment provided by engineer. */
-"unrecognized address" = "niet gekend adres";
+"Unrecognized address" = "Adres niet herkend";
 
 /* No comment provided by engineer. */
-"unsupported or corrupted document" = "niet ondersteund of beschadigd document";
+"Unsupported or corrupted document" = "Niet-ondersteund of beschadigd document";
 
 /* No comment provided by engineer. */
-"unsupported signature type" = "niet ondersteund ondertekeningstype";
+"unsupported signature type" = "niet-ondersteunde ondertekeningstype";
 
 /* No comment provided by engineer. */
-"unsupported url" = "niet ondersteunde url";
+"Unsupported URL" = "Niet-ondersteunde URL";
 
 /* No comment provided by engineer. */
-"untrusted certificate" = "certificaat niet vertrouwd";
+"untrusted certificate" = "niet-ondersteund certificaat";
 
 /* No comment provided by engineer. */
-"unverified" = "niet gecontroleerd";
+"unverified" = "niet geverifieerd";
 
 /* Updating Price */
-"Updating Price" = "Bijwerken Van Prijs";
+"Updating Price" = "Prijs aan het bijwerken";
 
 /* No comment provided by engineer. */
-"verified, waiting for confirmation" = "Geverifieerd, wachten op bevestigingen";
+"verified, waiting for confirmation" = "geverifieerd, wachtende op bevestiging";
 
 /* No comment provided by engineer. */
-"verify passcode" = "Verifieer toegangscode";
+"Verify passcode" = "Toegangscode verifiëren";
 
 /* No comment provided by engineer. */
 "wallet address" = "portemonnee adres";
 
 /* No comment provided by engineer. */
-"wallet disabled" = "portemonnee uitgeschakeld";
+"Wallet Disabled" = "Portemonne Uitgeschakeld";
 
 /* No comment provided by engineer. */
 "WARNING" = "WAARSCHUWING";
 
 /* No comment provided by engineer. */
-"wipe" = "wis";
+"Wipe" = "Wissen";
 
 /* No comment provided by engineer. */
 "WRITE DOWN YOUR RECOVERY PHRASE" = "SCHRIJF JE HERSTELZIN OP";
 
 /* No comment provided by engineer. */
-"You can now buy PIVX in\nPIVXwallet with cash or\nbank transfer." = "Je kan nu PIVX kopen in \nPIVXwallet met cash of\nbankoverschrijving.";
+"You can now buy PIV in PIVXwallet with cash or bank transfer." = "Je kan nu PIV kopen in PIVXwallet met cash of bankoverschrijving.";
 
 /* No comment provided by engineer. */
-"you must enter your pin in order to enter PIVXwallet" = "je moet je pin invoeren om PIVXWwallet te openen";
+"You must enter your pin in order to enter the PIVX wallet" = "U moet uw pin invoeren om de PIVX wallet te betreden";
 
 /* No comment provided by engineer. */
-"you received PIVX!" = "je ontving PIVX!";
+"You received PIV!" = "Je hebt PIV ontvangen!";
 
 /* No comment provided by engineer. */
-"Your wallet may be out of sync.\nThis can often be fixed by rescanning the blockchain." = "Uw portemonnee is mogelijk niet gesynchroniseerd.\nDit kan vaak verholpen worden door de blockchain opnieuw te scannen.";
+"YOUR WALLET IS LOCKED" = "UW PORTEMONNEE IS VERGRENDELD";
+
+/* No comment provided by engineer. */
+"Your wallet may be out of sync. This can often be fixed by rescanning the blockchain." = "Uw portemonnee is mogelijk niet gesynchroniseerd. Dit kan vaak verholpen worden door de blockchain opnieuw te scannen.";
 

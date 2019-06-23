@@ -25,7 +25,7 @@ class AddressContactController: BaseController {
     
     lazy var searchTextField:UISearchBar = {
         let bar = UISearchBar()
-        bar.placeholder = "Search a contact"
+        bar.placeholder = NSLocalizedString("Search a contact", comment: "Search a contact")
         bar.delegate = self
         return bar
     }()
@@ -55,7 +55,7 @@ class AddressContactController: BaseController {
     
     override func setupNavigationBar() {
         super.setupNavigationBar()
-        navigationItem.title = "Address Book"
+        navigationItem.title = NSLocalizedString("Address Book", comment: "Address Book")
         addMenuButton()
         let addButton = UIBarButtonItem(image: UIImage(named:"icAdd")?.withRenderingMode(.alwaysOriginal), style: .plain, target: self, action: #selector(tappedAddButton))
         navigationItem.rightBarButtonItem = addButton
@@ -70,8 +70,8 @@ class AddressContactController: BaseController {
     }
     
     func delete(index:Int){
-        let alert = UIAlertController(title: "Are you sure?", message: "Do you want delete your contact?", preferredStyle: .alert)
-        let optionOne = UIAlertAction(title: "OK", style: .default, handler: { result in
+        let alert = UIAlertController(title: NSLocalizedString("Are you sure?", comment: "Are you sure?"), message: NSLocalizedString("Do you want delete your contact?", comment: "Do you want to delete your contact?"), preferredStyle: .alert)
+        let optionOne = UIAlertAction(title: NSLocalizedString("OK", comment: "OK"), style: .default, handler: { result in
             self.items.remove(at: index)
             LocalStore.saveAsArrayJson(data: self.items.map { return $0.toDictionary() as AnyObject }, name: "contacts")
             if self.items.count == 0 {
@@ -81,7 +81,7 @@ class AddressContactController: BaseController {
             }
             self.tableView.reloadData()
         })
-        let optionTwo = UIAlertAction(title: "Cancel", style: .cancel, handler: { result in })
+        let optionTwo = UIAlertAction(title: NSLocalizedString("Cancel", comment: "Cancel"), style: .cancel, handler: { result in })
         alert.addAction(optionOne)
         alert.addAction(optionTwo)
         
@@ -106,7 +106,7 @@ extension AddressContactController:UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
         if state == .empty {
             let footer = tableView.dequeueReusableHeaderFooterView(withIdentifier: emptyIdentifier) as! EmptyCell
-            footer.cofigureWith(title: "You don’t have any saved address yet", name: "imgAddressEmpty")
+            footer.cofigureWith(title: NSLocalizedString("You don't have any saved address yet", comment: "You don't have any saved address yet"), name: "imgAddressEmpty")
             return footer
         }
         return nil
@@ -137,7 +137,7 @@ extension AddressContactController:UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]? {
         if type == .filter { return [] }
-        let button = UITableViewRowAction(style: .default, title: "DELETE", handler: { _,_ in
+        let button = UITableViewRowAction(style: .default, title: NSLocalizedString("DELETE", comment: "DELETE"), handler: { _,_ in
             self.delete(index: indexPath.row)
         })
         button.backgroundColor = UIColor.lightGray

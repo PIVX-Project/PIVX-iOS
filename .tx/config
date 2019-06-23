@@ -1,0 +1,10 @@
+[main]
+host = https://www.transifex.com
+
+[pivx-ios-wallet.11x]
+file_filter = contrib/transifex/<lang>.xliff
+minimum_perc = 0
+source_file = contrib/transifex/en.xliff
+source_lang = en
+type = XLIFF
+

@@ -32,13 +32,8 @@
 		2B5735711FE04C4200110745 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B57356D1FE04C4200110745 /* Constants.swift */; };
 		2B5735761FE086F500110745 /* SetupController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B5735751FE086F500110745 /* SetupController.swift */; };
 		2B57357A1FE087D800110745 /* Setup.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2B5735791FE087D800110745 /* Setup.xib */; };
-		2B5735801FE0882B00110745 /* Step2View.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2B57357C1FE0882B00110745 /* Step2View.xib */; };
-		2B5735811FE0882B00110745 /* Step1View.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2B57357D1FE0882B00110745 /* Step1View.xib */; };
-		2B5735821FE0882B00110745 /* Step3View.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2B57357E1FE0882B00110745 /* Step3View.xib */; };
-		2B5735831FE0882B00110745 /* Step4View.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2B57357F1FE0882B00110745 /* Step4View.xib */; };
 		2B8A1C9B1FEB587800C7427C /* EmptyTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2B8A1C9A1FEB587800C7427C /* EmptyTableCell.xib */; };
 		2B8A1C9D1FEB594800C7427C /* EmptyTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B8A1C9C1FEB594800C7427C /* EmptyTableCell.swift */; };
-		2BBE61991FE482AB00D06CD7 /* NewAddress.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2BBE61981FE482AB00D06CD7 /* NewAddress.xib */; };
 		2BBE619E1FE4833500D06CD7 /* NewAddressController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BBE619C1FE4833400D06CD7 /* NewAddressController.swift */; };
 		2BBE61A31FE4853B00D06CD7 /* AddressContactController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BBE61A21FE4853B00D06CD7 /* AddressContactController.swift */; };
 		2BBE61A91FE48AEC00D06CD7 /* AddressContactCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BBE61A81FE48AEC00D06CD7 /* AddressContactCell.swift */; };
@@ -48,7 +43,6 @@
 		2BBE61B11FE48DA100D06CD7 /* LocalStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BBE61B01FE48DA100D06CD7 /* LocalStore.swift */; };
 		2BBE61B51FE48E6500D06CD7 /* ContactAddress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BBE61B41FE48E6500D06CD7 /* ContactAddress.swift */; };
 		2BFA52371FE08A8300A3C808 /* BaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BFA52361FE08A8300A3C808 /* BaseController.swift */; };
-		2BFA523A1FE0AC4D00A3C808 /* Menu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2BFA52391FE0AC4C00A3C808 /* Menu.xib */; };
 		2BFA523C1FE0AC5C00A3C808 /* MenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BFA523B1FE0AC5C00A3C808 /* MenuController.swift */; };
 		31D68B531C23B6C10030FAAA /* DashWalletUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31D68B521C23B6C10030FAAA /* DashWalletUITests.swift */; };
 		31D68B5B1C23B6FD0030FAAA /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31D68B5A1C23B6FD0030FAAA /* SnapshotHelper.swift */; };
@@ -110,6 +104,14 @@
 		75F2E0D31BE9803900EAE861 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75F2E0D21BE9803900EAE861 /* Launch Screen.storyboard */; };
 		75F2E0D61BEAA6A400EAE861 /* BRTxMetadataEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 75F2E0D51BEAA6A400EAE861 /* BRTxMetadataEntity.m */; };
 		84F68C8A1975E9E2002FC300 /* BRScanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F68C891975E9E2002FC300 /* BRScanViewController.m */; };
+		B015466322BA3B4D00B9ACCA /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = B015466122BA3B4D00B9ACCA /* Localizable.strings */; };
+		B015466622BA3B4D00B9ACCA /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = B015466422BA3B4D00B9ACCA /* Localizable.strings */; };
+		B01E85F521FA9BC500B6D51F /* NewAddress.xib in Resources */ = {isa = PBXBuildFile; fileRef = B01E85F721FA9BC500B6D51F /* NewAddress.xib */; };
+		B01E85FC21FA9CDC00B6D51F /* Menu.xib in Resources */ = {isa = PBXBuildFile; fileRef = B01E85FE21FA9CDC00B6D51F /* Menu.xib */; };
+		B01E860321FAA23900B6D51F /* Step1View.xib in Resources */ = {isa = PBXBuildFile; fileRef = B01E860521FAA23900B6D51F /* Step1View.xib */; };
+		B01E860A21FAA3DB00B6D51F /* Step2View.xib in Resources */ = {isa = PBXBuildFile; fileRef = B01E860C21FAA3DB00B6D51F /* Step2View.xib */; };
+		B01E861121FAA5F500B6D51F /* Step3View.xib in Resources */ = {isa = PBXBuildFile; fileRef = B01E861321FAA5F500B6D51F /* Step3View.xib */; };
+		B01E861821FAA6B100B6D51F /* Step4View.xib in Resources */ = {isa = PBXBuildFile; fileRef = B01E861A21FAA6B100B6D51F /* Step4View.xib */; };
 		BA4A72671BE11AFA00E39C01 /* BRAWWeakTimerTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA4A72661BE11AFA00E39C01 /* BRAWWeakTimerTarget.swift */; };
 		BA54D3CE1B2EA74000C9CB28 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA54D3CD1B2EA74000C9CB28 /* Media.xcassets */; };
 		BA6645961BD924EB007A6BB1 /* BRAWTransactionRowControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA6645951BD924EB007A6BB1 /* BRAWTransactionRowControl.swift */; };
@@ -249,13 +251,8 @@
 		2B57356D1FE04C4200110745 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Constants.swift; path = PivxUtils/Constants.swift; sourceTree = "<group>"; };
 		2B5735751FE086F500110745 /* SetupController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SetupController.swift; path = PivxControllers/SetupController.swift; sourceTree = "<group>"; };
 		2B5735791FE087D800110745 /* Setup.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = Setup.xib; path = PivxNibs/Controllers/Setup.xib; sourceTree = "<group>"; };
-		2B57357C1FE0882B00110745 /* Step2View.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = Step2View.xib; path = PivxNibs/Views/Step2View.xib; sourceTree = "<group>"; };
-		2B57357D1FE0882B00110745 /* Step1View.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = Step1View.xib; path = PivxNibs/Views/Step1View.xib; sourceTree = "<group>"; };
-		2B57357E1FE0882B00110745 /* Step3View.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = Step3View.xib; path = PivxNibs/Views/Step3View.xib; sourceTree = "<group>"; };
-		2B57357F1FE0882B00110745 /* Step4View.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = Step4View.xib; path = PivxNibs/Views/Step4View.xib; sourceTree = "<group>"; };
 		2B8A1C9A1FEB587800C7427C /* EmptyTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = EmptyTableCell.xib; path = DashWallet/PivxNibs/EmptyTableCell.xib; sourceTree = SOURCE_ROOT; };
 		2B8A1C9C1FEB594800C7427C /* EmptyTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = EmptyTableCell.swift; path = PivxViews/TableCells/EmptyTableCell.swift; sourceTree = "<group>"; };
-		2BBE61981FE482AB00D06CD7 /* NewAddress.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = NewAddress.xib; path = PivxNibs/Controllers/NewAddress.xib; sourceTree = "<group>"; };
 		2BBE619C1FE4833400D06CD7 /* NewAddressController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NewAddressController.swift; path = PivxControllers/NewAddressController.swift; sourceTree = "<group>"; };
 		2BBE61A21FE4853B00D06CD7 /* AddressContactController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AddressContactController.swift; path = PivxControllers/AddressContactController.swift; sourceTree = "<group>"; };
 		2BBE61A81FE48AEC00D06CD7 /* AddressContactCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AddressContactCell.swift; path = PivxViews/TableCells/AddressContactCell.swift; sourceTree = "<group>"; };
@@ -265,7 +262,6 @@
 		2BBE61B01FE48DA100D06CD7 /* LocalStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LocalStore.swift; path = PivxUtils/LocalStore.swift; sourceTree = "<group>"; };
 		2BBE61B41FE48E6500D06CD7 /* ContactAddress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ContactAddress.swift; path = PivxModels/ContactAddress.swift; sourceTree = "<group>"; };
 		2BFA52361FE08A8300A3C808 /* BaseController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BaseController.swift; path = PivxControllers/BaseController.swift; sourceTree = "<group>"; };
-		2BFA52391FE0AC4C00A3C808 /* Menu.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = Menu.xib; path = PivxNibs/Controllers/Menu.xib; sourceTree = "<group>"; };
 		2BFA523B1FE0AC5C00A3C808 /* MenuController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MenuController.swift; path = PivxControllers/MenuController.swift; sourceTree = "<group>"; };
 		31D68B501C23B6C10030FAAA /* PivxWalletUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PivxWalletUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		31D68B521C23B6C10030FAAA /* DashWalletUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashWalletUITests.swift; sourceTree = "<group>"; };
@@ -425,6 +421,87 @@
 		84F68C881975E9E2002FC300 /* BRScanViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRScanViewController.h; sourceTree = "<group>"; };
 		84F68C891975E9E2002FC300 /* BRScanViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRScanViewController.m; sourceTree = "<group>"; };
 		AA1BBFB053AE437B7EE96F8D /* Pods-pivxwallet.testflight.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pivxwallet.testflight.xcconfig"; path = "Pods/Target Support Files/Pods-pivxwallet/Pods-pivxwallet.testflight.xcconfig"; sourceTree = "<group>"; };
+		B015466222BA3B4D00B9ACCA /* nl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nl; path = nl.lproj/Localizable.strings; sourceTree = "<group>"; };
+		B015466522BA3B4D00B9ACCA /* nl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nl; path = nl.lproj/Localizable.strings; sourceTree = "<group>"; };
+		B015466722BA3B4D00B9ACCA /* nl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nl; path = nl.lproj/Localizable.strings; sourceTree = "<group>"; };
+		B015466822BA3B4D00B9ACCA /* nl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nl; path = nl.lproj/Main.strings; sourceTree = "<group>"; };
+		B015466922BA3B4D00B9ACCA /* nl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nl; path = nl.lproj/NewAddress.strings; sourceTree = "<group>"; };
+		B015466A22BA3B4D00B9ACCA /* nl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nl; path = nl.lproj/Interface.strings; sourceTree = "<group>"; };
+		B015466B22BA3B4D00B9ACCA /* nl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nl; path = nl.lproj/Step4View.strings; sourceTree = "<group>"; };
+		B015466C22BA3B4D00B9ACCA /* nl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nl; path = nl.lproj/Step3View.strings; sourceTree = "<group>"; };
+		B015466D22BA3B4D00B9ACCA /* nl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nl; path = nl.lproj/Step2View.strings; sourceTree = "<group>"; };
+		B015466E22BA3B4D00B9ACCA /* nl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nl; path = nl.lproj/Menu.strings; sourceTree = "<group>"; };
+		B015466F22BA3B4D00B9ACCA /* nl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nl; path = nl.lproj/BREventConfirmView.strings; sourceTree = "<group>"; };
+		B015467022BA3B4D00B9ACCA /* nl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nl; path = nl.lproj/Step1View.strings; sourceTree = "<group>"; };
+		B015467122BA3B4D00B9ACCA /* nl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nl; path = nl.lproj/MainInterface.strings; sourceTree = "<group>"; };
+		B01E85F621FA9BC500B6D51F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/NewAddress.xib; sourceTree = "<group>"; };
+		B01E85F921FA9BCF00B6D51F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/NewAddress.strings; sourceTree = "<group>"; };
+		B01E85FB21FA9BD300B6D51F /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/NewAddress.strings; sourceTree = "<group>"; };
+		B01E85FD21FA9CDC00B6D51F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/Menu.xib; sourceTree = "<group>"; };
+		B01E860021FA9CE400B6D51F /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Menu.strings; sourceTree = "<group>"; };
+		B01E860221FA9CE600B6D51F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Menu.strings; sourceTree = "<group>"; };
+		B01E860421FAA23900B6D51F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/Step1View.xib; sourceTree = "<group>"; };
+		B01E860721FAA23F00B6D51F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Step1View.strings; sourceTree = "<group>"; };
+		B01E860921FAA24200B6D51F /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Step1View.strings; sourceTree = "<group>"; };
+		B01E860B21FAA3DB00B6D51F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/Step2View.xib; sourceTree = "<group>"; };
+		B01E860E21FAA3E400B6D51F /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Step2View.strings; sourceTree = "<group>"; };
+		B01E861021FAA3E700B6D51F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Step2View.strings; sourceTree = "<group>"; };
+		B01E861221FAA5F500B6D51F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/Step3View.xib; sourceTree = "<group>"; };
+		B01E861521FAA5FC00B6D51F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Step3View.strings; sourceTree = "<group>"; };
+		B01E861721FAA5FE00B6D51F /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Step3View.strings; sourceTree = "<group>"; };
+		B01E861921FAA6B100B6D51F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/Step4View.xib; sourceTree = "<group>"; };
+		B01E861C21FAA6B700B6D51F /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Step4View.strings; sourceTree = "<group>"; };
+		B01E861E21FAA6B900B6D51F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Step4View.strings; sourceTree = "<group>"; };
+		B0439D0E22BA3B8D00990AA9 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
+		B0439D0F22BA3B8D00990AA9 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
+		B0439D1022BA3B8D00990AA9 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Interface.strings; sourceTree = "<group>"; };
+		B05CB9A222BA3B5E002C0C9F /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		B05CB9A322BA3B5E002C0C9F /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		B05CB9A422BA3B5E002C0C9F /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		B05CB9A522BA3B5E002C0C9F /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Main.strings; sourceTree = "<group>"; };
+		B05CB9A622BA3B5E002C0C9F /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/NewAddress.strings; sourceTree = "<group>"; };
+		B05CB9A722BA3B5E002C0C9F /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Interface.strings; sourceTree = "<group>"; };
+		B05CB9A822BA3B5E002C0C9F /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Step4View.strings; sourceTree = "<group>"; };
+		B05CB9A922BA3B5E002C0C9F /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Step3View.strings; sourceTree = "<group>"; };
+		B05CB9AA22BA3B5E002C0C9F /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Step2View.strings; sourceTree = "<group>"; };
+		B05CB9AB22BA3B5E002C0C9F /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Menu.strings; sourceTree = "<group>"; };
+		B05CB9AC22BA3B5E002C0C9F /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/BREventConfirmView.strings; sourceTree = "<group>"; };
+		B05CB9AD22BA3B5E002C0C9F /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Step1View.strings; sourceTree = "<group>"; };
+		B05CB9AE22BA3B5E002C0C9F /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/MainInterface.strings; sourceTree = "<group>"; };
+		B08975D022BA3B9D00CA29DF /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
+		B08975D122BA3B9D00CA29DF /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
+		B08975D222BA3B9D00CA29DF /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Main.strings; sourceTree = "<group>"; };
+		B08975D322BA3B9D00CA29DF /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/NewAddress.strings; sourceTree = "<group>"; };
+		B08975D422BA3B9D00CA29DF /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Interface.strings; sourceTree = "<group>"; };
+		B08975D522BA3B9D00CA29DF /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Step3View.strings; sourceTree = "<group>"; };
+		B08975D622BA3B9D00CA29DF /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Step2View.strings; sourceTree = "<group>"; };
+		B08975D722BA3B9D00CA29DF /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Menu.strings; sourceTree = "<group>"; };
+		B08975D822BA3B9D00CA29DF /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/BREventConfirmView.strings; sourceTree = "<group>"; };
+		B08975D922BA3B9D00CA29DF /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Step1View.strings; sourceTree = "<group>"; };
+		B08975DA22BA3B9D00CA29DF /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/MainInterface.strings; sourceTree = "<group>"; };
+		B0B77EC722BA3B6E002436F9 /* pl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pl; path = pl.lproj/Localizable.strings; sourceTree = "<group>"; };
+		B0B77EC822BA3B6E002436F9 /* pl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pl; path = pl.lproj/Localizable.strings; sourceTree = "<group>"; };
+		B0B77EC922BA3B6E002436F9 /* pl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pl; path = pl.lproj/Main.strings; sourceTree = "<group>"; };
+		B0B77ECA22BA3B6E002436F9 /* pl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pl; path = pl.lproj/NewAddress.strings; sourceTree = "<group>"; };
+		B0B77ECB22BA3B6E002436F9 /* pl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pl; path = pl.lproj/Interface.strings; sourceTree = "<group>"; };
+		B0B77ECC22BA3B6E002436F9 /* pl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pl; path = pl.lproj/Step4View.strings; sourceTree = "<group>"; };
+		B0B77ECD22BA3B6E002436F9 /* pl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pl; path = pl.lproj/Step3View.strings; sourceTree = "<group>"; };
+		B0B77ECE22BA3B6E002436F9 /* pl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pl; path = pl.lproj/Step2View.strings; sourceTree = "<group>"; };
+		B0B77ECF22BA3B6E002436F9 /* pl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pl; path = pl.lproj/Menu.strings; sourceTree = "<group>"; };
+		B0B77ED022BA3B6E002436F9 /* pl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pl; path = pl.lproj/BREventConfirmView.strings; sourceTree = "<group>"; };
+		B0B77ED122BA3B6E002436F9 /* pl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pl; path = pl.lproj/Step1View.strings; sourceTree = "<group>"; };
+		B0F9D35622BA3B7E007873D7 /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/Localizable.strings; sourceTree = "<group>"; };
+		B0F9D35722BA3B7E007873D7 /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/Localizable.strings; sourceTree = "<group>"; };
+		B0F9D35822BA3B7E007873D7 /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/Main.strings; sourceTree = "<group>"; };
+		B0F9D35922BA3B7E007873D7 /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/NewAddress.strings; sourceTree = "<group>"; };
+		B0F9D35A22BA3B7E007873D7 /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/Interface.strings; sourceTree = "<group>"; };
+		B0F9D35B22BA3B7E007873D7 /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/Step4View.strings; sourceTree = "<group>"; };
+		B0F9D35C22BA3B7E007873D7 /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/Step3View.strings; sourceTree = "<group>"; };
+		B0F9D35D22BA3B7E007873D7 /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/Step2View.strings; sourceTree = "<group>"; };
+		B0F9D35E22BA3B7E007873D7 /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/Menu.strings; sourceTree = "<group>"; };
+		B0F9D35F22BA3B7E007873D7 /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/BREventConfirmView.strings; sourceTree = "<group>"; };
+		B0F9D36022BA3B7E007873D7 /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/Step1View.strings; sourceTree = "<group>"; };
+		B0F9D36122BA3B7E007873D7 /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/MainInterface.strings; sourceTree = "<group>"; };
 		BA4A72661BE11AFA00E39C01 /* BRAWWeakTimerTarget.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BRAWWeakTimerTarget.swift; sourceTree = "<group>"; };
 		BA4EECDF1B351AE200D443A3 /* BRAppGroupConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRAppGroupConstants.h; sourceTree = "<group>"; };
 		BA54D3CD1B2EA74000C9CB28 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
@@ -606,9 +683,9 @@
 		2B5735781FE087B500110745 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				2BBE61981FE482AB00D06CD7 /* NewAddress.xib */,
+				B01E85F721FA9BC500B6D51F /* NewAddress.xib */,
 				2B4838CA1FE21655001C8D09 /* Donation.xib */,
-				2BFA52391FE0AC4C00A3C808 /* Menu.xib */,
+				B01E85FE21FA9CDC00B6D51F /* Menu.xib */,
 				2B5735791FE087D800110745 /* Setup.xib */,
 			);
 			name = Controllers;
@@ -617,10 +694,10 @@
 		2B57357B1FE0881100110745 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				2B57357D1FE0882B00110745 /* Step1View.xib */,
-				2B57357C1FE0882B00110745 /* Step2View.xib */,
-				2B57357E1FE0882B00110745 /* Step3View.xib */,
-				2B57357F1FE0882B00110745 /* Step4View.xib */,
+				B01E860521FAA23900B6D51F /* Step1View.xib */,
+				B01E860C21FAA3DB00B6D51F /* Step2View.xib */,
+				B01E861321FAA5F500B6D51F /* Step3View.xib */,
+				B01E861A21FAA6B100B6D51F /* Step4View.xib */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -1055,6 +1132,7 @@
 				BA4A72661BE11AFA00E39C01 /* BRAWWeakTimerTarget.swift */,
 				22F45A0A1C30EAB700B07A15 /* BRAWKeypad.swift */,
 				BA913BF71BD57E4D005A7C0E /* Info.plist */,
+				B015466422BA3B4D00B9ACCA /* Localizable.strings */,
 				BAC7B6C41BD9C9B600165B84 /* WatchApp Extension-Bridging-Header.h */,
 			);
 			path = "WatchApp Extension";
@@ -1082,6 +1160,7 @@
 				75ABFB681B55BB2300B0B5CC /* MainInterface.storyboard */,
 				BA54D3CD1B2EA74000C9CB28 /* Media.xcassets */,
 				BAE12BEA1B2DEE7F00895CC5 /* Info.plist */,
+				B015466122BA3B4D00B9ACCA /* Localizable.strings */,
 			);
 			path = TodayExtension;
 			sourceTree = "<group>";
@@ -1189,7 +1268,6 @@
 				BAE12BF71B2DEE7F00895CC5 /* Embed App Extensions */,
 				BA913C021BD57E4E005A7C0E /* Embed Watch Content */,
 				CEE253DB1E26B3B400A25B15 /* Icon Versioning */,
-				FB0ACB9A1F9A99E400F4AB52 /* ShellScript */,
 				16CF725B5FAE3ED8DFAF6824 /* [CP] Embed Pods Frameworks */,
 				6FC8EBE6517DBF10EAD705F8 /* [CP] Copy Pods Resources */,
 			);
@@ -1340,6 +1418,11 @@
 				en,
 				Base,
 				es,
+				nl,
+				fr,
+				pl,
+				ko,
+				de,
 			);
 			mainGroup = 75D5F3B5191EC270004AB296;
 			productRefGroup = 75D5F3BF191EC270004AB296 /* Products */;
@@ -1370,18 +1453,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				75D5F3E0191EC270004AB296 /* Images.xcassets in Resources */,
-				2BFA523A1FE0AC4D00A3C808 /* Menu.xib in Resources */,
+				B01E85FC21FA9CDC00B6D51F /* Menu.xib in Resources */,
 				757E09991ADB8EEB006FD352 /* Localizable.strings in Resources */,
-				2B5735811FE0882B00110745 /* Step1View.xib in Resources */,
+				B01E860321FAA23900B6D51F /* Step1View.xib in Resources */,
 				75F2E0D31BE9803900EAE861 /* Launch Screen.storyboard in Resources */,
 				2B57357A1FE087D800110745 /* Setup.xib in Resources */,
-				2B5735831FE0882B00110745 /* Step4View.xib in Resources */,
+				B01E861821FAA6B100B6D51F /* Step4View.xib in Resources */,
 				2B5735671FE04BC400110745 /* PivxAssets.xcassets in Resources */,
-				2BBE61991FE482AB00D06CD7 /* NewAddress.xib in Resources */,
-				2B5735821FE0882B00110745 /* Step3View.xib in Resources */,
+				B01E85F521FA9BC500B6D51F /* NewAddress.xib in Resources */,
+				B01E861121FAA5F500B6D51F /* Step3View.xib in Resources */,
 				2B4838CB1FE21655001C8D09 /* Donation.xib in Resources */,
 				2BBE61AE1FE48BC000D06CD7 /* EmptyCell.xib in Resources */,
-				2B5735801FE0882B00110745 /* Step2View.xib in Resources */,
+				B01E860A21FAA3DB00B6D51F /* Step2View.xib in Resources */,
 				75C0E3BF1B1BA294007BC531 /* BIP39Words.plist in Resources */,
 				2BBE61AF1FE48BC000D06CD7 /* AddressContactCell.xib in Resources */,
 				75E83CF61B5F997A0038FB70 /* coinflip.aiff in Resources */,
@@ -1413,6 +1496,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B015466622BA3B4D00B9ACCA /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1421,6 +1505,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7568FB5A1B5B5EC10000B652 /* Images.xcassets in Resources */,
+				B015466322BA3B4D00B9ACCA /* Localizable.strings in Resources */,
 				BA54D3CE1B2EA74000C9CB28 /* Media.xcassets in Resources */,
 				75ABFB661B55BB2300B0B5CC /* MainInterface.storyboard in Resources */,
 			);
@@ -1493,19 +1578,6 @@
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
-		};
-		FB0ACB9A1F9A99E400F4AB52 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "if which bartycrouch > /dev/null; then\n# Incrementally update all Storyboards/XIBs strings files\nbartycrouch interfaces -p \"$PROJECT_DIR\"\n\n# Add new keys to Localizable.strings files from NSLocalizedString in code\nbartycrouch code -p \"$PROJECT_DIR\" -l \"$PROJECT_DIR\" -a -s -k\nelse\necho \"warning: BartyCrouch not installed, download it from https://github.com/Flinesoft/BartyCrouch\"\nfi";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -1681,6 +1753,11 @@
 				75F747501BF41A9F006A6BE8 /* Base */,
 				75F747521BF41AD0006A6BE8 /* en */,
 				FB4311221FA2D45100784EBC /* es */,
+				B015466F22BA3B4D00B9ACCA /* nl */,
+				B05CB9AC22BA3B5E002C0C9F /* fr */,
+				B0B77ED022BA3B6E002436F9 /* pl */,
+				B0F9D35F22BA3B7E007873D7 /* ko */,
+				B08975D822BA3B9D00CA29DF /* de */,
 			);
 			name = BREventConfirmView.xib;
 			sourceTree = "<group>";
@@ -1690,6 +1767,11 @@
 			children = (
 				757E09981ADB8EEB006FD352 /* en */,
 				7509C1121AF3720100D03FD5 /* es */,
+				B015466722BA3B4D00B9ACCA /* nl */,
+				B05CB9A422BA3B5E002C0C9F /* fr */,
+				B0B77EC822BA3B6E002436F9 /* pl */,
+				B0F9D35722BA3B7E007873D7 /* ko */,
+				B08975D122BA3B9D00CA29DF /* de */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";
@@ -1700,6 +1782,10 @@
 				75ABFB671B55BB2300B0B5CC /* Base */,
 				75ABFB6A1B55BB3500B0B5CC /* en */,
 				75ABFB801B55BB4600B0B5CC /* es */,
+				B015467122BA3B4D00B9ACCA /* nl */,
+				B05CB9AE22BA3B5E002C0C9F /* fr */,
+				B0F9D36122BA3B7E007873D7 /* ko */,
+				B08975DA22BA3B9D00CA29DF /* de */,
 			);
 			name = MainInterface.storyboard;
 			sourceTree = "<group>";
@@ -1719,8 +1805,131 @@
 				75D5F3DD191EC270004AB296 /* Base */,
 				7509C1101AF3720100D03FD5 /* es */,
 				75BDCC381CE2FC7000AAFA22 /* en */,
+				B015466822BA3B4D00B9ACCA /* nl */,
+				B05CB9A522BA3B5E002C0C9F /* fr */,
+				B0B77EC922BA3B6E002436F9 /* pl */,
+				B0F9D35822BA3B7E007873D7 /* ko */,
+				B08975D222BA3B9D00CA29DF /* de */,
 			);
 			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B015466122BA3B4D00B9ACCA /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B015466222BA3B4D00B9ACCA /* nl */,
+				B05CB9A322BA3B5E002C0C9F /* fr */,
+				B0439D0E22BA3B8D00990AA9 /* es */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		B015466422BA3B4D00B9ACCA /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B015466522BA3B4D00B9ACCA /* nl */,
+				B05CB9A222BA3B5E002C0C9F /* fr */,
+				B0B77EC722BA3B6E002436F9 /* pl */,
+				B0F9D35622BA3B7E007873D7 /* ko */,
+				B0439D0F22BA3B8D00990AA9 /* es */,
+				B08975D022BA3B9D00CA29DF /* de */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		B01E85F721FA9BC500B6D51F /* NewAddress.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B01E85F621FA9BC500B6D51F /* Base */,
+				B01E85F921FA9BCF00B6D51F /* en */,
+				B01E85FB21FA9BD300B6D51F /* es */,
+				B015466922BA3B4D00B9ACCA /* nl */,
+				B05CB9A622BA3B5E002C0C9F /* fr */,
+				B0B77ECA22BA3B6E002436F9 /* pl */,
+				B0F9D35922BA3B7E007873D7 /* ko */,
+				B08975D322BA3B9D00CA29DF /* de */,
+			);
+			name = NewAddress.xib;
+			path = PivxNibs/Controllers;
+			sourceTree = "<group>";
+		};
+		B01E85FE21FA9CDC00B6D51F /* Menu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B01E85FD21FA9CDC00B6D51F /* Base */,
+				B01E860021FA9CE400B6D51F /* es */,
+				B01E860221FA9CE600B6D51F /* en */,
+				B015466E22BA3B4D00B9ACCA /* nl */,
+				B05CB9AB22BA3B5E002C0C9F /* fr */,
+				B0B77ECF22BA3B6E002436F9 /* pl */,
+				B0F9D35E22BA3B7E007873D7 /* ko */,
+				B08975D722BA3B9D00CA29DF /* de */,
+			);
+			name = Menu.xib;
+			path = PivxNibs/Controllers;
+			sourceTree = "<group>";
+		};
+		B01E860521FAA23900B6D51F /* Step1View.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B01E860421FAA23900B6D51F /* Base */,
+				B01E860721FAA23F00B6D51F /* en */,
+				B01E860921FAA24200B6D51F /* es */,
+				B015467022BA3B4D00B9ACCA /* nl */,
+				B05CB9AD22BA3B5E002C0C9F /* fr */,
+				B0B77ED122BA3B6E002436F9 /* pl */,
+				B0F9D36022BA3B7E007873D7 /* ko */,
+				B08975D922BA3B9D00CA29DF /* de */,
+			);
+			name = Step1View.xib;
+			path = PivxNibs/Views;
+			sourceTree = "<group>";
+		};
+		B01E860C21FAA3DB00B6D51F /* Step2View.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B01E860B21FAA3DB00B6D51F /* Base */,
+				B01E860E21FAA3E400B6D51F /* es */,
+				B01E861021FAA3E700B6D51F /* en */,
+				B015466D22BA3B4D00B9ACCA /* nl */,
+				B05CB9AA22BA3B5E002C0C9F /* fr */,
+				B0B77ECE22BA3B6E002436F9 /* pl */,
+				B0F9D35D22BA3B7E007873D7 /* ko */,
+				B08975D622BA3B9D00CA29DF /* de */,
+			);
+			name = Step2View.xib;
+			path = PivxNibs/Views;
+			sourceTree = "<group>";
+		};
+		B01E861321FAA5F500B6D51F /* Step3View.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B01E861221FAA5F500B6D51F /* Base */,
+				B01E861521FAA5FC00B6D51F /* en */,
+				B01E861721FAA5FE00B6D51F /* es */,
+				B015466C22BA3B4D00B9ACCA /* nl */,
+				B05CB9A922BA3B5E002C0C9F /* fr */,
+				B0B77ECD22BA3B6E002436F9 /* pl */,
+				B0F9D35C22BA3B7E007873D7 /* ko */,
+				B08975D522BA3B9D00CA29DF /* de */,
+			);
+			name = Step3View.xib;
+			path = PivxNibs/Views;
+			sourceTree = "<group>";
+		};
+		B01E861A21FAA6B100B6D51F /* Step4View.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B01E861921FAA6B100B6D51F /* Base */,
+				B01E861C21FAA6B700B6D51F /* es */,
+				B01E861E21FAA6B900B6D51F /* en */,
+				B015466B22BA3B4D00B9ACCA /* nl */,
+				B05CB9A822BA3B5E002C0C9F /* fr */,
+				B0B77ECC22BA3B6E002436F9 /* pl */,
+				B0F9D35B22BA3B7E007873D7 /* ko */,
+			);
+			name = Step4View.xib;
+			path = PivxNibs/Views;
 			sourceTree = "<group>";
 		};
 		BA913BE01BD57E4D005A7C0E /* Interface.storyboard */ = {
@@ -1728,6 +1937,12 @@
 			children = (
 				BA913BE11BD57E4D005A7C0E /* Base */,
 				756A8F131CE566F6007893E2 /* en */,
+				B015466A22BA3B4D00B9ACCA /* nl */,
+				B05CB9A722BA3B5E002C0C9F /* fr */,
+				B0B77ECB22BA3B6E002436F9 /* pl */,
+				B0F9D35A22BA3B7E007873D7 /* ko */,
+				B0439D1022BA3B8D00990AA9 /* es */,
+				B08975D422BA3B9D00CA29DF /* de */,
 			);
 			name = Interface.storyboard;
 			sourceTree = "<group>";

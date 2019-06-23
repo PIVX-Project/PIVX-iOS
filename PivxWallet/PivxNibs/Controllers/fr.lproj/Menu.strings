@@ -1,0 +1,9 @@
+/* Class = "UILabel"; text = "Settings"; ObjectID = "e1l-rE-EGa"; */
+"e1l-rE-EGa.text" = "Paramètres";
+
+/* Class = "UILabel"; text = "My Wallet"; ObjectID = "qpC-Wx-P09"; */
+"qpC-Wx-P09.text" = "Mon portefeuille";
+
+/* Class = "UILabel"; text = "Address book"; ObjectID = "YdU-m1-Uls"; */
+"YdU-m1-Uls.text" = "Carnet d'adresses";
+

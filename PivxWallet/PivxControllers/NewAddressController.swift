@@ -19,8 +19,8 @@ class NewAddressController: BaseController {
         descriptionTextField.delegate = self
         addressTextField.delegate = self
         nameTextField.delegate = self
-        navigationItem.title = "New Address Label"
-        let saveButton = UIBarButtonItem(title: "Save", style: .done, target: self, action: #selector(tappedSaveButton))
+        navigationItem.title = NSLocalizedString("New Address Label", comment: "New Address Label")
+        let saveButton = UIBarButtonItem(title: NSLocalizedString("Save", comment: "Save"), style: .done, target: self, action: #selector(tappedSaveButton))
         navigationItem.rightBarButtonItem = saveButton
     }
     
@@ -34,17 +34,17 @@ class NewAddressController: BaseController {
         let unwrappedAddress = address.trimmingCharacters(in: .whitespaces)
         
         if unwrappedName == "" {
-            Utils.showAlertController(title: "", message: "Invalid Name")
+            Utils.showAlertController(title: "", message: NSLocalizedString("Invalid Name", comment: "Invalid Name"))
             return
         }
         
         if unwrappedDescription == "" {
-            Utils.showAlertController(title: "", message: "Invalid Description")
+            Utils.showAlertController(title: "", message: NSLocalizedString("Invalid Description", comment: "Invalid Description"))
             return
         }
         
         if unwrappedAddress == "" || !BRPivxUtils.isValidAdress(unwrappedAddress){
-            Utils.showAlertController(title: "", message: "Invalid Address")
+            Utils.showAlertController(title: "", message: NSLocalizedString("Invalid Address", comment: "Invalid Address"))
             return
         }
         
@@ -56,7 +56,7 @@ class NewAddressController: BaseController {
         var contacts = LocalStore.getContacts()
         
         if contacts.count == 200 {
-            Utils.showAlertController(title: "", message: "Contact address limit")
+            Utils.showAlertController(title: "", message: NSLocalizedString("Contact address limit", comment: "Contact address limit"))
             return
         }
         

@@ -161,11 +161,11 @@ annotation:(id)annotation
 {
     if (! [url.scheme isEqual:@"pivx"] && ! [url.scheme isEqual:@"pivxwallet"]) {
         UIAlertController * alert = [UIAlertController
-                                     alertControllerWithTitle:@"Not a pivx URL"
+                                     alertControllerWithTitle:NSLocalizedString(@"Not a PIVX URL", nil)
                                      message:url.absoluteString
                                      preferredStyle:UIAlertControllerStyleAlert];
         UIAlertAction* okButton = [UIAlertAction
-                                       actionWithTitle:NSLocalizedString(@"ok", nil)
+                                       actionWithTitle:NSLocalizedString(@"Ok", nil)
                                        style:UIAlertActionStyleCancel
                                        handler:^(UIAlertAction * action) {
                                        }];

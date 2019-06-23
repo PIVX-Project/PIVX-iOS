@@ -468,7 +468,7 @@ static NSString *dateFormat(NSString *template)
 //        [[NSBundle mainBundle] loadNibNamed:@"BREventConfirmView" owner:nil options:nil][0];
 //    view.titleLabel.text = NSLocalizedString(@"Buy PIV in PIVXwallet!", nil);
 //    view.descriptionLabel.text =
-//        NSLocalizedString(@"You can now buy PIV in\nPIVXwallet with cash or\nbank transfer.", nil);
+//        NSLocalizedString(@"You can now buy PIV in PIVXwallet with cash or bank transfer.", nil);
 //    [view.okBtn setTitle:NSLocalizedString(@"Try It!", nil) forState:UIControlStateNormal];
 //
 //    view.image = blurredBgImg;
@@ -529,12 +529,12 @@ static NSString *dateFormat(NSString *template)
             if (self.moreTx && indexPath.row >= self.transactions.count) {
                 cell = [tableView dequeueReusableCellWithIdentifier:actionIdent];
                 cell.textLabel.text = (indexPath.row > 0) ? NSLocalizedString(@"more...", nil) :
-                                      NSLocalizedString(@"transaction history", nil);
+                                      NSLocalizedString(@"Transaction history", nil);
                 cell.imageView.image = nil;
                 
                 if (indexPath.row == 0) {
                     EmptyTableCell *tran = [tableView dequeueReusableCellWithIdentifier:self.emptyIdentifier forIndexPath:indexPath];
-                    [tran configureWithTitle:@"YOUR WALLET IS LOCKED" image:@"imgWalletLocked"];
+                    [tran configureWithTitle:NSLocalizedString(@"YOUR WALLET IS LOCKED", nil) image:@"imgWalletLocked"];
                     return tran;
                 }
             }
@@ -637,7 +637,7 @@ static NSString *dateFormat(NSString *template)
             }
             else {
                 EmptyTableCell *tran = [tableView dequeueReusableCellWithIdentifier:self.emptyIdentifier forIndexPath:indexPath];
-                [tran configureWithTitle:@"NO TRANSACTIONS" image:@"imgTransactionEmpty"];
+                [tran configureWithTitle:NSLocalizedString(@"NO TRANSACTIONS", nil) image:@"imgTransactionEmpty"];
                 return tran;
                 //cell = [tableView dequeueReusableCellWithIdentifier:noTxIdent];
             }
@@ -655,13 +655,13 @@ static NSString *dateFormat(NSString *template)
                     break;
                     
                 case 1:
-                    cell.textLabel.text = NSLocalizedString(@"import private key", nil);
+                    cell.textLabel.text = NSLocalizedString(@"Import private key", nil);
                     cell.imageView.image = [UIImage imageNamed:@"icScan"];
                     break;
 
                 case 2:
                     cell = [tableView dequeueReusableCellWithIdentifier:disclosureIdent];
-                    cell.textLabel.text = NSLocalizedString(@"settings", nil);
+                    cell.textLabel.text = NSLocalizedString(@"Settings", nil);
                     cell.imageView.image = [UIImage imageNamed:@"icSettings"];
                     break;
             }

@@ -49,14 +49,10 @@
            withAttributedString:[NSAttributedString attributedStringWithAttachment:noKey]];
     
     [s replaceCharactersInRange:[s.string rangeOfString:@"WARNING"] withString:NSLocalizedString(@"WARNING", nil)];
-    [s replaceCharactersInRange:[s.string rangeOfString:@"\nDO NOT let anyone see your recovery\n"
-                                 "phrase or they can spend your PIV.\n"]
-                     withString:NSLocalizedString(@"\nDO NOT let anyone see your recovery\n"
-                                                  "phrase or they can spend your PIV.\n", nil)];
-    [s replaceCharactersInRange:[s.string rangeOfString:@"\nNEVER type your recovery phrase into\n"
-                                 "password managers or elsewhere.\nOther devices may be infected.\n"]
-                     withString:NSLocalizedString(@"\nNEVER type your recovery phrase into\npassword managers or elsewhere.\n"
-                                                  "Other devices may be infected.\n", nil)];
+    [s replaceCharactersInRange:[s.string rangeOfString:@"\nDO NOT let anyone see your recovery\nphrase or they can spend your PIV.\n"]
+                     withString:NSLocalizedString(@"DO NOT let anyone see your recovery phrase or they can spend your PIV.", nil)];
+    [s replaceCharactersInRange:[s.string rangeOfString:@"\nNEVER type your recovery phrase into\npassword managers or elsewhere.\nOther devices may be infected.\n"]
+                     withString:NSLocalizedString(@"NEVER type your recovery phrase into password managers or elsewhere. Other devices may be infected.", nil)];
     self.warningLabel.attributedText = s;
     //self.generateButton.superview.backgroundColor = [UIColor clearColor];
 }
@@ -70,7 +66,7 @@
     [[self.navigationController navigationBar] setShadowImage:[UIImage imageNamed:@""]];
     [[self.navigationController navigationBar] setBarTintColor: color];
     [[self.navigationController navigationBar] setBackgroundImage:[UIImage imageNamed:@""] forBarMetrics: UIBarMetricsDefault];
-    self.navigationItem.title = @"Create recovery phrase";
+    self.navigationItem.title = NSLocalizedString(@"Create recovery phrase", nil);
     self.navigationItem.hidesBackButton = TRUE;
     UIImage *image = [UIImage imageNamed:@"icBack"];
     self.navigationItem.hidesBackButton = TRUE;
@@ -103,12 +99,11 @@
     if (! [BRWalletManager sharedInstance].passcodeEnabled) {
         [BREventManager saveEvent:@"welcome:passcode_disabled"];
         UIAlertController * alert = [UIAlertController
-                                     alertControllerWithTitle:NSLocalizedString(@"turn device passcode on", nil)
-                                     message:NSLocalizedString(@"\nA device passcode is needed to safeguard your wallet. Go to settings and turn "
-                                                               "passcode on to continue.", nil)
+                                     alertControllerWithTitle:NSLocalizedString(@"Turn device passcode on", nil)
+                                     message:NSLocalizedString(@"A device passcode is needed to safeguard your wallet. Go to settings and turn passcode on to continue.", nil)
                                      preferredStyle:UIAlertControllerStyleAlert];
         UIAlertAction* okButton = [UIAlertAction
-                                   actionWithTitle:NSLocalizedString(@"ok", nil)
+                                   actionWithTitle:NSLocalizedString(@"Ok", nil)
                                    style:UIAlertActionStyleCancel
                                    handler:^(UIAlertAction * action) {
                                    }];

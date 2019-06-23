@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="ZillaSlab-Bold.ttf">
+            <string>ZillaSlab-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imgStep1" translatesAutoresizingMaskIntoConstraints="NO" id="s4Y-6v-tOf">
+                    <rect key="frame" x="82" y="213.5" width="210" height="240"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="210" id="MPk-WD-uPy"/>
+                        <constraint firstAttribute="height" constant="240" id="pRk-vO-MKr"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PVIX IS SECURE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cub-SJ-sXh">
+                    <rect key="frame" x="119.5" y="501.5" width="137" height="21"/>
+                    <fontDescription key="fontDescription" name="ZillaSlab-Bold" family="Zilla Slab" pointSize="18"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="First coin with in-wallet BIP38 Encryption and Decryption of Private Keys." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dIa-VF-izX">
+                    <rect key="frame" x="20" y="550.5" width="335" height="39.5"/>
+                    <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="17"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="0.33333333329999998" green="0.2784313725" blue="0.42352941179999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="s4Y-6v-tOf" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="926-1f-fBV"/>
+                <constraint firstItem="dIa-VF-izX" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="Db0-KO-DA0"/>
+                <constraint firstItem="Cub-SJ-sXh" firstAttribute="top" secondItem="s4Y-6v-tOf" secondAttribute="bottom" constant="48" id="Wal-g2-QY4"/>
+                <constraint firstItem="s4Y-6v-tOf" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="ZLn-l0-mfF"/>
+                <constraint firstItem="Cub-SJ-sXh" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="eLC-XJ-U6h"/>
+                <constraint firstItem="dIa-VF-izX" firstAttribute="top" secondItem="Cub-SJ-sXh" secondAttribute="bottom" constant="28" id="uvt-NC-NZV"/>
+                <constraint firstAttribute="trailing" secondItem="dIa-VF-izX" secondAttribute="trailing" constant="20" id="x2a-U3-v2z"/>
+            </constraints>
+        </view>
+    </objects>
+    <resources>
+        <image name="imgStep1" width="211" height="245"/>
+    </resources>
+</document>

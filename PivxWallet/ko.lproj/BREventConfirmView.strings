@@ -1,12 +1,14 @@
-
-/* Class = "UILabel"; text = "Help us improve dashwallet!"; ObjectID = "Mgm-wb-UlM"; */
-"Mgm-wb-UlM.text" = "Help us improve dashwallet!";
-
-/* Class = "UIButton"; normalTitle = "No Thanks"; ObjectID = "Tw0-s4-w0k"; */
-"Tw0-s4-w0k.normalTitle" = "No Thanks";
-
 /* Class = "UIButton"; normalTitle = "Ok Great!"; ObjectID = "fzO-vI-zum"; */
-"fzO-vI-zum.normalTitle" = "Ok Great!";
+"fzO-vI-zum.normalTitle" = "좋습니다. 함께 하겠습니다.";
 
 /* Class = "UILabel"; text = "Would you like to share anonymous app usage information with us?\n\nThis information is completely anonymous and includes no financial information. We respect your financial privacy!"; ObjectID = "kqc-0F-49V"; */
-"kqc-0F-49V.text" = "Would you like to share anonymous app usage information with us?\n\nThis information is completely anonymous and includes no financial information. We respect your financial privacy!";
+"kqc-0F-49V.text" = "익명으로 앱 사용 정보를 공유 하시겠습니까?
+
+이 정보는 완전히 익명성을 이며, 어떠한 금융 정보를 제공하지 않습니다. PIVX는 여러분의 금융 정보와 개인정보를 존중합니다!";
+
+/* Class = "UILabel"; text = "Help us improve PIVXwallet!"; ObjectID = "Mgm-wb-UlM"; */
+"Mgm-wb-UlM.text" = "PIVX 지갑 기능 향상을 위해 함께 합시다.";
+
+/* Class = "UIButton"; normalTitle = "No Thanks"; ObjectID = "Tw0-s4-w0k"; */
+"Tw0-s4-w0k.normalTitle" = "절대 안됩니다.";
+
