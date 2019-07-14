@@ -1,0 +1,55 @@
+language: objective-c
+osx_image: xcode10.1
+cache: cocoapods
+stages:
+    - lint
+    - test
+env:
+    - LC_CTYPE=en_US.UTF-8 LANG=en_US.UTF-8
+before_install:
+    - gem install cocoapods
+    - gem install xcpretty -N
+before_script:
+    - pod install
+script:
+    - set -o pipefail
+    - xcodebuild -workspace PivxWallet.xcworkspace -scheme pivxwallet -destination "platform=iOS Simulator,name=$DEVICE,OS=$OS" ONLY_ACTIVE_ARCH=NO | xcpretty -c
+after_script:
+    - echo $TRAVIS_COMMIT_RANGE
+    - echo $TRAVIS_COMMIT_LOG
+jobs:
+    include:
+
+        - stage: lint
+          name: 'Swift Lint'
+          env:
+          cache: false
+          before_install:
+          before_script:
+          script:
+              - swiftlint
+
+        - stage: test
+          name: 'iPhone 6 [iOS 9]'
+          env:
+            - DEVICE="iPhone 6"
+            - OS=9.1
+
+        - stage: test
+          name: 'iPhone 7 [iOS 10.1]'
+          env:
+            - DEVICE="iPhone 7"
+            - OS=10.1
+
+        - stage: test
+          name: 'iPhone X [iOS 12.1]'
+          env:
+            - DEVICE="iPhone X"
+            - OS=12.1
+
+        - stage: test
+          name: 'iPad Pro (12.9-inch) (2nd Generation) [iOS 12.1]'
+          env:
+            - DEVICE="iPad Pro (12.9-inch) (2nd generation)"
+            - OS=12.1
+
