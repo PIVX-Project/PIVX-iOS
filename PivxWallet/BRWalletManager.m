@@ -443,7 +443,7 @@ typedef BOOL (^PinVerificationBlock)(NSString * _Nonnull currentPin,BRWalletMana
     if (!data && oldData) {
         NSLog(@"fixing public key");
         //upgrade scenario
-        [self authenticateWithPrompt:(NSLocalizedString(@"Please enter PIN to upgrade wallet", nil)) andTouchId:NO alertIfLockout:NO completion:^(BOOL authenticated,BOOL cancelled) {
+        [self authenticateWithPrompt:(NSLocalizedString(@"Please enter PIN to upgrade wallet", nil)) andBiometricId:NO alertIfLockout:NO completion:^(BOOL authenticated,BOOL cancelled) {
             if (!authenticated) {
                 completion(NO,YES,NO,cancelled);
                 return;
@@ -604,11 +604,28 @@ typedef BOOL (^PinVerificationBlock)(NSString * _Nonnull currentPin,BRWalletMana
     setKeychainDict(userAccount, USER_ACCOUNT_KEY, NO);
 }
 
-// true if touch id is enabled
-- (BOOL)isTouchIdEnabled
+// true if either touch or face id is enabled
+- (BiometryType)biometryType
 {
-    return ([LAContext class] &&
-            [[LAContext new] canEvaluatePolicy:LAPolicyDeviceOwnerAuthenticationWithBiometrics error:nil]) ? YES : NO;
+	BiometryType result = BiometryTypeNone;
+	LAContext *context = [LAContext new];
+	if ([context canEvaluatePolicy:LAPolicyDeviceOwnerAuthenticationWithBiometrics error:nil]) {
+		if (@available(iOS 11, *)) {
+			switch (context.biometryType) {
+				case LABiometryTypeTouchID:
+					result = BiometryTypeTouch;
+					break;
+				case LABiometryTypeFaceID:
+					result = BiometryTypeFace;
+					break;
+				default:
+					break;
+			}
+		} else {
+			result = BiometryTypeTouch;
+		}
+	}
+	return result;
 }
 
 // true if device passcode is enabled
@@ -644,15 +661,15 @@ typedef BOOL (^PinVerificationBlock)(NSString * _Nonnull currentPin,BRWalletMana
 - (void)seedWithPrompt:(NSString *)authprompt forAmount:(uint64_t)amount completion:(void (^)(NSData * seed))completion
 {
     @autoreleasepool {
-        BOOL touchid = (self.wallet.totalSent + amount < getKeychainInt(SPEND_LIMIT_KEY, nil)) ? YES : NO;
+        BOOL biometricId = (self.wallet.totalSent + amount < getKeychainInt(SPEND_LIMIT_KEY, nil)) ? YES : NO;
         
-        [self authenticateWithPrompt:authprompt andTouchId:touchid alertIfLockout:YES completion:^(BOOL authenticated,BOOL cancelled) {
+        [self authenticateWithPrompt:authprompt andBiometricId:biometricId alertIfLockout:YES completion:^(BOOL authenticated,BOOL cancelled) {
             if (!authenticated) {
                 completion(nil);
             } else {
-                // BUG: if user manually chooses to enter pin, the touch id spending limit is reset, but the tx being authorized
-                // still counts towards the next touch id spending limit
-                if (! touchid) setKeychainInt(self.wallet.totalSent + amount + self.spendingLimit, SPEND_LIMIT_KEY, NO);
+                // BUG: if user manually chooses to enter pin, the biometric id spending limit is reset, but the tx being authorized
+                // still counts towards the next biometric id spending limit
+                if (! biometricId) setKeychainInt(self.wallet.totalSent + amount + self.spendingLimit, SPEND_LIMIT_KEY, NO);
                 completion([self.mnemonic deriveKeyFromPhrase:getKeychainString(MNEMONIC_KEY, nil) withPassphrase:nil]);
             }
         }];
@@ -664,7 +681,7 @@ typedef BOOL (^PinVerificationBlock)(NSString * _Nonnull currentPin,BRWalletMana
 - (void)seedPhraseWithPrompt:(NSString *)authprompt completion:(void (^)(NSString * seedPhrase))completion
 {
     @autoreleasepool {
-        [self authenticateWithPrompt:authprompt andTouchId:NO alertIfLockout:YES completion:^(BOOL authenticated,BOOL cancelled) {
+        [self authenticateWithPrompt:authprompt andBiometricId:NO alertIfLockout:YES completion:^(BOOL authenticated,BOOL cancelled) {
             NSString * rSeedPhrase = authenticated?getKeychainString(MNEMONIC_KEY, nil):nil;
             completion(rSeedPhrase);
         }];
@@ -673,16 +690,16 @@ typedef BOOL (^PinVerificationBlock)(NSString * _Nonnull currentPin,BRWalletMana
 
 // MARK: - authentication
 
-// prompts user to authenticate with touch id or passcode
-- (void)authenticateWithPrompt:(NSString *)authprompt andTouchId:(BOOL)touchId alertIfLockout:(BOOL)alertIfLockout completion:(PinCompletionBlock)completion;
+// prompts user to authenticate with biometric id or passcode
+- (void)authenticateWithPrompt:(NSString *)authprompt andBiometricId:(BOOL)biometricId alertIfLockout:(BOOL)alertIfLockout completion:(PinCompletionBlock)completion;
 {
-    if (touchId && [LAContext class]) { // check if touch id framework is available
+    if (biometricId && [LAContext class]) { // check if biometric id framework is available
         NSTimeInterval pinUnlockTime = [[NSUserDefaults standardUserDefaults] doubleForKey:PIN_UNLOCK_TIME_KEY];
         LAContext *context = [LAContext new];
         NSError *error = nil;
         __block NSInteger authcode = 0;
         
-        [BREventManager saveEvent:@"wallet_manager:touchid_auth"];
+        [BREventManager saveEvent:@"wallet_manager:biometricid_auth"];
         
         if ([context canEvaluatePolicy:LAPolicyDeviceOwnerAuthenticationWithBiometrics error:&error] &&
             pinUnlockTime + 7*24*60*60 > [NSDate timeIntervalSinceReferenceDate] &&
@@ -715,7 +732,7 @@ typedef BOOL (^PinVerificationBlock)(NSString * _Nonnull currentPin,BRWalletMana
         else if (error) NSLog(@"[LAContext canEvaluatePolicy:] %@", error.localizedDescription);
     }
     
-    // TODO explain reason when touch id is disabled after 30 days without pin unlock
+    // TODO explain reason when biometric id is disabled after 30 days without pin unlock
     [self authenticatePinWithTitle:[NSString stringWithFormat:NSLocalizedString(@"Passcode for %@", nil),
                                     DISPLAY_NAME] message:authprompt alertIfLockout:alertIfLockout completion:^(BOOL authenticated, BOOL cancelled) {
         if (authenticated) {
@@ -1019,7 +1036,7 @@ typedef BOOL (^PinVerificationBlock)(NSString * _Nonnull currentPin,BRWalletMana
 
 
 
-// amount that can be spent using touch id without pin entry
+// amount that can be spent using biometric id without pin entry
 - (uint64_t)spendingLimit
 {
     // it's ok to store this in userdefaults because increasing the value only takes effect after successful pin entry

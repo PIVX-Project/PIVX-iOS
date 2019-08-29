@@ -50,6 +50,11 @@ typedef void (^PinCompletionBlock)(BOOL authenticatedOrSuccess, BOOL cancelled);
 typedef void (^SeedPhraseCompletionBlock)(NSString * _Nullable seedPhrase);
 typedef void (^SeedCompletionBlock)(NSData * _Nullable seed);
 typedef void (^ResetCancelHandlerBlock)(void);
+typedef NS_ENUM(NSInteger, BiometryType) {
+	BiometryTypeNone = 0,
+	BiometryTypeTouch,
+	BiometryTypeFace,
+};
 
 @interface BRWalletManager : NSObject<UIAlertViewDelegate, UITextFieldDelegate, UITextViewDelegate>
 
@@ -64,10 +69,10 @@ typedef void (^ResetCancelHandlerBlock)(void);
 @property (nonatomic, readonly) NSTimeInterval seedCreationTime; // interval since refrence date, 00:00:00 01/01/01 GMT
 @property (nonatomic, readonly) NSTimeInterval secureTime; // last known time from an ssl server connection
 @property (nonatomic ,readonly) BOOL lockedOut;
-@property (nonatomic, assign) uint64_t spendingLimit; // amount that can be spent using touch id without pin entry
+@property (nonatomic, assign) uint64_t spendingLimit; // amount that can be spent using biometric id without pin entry
 @property (nonatomic, readonly) NSString * _Nullable authPrivateKey; // private key for signing authenticated api calls
 @property (nonatomic, copy) NSDictionary * _Nullable userAccount; // client api user id and auth token
-@property (nonatomic, readonly, getter=isTouchIdEnabled) BOOL touchIdEnabled; // true if touch id is enabled
+@property (nonatomic, readonly) BiometryType biometryType; // none, touch or face
 @property (nonatomic, readonly, getter=isPasscodeEnabled) BOOL passcodeEnabled; // true if device passcode is enabled
 @property (nonatomic, assign) BOOL didAuthenticate; // true if the user authenticated after this was last set to false
 @property (nonatomic, readonly) NSNumberFormatter * _Nullable dashFormat; // dash currency formatter
@@ -88,7 +93,7 @@ typedef void (^ResetCancelHandlerBlock)(void);
 - (NSString * _Nullable)generateRandomSeed; // generates a random seed, saves to keychain and returns the seedPhrase
 - (void)seedWithPrompt:(NSString * _Nullable)authprompt forAmount:(uint64_t)amount completion:(_Nullable SeedCompletionBlock)completion;//auth user,return seed
 - (void)seedPhraseWithPrompt:(NSString * _Nullable)authprompt completion:(_Nullable SeedPhraseCompletionBlock)completion;; // authenticates user, returns seedPhrase
-- (void)authenticateWithPrompt:(NSString * _Nullable)authprompt andTouchId:(BOOL)touchId alertIfLockout:(BOOL)alertIfLockout completion:(_Nullable PinCompletionBlock)completion; // prompt user to authenticate
+- (void)authenticateWithPrompt:(NSString * _Nullable)authprompt andBiometricId:(BOOL)biometricId alertIfLockout:(BOOL)alertIfLockout completion:(_Nullable PinCompletionBlock)completion; // prompt user to authenticate
 - (void)setPinWithCompletion:(void (^ _Nullable)(BOOL success))completion; // prompts the user to set or change wallet pin and returns true if the pin was successfully set
 
 // queries api.dashwallet.com and calls the completion block with unspent outputs for the given address
