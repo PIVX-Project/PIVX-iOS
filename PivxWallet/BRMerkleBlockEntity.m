@@ -57,7 +57,7 @@
         self.hashes = [NSData dataWithData:block.hashes];
         self.flags = [NSData dataWithData:block.flags];
         self.height = block.height;
-        if (self.version >3) {
+        if (self.version >3 && self.version < 7) {
             self.zerocoinAccumulator = [NSData dataWithBytes:block.zerocoinAccumulator.u8 length:sizeof(UInt256)];
         }
     }];
@@ -71,7 +71,6 @@
     
     [self.managedObjectContext performBlockAndWait:^{
         NSData *blockHash = self.blockHash, *prevBlock = self.prevBlock, *merkleRoot = self.merkleRoot;
-        NSLog(@"%@",self.zerocoinAccumulator.hexString);
         NSData *zerocoinAccumulator = self.zerocoinAccumulator;
         UInt256 hash = (blockHash.length == sizeof(UInt256)) ? *(const UInt256 *)blockHash.bytes : UINT256_ZERO,
                 prev = (prevBlock.length == sizeof(UInt256)) ? *(const UInt256 *)prevBlock.bytes : UINT256_ZERO,

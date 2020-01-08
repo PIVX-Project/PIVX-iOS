@@ -93,34 +93,23 @@ inline static int ceil_log2(int x)
     _version = [message UInt32AtOffset:off];
     off += sizeof(uint32_t);
     _prevBlock = [message hashAtOffset:off];
-    //_prevBlock = *(const UInt256 *)((const char *)[NSData dataWithUInt256:_prevBlock].reverse.bytes);
-    //NSLog(@"Prev block hash %@",[NSData dataWithUInt256:_prevBlock].hexString);
-    //NSLog(@"Prev block hash %@",[NSData dataWithUInt256: *(const UInt256 *)((const char *)[NSData dataWithUInt256:_prevBlock].reverse.bytes)].hexString);
     off += sizeof(UInt256);
     _merkleRoot = [message hashAtOffset:off];
-    //_merkleRoot = *(const UInt256 *)((const char *)[NSData dataWithUInt256:_merkleRoot].reverse.bytes);
-    //NSLog(@"Merkle root hash %@",[NSData dataWithUInt256:_merkleRoot].hexString);
-    //NSLog(@"Merkle root %@",[NSData dataWithUInt256: *(const UInt256 *)((const char *)[NSData dataWithUInt256:_merkleRoot].reverse.bytes)].hexString);
     off += sizeof(UInt256);
     _timestamp = [message UInt32AtOffset:off];
-    //NSLog(@"Timestamp %d",_timestamp);
     off += sizeof(uint32_t);
     _target = [message UInt32AtOffset:off];
-    //NSLog(@"Bits %d",_target);
     off += sizeof(uint32_t);
     _nonce = [message UInt32AtOffset:off];
-    //NSLog(@"Nonce %d",_nonce);
     off += sizeof(uint32_t);
-    if([ self isZerocoin ]){
+    if(_version > 3 && _version < 7){
         _zerocoinAccumulator = [message hashAtOffset:off];
-        //NSLog(@"Zerocoin accumulator %@",[NSData dataWithUInt256: *(const UInt256 *)((const char *)[NSData dataWithUInt256:_zerocoinAccumulator].reverse.bytes)].hexString);
         off += sizeof(UInt256);
     }else{
         _zerocoinAccumulator = UINT256_ZERO;
     }
     
     _totalTransactions = [message UInt32AtOffset:off];
-    //NSLog(@"Total txs %d",_totalTransactions);
     off += sizeof(uint32_t);
     len = (NSUInteger)[message varIntAtOffset:off length:&l]*sizeof(UInt256);
     off += l.unsignedIntegerValue;
@@ -136,19 +125,16 @@ inline static int ceil_log2(int x)
     [d appendUInt32:_target];
     [d appendUInt32:_nonce];
     
-    if(![ self isZerocoin ]){
+    if(_version < 4){
         _blockHash = d.x11;
-    }else{
+    }else if (_version >= 4 && _version < 7) {
         [d appendBytes:&_zerocoinAccumulator length:sizeof(_zerocoinAccumulator)];
         _blockHash = d.SHA256_2;
+    } else {
+        // No accumulator
+        _blockHash = d.SHA256_2;
     }
-    
 
-    //NSLog(@"Received block hash %@",[NSData dataWithUInt256:_blockHash].hexString);
-    //NSString* s = [NSData dataWithUInt256: *(const UInt256 *)((const char *)[NSData dataWithUInt256:_blockHash].reverse.bytes)].hexString;
-    //NSLog(@"Received block hash %@",s);
-    
-    
     return self;
 }
 
@@ -270,7 +256,7 @@ totalTransactions:(uint32_t)totalTransactions hashes:(NSData *)hashes flags:(NSD
 
 // true if the block is a zerocoin block
 - (BOOL)isZerocoin{
-    if (_version > 3) {
+    if (_version > 3 && _version < 7) {
         return YES;
     }
     return NO;
