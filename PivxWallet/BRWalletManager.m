@@ -325,8 +325,37 @@ typedef BOOL (^PinVerificationBlock)(NSString * _Nonnull currentPin,BRWalletMana
             }
         }
     }];
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(keyboardWillShow:)
+                                                 name:UIKeyboardWillShowNotification
+                                               object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(keyboardWillHide:)
+                                                 name:UIKeyboardWillHideNotification
+                                               object:nil];
+    
     if ([UIApplication sharedApplication].protectedDataAvailable) [self protectedInit];
     return self;
+}
+
+bool responder = false;
+
+-(void)keyboardWillShow:(NSNotification *)notification
+{
+    if ([self pinAlertControllerIsVisible] && responder) {
+        responder = false;
+        [_pinField performSelector:@selector(becomeFirstResponder) withObject:nil afterDelay:0];
+    }
+}
+
+-(void)keyboardWillHide:(NSNotification *)notification
+{
+    if ([self pinAlertControllerIsVisible]) {
+        responder = true;
+        if (_pinField)
+            [_pinField performSelector:@selector(becomeFirstResponder) withObject:nil afterDelay:0];
+    }
 }
 
 - (void)protectedInit
