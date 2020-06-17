@@ -41,8 +41,8 @@
 /* Class = "UILabel"; text = "Start/Recover Another Wallet"; ObjectID = "D1b-HB-lKH"; */
 "D1b-HB-lKH.text" = "Start/Recover Another Wallet";
 
-/* Class = "UILabel"; text = "Exchange rate data provided by\ncoinmarketcap.com"; ObjectID = "D4H-hd-LsX"; */
-"D4H-hd-LsX.text" = "Exchange rate data provided by\ncoinmarketcap.com";
+/* Class = "UILabel"; text = "Exchange rate data provided by\ncoingecko.com"; ObjectID = "D4H-hd-LsX"; */
+"D4H-hd-LsX.text" = "Exchange rate data provided by\ncoingecko.com";
 
 /* Class = "UIButton"; normalTitle = "New wallet"; ObjectID = "dOa-zm-TDG"; */
 "dOa-zm-TDG.normalTitle" = "New wallet";

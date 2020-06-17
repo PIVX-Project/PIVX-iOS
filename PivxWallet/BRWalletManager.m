@@ -52,7 +52,7 @@
 #define BITCOIN_TICKER_URL  @"https://bitpay.com/rates"
 // PIVX is not in Poloniex yet ;P
 //#define POLONIEX_TICKER_URL  @"https://poloniex.com/public?command=returnOrderBook&currencyPair=BTC_PIVX&depth=1"
-#define COINMARKETCAP_TICKER_URL @"https://api.coinmarketcap.com/v1/ticker/pivx/"
+#define COINGECKO_TICKER_URL @"https://api.coingecko.com/api/v3/coins/pivx?localization=false&tickers=false&community_data=false&developer_data=false&sparkline=false"
 #define TICKER_REFRESH_TIME 60.0
 
 #define SEED_ENTROPY_LENGTH   (256/8)
@@ -1331,7 +1331,7 @@ bool responder = false;
     if (self.reachability.currentReachabilityStatus == NotReachable) return;
     
     
-    NSURLRequest *req = [NSURLRequest requestWithURL:[NSURL URLWithString:COINMARKETCAP_TICKER_URL]
+    NSURLRequest *req = [NSURLRequest requestWithURL:[NSURL URLWithString:COINGECKO_TICKER_URL]
                                          cachePolicy:NSURLRequestReloadIgnoringCacheData timeoutInterval:30.0];
     
     [[[NSURLSession sharedSession] dataTaskWithRequest:req
@@ -1350,15 +1350,16 @@ bool responder = false;
                                              if (now > self.secureTime) [defs setDouble:now forKey:SECURE_TIME_KEY];
                                          }
                                          NSError *error = nil;
-                                         NSArray *json = [NSJSONSerialization JSONObjectWithData:data options:0 error:&error];
-                                         NSDictionary* jsonData = json.firstObject;
-                                         NSString * lastPrice = [jsonData objectForKey:@"price_btc"];
+                                         NSDictionary *json = [NSJSONSerialization JSONObjectWithData:data options:0 error:&error];
+                                         NSDictionary *marketData = json[@"market_data"];
+                                         NSDictionary *priceData = marketData[@"current_price"];
+                                         NSNumber * lastPrice = priceData[@"btc"];
                                          NSNumberFormatter *numberFormatter = [[NSNumberFormatter alloc] init];
                                          NSLocale *usa = [[NSLocale alloc] initWithLocaleIdentifier:@"en_US"];
                                          numberFormatter.locale = usa;
                                          numberFormatter.numberStyle = NSNumberFormatterDecimalStyle;
                                          NSUserDefaults *defs = [NSUserDefaults standardUserDefaults];
-                                         NSNumber *lastTradePriceNumber = [numberFormatter numberFromString:lastPrice];
+                                         NSNumber *lastTradePriceNumber = [numberFormatter numberFromString:lastPrice.stringValue];
                                          [defs setObject:lastTradePriceNumber forKey:POLONIEX_DASH_BTC_PRICE_KEY];
                                          [defs setObject:[NSDate date] forKey:POLONIEX_DASH_BTC_UPDATE_TIME_KEY];
                                          [defs synchronize];

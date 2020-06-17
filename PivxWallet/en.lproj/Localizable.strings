@@ -246,6 +246,12 @@
 "Exit" = "Exit";
 
 /* No comment provided by engineer. */
+"Face ID limit" = "Face ID limit";
+
+/* No comment provided by engineer. */
+"Face ID spending limit" = "Face ID spending limit";
+
+/* No comment provided by engineer. */
 "Failed wallet update" = "Failed wallet update";
 
 /* No comment provided by engineer. */
